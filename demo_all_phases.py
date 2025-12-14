@@ -59,9 +59,13 @@ def demo_phase8_reasoning():
         from Phase8_AdvancedReasoning.mathematical_reasoning import MathematicalReasoningSystem
         
         system = MathematicalReasoningSystem()
+        # Test equation solving
         result = system.solve_equation("x + 5 = 10")
+        print(f"✓ Solved equation: x = {result}")
         
-        print(f"✓ Solved equation: {result}")
+        # Test word problem solving
+        word_result = system.solve_word_problem("Janet has 5 apples. She gives away 2 apples. How many apples does she have left?")
+        print(f"✓ Solved word problem: {word_result['answer']} (confidence: {word_result['confidence']:.2f})")
     except Exception as e:
         print(f"✗ Error: {e}")
 

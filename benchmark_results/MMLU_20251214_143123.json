@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "MMLU",
+    "total_questions": 10,
+    "correct_answers": 7,
+    "accuracy": 0.7,
+    "average_confidence": 0.3419999999999999,
+    "average_response_time": 0.021346569061279297,
+    "total_time": 0.21518802642822266,
+    "per_category_accuracy": {
+      "high_school_biology": 0.7
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T14:31:23.468798"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: No two people are genetically identical, except for identical twins. The chief cause of genetic variation among human individuals is\n\nA) new mutations that occurred in the preceding generation.\nB) the reshuffling of alleles in sexual reproduction.\nC) genetic drift due to the small size of the population.\nD) geographic variation within the population.\n",
+      "ground_truth": "the reshuffling of alleles in sexual reproduction.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.36,
+      "response_time": 0.016528844833374023,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Cattle breeders have improved the quality of meat over the years by which process?\n\nA) artificial selection\nB) directional selection\nC) stabilizing selection\nD) A and B\n",
+      "ground_truth": "A and B",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.36,
+      "response_time": 0.027467966079711914,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: As a young biologist, Charles Darwin had expected the living plants of temperate South America would resemble those of temperate Europe, but he was surprised to find that they more closely resembled the plants of tropical South America. The biological explanation for this observation is most properly associated with the field of\n\nA) meteorology.\nB) embryology.\nC) vertebrate anatomy.\nD) biogeography.\n",
+      "ground_truth": "biogeography.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.36,
+      "response_time": 0.019284963607788086,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Which of the following statements explains how a point mutation can have no negative impact in the protein formed from a sequence in DNA?\n\nA) The first codon of a gene is always AUG, a leader sequence; a mutation in that sequence will have no effect on the protein produced.\nB) Several codons code for the same amino acid.\nC) DNA polymerase and DNA ligase carry out excision repair before transcription.\nD) RNA processing will repair point mutations before mRNA leaves the nucleus.\n",
+      "ground_truth": "Several codons code for the same amino acid.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.36,
+      "response_time": 0.015173912048339844,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: The transfer of DNA between two bacterial cells connected by sex pili is known as\n\nA) specialized transduction.\nB) conjugation.\nC) transformation.\nD) generalized transduction.\n",
+      "ground_truth": "conjugation.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.36,
+      "response_time": 0.02038407325744629,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Which of the following statements best describes what a Barr body is and its significance?\n\nA) It is an inactivated Y chromosome and results in a man being sterile.\nB) It is an inactivated Y chromosome, and the person who has it appears female.\nC) It is an inactivated X chromosome and results in females with half their cells having one X inactivated and the other half of their cells having the other X inactivated.\nD) It is an inactivated X chromosome and results in females who are sterile.\n",
+      "ground_truth": "It is an inactivated X chromosome and results in females with half their cells having one X inactivated and the other half of their cells having the other X inactivated.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.36,
+      "response_time": 0.01362299919128418,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: During the period when life is believed to have begun, the atmosphere on primitive Earth contained abundant amounts of all the following gases EXCEPT\n\nA) oxygen\nB) hydrogen\nC) ammonia\nD) methane\n",
+      "ground_truth": "oxygen",
+      "prediction": "A",
+      "is_correct": false,
+      "confidence": 0.3,
+      "response_time": 0.019403934478759766,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Which of the following is an example of a detritivore?\n\nA) Cactus\nB) Algae\nC) Bat\nD) Fungus\n",
+      "ground_truth": "Fungus",
+      "prediction": "A",
+      "is_correct": false,
+      "confidence": 0.3,
+      "response_time": 0.030223846435546875,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: snRNPs are most closely associated with which of the following?\n\nA) Cell division\nB) Apoptosis\nC) Replication of DNA\nD) RNA processing\n",
+      "ground_truth": "RNA processing",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.36,
+      "response_time": 0.03876209259033203,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Certain populations of finches have long been isolated on the Galapagos Islands off the western coast of South America. Compared with the larger stock population of mainland finches, these separate populations exhibit far greater variation over a wider range of species. The variation among these numerous finch species is the result of\n\nA) convergent evolution\nB) divergent evolution\nC) disruptive selection\nD) stabilizing selection\n",
+      "ground_truth": "divergent evolution",
+      "prediction": "A",
+      "is_correct": false,
+      "confidence": 0.3,
+      "response_time": 0.012613058090209961,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    }
+  ]
+}

@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "HellaSwag",
+    "total_questions": 10,
+    "correct_answers": 10,
+    "accuracy": 1.0,
+    "average_confidence": 0.5343726884570538,
+    "average_response_time": 0.01845695972442627,
+    "total_time": 0.1865851879119873,
+    "per_category_accuracy": {
+      "unknown": 1.0
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T14:31:26.223966"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: A person's hands are seen attempting to solve a rubix cube while the end of a table is shown. the person\n\nWhat happens next? Choose the most likely ending:\n\nA) continues until they finish the cube and then shows his time on the screen.\nB) grips the bar as well as the company logo and camera angles before finally solving the puzzle.\nC) pushes a piece of paper down onto the table and mis-solves the rubix cube in a matter of seconds.\nD) uses a tool to solve a rubix cube while the end of the table is shown.\n",
+      "ground_truth": "continues until they finish the cube and then shows his time on the screen.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.504,
+      "response_time": 0.011677980422973633,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to play punk drums [title] Get some equipment. [step] Get some drumsticks. Any stick that is of a medium weight and feels comfortable to you will do.\n\nWhat happens next? Choose the most likely ending:\n\nA) If you're not used to drumming, you should begin by making a basic list of the drums and their corresponding sizes. If you are new to playing drums in a children's gear, you may need to practice in front of a mirror prior to start the new drumming.\nB) Get a wagon, an empty drum kit, a hammer and some small drums. You will need to have plenty of combination drums.\nC) Some basic gear for ear drum drums will suffice, although there are a couple of things that may be necessary. Other it areas include : [substeps] Drum systems (drums and other street instruments used for driving) stringed instruments you want to learn how to bench press.\nD) A basic drum set including a hi-hat, snare, bass drum, and crash cymbal. Tom-toms and floor toms aren't necessary for basic drumming, but you can add them in as you go along.\n",
+      "ground_truth": "A basic drum set including a hi-hat, snare, bass drum, and crash cymbal. Tom-toms and floor toms aren't necessary for basic drumming, but you can add them in as you go along.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.5138181818181817,
+      "response_time": 0.023427963256835938,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to have fun with your toddler [title] Have fun with your child by playing active games. [step] At this stage, you need to first provide a safe play environment for exploration. Incorporate activities that give your child the opportunity to choose between things.\n\nWhat happens next? Choose the most likely ending:\n\nA) For example, you can play hide and seek or fetch if your child finds that playing fetch is an enjoyable activity. You can also play tag or a blanket catch if your child finds that clicking can help them find something fun.\nB) For example, you can play fetch, call the monkey, fetch, or go and get milk, just like you would with a real game. [substeps] Don't stop for every level or the child may become frightened and just too immature to play.\nC) For example, if your toddler loves the eiffel tower, you could use a real tower. But, if your toddler loves photography, you could try children's shows or even earthenware picture frames.\nD) You should also try to incorporate physical activities such as throwing and catching a ball, chasing after bubbles, skipping and hopping while singing to her favorite song. [substeps] One creative thing you can do is give your child an empty box.\n",
+      "ground_truth": "You should also try to incorporate physical activities such as throwing and catching a ball, chasing after bubbles, skipping and hopping while singing to her favorite song. [substeps] One creative thing you can do is give your child an empty box.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.5219999999999999,
+      "response_time": 0.015032052993774414,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: A basketball player is seen jumping under a basketball ball net and shooting a ball continuously at the net. she\n\nWhat happens next? Choose the most likely ending:\n\nA) continues jumping around the court with the ball throwing it off into the distance and back again.\nB) continues shooting and the video ends with various text across the screen.\nC) continuously throws the ball over the hoop to another child who dives in after it and takes it away.\nD) is seen again in a different shot jumping over a net and shooting a ball straight across it over the net.\n",
+      "ground_truth": "continues shooting and the video ends with various text across the screen.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.5289230769230769,
+      "response_time": 0.011400938034057617,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to prune lilacs [title] Cut fresh flowers in the spring. [step] When lilac flowers reach their peak and are just this side of fading out, cutting them to create indoor bouquets actually helps the plant. Left on their stems, the flowers will die but continue sapping energy that could be spent on new growth.\n\nWhat happens next? Choose the most likely ending:\n\nA) Pruning is also a good way to improve the quality of the new growth. [substeps] To trim daisies from their dormant season, you will need at least 1 to 2 flocking cultivars-the strawberries and cherry-as well as lots of mulch.\nB) Cut back the flowers you plant with your scissors when cutting away branches and roots. [title] Prune deadwood breakcuts.\nC) [substeps] Go for blooms that peak midway up the stem, while above the rough boil. If you have the right palette, you can still produce blooms inexpensively.\nD) So don't feel guilty or wasteful when you go outside with your hand trimmers to take off the prettiest flowers-you're doing just the right thing for your lilac bush or tree. [substeps] Another term for this type of pruning is deadheading.\n",
+      "ground_truth": "So don't feel guilty or wasteful when you go outside with your hand trimmers to take off the prettiest flowers-you're doing just the right thing for your lilac bush or tree. [substeps] Another term for this type of pruning is deadheading.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.5348571428571428,
+      "response_time": 0.01728200912475586,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to ground your child [title] Decide with your partner on the why, when, how, and what of the grounding before you tell your child they are grounded. [step] Do so at a time when you are calm and thinking clearly. [title] Decide if a grounding is an appropriate punishment, the punishment should always reflect the misdemeanour.\n\nWhat happens next? Choose the most likely ending:\n\nA) [step] Ask what consequences pertain to grounding your child. For example, if you are grounded for violent behavior, it is more likely to be a consequence rather than a consequence.\nB) [step] This will help your child come up with a healthy solution, so just let them know what time you want them to be grounded. [title] Ask them what they think they could do if this happens.\nC) [step] Therefore, grounding from social activities is appropriate if your child has broken their curfew, behaved badly when out with friends etc. [title] Set out what you consider a grounding to entail.\nD) [step] Is it fair if the child tells the most rude or inappropriate behaviour. [title] Determine why your child is grounded and in what ways.\n",
+      "ground_truth": "[step] Therefore, grounding from social activities is appropriate if your child has broken their curfew, behaved badly when out with friends etc. [title] Set out what you consider a grounding to entail.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.5399999999999999,
+      "response_time": 0.011620044708251953,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to get soft lips [title] Wear a moisturizing lip balm, as needed. [step] Use a balm with shea or cocoa butter for the best results. Reapply it only when your lips feel dry.\n\nWhat happens next? Choose the most likely ending:\n\nA) [title] Use lip balm with an alpha lip color. [step] Alpha lips make them look a little more natural, while the bold color creates a cute glow.\nB) [substeps] If you use lip balm too often, it can make your lips more chapped. Apply lip balm underneath any other lip products that you use, including lipstick, lip gloss, and lip stain.\nC) You can apply a glossy lip balm to wet lips in the mornings, as it will help moisturize them even in the fall. If your lips are short and matte, seek a more lightweight, scented balm.\nD) If you are looking for a more subtle trend, consider lip balm that contains shea shea or cocoa butter instead. [substeps] For a slightly softer look, use the tooth plumping formula instead of lip balm.\n",
+      "ground_truth": "[substeps] If you use lip balm too often, it can make your lips more chapped. Apply lip balm underneath any other lip products that you use, including lipstick, lip gloss, and lip stain.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.5445,
+      "response_time": 0.037405967712402344,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: A man stands holding a violin and bow discussing its features. the man\n\nWhat happens next? Choose the most likely ending:\n\nA) then raises his from the chair and demonstrates his range of play.\nB) then reaches for a violin and begins to play it.\nC) sets the instrument under his chin and tightens the bow.\nD) hold the violin and goes to a playing venue.\n",
+      "ground_truth": "sets the instrument under his chin and tightens the bow.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.548470588235294,
+      "response_time": 0.019037723541259766,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to become a special education teacher (usa ) [title] Learn your state and employer requirements. [step] Each state and employer will have their own specific requirements that you will need to meet. Although many states and employers share some requirements in common, there may be some important differences.\n\nWhat happens next? Choose the most likely ending:\n\nA) Some states, such as texas and oregon, don't use special education teachers, but just ensure you meet those requirements. [substeps] For example, the eeoc and the government require special education teachers teach english and russian in addition to high school students in texas.\nB) Take some time and look into your these specific requirements when considering becoming a special education teacher. [substeps] Most states and employers will require you to have earned your bachelor's degree.\nC) [substeps] You will need at least certain certifications in your particular state. Be sure to state what you need to know.\nD) [substeps] Identifying that there are some restrictions might help you decide if teaching jobs apply. For example, you might not be required to have a teaching partner to teach your children.\n",
+      "ground_truth": "Take some time and look into your these specific requirements when considering becoming a special education teacher. [substeps] Most states and employers will require you to have earned your bachelor's degree.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.5519999999999999,
+      "response_time": 0.01653575897216797,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to treat both psoriatic arthritis and psoriasis [title] Talk to your doctor. [step] Consulting with your doctor should be your first response if you detect any symptoms of psoriasis or psoriatic arthritis. They will be able to diagnose your condition and advise you as to what actions you should take to manage it.\n\nWhat happens next? Choose the most likely ending:\n\nA) They will also give you a referral to a doctor. When you call your doctor, ask how long the symptoms have been going on.\nB) [substeps] Don't neglect to mention any of your symptoms to your doctor. Your doctor will also want to know about your family history.\nC) [title] Take over-the-counter medications as directed by your doctor. [step] Over-the-counter medications will not speed up your treatment as they are supposed to.\nD) [substeps] Your doctor can write you a prescription for antibiotics. If you are asking for antibiotics, your doctor may want to recommend 1.\n",
+      "ground_truth": "[substeps] Don't neglect to mention any of your symptoms to your doctor. Your doctor will also want to know about your family history.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.5551578947368421,
+      "response_time": 0.021149158477783203,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    }
+  ]
+}

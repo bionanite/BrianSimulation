@@ -429,38 +429,55 @@ class HumanEvalAdapter(BenchmarkAdapter):
     def load_dataset(self) -> List[Dict]:
         """Load HumanEval dataset"""
         if not DATASETS_AVAILABLE:
+            print("⚠️  datasets library not available. Using mock data.")
+            print("   💡 Install datasets library: pip install datasets")
             return self._mock_data()
         
-        try:
-            # Try alternative HumanEval dataset paths
+        # Try multiple dataset paths
+        dataset_paths = [
+            "openai/humaneval",
+            "bigcode/humaneval-python",
+            "THUDM/humaneval-x"  # Alternative path
+        ]
+        
+        dataset = None
+        last_error = None
+        
+        for path in dataset_paths:
             try:
-                dataset = load_dataset("openai/humaneval", split="test")
-            except:
-                # Alternative: use bigcode/humaneval-python
-                try:
-                    dataset = load_dataset("bigcode/humaneval-python", split="test")
-                except:
-                    # Fallback to mock data
-                    raise Exception("HumanEval dataset not available")
-            # Sample 20 items (code generation is slower)
-            sample_size = min(20, len(dataset))
-            indices = np.random.choice(len(dataset), sample_size, replace=False)
-            
-            items = []
-            for idx in indices:
-                item = dataset[int(idx)]
-                items.append({
-                    'task_id': item.get('task_id', ''),
-                    'prompt': item.get('prompt', ''),
-                    'canonical_solution': item.get('canonical_solution', ''),
-                    'test': item.get('test', '')
-                })
-            
-            return items
-            
-        except Exception as e:
-            print(f"⚠️  Error loading HumanEval dataset: {e}")
+                print(f"   Attempting to load: {path}")
+                dataset = load_dataset(path, split="test")
+                print(f"   ✅ Successfully loaded: {path}")
+                break
+            except Exception as e:
+                last_error = e
+                print(f"   ❌ Failed to load {path}: {e}")
+                continue
+        
+        if dataset is None:
+            print(f"⚠️  Error loading HumanEval dataset from all paths")
+            print(f"   Attempted paths: {', '.join(dataset_paths)}")
+            print(f"   DATASETS_AVAILABLE: {DATASETS_AVAILABLE}")
+            print(f"   Last error: {last_error}")
+            print(f"   💡 Install datasets library: pip install datasets")
+            print(f"   💡 Using mock data instead")
             return self._mock_data()
+        
+        # Sample 20 items (code generation is slower)
+        sample_size = min(20, len(dataset))
+        indices = np.random.choice(len(dataset), sample_size, replace=False)
+        
+        items = []
+        for idx in indices:
+            item = dataset[int(idx)]
+            items.append({
+                'task_id': item.get('task_id', ''),
+                'prompt': item.get('prompt', ''),
+                'canonical_solution': item.get('canonical_solution', ''),
+                'test': item.get('test', '')
+            })
+        
+        return items
     
     def _mock_data(self) -> List[Dict]:
         """Generate mock HumanEval data"""
@@ -470,6 +487,60 @@ class HumanEvalAdapter(BenchmarkAdapter):
                 'prompt': 'def add(a, b):\n    """Add two numbers"""\n    return',
                 'canonical_solution': '    return a + b',
                 'test': 'assert add(2, 3) == 5'
+            },
+            {
+                'task_id': 'test_2',
+                'prompt': 'def multiply(x, y):\n    """Multiply two numbers"""\n    return',
+                'canonical_solution': '    return x * y',
+                'test': 'assert multiply(3, 4) == 12'
+            },
+            {
+                'task_id': 'test_3',
+                'prompt': 'def subtract(a, b):\n    """Subtract b from a"""\n    return',
+                'canonical_solution': '    return a - b',
+                'test': 'assert subtract(10, 3) == 7'
+            },
+            {
+                'task_id': 'test_4',
+                'prompt': 'def divide(a, b):\n    """Divide a by b"""\n    return',
+                'canonical_solution': '    return a / b',
+                'test': 'assert divide(12, 3) == 4'
+            },
+            {
+                'task_id': 'test_5',
+                'prompt': 'def power(base, exp):\n    """Raise base to exp"""\n    return',
+                'canonical_solution': '    return base ** exp',
+                'test': 'assert power(2, 3) == 8'
+            },
+            {
+                'task_id': 'test_6',
+                'prompt': 'def max_value(lst):\n    """Return maximum value in list"""\n    return',
+                'canonical_solution': '    return max(lst)',
+                'test': 'assert max_value([1, 5, 3, 9, 2]) == 9'
+            },
+            {
+                'task_id': 'test_7',
+                'prompt': 'def min_value(lst):\n    """Return minimum value in list"""\n    return',
+                'canonical_solution': '    return min(lst)',
+                'test': 'assert min_value([5, 2, 8, 1, 9]) == 1'
+            },
+            {
+                'task_id': 'test_8',
+                'prompt': 'def sum_list(lst):\n    """Sum all values in list"""\n    return',
+                'canonical_solution': '    return sum(lst)',
+                'test': 'assert sum_list([1, 2, 3, 4]) == 10'
+            },
+            {
+                'task_id': 'test_9',
+                'prompt': 'def is_even(n):\n    """Check if number is even"""\n    return',
+                'canonical_solution': '    return n % 2 == 0',
+                'test': 'assert is_even(4) == True'
+            },
+            {
+                'task_id': 'test_10',
+                'prompt': 'def factorial(n):\n    """Calculate factorial"""\n    return',
+                'canonical_solution': '    return 1 if n <= 1 else n * factorial(n - 1)',
+                'test': 'assert factorial(5) == 120'
             }
         ]
     

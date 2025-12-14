@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "MMLU",
+    "total_questions": 10,
+    "correct_answers": 7,
+    "accuracy": 0.7,
+    "average_confidence": 0.29999999999999993,
+    "average_response_time": 0.02094566822052002,
+    "total_time": 0.2185060977935791,
+    "per_category_accuracy": {
+      "high_school_biology": 0.7
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T15:36:25.614242"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: All of the following are examples of hydrolysis EXCEPT\n\nA) conversion of fats to fatty acids and glycerol\nB) conversion of proteins to amino acids\nC) conversion of starch to simple sugars\nD) conversion of pyruvic acid to acetyl CoA\n",
+      "ground_truth": "conversion of pyruvic acid to acetyl CoA",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.019173145294189453,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: A gas phase is generally absent from which of the following biogeochemical cycles?\n\nA) Water\nB) Carbon\nC) Sulfur\nD) Phosphorus\n",
+      "ground_truth": "Phosphorus",
+      "prediction": "A",
+      "is_correct": false,
+      "confidence": 0.3,
+      "response_time": 0.016710996627807617,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: The reaction A + B \u2192 C is catalyzed by enzyme K. If the reaction is in equilibrium, which of the following would allow more product C to be produced?\n\nA) removing some of reactant A\nB) removing some of reactant C\nC) adding more enzyme K\nD) increasing the temperature of the system\n",
+      "ground_truth": "removing some of reactant C",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.018882036209106445,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: The fluidity of the plasma membrane can vary in response to temperature changes. For bacteria and yeast cells, which of the following would be a viable strategy to maintain homeostasis of the plasma membrane in a temperature-varying environment?\n\nA) Increase the concentration of solutes in the cytosol.\nB) Change the ratio of phospholipids with double covalent bonds in their tails to those without double covalent bonds in their tails.\nC) Replace phospholipids with glucose molecules.\nD) Exchange phospholipids from one side of the plasma membrane to the other.\n",
+      "ground_truth": "Change the ratio of phospholipids with double covalent bonds in their tails to those without double covalent bonds in their tails.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.01772785186767578,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Which of the following statements correctly characterizes an autoimmune disease?\n\nA) T cells attack healthy body cells.\nB) An aneurysm is a weakness in the wall of a blood vessel that causes it to balloon out. The vessel can rupture and cause a hemorrhage.\nC) Several factors cause hypertension: smoking, being overweight, lack of physical activity, and too much salt in the diet.\nD) Alzheimer's disease is caused by the buildup of plaque within the brain, causing brain cells to die.\n",
+      "ground_truth": "T cells attack healthy body cells.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.018663883209228516,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: All of the following are modes of asexual reproduction EXCEPT\n\nA) sporulation\nB) fission\nC) budding\nD) meiosis\n",
+      "ground_truth": "meiosis",
+      "prediction": "A",
+      "is_correct": false,
+      "confidence": 0.3,
+      "response_time": 0.016575098037719727,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Which of the changes below following the start codon in an mRNA would most likely have the greatest deleterious effect?\n\nA) a deletion of a single nucleotide\nB) a deletion of a nucleotide triplet\nC) a single nucleotide substitution of the nucleotide occupying the first codon position\nD) a single nucleotide substitution of the nucleotide occupying the third codon position\n",
+      "ground_truth": "a deletion of a single nucleotide",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.022644996643066406,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: In reference to a segment of DNA, which of the following molecules contains the fewest number of nucleotides?\n\nA) a single strand of the original DNA segment\nB) a single strand of the original DNA segment after a point mutation\nC) the primary RNA transcript (before splicing) from the original DNA\nD) a single strand of complementary DNA (cDNA) made from the original DNA\n",
+      "ground_truth": "a single strand of complementary DNA (cDNA) made from the original DNA",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.015982866287231445,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: A scientist carries out a cross between two guinea pigs, both of which have black coats. Black hair coat is dominant over white hair coat. Three quarters of the offspring have black coats, and one quarter have white coats. The genotypes of the parents were most likely\n\nA) bb \u00d7 bb\nB) Bb \u00d7 Bb\nC) Bb \u00d7 bb\nD) BB \u00d7 Bb\n",
+      "ground_truth": "Bb \u00d7 Bb",
+      "prediction": "A",
+      "is_correct": false,
+      "confidence": 0.3,
+      "response_time": 0.02476978302001953,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Regarding meiosis and mitosis, one difference between the two forms of cellular reproduction is that in meiosis\n\nA) there is one round of cell division, whereas in mitosis there are two rounds of cell division\nB) separation of sister chromatids occurs during the second division, whereas in mitosis separation of sister chromatids occurs during the first division\nC) chromosomes are replicated during interphase, whereas in mitosis chromosomes are replicated during prophase\nD) spindle fibers form during prophase, whereas in mitosis the spindle fibers form during metaphase\n",
+      "ground_truth": "separation of sister chromatids occurs during the second division, whereas in mitosis separation of sister chromatids occurs during the first division",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.03832602500915527,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    }
+  ]
+}

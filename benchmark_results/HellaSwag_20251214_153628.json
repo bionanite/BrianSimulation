@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "HellaSwag",
+    "total_questions": 10,
+    "correct_answers": 10,
+    "accuracy": 1.0,
+    "average_confidence": 0.4453105737142115,
+    "average_response_time": 0.022267937660217285,
+    "total_time": 0.2267928123474121,
+    "per_category_accuracy": {
+      "unknown": 1.0
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T15:36:28.102326"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to fake stainless steel appliances [title] Buy some stainless steel contact paper. [step] You can find it at your local home improvement store or online. How much you buy will depend on which appliances you plan on covering.\n\nWhat happens next? Choose the most likely ending:\n\nA) Pure stainless steel contact paper takes around $10 per share. [substeps] Buy your state's \" grants1 \" size or 15 millimetres.\nB) Pre-cut contact paper works perfectly for this project. [substeps] Do not purchase pre-cut contact paper from a home improvement store.\nC) Either use a commercial stainless steel contact paper for your stove, refrigerator, and microwave units. You can also use water mixed with food grade soap or titanium coated with cooking spray.\nD) [substeps] Stainless steel contact paper is plastic-based, so it cannot withstand heat. It is not suitable for surfaces that get hot, such as stovetops.\n",
+      "ground_truth": "[substeps] Stainless steel contact paper is plastic-based, so it cannot withstand heat. It is not suitable for surfaces that get hot, such as stovetops.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.42,
+      "response_time": 0.020775794982910156,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to act like a businessman [title] Purchase a good suit. [step] Nothing is more important than a suit for business, and while it doesn't have to be costly, it should look smart. [substeps] Opt for navy or grey colored suits, as black suits can be associated with funerals.\n\nWhat happens next? Choose the most likely ending:\n\nA) Head to a thrift store, hit a mall, or cash shop and pick up some black designer suits. You don't have to be a barbie doll to jump right in.\nB) Always get your suit tailored by a professional tailor, as this will ensure the suit fits properly and conforms to your body, which in turn makes it look more professional. A proper fit is the most important aspect of purchasing a suit.\nC) Longer tops might be a better option for a business associate, as it has a timeless, sophisticated appearance. Go for fitted and chic suits that can be both casual and professional.\nD) Blue suits can be great if you feel especially self-conscious about funeral clothing or funeral attire. Opt for a suit in a shade other than black (if you feel selfconscious about this, toss a grey suit over your striped suit).\n",
+      "ground_truth": "Always get your suit tailored by a professional tailor, as this will ensure the suit fits properly and conforms to your body, which in turn makes it look more professional. A proper fit is the most important aspect of purchasing a suit.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.42818181818181816,
+      "response_time": 0.019996166229248047,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to strengthen hair [title] Focus on getting plenty of iron in your diet. [step] Hair is made of protein and eating more protein and iron-rich foods will reduce hair loss and improve strength. Add fortified cereal, beef, soybeans, shellfish and dark leafy greens to your diet.\n\nWhat happens next? Choose the most likely ending:\n\nA) [substeps] Consider making fruit smoothies at home, alongside bananas and yogurt. Whole fruits such as blackberries and cherries are good sources of iron.\nB) Because those foods are typically high in iron, make sure to get plenty of them. [substeps] Low quality cereals and mixed cereals may be the culprit.\nC) [substeps] Of course don't over indulge, as the fda indicates that people should eat 3-4 servings of iron in their diet. It is important to do this to fight off your body's slow metabolism and gain weight.\nD) [substeps] Dark leafy greens, like spinach include vitamin c, folate and vitamin a as well. These vitamins help improve your scalp and hair.\n",
+      "ground_truth": "[substeps] Dark leafy greens, like spinach include vitamin c, folate and vitamin a as well. These vitamins help improve your scalp and hair.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.43499999999999994,
+      "response_time": 0.012685060501098633,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: A young man is shown in a gym performing tricks with a jump rope as music plays in the background. He then lays down and begins doing tricks on the floor. the young man\n\nWhat happens next? Choose the most likely ending:\n\nA) does tricks on the floor as he does casual tricks on the jump bar using a jump rope to fly.\nB) jumps all around the floor he just did a jump on while the music plays.\nC) is shown perform several more tricks and smiles while standing out from the floor.\nD) gets up again and does more tricks while standing.\n",
+      "ground_truth": "gets up again and does more tricks while standing.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.4407692307692308,
+      "response_time": 0.016160964965820312,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: A man in a black shirt stands by a glass door. he\n\nWhat happens next? Choose the most likely ending:\n\nA) then begins to rub the frame with a blue rag.\nB) raises his right arm, revealing a tattoo inside.\nC) is playing a flute on a stage.\nD) uses a large brush and white paint on a painting.\n",
+      "ground_truth": "then begins to rub the frame with a blue rag.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.44571428571428573,
+      "response_time": 0.02250814437866211,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to create an abstract wave effect using gimp [title] Start out with a square image. [title] Go to filters] ] render] ] clouds] ] solid noise. [step] Change the detail to 3 or 4.\n\nWhat happens next? Choose the most likely ending:\n\nA) [title] Then crop the image by pressing and releasing the crop button. [step] If your image looks amazing use filters such as the one above.\nB) [title] Click the box beside randomize and turbulent. [step] Don't change anything and click on ok.\nC) This includes gesso by phase 2, sagittarius by phase 3. [title] Now, go to visual mode] ] fill.\nD) [title] Use a square image as the background for your wave and create a wave effect. [step] Go to filters] ] [title] Blur, add details, then change the background.\n",
+      "ground_truth": "[title] Click the box beside randomize and turbulent. [step] Don't change anything and click on ok.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.44999999999999996,
+      "response_time": 0.018363237380981445,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: Three girls are seen standing behind a counter speaking to the camera with one spreading butter around a pan. another\n\nWhat happens next? Choose the most likely ending:\n\nA) girl holds out food to the camera while several others go outside.\nB) woman begins spreading jam in the pan and speaking to the girls.\nC) girl pours pasta across a plate to serve the girls and plays with the girls hair.\nD) mixes ingredients into a bowl with another girl's help and the girls lick the spoon used afterwards.\n",
+      "ground_truth": "mixes ingredients into a bowl with another girl's help and the girls lick the spoon used afterwards.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.45375,
+      "response_time": 0.026591062545776367,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to build your own computer case [title] Decide more or less what you want your computer to look like. [step] Start off by doing some rough sketches followed by more intricate designs. Think about the material you will need to use to achieve your design.\n\nWhat happens next? Choose the most likely ending:\n\nA) Your computer case should make some very large, intricate designs. [title] Repurpose a plastic cd mold of your design to reuse as a case.\nB) Will it be cardboard, wood, metal, acrylic, glass? Plan out what colors you will use, even down to small details such as led lights, and graphics. This will allow you to revise your design and get it to a point you will be happy with.\nC) A quilted laptop case is much more expensive than one made from a durable fabric and hard plastic. Models are usually sold in bundles of one or two hundred dollars, though some expensive computers require more or less money.\nD) [title] Choose the style you want your case to be made from. [step] You can use a pencil and a ruler for accuracy.\n",
+      "ground_truth": "Will it be cardboard, wood, metal, acrylic, glass? Plan out what colors you will use, even down to small details such as led lights, and graphics. This will allow you to revise your design and get it to a point you will be happy with.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.45705882352941174,
+      "response_time": 0.025435924530029297,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to use cold cream to reduce acne [title] Choose a cold cream from the drugstore or make your own. [step] Recipes are available online. Ponds cold cream (the jar with the green lid) is the brand most commonly sold in the us, but some women prefer the off-brands that still contain sodium borate, an ingredient in an earlier formulation of ponds.\n\nWhat happens next? Choose the most likely ending:\n\nA) If in doubt, order ice cream from the fridge that has been previously washed and wiped off. [substeps] You will also want to experiment with flavored cold cream.\nB) [title] Microwave the mixture until it is firm to the touch. [step] Stir the mixture continually if it becomes uncomfortable.\nC) Jergens all purpose face cream is another cold cream commonly available at drugstores. [title] In the morning, use your cold cream to cleanse your face.\nD) [title] Take it during the day when it's cooler outside. [step] Running, hiking, or drinking ice cream at night can help speed the process.\n",
+      "ground_truth": "Jergens all purpose face cream is another cold cream commonly available at drugstores. [title] In the morning, use your cold cream to cleanse your face.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.45999999999999996,
+      "response_time": 0.03118896484375,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: This woman is showing her viewers how to make a chambord royale. first she\n\nWhat happens next? Choose the most likely ending:\n\nA) grinds it and adds salt and baking soda.\nB) opens the bottle of beer that she had made and pours 1 perpatrick into the tiny glass with lime to continue drinking the beer.\nC) fills her shaker up halfway with ice and then she adds vodka and chambord and she puts one ounce of both of them and then she adds a little bit of pineapple juice and cranberry juice.\nD) demonstrates by mixing a mixture in a baking pan.\n",
+      "ground_truth": "fills her shaker up halfway with ice and then she adds vodka and chambord and she puts one ounce of both of them and then she adds a little bit of pineapple juice and cranberry juice.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.4626315789473684,
+      "response_time": 0.028974056243896484,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    }
+  ]
+}

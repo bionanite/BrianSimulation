@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "HellaSwag",
+    "total_questions": 10,
+    "correct_answers": 10,
+    "accuracy": 1.0,
+    "average_confidence": 0.5602484589713692,
+    "average_response_time": 0.04151260852813721,
+    "total_time": 0.417604923248291,
+    "per_category_accuracy": {
+      "unknown": 1.0
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T15:12:58.430409"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to cut salt from pantry foods [title] Look for \" no salt added \" canned vegetables. [step] Canned vegetables are generally high in sodium. To cut the salt from these, buy canned vegetables that say \" no salt added \" on the label.\n\nWhat happens next? Choose the most likely ending:\n\nA) That ensures you are getting the vegetable without added salt. [substeps] If you want a little bit of salt to taste, you can add a small amount of salt when you put the food on the plate.\nB) Focus on reduced sodium, which means diets have been shown to lower the salt content of these vegetables. [substeps] Many bakeware jars are this size and range in price from a few dollars to hundreds of dollars.\nC) Canned vegetables are commonly added to soups and casseroles. About halfway down the grocery aisle, search for \" no salt added \" in your pantry.\nD) Simply place them in a blender, then transfer them to a food processor. Use 1 cup of water for every 2 cups of liquid that you add to the blender.\n",
+      "ground_truth": "That ensures you are getting the vegetable without added salt. [substeps] If you want a little bit of salt to taste, you can add a small amount of salt when you put the food on the plate.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.5399999999999999,
+      "response_time": 0.022030115127563477,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: The girl stops pulling the fiddle across the strings and walks closer to the camera to talk, and then resumes moving the fiddle across the strings. the girl\n\nWhat happens next? Choose the most likely ending:\n\nA) starts playing again and we see the boat sail past.\nB) stops and looks back and grabs the mallet and start to continue playing while using a finger to perform.\nC) then backs up, and turns to show her left side as she moves the fiddle across the violin strings, and then she moves to face forward again and walks closer to the camera and plays some more.\nD) uses a third string and continues to speak up the bellybutton and shaking her hips from side to side as she plays and the audience is enjoying her performance.\n",
+      "ground_truth": "then backs up, and turns to show her left side as she moves the fiddle across the violin strings, and then she moves to face forward again and walks closer to the camera and plays some more.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.5465454545454546,
+      "response_time": 0.02092909812927246,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to get wax off skin [title] Choose the oil you want to use. [step] Any type of oil will remove wax from your skin. The oil seeps under the edge of the wax to make your skin slippery, helping the wax slide right off.\n\nWhat happens next? Choose the most likely ending:\n\nA) These oils should be used to cover blemishes, to moisturize skin, and other imperfections. [title] Buy some of the same oils as you normally use.\nB) Waxing kits often come with a nourishing mineral oil that is meant to be used for removing extra bits of wax. You can also buy a \" wax-off \" formula that contains ingredients that remove wax from skin.\nC) Read the instructions to find out the correct number of oils you can use on your skin. [title] Mix some coconut oil into a bowl of water.\nD) [substeps] Choose a oil that is clear, noncomedogenic, and biostatic. Anything that contains sodium bicarbonate or carb90 will help to make your skin slippery.\n",
+      "ground_truth": "Waxing kits often come with a nourishing mineral oil that is meant to be used for removing extra bits of wax. You can also buy a \" wax-off \" formula that contains ingredients that remove wax from skin.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.5519999999999999,
+      "response_time": 0.0219879150390625,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: A person is pressing buttons on an oven. A girl pours ingredients into a bowl together. she\n\nWhat happens next? Choose the most likely ending:\n\nA) closes the oven door and puts the items into an oven.\nB) mixes the ingredients using a mixer then puts more ingredients in the bowl.\nC) begins frying pasta in a metal pan.\nD) dabs each ingredient in a bowl.\n",
+      "ground_truth": "mixes the ingredients using a mixer then puts more ingredients in the bowl.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.5566153846153845,
+      "response_time": 0.011475086212158203,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to dye someone else's hair at home [title] Check that your model has found the right hair dye. [step] They should be comfortable with it and definitely want a new coloring. A hair color they are not comfortable with could cause them to lose confidence, while a well done color change can also boost their confidence.\n\nWhat happens next? Choose the most likely ending:\n\nA) It's important, however, that your model doesn't dye their hair too badly or her hair will come out too oily and she might talk less to you. [substeps] Be prepared for dyeing your hair too badly.\nB) Sit with them and get a picture of a model that has a hair color they want, if they haven't chosen already. Better yet, go shopping together and make the decision in the store.\nC) [title] Wash your hair and do any necessary routine. [step] If you are working with a model, give them the check up and tell them they are doing a great job getting the hair color right.\nD) In addition, your model will also be able to have her hair transform--from the boring metalhead brunette to golden blonde, for instance--so you have a year to spare. [substeps] You can usually order the hair dye online or visit the craft store.\n",
+      "ground_truth": "Sit with them and get a picture of a model that has a hair color they want, if they haven't chosen already. Better yet, go shopping together and make the decision in the store.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.5605714285714285,
+      "response_time": 0.011713981628417969,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to make a mega chocolate bar [title] Buy five chocolate bars of choice. [step] Line a baking or cookie sheet with wax paper or parchment paper, for a non-stick surface to work on. [title] Melt the first chocolate bar.\n\nWhat happens next? Choose the most likely ending:\n\nA) [step] Either melt in a microwave inside a microwave-safe container or melt over a double boiler. [title] Get the second chocolate bar and place it on the lined cookie sheet.\nB) [step] Place the first chocolate bar so that side of the chocolate is facing you. Pour the melted chocolate into a smaller, microwave safe bowl, then put the second chocolate bar (with the warm/dry chocolate in it) into the bowl with the chocolate bar.\nC) [step] Heat the first chocolate, half melted, in a saucepan at medium heat. To prevent the chocolate from melting, read the recipe above before you begin.\nD) [step] Set it on a baking tray or deep rack. Fill a heavy storage bag with the 2-3 chocolate bars and place them in the freezer for 4-6 days.\n",
+      "ground_truth": "[step] Either melt in a microwave inside a microwave-safe container or melt over a double boiler. [title] Get the second chocolate bar and place it on the lined cookie sheet.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.564,
+      "response_time": 0.01482391357421875,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: Once she has secured herself on the bag, she begins doing a set of crunches by pulling herself up. in\n\nWhat happens next? Choose the most likely ending:\n\nA) the long stripe there is another goal of throwing the ball down the track.\nB) the end, she arrives to the top of the slide and glides down looking off into the distance.\nC) between the crunches, she sits up and makes punches out into the air, before going back down.\nD) between, she explores a few different sponsors before she continuously does crunches.\n",
+      "ground_truth": "between the crunches, she sits up and makes punches out into the air, before going back down.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.5670000000000001,
+      "response_time": 0.010838031768798828,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to loosen tight braids [title] Use the thin handle of a comb to decrease tension at the scalp. [step] Slip the thin end of a long-handled fine-tooth comb underneath cornrows or tight braids to get some relief. You could also use the blunt end of a skewer or the eraser end of a pencil.\n\nWhat happens next? Choose the most likely ending:\n\nA) Gently wiggle the eraser, skewer, or handle to loosen the braid at the scalp. Be careful and take your time so as not to ruin your braids.\nB) [substeps] The handle is not necessary to tighten tight braids. Massaging the scalp using the bristle-tipped tip of the comb may help loosen the braids.\nC) Smooth it out with a washcloth or the tip of a regular hairbrush. [substeps] If you don't have long-handled-toothed combs, get them directly into the front of your hair and gently dry them with a towel.\nD) [substeps] Real combs that use long handles tend to be easier to work with. Rub the comb back and forth gently over your scalp to loosen any knots and loosen them.\n",
+      "ground_truth": "Gently wiggle the eraser, skewer, or handle to loosen the braid at the scalp. Be careful and take your time so as not to ruin your braids.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.5696470588235294,
+      "response_time": 0.020646095275878906,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to apply subtle eyeshadow [title] Pick an eyeshadow shade that is close to your own skin color. [step] If you have pale skin, go for a creamy white or light pink. If you have light brown skin (or a tan), go for a very light gold or brown.\n\nWhat happens next? Choose the most likely ending:\n\nA) If you have dark skin (or a tan), choose an eyeshadow that is at least a little lighter. If you have deep, dark circles under your eyes, you might instead opt for a deeper shade.\nB) [substeps] For medium skin you can try choose a nude eyeshadow. Because you may be striking your eyelid at any time with this shade, just beware: wearing a rose gold eyeshadow brings two shades of color together, both under the eyelid and beyond.\nC) If you have dark skin, choose a warm chocolate color. [substeps] For one of the style options described below, you'll need at least four shades.\nD) Darker shades match well with red and orange eyes. [substeps] A matte shade is best for cocoa-colored eyes.\n",
+      "ground_truth": "If you have dark skin, choose a warm chocolate color. [substeps] For one of the style options described below, you'll need at least four shades.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.572,
+      "response_time": 0.01207590103149414,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: He starts with his first serve where the ball hits the net. Then he takes another ball, bounces it and serves again. the ball\n\nWhat happens next? Choose the most likely ending:\n\nA) returns with a third serve.\nB) bounces again and hits the net multiple times.\nC) goes over the net and falls on the other side of the court.\nD) comes back to him without touching the net.\n",
+      "ground_truth": "goes over the net and falls on the other side of the court.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.5741052631578948,
+      "response_time": 0.26860594749450684,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    }
+  ]
+}

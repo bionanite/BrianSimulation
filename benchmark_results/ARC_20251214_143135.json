@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "ARC",
+    "total_questions": 10,
+    "correct_answers": 8,
+    "accuracy": 0.8,
+    "average_confidence": 0.4480102111721444,
+    "average_response_time": 0.02846040725708008,
+    "total_time": 0.2861490249633789,
+    "per_category_accuracy": {
+      "unknown": 0.8
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T14:31:35.621837"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: An object is attracted to a magnet. When the magnet is moved away from the object, the magnetic force on the object will\n\nA) decrease\nB) increase\nC) remain the same\n",
+      "ground_truth": "decrease",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.45599999999999996,
+      "response_time": 0.011956930160522461,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: The planets in the solar system revolve around the Sun because the Sun is\n\nA) made of hydrogen and helium.\nB) older than other objects in the solar system.\nC) the source of most heat and light energy.\nD) the strongest source of gravity in the solar system.\n",
+      "ground_truth": "the strongest source of gravity in the solar system.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.4610322580645161,
+      "response_time": 0.011168956756591797,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: A man ran on a treadmill for 1,800 seconds. At the end of his run, the treadmill indicated his energy output as 240,000 J. What average power did he generate?\n\nA) 666 W\nB) 133 W\nC) 66 W\nD) 7 W\n",
+      "ground_truth": "133 W",
+      "prediction": "A",
+      "is_correct": false,
+      "confidence": 0.388125,
+      "response_time": 0.013455867767333984,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: A student performed this experiment: Four different types of seeds were planted in identical pots filled with the same kind and amount of soil. The pots were placed in a warm, sunny place and were given the same amount of water each day for a month. Which question about these seeds could be answered at the end of the month?\n\nA) Which seeds grew well in the dark?\nB) Which seeds produced the tallest plants?\nC) Which seeds survived in cold temperatures?\nD) Which seeds needed the least amount of water?\n",
+      "ground_truth": "Which seeds produced the tallest plants?",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.4592727272727272,
+      "response_time": 0.015882015228271484,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: The average temperatures over a four-month period were 31, 24, 18, and 12 degrees Celsius. What is the median temperature for these four months?\n\nA) 15\u00b0C\nB) 21\u00b0C\nC) 27\u00b0C\nD) 33\u00b0C\n",
+      "ground_truth": "21\u00b0C",
+      "prediction": "A",
+      "is_correct": false,
+      "confidence": 0.3864705882352941,
+      "response_time": 0.01714920997619629,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: A science class is studying the states of matter. One group of students freezes 100 grams (g) of water in a cup. Another group of students melts 50 g of ice in a cup. Which of these will most likely occur at the end of the experiment?\n\nA) The temperature of both cups will be the same.\nB) Both samples in the cups will be in the same state.\nC) Both groups will have the same mass with which they started.\nD) The time required for the changes in states of matter will be the same.\n",
+      "ground_truth": "Both groups will have the same mass with which they started.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.45771428571428563,
+      "response_time": 0.02242898941040039,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: All of the following would be helpful in separating a mixture of sand and salt EXCEPT\n\nA) a magnet\nB) a glass cup\nC) a filter paper and funnel\nD) water\n",
+      "ground_truth": "a magnet",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.46199999999999997,
+      "response_time": 0.030889034271240234,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Gas and oil come from deposits of petroleum deep within the earth. What caused these deposits to form?\n\nA) Rocks were dissolved by water.\nB) Lava deposited and then cooled.\nC) The remains of plants and animals were trapped.\nD) Air, water, and minerals combined.\n",
+      "ground_truth": "The remains of plants and animals were trapped.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.4660540540540541,
+      "response_time": 0.12765192985534668,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Several students are entering a bridge building contest that requires using ice cream sticks and glue to construct the strongest bridge possible. The bridges must be 5 in. wide and span a length of 18 in. Which of the following tests is the most accurate way to determine the strongest span design for these bridges?\n\nA) roll toy cars across each bridge until it collapses\nB) place concrete construction blocks on top of each bridge until it collapses\nC) stack coins on both ends of each bridge until it collapses\nD) place D-cell batteries at the center of each bridge until it collapses\n",
+      "ground_truth": "place D-cell batteries at the center of each bridge until it collapses",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.4698947368421052,
+      "response_time": 0.015044212341308594,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Newton's first law of motion states that an object at rest will stay at rest unless acted upon by an outside force. Which activity is an example of this law?\n\nA) A football is kicked off a tee.\nB) A baseball player slides into second base.\nC) A floating stick is carried over a waterfall.\nD) A bicycle travels faster as it goes downhill.\n",
+      "ground_truth": "A football is kicked off a tee.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.47353846153846146,
+      "response_time": 0.018976926803588867,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    }
+  ]
+}

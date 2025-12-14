@@ -130,51 +130,146 @@ class CodeGenerationSystem:
         params = func_info['parameters']
         return_hint = func_info['return_hint']
         docstring = func_info['docstring']
+        docstring_lower = docstring.lower()
         
-        # Simple code generation based on patterns
-        if return_hint == 'sum':
+        # Enhanced code generation with better pattern matching
+        # Check for common patterns in docstring
+        
+        # Pattern 1: Sum/Add operations
+        if return_hint == 'sum' or 'add' in docstring_lower or 'sum' in docstring_lower:
             if len(params) >= 2:
-                return f"    return {params[0]} + {params[1]}"
+                # Check if params are lists/iterables
+                if 'list' in docstring_lower or 'array' in docstring_lower:
+                    return f"    return {params[0]} + {params[1]}"
+                else:
+                    return f"    return {params[0]} + {params[1]}"
             elif len(params) == 1:
-                return f"    return sum({params[0]})"
+                # Check if it's a list sum
+                if 'list' in docstring_lower or 'elements' in docstring_lower:
+                    return f"    return sum({params[0]})"
+                else:
+                    return f"    return {params[0]}"
             else:
                 return "    return 0"
         
-        elif return_hint == 'product':
+        # Pattern 2: Product/Multiply operations
+        elif return_hint == 'product' or 'multiply' in docstring_lower or 'product' in docstring_lower:
             if len(params) >= 2:
                 return f"    return {params[0]} * {params[1]}"
             elif len(params) == 1:
-                # Try to multiply elements
-                return f"    result = 1\n    for x in {params[0]}:\n        result *= x\n    return result"
+                # Check if it's a list product
+                if 'list' in docstring_lower or 'elements' in docstring_lower:
+                    return f"    result = 1\n    for x in {params[0]}:\n        result *= x\n    return result"
+                else:
+                    return f"    return {params[0]}"
             else:
                 return "    return 1"
         
-        elif return_hint == 'list':
-            return f"    return list({params[0] if params else '[]'})"
-        
-        elif return_hint == 'dict':
-            return f"    return dict({params[0] if params else '{{}}'})"
-        
-        elif return_hint == 'string':
+        # Pattern 3: List operations
+        elif return_hint == 'list' or ('list' in docstring_lower and 'return' in docstring_lower):
             if params:
-                return f"    return str({params[0]})"
+                # Check for list comprehension patterns
+                if 'even' in docstring_lower or 'odd' in docstring_lower:
+                    return f"    return [x for x in {params[0]} if x % 2 == 0]"
+                elif 'filter' in docstring_lower:
+                    return f"    return [x for x in {params[0]} if x]"
+                else:
+                    return f"    return list({params[0]})"
+            else:
+                return "    return []"
+        
+        # Pattern 4: Dictionary operations
+        elif return_hint == 'dict' or ('dict' in docstring_lower and 'return' in docstring_lower):
+            if params:
+                return f"    return dict({params[0]})"
+            else:
+                return "    return {}"
+        
+        # Pattern 5: String operations
+        elif return_hint == 'string' or ('string' in docstring_lower and 'return' in docstring_lower):
+            if params:
+                if 'reverse' in docstring_lower or 'backward' in docstring_lower:
+                    return f"    return {params[0]}[::-1]"
+                elif 'upper' in docstring_lower:
+                    return f"    return {params[0]}.upper()"
+                elif 'lower' in docstring_lower:
+                    return f"    return {params[0]}.lower()"
+                else:
+                    return f"    return str({params[0]})"
             else:
                 return '    return ""'
         
-        elif return_hint == 'bool':
+        # Pattern 6: Boolean operations
+        elif return_hint == 'bool' or ('bool' in docstring_lower and 'return' in docstring_lower):
             if params:
-                return f"    return bool({params[0]})"
+                if 'even' in docstring_lower:
+                    return f"    return {params[0]} % 2 == 0"
+                elif 'odd' in docstring_lower:
+                    return f"    return {params[0]} % 2 == 1"
+                elif 'positive' in docstring_lower:
+                    return f"    return {params[0]} > 0"
+                elif 'negative' in docstring_lower:
+                    return f"    return {params[0]} < 0"
+                else:
+                    return f"    return bool({params[0]})"
             else:
                 return "    return True"
         
-        # Default: try to infer from docstring keywords
-        if 'add' in docstring.lower() or 'sum' in docstring.lower():
-            if len(params) >= 2:
-                return f"    return {params[0]} + {params[1]}"
+        # Pattern 7: Maximum/Minimum operations
+        elif 'maximum' in docstring_lower or 'max' in docstring_lower:
+            if params:
+                if 'list' in docstring_lower or len(params) == 1:
+                    return f"    return max({params[0]})"
+                else:
+                    return f"    return max({params[0]}, {params[1] if len(params) > 1 else ''})"
+            else:
+                return "    return 0"
         
-        if 'multiply' in docstring.lower() or 'product' in docstring.lower():
-            if len(params) >= 2:
-                return f"    return {params[0]} * {params[1]}"
+        elif 'minimum' in docstring_lower or 'min' in docstring_lower:
+            if params:
+                if 'list' in docstring_lower or len(params) == 1:
+                    return f"    return min({params[0]})"
+                else:
+                    return f"    return min({params[0]}, {params[1] if len(params) > 1 else ''})"
+            else:
+                return "    return 0"
+        
+        # Pattern 8: Count operations
+        elif 'count' in docstring_lower:
+            if params:
+                if len(params) >= 2:
+                    return f"    return {params[0]}.count({params[1]})"
+                else:
+                    return f"    return len({params[0]})"
+            else:
+                return "    return 0"
+        
+        # Pattern 9: Sort operations
+        elif 'sort' in docstring_lower or 'sorted' in docstring_lower:
+            if params:
+                if 'reverse' in docstring_lower or 'descending' in docstring_lower:
+                    return f"    return sorted({params[0]}, reverse=True)"
+                else:
+                    return f"    return sorted({params[0]})"
+            else:
+                return "    return []"
+        
+        # Use language generation system if available
+        if self.language_generator:
+            try:
+                # Generate code using language generation
+                code_description = f"Python function that {docstring}"
+                generated_text = self.language_generator.generate_text(
+                    prompt=code_description,
+                    max_length=200,
+                    temperature=0.7
+                )
+                # Extract code from generated text
+                code_match = re.search(r'return\s+[^\n]+', generated_text)
+                if code_match:
+                    return f"    {code_match.group(0)}"
+            except Exception:
+                pass
         
         # Use creative problem solving if available
         if self.problem_solver:
@@ -201,9 +296,16 @@ class CodeGenerationSystem:
             except Exception:
                 pass
         
-        # Fallback: simple return statement
+        # Fallback: simple return statement based on parameters
         if params:
-            return f"    return {params[0]}"
+            # If only one param, return it
+            if len(params) == 1:
+                return f"    return {params[0]}"
+            # If multiple params, try addition
+            elif len(params) == 2:
+                return f"    return {params[0]} + {params[1]}"
+            else:
+                return f"    return {params[0]}"
         else:
             return "    pass"
     
@@ -219,6 +321,46 @@ class CodeGenerationSystem:
             return True, None
         except SyntaxError as e:
             return False, str(e)
+    
+    def fix_code_syntax(self, code: str) -> str:
+        """
+        Attempt to fix common syntax errors in code
+        
+        Returns:
+            Fixed code (or original if can't fix)
+        """
+        fixed = code
+        
+        # Fix common issues
+        # 1. Missing colon after if/for/while
+        fixed = re.sub(r'(if|for|while|elif|else)\s+([^:]+)$', r'\1 \2:', fixed, flags=re.MULTILINE)
+        
+        # 2. Missing return statement
+        if 'return' not in fixed and fixed.strip():
+            # Add return if code looks like an expression
+            lines = fixed.strip().split('\n')
+            last_line = lines[-1].strip()
+            if last_line and not last_line.startswith('return') and not last_line.startswith('if') and not last_line.startswith('for'):
+                # Check if it's an expression (not a statement)
+                if not last_line.endswith(':') and '=' not in last_line:
+                    lines[-1] = f"    return {last_line}"
+                    fixed = '\n'.join(lines)
+        
+        # 3. Fix indentation issues
+        lines = fixed.split('\n')
+        fixed_lines = []
+        for line in lines:
+            if line.strip():
+                # Ensure proper indentation (4 spaces)
+                if not line.startswith(' '):
+                    fixed_lines.append('    ' + line.strip())
+                else:
+                    fixed_lines.append(line)
+            else:
+                fixed_lines.append(line)
+        fixed = '\n'.join(fixed_lines)
+        
+        return fixed
     
     def extract_function_body(self, prompt: str) -> str:
         """

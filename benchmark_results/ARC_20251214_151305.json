@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "ARC",
+    "total_questions": 10,
+    "correct_answers": 9,
+    "accuracy": 0.9,
+    "average_confidence": 0.4757793483389109,
+    "average_response_time": 0.02801804542541504,
+    "total_time": 0.2845942974090576,
+    "per_category_accuracy": {
+      "unknown": 0.9
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T15:13:05.291816"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: An astronaut drops a 1.0 kg object and a 5.0 kg object on the Moon. Both objects fall a total distance of 2.0 m vertically. Which of the following best describes the objects after they have fallen a distance of 1.0 m?\n\nA) They have each lost kinetic energy.\nB) They have each gained the same amount of potential energy.\nC) They have each lost the same amount of potential energy.\nD) They have each gained one-half of their maximum kinetic energy.\n",
+      "ground_truth": "They have each gained one-half of their maximum kinetic energy.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.46799999999999997,
+      "response_time": 0.012745857238769531,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Rowing a boat forward requires a force that will overcome friction from water and wind. Which factor most helps overcome the forces working against the boat?\n\nA) the length of the boat\nB) the height of sides of the boat\nC) the weight of the rowers in the boat\nD) the number of people rowing in the boat\n",
+      "ground_truth": "the number of people rowing in the boat",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.4726451612903225,
+      "response_time": 0.02298712730407715,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Which law was Galileo Galilei responsible for describing?\n\nA) Nature of Matter\nB) Three Laws of Motion\nC) Law of Independent Assortment\nD) Relative Motion within the Solar System\n",
+      "ground_truth": "Relative Motion within the Solar System",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.4769999999999999,
+      "response_time": 0.0245211124420166,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Which is caused by the tilt of Earth on its axis?\n\nA) day and night\nB) stormy weather\nC) high and low tide\nD) season changes\n",
+      "ground_truth": "season changes",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.481090909090909,
+      "response_time": 0.014667987823486328,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: A light-year is the measure of how far light can travel in one year. How long has the light from a star 125,000 light-years away been traveling to reach Earth?\n\nA) 12.5 years\nB) 125 years\nC) 125,000 years\nD) 125,000,000 years\n",
+      "ground_truth": "125,000 years",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.4849411764705882,
+      "response_time": 0.0218198299407959,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Energy from the Sun enters ecosystems through the transformation of light to chemical energy. This energy is available to different organisms based on the trophic level in which the organisms exist. Which statement best describes the availability of energy for organisms in different trophic levels?\n\nA) Available energy increases as trophic levels increase.\nB) Available energy decreases as trophic levels increase.\nC) Primary consumers have the least energy available.\nD) Tertiary consumers have the most energy available.\n",
+      "ground_truth": "Available energy decreases as trophic levels increase.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.48857142857142855,
+      "response_time": 0.03272390365600586,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Using solar panels to convert solar energy into electricity may help slow the depletion of which resource?\n\nA) sunlight\nB) water\nC) coal\nD) copper\n",
+      "ground_truth": "coal",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.49199999999999994,
+      "response_time": 0.040426015853881836,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: When cold temperatures are produced in a chemical reaction, the reaction is known as\n\nA) exothermic.\nB) endothermic.\nC) suspension.\nD) vaporization.\n",
+      "ground_truth": "endothermic.",
+      "prediction": "A",
+      "is_correct": false,
+      "confidence": 0.4127027027027027,
+      "response_time": 0.05452299118041992,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: In some U.S. national parks, black bears have lost their fear of humans and look for food near campsites along the roadside. This is an example of an animal\n\nA) becoming an herbivore.\nB) using its inherited traits.\nC) finding a new ecosystem.\nD) learning a new behavior.\n",
+      "ground_truth": "learning a new behavior.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.4888421052631579,
+      "response_time": 0.038510799407958984,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: A student is investigating the temperature at which evaporation takes place. Which statement best shows that evaporation has taken place?\n\nA) Rain falls from the sky.\nB) The sky is clear of clouds.\nC) Water droplets appear on the grass.\nD) Water droplets disappear from the grass.\n",
+      "ground_truth": "Water droplets disappear from the grass.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.49199999999999994,
+      "response_time": 0.01725482940673828,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    }
+  ]
+}

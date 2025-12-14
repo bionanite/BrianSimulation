@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "MMLU",
+    "total_questions": 10,
+    "correct_answers": 8,
+    "accuracy": 0.8,
+    "average_confidence": 0.3479999999999999,
+    "average_response_time": 0.024079394340515137,
+    "total_time": 0.24439668655395508,
+    "per_category_accuracy": {
+      "high_school_biology": 0.8
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T15:12:53.814674"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Refer to question 15 for details on the squirrel population. Which of the following conditions is required to keep this population in Hardy-Weinberg equilibrium?\n\nA) Random mating\nB) Genetic drift\nC) Mutation\nD) Gene flow\n",
+      "ground_truth": "Random mating",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.36,
+      "response_time": 0.027508974075317383,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Which of the following best summarizes the process of allopatric speciation?\n\nA) differential changes in allele frequencies \u2192 reproductive isolation \u2192 reproductive barriers \u2192 new species\nB) catastrophic event \u2192 reproductive isolation \u2192 reproductive barriers \u2192 new species\nC) reproductive isolation \u2192 differential changes in allele frequencies \u2192 reproductive barriers \u2192 new species\nD) geographic isolation \u2192 reproductive isolation \u2192 differential changes in allele frequencies \u2192 reproductive barriers \u2192 new species\n",
+      "ground_truth": "geographic isolation \u2192 reproductive isolation \u2192 differential changes in allele frequencies \u2192 reproductive barriers \u2192 new species",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.36,
+      "response_time": 0.02165985107421875,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: If a forest of fir, birch, and white spruce trees was devastated by fire, which of the following would most likely happen?\n\nA) Only animal life would continue to inhabit the region.\nB) Secondary succession would begin to occur.\nC) Only tough grasses would appear.\nD) The number of species would stabilize as the ecosystem matures.\n",
+      "ground_truth": "Secondary succession would begin to occur.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.36,
+      "response_time": 0.015903949737548828,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: This biome contains plants whose roots cannot go deep due to the presence of a permafrost.\n\nA) Desert\nB) Tundra\nC) Taiga\nD) Deciduous forests\n",
+      "ground_truth": "Taiga",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.36,
+      "response_time": 0.022596120834350586,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: The fluidity of the plasma membrane can vary in response to temperature changes. For bacteria and yeast cells, which of the following would be a viable strategy to maintain homeostasis of the plasma membrane in a temperature-varying environment?\n\nA) Increase the concentration of solutes in the cytosol.\nB) Change the ratio of phospholipids with double covalent bonds in their tails to those without double covalent bonds in their tails.\nC) Replace phospholipids with glucose molecules.\nD) Exchange phospholipids from one side of the plasma membrane to the other.\n",
+      "ground_truth": "Change the ratio of phospholipids with double covalent bonds in their tails to those without double covalent bonds in their tails.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.36,
+      "response_time": 0.026774168014526367,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: An animal cell that is permeable to water but not salts has an internal NaCl concentration of 10%. If placed in freshwater the cell will\n\nA) plasmolyze\nB) swell and eventually lyse\nC) endocytose water into a large central vacuole\nD) shrivel\n",
+      "ground_truth": "swell and eventually lyse",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.36,
+      "response_time": 0.0207669734954834,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Warning coloration adopted by animals that possess a chemical defense mechanism.\n\nA) Aposomatic coloration\nB) Batesian mimicry\nC) Deceptive markings\nD) Cryptic coloration\n",
+      "ground_truth": "Aposomatic coloration",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.36,
+      "response_time": 0.021150827407836914,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Water and minerals that reach the xylem in the center of a plant root must first\n\nA) move through neighboring phloem vessels\nB) cross open stomata in the root epidermis\nC) cross the endodermis of the root cortex\nD) pass through the pith of the root cap\n",
+      "ground_truth": "cross the endodermis of the root cortex",
+      "prediction": "A",
+      "is_correct": false,
+      "confidence": 0.3,
+      "response_time": 0.02692699432373047,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: This biome has cold winters and is known for its pine forests.\n\nA) Desert\nB) Tundra\nC) Taiga\nD) Deciduous forests\n",
+      "ground_truth": "Deciduous forests",
+      "prediction": "A",
+      "is_correct": false,
+      "confidence": 0.3,
+      "response_time": 0.039285898208618164,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: When water evaporates from the surface of a pond, what happens to the remaining liquid water?\n\nA) The surface water cools.\nB) The surface water warms.\nC) The surface water temperature remains unchanged.\nD) The pH of the remaining water decreases.\n",
+      "ground_truth": "The surface water cools.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.36,
+      "response_time": 0.018220186233520508,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    }
+  ]
+}

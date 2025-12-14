@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "ARC",
+    "total_questions": 10,
+    "correct_answers": 8,
+    "accuracy": 0.8,
+    "average_confidence": 0.39775162746442216,
+    "average_response_time": 0.022519707679748535,
+    "total_time": 0.2277371883392334,
+    "per_category_accuracy": {
+      "unknown": 0.8
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T15:31:24.297795"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: A lab group investigates the growth rates of four plants grown near a classroom window. The group's conclusion is most strengthened by similar data from which of these sources?\n\nA) other lab groups investigating the same question\nB) average growth rates of the plants published in a book\nC) an experiment of different plants in the same environment\nD) a new experiment done with larger plants\n",
+      "ground_truth": "other lab groups investigating the same question",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.39620689655172414,
+      "response_time": 0.014223098754882812,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: A dialysis machine can be used to remove waste from a patient's blood. Which human body system works in a similar way?\n\nA) reproductive\nB) excretory\nC) digestive\nD) endocrine\n",
+      "ground_truth": "2",
+      "prediction": "A",
+      "is_correct": false,
+      "confidence": 0.39999999999999997,
+      "response_time": 0.021392107009887695,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Hydrogen has an atomic mass of 1, and oxygen has an atomic mass of 16. When a water molecule forms, two hydrogen atoms combine with one oxygen atom. What is the mass of a water molecule?\n\nA) 14\nB) 16\nC) 17\nD) 18\n",
+      "ground_truth": "18",
+      "prediction": "A",
+      "is_correct": false,
+      "confidence": 0.3938709677419355,
+      "response_time": 0.01763296127319336,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: On December 12th a snowstorm in a city produced 20 centimeters of snowfall. When can this event be used to describe the climate of the region?\n\nA) if the snowfall set a record\nB) if the snowfall was unusual for the area\nC) if the snowfall was consistent with weather in December over time\nD) if the snowfall remained on the ground for longer than one month\n",
+      "ground_truth": "if the snowfall was consistent with weather in December over time",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.388125,
+      "response_time": 0.023356914520263672,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Scott filled a tray with juice and put it in a freezer. The next day, Scott opened the freezer. How did the juice most likely change?\n\nA) It condensed.\nB) It evaporated.\nC) It became a gas.\nD) It became a solid.\n",
+      "ground_truth": "It became a solid.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.39181818181818184,
+      "response_time": 0.01893925666809082,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: The radiant energy that comes to Earth from the Sun is\n\nA) only one wavelength that we see as yellow.\nB) a narrow band of wavelengths that is entirely visible light.\nC) mostly long wavelengths that become heat energy.\nD) a range of many wavelengths from long to very short.\n",
+      "ground_truth": "a range of many wavelengths from long to very short.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3952941176470588,
+      "response_time": 0.03354501724243164,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Which is most similar to the way a glacier makes a valley?\n\nA) A bulldozer pushes a pile of dirt.\nB) A shoe makes a footprint in soil.\nC) A tree root splits a rock in half.\nD) A drill makes a hole in a board.\n",
+      "ground_truth": "A bulldozer pushes a pile of dirt.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3985714285714286,
+      "response_time": 0.015232086181640625,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Which substance, when mixed with water, will produce the best conductor of electricity?\n\nA) table salt\nB) granulated sugar\nC) carbon dioxide\nD) motor oil\n",
+      "ground_truth": "table salt",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.4016666666666666,
+      "response_time": 0.017882823944091797,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: A lake that received runoff from surrounding farmland had a healthy fish population. Several years ago, a new type of pesticide was used to treat crops. As runoff entered the lake, it killed an insect that was a primary food source for fish. Which will most likely occur if farmers in the area stop using the pesticide?\n\nA) The population of fish will increase.\nB) The insects will become more resistant to the pesticide.\nC) The lake will be unable to support life.\nD) The fish will find another food source.\n",
+      "ground_truth": "The population of fish will increase.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.40459459459459457,
+      "response_time": 0.033487796783447266,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Some scientists predict that as greenhouse gases change the climate of Earth, the number and strength of hurricanes will increase. In order for this to occur, the climate change would have to affect Earth by changing the\n\nA) depths of the oceans.\nB) speed of currents in the oceans.\nC) chemical compositions of the oceans.\nD) amount of dissolved oxygen in the oceans.\n",
+      "ground_truth": "speed of currents in the oceans.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.4073684210526316,
+      "response_time": 0.029505014419555664,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    }
+  ]
+}

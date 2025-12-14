@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "HumanEval",
+    "total_questions": 10,
+    "correct_answers": 2,
+    "accuracy": 0.2,
+    "average_confidence": 0.797578541457912,
+    "average_response_time": 0.0280320405960083,
+    "total_time": 0.2914390563964844,
+    "per_category_accuracy": {
+      "unknown": 0.2
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T15:31:25.153129"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "HumanEval",
+      "task_name": "unknown",
+      "question": "Complete this Python function:\n\ndef add(a, b):\n    \"\"\"Add two numbers\"\"\"\n    return",
+      "ground_truth": "    return a + b",
+      "prediction": "return a + b",
+      "is_correct": true,
+      "confidence": 0.6971879302248358,
+      "response_time": 0.020852088928222656,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HumanEval",
+      "task_name": "unknown",
+      "question": "Complete this Python function:\n\ndef multiply(x, y):\n    \"\"\"Multiply two numbers\"\"\"\n    return",
+      "ground_truth": "    return x * y",
+      "prediction": "return x * y",
+      "is_correct": true,
+      "confidence": 0.846682445321232,
+      "response_time": 0.012188911437988281,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HumanEval",
+      "task_name": "unknown",
+      "question": "Complete this Python function:\n\ndef subtract(a, b):\n    \"\"\"Subtract b from a\"\"\"\n    return",
+      "ground_truth": "    return a - b",
+      "prediction": "return a",
+      "is_correct": false,
+      "confidence": 0.8970675833396613,
+      "response_time": 0.02813410758972168,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HumanEval",
+      "task_name": "unknown",
+      "question": "Complete this Python function:\n\ndef divide(a, b):\n    \"\"\"Divide a by b\"\"\"\n    return",
+      "ground_truth": "    return a / b",
+      "prediction": "return a",
+      "is_correct": false,
+      "confidence": 0.8473517833262681,
+      "response_time": 0.014407873153686523,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HumanEval",
+      "task_name": "unknown",
+      "question": "Complete this Python function:\n\ndef power(base, exp):\n    \"\"\"Raise base to exp\"\"\"\n    return",
+      "ground_truth": "    return base ** exp",
+      "prediction": "return base",
+      "is_correct": false,
+      "confidence": 0.8169728499934077,
+      "response_time": 0.035945892333984375,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HumanEval",
+      "task_name": "unknown",
+      "question": "Complete this Python function:\n\ndef max_value(lst):\n    \"\"\"Return maximum value in list\"\"\"\n    return",
+      "ground_truth": "    return max(lst)",
+      "prediction": "return list(lst)",
+      "is_correct": false,
+      "confidence": 0.7965465499952434,
+      "response_time": 0.03762674331665039,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HumanEval",
+      "task_name": "unknown",
+      "question": "Complete this Python function:\n\ndef min_value(lst):\n    \"\"\"Return minimum value in list\"\"\"\n    return",
+      "ground_truth": "    return min(lst)",
+      "prediction": "return list(lst)",
+      "is_correct": false,
+      "confidence": 0.7822608357095292,
+      "response_time": 0.02461075782775879,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HumanEval",
+      "task_name": "unknown",
+      "question": "Complete this Python function:\n\ndef sum_list(lst):\n    \"\"\"Sum all values in list\"\"\"\n    return",
+      "ground_truth": "    return sum(lst)",
+      "prediction": "return lst",
+      "is_correct": false,
+      "confidence": 0.7718781166680156,
+      "response_time": 0.03513908386230469,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HumanEval",
+      "task_name": "unknown",
+      "question": "Complete this Python function:\n\ndef is_even(n):\n    \"\"\"Check if number is even\"\"\"\n    return",
+      "ground_truth": "    return n % 2 == 0",
+      "prediction": "return n",
+      "is_correct": false,
+      "confidence": 0.7636395166600743,
+      "response_time": 0.04342508316040039,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HumanEval",
+      "task_name": "unknown",
+      "question": "Complete this Python function:\n\ndef factorial(n):\n    \"\"\"Calculate factorial\"\"\"\n    return",
+      "ground_truth": "    return 1 if n <= 1 else n * factorial(n - 1)",
+      "prediction": "return n",
+      "is_correct": false,
+      "confidence": 0.7561978033408523,
+      "response_time": 0.027989864349365234,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    }
+  ]
+}

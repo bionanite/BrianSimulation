@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "MMLU",
+    "total_questions": 10,
+    "correct_answers": 8,
+    "accuracy": 0.8,
+    "average_confidence": 0.29999999999999993,
+    "average_response_time": 0.02813413143157959,
+    "total_time": 0.28748488426208496,
+    "per_category_accuracy": {
+      "high_school_biology": 0.8
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T15:31:11.263652"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Which of the following is not an observation or inference on which natural selection is based?\n\nA) There is heritable variation among individuals.\nB) Poorly adapted individuals never produce offspring.\nC) Species produce more offspring than the environment can support.\nD) Individuals whose characteristics are best suited to the environment generally leave more offspring than those whose characteristics are less suited.\n",
+      "ground_truth": "Poorly adapted individuals never produce offspring.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.026781320571899414,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Villi and microvilli are present in the small intestine and aid in reabsorption by\n\nA) increasing the surface area of the small intestine\nB) decreasing the surface area of the small intestine\nC) making the small intestine more hydrophilic\nD) making the small intestine more hydrophobic\n",
+      "ground_truth": "increasing the surface area of the small intestine",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.03897380828857422,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Which of the following statements about cellular respiration is correct?\n\nA) Most CO2 produced during cellular respiration is released from glycolysis.\nB) Protons are pumped through ATP synthase by active transport.\nC) The final electron acceptor of the electron transport chain is NAD+.\nD) ATP is formed because an endergonic reaction is coupled with an exergonic reaction.\n",
+      "ground_truth": "ATP is formed because an endergonic reaction is coupled with an exergonic reaction.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.0161740779876709,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: The transfer of DNA between two bacterial cells connected by sex pili is known as\n\nA) specialized transduction.\nB) conjugation.\nC) transformation.\nD) generalized transduction.\n",
+      "ground_truth": "conjugation.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.023669004440307617,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Regarding meiosis and mitosis, one difference between the two forms of cellular reproduction is that in meiosis\n\nA) there is one round of cell division, whereas in mitosis there are two rounds of cell division\nB) separation of sister chromatids occurs during the second division, whereas in mitosis separation of sister chromatids occurs during the first division\nC) chromosomes are replicated during interphase, whereas in mitosis chromosomes are replicated during prophase\nD) spindle fibers form during prophase, whereas in mitosis the spindle fibers form during metaphase\n",
+      "ground_truth": "separation of sister chromatids occurs during the second division, whereas in mitosis separation of sister chromatids occurs during the first division",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.0301058292388916,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: All of the following are examples of connective tissue EXCEPT\n\nA) ligaments\nB) muscle\nC) blood\nD) cartilage\n",
+      "ground_truth": "muscle",
+      "prediction": "A",
+      "is_correct": false,
+      "confidence": 0.3,
+      "response_time": 0.03574228286743164,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Heterozygote advantage should be most closely linked to which of the following?\n\nA) sexual selection\nB) stabilizing selection\nC) random selection\nD) directional selection\n",
+      "ground_truth": "stabilizing selection",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.022656917572021484,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Chemical substances released by organisms that elicit a physiological or behavioral response in other members of the same species are known as\n\nA) auxins\nB) hormones\nC) pheromones\nD) enzymes\n",
+      "ground_truth": "pheromones",
+      "prediction": "A",
+      "is_correct": false,
+      "confidence": 0.3,
+      "response_time": 0.03106999397277832,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: All of the following are stimulated by the sympathetic nervous system EXCEPT\n\nA) dilation of the pupil of the eye\nB) constriction of blood vessels\nC) increased secretion of the sweat glands\nD) increased peristalsis in the gastrointestinal tract\n",
+      "ground_truth": "increased peristalsis in the gastrointestinal tract",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.025532960891723633,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Once a plasmid has incorporated specific genes, such as the gene coding for the antibiotic ampicillin, into its genome, the plasmid may be cloned by\n\nA) inserting it into a virus to generate multiple copies\nB) treating it with a restriction enzyme in order to cut the molecule into small pieces\nC) inserting it into a suitable bacterium in order to produce multiple copies\nD) running it on a gel electrophoresis in order to determine the size of the gene of interest\n",
+      "ground_truth": "inserting it into a suitable bacterium in order to produce multiple copies",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.03063511848449707,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    }
+  ]
+}

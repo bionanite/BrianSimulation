@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "MMLU",
+    "total_questions": 10,
+    "correct_answers": 9,
+    "accuracy": 0.9,
+    "average_confidence": 0.29999999999999993,
+    "average_response_time": 0.02228357791900635,
+    "total_time": 0.2314319610595703,
+    "per_category_accuracy": {
+      "high_school_biology": 0.9
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T15:24:24.967837"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Which of the following would most likely describe the fate of a vesicle formed as a result of phagocytosis?\n\nA) The vesicle merges with a mitochondrion.\nB) The vesicle merges with a lysosome.\nC) The vesicle is shuttled to the nucleus, and its contents become part of the nucleolus.\nD) The vesicle releases its contents to the cytoplasm to be digested.\n",
+      "ground_truth": "The vesicle merges with a lysosome.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.025804996490478516,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Crossing-over occurs during which of the following phases in meiosis?\n\nA) Prophase I\nB) Metaphase I\nC) Anaphase I\nD) Prophase II\n",
+      "ground_truth": "Prophase I",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.021416902542114258,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: All of the following support the endosymbiotic theory that ancestors of mitochondria and chloroplasts were once independent, free-living prokaryotes EXCEPT:\n\nA) Mitochondria and chloroplasts divide independently of the eukaryotic host cell by a process similar to binary fission.\nB) Mitochondria and chloroplasts have ribosomes that more closely resemble those of bacteria than of eukaryotic cells.\nC) Mitochondria and chloroplasts function independently from the eukaryotic host cell.\nD) Mitochondria, chloroplasts, and bacteria have a single, circular chromosome without histones or proteins.\n",
+      "ground_truth": "Mitochondria and chloroplasts function independently from the eukaryotic host cell.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.01877307891845703,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: A population undergoes a shift in which those who are really tall and those who are really short decrease in relative frequency compared to those of medium size, due to a change in the availability of resources. This is an example of\n\nA) directional selection.\nB) stabilizing selection.\nC) disruptive selection.\nD) sympatric speciation.\n",
+      "ground_truth": "stabilizing selection.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.01398777961730957,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: A researcher grows a population of ferns in her laboratory. She notices, after a few generations, a new variant that has a distinct phenotype. When she tries to breed the original phenotype with the new one, no offspring are produced. When she breeds the new variants, however, offspring that look like the new variant result. What originally caused the change in the variant?\n\nA) Karyotyping\nB) Balance polymorphism\nC) Mutation\nD) Polyploidy\n",
+      "ground_truth": "Mutation",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.017012834548950195,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: An organism exposed to wild temperature fluctuations shows very little, if any, change in its metabolic rate. This organism is most probably a\n\nA) ectotherm.\nB) endotherm.\nC) thermophyle.\nD) ascospore.\n",
+      "ground_truth": "endotherm.",
+      "prediction": "A",
+      "is_correct": false,
+      "confidence": 0.3,
+      "response_time": 0.03144693374633789,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Which of the following statements best explains why Mendel's principle of segregation was deemed a law?\n\nA) Mendel's work with pea plants and his conclusions have been described in many sources.\nB) The patterns of trait inheritance observed in pea plants were repeatedly demonstrated in other eukaryotes.\nC) Chromosomes were found to contain the genetic information for traits.\nD) The discovery of the structure of D N A supported Mendel's observations and laws.\n",
+      "ground_truth": "The patterns of trait inheritance observed in pea plants were repeatedly demonstrated in other eukaryotes.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.032070159912109375,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: The average birth weight for human babies is about 3 kg. Which of the following terms best describes this?\n\nA) artificial selection\nB) directional selection\nC) stabilizing selection\nD) disruptive selection\n",
+      "ground_truth": "stabilizing selection",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.02036309242248535,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Which of the following is correct about vaccination?\n\nA) It increases the number of different receptors that recognize a particular pathogen.\nB) It increases the number of different macrophages specific to the antigen.\nC) It increases the number of epitopes that the immune system can recognize.\nD) It increases the number of lymphocytes with receptors that can recognize and bind to the antigen.\n",
+      "ground_truth": "It increases the number of lymphocytes with receptors that can recognize and bind to the antigen.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.01900506019592285,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: The structure of ATP synthase in the plasma membranes of bacteria is nearly identical to that in the mitochondria and chloroplasts of eukaryotic cells. This similarity best supports which of the following hypotheses?\n\nA) Eukaryotic and prokaryotic cells share a common ancestor.\nB) Mitochondria are derived from ancient aerobic bacteria, and chloroplasts are derived from ancient photosynthetic bacteria.\nC) The similarity of ATP synthase in bacteria, mitochondria, and chloroplasts is an example of convergent evolution.\nD) Mitochondria and chloroplasts escaped from eukaryotic cells and formed aerobic and photosynthetic prokaryotes.\n",
+      "ground_truth": "Mitochondria are derived from ancient aerobic bacteria, and chloroplasts are derived from ancient photosynthetic bacteria.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.022954940795898438,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    }
+  ]
+}

@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "HellaSwag",
+    "total_questions": 10,
+    "correct_answers": 10,
+    "accuracy": 1.0,
+    "average_confidence": 0.488436857904737,
+    "average_response_time": 0.0223238468170166,
+    "total_time": 0.22587084770202637,
+    "per_category_accuracy": {
+      "unknown": 1.0
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T15:24:27.896640"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: A camera pans all around a frozen lake with trees and leads into a group of people fishing around a hole. the men\n\nWhat happens next? Choose the most likely ending:\n\nA) continue swimming around the hole and end by pulling themselves out with their gear.\nB) watch several more clips of people fishing and a close up of the pit into the lake.\nC) continue to pull the fish out of the hole and reel it up and water flies into the camera when a fish tries to drink them.\nD) continue to sit around the holes with a pole speaking to one another and wandering around the ice.\n",
+      "ground_truth": "continue to sit around the holes with a pole speaking to one another and wandering around the ice.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.48,
+      "response_time": 0.014913082122802734,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to choose the best hair products for fine hair [title] Wash and condition fine hair with a hair thickening shampoo and conditioner. [step] Look for products that claim to add thickness, volume or body to fine or thin hair. [title] Choose styling products that are specifically designed for fine hair.\n\nWhat happens next? Choose the most likely ending:\n\nA) [step] A lot of these don't end up evenly distributed throughout coarse hair. Picking out products that say \" heat protection \" on the package will give you a great deal of easier hair to work with.\nB) [step] Adding volume will help you to grow more effectively without looking boyish. [substeps] Ask your hair stylist about different styling products so you can discuss the products with them.\nC) [step] At the very least, be sure to use a hair thinning shampoo and conditioner that will not cause your hair to break down as you work with your hair. [substeps] Products with ingredients such as curl enhancing or deep conditioning can help create weak-over roots if you've already tried several products.\nD) [step] There are many fine hair products on the market, including mousses, gels, root lifts, sprays and serums. Look for tag words such as \" volumizing, \" \" thickening, \" \" bodifying \" and \" texturizing.\n",
+      "ground_truth": "[step] There are many fine hair products on the market, including mousses, gels, root lifts, sprays and serums. Look for tag words such as \" volumizing, \" \" thickening, \" \" bodifying \" and \" texturizing.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.48272727272727267,
+      "response_time": 0.025347232818603516,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to cook vegetarian chili [title] Take a large, heavy bottomed pot, add 2 tbsp olive oil, cumin, chili powder, oregano, and cayenne pepper. [title] Saut\u00e9 over medium heat for about 1 minute, stirring to toast the spices. [title] Add the soya crumble, tofu or tvp, and stir well to coat.\n\nWhat happens next? Choose the most likely ending:\n\nA) [title] Add the garlic and chopped onion, stir, and saut\u00e9, adding up to two more tablespoons of olive oil if needed. [title] Cook, stirring occasionally for about three minutes, making sure the mixture does not scorch.\nB) [title] There you go! [step] Remove from the pan and let cool. [title] Heat vegetable oil in a large pot over medium low to medium heat.\nC) [title] Drop in the precooked chili powder. [title] Pour the tomato puree from the skillet and stir or shake well.\nD) [title] Add soy sauce (non-flavored). [title] Remove from heat, cover to simmer and simmer for 30 to 60 min.\n",
+      "ground_truth": "[title] Add the garlic and chopped onion, stir, and saut\u00e9, adding up to two more tablespoons of olive oil if needed. [title] Cook, stirring occasionally for about three minutes, making sure the mixture does not scorch.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.485,
+      "response_time": 0.021595001220703125,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to choose flowers for a spring wedding [title] Opt for pastel and light colored flowers for a subtle color scheme. [step] Many spring flowers come in light, pastel shades that can blend in with a variety of color schemes. If you prefer a somewhat subtle color scheme using light pastels, there are many options.\n\nWhat happens next? Choose the most likely ending:\n\nA) [title] Opt for a variety of colors for the summer. [step] You can do any traditional wedding look with the summer flowers, and it's totally your choice.\nB) Dark greens, reds, purples, yellows, or peaches are all good options. [title] Choose bright and vibrant flowers for a warmer palette.\nC) [substeps] Lilacs, sweet peas, and peonies all come in light shades of pink and purple. They can easily add to a pastel color scheme.\nD) [substeps] Neutral colors such as beige and maroon are good choices to offset floral details. Lighter colors like gold, blue, and yellow are the best choices for a spring wedding.\n",
+      "ground_truth": "[substeps] Lilacs, sweet peas, and peonies all come in light shades of pink and purple. They can easily add to a pastel color scheme.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.4869230769230769,
+      "response_time": 0.023402929306030273,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to cook lasagna in your dishwasher [title] Cut three 24-inch x 12-inch sheets of aluminum foil and lie flat. [title] Take first lasagna sheet and place flat it in the center of the aluminum foil. [title] Spread a thick layer of pasta sauce over the sheet, covering the entire surface.\n\nWhat happens next? Choose the most likely ending:\n\nA) [title] Heat up the first pasta sauce with a griddle or oven close to medium heat. [title] Brush the remaining bottom layer of pasta with sauce and spread evenly throughout.\nB) [title] Place in the oven and bake until sauce begins to turn crisp, about 45 minutes. [title] Remove from oven and keep it on a wire cooling rack until sauce begins to set [title] When sauce has reached the desired doneness, remove from the oven and serve.\nC) [title] Place 1/2 cup dijon mustard over the top. [title] Cut another 2 inches (5.1 cm) sheet of foil and lay this flat on top of the lasagna.\nD) [title] In a bowl, mix the ricotta cheese and spinach and layer half the mixture on top of the tomato sauce. [title] Layer desired amount of grated cheese, along with fine herbs, garlic, and onion flakes.\n",
+      "ground_truth": "[title] In a bowl, mix the ricotta cheese and spinach and layer half the mixture on top of the tomato sauce. [title] Layer desired amount of grated cheese, along with fine herbs, garlic, and onion flakes.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.48857142857142855,
+      "response_time": 0.02597212791442871,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to attend an indonesian traditional wedding [title] Wear formal dress. [step] Females can wear almost anything proper, but pick the dress that is not revealing too much skin. Revealing your cleavage would be considered rude.\n\nWhat happens next? Choose the most likely ending:\n\nA) However, showing cleavage would be very embarrassing if other people, including your boyfriend or significant other, could see it, and would likely embarrass you. [substeps] As always, always have a reservation if there is no other option.\nB) For males, it is a suggestion to wear batik and formal long pants. T-shirt and anything jeans is a no.\nC) Also in the event of a recent makeover, you should wear skirts with a modest neckline without looking trashy. This will make your outfit formal, yet still appropriate.\nD) You don't have to wear anything covering your breasts, as long as it's not showing as you are wearing your lingerie. Opt for evening wear, as that is usually considered more formal.\n",
+      "ground_truth": "For males, it is a suggestion to wear batik and formal long pants. T-shirt and anything jeans is a no.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.49,
+      "response_time": 0.018499135971069336,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to style greasy hair [title] Create a deep side part. [step] This look is great for concealing your roots but embracing the texture. Use a comb to part your hair to 1 side of your head.\n\nWhat happens next? Choose the most likely ending:\n\nA) Use your fingers to draw a \" u \" shape from the bottom of your head back to just behind your ear. Keep it smooth and in place until you're done.\nB) You can choose to part it to the left or right. Make sure to part from 1 far side of your head so that you make a deep part.\nC) Place the section of hair at the nape of your neck so that it falls just above the face, leaving it long. [substeps] The end of the section of hair should be on the side closest to your face as if you were making an a.\nD) Wet your roots and add some half-up/half-down mousse to help it to hold its shape. Be sure not to dry your roots, as this will lead to a frizz if it isn't adhered to the longer side.\n",
+      "ground_truth": "You can choose to part it to the left or right. Make sure to part from 1 far side of your head so that you make a deep part.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.49124999999999996,
+      "response_time": 0.033396005630493164,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to acclimate to hot weather [title] Start with light recreational activities. [step] When you're first getting used to the heat, it's best to take things nice and easy until you know how you'll respond. Go for a brisk walk, toss a football around or take care of a little yard work.\n\nWhat happens next? Choose the most likely ending:\n\nA) Just be careful not to overdo it-being out for too long can quickly leave you feeling drained. [substeps] You may not be ready to jump right into your normal routine if you've recently relocated somewhere warmer.\nB) Then find somewhere that's more comfortable and quiet, and stay there for the duration of the day. [substeps] You could take your dog for a hike around the neighborhood, share a cup of tea together in the backyard, or play video games online.\nC) Start slowly with lower levels of activity like cooking, gardening or just going for a run. Get creative and move around an area or just let loose and have fun doing small things.\nD) Start with light, fun activities that release high-tension and increase endorphins, which can greatly improve your mood. [substeps] Cycling, swimming and tennis are all great choices of exercise the first few times you're out in the heat.\n",
+      "ground_truth": "Just be careful not to overdo it-being out for too long can quickly leave you feeling drained. [substeps] You may not be ready to jump right into your normal routine if you've recently relocated somewhere warmer.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.49235294117647055,
+      "response_time": 0.01887989044189453,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to get constellation piercings [title] Ask friends or family who have piercing. [step] To find a good piercing artist, you can start by asking others about their piercings and who did them. Perhaps you have a friend who has a beautifully done piercing and you ask them for a referral to their artist.\n\nWhat happens next? Choose the most likely ending:\n\nA) If you make this list, you'll be able to find a talented artist. [substeps] Ask for a recommendation from other friends or family members that have pierced their own piercings.\nB) Or maybe you have a family member who had a positive experience and is willing to refer you to the artist for your piercing. [substeps] You may focus on asking friends or family who have constellation piercings already that you like or find appealing.\nC) Or you may reach out to someone who has pierced their own basic piercing. Make sure that you get the information that you need about piercing artists in order to get an accurate picture of how well they can care for their piercings.\nD) Or perhaps you have a friend who just pierced herself? All of these may help you improve your technique. [substeps] You may ask some of your friends for a referral to your tattoo artist.\n",
+      "ground_truth": "Or maybe you have a family member who had a positive experience and is willing to refer you to the artist for your piercing. [substeps] You may focus on asking friends or family who have constellation piercings already that you like or find appealing.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.4933333333333333,
+      "response_time": 0.012929916381835938,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to get loose waves [title] Start with completely dry hair. [step] Second-day hair sometimes works better for styling, so if you can, wait a day after washing your hair. This will help your waves stay in place longer.\n\nWhat happens next? Choose the most likely ending:\n\nA) [title] Put in a spray bottle of mousse. [step] While light hairspray may not provide foam, a bit of hold can help, which will hold the waves when you straighten your hair.\nB) [substeps] If you want curls that aren't yet in place, you'll have to sacrifice curls by just getting a light texturizing product. You can use a texturizing spray to tame unruly waves.\nC) Dry hair is easier to style by itself than wet hair, so it is important that you find out how to do it. [substeps] Use a smoothing serum, a shine serum and a thin, oil-free water-based product.\nD) [substeps] If your hair is naturally very curly, [straighten your hair | straighten it] before continuing. If you want loose waves, you'll need to start with either straight or slightly wavy hair.\n",
+      "ground_truth": "[substeps] If your hair is naturally very curly, [straighten your hair | straighten it] before continuing. If you want loose waves, you'll need to start with either straight or slightly wavy hair.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.49421052631578943,
+      "response_time": 0.028303146362304688,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    }
+  ]
+}

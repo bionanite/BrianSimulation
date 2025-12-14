@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "ARC",
+    "total_questions": 10,
+    "correct_answers": 8,
+    "accuracy": 0.8,
+    "average_confidence": 0.4296312003822428,
+    "average_response_time": 0.03679115772247314,
+    "total_time": 0.36953091621398926,
+    "per_category_accuracy": {
+      "unknown": 0.8
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T15:24:37.545838"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: When and where would the number of daylight hours each day be greatest?\n\nA) during the winter near the equator\nB) during the summer near the equator\nC) during the winter near the North Pole\nD) during the summer near the North Pole\n",
+      "ground_truth": "during the summer near the North Pole",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.42,
+      "response_time": 0.11099791526794434,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: How could you scientifically determine the quietest place to study in your school?\n\nA) Ask your principal where the best place is to study.\nB) Survey the student body to see where they like to study.\nC) Record the level of decibels in various places in the school, and compare the results.\nD) Have everyone be as quiet as possible, and then test the decibels in various places in your school.\n",
+      "ground_truth": "Record the level of decibels in various places in the school, and compare the results.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.4229032258064516,
+      "response_time": 0.11559605598449707,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: The development of a nuclear power plant at an ocean site is expected to produce an enormous amount of electric power for a large population. Ocean water will be used to cool the plant and then returned to the ocean. What unintended consequence should be analyzed before starting construction?\n\nA) number of kilowatts produced per home\nB) the effect of warmed water on aquatic life\nC) the impact of other energy-producing resources\nD) energy use per person\n",
+      "ground_truth": "the effect of warmed water on aquatic life",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.425625,
+      "response_time": 0.010670900344848633,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Logging companies cut trees in a forest and send the trees to lumber mills far from the forest. The mills make boards that are used for construction. Some logging companies do not plant tree seedlings after cutting trees. Not planting tree seedlings might affect people who need boards in the future because\n\nA) the price of boards will increase\nB) the price of boards will decrease\nC) there will be more boards available\nD) there will be more trees for logging\n",
+      "ground_truth": "the price of boards will increase",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.42818181818181816,
+      "response_time": 0.029427051544189453,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Which immune system function is carried out by antibodies?\n\nA) Antibodies produce proteins that attach to an invading virus.\nB) Antibodies attach to an invading virus as a target marker.\nC) Antibodies engulf the invading virus as a defense mechanism.\nD) Antibodies release enzymes that lyse the invading virus.\n",
+      "ground_truth": "Antibodies attach to an invading virus as a target marker.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.43058823529411766,
+      "response_time": 0.016000032424926758,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: What does photosynthesis produce?\n\nA) carbon dioxide and nitrogen\nB) sugar and carbon dioxide\nC) oxygen and nitrogen\nD) sugar and oxygen\n",
+      "ground_truth": "sugar and oxygen",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.43285714285714283,
+      "response_time": 0.018218994140625,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Which statement best explains why a tree branch floats on water?\n\nA) Wood is porous.\nB) Wood is buoyant.\nC) Wood is light.\nD) Wood is magnetic.\n",
+      "ground_truth": "Wood is buoyant.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.43499999999999994,
+      "response_time": 0.02169513702392578,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Which part of a pond ecosystem gives small fish shelter?\n\nA) rocks\nB) water\nC) frogs\nD) soil\n",
+      "ground_truth": "rocks",
+      "prediction": "A",
+      "is_correct": false,
+      "confidence": 0.437027027027027,
+      "response_time": 0.011557817459106445,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: A scientist categorized a rock as an extrusive igneous rock. Another scientist could accurately categorize the same rock as\n\nA) intrusive igneous.\nB) clastic sedimentary.\nC) metamorphic.\nD) volcanic.\n",
+      "ground_truth": "volcanic.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.43105263157894735,
+      "response_time": 0.011290788650512695,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: As a warm moist air mass moving northward collides with a strong cold air mass moving southward, what observations will most likely be made?\n\nA) Thick fog develops.\nB) Temperatures increase.\nC) Clouds begin to form.\nD) Winds die down.\n",
+      "ground_truth": "Clouds begin to form.",
+      "prediction": "A",
+      "is_correct": false,
+      "confidence": 0.4330769230769231,
+      "response_time": 0.022456884384155273,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    }
+  ]
+}

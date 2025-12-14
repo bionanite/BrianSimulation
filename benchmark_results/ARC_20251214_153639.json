@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "ARC",
+    "total_questions": 10,
+    "correct_answers": 10,
+    "accuracy": 1.0,
+    "average_confidence": 0.39616319587376586,
+    "average_response_time": 0.022142720222473145,
+    "total_time": 0.22350788116455078,
+    "per_category_accuracy": {
+      "unknown": 1.0
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T15:36:39.633064"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Which statement describes how the life cycle of butterflies is different from the life cycle of frogs?\n\nA) Butterfly life cycles have more stages.\nB) Butterfly life cycles have an egg stage.\nC) Butterfly life cycles have a pupa stage.\nD) Butterfly life cycles have an adult stage.\n",
+      "ground_truth": "Butterfly life cycles have a pupa stage.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.38,
+      "response_time": 0.018751144409179688,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: All galaxies in the universe\n\nA) are composed of many stars.\nB) have a clockwise spin.\nC) are irregularly shaped.\nD) have the same number of stars.\n",
+      "ground_truth": "are composed of many stars.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.38419354838709674,
+      "response_time": 0.01722884178161621,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Farmers in Wyoming were concerned because some of their chickens were being preyed upon by hawks that lived in areas around their ranches. The farmers grouped together and hunted the hawks until they were no longer in their area. Which would most likely happen next?\n\nA) The chicken population would go down.\nB) Populations of mice and rats would increase.\nC) Another bird of prey would replace the hawk.\nD) The chickens would have a lower rate of disease.\n",
+      "ground_truth": "Populations of mice and rats would increase.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.388125,
+      "response_time": 0.012778043746948242,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: A star produces energy through a process called nuclear fusion. Which aspect of a star enables the process of fusion to occur?\n\nA) rotational speed\nB) apparent brightness\nC) surface temperature\nD) chemical composition\n",
+      "ground_truth": "chemical composition",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.39181818181818184,
+      "response_time": 0.023128032684326172,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: People without safe drinking water may get an illness called dysentery. Dysentery is caused by a type of amoeba that lives inside the body. Doctors can find these amoebas by looking at body samples under a microscope. Which characteristic of amoebas best explains why doctors use microscopes to find dysentery amoebas?\n\nA) Amoebas can change their shape.\nB) Amoebas need humans to survive.\nC) Amoebas look just like human cells.\nD) Amoebas are made of only one cell.\n",
+      "ground_truth": "Amoebas are made of only one cell.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3952941176470588,
+      "response_time": 0.014568090438842773,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: A container is filled with a mixture of sand and an unknown substance. What should a student do to determine whether iron particles are in the mixture?\n\nA) heat the mixture\nB) filter the mixture\nC) pour water into the mixture\nD) pull a magnet through the mixture\n",
+      "ground_truth": "pull a magnet through the mixture",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3985714285714286,
+      "response_time": 0.027451038360595703,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: A student wants to show that the matter in a whole apple is equal to the matter in the pieces of the same apple. Which process best describes how the student can demonstrate the relationship between the matter in the whole apple and the apple pieces?\n\nA) observing the apple pieces\nB) cutting the apple into more pieces\nC) observing the color of the whole apple, then observing the color of the apple pieces\nD) determining the mass of the whole apple, then determining the mass of the apple pieces\n",
+      "ground_truth": "determining the mass of the whole apple, then determining the mass of the apple pieces",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.4016666666666666,
+      "response_time": 0.03700900077819824,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Which of the following is most likely a learned behavior?\n\nA) using a fork to eat\nB) jumping at a loud noise\nC) squinting in a bright light\nD) sneezing when smelling a flower\n",
+      "ground_truth": "using a fork to eat",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.40459459459459457,
+      "response_time": 0.023322105407714844,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Which of these activities will result in a different kind of material being formed?\n\nA) A nail is left outside and it rusts.\nB) A glass is dropped and it shatters into small pieces.\nC) A rubber band is stretched until it breaks.\nD) A pencil is sharpened to a point.\n",
+      "ground_truth": "A nail is left outside and it rusts.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.4073684210526316,
+      "response_time": 0.017518043518066406,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: A farmer has three large fields where he plans to grow grasses to harvest for hay. Grasses should be harvested only after two years of growth. What could the farmer do to make sure he has a hay crop each year?\n\nA) Plant each field at one-year intervals.\nB) Plant the grasses as close together as possible.\nC) Plant all the fields at the same time, but with different types of grasses.\nD) Plant warm-season grasses and cool-season grasses in each field at the same time.\n",
+      "ground_truth": "Plant each field at one-year intervals.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.41,
+      "response_time": 0.029672861099243164,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    }
+  ]
+}

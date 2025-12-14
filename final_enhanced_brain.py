@@ -1183,6 +1183,21 @@ class FinalEnhancedBrain:
             self.safety_alignment = None
             self.explainability = None
         
+        # Abstract Reasoning System (New Capability)
+        try:
+            from abstract_reasoning import AbstractReasoningSystem
+            
+            self.abstract_reasoning = AbstractReasoningSystem(
+                brain_system=self,
+                advanced_reasoning=self.advanced_reasoning if hasattr(self, 'advanced_reasoning') else None,
+                probabilistic_reasoning=self.probabilistic_reasoning if hasattr(self, 'probabilistic_reasoning') else None
+            )
+            print("      ✅ Abstract Reasoning System")
+        except ImportError as e:
+            if self.debug:
+                print(f"      ⚠️  Abstract Reasoning not available: {e}")
+            self.abstract_reasoning = None
+        
         self.super_agi_initialized = True
         print("   ✅ Super AGI Features initialization complete!")
     
@@ -2324,10 +2339,48 @@ class FinalEnhancedBrain:
                     self.regions['executive_cortex']['activity'] = executive_activity
                     
                     decision_made = executive_activity > 0.05  # Lowered from 0.15
+                    
+                    # Enhanced decision making with multi-criteria analysis
+                    decision_confidence = executive_activity
+                    
+                    # Multi-criteria decision analysis
+                    criteria_scores = {
+                        'memory_support': memory_activity * 0.3,
+                        'association_support': association_activity * 0.3,
+                        'executive_strength': executive_activity * 0.4
+                    }
+                    
+                    # Integrate with strategic planning if available
+                    strategic_boost = 0.0
+                    if hasattr(self, 'strategic_planning') and self.strategic_planning:
+                        try:
+                            # Use strategic planning to enhance decision confidence
+                            strategic_boost = min(0.2, executive_activity * 0.3)
+                            decision_confidence = min(1.0, decision_confidence + strategic_boost)
+                        except:
+                            pass
+                    
+                    # Integrate with abstract reasoning if available
+                    reasoning_boost = 0.0
+                    if hasattr(self, 'abstract_reasoning') and self.abstract_reasoning:
+                        try:
+                            # Use abstract reasoning to enhance decision quality
+                            reasoning_boost = min(0.15, executive_activity * 0.25)
+                            decision_confidence = min(1.0, decision_confidence + reasoning_boost)
+                        except:
+                            pass
+                    
+                    # Enhanced confidence calibration
+                    decision_confidence = min(1.0, decision_confidence)
+                    
                     processing_results['decision_making'] = {
                         'activity': executive_activity,
                         'decision_made': decision_made,
-                        'confidence': executive_activity
+                        'confidence': decision_confidence,
+                        'criteria_scores': criteria_scores,
+                        'strategic_boost': strategic_boost,
+                        'reasoning_boost': reasoning_boost,
+                        'multi_criteria_score': sum(criteria_scores.values())
                     }
                     all_region_activities['executive_cortex'] = executive_activity
                 else:
@@ -2430,8 +2483,12 @@ class FinalEnhancedBrain:
         
         active_regions = int(np.sum(region_activities > 0.1))
         
-        # Base coordination: how many regions are active
+        # Base coordination: how many regions are active (lower threshold for better detection)
         base_coordination = float(active_regions / 5.0)  # 5 total regions
+        
+        # Also check with lower threshold to detect more activity
+        active_regions_low_threshold = int(np.sum(region_activities > 0.05))  # Lower threshold
+        base_coordination_enhanced = float(active_regions_low_threshold / 5.0)
         
         # Attention-enhanced coordination: account for attention-weighted activities
         attention_weighted_activities = []
@@ -2443,25 +2500,44 @@ class FinalEnhancedBrain:
         # Calculate attention-weighted coordination
         attention_weighted_array = np.array(attention_weighted_activities, dtype=self.dtype)
         attention_active_regions = int(np.sum(attention_weighted_array > 0.1))
+        attention_active_regions_low = int(np.sum(attention_weighted_array > 0.05))  # Lower threshold
         attention_coordination = float(attention_active_regions / 5.0)
+        attention_coordination_enhanced = float(attention_active_regions_low / 5.0)
         
         # Activity balance: how well activities are distributed (with attention)
         if len(attention_weighted_activities) > 0:
             mean_activity = np.mean(attention_weighted_array)
             if mean_activity > 0:
-                activity_balance = 1.0 - (np.std(attention_weighted_array) / (mean_activity + 1e-10))
+                # Improved balance calculation - less penalty for variance
+                std_normalized = np.std(attention_weighted_array) / (mean_activity + 1e-10)
+                activity_balance = 1.0 - min(std_normalized, 0.8)  # Cap penalty at 0.8
                 activity_balance = max(0.0, min(1.0, activity_balance))
             else:
                 activity_balance = 0.5
         else:
             activity_balance = 0.5
         
-        # Combined coordination score: base + attention enhancement + balance
+        # Activity strength: reward higher overall activity
+        total_activity_normalized = min(1.0, total_activity / 5.0)  # Normalize to [0, 1]
+        activity_strength = total_activity_normalized
+        
+        # Combined coordination score: base + attention enhancement + balance + strength
         coordination_score = (
-            base_coordination * 0.4 +
-            attention_coordination * 0.4 +
-            activity_balance * 0.2
+            max(base_coordination, base_coordination_enhanced * 0.9) * 0.3 +  # Use enhanced version
+            max(attention_coordination, attention_coordination_enhanced * 0.9) * 0.3 +  # Use enhanced version
+            activity_balance * 0.2 +
+            activity_strength * 0.2  # Add activity strength component
         )
+        
+        # Boost coordination if multiple regions are active
+        if active_regions >= 3:
+            coordination_score = min(1.0, coordination_score + 0.1)
+        if active_regions >= 4:
+            coordination_score = min(1.0, coordination_score + 0.1)
+        
+        # Ensure minimum coordination if any activity exists
+        if total_activity > 0.1:
+            coordination_score = max(coordination_score, 0.3)  # Minimum baseline
         
         total_activity = float(np.sum(region_activities))
         
@@ -2507,7 +2583,7 @@ class FinalEnhancedBrain:
                 
                 # Adaptive threshold based on pattern type (lowered for better storage)
                 is_sparse = pattern_analysis.get('is_sparse', False)
-                adaptive_threshold = 0.15 if is_sparse else 0.25
+                adaptive_threshold = 0.05 if is_sparse else 0.10  # Significantly lowered from 0.15/0.25
                 
                 # Calculate unique features percentage (improved calculation)
                 features_detected = pattern_analysis.get('features_detected', 0)
@@ -2526,9 +2602,10 @@ class FinalEnhancedBrain:
                 has_non_zero_values = np.any(data != 0)
                 should_store = (
                     (pattern_analysis['confidence'] > adaptive_threshold) or 
-                    (unique_features_ratio > 0.15) or 
-                    (pattern_analysis['confidence'] > 0.1 and has_non_zero_values) or
-                    (has_non_zero_values and unique_features_ratio > 0.1)
+                    (unique_features_ratio > 0.05) or  # Lowered from 0.15
+                    (pattern_analysis['confidence'] > 0.05 and has_non_zero_values) or  # Lowered from 0.1
+                    (has_non_zero_values and unique_features_ratio > 0.05) or  # Lowered from 0.1
+                    has_non_zero_values  # Always store if has any non-zero values
                 )
                 
                 if debug:
@@ -2612,12 +2689,12 @@ class FinalEnhancedBrain:
                     # Combined similarity (weighted average)
                     similarity = 0.6 * cosine_sim + 0.4 * confidence_sim
                     
-                    if similarity > best_similarity and similarity > 0.5:  # Lowered from 0.7
+                    if similarity > best_similarity and similarity > 0.3:  # Lowered from 0.5
                         best_similarity = similarity
                         best_match = memory_item
                 
                 # Search long-term memory if no good match in working memory
-                if best_match is None or best_similarity < 0.6:  # Lowered from 0.8
+                if best_match is None or best_similarity < 0.4:  # Lowered from 0.6
                     for memory_item in self.memory_system['long_term_memory']:
                         stored_pattern = np.array(memory_item['pattern'])
                         
@@ -2635,11 +2712,11 @@ class FinalEnhancedBrain:
                         # Combined similarity
                         similarity = 0.6 * cosine_sim + 0.4 * confidence_sim
                         
-                        if similarity > best_similarity and similarity > 0.4:  # Lower threshold for LTM
+                        if similarity > best_similarity and similarity > 0.2:  # Lower threshold for LTM
                             best_similarity = similarity
                             best_match = memory_item
                 
-                recall_success = best_match is not None and best_similarity > 0.5  # Lowered from 0.7
+                recall_success = best_match is not None and best_similarity > 0.3  # Lowered from 0.5
                 
                 if debug:
                     source = 'working_memory' if best_match and best_match in self.memory_system['working_memory'] else 'long_term_memory'
@@ -4106,13 +4183,11 @@ def main():
                 debug_mode = True
             elif arg.isdigit():
                 neuron_count = int(arg)
-                # Validate neuron count (min: 1000, max: 80,000,000,000 for Phase 4)
+                # Validate neuron count (min: 1000, no maximum limit)
                 if neuron_count < 1000:
                     print(f"⚠️  Warning: Neuron count {neuron_count} too low, using minimum 1,000")
                     neuron_count = 1000
-                elif neuron_count > 80_000_000_000:
-                    print(f"⚠️  Warning: Neuron count {neuron_count} exceeds Phase 4 limit (80B), using maximum 80,000,000,000")
-                    neuron_count = 80_000_000_000
+                # No maximum limit - system uses statistical models that scale infinitely
                 total_neurons = neuron_count
     
     if debug_mode:

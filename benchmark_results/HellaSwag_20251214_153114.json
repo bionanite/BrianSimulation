@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "HellaSwag",
+    "total_questions": 10,
+    "correct_answers": 10,
+    "accuracy": 1.0,
+    "average_confidence": 0.4668737158094743,
+    "average_response_time": 0.02472348213195801,
+    "total_time": 0.25015783309936523,
+    "per_category_accuracy": {
+      "unknown": 1.0
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T15:31:14.901364"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to prepare mentally and physically to use your krav maga training [title] Realize what it is you are looking to do. [step] You are about to embark on a journey into the darker side of humanity. You're preparing for a scenario where you may be choked, stabbed, held up with guns, ambushed by multiple attackers, put in compromising situations and forced to fight blind.\n\nWhat happens next? Choose the most likely ending:\n\nA) You are preparing for this scenario to be the beginning of your journey. [title] Know what what life is-long.\nB) All of these scenarios can influence your personal and individual lifestyles, so take a few deep breaths and prepare yourself to deal with these external settings. [title] Take a deep breath and prepare for inevitable reactions.\nC) [title] Recognize the details of the many stages of the process. [step] This is the whole story for you.\nD) This is street/battlefield fighting, not a sport with rules. Don't stop! Don't ever stop.\n",
+      "ground_truth": "This is street/battlefield fighting, not a sport with rules. Don't stop! Don't ever stop.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.44999999999999996,
+      "response_time": 0.013940095901489258,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to pucker your lips [title] Relax your lips. [step] Before puckering your lips, keep them relaxed. Let your lips hang naturally as this will keep them softer and more gentle during kissing.\n\nWhat happens next? Choose the most likely ending:\n\nA) [title] Place your index and middle fingers slightly apart from each other. [step] Your pinkie and ring fingers should be located with your middle and middle fingers.\nB) [title] Practice forming your breath as you inhale. [step] It's easier to pucker your lips if you physically move them slightly downward.\nC) Just before a kiss, pay attention to your lips and make sure you're not tensing them up. [substeps] To help relax your lips, you can breathe through your mouth slightly to loosen up your lips.\nD) [title] Keep your lips on the inside of your mouth. [step] Be gentle; too much lip-puckering can result in prolonged open up and blowing bubbles.\n",
+      "ground_truth": "Just before a kiss, pay attention to your lips and make sure you're not tensing them up. [substeps] To help relax your lips, you can breathe through your mouth slightly to loosen up your lips.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.45545454545454545,
+      "response_time": 0.027135133743286133,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: Athletes are giving interviews, and some show off their participation medals. Athletes are boarding white buses. the buses\n\nWhat happens next? Choose the most likely ending:\n\nA) move down the road.\nB) take off of the ramp.\nC) are moving down a runway, with people jumping on the ramps.\nD) pass several athletes sitting on green canopies.\n",
+      "ground_truth": "move down the road.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.45999999999999996,
+      "response_time": 0.014211177825927734,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to make face wash [title] Find a suitable container for your face wash. [step] You can use an old face wash bottle, a mason jar, or even an empty bottle. Whatever you choose to use, make sure that it is clean and that it has a lid or cap you can close tightly.\n\nWhat happens next? Choose the most likely ending:\n\nA) [title] Pour some liquid castile soap into the container. [step] You will need \u00bc cup (56.25 milliliters) of liquid castile soap.\nB) [title] Add enough detergent and supplies to cover your face with the face wash. [step] Add enough dye or softener to pool and stain the pores of the face, then wait a few minutes for the skin to soak up the new color.\nC) [substeps] Do not use a regular bottle because the lid is much too small and might not work properly. Old toilet paper works best, though you can use any type of disposable container as long as it is clean.\nD) [substeps] You can use either a bottle cap or a plastic tube lid. Porcelain lids can get wet or damaged, if they are not put under a proper seal.\n",
+      "ground_truth": "[title] Pour some liquid castile soap into the container. [step] You will need \u00bc cup (56.25 milliliters) of liquid castile soap.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.4638461538461538,
+      "response_time": 0.019475936889648438,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to organize earrings [title] Get some mini, plastic drawer units. [step] They are actually meant for storing office supplies, but they work great for earrings! You will typically find them in the storage section or office supply section. If you'd like, you can line the bottom of each drawer with a piece of foam.\n\nWhat happens next? Choose the most likely ending:\n\nA) This will help to protect the jewelry in case of damage. [substeps] For example, if you have a big bulky wooden jewelry box, use the base and sides of a foam-top plastic drawer unit instead.\nB) This way, you can poke your earrings into the foam to keep them in place. [substeps] Choose a small one that is about 6 to 8 inches (15.\nC) [substeps] Does this work for some? If so, this is a great idea because you won't need as much paper to mark your row. Your original rule of thumb is that if you need a specific drawer, line it with a piece of foam.\nD) Here are some ideas to get you started : [substeps] Double-sided or zippered drop-side drawers online storage companies helpline [title] Look at recycling baskets. [step] Ask your friends to keep their jewelry there.\n",
+      "ground_truth": "This way, you can poke your earrings into the foam to keep them in place. [substeps] Choose a small one that is about 6 to 8 inches (15.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.4671428571428571,
+      "response_time": 0.02051377296447754,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to get comfortable in a dorm [title] Get to know your roommate. [step] Communication is key. Spend some time getting to know one another.\n\nWhat happens next? Choose the most likely ending:\n\nA) Since you have to learn to live together for at least a semester, if not an entire school year, do your part to ensure you and your \" roomie \" can agree on the most important things. [substeps] Share information about your home and family life.\nB) Unless your roommate isn't talkative, this will be difficult. Instead, find out a little bit about each other.\nC) Pick a few good times to talk and try to get to know one another. Pick times that aren't risky for both of you to make a good impression.\nD) Plan a dinner beforehand for a specific occasion and agree on a time for your meetings. [substeps] Be nice and ask follow up questions.\n",
+      "ground_truth": "Since you have to learn to live together for at least a semester, if not an entire school year, do your part to ensure you and your \" roomie \" can agree on the most important things. [substeps] Share information about your home and family life.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.47,
+      "response_time": 0.026479721069335938,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to have a great sleepover birthday party [title] Make the invitations. [step] Make the invitations in such a way that it reflects your personality. [substeps] You can use microsoft word to make them, or write them by hand.\n\nWhat happens next? Choose the most likely ending:\n\nA) Color them with decorative writing if you have time to do it yourself. Make sure the images are-pictures-of you, not simply an anonymous character.\nB) [title] Introduce your friends and add a special candle or a birthday themed object, such as a cute picture of candy. [title] Decorate the rooms with fun things to include (or a video game to play), colorful balloons, silly people writing random things to remember, and maybe some chocolate chip boosters.\nC) It doesn't really matter, as long as the guests know all the information. On the invitations, include who the party is for, what day it is, what time it starts and ends, where your house is, and your phone number (rsvp).\nD) Sending your invitations can be fun, but they often don't do the trick as well. Invitation-makers were generally skilled at assembling their invitations, which they say is best for you.\n",
+      "ground_truth": "It doesn't really matter, as long as the guests know all the information. On the invitations, include who the party is for, what day it is, what time it starts and ends, where your house is, and your phone number (rsvp).",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.47250000000000003,
+      "response_time": 0.02641010284423828,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to diagnose dog flu [title] Look out for a cough. [step] Canine influenza is oftentimes confused with kennel cough, as both infections affect the respiratory tract. If your dog is coughing or showing other respiratory signs or difficulty breathing, you should bring him or her to the vet to be tested for (and possibly diagnosed with) canine influenza.\n\nWhat happens next? Choose the most likely ending:\n\nA) If your dog is all hard of hearing, has become sickly pale, is coughing regularly or is experiencing any of the above symptoms, take him to the vet immediately. [substeps] Kennel cough is often accompanied by an upset stomach and rapid breathing.\nB) [title] Watch for unusual moisture and wetness around your dog's nose. [step] Your dog may have nasal discharge as a symptom of canine influenza.\nC) In most cases, however, the cough will respond to more critical screening options. [title] Note that influenza is not directly related to kennel cough.\nD) Symptoms include: the dog gasping for air, coughing, pawing at his ears, and/or staggering through a collapsed chest. Your dog is shivering or having difficulty swallowing.\n",
+      "ground_truth": "[title] Watch for unusual moisture and wetness around your dog's nose. [step] Your dog may have nasal discharge as a symptom of canine influenza.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.4747058823529412,
+      "response_time": 0.030889034271240234,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to make homemade photography lighting [title] Have some 100 watt light bulbs. [step] Be sure that they are marked' full spectrum' or' daylight'. [title] Get some shop lights.\n\nWhat happens next? Choose the most likely ending:\n\nA) [step] Usually the best one would be the american red bulbs. [title] Add whatever goes with your color scheme! [step] Buy soft coloured fire starters.\nB) [step] They can either be the same green or any color. I had red half whites in the same color as the popcorn popcorn \" instead of the full spectrum \" night kind \" and then it turns out! Buy a 100 watt bulb set.\nC) [step] They are fairly inexpensive and come with their own reflector. By shop lights, you are getting the equipment that a light would go into.\nD) [step] Make sure they are tall so that your picture is not bumped too high off the ground. Hot bulbs can burn very quickly and you can get a cheap one about 60 watts.\n",
+      "ground_truth": "[step] They are fairly inexpensive and come with their own reflector. By shop lights, you are getting the equipment that a light would go into.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.4766666666666667,
+      "response_time": 0.03809094429016113,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: A camera pans out of a dirt hole and shows a man placing it down next to a tree. the camera\n\nWhat happens next? Choose the most likely ending:\n\nA) pans back to an open road and more holes and fallen leaves laying on the ground.\nB) pans around people playing and a pile of dirt.\nC) then goes into a house and shows another man getting down on dirt.\nD) pans around the tree and shows the man checking up on the dirt.\n",
+      "ground_truth": "pans around the tree and shows the man checking up on the dirt.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.47842105263157897,
+      "response_time": 0.03008890151977539,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    }
+  ]
+}
