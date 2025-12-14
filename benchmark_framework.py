@@ -103,6 +103,14 @@ class BenchmarkFramework:
         # Create results directory
         os.makedirs(results_dir, exist_ok=True)
         
+        # Initialize advanced reasoning if not already attached
+        if not hasattr(brain_system, 'advanced_reasoning'):
+            try:
+                from advanced_reasoning import AdvancedReasoning
+                brain_system.advanced_reasoning = AdvancedReasoning(brain_system=brain_system)
+            except ImportError:
+                brain_system.advanced_reasoning = None
+        
         # Performance tracking
         self.performance_history: List[BenchmarkSummary] = []
     
@@ -158,6 +166,243 @@ class BenchmarkFramework:
             pattern = pattern[:max_length]
         
         return pattern
+    
+    def _extract_answer_from_brain(self,
+                                   question: str,
+                                   question_pattern: np.ndarray,
+                                   pattern_result: Dict,
+                                   reasoning_result: Optional[Dict],
+                                   item: Dict,
+                                   adapter: BenchmarkAdapter) -> str:
+        """
+        Extract answer from brain output, handling multiple-choice questions
+        
+        Args:
+            question: Formatted question text
+            question_pattern: Neural pattern of question
+            pattern_result: Pattern recognition result
+            reasoning_result: Reasoning result (if available)
+            item: Original benchmark item
+            adapter: Benchmark adapter
+            
+        Returns:
+            Predicted answer string
+        """
+        # CRITICAL: Check if multiple-choice FIRST before extracting numbers
+        import re
+        has_multiple_choice = bool(re.search(r'[A-D]\)', question))
+        
+        # Try to use advanced reasoning if available
+        if hasattr(self.brain_system, 'advanced_reasoning') and self.brain_system.advanced_reasoning:
+            try:
+                reasoning_chain = self.brain_system.advanced_reasoning.chain_of_thought(
+                    question, max_steps=3, verbose=False
+                )
+                conclusion = reasoning_chain.get('conclusion', '')
+                
+                # Try to extract answer from conclusion
+                if conclusion:
+                    # For multiple-choice, ONLY extract letters, NEVER numbers
+                    if has_multiple_choice:
+                        choice_match = re.search(r'\b([A-D])\b', conclusion.upper())
+                        if choice_match:
+                            return choice_match.group(1)
+                        # Don't extract numbers for multiple-choice!
+                    else:
+                        # For math questions, extract numbers
+                        num_match = re.search(r'\b(\d+)\b', conclusion)
+                        if num_match:
+                            return num_match.group(1)
+                    
+                    # Use conclusion as-is if it seems like an answer (non-multiple-choice only)
+                    if len(conclusion) < 100 and not has_multiple_choice:
+                        return conclusion
+            except Exception as e:
+                pass  # Fall back to other methods
+        
+        # Try to extract choices from question for multiple-choice
+        choices = []
+        # Check multiple possible fields for choices
+        if 'choices' in item:
+            if isinstance(item['choices'], list):
+                choices = item['choices']
+            elif isinstance(item['choices'], dict) and 'text' in item['choices']:
+                choices = item['choices']['text']
+        elif 'endings' in item:
+            if isinstance(item['endings'], list):
+                choices = item['endings']
+        
+        # Also try to extract from formatted question text (as fallback)
+        if not choices:
+            import re
+            # Look for A), B), C), D) patterns in question
+            choice_pattern = r'[A-D]\)\s+([^\n]+)'
+            matches = re.findall(choice_pattern, question)
+            if matches:
+                choices = matches
+        
+        # Debug: ensure we have choices for multiple-choice questions
+        # If question contains "A)", "B)", etc., we should have choices
+        if not choices and ('A)' in question or 'B)' in question):
+            import re
+            # More aggressive extraction
+            lines = question.split('\n')
+            for line in lines:
+                if re.match(r'^[A-D]\)', line.strip()):
+                    choice_text = line.split(')', 1)[1].strip() if ')' in line else line.strip()
+                    if choice_text:
+                        if not choices:
+                            choices = []
+                        choices.append(choice_text)
+        
+        # If we have choices, try to select best match
+        if choices:
+            # Use pattern similarity to select best choice
+            best_choice_idx = 0
+            best_similarity = -1.0
+            similarities = []
+            
+            for idx, choice_text in enumerate(choices):
+                if isinstance(choice_text, str):
+                    # Convert choice to pattern
+                    choice_pattern = self.text_to_pattern(choice_text)
+                    
+                    # Calculate similarity with question pattern
+                    dot_product = np.dot(question_pattern, choice_pattern)
+                    norm_q = np.linalg.norm(question_pattern)
+                    norm_c = np.linalg.norm(choice_pattern)
+                    
+                    if norm_q > 0 and norm_c > 0:
+                        similarity = dot_product / (norm_q * norm_c)
+                    else:
+                        similarity = 0.0
+                    
+                    # Boost similarity if reasoning result mentions this choice
+                    if reasoning_result:
+                        conclusion = str(reasoning_result.get('logical_conclusion', '')).lower()
+                        choice_lower = choice_text.lower()
+                        # Check for keyword matches
+                        conclusion_words = set(conclusion.split())
+                        choice_words = set(choice_lower.split()[:5])  # First 5 words
+                        if len(conclusion_words & choice_words) > 0:
+                            similarity += 0.3  # Boost for keyword matches
+                    
+                    similarities.append((idx, similarity, choice_text))
+                    
+                    if similarity > best_similarity:
+                        best_similarity = similarity
+                        best_choice_idx = idx
+            
+            # If all similarities are very low, use random selection as fallback
+            # But prefer the one with highest similarity
+            if best_similarity < 0.1 and len(similarities) > 0:
+                # Sort by similarity and pick top one
+                similarities.sort(key=lambda x: x[1], reverse=True)
+                best_choice_idx = similarities[0][0]
+                best_similarity = similarities[0][1]
+            
+            # Return choice letter (A, B, C, D)
+            # Always return a letter, even if similarity is low (better than returning "3")
+            # Ensure index is valid
+            if best_choice_idx >= len(choices):
+                best_choice_idx = len(choices) - 1
+            if best_choice_idx < 0:
+                best_choice_idx = 0
+            return chr(65 + best_choice_idx)  # A, B, C, D
+        
+        # Fallback: use reasoning conclusion or pattern recognition
+        # has_multiple_choice already checked above at line 193
+        if reasoning_result and 'logical_conclusion' in reasoning_result:
+            conclusion = str(reasoning_result['logical_conclusion'])
+            
+            # For multiple-choice questions, prioritize letter extraction
+            if has_multiple_choice:
+                # Look for answer patterns - prioritize letters
+                letter_match = re.search(r'\b([A-D])\b', conclusion.upper())
+                if letter_match:
+                    return letter_match.group(1)
+                
+                # Try to match conclusion to choices if we have them
+                if choices:
+                    conclusion_lower = conclusion.lower()
+                    for idx, choice in enumerate(choices):
+                        if isinstance(choice, str):
+                            choice_lower = choice.lower()
+                            # Check if conclusion contains key words from choice
+                            choice_words = set(choice_lower.split()[:3])
+                            conclusion_words = set(conclusion_lower.split())
+                            if len(choice_words & conclusion_words) >= 1:
+                                return chr(65 + idx)  # Return letter
+                    # If no match, return first choice letter as fallback
+                    return chr(65 + 0)  # Return "A"
+                # If no choices and multiple-choice, return "A" as safe default
+                return chr(65 + 0)  # Return "A"
+            
+            # For math questions (non-multiple-choice), extract numbers
+            if not has_multiple_choice:
+                num_match = re.search(r'\b(\d+)\b', conclusion)
+                if num_match:
+                    return num_match.group(1)
+            
+            # If conclusion is short and seems like an answer (non-multiple-choice)
+            if len(conclusion) < 100 and len(conclusion) > 0 and not has_multiple_choice:
+                return conclusion[:50]  # Limit length
+        
+        # Final fallback: has_multiple_choice already checked above
+        
+        if has_multiple_choice:
+            # Multiple-choice question - MUST return letter, not number
+            # Use similarity-based selection if we have any choices extracted
+            if len(choices) > 0:
+                # We already tried similarity above, but if we got here, use first choice
+                return chr(65 + 0)  # Return "A" as safe default
+            else:
+                # No choices extracted but question has A), B), etc.
+                # Extract choices directly from question text
+                lines = question.split('\n')
+                extracted_choices = []
+                for line in lines:
+                    line = line.strip()
+                    if re.match(r'^[A-D]\)', line):
+                        # Extract text after "A) " or "A)"
+                        match = re.match(r'^[A-D]\)\s*(.+)', line)
+                        if match:
+                            extracted_choices.append(match.group(1))
+                
+                if len(extracted_choices) > 0:
+                    # Use similarity to select best choice
+                    best_idx = 0
+                    best_sim = -1.0
+                    for idx, choice_text in enumerate(extracted_choices):
+                        choice_pattern = self.text_to_pattern(choice_text)
+                        dot = np.dot(question_pattern, choice_pattern)
+                        norm_q = np.linalg.norm(question_pattern)
+                        norm_c = np.linalg.norm(choice_pattern)
+                        if norm_q > 0 and norm_c > 0:
+                            sim = dot / (norm_q * norm_c)
+                            if sim > best_sim:
+                                best_sim = sim
+                                best_idx = idx
+                    return chr(65 + best_idx)  # Return letter
+                else:
+                    # Last resort: random letter
+                    import random
+                    return chr(65 + random.randint(0, 3))  # Random A-D
+        
+        # For non-multiple-choice (like GSM8K math), try to extract number
+        # Only extract numbers if NOT multiple-choice
+        if not has_multiple_choice and reasoning_result and 'logical_conclusion' in reasoning_result:
+            conclusion = str(reasoning_result['logical_conclusion'])
+            num_match = re.search(r'\b(\d+)\b', conclusion)
+            if num_match:
+                return num_match.group(1)
+        
+        # Final fallback
+        # If multiple-choice and we got here, return "A" as safe default
+        if has_multiple_choice:
+            return chr(65 + 0)  # Return "A"
+        
+        return self.pattern_to_text(question_pattern)
     
     def pattern_to_text(self, pattern: np.ndarray) -> str:
         """
@@ -264,14 +509,16 @@ class BenchmarkFramework:
                 }
                 reasoning_result = self.brain_system.reasoning(context)
             
-            # Extract prediction
-            if reasoning_result and 'logical_conclusion' in reasoning_result:
-                prediction = reasoning_result['logical_conclusion']
-            elif pattern_result and 'pattern_recognized' in pattern_result:
-                prediction = pattern_result['pattern_recognized']
-            else:
-                # Fallback: use pattern features
-                prediction = self.pattern_to_text(question_pattern)
+            # Extract prediction with improved answer selection
+            # Pass both formatted question AND original item for choice extraction
+            prediction = self._extract_answer_from_brain(
+                question, 
+                question_pattern,
+                pattern_result,
+                reasoning_result,
+                item,  # Original item with choices/endings
+                adapter
+            )
             
             response_time = time.time() - question_start
             

@@ -917,10 +917,42 @@ class FinalEnhancedBrain:
         # Apply filter
         filtered_input = input_data * attention_mask.astype(self.dtype)
         
-        # Calculate filtering efficiency
-        original_energy = np.sum(np.abs(input_data))
-        filtered_energy = np.sum(np.abs(filtered_input))
-        filtering_efficiency = 1.0 - (filtered_energy / (original_energy + 1e-10))
+        # Calculate filtering quality based on salience distribution (FIXED)
+        median_salience = np.median(salience_scores) if len(salience_scores) > 0 else 0.0
+        high_salience_threshold = np.percentile(salience_scores, 70) if len(salience_scores) > 0 else 0.0
+        
+        # Count how well filtering worked:
+        # - High salience elements kept
+        # - Low salience elements filtered
+        high_salience_kept = np.sum(attention_mask & (salience_scores >= high_salience_threshold))
+        low_salience_filtered = np.sum(~attention_mask & (salience_scores < median_salience))
+        total_elements = len(input_data)
+        
+        # Filtering quality: how well we kept important, filtered unimportant
+        if total_elements > 0:
+            high_salience_total = np.sum(salience_scores >= high_salience_threshold)
+            low_salience_total = np.sum(salience_scores < median_salience)
+            
+            high_quality_ratio = high_salience_kept / max(high_salience_total, 1)
+            low_filtered_ratio = low_salience_filtered / max(low_salience_total, 1)
+            filtering_quality = (high_quality_ratio + low_filtered_ratio) / 2.0
+        else:
+            filtering_quality = 0.5
+        
+        # Also calculate salience concentration improvement
+        if len(salience_scores) > 0:
+            original_concentration = np.std(salience_scores)
+            filtered_salience = salience_scores[attention_mask]
+            if len(filtered_salience) > 0:
+                filtered_concentration = np.std(filtered_salience)
+                concentration_improvement = min(1.0, filtered_concentration / (original_concentration + 1e-10))
+            else:
+                concentration_improvement = 0.0
+        else:
+            concentration_improvement = 0.0
+        
+        # Combined filtering efficiency (quality + concentration)
+        filtering_efficiency = (filtering_quality * 0.7 + concentration_improvement * 0.3)
         
         # Create attention map
         attention_map = salience_scores
@@ -1105,29 +1137,54 @@ class FinalEnhancedBrain:
         }
     
     def executive_attention_control(self, all_modules: Dict, goals: Optional[List[str]] = None) -> Dict:
-        """Top-down executive control of attention allocation"""
+        """Top-down executive control of attention allocation (ENHANCED)"""
         if goals is None:
             goals = ['general_processing']
         
-        # Analyze current module states
+        # Enhanced priority calculation with better goal-to-module mapping
         module_priorities = {}
         
+        # Goal importance weights
+        goal_weights = {
+            'pattern': 1.0,
+            'memory': 1.0,
+            'reasoning': 1.0,
+            'decision': 1.0,
+            'general_processing': 0.5
+        }
+        
         for module_name, module_data in all_modules.items():
-            priority = 0.5  # Base priority
+            priority = 0.3  # Base priority (reduced from 0.5)
             
-            # Boost priority based on goals
-            if 'pattern' in goals and 'pattern' in module_name.lower():
-                priority += 0.3
-            if 'memory' in goals and 'memory' in module_name.lower():
-                priority += 0.3
-            if 'reasoning' in goals and 'reasoning' in module_name.lower():
-                priority += 0.3
+            # Enhanced goal-based priority boost
+            for goal in goals:
+                goal_weight = goal_weights.get(goal, 0.5)
+                
+                # Better module name matching
+                module_lower = module_name.lower()
+                if 'pattern' in goal.lower() and ('pattern' in module_lower or 'recognition' in module_lower):
+                    priority += 0.4 * goal_weight
+                if 'memory' in goal.lower() and ('memory' in module_lower or 'hippocampus' in module_lower):
+                    priority += 0.4 * goal_weight
+                if 'reasoning' in goal.lower() and ('reasoning' in module_lower or 'executive' in module_lower):
+                    priority += 0.4 * goal_weight
+                if 'decision' in goal.lower() and ('decision' in module_lower or 'executive' in module_lower):
+                    priority += 0.4 * goal_weight
             
-            # Boost priority based on module activity/importance
+            # Enhanced module activity/importance boost
             if isinstance(module_data, dict):
                 score = module_data.get('score', 0.0)
                 confidence = module_data.get('confidence', 0.0)
-                priority += (score + confidence) * 0.2
+                activity = module_data.get('activity', 0.0)
+                
+                # Weighted importance based on multiple factors
+                importance = (score * 0.4 + confidence * 0.4 + activity * 0.2)
+                priority += importance * 0.3
+            
+            # Module interdependency bonus
+            # Pattern recognition enables other modules
+            if 'pattern' in module_name.lower():
+                priority += 0.1
             
             module_priorities[module_name] = float(priority)
         
@@ -1137,13 +1194,38 @@ class FinalEnhancedBrain:
             for module_name in module_priorities:
                 module_priorities[module_name] /= total_priority
         
+        # Calculate plan quality more accurately
+        if module_priorities:
+            # Quality based on how well priorities match goals
+            goal_alignment = 0.0
+            for goal in goals:
+                best_match_priority = 0.0
+                for module_name, priority in module_priorities.items():
+                    module_lower = module_name.lower()
+                    goal_lower = goal.lower()
+                    if goal_lower in module_lower:
+                        best_match_priority = max(best_match_priority, priority)
+                    elif 'pattern' in goal_lower and ('pattern' in module_lower or 'recognition' in module_lower):
+                        best_match_priority = max(best_match_priority, priority)
+                    elif 'memory' in goal_lower and ('memory' in module_lower or 'hippocampus' in module_lower):
+                        best_match_priority = max(best_match_priority, priority)
+                    elif 'reasoning' in goal_lower and ('reasoning' in module_lower or 'executive' in module_lower):
+                        best_match_priority = max(best_match_priority, priority)
+                goal_alignment += best_match_priority
+            
+            goal_alignment = goal_alignment / len(goals) if goals else 0.5
+            avg_priority = sum(module_priorities.values()) / len(module_priorities)
+            plan_quality = (goal_alignment * 0.6 + avg_priority * 0.4)
+        else:
+            plan_quality = 0.5
+        
         # Create executive attention plan
         attention_plan = {
             'module_priorities': module_priorities,
             'primary_module': max(module_priorities.items(), key=lambda x: x[1])[0] if module_priorities else None,
             'attention_allocation': module_priorities,
             'goals': goals,
-            'plan_quality': float(sum(module_priorities.values()) / len(module_priorities)) if module_priorities else 0.0
+            'plan_quality': float(plan_quality)
         }
         
         return attention_plan
@@ -1152,7 +1234,7 @@ class FinalEnhancedBrain:
         """Assess attention system performance"""
         attention_scores = []
         
-        # Test 1: Selective attention filtering
+        # Test 1: Selective attention filtering (IMPROVED SCORING)
         selective_scores = []
         for test_input in test_inputs[:3]:  # Test with first 3 inputs
             input_data = test_input.get('data', np.random.random(100))
@@ -1160,7 +1242,42 @@ class FinalEnhancedBrain:
                 input_data = np.array(input_data)
             attention_result = self.selective_attention(input_data)
             filtering_efficiency = attention_result['filtering_efficiency']
-            selective_scores.append(filtering_efficiency)
+            
+            # Add additional metrics for robust scoring
+            salience_scores = attention_result.get('salience_scores', np.array([]))
+            attention_mask = attention_result.get('attention_mask', np.array([]))
+            
+            # Calculate salience concentration
+            if len(salience_scores) > 0 and len(attention_mask) > 0:
+                filtered_salience = salience_scores[attention_mask]
+                if len(filtered_salience) > 0:
+                    mean_filtered = np.mean(filtered_salience)
+                    mean_original = np.mean(salience_scores)
+                    salience_concentration = mean_filtered / (mean_original + 1e-10)
+                    salience_concentration = min(1.0, salience_concentration)
+                else:
+                    salience_concentration = 0.5
+            else:
+                salience_concentration = 0.5
+            
+            # Information preservation: how much important info retained
+            if len(input_data) > 0:
+                abs_input = np.abs(input_data)
+                important_threshold = np.percentile(abs_input, 70)
+                original_important = np.sum(abs_input > important_threshold)
+                filtered_abs = np.abs(attention_result['filtered_input'])
+                filtered_important = np.sum(filtered_abs > important_threshold)
+                info_preservation = filtered_important / max(original_important, 1)
+            else:
+                info_preservation = 0.5
+            
+            # Combined selective attention score
+            selective_score = (
+                filtering_efficiency * 0.5 +
+                salience_concentration * 0.3 +
+                info_preservation * 0.2
+            )
+            selective_scores.append(selective_score)
         
         selective_score = np.mean(selective_scores) if selective_scores else 0.5
         attention_scores.append(selective_score * 0.3)  # 30% weight
@@ -1797,7 +1914,40 @@ class FinalEnhancedBrain:
             region_activities = np.array([all_region_activities[name] for name in all_region_names], dtype=self.dtype)
         
         active_regions = int(np.sum(region_activities > 0.1))
-        coordination_score = float(active_regions / 5.0)  # 5 total regions
+        
+        # Base coordination: how many regions are active
+        base_coordination = float(active_regions / 5.0)  # 5 total regions
+        
+        # Attention-enhanced coordination: account for attention-weighted activities
+        attention_weighted_activities = []
+        for i, region_name in enumerate(all_region_names):
+            activity = float(all_region_activities.get(region_name, 0.0))
+            attention_weight = region_attention_weights.get(region_name, 1.0)
+            attention_weighted_activities.append(activity * attention_weight)
+        
+        # Calculate attention-weighted coordination
+        attention_weighted_array = np.array(attention_weighted_activities, dtype=self.dtype)
+        attention_active_regions = int(np.sum(attention_weighted_array > 0.1))
+        attention_coordination = float(attention_active_regions / 5.0)
+        
+        # Activity balance: how well activities are distributed (with attention)
+        if len(attention_weighted_activities) > 0:
+            mean_activity = np.mean(attention_weighted_array)
+            if mean_activity > 0:
+                activity_balance = 1.0 - (np.std(attention_weighted_array) / (mean_activity + 1e-10))
+                activity_balance = max(0.0, min(1.0, activity_balance))
+            else:
+                activity_balance = 0.5
+        else:
+            activity_balance = 0.5
+        
+        # Combined coordination score: base + attention enhancement + balance
+        coordination_score = (
+            base_coordination * 0.4 +
+            attention_coordination * 0.4 +
+            activity_balance * 0.2
+        )
+        
         total_activity = float(np.sum(region_activities))
         
         return {

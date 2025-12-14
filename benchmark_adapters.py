@@ -224,9 +224,20 @@ class HellaSwagAdapter(BenchmarkAdapter):
         label = item.get('label', 0)
         endings = item.get('endings', [])
         
-        if label < len(endings):
+        # Handle both string and integer labels
+        if isinstance(label, str):
+            try:
+                label = int(label)
+            except ValueError:
+                # If label is a letter (A, B, C, D), convert to index
+                if label.isalpha() and len(label) == 1:
+                    label = ord(label.upper()) - ord('A')
+                else:
+                    label = 0
+        
+        if isinstance(label, int) and label < len(endings):
             return endings[label]
-        return chr(65 + label)
+        return chr(65 + (label if isinstance(label, int) else 0))
     
     def evaluate_answer(self, prediction: Any, ground_truth: Any) -> bool:
         """Evaluate if prediction matches ground truth"""
@@ -421,7 +432,16 @@ class HumanEvalAdapter(BenchmarkAdapter):
             return self._mock_data()
         
         try:
-            dataset = load_dataset("openai/humaneval", split="test")
+            # Try alternative HumanEval dataset paths
+            try:
+                dataset = load_dataset("openai/humaneval", split="test")
+            except:
+                # Alternative: use bigcode/humaneval-python
+                try:
+                    dataset = load_dataset("bigcode/humaneval-python", split="test")
+                except:
+                    # Fallback to mock data
+                    raise Exception("HumanEval dataset not available")
             # Sample 20 items (code generation is slower)
             sample_size = min(20, len(dataset))
             indices = np.random.choice(len(dataset), sample_size, replace=False)
