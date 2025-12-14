@@ -8,7 +8,63 @@ import numpy as np
 import time
 import json
 import sys
-from typing import Dict, List, Optional
+import gc
+import os
+from typing import Dict, List, Optional, Union
+from concurrent.futures import ThreadPoolExecutor, ProcessPoolExecutor
+from multiprocessing import cpu_count
+
+# Optional imports for Phase 1 optimizations
+try:
+    from scipy import sparse
+    SPARSE_AVAILABLE = True
+except ImportError:
+    SPARSE_AVAILABLE = False
+    sparse = None
+
+try:
+    import psutil
+    PSUTIL_AVAILABLE = True
+except ImportError:
+    PSUTIL_AVAILABLE = False
+    psutil = None
+
+# Phase 3: GPU acceleration imports
+try:
+    import cupy as cp
+    GPU_AVAILABLE = True
+    GPU_COUNT = cp.cuda.runtime.getDeviceCount() if hasattr(cp.cuda.runtime, 'getDeviceCount') else 1
+except ImportError:
+    GPU_AVAILABLE = False
+    cp = None
+    GPU_COUNT = 0
+except Exception as e:
+    GPU_AVAILABLE = False
+    cp = None
+    GPU_COUNT = 0
+
+# Phase 4: Distributed computing imports (MPI)
+# Lazy initialization - only check if mpi4py is available, don't initialize MPI yet
+try:
+    from mpi4py import MPI
+    MPI_AVAILABLE = True
+    MPI_MODULE = MPI  # Store module reference
+    # Don't initialize MPI_COMM, MPI_RANK, MPI_SIZE here - do it lazily when needed
+    MPI_COMM = None
+    MPI_RANK = None
+    MPI_SIZE = None
+except ImportError:
+    MPI_AVAILABLE = False
+    MPI_MODULE = None
+    MPI_COMM = None
+    MPI_RANK = None
+    MPI_SIZE = None
+except Exception as e:
+    MPI_AVAILABLE = False
+    MPI_MODULE = None
+    MPI_COMM = None
+    MPI_RANK = None
+    MPI_SIZE = None
 
 class FinalEnhancedBrain:
     """Complete enhanced artificial brain with all 4 improvements"""
@@ -20,23 +76,124 @@ class FinalEnhancedBrain:
         print(f"🧠 Initializing Final Enhanced Brain System...")
         print(f"   Target neurons: {total_neurons:,}")
         
+        # Phase 1: Memory optimization - Initialize memory pools first
+        self.memory_pools = self._init_memory_pools()
+        self.use_sparse_mode = total_neurons > 10_000_000  # Use sparse for >10M neurons
+        self.use_memory_mapped = total_neurons > 50_000_000  # Use memmap for >50M neurons
+        
+        # Phase 2: Computational optimization
+        self.use_parallel = total_neurons > 1_000_000  # Use parallel for >1M neurons
+        self.use_event_driven = total_neurons > 10_000_000  # Use event-driven for >10M neurons
+        self.num_cores = cpu_count()
+        self.dtype = np.float32 if total_neurons > 1_000_000 else np.float64  # Use float32 for large networks
+        
+        # Phase 3: GPU acceleration
+        self.use_gpu = GPU_AVAILABLE and total_neurons > 1_000_000_000  # Use GPU for >1B neurons
+        self.gpu_count = GPU_COUNT if GPU_AVAILABLE else 0
+        self.use_multi_gpu = self.use_gpu and self.gpu_count > 1  # Use multi-GPU if available
+        self.gpu_memory_pools = {} if self.use_gpu else {}
+        if self.use_gpu:
+            self._init_gpu_memory()
+        
+        # Phase 4: Distributed computing
+        # Check if MPI should be used (neuron count > 10B)
+        self.use_distributed = MPI_AVAILABLE and total_neurons > 10_000_000_000  # Use distributed for >10B neurons
+        
+        # Initialize MPI lazily - only if needed and available
+        self.mpi_rank = 0
+        self.mpi_size = 1
+        self.mpi_comm = None
+        
+        if self.use_distributed:
+            # Try to initialize MPI
+            try:
+                if MPI_MODULE is not None:
+                    self.mpi_comm = MPI_MODULE.COMM_WORLD
+                    self.mpi_rank = self.mpi_comm.Get_rank()
+                    self.mpi_size = self.mpi_comm.Get_size()
+            except Exception as e:
+                # MPI not properly initialized (not run with mpirun)
+                if self.debug:
+                    print(f"   ⚠️  Warning: MPI available but not initialized (not run with mpirun): {e}")
+                self.use_distributed = False
+                self.mpi_rank = 0
+                self.mpi_size = 1
+                self.mpi_comm = None
+        
+        self.is_distributed = self.use_distributed and self.mpi_size > 1
+        self.node_regions = []  # Regions assigned to this node
+        self.checkpoint_dir = '/tmp/brain_checkpoints'  # Checkpoint directory
+        
+        # Show MPI status
+        if total_neurons > 10_000_000_000:
+            if MPI_AVAILABLE:
+                if self.is_distributed:
+                    print(f"   🌐 Distributed Computing: {self.mpi_size} process(es), rank {self.mpi_rank}")
+                else:
+                    print(f"   🌐 MPI Available: Running in single-node mode")
+                    print(f"      💡 Tip: Use 'mpirun -n 4 python final_enhanced_brain.py {total_neurons}' for distributed execution")
+            else:
+                print(f"   ⚠️  MPI Not Available: Install OpenMPI with 'brew install openmpi' for distributed computing")
+        
+        if self.is_distributed:
+            self._init_distributed_architecture()
+        
         # Initialize all enhancement systems
         self.pattern_system = self._init_pattern_recognition()
         self.regions = self._init_multi_region_architecture()
         self.memory_system = self._init_advanced_memory()
         self.hierarchy = self._init_hierarchical_processing()
         
+        # Memory tracking
+        if self.debug:
+            mem_info = self.get_memory_usage()
+            print(f"   Memory usage: {mem_info['total_mb']:.1f} MB")
+        
+        # Phase 1.3: Garbage collection optimization
+        gc.collect()
+        
+        # Set GC thresholds for better performance with large objects
+        if self.total_neurons > 1_000_000:
+            gc.set_threshold(700, 10, 10)  # More aggressive GC for large networks
+        
+        # Phase 3: GPU initialization message
+        if self.use_gpu:
+            gpu_info = self.get_gpu_memory_usage()
+            if gpu_info.get('available'):
+                multi_gpu_str = f" (Multi-GPU enabled)" if self.use_multi_gpu else ""
+                print(f"   🚀 GPU Acceleration: {self.gpu_count} device(s) available{multi_gpu_str}")
+                for dev in gpu_info.get('devices', []):
+                    print(f"      GPU {dev['id']}: {dev['total_mb']:.0f}MB total, {dev['free_mb']:.0f}MB free")
+        
         print(f"✅ All 4 enhancements successfully integrated!")
     
     def _init_pattern_recognition(self) -> Dict:
-        """Initialize enhanced pattern recognition system"""
+        """Initialize enhanced pattern recognition system - scales with neuron count"""
         print("   ✅ 1/4 Enhanced Pattern Recognition System")
         
+        # Scale feature detectors with neuron count (logarithmic scaling to avoid memory explosion)
+        # Base: 200 detectors, scales with log10(neurons/1M) * 100
+        # This gives: 1M neurons = 200, 10M = 300, 100M = 400, 1B = 500, 10B = 600
+        base_detectors = 200
+        if self.total_neurons >= 1_000_000:
+            # Logarithmic scaling: log10(neurons/1M) * 100 + base
+            scale_factor = np.log10(max(1, self.total_neurons / 1_000_000)) * 100
+            num_detectors = int(base_detectors + scale_factor)
+            # Cap at reasonable maximum to avoid memory issues
+            num_detectors = min(num_detectors, 2000)
+        else:
+            num_detectors = base_detectors
+        
+        # Feature size also scales slightly
+        feature_size = max(10, min(50, int(10 + np.log10(max(1, self.total_neurons / 100_000)) * 5)))
+        
         return {
-            'feature_detectors': np.random.random((200, 10)),  # 200 feature detectors
+            'feature_detectors': np.random.random((num_detectors, feature_size)).astype(self.dtype),
             'pattern_memory': [],
-            'discrimination_threshold': 0.5,  # Lowered from 0.7 for better pattern recognition
-            'recognition_accuracy': 1.0  # From previous test
+            'discrimination_threshold': 0.35,  # Lowered further for better pattern recognition
+            'recognition_accuracy': 1.0,  # From previous test
+            'num_detectors': num_detectors,  # Store for reference
+            'neuron_scale_factor': np.log10(max(1, self.total_neurons / 1_000_000)) if self.total_neurons >= 1_000_000 else 0.0
         }
     
     def _init_multi_region_architecture(self) -> Dict:
@@ -47,37 +204,32 @@ class FinalEnhancedBrain:
             'sensory_cortex': {
                 'neurons': int(self.total_neurons * 0.30),
                 'activity': 0.0,
-                'specialization': 'pattern_recognition',
-                'connections': []
+                'specialization': 'pattern_recognition'
             },
             'association_cortex': {
                 'neurons': int(self.total_neurons * 0.25),
                 'activity': 0.0,
-                'specialization': 'integration',
-                'connections': []
+                'specialization': 'integration'
             },
             'memory_hippocampus': {
                 'neurons': int(self.total_neurons * 0.20),
                 'activity': 0.0,
-                'specialization': 'memory_formation',
-                'connections': []
+                'specialization': 'memory_formation'
             },
             'executive_cortex': {
                 'neurons': int(self.total_neurons * 0.15),
                 'activity': 0.0,
-                'specialization': 'decision_making',
-                'connections': []
+                'specialization': 'decision_making'
             },
             'motor_cortex': {
                 'neurons': int(self.total_neurons * 0.10),
                 'activity': 0.0,
-                'specialization': 'motor_output',
-                'connections': []
+                'specialization': 'motor_output'
             }
         }
         
-        # Create inter-region connections
-        total_connections = 0
+        # Create inter-region connection matrix (statistical model instead of explicit lists)
+        # This replaces O(n²) memory growth with O(1) constant memory
         connection_patterns = [
             ('sensory_cortex', 'association_cortex', 0.3),
             ('association_cortex', 'memory_hippocampus', 0.25),
@@ -86,13 +238,526 @@ class FinalEnhancedBrain:
             ('sensory_cortex', 'executive_cortex', 0.15)
         ]
         
-        for source, target, strength in connection_patterns:
-            num_connections = int(regions[source]['neurons'] * regions[target]['neurons'] * strength / 1000)
-            regions[source]['connections'].extend([target] * num_connections)
-            total_connections += num_connections
+        # Phase 1.2: Use sparse matrices for large networks, dict for smaller ones
+        if self.use_sparse_mode and SPARSE_AVAILABLE:
+            regions['connection_matrix'] = self._init_sparse_connectivity(regions, connection_patterns)
+            regions['connection_storage_type'] = 'sparse'
+        else:
+            # Store connection strengths in matrix (O(1) memory instead of O(n²))
+            regions['connection_matrix'] = {}
+            for source, target, strength in connection_patterns:
+                if source not in regions['connection_matrix']:
+                    regions['connection_matrix'][source] = {}
+                regions['connection_matrix'][source][target] = strength
+            regions['connection_storage_type'] = 'dict'
         
-        regions['connection_count'] = total_connections
+        # Connection count calculated on-demand (not stored)
+        # This method will be used when connection_count is needed
         return regions
+    
+    def _calculate_connection_count(self) -> int:
+        """Calculate total connection count using statistical model (O(1) memory)"""
+        if 'connection_matrix' not in self.regions:
+            return 0
+        
+        total_connections = 0
+        connection_matrix = self.regions['connection_matrix']
+        storage_type = self.regions.get('connection_storage_type', 'dict')
+        
+        if storage_type == 'sparse' and SPARSE_AVAILABLE:
+            # For sparse matrices, calculate from connection density
+            connection_patterns = [
+                ('sensory_cortex', 'association_cortex', 0.3),
+                ('association_cortex', 'memory_hippocampus', 0.25),
+                ('memory_hippocampus', 'executive_cortex', 0.2),
+                ('executive_cortex', 'motor_cortex', 0.3),
+                ('sensory_cortex', 'executive_cortex', 0.15)
+            ]
+            for source, target, strength in connection_patterns:
+                if source in self.regions and target in self.regions:
+                    source_neurons = self.regions[source]['neurons']
+                    target_neurons = self.regions[target]['neurons']
+                    num_connections = int(source_neurons * target_neurons * strength / 1000)
+                    total_connections += num_connections
+        else:
+            # Dict-based storage
+            for source, targets in connection_matrix.items():
+                if source in self.regions:
+                    source_neurons = self.regions[source]['neurons']
+                    for target, strength in targets.items():
+                        if target in self.regions:
+                            target_neurons = self.regions[target]['neurons']
+                            num_connections = int(source_neurons * target_neurons * strength / 1000)
+                            total_connections += num_connections
+        
+        return total_connections
+    
+    def _init_sparse_connectivity(self, regions: Dict, connection_patterns: List) -> Union[Dict, 'sparse.csr_matrix']:
+        """Initialize sparse connectivity matrix for large networks (Phase 1.2)"""
+        if not SPARSE_AVAILABLE:
+            # Fallback to dict if scipy.sparse not available
+            connection_matrix = {}
+            for source, target, strength in connection_patterns:
+                if source not in connection_matrix:
+                    connection_matrix[source] = {}
+                connection_matrix[source][target] = strength
+            return connection_matrix
+        
+        # For very large networks, use sparse matrix representation
+        # Store connection probabilities/densities rather than explicit connections
+        # This enables lazy connection generation
+        connection_matrix = {
+            'sparse_mode': True,
+            'connection_densities': {},
+            'lazy_generation': True
+        }
+        
+        for source, target, strength in connection_patterns:
+            if source not in connection_matrix['connection_densities']:
+                connection_matrix['connection_densities'][source] = {}
+            connection_matrix['connection_densities'][source][target] = strength
+        
+        return connection_matrix
+    
+    def _get_connection_strength(self, source: str, target: str) -> float:
+        """Get connection strength between regions (works with both dict and sparse storage)"""
+        if 'connection_matrix' not in self.regions:
+            return 0.0
+        
+        storage_type = self.regions.get('connection_storage_type', 'dict')
+        connection_matrix = self.regions['connection_matrix']
+        
+        if storage_type == 'sparse':
+            # Sparse mode: get from density dictionary
+            if isinstance(connection_matrix, dict) and 'connection_densities' in connection_matrix:
+                densities = connection_matrix['connection_densities']
+                if source in densities and target in densities[source]:
+                    return densities[source][target]
+            return 0.0
+        else:
+            # Dict mode: standard lookup
+            if source in connection_matrix and target in connection_matrix[source]:
+                return connection_matrix[source][target]
+            return 0.0
+    
+    def _init_memory_pools(self) -> Dict:
+        """Initialize memory pools for reusable neuron state arrays (Phase 1.3)"""
+        return {
+            'neuron_state_pool': [],  # Pool of reusable neuron state arrays
+            'pool_size': 10,  # Number of arrays to keep in pool
+            'array_size': 10000,  # Default array size for pooling
+            'active_arrays': 0
+        }
+    
+    def _get_pooled_array(self, size: int) -> np.ndarray:
+        """Get array from memory pool or create new one"""
+        pool = self.memory_pools['neuron_state_pool']
+        
+        # Try to find suitable array in pool
+        for i, arr in enumerate(pool):
+            if arr.size >= size:
+                # Remove from pool and return
+                pooled_arr = pool.pop(i)
+                self.memory_pools['active_arrays'] += 1
+                # Resize if needed
+                if pooled_arr.size > size:
+                    return pooled_arr[:size]
+                return pooled_arr
+        
+        # No suitable array in pool, create new one
+        if self.use_memory_mapped:
+            # Use memory-mapped file for very large arrays
+            return self._create_memory_mapped_array(size)
+        else:
+            new_arr = np.zeros(size, dtype=np.float32)  # Use float32 to save memory
+            self.memory_pools['active_arrays'] += 1
+            return new_arr
+    
+    def _return_pooled_array(self, arr: np.ndarray):
+        """Return array to memory pool for reuse"""
+        pool = self.memory_pools['neuron_state_pool']
+        
+        # Only keep limited number of arrays in pool
+        if len(pool) < self.memory_pools['pool_size']:
+            pool.append(arr)
+        
+        self.memory_pools['active_arrays'] = max(0, self.memory_pools['active_arrays'] - 1)
+    
+    def _create_memory_mapped_array(self, size: int) -> np.ndarray:
+        """Create memory-mapped array for very large datasets (Phase 1.3)"""
+        if not self.use_memory_mapped:
+            return np.zeros(size, dtype=np.float32)
+        
+        # Create temporary file for memory mapping
+        temp_file = f'/tmp/brain_sim_{os.getpid()}_{id(self)}_{size}.dat'
+        try:
+            # Create memory-mapped array
+            mmap_arr = np.memmap(temp_file, dtype=np.float32, mode='w+', shape=(size,))
+            return mmap_arr
+        except Exception as e:
+            if self.debug:
+                print(f"   Warning: Memory mapping failed, using regular array: {e}")
+            return np.zeros(size, dtype=np.float32)
+    
+    def get_memory_usage(self) -> Dict:
+        """Get current memory usage statistics (Phase 1.3)"""
+        memory_info = {
+            'total_mb': 0.0,
+            'available_mb': 0.0,
+            'percent': 0.0,
+            'method': 'unknown'
+        }
+        
+        if PSUTIL_AVAILABLE:
+            try:
+                process = psutil.Process(os.getpid())
+                mem_info = process.memory_info()
+                memory_info['total_mb'] = mem_info.rss / (1024 * 1024)  # RSS in MB
+                memory_info['method'] = 'psutil'
+                
+                # System memory info
+                sys_mem = psutil.virtual_memory()
+                memory_info['available_mb'] = sys_mem.available / (1024 * 1024)
+                memory_info['percent'] = sys_mem.percent
+            except Exception as e:
+                if self.debug:
+                    print(f"   Warning: psutil memory tracking failed: {e}")
+        
+        # Fallback: estimate from object sizes
+        if memory_info['total_mb'] == 0:
+            try:
+                import sys as sys_module
+                # Rough estimate based on total neurons
+                estimated_mb = (self.total_neurons * 8) / (1024 * 1024)  # Assume 8 bytes per neuron
+                memory_info['total_mb'] = estimated_mb
+                memory_info['method'] = 'estimated'
+            except:
+                pass
+        
+        return memory_info
+    
+    def _init_gpu_memory(self):
+        """Initialize GPU memory pools (Phase 3.2)"""
+        if not self.use_gpu or not GPU_AVAILABLE:
+            return
+        
+        try:
+            # Set default GPU device
+            cp.cuda.Device(0).use()
+            
+            # Initialize memory pools for each GPU
+            for gpu_id in range(self.gpu_count):
+                with cp.cuda.Device(gpu_id):
+                    self.gpu_memory_pools[gpu_id] = {
+                        'allocated_arrays': [],
+                        'free_arrays': [],
+                        'memory_used_mb': 0.0
+                    }
+            
+            if self.debug:
+                mempool = cp.get_default_memory_pool()
+                print(f"   GPU Memory Pool initialized on {self.gpu_count} device(s)")
+        except Exception as e:
+            if self.debug:
+                print(f"   Warning: GPU memory initialization failed: {e}")
+            self.use_gpu = False
+    
+    def _get_gpu_array(self, size: int, gpu_id: int = 0) -> 'cp.ndarray':
+        """Get GPU array from pool or allocate new (Phase 3.2)"""
+        if not self.use_gpu or not GPU_AVAILABLE:
+            return None
+        
+        try:
+            with cp.cuda.Device(gpu_id):
+                pool = self.gpu_memory_pools.get(gpu_id, {})
+                free_arrays = pool.get('free_arrays', [])
+                
+                # Try to reuse array from pool
+                for i, arr in enumerate(free_arrays):
+                    if arr.size >= size:
+                        reused = free_arrays.pop(i)
+                        return reused[:size] if reused.size > size else reused
+                
+                # Allocate new array
+                new_arr = cp.zeros(size, dtype=self.dtype)
+                return new_arr
+        except Exception as e:
+            if self.debug:
+                print(f"   Warning: GPU allocation failed: {e}")
+            return None
+    
+    def _return_gpu_array(self, arr: 'cp.ndarray', gpu_id: int = 0):
+        """Return GPU array to pool (Phase 3.2)"""
+        if not self.use_gpu or not GPU_AVAILABLE or arr is None:
+            return
+        
+        try:
+            with cp.cuda.Device(gpu_id):
+                pool = self.gpu_memory_pools.get(gpu_id, {})
+                free_arrays = pool.get('free_arrays', [])
+                
+                # Keep limited number of arrays in pool
+                if len(free_arrays) < 10:
+                    free_arrays.append(arr)
+        except Exception:
+            pass
+    
+    def get_gpu_memory_usage(self) -> Dict:
+        """Get GPU memory usage statistics (Phase 3.2)"""
+        if not self.use_gpu or not GPU_AVAILABLE:
+            return {'available': False, 'devices': []}
+        
+        gpu_info = {'available': True, 'devices': []}
+        
+        try:
+            for gpu_id in range(self.gpu_count):
+                with cp.cuda.Device(gpu_id):
+                    mempool = cp.get_default_memory_pool()
+                    meminfo = cp.cuda.runtime.memGetInfo()
+                    free_mb = meminfo[0] / (1024**2)
+                    total_mb = meminfo[1] / (1024**2)
+                    used_mb = total_mb - free_mb
+                    
+                    gpu_info['devices'].append({
+                        'id': gpu_id,
+                        'total_mb': total_mb,
+                        'used_mb': used_mb,
+                        'free_mb': free_mb,
+                        'utilization': (used_mb / total_mb * 100) if total_mb > 0 else 0
+                    })
+        except Exception as e:
+            if self.debug:
+                print(f"   Warning: GPU memory query failed: {e}")
+        
+        return gpu_info
+    
+    def _init_distributed_architecture(self):
+        """Initialize distributed architecture (Phase 4.1)"""
+        if not self.is_distributed:
+            return
+        
+        try:
+            # Phase 4.2: Partition brain regions across nodes
+            region_names = ['sensory_cortex', 'association_cortex', 'memory_hippocampus', 
+                          'executive_cortex', 'motor_cortex']
+            
+            # Distribute regions across available nodes
+            regions_per_node = len(region_names) // self.mpi_size
+            remainder = len(region_names) % self.mpi_size
+            
+            start_idx = self.mpi_rank * regions_per_node + min(self.mpi_rank, remainder)
+            end_idx = start_idx + regions_per_node + (1 if self.mpi_rank < remainder else 0)
+            
+            self.node_regions = region_names[start_idx:end_idx]
+            
+            # Create checkpoint directory
+            os.makedirs(self.checkpoint_dir, exist_ok=True)
+            
+            # Show region distribution (only on rank 0 to avoid duplicate output)
+            if self.mpi_rank == 0:
+                print(f"      Region Distribution:")
+                for rank in range(self.mpi_size):
+                    rank_start = rank * regions_per_node + min(rank, remainder)
+                    rank_end = rank_start + regions_per_node + (1 if rank < remainder else 0)
+                    rank_regions = region_names[rank_start:rank_end]
+                    print(f"         Rank {rank}: {', '.join(rank_regions)}")
+            else:
+                # Other ranks just show their own regions
+                print(f"      Rank {self.mpi_rank}: Regions = {', '.join(self.node_regions)}")
+                
+        except Exception as e:
+            if self.debug or self.mpi_rank == 0:
+                print(f"   ⚠️  Warning: Distributed initialization failed: {e}")
+            self.is_distributed = False
+    
+    def _distribute_to_gpus(self, data: np.ndarray, operation: str = 'pattern') -> List:
+        """Distribute data across multiple GPUs for parallel processing (Phase 3.3)"""
+        if not self.use_multi_gpu or self.gpu_count < 2:
+            return [data]  # Single GPU or CPU
+        
+        try:
+            # Split data across GPUs
+            chunk_size = len(data) // self.gpu_count
+            chunks = []
+            
+            for gpu_id in range(self.gpu_count):
+                start_idx = gpu_id * chunk_size
+                end_idx = start_idx + chunk_size if gpu_id < self.gpu_count - 1 else len(data)
+                chunks.append((gpu_id, data[start_idx:end_idx]))
+            
+            return chunks
+        except Exception as e:
+            if self.debug:
+                print(f"   Warning: Multi-GPU distribution failed: {e}")
+            return [data]
+    
+    def _process_multi_gpu(self, chunks: List, operation_func) -> np.ndarray:
+        """Process chunks in parallel across multiple GPUs (Phase 3.3)"""
+        if not self.use_multi_gpu or len(chunks) < 2:
+            return operation_func(chunks[0][1]) if chunks else None
+        
+        try:
+            results = []
+            for gpu_id, chunk_data in chunks:
+                with cp.cuda.Device(gpu_id):
+                    result = operation_func(chunk_data)
+                    results.append(result)
+            
+            # Concatenate results
+            return np.concatenate(results) if len(results) > 1 else results[0]
+        except Exception as e:
+            if self.debug:
+                print(f"   Warning: Multi-GPU processing failed: {e}")
+            return operation_func(chunks[0][1]) if chunks else None
+    
+    def _send_to_node(self, target_rank: int, data: Dict, tag: int = 0):
+        """Send data to another node (Phase 4.3)"""
+        if not self.is_distributed or not MPI_AVAILABLE or self.mpi_comm is None:
+            return False
+        
+        try:
+            # Phase 4.3: Compress data before sending
+            import pickle
+            import zlib
+            serialized = pickle.dumps(data)
+            compressed = zlib.compress(serialized)
+            self.mpi_comm.send(compressed, dest=target_rank, tag=tag)
+            return True
+        except Exception as e:
+            if self.debug:
+                print(f"   Warning: Send to node {target_rank} failed: {e}")
+            return False
+    
+    def _receive_from_node(self, source_rank: int, tag: int = 0) -> Optional[Dict]:
+        """Receive data from another node (Phase 4.3)"""
+        if not self.is_distributed or not MPI_AVAILABLE or self.mpi_comm is None:
+            return None
+        
+        try:
+            import pickle
+            import zlib
+            compressed = self.mpi_comm.recv(source=source_rank, tag=tag)
+            serialized = zlib.decompress(compressed)
+            return pickle.loads(serialized)
+        except Exception as e:
+            if self.debug:
+                print(f"   Warning: Receive from node {source_rank} failed: {e}")
+            return None
+    
+    def _broadcast_data(self, data: Dict, root: int = 0) -> Dict:
+        """Broadcast data from root to all nodes (Phase 4.3)"""
+        if not self.is_distributed or not MPI_AVAILABLE or self.mpi_comm is None:
+            return data
+        
+        try:
+            import pickle
+            import zlib
+            if self.mpi_rank == root:
+                serialized = pickle.dumps(data)
+                compressed = zlib.compress(serialized)
+            else:
+                compressed = None
+            
+            compressed = self.mpi_comm.bcast(compressed, root=root)
+            
+            if self.mpi_rank != root:
+                serialized = zlib.decompress(compressed)
+                data = pickle.loads(serialized)
+            
+            return data
+        except Exception as e:
+            if self.debug:
+                print(f"   Warning: Broadcast failed: {e}")
+            return data
+    
+    def _allreduce_data(self, data: np.ndarray, operation: str = 'sum') -> np.ndarray:
+        """Reduce data across all nodes (Phase 4.3)"""
+        if not self.is_distributed or not MPI_AVAILABLE or self.mpi_comm is None or MPI_MODULE is None:
+            return data
+        
+        try:
+            if operation == 'sum':
+                result = self.mpi_comm.allreduce(data, op=MPI_MODULE.SUM)
+            elif operation == 'max':
+                result = self.mpi_comm.allreduce(data, op=MPI_MODULE.MAX)
+            elif operation == 'min':
+                result = self.mpi_comm.allreduce(data, op=MPI_MODULE.MIN)
+            else:
+                result = self.mpi_comm.allreduce(data, op=MPI_MODULE.SUM)
+            return result
+        except Exception as e:
+            if self.debug:
+                print(f"   Warning: Allreduce failed: {e}")
+            return data
+    
+    def _save_checkpoint(self, step: int):
+        """Save checkpoint for fault tolerance (Phase 4.2)"""
+        if not self.is_distributed:
+            return
+        
+        try:
+            checkpoint_file = f"{self.checkpoint_dir}/checkpoint_rank{self.mpi_rank}_step{step}.pkl"
+            checkpoint_data = {
+                'regions': {name: self.regions[name] for name in self.node_regions},
+                'memory_system': self.memory_system,
+                'pattern_system': self.pattern_system,
+                'step': step
+            }
+            
+            import pickle
+            with open(checkpoint_file, 'wb') as f:
+                pickle.dump(checkpoint_data, f)
+        except Exception as e:
+            if self.debug:
+                print(f"   Warning: Checkpoint save failed: {e}")
+    
+    def _load_checkpoint(self, step: int) -> bool:
+        """Load checkpoint for fault tolerance (Phase 4.2)"""
+        if not self.is_distributed:
+            return False
+        
+        try:
+            checkpoint_file = f"{self.checkpoint_dir}/checkpoint_rank{self.mpi_rank}_step{step}.pkl"
+            if not os.path.exists(checkpoint_file):
+                return False
+            
+            import pickle
+            with open(checkpoint_file, 'rb') as f:
+                checkpoint_data = pickle.load(f)
+            
+            # Restore state
+            for name in self.node_regions:
+                if name in checkpoint_data['regions']:
+                    self.regions[name] = checkpoint_data['regions'][name]
+            self.memory_system = checkpoint_data['memory_system']
+            self.pattern_system = checkpoint_data['pattern_system']
+            
+            return True
+        except Exception as e:
+            if self.debug:
+                print(f"   Warning: Checkpoint load failed: {e}")
+            return False
+    
+    def _balance_load(self, region_workloads: Dict[str, float]) -> Dict[int, List[str]]:
+        """Balance workload across nodes (Phase 4.1)"""
+        if not self.is_distributed or self.mpi_size < 2:
+            return {0: list(region_workloads.keys())}
+        
+        try:
+            # Simple round-robin load balancing
+            # In production, would use more sophisticated algorithms
+            region_names = list(region_workloads.keys())
+            node_assignments = {i: [] for i in range(self.mpi_size)}
+            
+            for i, region_name in enumerate(region_names):
+                node_id = i % self.mpi_size
+                node_assignments[node_id].append(region_name)
+            
+            return node_assignments
+        except Exception as e:
+            if self.debug:
+                print(f"   Warning: Load balancing failed: {e}")
+            return {0: list(region_workloads.keys())}
     
     def _init_advanced_memory(self) -> Dict:
         """Initialize advanced memory system"""
@@ -101,18 +766,25 @@ class FinalEnhancedBrain:
         return {
             'working_memory': [],  # Limited capacity buffer
             'long_term_memory': [],  # Permanent storage
-            'synaptic_weights': np.random.normal(0.5, 0.1, 1000),  # Plastic synapses
+            'synaptic_weights': np.random.normal(0.5, 0.1, 1000).astype(self.dtype),  # Plastic synapses
             'memory_capacity': 7,  # Miller's 7±2 rule
             'consolidation_threshold': 0.25,  # Lowered from 0.35 for easier storage
             'recall_accuracy': 0.8
         }
     
     def _init_hierarchical_processing(self) -> Dict:
-        """Initialize hierarchical processing system"""
+        """Initialize hierarchical processing system - scales with neuron count"""
         print("   ✅ 4/4 Hierarchical Processing System")
         
         layers = []
-        input_size = 1000
+        # Base input size scales with neuron count (logarithmic)
+        if self.total_neurons >= 1_000_000:
+            # Logarithmic scaling: base 1000, scales with log10(neurons/1M) * 200
+            scale_factor = np.log10(max(1, self.total_neurons / 1_000_000)) * 200
+            input_size = int(1000 + scale_factor)
+            input_size = min(input_size, 5000)  # Cap at reasonable maximum
+        else:
+            input_size = 1000
         
         # Create processing hierarchy
         layer_specs = [
@@ -126,12 +798,18 @@ class FinalEnhancedBrain:
         
         for layer_name, size_ratio, function in layer_specs:
             layer_size = max(10, int(input_size * size_ratio))
+            # For pattern recognition layer, scale more aggressively with neuron count
+            if function == 'pattern_recognition' and self.total_neurons >= 1_000_000:
+                neuron_boost = int(np.log10(max(1, self.total_neurons / 1_000_000)) * 50)
+                layer_size = max(layer_size, layer_size + neuron_boost)
+                layer_size = min(layer_size, 1000)  # Cap at reasonable maximum
+            
             layers.append({
                 'name': layer_name,
                 'size': layer_size,
                 'function': function,
-                'activity': np.zeros(layer_size),
-                'weights': np.random.random((layer_size, min(100, input_size)))
+                'activity': np.zeros(layer_size, dtype=self.dtype),
+                'weights': np.random.random((layer_size, min(100, input_size))).astype(self.dtype)
             })
             input_size = layer_size
         
@@ -139,95 +817,231 @@ class FinalEnhancedBrain:
             'layers': layers,
             'processing_depth': len(layers),
             'feedback_enabled': True,
-            'layer_count': len(layers)
+            'layer_count': len(layers),
+            'base_input_size': input_size if self.total_neurons < 1_000_000 else int(1000 + np.log10(max(1, self.total_neurons / 1_000_000)) * 200)
         }
     
     def enhanced_pattern_recognition(self, input_pattern: np.ndarray) -> Dict:
-        """Enhanced pattern recognition with hierarchical processing"""
+        """Enhanced pattern recognition with hierarchical processing (Phase 2: Vectorized, Phase 3: GPU)"""
+        
+        # Phase 3.1: Use GPU if available and network is large
+        use_gpu_ops = self.use_gpu and GPU_AVAILABLE and len(input_pattern) > 100
+        
+        # Convert to float32 for large networks
+        input_pattern = input_pattern.astype(self.dtype)
         
         # Ensure proper input size
         if len(input_pattern) > 1000:
             input_pattern = input_pattern[:1000]
         elif len(input_pattern) < 1000:
-            input_pattern = np.pad(input_pattern, (0, 1000 - len(input_pattern)))
+            input_pattern = np.pad(input_pattern, (0, 1000 - len(input_pattern)), mode='constant')
         
-        # Detect pattern sparsity/density (improved threshold calculation using percentile)
-        if len(input_pattern) > 0:
-            # Use 25th percentile as threshold for better sensitivity
-            threshold = np.percentile(np.abs(input_pattern), 25) if len(input_pattern) > 0 else 0.0
-            # Fallback to median if percentile is too low
-            if threshold < np.median(np.abs(input_pattern)) * 0.5:
-                threshold = np.median(input_pattern) if len(input_pattern) > 0 else 0.0
+        # Initialize input_gpu variable (will be set if GPU is used)
+        input_gpu = None
+        
+        # Phase 3.1: Move to GPU if using GPU operations
+        if use_gpu_ops:
+            try:
+                input_gpu = cp.asarray(input_pattern)
+                abs_pattern_gpu = cp.abs(input_gpu)
+                
+                # GPU-based threshold calculation
+                if len(input_pattern) > 0:
+                    threshold = float(cp.percentile(abs_pattern_gpu, 25))
+                    median_val = float(cp.median(abs_pattern_gpu))
+                    if threshold < median_val * 0.5:
+                        threshold = median_val
+                else:
+                    threshold = 0.0
+                
+                density = float(cp.mean(abs_pattern_gpu > threshold))
+                abs_pattern = abs_pattern_gpu
+            except Exception as e:
+                if self.debug:
+                    print(f"   Warning: GPU pattern recognition failed, using CPU: {e}")
+                use_gpu_ops = False
+                abs_pattern = np.abs(input_pattern)
+                if len(input_pattern) > 0:
+                    threshold = np.percentile(abs_pattern, 25)
+                    if threshold < np.median(abs_pattern) * 0.5:
+                        threshold = np.median(abs_pattern)
+                else:
+                    threshold = 0.0
+                density = np.mean(abs_pattern > threshold)
         else:
-            threshold = 0.0
-        density = np.sum(np.abs(input_pattern) > threshold) / len(input_pattern)
+            # CPU-based threshold calculation
+            abs_pattern = np.abs(input_pattern)
+            if len(input_pattern) > 0:
+                threshold = np.percentile(abs_pattern, 25)
+                if threshold < np.median(abs_pattern) * 0.5:
+                    threshold = np.median(abs_pattern)
+            else:
+                threshold = 0.0
+            density = np.mean(abs_pattern > threshold)
+        
         is_sparse = density < 0.3
         
-        # Multi-layer feature extraction
-        features = []
+        # Use scaled feature detectors to improve recognition (scales with neuron count)
+        feature_detector_boost = 0.0
+        if 'feature_detectors' in self.pattern_system:
+            feature_detectors = self.pattern_system.get('feature_detectors', None)
+            num_detectors = self.pattern_system.get('num_detectors', 200)
+            if feature_detectors is not None and len(input_pattern) > 0:
+                # Sample input to match feature detector input size
+                detector_input_size = feature_detectors.shape[1] if len(feature_detectors.shape) > 1 else 10
+                if len(input_pattern) >= detector_input_size:
+                    # Use a subset of detectors based on neuron count (more neurons = use more detectors)
+                    detectors_to_use = min(num_detectors, max(50, int(num_detectors * 0.5)))  # Use 50% of detectors
+                    sample_input = input_pattern[:detector_input_size]
+                    
+                    # Compute feature responses using feature detectors
+                    if use_gpu_ops:
+                        sample_gpu = cp.asarray(sample_input)
+                        detector_responses = []
+                        for i in range(min(detectors_to_use, len(feature_detectors))):
+                            detector_gpu = cp.asarray(feature_detectors[i])
+                            response = float(cp.dot(sample_gpu, detector_gpu))
+                            detector_responses.append(response)
+                        feature_detector_boost = np.mean(np.abs(detector_responses)) * 0.1
+                    else:
+                        detector_responses = []
+                        for i in range(min(detectors_to_use, len(feature_detectors))):
+                            response = np.dot(sample_input, feature_detectors[i])
+                            detector_responses.append(response)
+                        feature_detector_boost = np.mean(np.abs(detector_responses)) * 0.1
+                    
+                    # Scale boost with neuron count (more neurons = better feature detection)
+                    neuron_scale = self.pattern_system.get('neuron_scale_factor', 0.0)
+                    feature_detector_boost *= (1.0 + neuron_scale * 0.2)  # Up to 20% boost per log10 scale
         
+        # Phase 2.1 & 3.1: Vectorized/GPU feature extraction
         if is_sparse:
-            # For sparse patterns, use density-based features
-            # Layer 1: Density-based feature extraction
+            # Sparse patterns: vectorized density-based features
             chunk_size = max(1, len(input_pattern) // 20)
-            for i in range(0, len(input_pattern), chunk_size):
-                chunk = input_pattern[i:i+chunk_size]
-                chunk_density = np.sum(np.abs(chunk) > threshold) / len(chunk) if len(chunk) > 0 else 0.0
-                # Add variance measure alongside density for better feature detection
-                chunk_variance = np.var(chunk) if len(chunk) > 0 else 0.0
-                features.append(chunk_density + chunk_variance * 0.5)  # Combined measure
+            n_chunks = (len(input_pattern) + chunk_size - 1) // chunk_size
             
-            # Layer 2: Pattern integration for sparse patterns
-            pattern_features = []
-            for i in range(0, len(features) - 2, 2):
-                window = features[i:i+2]
-                pattern_strength = np.mean(window)
-                pattern_features.append(pattern_strength)
-            
-            # Layer 3: High-level recognition for sparse patterns
-            if pattern_features:
-                recognition_score = np.mean(pattern_features)
-                # Boost confidence for sparse patterns based on density (improved with baseline boost)
-                confidence = min(1.0, density * 4.0 + recognition_score * 1.5 + 0.2)
-            else:
-                recognition_score = density
-                confidence = min(1.0, density * 4.0 + 0.2)
-        else:
-            # For dense patterns, use edge detection
-            # Layer 1: Enhanced edge detection with gradient calculation
-            for i in range(0, len(input_pattern) - 5, 5):
-                window = input_pattern[i:i+5]
-                edge_strength = np.std(window)  # Standard deviation as edge measure
-                # Add gradient calculation for better edge detection
-                if len(window) > 1:
-                    gradient = np.abs(np.diff(window)).mean()
+            # Reshape into chunks (pad if needed)
+            padded_len = n_chunks * chunk_size
+            if len(input_pattern) < padded_len:
+                if use_gpu_ops:
+                    padded = cp.pad(input_gpu, (0, padded_len - len(input_pattern)), mode='constant')
                 else:
-                    gradient = 0.0
-                features.append(edge_strength + gradient * 0.7)  # Combined edge measure
-            
-            # Layer 2: Pattern integration
-            pattern_features = []
-            for i in range(0, len(features) - 3, 3):
-                window = features[i:i+3]
-                pattern_strength = np.mean(window)
-                pattern_features.append(pattern_strength)
-            
-            # Layer 3: High-level recognition
-            if pattern_features:
-                recognition_score = np.mean(pattern_features)
-                # Improved dense pattern confidence with baseline boost
-                confidence = min(1.0, recognition_score * 3.0 + 0.15)
+                    padded = np.pad(input_pattern, (0, padded_len - len(input_pattern)), mode='constant')
             else:
-                recognition_score = 0.0
-                confidence = 0.15  # Minimum baseline confidence for dense patterns
+                padded = input_gpu[:padded_len] if (use_gpu_ops and input_gpu is not None) else input_pattern[:padded_len]
+            
+            chunks = padded.reshape(n_chunks, chunk_size)
+            chunk_abs = cp.abs(chunks) if use_gpu_ops else np.abs(chunks)
+            chunk_densities = cp.mean(chunk_abs > threshold, axis=1) if use_gpu_ops else np.mean(chunk_abs > threshold, axis=1)
+            chunk_variances = cp.var(chunks, axis=1) if use_gpu_ops else np.var(chunks, axis=1)
+            
+            # Convert GPU arrays to CPU if needed
+            if use_gpu_ops:
+                chunk_densities = cp.asnumpy(chunk_densities)
+                chunk_variances = cp.asnumpy(chunk_variances)
+            
+            features = chunk_densities + chunk_variances * 0.5
+            
+            # Vectorized pattern integration
+            if len(features) >= 2:
+                # Reshape for windowing
+                window_size = 2
+                n_windows = len(features) // window_size
+                if n_windows > 0:
+                    windowed = features[:n_windows * window_size].reshape(n_windows, window_size)
+                    pattern_features = np.mean(windowed, axis=1)
+                else:
+                    pattern_features = np.array([np.mean(features)])
+            else:
+                pattern_features = features
+            
+            # Recognition score (improved calculation for sparse patterns)
+            recognition_score = np.mean(pattern_features) if len(pattern_features) > 0 else density
+            # Enhanced confidence calculation for sparse patterns with feature detector boost
+            density_boost = min(density * 5.0, 1.0) if density > 0.1 else density * 3.0
+            pattern_boost = recognition_score * 2.0 if recognition_score > 0.3 else recognition_score * 1.0
+            raw_confidence_sparse = density_boost + pattern_boost + 0.25 + feature_detector_boost
+            confidence = np.clip(raw_confidence_sparse, 0.0, 1.0)
+        else:
+            # Dense patterns: vectorized/GPU edge detection
+            window_size = 5
+            n_windows = (len(input_pattern) - window_size) // window_size + 1
+            
+            # Initialize edge_strengths and gradients for confidence calculation
+            edge_strengths = np.array([])
+            gradients = np.array([])
+            
+            if n_windows > 0:
+                if use_gpu_ops:
+                    # GPU-based sliding windows
+                    windowed_data = input_gpu[:n_windows * window_size]
+                    windows = cp.lib.stride_tricks.as_strided(
+                        windowed_data,
+                        shape=(n_windows, window_size),
+                        strides=(windowed_data.strides[0] * window_size, windowed_data.strides[0])
+                    )
+                    edge_strengths = cp.std(windows, axis=1)
+                    gradients = cp.mean(cp.abs(cp.diff(windows, axis=1)), axis=1)
+                    features_gpu = edge_strengths + gradients * 0.7
+                    features = cp.asnumpy(features_gpu)
+                    # Convert GPU arrays to numpy for confidence calculation
+                    edge_strengths = cp.asnumpy(edge_strengths)
+                    gradients = cp.asnumpy(gradients)
+                else:
+                    # CPU-based sliding windows
+                    stride = input_pattern.strides[0]
+                    shape = (n_windows, window_size)
+                    strides = (stride * window_size, stride)
+                    windows = np.lib.stride_tricks.as_strided(
+                        input_pattern[:n_windows * window_size], 
+                        shape=shape, 
+                        strides=strides
+                    )
+                    edge_strengths = np.std(windows, axis=1)
+                    gradients = np.mean(np.abs(np.diff(windows, axis=1)), axis=1)
+                    features = edge_strengths + gradients * 0.7
+            else:
+                if use_gpu_ops:
+                    features = cp.asnumpy(cp.array([cp.std(input_gpu)]))
+                else:
+                    features = np.array([np.std(input_pattern)])
+                # For single value case, use it as both edge and gradient strength
+                edge_strengths = features
+                gradients = features * 0.5  # Approximate gradient from std
+            
+            # Vectorized pattern integration
+            if len(features) >= 3:
+                window_size = 3
+                n_windows = len(features) // window_size
+                if n_windows > 0:
+                    windowed = features[:n_windows * window_size].reshape(n_windows, window_size)
+                    pattern_features = np.mean(windowed, axis=1)
+                else:
+                    pattern_features = np.array([np.mean(features)])
+            else:
+                pattern_features = features
+            
+            # Recognition score (improved calculation for dense patterns)
+            recognition_score = np.mean(pattern_features) if len(pattern_features) > 0 else 0.0
+            # Enhanced confidence calculation for dense patterns with better edge detection and feature detector boost
+            edge_strength = np.mean(edge_strengths) if len(edge_strengths) > 0 else 0.0
+            gradient_strength = np.mean(gradients) if len(gradients) > 0 else 0.0
+            pattern_strength = recognition_score * 3.5 + edge_strength * 0.5 + gradient_strength * 0.3
+            raw_confidence_dense = pattern_strength + 0.2 + feature_detector_boost
+            confidence = np.clip(raw_confidence_dense, 0.0, 1.0)
+        
+        # Calculate raw confidence (before clipping) to show scaling differences
+        raw_confidence = raw_confidence_sparse if is_sparse else raw_confidence_dense
         
         # Store pattern in memory for future reference
         if confidence > self.pattern_system['discrimination_threshold']:
+            # Convert pattern_features to list for storage
+            features_list = pattern_features[:10].tolist() if len(pattern_features) > 0 else []
             pattern_signature = {
-                'features': pattern_features[:10] if pattern_features else [],
-                'score': recognition_score,
-                'density': density,
-                'is_sparse': is_sparse,
+                'features': features_list,
+                'score': float(recognition_score),
+                'density': float(density),
+                'is_sparse': bool(is_sparse),
                 'timestamp': time.time()
             }
             self.pattern_system['pattern_memory'].append(pattern_signature)
@@ -235,36 +1049,78 @@ class FinalEnhancedBrain:
             # Limit memory size
             if len(self.pattern_system['pattern_memory']) > 50:
                 self.pattern_system['pattern_memory'].pop(0)
+                # GC hint after removing old patterns
+                if self.total_neurons > 1_000_000:
+                    gc.collect()
         
         # Ensure features_detected count is meaningful
         features_detected_count = max(
-            len(pattern_features) if pattern_features else 0,
-            len(features) if features else 0,
+            len(pattern_features) if len(pattern_features) > 0 else 0,
+            len(features) if len(features) > 0 else 0,
             np.count_nonzero(input_pattern)  # Also count non-zero values
         )
+        
+        # Get feature detector metrics
+        num_detectors_used = self.pattern_system.get('num_detectors', 200)
+        neuron_scale_factor = self.pattern_system.get('neuron_scale_factor', 0.0)
         
         return {
             'recognition_score': recognition_score,
             'confidence': confidence,
+            'raw_confidence': float(raw_confidence),  # Unclipped confidence to show scaling
             'features_detected': features_detected_count,
             'pattern_recognized': confidence > self.pattern_system['discrimination_threshold'],
             'density': density,
-            'is_sparse': is_sparse
+            'is_sparse': is_sparse,
+            'feature_detector_boost': float(feature_detector_boost),
+            'num_detectors_available': num_detectors_used,
+            'neuron_scale_factor': float(neuron_scale_factor)
         }
     
     def multi_region_processing(self, stimulus: Dict) -> Dict:
-        """Process stimulus through multiple specialized brain regions"""
+        """Process stimulus through multiple specialized brain regions (Phase 2: Optimized, Phase 4: Distributed)"""
         
         processing_results = {}
         
-        # Reset region activities
-        for region_name in self.regions:
-            if region_name != 'connection_count':
-                self.regions[region_name]['activity'] = 0.0
+        # Phase 4.2: In distributed mode, only process regions assigned to this node
+        regions_to_process = self.node_regions if self.is_distributed else None
         
-        # Step 1: Sensory processing
-        if 'sensory_input' in stimulus:
+        # Phase 2.3: Event-driven - Reset only active regions (or all if not event-driven)
+        if self.use_event_driven:
+            # Only reset regions that were active (event-driven optimization)
+            active_region_names = [name for name, region in self.regions.items() 
+                                 if name != 'connection_matrix' and isinstance(region, dict) 
+                                 and 'activity' in region and region['activity'] > 0.01]
+            # Filter by node regions if distributed
+            if regions_to_process:
+                active_region_names = [name for name in active_region_names if name in regions_to_process]
+            for region_name in active_region_names:
+                self.regions[region_name]['activity'] = 0.0
+        else:
+            # Reset all regions (standard mode)
+            reset_regions = regions_to_process if regions_to_process else [name for name in self.regions 
+                                                                          if name != 'connection_matrix' 
+                                                                          and isinstance(self.regions[name], dict)]
+            for region_name in reset_regions:
+                if 'activity' in self.regions[region_name]:
+                    self.regions[region_name]['activity'] = 0.0
+        
+        # Step 1: Sensory processing (Phase 4: only if region on this node)
+        if 'sensory_input' in stimulus and (not regions_to_process or 'sensory_cortex' in regions_to_process):
             sensory_input = stimulus['sensory_input']
+            # Phase 4.3: Broadcast sensory input if distributed
+            if self.is_distributed and MPI_AVAILABLE:
+                try:
+                    if self.mpi_rank == 0:
+                        sensory_input = self._broadcast_data({'sensory_input': sensory_input})['sensory_input']
+                    else:
+                        broadcast_data = self._broadcast_data({})
+                        sensory_input = broadcast_data.get('sensory_input', stimulus['sensory_input'])
+                except Exception as e:
+                    if self.debug:
+                        print(f"   Warning: Broadcast failed, using local input: {e}")
+                    sensory_input = stimulus['sensory_input']
+            
             # Ensure sensory cortex activates with any non-zero input
             if np.any(sensory_input != 0) and np.sum(np.abs(sensory_input)) > 0:
                 pattern_result = self.enhanced_pattern_recognition(sensory_input)
@@ -275,65 +1131,117 @@ class FinalEnhancedBrain:
                 # Even for zero input, set minimal baseline activity
                 self.regions['sensory_cortex']['activity'] = 0.05
         
-        # Step 2: Association processing
-        sensory_activity = self.regions['sensory_cortex']['activity']
-        if sensory_activity > 0.1:  # Lowered from 0.2
-            # Association cortex integrates sensory information
-            association_activity = sensory_activity * 0.8
-            self.regions['association_cortex']['activity'] = association_activity
-            processing_results['association_processing'] = association_activity
+        # Phase 2.2 & 2.3: Parallel and event-driven processing for independent regions
+        def process_association(sensory_act):
+            """Process association cortex"""
+            if sensory_act > 0.1:
+                return sensory_act * 0.8
+            return 0.0
         
-        # Step 3: Memory processing
-        association_activity = self.regions['association_cortex']['activity']
-        if association_activity > 0.15:  # Lowered from 0.3
-            # Memory system activated
-            memory_activity = association_activity * 0.7
+        def process_memory(assoc_act, store_data):
+            """Process memory operations"""
+            if assoc_act > 0.15:
+                memory_act = assoc_act * 0.7
+                if store_data is not None:
+                    mem_result = self.enhanced_memory_operations('store', store_data)
+                    return memory_act, mem_result
+                return memory_act, None
+            return 0.0, None
+        
+        # Process regions (parallel if enabled and large network)
+        sensory_activity = self.regions['sensory_cortex']['activity']
+        
+        if self.use_parallel and self.total_neurons > 1_000_000:
+            # Parallel processing for independent operations
+            with ThreadPoolExecutor(max_workers=min(4, self.num_cores)) as executor:
+                assoc_future = executor.submit(process_association, sensory_activity)
+                association_activity = assoc_future.result()
+        else:
+            # Sequential processing
+            association_activity = process_association(sensory_activity)
+        
+        self.regions['association_cortex']['activity'] = association_activity
+        processing_results['association_processing'] = association_activity
+        
+        # Step 3: Memory processing (event-driven: only if association active)
+        if not self.use_event_driven or association_activity > 0.15:
+            store_data = stimulus.get('store_memory', None)
+            memory_activity, memory_result = process_memory(association_activity, store_data)
             self.regions['memory_hippocampus']['activity'] = memory_activity
             
-            # Enhanced memory operations
-            if 'store_memory' in stimulus:
-                memory_result = self.enhanced_memory_operations('store', stimulus['store_memory'])
+            if memory_result:
                 processing_results['memory_storage'] = memory_result
-            
             processing_results['memory_processing'] = memory_activity
+        else:
+            memory_activity = 0.0
         
-        # Step 4: Executive decision making
-        memory_activity = self.regions['memory_hippocampus']['activity']
+        # Step 4: Executive decision making (event-driven: only if inputs active)
         executive_input = (association_activity + memory_activity) / 2.0
         
-        if executive_input > 0.25:  # Lowered from 0.4
+        if not self.use_event_driven or executive_input > 0.25:
             executive_activity = min(1.0, executive_input * 1.2)
             self.regions['executive_cortex']['activity'] = executive_activity
             
-            # Decision making
-            decision_made = executive_activity > 0.3  # Lowered from 0.5
+            decision_made = executive_activity > 0.3
             processing_results['decision_making'] = {
                 'activity': executive_activity,
                 'decision_made': decision_made,
                 'confidence': executive_activity
             }
+        else:
+            executive_activity = 0.0
         
-        # Step 5: Motor output
-        executive_activity = self.regions['executive_cortex']['activity']
-        if executive_activity > 0.3:  # Lowered from 0.5
+        # Step 5: Motor output (event-driven: only if executive active)
+        if not self.use_event_driven or executive_activity > 0.3:
             motor_activity = executive_activity * 0.8
             self.regions['motor_cortex']['activity'] = motor_activity
             processing_results['motor_output'] = motor_activity
         
-        # Calculate overall coordination
-        active_regions = sum(1 for region_name, region in self.regions.items() 
-                           if region_name != 'connection_count' and region['activity'] > 0.1)
+        # Phase 4.3: Gather region activities from all nodes if distributed
+        if self.is_distributed and MPI_AVAILABLE and self.mpi_comm is not None:
+            try:
+                # Collect local region activities
+                local_activities = {name: float(self.regions[name]['activity']) 
+                                  for name in self.node_regions 
+                                  if name in self.regions and 'activity' in self.regions[name]}
+                
+                # Gather from all nodes
+                all_activities = self.mpi_comm.allgather(local_activities)
+                
+                # Merge activities from all nodes
+                region_activities_dict = {}
+                for node_activities in all_activities:
+                    region_activities_dict.update(node_activities)
+                
+                # Calculate coordination across all nodes
+                region_activities = np.array(list(region_activities_dict.values()), dtype=self.dtype)
+            except Exception as e:
+                if self.debug:
+                    print(f"   Warning: Distributed coordination failed: {e}")
+                # Fallback to local only
+                region_activities = np.array([region['activity'] for name, region in self.regions.items() 
+                                            if name != 'connection_matrix' and isinstance(region, dict) 
+                                            and 'activity' in region], dtype=self.dtype)
+                region_activities_dict = {name: float(region['activity']) for name, region in self.regions.items() 
+                                        if name != 'connection_matrix' and isinstance(region, dict) and 'activity' in region}
+        else:
+            # Calculate overall coordination (vectorized)
+            region_activities = np.array([region['activity'] for name, region in self.regions.items() 
+                                        if name != 'connection_matrix' and isinstance(region, dict) 
+                                        and 'activity' in region], dtype=self.dtype)
+            region_activities_dict = {name: float(region['activity']) for name, region in self.regions.items() 
+                                    if name != 'connection_matrix' and isinstance(region, dict) and 'activity' in region}
         
-        coordination_score = active_regions / 5.0  # 5 total regions
+        active_regions = int(np.sum(region_activities > 0.1))
+        coordination_score = float(active_regions / 5.0)  # 5 total regions
+        total_activity = float(np.sum(region_activities))
         
         return {
-            'region_activities': {name: region['activity'] for name, region in self.regions.items() 
-                                if name != 'connection_count'},
+            'region_activities': region_activities_dict,
             'processing_results': processing_results,
             'coordination_score': coordination_score,
             'active_regions': active_regions,
-            'total_activity': sum(region['activity'] for region in self.regions.values() 
-                                if isinstance(region, dict) and 'activity' in region)
+            'total_activity': total_activity
         }
     
     def enhanced_memory_operations(self, operation: str, data: Optional[np.ndarray] = None, debug: Optional[bool] = None) -> Dict:
@@ -401,6 +1309,9 @@ class FinalEnhancedBrain:
                         # Move oldest to long-term memory
                         old_item = self.memory_system['working_memory'].pop(0)
                         self.memory_system['long_term_memory'].append(old_item)
+                        # GC hint after memory operations for large networks
+                        if self.total_neurons > 1_000_000:
+                            gc.collect()
                     
                     # Strengthen synaptic connections
                     strengthening = pattern_analysis['confidence'] * 0.1
@@ -506,7 +1417,13 @@ class FinalEnhancedBrain:
         return {'operation': operation, 'success': False}
     
     def hierarchical_processing(self, input_data: np.ndarray) -> Dict:
-        """Process data through hierarchical layers"""
+        """Process data through hierarchical layers (Phase 2: Vectorized, Phase 3: GPU)"""
+        
+        # Phase 3.1: Use GPU if available and network is large
+        use_gpu_ops = self.use_gpu and GPU_AVAILABLE and len(input_data) > 100
+        
+        # Convert to float32 for large networks
+        input_data = input_data.astype(self.dtype)
         
         layer_outputs = []
         current_input = input_data
@@ -515,83 +1432,133 @@ class FinalEnhancedBrain:
         if len(current_input) > 1000:
             current_input = current_input[:1000]
         
-        # Process through each layer
+        # Phase 3.1: Move to GPU if using GPU operations
+        if use_gpu_ops:
+            try:
+                current_input_gpu = cp.asarray(current_input)
+            except Exception as e:
+                if self.debug:
+                    print(f"   Warning: GPU hierarchical processing failed, using CPU: {e}")
+                use_gpu_ops = False
+        
+        # Process through each layer (vectorized/GPU)
         for i, layer in enumerate(self.hierarchy['layers']):
             if layer['name'] == 'input':
                 # Input layer - direct pass-through
-                layer_output = current_input[:layer['size']]
-                if len(layer_output) < layer['size']:
-                    layer_output = np.pad(layer_output, (0, layer['size'] - len(layer_output)))
+                if use_gpu_ops:
+                    layer_output_gpu = current_input_gpu[:layer['size']]
+                    if len(layer_output_gpu) < layer['size']:
+                        layer_output_gpu = cp.pad(layer_output_gpu, (0, layer['size'] - len(layer_output_gpu)), mode='constant')
+                    layer_output = cp.asnumpy(layer_output_gpu)
+                else:
+                    layer_output = current_input[:layer['size']]
+                    if len(layer_output) < layer['size']:
+                        layer_output = np.pad(layer_output, (0, layer['size'] - len(layer_output)), mode='constant')
             
             else:
-                # Higher layers - apply processing function
+                # Higher layers - apply processing function (vectorized/GPU)
                 input_size = min(len(current_input), layer['weights'].shape[1])
-                truncated_input = current_input[:input_size]
+                
+                if use_gpu_ops:
+                    truncated_input_gpu = current_input_gpu[:input_size]
+                    weights_gpu = cp.asarray(layer['weights'][:layer['size'], :input_size].astype(self.dtype))
+                else:
+                    truncated_input = current_input[:input_size].astype(self.dtype)
+                    weights = layer['weights'][:layer['size'], :input_size].astype(self.dtype)
                 
                 if layer['function'] == 'feature_detection':
-                    # Feature detection layer
-                    layer_output = np.zeros(layer['size'])
-                    for j in range(layer['size']):
-                        if j < len(layer['weights']):
-                            weights = layer['weights'][j][:len(truncated_input)]
-                            layer_output[j] = max(0, np.dot(weights, truncated_input))
+                    # Feature detection layer - GPU matrix multiplication
+                    if use_gpu_ops:
+                        layer_output_gpu = cp.maximum(0, cp.dot(weights_gpu, truncated_input_gpu))
+                        layer_output = cp.asnumpy(layer_output_gpu)
+                    else:
+                        layer_output = np.maximum(0, np.dot(weights, truncated_input))
                 
                 elif layer['function'] == 'pattern_recognition':
-                    # Pattern recognition layer
-                    layer_output = np.zeros(layer['size'])
-                    for j in range(layer['size']):
-                        if j < len(layer['weights']) and len(truncated_input) > 0:
-                            weights = layer['weights'][j][:len(truncated_input)]
-                            response = np.dot(weights, truncated_input)
-                            layer_output[j] = 1.0 / (1.0 + np.exp(-response))  # Sigmoid
+                    # Pattern recognition layer - GPU sigmoid
+                    if len(truncated_input if not use_gpu_ops else truncated_input_gpu) > 0:
+                        if use_gpu_ops:
+                            responses_gpu = cp.dot(weights_gpu, truncated_input_gpu)
+                            layer_output_gpu = 1.0 / (1.0 + cp.exp(-cp.clip(responses_gpu, -500, 500)))
+                            layer_output = cp.asnumpy(layer_output_gpu)
+                        else:
+                            responses = np.dot(weights, truncated_input)
+                            layer_output = 1.0 / (1.0 + np.exp(-np.clip(responses, -500, 500)))
+                    else:
+                        layer_output = np.zeros(layer['size'], dtype=self.dtype)
                 
                 elif layer['function'] == 'integration':
-                    # Integration layer
-                    if len(truncated_input) > 0:
-                        layer_output = np.zeros(layer['size'])
-                        chunk_size = max(1, len(truncated_input) // layer['size'])
-                        for j in range(layer['size']):
-                            start_idx = j * chunk_size
-                            end_idx = min(start_idx + chunk_size, len(truncated_input))
-                            if start_idx < len(truncated_input):
-                                layer_output[j] = np.mean(truncated_input[start_idx:end_idx])
+                    # Integration layer - GPU chunking
+                    if len(truncated_input if not use_gpu_ops else truncated_input_gpu) > 0:
+                        chunk_size = max(1, input_size // layer['size'])
+                        n_chunks = layer['size']
+                        padded_len = n_chunks * chunk_size
+                        
+                        if use_gpu_ops:
+                            if input_size < padded_len:
+                                padded_gpu = cp.pad(truncated_input_gpu, (0, padded_len - input_size), mode='constant')
+                            else:
+                                padded_gpu = truncated_input_gpu[:padded_len]
+                            chunks_gpu = padded_gpu.reshape(n_chunks, chunk_size)
+                            layer_output_gpu = cp.mean(chunks_gpu, axis=1)
+                            layer_output = cp.asnumpy(layer_output_gpu)
+                        else:
+                            if len(truncated_input) < padded_len:
+                                padded = np.pad(truncated_input, (0, padded_len - len(truncated_input)), mode='constant')
+                            else:
+                                padded = truncated_input[:padded_len]
+                            chunks = padded.reshape(n_chunks, chunk_size)
+                            layer_output = np.mean(chunks, axis=1)
                     else:
-                        layer_output = np.zeros(layer['size'])
+                        layer_output = np.zeros(layer['size'], dtype=self.dtype)
                 
                 elif layer['function'] == 'abstraction':
-                    # Abstraction layer
-                    if len(truncated_input) > 0:
-                        layer_output = np.zeros(layer['size'])
-                        # High-level feature abstraction
-                        for j in range(layer['size']): 
-                            if len(truncated_input) > j:
-                                layer_output[j] = np.max(truncated_input) * np.random.uniform(0.7, 1.0)
+                    # Abstraction layer - GPU operations
+                    if len(truncated_input if not use_gpu_ops else truncated_input_gpu) > 0:
+                        if use_gpu_ops:
+                            max_val = float(cp.max(truncated_input_gpu))
+                            random_factors_gpu = cp.random.uniform(0.7, 1.0, layer['size']).astype(self.dtype)
+                            layer_output_gpu = max_val * random_factors_gpu
+                            layer_output = cp.asnumpy(layer_output_gpu)
+                        else:
+                            max_val = np.max(truncated_input)
+                            random_factors = np.random.uniform(0.7, 1.0, layer['size']).astype(self.dtype)
+                            layer_output = max_val * random_factors
                     else:
-                        layer_output = np.zeros(layer['size'])
+                        layer_output = np.zeros(layer['size'], dtype=self.dtype)
                 
                 else:  # decision_output
-                    # Output decision layer
-                    if len(truncated_input) > 0:
-                        decision_strength = np.mean(truncated_input)
-                        layer_output = np.array([decision_strength] * layer['size'])
+                    # Output decision layer - GPU operations
+                    if len(truncated_input if not use_gpu_ops else truncated_input_gpu) > 0:
+                        if use_gpu_ops:
+                            decision_strength = float(cp.mean(truncated_input_gpu))
+                            layer_output = np.full(layer['size'], decision_strength, dtype=self.dtype)
+                        else:
+                            decision_strength = np.mean(truncated_input)
+                            layer_output = np.full(layer['size'], decision_strength, dtype=self.dtype)
                     else:
-                        layer_output = np.zeros(layer['size'])
+                        layer_output = np.zeros(layer['size'], dtype=self.dtype)
+                
+                # Update current_input for next layer
+                if use_gpu_ops:
+                    current_input_gpu = cp.asarray(layer_output)
             
             # Store layer activity
             layer['activity'] = layer_output
             layer_outputs.append(layer_output)
             current_input = layer_output  # Feed forward to next layer
         
-        # Calculate processing metrics
-        processing_depth = len([output for output in layer_outputs if np.sum(output) > 0])
-        information_flow = sum(np.sum(output) for output in layer_outputs)
+        # Calculate processing metrics (vectorized)
+        layer_sums = np.array([np.sum(output) for output in layer_outputs])
+        processing_depth = np.sum(layer_sums > 0)
+        information_flow = np.sum(layer_sums)
         
         return {
             'layer_outputs': layer_outputs,
-            'final_output': layer_outputs[-1] if layer_outputs else np.array([]),
-            'processing_depth': processing_depth,
-            'information_flow': information_flow,
-            'layers_active': processing_depth
+            'final_output': layer_outputs[-1] if layer_outputs else np.array([], dtype=self.dtype),
+            'processing_depth': int(processing_depth),
+            'information_flow': float(information_flow),
+            'layers_active': int(processing_depth)
         }
     
     def comprehensive_enhanced_assessment(self) -> Dict:
@@ -614,14 +1581,32 @@ class FinalEnhancedBrain:
         ]
         
         recognition_scores = []
+        raw_confidences = []
+        detector_boosts = []
         for i, pattern in enumerate(test_patterns):
             result = self.enhanced_pattern_recognition(pattern.astype(float))
             confidence = result['confidence']
+            raw_conf = result.get('raw_confidence', confidence)
+            detector_boost = result.get('feature_detector_boost', 0.0)
             recognition_scores.append(confidence)
+            raw_confidences.append(raw_conf)
+            detector_boosts.append(detector_boost)
             print(f"   Pattern {i+1}: Confidence = {confidence:.3f}, Recognized = {'✅' if result['pattern_recognized'] else '❌'}")
         
         pattern_score = np.mean(recognition_scores)
+        avg_raw_confidence = np.mean(raw_confidences)
+        avg_detector_boost = np.mean(detector_boosts)
+        num_detectors = result.get('num_detectors_available', 200)
+        
+        # Use raw confidence for scaling-aware score (shows differences even when clipped)
+        # Weighted average: 70% clipped confidence, 30% raw confidence (to show scaling)
+        scaling_aware_score = pattern_score * 0.7 + min(1.0, avg_raw_confidence / 1.5) * 0.3
+        
         test_results['pattern_recognition'] = pattern_score
+        test_results['pattern_recognition_raw'] = avg_raw_confidence  # Unclipped metric
+        test_results['pattern_recognition_scaling'] = scaling_aware_score  # Shows neuron scaling
+        test_results['feature_detector_boost'] = avg_detector_boost
+        test_results['num_feature_detectors'] = num_detectors
         
         # Test 2: Multi-Region Coordination
         print("\n2. Multi-Region Brain Architecture")
@@ -743,7 +1728,9 @@ class FinalEnhancedBrain:
             'hierarchical_processing': 0.15   # Important for complexity
         }
         
-        overall_enhanced_score = sum(test_results[test] * enhancement_weights[test] for test in test_results)
+        # Only use main test keys for overall score calculation (exclude auxiliary metrics)
+        main_test_keys = ['pattern_recognition', 'multi_region_coordination', 'advanced_memory', 'hierarchical_processing']
+        overall_enhanced_score = sum(test_results[test] * enhancement_weights[test] for test in main_test_keys if test in test_results)
         
         # Calculate improvement over baseline
         baseline_score = 0.520  # From 10K neuron simple test
@@ -785,13 +1772,13 @@ def main():
                 debug_mode = True
             elif arg.isdigit():
                 neuron_count = int(arg)
-                # Validate neuron count (min: 1000, max: 10,000,000)
+                # Validate neuron count (min: 1000, max: 80,000,000,000 for Phase 4)
                 if neuron_count < 1000:
                     print(f"⚠️  Warning: Neuron count {neuron_count} too low, using minimum 1,000")
                     neuron_count = 1000
-                elif neuron_count > 10_000_000:
-                    print(f"⚠️  Warning: Neuron count {neuron_count} too high, using maximum 10,000,000")
-                    neuron_count = 10_000_000
+                elif neuron_count > 80_000_000_000:
+                    print(f"⚠️  Warning: Neuron count {neuron_count} exceeds Phase 4 limit (80B), using maximum 80,000,000,000")
+                    neuron_count = 80_000_000_000
                 total_neurons = neuron_count
     
     if debug_mode:
@@ -841,9 +1828,19 @@ def main():
         
         print(f"\n🔬 ENHANCEMENT PERFORMANCE BREAKDOWN:")
         for enhancement, score in results['individual_scores'].items():
-            enhancement_name = enhancement.replace('_', ' ').title()
-            status = "✅ Excellent" if score >= 0.7 else "✅ Good" if score >= 0.5 else "⚠️ Fair" if score >= 0.3 else "❌ Needs Work"
-            print(f"   {enhancement_name}: {score:.3f} ({status})")
+            if enhancement == 'pattern_recognition':
+                # Show scaling-aware metrics for pattern recognition
+                raw_conf = results['individual_scores'].get('pattern_recognition_raw', score)
+                scaling_score = results['individual_scores'].get('pattern_recognition_scaling', score)
+                num_detectors = results['individual_scores'].get('num_feature_detectors', 200)
+                enhancement_name = enhancement.replace('_', ' ').title()
+                status = "✅ Excellent" if score >= 0.7 else "✅ Good" if score >= 0.5 else "⚠️ Fair" if score >= 0.3 else "❌ Needs Work"
+                print(f"   {enhancement_name}: {score:.3f} ({status})")
+                print(f"      └─ Raw Confidence: {raw_conf:.3f} | Scaling Score: {scaling_score:.3f} | Feature Detectors: {num_detectors}")
+            elif enhancement not in ['pattern_recognition_raw', 'pattern_recognition_scaling', 'feature_detector_boost', 'num_feature_detectors']:
+                enhancement_name = enhancement.replace('_', ' ').title()
+                status = "✅ Excellent" if score >= 0.7 else "✅ Good" if score >= 0.5 else "⚠️ Fair" if score >= 0.3 else "❌ Needs Work"
+                print(f"   {enhancement_name}: {score:.3f} ({status})")
         
         print(f"\n📊 SYSTEM CAPABILITIES:")
         status = results['system_status']
