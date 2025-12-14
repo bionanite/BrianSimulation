@@ -136,6 +136,10 @@ class FinalEnhancedBrain:
         self.experience_count = 0  # Number of learning experiences
         self.identity_history = []  # Temporal continuity tracking
         
+        # Attention & Focus System: Initialize attention system
+        self.attention_system = self._init_attention_system()
+        self.attention_history = []  # Track attention over time
+        
         # Show MPI status
         if total_neurons > 10_000_000_000:
             if MPI_AVAILABLE:
@@ -837,6 +841,381 @@ class FinalEnhancedBrain:
             'base_input_size': input_size if self.total_neurons < 1_000_000 else int(1000 + np.log10(max(1, self.total_neurons / 1_000_000)) * 200)
         }
     
+    def _init_attention_system(self) -> Dict:
+        """Initialize attention & focus system"""
+        # Initialize attention weights for each region
+        # Default regions (will be updated when regions are initialized)
+        default_regions = ['sensory_cortex', 'association_cortex', 'memory_hippocampus', 'executive_cortex', 'motor_cortex']
+        region_attention_weights = {}
+        num_regions = len(default_regions)
+        for region_name in default_regions:
+            region_attention_weights[region_name] = 1.0 / num_regions
+        
+        # Initialize layer attention weights (will be set dynamically)
+        layer_attention_weights = {}
+        
+        # Attention decay rate (how quickly attention fades)
+        attention_decay_rate = 0.95
+        
+        # Focus state
+        current_focus = {
+            'primary_region': None,
+            'primary_layer': None,
+            'focus_strength': 0.0,
+            'focus_duration': 0
+        }
+        
+        return {
+            'region_weights': region_attention_weights,
+            'layer_weights': layer_attention_weights,
+            'decay_rate': attention_decay_rate,
+            'current_focus': current_focus,
+            'attention_history': [],
+            'filtering_efficiency': 0.0,
+            'resource_savings': 0.0
+        }
+    
+    def selective_attention(self, input_data: np.ndarray, attention_weights: Optional[np.ndarray] = None) -> Dict:
+        """Selective attention filtering - filter irrelevant inputs"""
+        input_data = input_data.astype(self.dtype)
+        
+        # Calculate salience scores for input elements
+        # Salience based on magnitude, novelty, and structure
+        abs_input = np.abs(input_data)
+        mean_magnitude = np.mean(abs_input) if len(abs_input) > 0 else 0.0
+        std_magnitude = np.std(abs_input) if len(abs_input) > 0 else 0.0
+        
+        # Salience = magnitude + novelty (deviation from mean) + structure (local variance)
+        salience_scores = abs_input.copy()
+        if mean_magnitude > 0:
+            # Novelty component: how different from mean
+            novelty = np.abs(abs_input - mean_magnitude) / (mean_magnitude + 1e-10)
+            salience_scores += novelty * 0.3
+        
+        # Structure component: local variance (using sliding window)
+        if len(input_data) > 5:
+            local_variance = np.zeros_like(abs_input)
+            window_size = min(5, len(input_data) // 4)
+            for i in range(len(input_data)):
+                start = max(0, i - window_size // 2)
+                end = min(len(input_data), i + window_size // 2 + 1)
+                local_variance[i] = np.std(abs_input[start:end]) if end > start else 0.0
+            salience_scores += local_variance * 0.2
+        
+        # Normalize salience scores
+        if salience_scores.max() > salience_scores.min():
+            salience_scores = (salience_scores - salience_scores.min()) / (salience_scores.max() - salience_scores.min() + 1e-10)
+        
+        # Apply attention weights if provided
+        if attention_weights is not None and len(attention_weights) == len(input_data):
+            salience_scores = salience_scores * attention_weights
+        
+        # Filter: keep top 70% most salient elements
+        threshold = np.percentile(salience_scores, 30)
+        attention_mask = salience_scores >= threshold
+        
+        # Apply filter
+        filtered_input = input_data * attention_mask.astype(self.dtype)
+        
+        # Calculate filtering efficiency
+        original_energy = np.sum(np.abs(input_data))
+        filtered_energy = np.sum(np.abs(filtered_input))
+        filtering_efficiency = 1.0 - (filtered_energy / (original_energy + 1e-10))
+        
+        # Create attention map
+        attention_map = salience_scores
+        
+        return {
+            'filtered_input': filtered_input,
+            'attention_map': attention_map,
+            'attention_mask': attention_mask,
+            'filtering_efficiency': float(filtering_efficiency),
+            'salience_scores': salience_scores,
+            'high_priority_count': int(np.sum(attention_mask)),
+            'low_priority_count': int(len(input_data) - np.sum(attention_mask))
+        }
+    
+    def allocate_region_attention(self, stimulus: Dict, current_state: Dict) -> Dict:
+        """Allocate attention weights across brain regions"""
+        region_attention = {}
+        
+        # Calculate attention needs for each region based on:
+        # 1. Input salience
+        # 2. Task relevance
+        # 3. Current processing load
+        # 4. Memory importance
+        
+        input_salience = stimulus.get('intensity', 0.5)
+        task_type = stimulus.get('type', 'general')
+        
+        # Base attention allocation
+        valid_regions = [k for k in self.regions.keys() if k not in ['connection_matrix', 'connection_storage_type']]
+        total_regions = len(valid_regions) if valid_regions else 5
+        base_attention = 1.0 / total_regions
+        
+        # Adjust based on region specialization and task
+        for region_name, region_data in self.regions.items():
+            if region_name in ['connection_matrix', 'connection_storage_type']:
+                continue
+            
+            specialization = region_data.get('specialization', 'general')
+            current_activity = region_data.get('activity', 0.0)
+            
+            # Calculate attention weight
+            attention_weight = base_attention
+            
+            # Task relevance boost
+            if task_type == 'pattern' and specialization == 'pattern_recognition':
+                attention_weight *= 1.5
+            elif task_type == 'memory' and specialization == 'memory_formation':
+                attention_weight *= 1.5
+            elif task_type == 'decision' and specialization == 'decision_making':
+                attention_weight *= 1.5
+            
+            # Input salience boost
+            attention_weight *= (0.5 + input_salience * 0.5)
+            
+            # Current load penalty (avoid overloading)
+            load_penalty = min(1.0, 1.0 - current_activity * 0.3)
+            attention_weight *= load_penalty
+            
+            region_attention[region_name] = float(attention_weight)
+        
+        # Normalize attention weights to sum to 1.0
+        total_attention = sum(region_attention.values())
+        if total_attention > 0:
+            for region_name in region_attention:
+                region_attention[region_name] /= total_attention
+        
+        return {
+            'region_attention': region_attention,
+            'total_attention': float(sum(region_attention.values())),
+            'primary_region': max(region_attention.items(), key=lambda x: x[1])[0] if region_attention else None,
+            'attention_distribution': region_attention
+        }
+    
+    def layer_attention(self, hierarchical_output: Dict, attention_context: Optional[Dict] = None) -> Dict:
+        """Calculate and apply attention weights to hierarchical processing layers"""
+        layers = hierarchical_output.get('layers', [])
+        if not layers:
+            return hierarchical_output
+        
+        layer_attention_weights = []
+        
+        # Calculate attention for each layer based on:
+        # 1. Information content (activity level)
+        # 2. Processing depth needed
+        # 3. Task requirements
+        
+        for i, layer in enumerate(layers):
+            layer_activity = layer.get('activity', np.array([]))
+            if isinstance(layer_activity, np.ndarray) and len(layer_activity) > 0:
+                info_content = np.mean(np.abs(layer_activity))
+                info_variance = np.std(layer_activity) if len(layer_activity) > 1 else 0.0
+            else:
+                info_content = 0.0
+                info_variance = 0.0
+            
+            # Base attention weight
+            attention_weight = 1.0
+            
+            # Boost for high information content
+            attention_weight *= (0.5 + min(1.0, info_content) * 0.5)
+            
+            # Boost for high variance (indicates active processing)
+            attention_weight *= (0.7 + min(0.3, info_variance) * 0.3)
+            
+            # Depth-based adjustment (deeper layers get more attention if active)
+            depth_factor = (i + 1) / len(layers)
+            if info_content > 0.1:
+                attention_weight *= (0.8 + depth_factor * 0.2)
+            
+            layer_attention_weights.append(float(attention_weight))
+        
+        # Normalize attention weights
+        total_weight = sum(layer_attention_weights)
+        if total_weight > 0:
+            layer_attention_weights = [w / total_weight for w in layer_attention_weights]
+        
+        # Apply attention to layer activations
+        enhanced_layers = []
+        for i, (layer, attention_weight) in enumerate(zip(layers, layer_attention_weights)):
+            enhanced_layer = layer.copy()
+            layer_activity = layer.get('activity', np.array([]))
+            if isinstance(layer_activity, np.ndarray) and len(layer_activity) > 0:
+                enhanced_layer['activity'] = layer_activity * attention_weight
+            enhanced_layer['attention_weight'] = attention_weight
+            enhanced_layers.append(enhanced_layer)
+        
+        # Update hierarchical output
+        enhanced_output = hierarchical_output.copy()
+        enhanced_output['layers'] = enhanced_layers
+        enhanced_output['layer_attention_weights'] = layer_attention_weights
+        enhanced_output['attention_applied'] = True
+        
+        return enhanced_output
+    
+    def sustained_attention(self, current_focus: Dict, history: List[Dict]) -> Dict:
+        """Track and maintain sustained attention over time"""
+        if not history:
+            # First time, initialize
+            stability = 1.0
+            attention_shifts = 0
+        else:
+            # Calculate attention stability
+            recent_focuses = [h.get('primary_region', None) for h in history[-5:]]
+            current_region = current_focus.get('primary_region', None)
+            
+            # Stability = consistency of focus over recent history
+            if current_region:
+                same_region_count = sum(1 for r in recent_focuses if r == current_region)
+                stability = same_region_count / len(recent_focuses) if recent_focuses else 0.5
+            else:
+                stability = 0.5
+            
+            # Detect attention shifts
+            if len(history) > 1:
+                prev_region = history[-1].get('primary_region', None)
+                curr_region = current_focus.get('primary_region', None)
+                if prev_region != curr_region:
+                    attention_shifts = len(history)
+                else:
+                    attention_shifts = 0
+            else:
+                attention_shifts = 0
+        
+        # Calculate sustained attention score
+        focus_strength = current_focus.get('focus_strength', 0.0)
+        focus_duration = current_focus.get('focus_duration', 0)
+        
+        # Score combines stability, strength, and duration
+        sustained_score = (
+            stability * 0.4 +
+            min(1.0, focus_strength) * 0.3 +
+            min(1.0, focus_duration / 10.0) * 0.3
+        )
+        
+        return {
+            'attention_stability': float(stability),
+            'attention_shifts': int(attention_shifts),
+            'sustained_attention_score': float(sustained_score),
+            'focus_strength': float(focus_strength),
+            'focus_duration': int(focus_duration),
+            'current_focus': current_focus
+        }
+    
+    def executive_attention_control(self, all_modules: Dict, goals: Optional[List[str]] = None) -> Dict:
+        """Top-down executive control of attention allocation"""
+        if goals is None:
+            goals = ['general_processing']
+        
+        # Analyze current module states
+        module_priorities = {}
+        
+        for module_name, module_data in all_modules.items():
+            priority = 0.5  # Base priority
+            
+            # Boost priority based on goals
+            if 'pattern' in goals and 'pattern' in module_name.lower():
+                priority += 0.3
+            if 'memory' in goals and 'memory' in module_name.lower():
+                priority += 0.3
+            if 'reasoning' in goals and 'reasoning' in module_name.lower():
+                priority += 0.3
+            
+            # Boost priority based on module activity/importance
+            if isinstance(module_data, dict):
+                score = module_data.get('score', 0.0)
+                confidence = module_data.get('confidence', 0.0)
+                priority += (score + confidence) * 0.2
+            
+            module_priorities[module_name] = float(priority)
+        
+        # Normalize priorities
+        total_priority = sum(module_priorities.values())
+        if total_priority > 0:
+            for module_name in module_priorities:
+                module_priorities[module_name] /= total_priority
+        
+        # Create executive attention plan
+        attention_plan = {
+            'module_priorities': module_priorities,
+            'primary_module': max(module_priorities.items(), key=lambda x: x[1])[0] if module_priorities else None,
+            'attention_allocation': module_priorities,
+            'goals': goals,
+            'plan_quality': float(sum(module_priorities.values()) / len(module_priorities)) if module_priorities else 0.0
+        }
+        
+        return attention_plan
+    
+    def assess_attention_system(self, test_inputs: List[Dict]) -> Dict:
+        """Assess attention system performance"""
+        attention_scores = []
+        
+        # Test 1: Selective attention filtering
+        selective_scores = []
+        for test_input in test_inputs[:3]:  # Test with first 3 inputs
+            input_data = test_input.get('data', np.random.random(100))
+            if isinstance(input_data, list):
+                input_data = np.array(input_data)
+            attention_result = self.selective_attention(input_data)
+            filtering_efficiency = attention_result['filtering_efficiency']
+            selective_scores.append(filtering_efficiency)
+        
+        selective_score = np.mean(selective_scores) if selective_scores else 0.5
+        attention_scores.append(selective_score * 0.3)  # 30% weight
+        
+        # Test 2: Region attention allocation
+        region_scores = []
+        for test_input in test_inputs[:2]:
+            stimulus = {'intensity': 0.7, 'type': 'pattern'}
+            current_state = {'regions': self.regions}
+            region_result = self.allocate_region_attention(stimulus, current_state)
+            # Score based on how well attention is distributed
+            attention_dist = region_result['attention_distribution']
+            if attention_dist:
+                max_attention = max(attention_dist.values())
+                min_attention = min(attention_dist.values())
+                # Good distribution: not too concentrated, not too uniform
+                distribution_quality = 1.0 - abs(max_attention - min_attention) * 0.5
+                region_scores.append(distribution_quality)
+        
+        region_score = np.mean(region_scores) if region_scores else 0.5
+        attention_scores.append(region_score * 0.25)  # 25% weight
+        
+        # Test 3: Sustained attention
+        if len(self.attention_history) > 0:
+            recent_history = self.attention_history[-5:]
+            current_focus = self.attention_system.get('current_focus', {})
+            sustained_result = self.sustained_attention(current_focus, recent_history)
+            sustained_score = sustained_result['sustained_attention_score']
+        else:
+            sustained_score = 0.7  # Default if no history
+        attention_scores.append(sustained_score * 0.25)  # 25% weight
+        
+        # Test 4: Executive attention control
+        test_modules = {
+            'pattern_recognition': {'score': 0.8, 'confidence': 0.85},
+            'memory': {'score': 0.7, 'confidence': 0.75},
+            'reasoning': {'score': 0.75, 'confidence': 0.8}
+        }
+        executive_result = self.executive_attention_control(test_modules, ['pattern', 'memory'])
+        executive_score = executive_result['plan_quality']
+        attention_scores.append(executive_score * 0.2)  # 20% weight
+        
+        # Overall attention score
+        overall_score = sum(attention_scores)
+        
+        return {
+            'selective_attention_score': float(selective_score),
+            'region_attention_score': float(region_score),
+            'sustained_attention_score': float(sustained_score),
+            'executive_attention_score': float(executive_score),
+            'attention_focus_score': float(overall_score),
+            'filtering_efficiency': float(selective_score),
+            'resource_optimization': float(selective_score * 0.3)  # Estimated resource savings
+        }
+    
     def enhanced_pattern_recognition(self, input_pattern: np.ndarray) -> Dict:
         """Enhanced pattern recognition with hierarchical processing (Phase 2: Vectorized, Phase 3: GPU)"""
         
@@ -845,6 +1224,11 @@ class FinalEnhancedBrain:
         
         # Convert to float32 for large networks
         input_pattern = input_pattern.astype(self.dtype)
+        
+        # Apply selective attention filtering
+        attention_result = self.selective_attention(input_pattern)
+        filtered_input = attention_result['filtered_input']
+        input_pattern = filtered_input  # Use filtered input for processing
         
         # Ensure proper input size
         if len(input_pattern) > 1000:
@@ -1098,8 +1482,17 @@ class FinalEnhancedBrain:
         
         processing_results = {}
         
+        # Allocate attention across regions
+        current_state = {'regions': self.regions}
+        attention_allocation = self.allocate_region_attention(stimulus, current_state)
+        region_attention_weights = attention_allocation['region_attention']
+        
         # Phase 4.2: In distributed mode, only process regions assigned to this node
         regions_to_process = self.node_regions if self.is_distributed else None
+        
+        # Initialize all region activities dictionary with all regions at 0.0
+        all_region_names = ['sensory_cortex', 'association_cortex', 'memory_hippocampus', 'executive_cortex', 'motor_cortex']
+        all_region_activities = {name: 0.0 for name in all_region_names}
         
         # Phase 2.3: Event-driven - Reset only active regions (or all if not event-driven)
         if self.use_event_driven:
@@ -1111,43 +1504,103 @@ class FinalEnhancedBrain:
             if regions_to_process:
                 active_region_names = [name for name in active_region_names if name in regions_to_process]
             for region_name in active_region_names:
-                self.regions[region_name]['activity'] = 0.0
+                if region_name in self.regions:
+                    self.regions[region_name]['activity'] = 0.0
         else:
             # Reset all regions (standard mode)
             reset_regions = regions_to_process if regions_to_process else [name for name in self.regions 
                                                                           if name != 'connection_matrix' 
                                                                           and isinstance(self.regions[name], dict)]
             for region_name in reset_regions:
-                if 'activity' in self.regions[region_name]:
+                if region_name in self.regions and 'activity' in self.regions[region_name]:
                     self.regions[region_name]['activity'] = 0.0
         
-        # Step 1: Sensory processing (Phase 4: only if region on this node)
-        if 'sensory_input' in stimulus and (not regions_to_process or 'sensory_cortex' in regions_to_process):
+        # Phase 1: Process independent regions first (sensory_cortex only needs input)
+        sensory_activity = 0.0
+        if 'sensory_input' in stimulus:
             sensory_input = stimulus['sensory_input']
+            
             # Phase 4.3: Broadcast sensory input if distributed
-            if self.is_distributed and MPI_AVAILABLE:
+            if self.is_distributed and MPI_AVAILABLE and self.mpi_comm is not None:
                 try:
                     if self.mpi_rank == 0:
-                        sensory_input = self._broadcast_data({'sensory_input': sensory_input})['sensory_input']
+                        # Rank 0 broadcasts sensory input
+                        broadcast_data = self._broadcast_data({'sensory_input': sensory_input.tolist() if isinstance(sensory_input, np.ndarray) else sensory_input})
+                        sensory_input = np.array(broadcast_data['sensory_input']) if isinstance(broadcast_data['sensory_input'], list) else broadcast_data['sensory_input']
                     else:
+                        # Other ranks receive broadcast
                         broadcast_data = self._broadcast_data({})
-                        sensory_input = broadcast_data.get('sensory_input', stimulus['sensory_input'])
+                        if 'sensory_input' in broadcast_data:
+                            sensory_input = np.array(broadcast_data['sensory_input']) if isinstance(broadcast_data['sensory_input'], list) else broadcast_data['sensory_input']
                 except Exception as e:
                     if self.debug:
                         print(f"   Warning: Broadcast failed, using local input: {e}")
                     sensory_input = stimulus['sensory_input']
             
-            # Ensure sensory cortex activates with any non-zero input
-            if np.any(sensory_input != 0) and np.sum(np.abs(sensory_input)) > 0:
-                pattern_result = self.enhanced_pattern_recognition(sensory_input)
-                # Minimum activity guarantee for any meaningful input
-                self.regions['sensory_cortex']['activity'] = max(0.15, pattern_result['confidence'])
-                processing_results['sensory_processing'] = pattern_result
-            else:
-                # Even for zero input, set minimal baseline activity
-                self.regions['sensory_cortex']['activity'] = 0.05
+            # Process sensory cortex only if on this rank
+            if not regions_to_process or 'sensory_cortex' in regions_to_process:
+                if 'sensory_cortex' in self.regions:
+                    # Ensure sensory cortex activates with any non-zero input
+                    if np.any(sensory_input != 0) and np.sum(np.abs(sensory_input)) > 0:
+                        pattern_result = self.enhanced_pattern_recognition(sensory_input)
+                        # Minimum activity guarantee for any meaningful input
+                        sensory_activity = max(0.15, pattern_result['confidence'])
+                        
+                        # Apply attention weight
+                        attention_weight = region_attention_weights.get('sensory_cortex', 1.0)
+                        sensory_activity = sensory_activity * attention_weight
+                        
+                        self.regions['sensory_cortex']['activity'] = sensory_activity
+                        processing_results['sensory_processing'] = pattern_result
+                    else:
+                        # Even for zero input, set minimal baseline activity
+                        sensory_activity = 0.05
+                        self.regions['sensory_cortex']['activity'] = sensory_activity
+                    all_region_activities['sensory_cortex'] = sensory_activity
         
-        # Phase 2.2 & 2.3: Parallel and event-driven processing for independent regions
+        # Phase 2: Gather activities after independent processing (sensory_cortex)
+        if self.is_distributed and MPI_AVAILABLE and self.mpi_comm is not None:
+            try:
+                # Collect local region activities
+                local_activities = {}
+                for name in self.node_regions:
+                    if name in self.regions and 'activity' in self.regions[name]:
+                        local_activities[name] = float(self.regions[name]['activity'])
+                
+                # Gather from all nodes
+                all_activities = self.mpi_comm.allgather(local_activities)
+                
+                # Merge activities from all nodes (preserve existing initialized values)
+                for node_activities in all_activities:
+                    all_region_activities.update(node_activities)
+                
+                # Update local regions with gathered activities for dependent processing
+                for name, activity in all_region_activities.items():
+                    if name in self.regions:
+                        self.regions[name]['activity'] = activity
+                
+                # Get sensory_activity from gathered data if not on this rank
+                if sensory_activity == 0.0 and 'sensory_cortex' in all_region_activities:
+                    sensory_activity = all_region_activities['sensory_cortex']
+                    
+            except Exception as e:
+                if self.debug:
+                    print(f"   Warning: Activity gather failed: {e}")
+                # Fallback: use local activities only
+                all_region_activities = {name: float(self.regions[name]['activity']) 
+                                        for name in self.node_regions 
+                                        if name in self.regions and 'activity' in self.regions[name]}
+        else:
+            # Single-node mode: all regions available locally
+            all_region_activities = {name: float(self.regions[name]['activity']) 
+                                    for name in self.regions 
+                                    if name != 'connection_matrix' and isinstance(self.regions[name], dict) 
+                                    and 'activity' in self.regions[name]}
+            if sensory_activity == 0.0 and 'sensory_cortex' in all_region_activities:
+                sensory_activity = all_region_activities['sensory_cortex']
+        
+        # Phase 3: Process dependent regions using gathered activities
+        # Helper functions for processing
         def process_association(sensory_act):
             """Process association cortex"""
             if sensory_act > 0.1:
@@ -1164,96 +1617,191 @@ class FinalEnhancedBrain:
                 return memory_act, None
             return 0.0, None
         
-        # Process regions (parallel if enabled and large network)
-        sensory_activity = self.regions['sensory_cortex']['activity']
+        # Process association_cortex (depends on sensory_cortex)
+        association_activity = 0.0
+        if not regions_to_process or 'association_cortex' in regions_to_process:
+            if 'association_cortex' in self.regions:
+                if self.use_parallel and self.total_neurons > 1_000_000:
+                    # Parallel processing for independent operations
+                    with ThreadPoolExecutor(max_workers=min(4, self.num_cores)) as executor:
+                        assoc_future = executor.submit(process_association, sensory_activity)
+                        association_activity = assoc_future.result()
+                else:
+                    # Sequential processing
+                    association_activity = process_association(sensory_activity)
+                
+                # Apply attention weight
+                attention_weight = region_attention_weights.get('association_cortex', 1.0)
+                association_activity = association_activity * attention_weight
+                
+                self.regions['association_cortex']['activity'] = association_activity
+                processing_results['association_processing'] = association_activity
+                all_region_activities['association_cortex'] = association_activity
         
-        if self.use_parallel and self.total_neurons > 1_000_000:
-            # Parallel processing for independent operations
-            with ThreadPoolExecutor(max_workers=min(4, self.num_cores)) as executor:
-                assoc_future = executor.submit(process_association, sensory_activity)
-                association_activity = assoc_future.result()
-        else:
-            # Sequential processing
-            association_activity = process_association(sensory_activity)
-        
-            self.regions['association_cortex']['activity'] = association_activity
-            processing_results['association_processing'] = association_activity
-        
-        # Step 3: Memory processing (event-driven: only if association active)
-        if not self.use_event_driven or association_activity > 0.15:
-            store_data = stimulus.get('store_memory', None)
-            memory_activity, memory_result = process_memory(association_activity, store_data)
-            self.regions['memory_hippocampus']['activity'] = memory_activity
-            
-            if memory_result:
-                processing_results['memory_storage'] = memory_result
-            processing_results['memory_processing'] = memory_activity
-        else:
-            memory_activity = 0.0
-        
-        # Step 4: Executive decision making (event-driven: only if inputs active)
-        executive_input = (association_activity + memory_activity) / 2.0
-        
-        if not self.use_event_driven or executive_input > 0.25:
-            executive_activity = min(1.0, executive_input * 1.2)
-            self.regions['executive_cortex']['activity'] = executive_activity
-            
-            decision_made = executive_activity > 0.3
-            processing_results['decision_making'] = {
-                'activity': executive_activity,
-                'decision_made': decision_made,
-                'confidence': executive_activity
-            }
-        else:
-            executive_activity = 0.0
-        
-        # Step 5: Motor output (event-driven: only if executive active)
-        if not self.use_event_driven or executive_activity > 0.3:
-            motor_activity = executive_activity * 0.8
-            self.regions['motor_cortex']['activity'] = motor_activity
-            processing_results['motor_output'] = motor_activity
-        
-        # Phase 4.3: Gather region activities from all nodes if distributed
+        # Gather activities again after association processing
         if self.is_distributed and MPI_AVAILABLE and self.mpi_comm is not None:
             try:
-                # Collect local region activities
-                local_activities = {name: float(self.regions[name]['activity']) 
-                                  for name in self.node_regions 
-                                  if name in self.regions and 'activity' in self.regions[name]}
+                local_activities = {}
+                for name in self.node_regions:
+                    if name in self.regions and 'activity' in self.regions[name]:
+                        local_activities[name] = float(self.regions[name]['activity'])
+                all_activities = self.mpi_comm.allgather(local_activities)
+                # Merge activities (preserve existing values)
+                for node_activities in all_activities:
+                    all_region_activities.update(node_activities)
+                # Update local regions
+                for name, activity in all_region_activities.items():
+                    if name in self.regions:
+                        self.regions[name]['activity'] = activity
+                # Get association_activity if not on this rank
+                if association_activity == 0.0 and 'association_cortex' in all_region_activities:
+                    association_activity = all_region_activities['association_cortex']
+            except Exception as e:
+                if self.debug:
+                    print(f"   Warning: Activity gather failed: {e}")
+        
+        # Process memory_hippocampus (depends on association_cortex)
+        memory_activity = 0.0
+        if not regions_to_process or 'memory_hippocampus' in regions_to_process:
+            if 'memory_hippocampus' in self.regions:
+                if not self.use_event_driven or association_activity > 0.15:
+                    store_data = stimulus.get('store_memory', None)
+                    memory_activity, memory_result = process_memory(association_activity, store_data)
+                    
+                    # Apply attention weight
+                    attention_weight = region_attention_weights.get('memory_hippocampus', 1.0)
+                    memory_activity = memory_activity * attention_weight
+                    
+                    self.regions['memory_hippocampus']['activity'] = memory_activity
+                    
+                    if memory_result:
+                        processing_results['memory_storage'] = memory_result
+                    processing_results['memory_processing'] = memory_activity
+                    all_region_activities['memory_hippocampus'] = memory_activity
+        
+        # Gather activities again after memory processing
+        if self.is_distributed and MPI_AVAILABLE and self.mpi_comm is not None:
+            try:
+                local_activities = {}
+                for name in self.node_regions:
+                    if name in self.regions and 'activity' in self.regions[name]:
+                        local_activities[name] = float(self.regions[name]['activity'])
+                all_activities = self.mpi_comm.allgather(local_activities)
+                all_region_activities = {}
+                for node_activities in all_activities:
+                    all_region_activities.update(node_activities)
+                for name, activity in all_region_activities.items():
+                    if name in self.regions:
+                        self.regions[name]['activity'] = activity
+                if memory_activity == 0.0 and 'memory_hippocampus' in all_region_activities:
+                    memory_activity = all_region_activities['memory_hippocampus']
+            except Exception as e:
+                if self.debug:
+                    print(f"   Warning: Activity gather failed: {e}")
+        
+        # Process executive_cortex (depends on association + memory)
+        executive_activity = 0.0
+        if not regions_to_process or 'executive_cortex' in regions_to_process:
+            if 'executive_cortex' in self.regions:
+                executive_input = (association_activity + memory_activity) / 2.0
+                
+                if not self.use_event_driven or executive_input > 0.25:
+                    executive_activity = min(1.0, executive_input * 1.2)
+                    
+                    # Apply attention weight
+                    attention_weight = region_attention_weights.get('executive_cortex', 1.0)
+                    executive_activity = executive_activity * attention_weight
+                    
+                    self.regions['executive_cortex']['activity'] = executive_activity
+                    
+                    decision_made = executive_activity > 0.3
+                    processing_results['decision_making'] = {
+                        'activity': executive_activity,
+                        'decision_made': decision_made,
+                        'confidence': executive_activity
+                    }
+                    all_region_activities['executive_cortex'] = executive_activity
+        
+        # Gather activities again after executive processing
+        if self.is_distributed and MPI_AVAILABLE and self.mpi_comm is not None:
+            try:
+                local_activities = {}
+                for name in self.node_regions:
+                    if name in self.regions and 'activity' in self.regions[name]:
+                        local_activities[name] = float(self.regions[name]['activity'])
+                all_activities = self.mpi_comm.allgather(local_activities)
+                all_region_activities = {}
+                for node_activities in all_activities:
+                    all_region_activities.update(node_activities)
+                for name, activity in all_region_activities.items():
+                    if name in self.regions:
+                        self.regions[name]['activity'] = activity
+                if executive_activity == 0.0 and 'executive_cortex' in all_region_activities:
+                    executive_activity = all_region_activities['executive_cortex']
+            except Exception as e:
+                if self.debug:
+                    print(f"   Warning: Activity gather failed: {e}")
+        
+        # Process motor_cortex (depends on executive_cortex)
+        motor_activity = 0.0
+        if not regions_to_process or 'motor_cortex' in regions_to_process:
+            if 'motor_cortex' in self.regions:
+                if not self.use_event_driven or executive_activity > 0.3:
+                    motor_activity = executive_activity * 0.8
+                    
+                    # Apply attention weight
+                    attention_weight = region_attention_weights.get('motor_cortex', 1.0)
+                    motor_activity = motor_activity * attention_weight
+                    
+                    self.regions['motor_cortex']['activity'] = motor_activity
+                    processing_results['motor_output'] = motor_activity
+                    all_region_activities['motor_cortex'] = motor_activity
+        
+        # Phase 4: Final gather for coordination calculation
+        if self.is_distributed and MPI_AVAILABLE and self.mpi_comm is not None:
+            try:
+                # Collect final local region activities
+                local_activities = {}
+                for name in self.node_regions:
+                    if name in self.regions and 'activity' in self.regions[name]:
+                        local_activities[name] = float(self.regions[name]['activity'])
                 
                 # Gather from all nodes
                 all_activities = self.mpi_comm.allgather(local_activities)
                 
-                # Merge activities from all nodes
-                region_activities_dict = {}
+                # Merge activities from all nodes (update existing dict)
                 for node_activities in all_activities:
-                    region_activities_dict.update(node_activities)
+                    all_region_activities.update(node_activities)
                 
-                # Calculate coordination across all nodes
-                region_activities = np.array(list(region_activities_dict.values()), dtype=self.dtype)
+                # Ensure all 5 regions are present
+                for name in all_region_names:
+                    if name not in all_region_activities:
+                        all_region_activities[name] = 0.0
+                
+                # Calculate coordination across all nodes (use consistent order)
+                region_activities = np.array([all_region_activities[name] for name in all_region_names], dtype=self.dtype)
             except Exception as e:
                 if self.debug:
-                    print(f"   Warning: Distributed coordination failed: {e}")
-                # Fallback to local only
-                region_activities = np.array([region['activity'] for name, region in self.regions.items() 
-                                            if name != 'connection_matrix' and isinstance(region, dict) 
-                                            and 'activity' in region], dtype=self.dtype)
-                region_activities_dict = {name: float(region['activity']) for name, region in self.regions.items() 
-                                        if name != 'connection_matrix' and isinstance(region, dict) and 'activity' in region}
+                    print(f"   Warning: Final activity gather failed: {e}")
+                # Fallback to local only - ensure all regions present
+                for name in all_region_names:
+                    if name not in all_region_activities:
+                        all_region_activities[name] = 0.0
+                region_activities = np.array([all_region_activities[name] for name in all_region_names], dtype=self.dtype)
         else:
-            # Calculate overall coordination (vectorized)
-            region_activities = np.array([region['activity'] for name, region in self.regions.items() 
-                                        if name != 'connection_matrix' and isinstance(region, dict) 
-                                        and 'activity' in region], dtype=self.dtype)
-            region_activities_dict = {name: float(region['activity']) for name, region in self.regions.items() 
-                                    if name != 'connection_matrix' and isinstance(region, dict) and 'activity' in region}
+            # Single-node mode: Calculate overall coordination (vectorized)
+            # Ensure all regions are in dict
+            for name in all_region_names:
+                if name not in all_region_activities:
+                    all_region_activities[name] = 0.0
+            region_activities = np.array([all_region_activities[name] for name in all_region_names], dtype=self.dtype)
         
         active_regions = int(np.sum(region_activities > 0.1))
         coordination_score = float(active_regions / 5.0)  # 5 total regions
         total_activity = float(np.sum(region_activities))
         
         return {
-            'region_activities': region_activities_dict,
+            'region_activities': all_region_activities,
             'processing_results': processing_results,
             'coordination_score': coordination_score,
             'active_regions': active_regions,
@@ -1573,6 +2121,18 @@ class FinalEnhancedBrain:
         layer_activation_consistency = np.mean([np.sum(output > 1e-6) / max(len(output), 1) for output in layer_outputs])
         max_layer_activity = np.max(layer_sums) if len(layer_sums) > 0 else 0.0
         
+        # Prepare hierarchical output for layer attention
+        hierarchical_output_dict = {
+            'layers': [{'activity': output, 'name': self.hierarchy['layers'][i]['name']} 
+                      for i, output in enumerate(layer_outputs)],
+            'final_output': layer_outputs[-1] if layer_outputs else np.array([], dtype=self.dtype),
+            'processing_depth': int(processing_depth),
+            'information_flow': float(information_flow)
+        }
+        
+        # Apply layer attention
+        enhanced_output = self.layer_attention(hierarchical_output_dict)
+        
         return {
             'layer_outputs': layer_outputs,
             'final_output': layer_outputs[-1] if layer_outputs else np.array([], dtype=self.dtype),
@@ -1580,7 +2140,9 @@ class FinalEnhancedBrain:
             'information_flow': float(information_flow),
             'layers_active': int(processing_depth),
             'activation_consistency': float(layer_activation_consistency),
-            'max_layer_activity': float(max_layer_activity)
+            'max_layer_activity': float(max_layer_activity),
+            'attention_applied': enhanced_output.get('attention_applied', False),
+            'layer_attention_weights': enhanced_output.get('layer_attention_weights', [])
         }
     
     def reasoning_processing(self, hierarchical_output: np.ndarray, context: Optional[Dict] = None) -> Dict:
@@ -2641,28 +3203,64 @@ class FinalEnhancedBrain:
         print(f"   Narrative Coherence: {continuity_result['narrative_coherence']:.3f}")
         print(f"   History Length: {continuity_result['history_length']}")
         
-        # Calculate overall enhanced intelligence score (UPDATED WEIGHTS FOR ADVANCED INTELLIGENCE)
+        # Test 13: Attention & Focus System (NEW)
+        print("\n13. Attention & Focus System")
+        
+        # Prepare test inputs for attention assessment
+        attention_test_inputs = [
+            {'data': test_patterns[0] if len(test_patterns) > 0 else np.random.random(100)},
+            {'data': test_patterns[1] if len(test_patterns) > 1 else np.random.random(100)},
+            {'data': hierarchical_tests[0] if len(hierarchical_tests) > 0 else np.random.random(100)}
+        ]
+        
+        attention_result = self.assess_attention_system(attention_test_inputs)
+        attention_score = attention_result['attention_focus_score']
+        test_results['attention_focus'] = attention_score
+        
+        print(f"   Attention & Focus Score: {attention_score:.3f}")
+        print(f"   Selective Attention: {attention_result['selective_attention_score']:.3f}")
+        print(f"   Region Attention: {attention_result['region_attention_score']:.3f}")
+        print(f"   Sustained Attention: {attention_result['sustained_attention_score']:.3f}")
+        print(f"   Executive Attention: {attention_result['executive_attention_score']:.3f}")
+        print(f"   Filtering Efficiency: {attention_result['filtering_efficiency']:.3f}")
+        
+        # Update attention history for sustained attention tracking
+        # Get attention allocation from multi-region processing if available
+        test_stimulus = {'intensity': 0.7, 'type': 'pattern'}
+        attention_allocation = self.allocate_region_attention(test_stimulus, {'regions': self.regions})
+        current_focus = {
+            'primary_region': attention_allocation.get('primary_region', None),
+            'primary_layer': None,
+            'focus_strength': attention_score,
+            'focus_duration': len(self.attention_history)
+        }
+        self.attention_history.append(current_focus)
+        if len(self.attention_history) > 20:
+            self.attention_history.pop(0)
+        
+        # Calculate overall enhanced intelligence score (UPDATED WEIGHTS WITH ATTENTION)
         enhancement_weights = {
-            'pattern_recognition': 0.20,      # Critical for perception (was 0.25)
-            'multi_region_coordination': 0.20, # Critical for integration (was 0.25)
-            'advanced_memory': 0.15,          # Important for learning (was 0.20)
-            'hierarchical_processing': 0.12,  # Important for complexity (was 0.15)
-            'reasoning': 0.08,                # Logical reasoning (was 0.10)
+            'pattern_recognition': 0.18,      # Critical for perception (was 0.20)
+            'multi_region_coordination': 0.18, # Critical for integration (was 0.20)
+            'advanced_memory': 0.13,          # Important for learning (was 0.15)
+            'hierarchical_processing': 0.11,  # Important for complexity (was 0.12)
+            'reasoning': 0.07,                # Logical reasoning (was 0.08)
             'meta_cognition': 0.05,          # Self-awareness (unchanged)
-            'adaptive_learning': 0.08,       # NEW: Learning capability
-            'pattern_generalization': 0.05,  # NEW: Generalization
-            'creative_generation': 0.07,      # NEW: Creativity
-            'innovation_detection': 0.03,    # NEW: Innovation
-            'consciousness': 0.05,           # NEW: Consciousness
-            'temporal_continuity': 0.02      # NEW: Temporal continuity
+            'adaptive_learning': 0.07,       # Learning capability (was 0.08)
+            'pattern_generalization': 0.04,  # Generalization (was 0.05)
+            'creative_generation': 0.06,      # Creativity (was 0.07)
+            'innovation_detection': 0.03,    # Innovation (unchanged)
+            'consciousness': 0.04,           # Consciousness (was 0.05)
+            'temporal_continuity': 0.02,      # Temporal continuity (unchanged)
+            'attention_focus': 0.10           # NEW: Attention & Focus
         }
         
-        # Updated main test keys to include all advanced capabilities
+        # Updated main test keys to include attention
         main_test_keys = [
             'pattern_recognition', 'multi_region_coordination', 'advanced_memory', 
             'hierarchical_processing', 'reasoning', 'meta_cognition',
             'adaptive_learning', 'pattern_generalization', 'creative_generation',
-            'innovation_detection', 'consciousness', 'temporal_continuity'
+            'innovation_detection', 'consciousness', 'temporal_continuity', 'attention_focus'
         ]
         overall_enhanced_score = sum(test_results[test] * enhancement_weights[test] for test in main_test_keys if test in test_results)
         
@@ -2688,7 +3286,8 @@ class FinalEnhancedBrain:
                 'creative_generation_capability': creative_score,
                 'innovation_detection_capability': innovation_score,
                 'consciousness_capability': consciousness_score,
-                'temporal_continuity_capability': continuity_score
+                'temporal_continuity_capability': continuity_score,
+                'attention_focus_capability': attention_score
             },
             'system_status': {
                 'total_neurons': self.total_neurons,

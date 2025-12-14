@@ -1,55 +1,57 @@
 {
   "achievement": "all_4_enhancements_integrated",
-  "enhanced_intelligence_score": 1.015285664117746,
+  "enhanced_intelligence_score": 0.8282967199071006,
   "baseline_comparison": 0.52,
-  "improvement_gained": 0.4952856641177459,
-  "improvement_percentage": 95.24724309956652,
-  "grade": "S+ (Superhuman)",
-  "intelligence_level": "Superhuman Intelligence",
-  "processing_time": 0.07372117042541504,
+  "improvement_gained": 0.3082967199071006,
+  "improvement_percentage": 59.2878307513655,
+  "grade": "A+ (Excellent)",
+  "intelligence_level": "High Vertebrate Intelligence",
+  "processing_time": 1.1656060218811035,
   "detailed_results": {
-    "overall_enhanced_score": 1.015285664117746,
+    "overall_enhanced_score": 0.8282967199071006,
     "baseline_score": 0.52,
-    "improvement": 0.4952856641177459,
-    "improvement_percentage": 95.24724309956652,
+    "improvement": 0.3082967199071006,
+    "improvement_percentage": 59.2878307513655,
     "individual_scores": {
       "pattern_recognition": 1.0,
-      "pattern_recognition_raw": 2.1305713377789353,
+      "pattern_recognition_raw": 2.120488104597019,
       "pattern_recognition_scaling": 1.0,
-      "feature_detector_boost": 1.6029017839984725,
+      "feature_detector_boost": 1.5945703626887928,
       "num_feature_detectors": 690,
-      "multi_region_coordination": 0.8000000000000002,
+      "multi_region_coordination": 0.20000000000000004,
       "advanced_memory": 1.0,
       "hierarchical_processing": 1.0,
       "reasoning": 0.9499999999999998,
-      "meta_cognition": 0.9755,
+      "meta_cognition": 0.773,
       "adaptive_learning": 0.8699999999999999,
       "pattern_generalization": 0.9725433946587145,
       "creative_generation": 0.75,
-      "innovation_detection": 0.8365813591499285,
-      "consciousness": 0.9557210722062515,
-      "temporal_continuity": 0.845
+      "innovation_detection": 0.840455594803451,
+      "consciousness": 0.8235862099836384,
+      "temporal_continuity": 0.8,
+      "attention_focus": 0.48187867877303137
     },
     "enhancement_details": {
       "pattern_recognition_capability": 1.0,
-      "multi_region_coordination_efficiency": 0.8000000000000002,
+      "multi_region_coordination_efficiency": 0.20000000000000004,
       "memory_system_performance": 1.0,
       "hierarchical_processing_depth": 1.0,
       "reasoning_capability": 0.9499999999999998,
-      "meta_cognition_capability": 0.9755,
+      "meta_cognition_capability": 0.773,
       "adaptive_learning_capability": 0.8699999999999999,
       "pattern_generalization_capability": 0.9725433946587145,
       "creative_generation_capability": 0.75,
-      "innovation_detection_capability": 0.8365813591499285,
-      "consciousness_capability": 0.9557210722062515,
-      "temporal_continuity_capability": 0.845
+      "innovation_detection_capability": 0.840455594803451,
+      "consciousness_capability": 0.8235862099836384,
+      "temporal_continuity_capability": 0.8,
+      "attention_focus_capability": 0.48187867877303137
     },
     "system_status": {
       "total_neurons": 80000000000,
       "brain_regions": 6,
-      "memory_items": 8,
+      "memory_items": 5,
       "processing_layers": 6,
-      "pattern_memory_size": 20
+      "pattern_memory_size": 14
     }
   },
   "enhancements_completed": {
@@ -59,5 +61,5 @@
     "4_hierarchical_processing": "\u2705 Active"
   },
   "next_milestone": "Advanced cognitive capabilities and real-world applications",
-  "timestamp": "2025-12-14 05:57:22"
+  "timestamp": "2025-12-14 06:17:00"
 }
