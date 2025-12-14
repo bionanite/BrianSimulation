@@ -1,73 +1,72 @@
 ======================================================================
 PERFORMANCE TRACKING REPORT
 ======================================================================
-Generated: 2025-12-14 14:23:49
+Generated: 2025-12-14 15:13:05
 
 OVERALL SUMMARY
 ----------------------------------------------------------------------
-Total Benchmark Runs: 146
+Total Benchmark Runs: 156
 Benchmarks Tested: 5
-Average Accuracy: 30.07%
+Average Accuracy: 32.76%
 
 PER-BENCHMARK PERFORMANCE
 ----------------------------------------------------------------------
 
 ARC:
-  Latest Accuracy: 100.00%
+  Latest Accuracy: 90.00%
   Questions Tested: 10
-  Average Confidence: 0.454
-  Average Response Time: 0.021s
+  Average Confidence: 0.476
+  Average Response Time: 0.028s
   Rank: 7/7
   Percentile: -150.0%
   Gap to best AI: -85.00%
-  Trend: improving (+100.00%)
+  Trend: improving (+90.00%)
 
 GSM8K:
   Latest Accuracy: 0.00%
   Questions Tested: 10
-  Average Confidence: 0.330
-  Average Response Time: 0.049s
+  Average Confidence: 0.367
+  Average Response Time: 0.022s
   Rank: 7/7
   Percentile: -162.9%
   Gap to best AI: -92.00%
   Trend: stable (+0.00%)
 
 HellaSwag:
-  Latest Accuracy: 90.00%
+  Latest Accuracy: 100.00%
   Questions Tested: 10
-  Average Confidence: 0.498
-  Average Response Time: 0.022s
+  Average Confidence: 0.560
+  Average Response Time: 0.042s
   Rank: 7/7
   Percentile: -801.9%
   Gap to best AI: -95.00%
-  Trend: improving (+90.00%)
+  Trend: improving (+100.00%)
 
 HumanEval:
   Latest Accuracy: 100.00%
   Questions Tested: 1
   Average Confidence: 0.996
-  Average Response Time: 0.017s
+  Average Response Time: 0.049s
   Rank: 2/7
   Percentile: 100.0%
   Improvement over best AI: +33.00%
   Trend: improving (+100.00%)
 
 MMLU:
-  Latest Accuracy: 60.00%
+  Latest Accuracy: 80.00%
   Questions Tested: 10
-  Average Confidence: 0.336
-  Average Response Time: 0.020s
+  Average Confidence: 0.348
+  Average Response Time: 0.024s
   Rank: 7/7
   Percentile: -355.3%
   Gap to best AI: -86.30%
-  Trend: improving (+60.00%)
+  Trend: improving (+80.00%)
 
 CAPABILITY GAPS
 ----------------------------------------------------------------------
 
 MMLU:
-  - Below human performance (need 89.7%, have 60.0%)
-  - Below best AI performance (need 86.3%, have 60.0%)
+  - Below human performance (need 89.7%, have 80.0%)
   - Underconfident - accuracy higher than confidence
 
 HellaSwag:

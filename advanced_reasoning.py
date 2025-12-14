@@ -85,6 +85,9 @@ class AdvancedReasoning:
         for i in range(3, max_steps + 1):
             if reasoning_type == 'mathematical':
                 step_result = self._mathematical_reasoning_step(current_state, question, i)
+            elif reasoning_type in ['biology', 'chemistry', 'physics', 'humanities', 'social_science', 'stem']:
+                # Use domain-specific reasoning
+                step_result = self._domain_specific_reasoning_step(current_state, question, i, reasoning_type)
             elif reasoning_type == 'logical':
                 step_result = self._logical_reasoning_step(current_state, question, i)
             elif reasoning_type == 'causal':
@@ -121,6 +124,44 @@ class AdvancedReasoning:
     def _identify_reasoning_type(self, question: str) -> str:
         """Identify the type of reasoning needed"""
         question_lower = question.lower()
+        
+        # STEM domain detection (for MMLU)
+        stem_keywords = [
+            'biology', 'chemistry', 'physics', 'mathematics', 'science',
+            'cell', 'molecule', 'atom', 'electron', 'protein', 'dna', 'rna',
+            'equation', 'formula', 'reaction', 'compound', 'element',
+            'force', 'energy', 'mass', 'velocity', 'acceleration'
+        ]
+        if any(keyword in question_lower for keyword in stem_keywords):
+            # Further classify STEM
+            if any(kw in question_lower for kw in ['biology', 'cell', 'protein', 'dna', 'rna', 'organism']):
+                return 'biology'
+            elif any(kw in question_lower for kw in ['chemistry', 'molecule', 'atom', 'reaction', 'compound', 'element']):
+                return 'chemistry'
+            elif any(kw in question_lower for kw in ['physics', 'force', 'energy', 'mass', 'velocity', 'acceleration']):
+                return 'physics'
+            elif any(kw in question_lower for kw in ['mathematics', 'equation', 'formula', 'calculate', 'compute']):
+                return 'mathematical'
+            else:
+                return 'stem'
+        
+        # Humanities domain detection
+        humanities_keywords = [
+            'history', 'literature', 'philosophy', 'art', 'music',
+            'author', 'poet', 'novel', 'poem', 'painting', 'sculpture',
+            'ancient', 'medieval', 'renaissance', 'classical'
+        ]
+        if any(keyword in question_lower for keyword in humanities_keywords):
+            return 'humanities'
+        
+        # Social sciences domain detection
+        social_science_keywords = [
+            'psychology', 'sociology', 'economics', 'politics', 'government',
+            'behavior', 'society', 'culture', 'market', 'demand', 'supply',
+            'cognitive', 'social', 'political', 'economic'
+        ]
+        if any(keyword in question_lower for keyword in social_science_keywords):
+            return 'social_science'
         
         # Mathematical reasoning
         math_keywords = ['calculate', 'compute', 'solve', 'how many', 'what is', '+', '-', '*', '/', 'equals']
@@ -198,6 +239,41 @@ class AdvancedReasoning:
             'pattern': new_pattern.tolist(),
             'result': result,
             'can_conclude': result is not None
+        }
+    
+    def _domain_specific_reasoning_step(self, state: np.ndarray, question: str, step_num: int, domain: str) -> Dict:
+        """Perform domain-specific reasoning step"""
+        question_lower = question.lower()
+        content = f"{domain.capitalize()} reasoning step {step_num}"
+        
+        # Domain-specific keyword matching
+        domain_keywords = {
+            'biology': ['cell', 'organism', 'protein', 'dna', 'gene', 'evolution', 'species'],
+            'chemistry': ['molecule', 'atom', 'reaction', 'compound', 'element', 'bond'],
+            'physics': ['force', 'energy', 'mass', 'velocity', 'acceleration', 'momentum'],
+            'humanities': ['author', 'literature', 'philosophy', 'art', 'culture', 'historical'],
+            'social_science': ['behavior', 'society', 'cognitive', 'economic', 'political']
+        }
+        
+        keywords = domain_keywords.get(domain, [])
+        found_keywords = [kw for kw in keywords if kw in question_lower]
+        
+        if found_keywords:
+            content += f": Analyzing {', '.join(found_keywords[:3])}"
+        
+        # Update state with domain-specific features
+        new_pattern = state.copy()
+        domain_features = np.array([0.7, 0.8, 0.6], dtype=np.float32)
+        if len(new_pattern) >= len(domain_features):
+            new_pattern[:len(domain_features)] = (new_pattern[:len(domain_features)] + domain_features) / 2.0
+        
+        return {
+            'step': step_num,
+            'action': f'{domain}_reasoning',
+            'content': content,
+            'pattern': new_pattern.tolist(),
+            'domain': domain,
+            'can_conclude': len(found_keywords) > 0
         }
     
     def _logical_reasoning_step(self, state: np.ndarray, question: str, step_num: int) -> Dict:

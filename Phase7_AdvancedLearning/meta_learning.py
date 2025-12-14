@@ -452,6 +452,35 @@ class MetaLearningSystem:
             'average_success_rate': 0.0
         }
     
+    def few_shot_learn(self,
+                      examples: List[Tuple[np.ndarray, Optional[np.ndarray]]],
+                      task_name: str) -> float:
+        """
+        Learn from few examples (wrapper for demo compatibility)
+        
+        Args:
+            examples: List of (input, target) tuples
+            task_name: Name of the task
+            
+        Returns:
+            Proficiency score (0-1)
+        """
+        # Create a task from examples
+        task = Task(
+            task_id=self.next_task_id,
+            name=task_name,
+            domain='general',
+            examples=examples,
+            task_type='classification' if examples and examples[0][1] is not None else 'unsupervised',
+            created_time=time.time()
+        )
+        
+        # Use few-shot learning
+        result = self.few_shot_learning.learn_from_few_examples(task)
+        
+        # Return proficiency (confidence)
+        return result.get('confidence', 0.5)
+    
     def learn_task(self,
                   task: Task,
                   use_few_shot: bool = True,
