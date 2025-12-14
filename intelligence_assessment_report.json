@@ -1,0 +1,58 @@
+{
+  "test_results": {
+    "basic_responsiveness": {
+      "stimulus_response": 0.9701425001453319,
+      "network_propagation": 0.041666666666666664
+    },
+    "pattern_detection": {
+      "pattern_discrimination": 0.0,
+      "temporal_detection": 0.3333333333333333
+    },
+    "learning_adaptation": {
+      "habituation": 0.0,
+      "associative_learning": 0.5
+    },
+    "memory_retention": {
+      "short_term_memory": 0.0,
+      "working_memory_capacity": 0.25
+    },
+    "decision_making": {
+      "decision_making": 0.625,
+      "decision_consistency": 1.0
+    },
+    "stress_resilience": {
+      "noise_tolerance": 0.5,
+      "overload_resilience": 1.0
+    }
+  },
+  "intelligence_analysis": {
+    "overall_intelligence_score": 0.35609402084423325,
+    "category_scores": {
+      "basic_responsiveness": 0.5059045834059993,
+      "pattern_detection": 0.16666666666666666,
+      "learning_adaptation": 0.25,
+      "memory_retention": 0.125,
+      "decision_making": 0.8125,
+      "stress_resilience": 0.75
+    },
+    "biological_equivalent": "Insect Intelligence",
+    "biological_levels": {
+      "Cellular Response": 0.05,
+      "Simple Reflex": 0.15,
+      "Basic Invertebrate": 0.25,
+      "Insect Intelligence": 0.4,
+      "Fish-level Cognition": 0.55,
+      "Amphibian Processing": 0.65,
+      "Reptilian Brain": 0.75,
+      "Mammalian Intelligence": 0.85,
+      "Primate Cognition": 0.95,
+      "Human-level Intelligence": 1.0
+    },
+    "intelligence_grade": "D+"
+  },
+  "test_metadata": {
+    "network_size": 80,
+    "test_duration": 1.3324086666107178,
+    "timestamp": "2025-12-13 20:38:28"
+  }
+}

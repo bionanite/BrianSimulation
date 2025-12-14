@@ -1,0 +1,415 @@
+{
+  "enhancement": "multi_region_architecture",
+  "overall_score": 0.0,
+  "coordination_score": 0.0,
+  "grade": "F (Insufficient)",
+  "processing_time": 0.2739884853363037,
+  "detailed_results": {
+    "overall_score": 0.0,
+    "coordination_score": 0.0,
+    "task_results": {
+      "sensory_processing": {
+        "task": "sensory_processing",
+        "steps": [
+          [
+            "sensory_input",
+            {
+              "region_activities": {
+                "sensory_cortex": 0.0,
+                "motor_cortex": 0.0,
+                "hippocampus": 0.0,
+                "prefrontal_cortex": 0.0,
+                "association_areas": 0.0
+              },
+              "inter_region_signals": {
+                "sensory_cortex\u2192association_areas": 0.0,
+                "sensory_cortex\u2192hippocampus": 0.0,
+                "motor_cortex\u2192prefrontal_cortex": 0.0,
+                "motor_cortex\u2192sensory_cortex": 0.0,
+                "hippocampus\u2192prefrontal_cortex": 0.0,
+                "hippocampus\u2192association_areas": 0.0,
+                "prefrontal_cortex\u2192association_areas": 0.0,
+                "prefrontal_cortex\u2192motor_cortex": 0.0,
+                "prefrontal_cortex\u2192hippocampus": 0.0,
+                "association_areas\u2192sensory_cortex": 0.0,
+                "association_areas\u2192prefrontal_cortex": 0.0,
+                "association_areas\u2192hippocampus": 0.0
+              }
+            }
+          ],
+          [
+            "association",
+            {
+              "region_activities": {
+                "sensory_cortex": 0.0,
+                "motor_cortex": 0.0,
+                "hippocampus": 0.0,
+                "prefrontal_cortex": 0.0,
+                "association_areas": 0.0
+              },
+              "inter_region_signals": {
+                "sensory_cortex\u2192association_areas": 0.0,
+                "sensory_cortex\u2192hippocampus": 0.0,
+                "motor_cortex\u2192prefrontal_cortex": 0.0,
+                "motor_cortex\u2192sensory_cortex": 0.0,
+                "hippocampus\u2192prefrontal_cortex": 0.0,
+                "hippocampus\u2192association_areas": 0.0,
+                "prefrontal_cortex\u2192association_areas": 0.0,
+                "prefrontal_cortex\u2192motor_cortex": 0.0,
+                "prefrontal_cortex\u2192hippocampus": 0.0,
+                "association_areas\u2192sensory_cortex": 0.0,
+                "association_areas\u2192prefrontal_cortex": 0.0,
+                "association_areas\u2192hippocampus": 0.0
+              }
+            }
+          ],
+          [
+            "association",
+            {
+              "region_activities": {
+                "sensory_cortex": 0.0,
+                "motor_cortex": 0.0,
+                "hippocampus": 0.0,
+                "prefrontal_cortex": 0.0,
+                "association_areas": 0.0
+              },
+              "inter_region_signals": {
+                "sensory_cortex\u2192association_areas": 0.0,
+                "sensory_cortex\u2192hippocampus": 0.0,
+                "motor_cortex\u2192prefrontal_cortex": 0.0,
+                "motor_cortex\u2192sensory_cortex": 0.0,
+                "hippocampus\u2192prefrontal_cortex": 0.0,
+                "hippocampus\u2192association_areas": 0.0,
+                "prefrontal_cortex\u2192association_areas": 0.0,
+                "prefrontal_cortex\u2192motor_cortex": 0.0,
+                "prefrontal_cortex\u2192hippocampus": 0.0,
+                "association_areas\u2192sensory_cortex": 0.0,
+                "association_areas\u2192prefrontal_cortex": 0.0,
+                "association_areas\u2192hippocampus": 0.0
+              }
+            }
+          ],
+          [
+            "association",
+            {
+              "region_activities": {
+                "sensory_cortex": 0.0,
+                "motor_cortex": 0.0,
+                "hippocampus": 0.0,
+                "prefrontal_cortex": 0.0,
+                "association_areas": 0.0
+              },
+              "inter_region_signals": {
+                "sensory_cortex\u2192association_areas": 0.0,
+                "sensory_cortex\u2192hippocampus": 0.0,
+                "motor_cortex\u2192prefrontal_cortex": 0.0,
+                "motor_cortex\u2192sensory_cortex": 0.0,
+                "hippocampus\u2192prefrontal_cortex": 0.0,
+                "hippocampus\u2192association_areas": 0.0,
+                "prefrontal_cortex\u2192association_areas": 0.0,
+                "prefrontal_cortex\u2192motor_cortex": 0.0,
+                "prefrontal_cortex\u2192hippocampus": 0.0,
+                "association_areas\u2192sensory_cortex": 0.0,
+                "association_areas\u2192prefrontal_cortex": 0.0,
+                "association_areas\u2192hippocampus": 0.0
+              }
+            }
+          ],
+          [
+            "decision",
+            {
+              "region_activities": {
+                "sensory_cortex": 0.0,
+                "motor_cortex": 0.0,
+                "hippocampus": 0.0,
+                "prefrontal_cortex": 0.0,
+                "association_areas": 0.0
+              },
+              "inter_region_signals": {
+                "sensory_cortex\u2192association_areas": 0.0,
+                "sensory_cortex\u2192hippocampus": 0.0,
+                "motor_cortex\u2192prefrontal_cortex": 0.0,
+                "motor_cortex\u2192sensory_cortex": 0.0,
+                "hippocampus\u2192prefrontal_cortex": 0.0,
+                "hippocampus\u2192association_areas": 0.0,
+                "prefrontal_cortex\u2192association_areas": 0.0,
+                "prefrontal_cortex\u2192motor_cortex": 0.0,
+                "prefrontal_cortex\u2192hippocampus": 0.0,
+                "association_areas\u2192sensory_cortex": 0.0,
+                "association_areas\u2192prefrontal_cortex": 0.0,
+                "association_areas\u2192hippocampus": 0.0
+              }
+            }
+          ]
+        ],
+        "performance": {
+          "score": 0.0,
+          "activity_level": 0.0,
+          "region_participation": 0.0,
+          "inter_region_communication": 0.0,
+          "regions_involved": [],
+          "num_regions_active": 0
+        }
+      },
+      "memory_recall": {
+        "task": "memory_recall",
+        "steps": [
+          [
+            "memory_cue",
+            {
+              "region_activities": {
+                "sensory_cortex": 0.0,
+                "motor_cortex": 0.0,
+                "hippocampus": 0.0,
+                "prefrontal_cortex": 0.0,
+                "association_areas": 0.0
+              },
+              "inter_region_signals": {
+                "sensory_cortex\u2192association_areas": 0.0,
+                "sensory_cortex\u2192hippocampus": 0.0,
+                "motor_cortex\u2192prefrontal_cortex": 0.0,
+                "motor_cortex\u2192sensory_cortex": 0.0,
+                "hippocampus\u2192prefrontal_cortex": 0.0,
+                "hippocampus\u2192association_areas": 0.0,
+                "prefrontal_cortex\u2192association_areas": 0.0,
+                "prefrontal_cortex\u2192motor_cortex": 0.0,
+                "prefrontal_cortex\u2192hippocampus": 0.0,
+                "association_areas\u2192sensory_cortex": 0.0,
+                "association_areas\u2192prefrontal_cortex": 0.0,
+                "association_areas\u2192hippocampus": 0.0
+              }
+            }
+          ],
+          [
+            "association",
+            {
+              "region_activities": {
+                "sensory_cortex": 0.0,
+                "motor_cortex": 0.0,
+                "hippocampus": 0.0,
+                "prefrontal_cortex": 0.0,
+                "association_areas": 0.0
+              },
+              "inter_region_signals": {
+                "sensory_cortex\u2192association_areas": 0.0,
+                "sensory_cortex\u2192hippocampus": 0.0,
+                "motor_cortex\u2192prefrontal_cortex": 0.0,
+                "motor_cortex\u2192sensory_cortex": 0.0,
+                "hippocampus\u2192prefrontal_cortex": 0.0,
+                "hippocampus\u2192association_areas": 0.0,
+                "prefrontal_cortex\u2192association_areas": 0.0,
+                "prefrontal_cortex\u2192motor_cortex": 0.0,
+                "prefrontal_cortex\u2192hippocampus": 0.0,
+                "association_areas\u2192sensory_cortex": 0.0,
+                "association_areas\u2192prefrontal_cortex": 0.0,
+                "association_areas\u2192hippocampus": 0.0
+              }
+            }
+          ],
+          [
+            "association",
+            {
+              "region_activities": {
+                "sensory_cortex": 0.0,
+                "motor_cortex": 0.0,
+                "hippocampus": 0.0,
+                "prefrontal_cortex": 0.0,
+                "association_areas": 0.0
+              },
+              "inter_region_signals": {
+                "sensory_cortex\u2192association_areas": 0.0,
+                "sensory_cortex\u2192hippocampus": 0.0,
+                "motor_cortex\u2192prefrontal_cortex": 0.0,
+                "motor_cortex\u2192sensory_cortex": 0.0,
+                "hippocampus\u2192prefrontal_cortex": 0.0,
+                "hippocampus\u2192association_areas": 0.0,
+                "prefrontal_cortex\u2192association_areas": 0.0,
+                "prefrontal_cortex\u2192motor_cortex": 0.0,
+                "prefrontal_cortex\u2192hippocampus": 0.0,
+                "association_areas\u2192sensory_cortex": 0.0,
+                "association_areas\u2192prefrontal_cortex": 0.0,
+                "association_areas\u2192hippocampus": 0.0
+              }
+            }
+          ],
+          [
+            "reconstruction",
+            {
+              "region_activities": {
+                "sensory_cortex": 0.0,
+                "motor_cortex": 0.0,
+                "hippocampus": 0.0,
+                "prefrontal_cortex": 0.0,
+                "association_areas": 0.0
+              },
+              "inter_region_signals": {
+                "sensory_cortex\u2192association_areas": 0.0,
+                "sensory_cortex\u2192hippocampus": 0.0,
+                "motor_cortex\u2192prefrontal_cortex": 0.0,
+                "motor_cortex\u2192sensory_cortex": 0.0,
+                "hippocampus\u2192prefrontal_cortex": 0.0,
+                "hippocampus\u2192association_areas": 0.0,
+                "prefrontal_cortex\u2192association_areas": 0.0,
+                "prefrontal_cortex\u2192motor_cortex": 0.0,
+                "prefrontal_cortex\u2192hippocampus": 0.0,
+                "association_areas\u2192sensory_cortex": 0.0,
+                "association_areas\u2192prefrontal_cortex": 0.0,
+                "association_areas\u2192hippocampus": 0.0
+              }
+            }
+          ]
+        ],
+        "performance": {
+          "score": 0.0,
+          "activity_level": 0.0,
+          "region_participation": 0.0,
+          "inter_region_communication": 0.0,
+          "regions_involved": [],
+          "num_regions_active": 0
+        }
+      },
+      "motor_planning": {
+        "task": "motor_planning",
+        "steps": [
+          [
+            "goal_setting",
+            {
+              "region_activities": {
+                "sensory_cortex": 0.0,
+                "motor_cortex": 0.0,
+                "hippocampus": 0.0,
+                "prefrontal_cortex": 0.0,
+                "association_areas": 0.0
+              },
+              "inter_region_signals": {
+                "sensory_cortex\u2192association_areas": 0.0,
+                "sensory_cortex\u2192hippocampus": 0.0,
+                "motor_cortex\u2192prefrontal_cortex": 0.0,
+                "motor_cortex\u2192sensory_cortex": 0.0,
+                "hippocampus\u2192prefrontal_cortex": 0.0,
+                "hippocampus\u2192association_areas": 0.0,
+                "prefrontal_cortex\u2192association_areas": 0.0,
+                "prefrontal_cortex\u2192motor_cortex": 0.0,
+                "prefrontal_cortex\u2192hippocampus": 0.0,
+                "association_areas\u2192sensory_cortex": 0.0,
+                "association_areas\u2192prefrontal_cortex": 0.0,
+                "association_areas\u2192hippocampus": 0.0
+              }
+            }
+          ],
+          [
+            "planning",
+            {
+              "region_activities": {
+                "sensory_cortex": 0.0,
+                "motor_cortex": 0.0,
+                "hippocampus": 0.0,
+                "prefrontal_cortex": 0.0,
+                "association_areas": 0.0
+              },
+              "inter_region_signals": {
+                "sensory_cortex\u2192association_areas": 0.0,
+                "sensory_cortex\u2192hippocampus": 0.0,
+                "motor_cortex\u2192prefrontal_cortex": 0.0,
+                "motor_cortex\u2192sensory_cortex": 0.0,
+                "hippocampus\u2192prefrontal_cortex": 0.0,
+                "hippocampus\u2192association_areas": 0.0,
+                "prefrontal_cortex\u2192association_areas": 0.0,
+                "prefrontal_cortex\u2192motor_cortex": 0.0,
+                "prefrontal_cortex\u2192hippocampus": 0.0,
+                "association_areas\u2192sensory_cortex": 0.0,
+                "association_areas\u2192prefrontal_cortex": 0.0,
+                "association_areas\u2192hippocampus": 0.0
+              }
+            }
+          ],
+          [
+            "planning",
+            {
+              "region_activities": {
+                "sensory_cortex": 0.0,
+                "motor_cortex": 0.0,
+                "hippocampus": 0.0,
+                "prefrontal_cortex": 0.0,
+                "association_areas": 0.0
+              },
+              "inter_region_signals": {
+                "sensory_cortex\u2192association_areas": 0.0,
+                "sensory_cortex\u2192hippocampus": 0.0,
+                "motor_cortex\u2192prefrontal_cortex": 0.0,
+                "motor_cortex\u2192sensory_cortex": 0.0,
+                "hippocampus\u2192prefrontal_cortex": 0.0,
+                "hippocampus\u2192association_areas": 0.0,
+                "prefrontal_cortex\u2192association_areas": 0.0,
+                "prefrontal_cortex\u2192motor_cortex": 0.0,
+                "prefrontal_cortex\u2192hippocampus": 0.0,
+                "association_areas\u2192sensory_cortex": 0.0,
+                "association_areas\u2192prefrontal_cortex": 0.0,
+                "association_areas\u2192hippocampus": 0.0
+              }
+            }
+          ],
+          [
+            "execution",
+            {
+              "region_activities": {
+                "sensory_cortex": 0.0,
+                "motor_cortex": 0.0,
+                "hippocampus": 0.0,
+                "prefrontal_cortex": 0.0,
+                "association_areas": 0.0
+              },
+              "inter_region_signals": {
+                "sensory_cortex\u2192association_areas": 0.0,
+                "sensory_cortex\u2192hippocampus": 0.0,
+                "motor_cortex\u2192prefrontal_cortex": 0.0,
+                "motor_cortex\u2192sensory_cortex": 0.0,
+                "hippocampus\u2192prefrontal_cortex": 0.0,
+                "hippocampus\u2192association_areas": 0.0,
+                "prefrontal_cortex\u2192association_areas": 0.0,
+                "prefrontal_cortex\u2192motor_cortex": 0.0,
+                "prefrontal_cortex\u2192hippocampus": 0.0,
+                "association_areas\u2192sensory_cortex": 0.0,
+                "association_areas\u2192prefrontal_cortex": 0.0,
+                "association_areas\u2192hippocampus": 0.0
+              }
+            }
+          ]
+        ],
+        "performance": {
+          "score": 0.0,
+          "activity_level": 0.0,
+          "region_participation": 0.0,
+          "inter_region_communication": 0.0,
+          "regions_involved": [],
+          "num_regions_active": 0
+        }
+      }
+    },
+    "individual_scores": {
+      "sensory_processing": 0.0,
+      "memory_recall": 0.0,
+      "motor_planning": 0.0
+    },
+    "regions_count": 5,
+    "total_neurons": 10000
+  },
+  "architecture": {
+    "regions": [
+      "sensory_cortex",
+      "motor_cortex",
+      "hippocampus",
+      "prefrontal_cortex",
+      "association_areas"
+    ],
+    "total_neurons": 10000,
+    "specializations": {
+      "sensory_cortex": "Primary sensory processing",
+      "motor_cortex": "Motor control and planning",
+      "hippocampus": "Memory formation and retrieval",
+      "prefrontal_cortex": "Executive functions and decision making",
+      "association_areas": "Integration and association"
+    }
+  },
+  "timestamp": "2025-12-13 23:24:55"
+}

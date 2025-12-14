@@ -1,0 +1,36 @@
+{
+  "achievement": "50k_neuron_mammalian_brain",
+  "intelligence_score": 0.09084936938234314,
+  "intelligence_level": "Enhanced Fish",
+  "grade": "C (Developing)",
+  "assessment_time": 0.010719537734985352,
+  "detailed_results": {
+    "overall_mammalian_intelligence": 0.09084936938234314,
+    "individual_scores": {
+      "pattern_recognition": 0.1613651249475699,
+      "coordination": 0.20203235258180266,
+      "enhanced_memory": 0.0,
+      "executive_reasoning": 0.0,
+      "motor_planning": 0.0
+    },
+    "baselines": {
+      "10k_simple": 0.52,
+      "10k_enhanced": 0.377,
+      "50k_mammalian": 0.09084936938234314
+    },
+    "improvements": {
+      "vs_10k_simple": -0.4291506306176569,
+      "vs_10k_enhanced": -0.2861506306176569
+    },
+    "system_specs": {
+      "neurons": 50000,
+      "regions": 7,
+      "estimated_connections": 12500000,
+      "working_memory_capacity": 15,
+      "working_memory_items": 0,
+      "pattern_library": 0
+    }
+  },
+  "milestone": "Mammalian Intelligence Level",
+  "timestamp": "2025-12-14 02:36:39"
+}
