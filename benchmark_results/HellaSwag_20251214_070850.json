@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "HellaSwag",
+    "total_questions": 10,
+    "correct_answers": 8,
+    "accuracy": 0.8,
+    "average_confidence": 0.6695460101053119,
+    "average_response_time": 0.01529378890991211,
+    "total_time": 0.1543111801147461,
+    "per_category_accuracy": {
+      "unknown": 0.8
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T07:08:50.950208"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to understand what is being asked of you in an essay or exam [title] Read all of the directions. [step] No matter how many wrong answers you have, as long as you follow all the directions, you will get some credit. Re-read the question slowly.\n\nWhat happens next? Choose the most likely ending:\n\nA) Read it again and see how you can change the answer. If it doesn't do anything helpful, you will not have any credit at all.\nB) [substeps] If you question an idea's answer multiple times, you can easily become stumped and you will not have a lot of time to reshape your answer. Instead, rework the idea of a question by reviewing the given reading.\nC) Once you are finished, review everything you have read. Look for errors, change the question box, or rearrange the wording to be just right.\nD) In your haste and panic, you may have missed the point. Then, analyze what you have learned and start writing.\n",
+      "ground_truth": "In your haste and panic, you may have missed the point. Then, analyze what you have learned and start writing.",
+      "prediction": "B",
+      "is_correct": false,
+      "confidence": 0.6686705460511149,
+      "response_time": 0.015594959259033203,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: A small group of young boys are seen holding up fighting gloves and hitting an older man wearing gloves. the boys\n\nWhat happens next? Choose the most likely ending:\n\nA) continue to push and kick the man's hands while other boys practice in the background.\nB) then begin spar with one another chopping and punching.\nC) shake and counter throw one another while someone is standing close by watching them hit.\nD) then kick him and hit him over the head.\n",
+      "ground_truth": "continue to push and kick the man's hands while other boys practice in the background.",
+      "prediction": "C",
+      "is_correct": true,
+      "confidence": 0.6900362441278993,
+      "response_time": 0.016661882400512695,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to make a water bottle bong [title] Obtain a bottle. [step] You will want to use a bottle that is just the right size for bong-making purposes. A standard 16. 9 ounce plastic water bottle should do the trick.\n\nWhat happens next? Choose the most likely ending:\n\nA) Even if the bottle is brittle, it will work just fine. [substeps] If you can't find a bottle you would like to use, a simple substitute would be a dollar store blue cap.\nB) A standard 3.0 ounce and 2.5 ounce plastic bottle will both work the best for popping up the bubbles. [substeps] As a general rule, don't skimp on the bottle.\nC) Measure out 2 to 3 ounces (45 to 59 ml). [substeps] Make sure the bottle is 5 mm long.\nD) [substeps] Water bottles are better than soda bottles because they won't leave any sticky residue. You can remove the label from the bottle, if you want.\n",
+      "ground_truth": "[substeps] Water bottles are better than soda bottles because they won't leave any sticky residue. You can remove the label from the bottle, if you want.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.648391956847161,
+      "response_time": 0.014135122299194336,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to prevent constipation in toddlers [title] Hydrate your child. [step] Offer your child at least 32 ounces of water or diluted juice every day. Try to make 75% of that water, since juice contains sugar that can cause diarrhea.\n\nWhat happens next? Choose the most likely ending:\n\nA) This extra fluid in the stool will make it softer and easier to pass. [substeps] To dilute juice, add 1 ounce of water for every ounce of juice.\nB) Boys should drink 27 ounces of water everyday, and girls should drink 7 ounces of water three times daily. [substeps] In between meals, try giving your child an apple or a lemon.\nC) Don't add more water if you are using tea or juice that has sugar. [substeps] Make sure you avoid regularly taking juice before a meal and stay hydrated throughout the day.\nD) If needed, take your child to the bathroom (or another bathroom office) in general. Change your water or juice out if it's right before bed at night.\n",
+      "ground_truth": "This extra fluid in the stool will make it softer and easier to pass. [substeps] To dilute juice, add 1 ounce of water for every ounce of juice.",
+      "prediction": "B",
+      "is_correct": true,
+      "confidence": 0.6702393091022969,
+      "response_time": 0.013949871063232422,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to decorate shoes [title] Get some tennis shoes. [step] To decorate shoes with paint you'll need to use canvas tennis shoes. You can buy canvas shoes in white, black, and many other colors at department or drug stores.\n\nWhat happens next? Choose the most likely ending:\n\nA) Make sure to sand down the whole shoe before you paint it! [title] Apply the paint. [step] You can use oil paint or use powdered paint, but you will most likely need to allow the paint to dry overnight before you can use any real paint.\nB) Get a few pairs to try out different designs, or just stick with one pair for your masterpiece. [substeps] You can choose canvas shoes with or without laces-both will work just fine.\nC) To decorate your shoes, use paint primer to color them a solid color. [substeps] You can use as much or as little paint as your want.\nD) You'll then need to paint them in your colors. Some paints will not work well with tennis shoes, so it's recommended to buy some to use.\n",
+      "ground_truth": "Get a few pairs to try out different designs, or just stick with one pair for your masterpiece. [substeps] You can choose canvas shoes with or without laces-both will work just fine.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.6538483515009283,
+      "response_time": 0.01499319076538086,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: There are two guys standing on a large blue mat in a gym and they are both wearing shorts and a pair of boxing gloves. the men\n\nWhat happens next? Choose the most likely ending:\n\nA) shake hands briefly and split up the room.\nB) begin doing arm wrestling and follow through in a boxing match until one of the boxers flips out.\nC) on the floor are fighting and they're using boxing gloves without backs up.\nD) square up and they begin hitting and kicking at one another with brief moments of stopping in between their punches and their kicks.\n",
+      "ground_truth": "square up and they begin hitting and kicking at one another with brief moments of stopping in between their punches and their kicks.",
+      "prediction": "D",
+      "is_correct": true,
+      "confidence": 0.6686328989043832,
+      "response_time": 0.014369964599609375,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to make coconut chocolate milk [title] Heat your water. [step] Heat your water until it is either very hot or boiling. You can do this easily by heating the water in a pot on your stovetop or in an electric kettle.\n\nWhat happens next? Choose the most likely ending:\n\nA) If you're happy with the heat, the water will take you two to three minutes to turn off. [substeps] A good rule of thumb is to vary the water based on your preference.\nB) If you have access to a stove, put it on the stove so that it is hot, but not too hot. Make sure that it is kept on the stove and boiled for up to two hours.\nC) Water that is slightly below boiling will better preserve the nutritional value of the coconut. [title] Prepare your strainer while the water heats.\nD) Make sure that the water is not too hot. If it is too cold, it will build up and cause scalding.\n",
+      "ground_truth": "Water that is slightly below boiling will better preserve the nutritional value of the coconut. [title] Prepare your strainer while the water heats.",
+      "prediction": "B",
+      "is_correct": true,
+      "confidence": 0.639616245623678,
+      "response_time": 0.016253948211669922,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to run in the honolulu marathon [title] Learn about the requirements. [step] While most marathons have a qualifying time, the honolulu marathon does not, and a great starter for first-time marathon runners. [title] Register and pay for the entry fee.\n\nWhat happens next? Choose the most likely ending:\n\nA) [step] There is no fee, although most runners pay in installments. This is usually a percentage, which you can get from the facility where the marathon occurred.\nB) [step] Most marathon participants have to pay for an entrance fee, or $8.78. [substeps] Some marathon runners may choose to pay the entry fee up front, while others may choose a sliding fee of $35 to cover the 8.78 entry fee.\nC) [step] Hawaii residents have two advantages to the marathon: early registration date notifications and lower entry fees. There are separate entry fee amounts for hawaii residents, united states residents, and international residents.\nD) [step] You will need a learner's permit to run. These permits are provided by the organization in which the marathon takes place.\n",
+      "ground_truth": "[step] Hawaii residents have two advantages to the marathon: early registration date notifications and lower entry fees. There are separate entry fee amounts for hawaii residents, united states residents, and international residents.",
+      "prediction": "B",
+      "is_correct": false,
+      "confidence": 0.6937441874332726,
+      "response_time": 0.015163183212280273,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to react when being caught doing something wrong [title] Admit that you did something wrong. [step] If you know you've made a mistake and you've been caught, the best course of action is often to just admit it. Don't feel like you need to go into detail about it.\n\nWhat happens next? Choose the most likely ending:\n\nA) Just stay calm, and speak matter-of-factly about the situation. Your reaction to being caught may have an impact on your punishment; you don't want to make things worse.\nB) As soon as your parents see you admit you are wrong, they will be less forgiving. [substeps] Try saying something like, \" i'm sorry i was caught.\nC) It's perfectly acceptable to say \" i was a nuisance to my sister, \" or \" i let her get my dirty laundry. I shouldn't have something that's affecting my reputation.\nD) It is not acceptable to point out to a person that you broke up with them, but it shows that you took the initiative to make a point instead of planning to do something in front of others. [substeps] \" i was really, really mean, \" is a yes, but doesn't mean to apologize to anyone.\n",
+      "ground_truth": "Just stay calm, and speak matter-of-factly about the situation. Your reaction to being caught may have an impact on your punishment; you don't want to make things worse.",
+      "prediction": "D",
+      "is_correct": true,
+      "confidence": 0.6454828450269997,
+      "response_time": 0.015325784683227539,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to use a home microneedling device [title] Select a microneedling device. [step] Prior to microneedling at home, you need to choose a device that is best suited for you. There are three different types of at home microneedling products: a derma roller, derma stamp, and derma pen.\n\nWhat happens next? Choose the most likely ending:\n\nA) Derma rollers are the least expensive option and roll along your skin like a paint roller. Some dermatologists recommend derma stamps and derma pens because the vertical penetration is less painful and allows for easier maneuvering around the mouth, eyes, and nose.\nB) [substeps] Derma ink is the best for best results. In c: letters can be watermarked once applied with a marker.\nC) Consult a board-certified professional if you cannot find a swiss partner. [substeps] Note that an at home microneedling device may require additional knowledge of non-microneedling methods before you can learn to use one.\nD) [substeps] Although you may buy a product that contains multiple batches of microneedling device, benzyl bidema will keep you updated as to what you're used for. There are, however, certain products that may mimic these microneedling devices.\n",
+      "ground_truth": "Derma rollers are the least expensive option and roll along your skin like a paint roller. Some dermatologists recommend derma stamps and derma pens because the vertical penetration is less painful and allows for easier maneuvering around the mouth, eyes, and nose.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.7167975164353848,
+      "response_time": 0.01648998260498047,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    }
+  ]
+}

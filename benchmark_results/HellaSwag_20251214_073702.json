@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "HellaSwag",
+    "total_questions": 10,
+    "correct_answers": 10,
+    "accuracy": 1.0,
+    "average_confidence": 0.29999999999999993,
+    "average_response_time": 0.02304069995880127,
+    "total_time": 0.23270606994628906,
+    "per_category_accuracy": {
+      "unknown": 1.0
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T07:37:02.079766"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to ask a guy to a school dance [title] Determine whether or not he already has a date. [step] This will save you a great deal of time and trouble, and give you enough time to find another potential date if necessary. [substeps] If you are unsure, then ask one of his friends or someone in his social circle.\n\nWhat happens next? Choose the most likely ending:\n\nA) Don't feel bad if you didn't know. If the guy has a date already, it will make it a lot easier to find him after the dance.\nB) If he already has a date set up, then find out if it is to be a date. [title] Determine whether he only has friends, or if he doesn't have any at all.\nC) The idea is to find someone else to spend time with that you can count on, to help you get into a mood that is conducive to dancing. [title] Be specific about who will be dancing.\nD) Try to figure this out before asking him out. If he has a girlfriend, then he is probably going with her.\n",
+      "ground_truth": "Try to figure this out before asking him out. If he has a girlfriend, then he is probably going with her.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.021556854248046875,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: A person is seen running onto a court and shooting a basketball. the man\n\nWhat happens next? Choose the most likely ending:\n\nA) tosses the shot put to another player while the score of the game is shown.\nB) keeps throwing the balls as well as from behind while the camera takes pictures.\nC) is shown in several clips running down and scoring a basket.\nD) runs down a track and catches the ball and throws it off in the distance.\n",
+      "ground_truth": "is shown in several clips running down and scoring a basket.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.024714946746826172,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to host an english style high tea [title] Pick a time. [step] Consider your guests when choosing a time. People often host tea during the afternoon.\n\nWhat happens next? Choose the most likely ending:\n\nA) Work and/or school may be a problem during the afternoon on weekdays, however. A weekend afternoon tea could be ideal if you let your guests know about the date you choose in enough time.\nB) The most popular time is slightly below 10pm so it would work to host the group for one hour. However, if, at the end of that time, you want your group to be very close, then a mid afternoon tea can also work well.\nC) Choose a time that is convenient for you and your guests. [substeps] For example, you might invite your friends and family over for tea at 8 pm.\nD) If people you are inviting are already well entrenched in local politics, religious issues, or other matters, pick the right time to host the tea. [substeps] Consider setting up an informational meeting or meeting in the afternoon.\n",
+      "ground_truth": "Work and/or school may be a problem during the afternoon on weekdays, however. A weekend afternoon tea could be ideal if you let your guests know about the date you choose in enough time.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.03825688362121582,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to start a game like eve online [title] Patience is a virtue. [step] For the first few days, it can't be helped to feel being overwhelmed. Just stick with it, and be patient.\n\nWhat happens next? Choose the most likely ending:\n\nA) Finally, it's time to learn how to make things better, which means you're not being driven/anxious or fussy when others are around. [title] People are more influenced by such activities as drawing or typing or word editing.\nB) You're going to get bored a little more, but you'll get out of it very quickly. [substeps] Having patience is what effect eve has on anyone.\nC) Sooner or later you will get accustomed to the rules of space [title] Eve online has a 14-day trial period. [step] Make use of this free time in understanding and exploring the game.\nD) Yes, eve has a knack for fixing problems, but she is much better at fast-tracking that fix now than she is at solving problems already in progress. [title] Take pride in who you are! [step] Eve is balanced.\n",
+      "ground_truth": "Sooner or later you will get accustomed to the rules of space [title] Eve online has a 14-day trial period. [step] Make use of this free time in understanding and exploring the game.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.03232002258300781,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to identify and treat noise phobias in cats [title] Provide a safe spot to hide. [step] Cats like to take cover in confined places for stressful situations. Put a bunch of toys and a favorite blanket in a comfortable hiding spot, like a crate or a closet that your cat can take cover in.\n\nWhat happens next? Choose the most likely ending:\n\nA) If your cat does react \" loud \" to a noise, like running into a room and possibly banging something into the wall or cabinets, it might not necessarily have some sort of negative psychological reaction. [substeps] A true fear of sounds can be a very negative reaction to loud noises.\nB) [substeps] While waiting for the noise to stop, have a buddy gently nudge your cat to the safer spot so it will calm down. You can then search the room with a treat to give it a sense of security in trust.\nC) [substeps] A covered hiding spot may make your cat feel more at ease. Try giving it a box or crate in a quiet place with a blanket draped over the top.\nD) You may also want to place a small lamp to draw pet attention to it. Some places to hide include : [substeps] A cupboard behind a fence on a playpen on a ladder [title] Consider moving the curtains.\n",
+      "ground_truth": "[substeps] A covered hiding spot may make your cat feel more at ease. Try giving it a box or crate in a quiet place with a blanket draped over the top.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.012536048889160156,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: A man demonstrates how to spray varnish a chest of drawers using a spray nozzle varnish hose. A man sprays a chest of drawers with varnish while standing barefoot outdoors. the man\n\nWhat happens next? Choose the most likely ending:\n\nA) tables the dresser with a bottle of oil, and then use the brush to smooth out the wax on the dresser surface.\nB) then takes his shirt off and applies a tattoo to a dog upside down.\nC) covers the entire chest from the very top to the bottom with the spray varnish which is coming from a long hose attached to a metal pump.\nD) dries the floor with the hose.\n",
+      "ground_truth": "covers the entire chest from the very top to the bottom with the spray varnish which is coming from a long hose attached to a metal pump.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.027904987335205078,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: The woman then scrubs soap into her hands and continues to wash them off then taking a paper down and drying her hands and sink. the other\n\nWhat happens next? Choose the most likely ending:\n\nA) steps in to demonstrate how she washes her hands and ends by laughing to the camera.\nB) woman does the same with the paper and cleaners the papers with a large towel and wipes them well with her hand.\nC) woman takes a photo of the two baths with their pets and ends with the woman waving to the camera at the end.\nD) woman adds polish to her hands and uses a pencil to draw around her nails.\n",
+      "ground_truth": "steps in to demonstrate how she washes her hands and ends by laughing to the camera.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.01693415641784668,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to re ignite passion in a marriage [title] Understand how to create passion. [step] Passion is a phenomenon that is created. It is not a spontaneous thing that just happens.\n\nWhat happens next? Choose the most likely ending:\n\nA) Having passion is about the way you are physically and emotionally connected to your spouse, not the other way around. It's a mutually important part of a marriage, but the most important step in the marriage and life.\nB) Passion is created by both the parties, and is used to express feelings or goals. [substeps] The important fact of creating passion in the marriage is recognizing that you and your spouse share at least some of the same feelings.\nC) It is an impulse that occurs every day, once something becomes necessary. The emotional energy that comes with passion is euphoric.\nD) In order to understand how to create passion, you must do two things. First, you need to understand why you feel passion.\n",
+      "ground_truth": "In order to understand how to create passion, you must do two things. First, you need to understand why you feel passion.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.017323017120361328,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: A man introduces the basketball concepts of the video to the camera. the player\n\nWhat happens next? Choose the most likely ending:\n\nA) starts from one side of the court and runs up and lays up the basketball in the net.\nB) tries to make several balls, but only makes very high number of balls.\nC) , then sits on the end of a pallet and explains that he is demonstrating make boxing moves.\nD) drops land, bounces, and lands on the green basketball court.\n",
+      "ground_truth": "starts from one side of the court and runs up and lays up the basketball in the net.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.02141284942626953,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to get faster at running [title] Stretch before you run. [step] Stretching is an important part of almost any exercise routine. Running is no exception.\n\nWhat happens next? Choose the most likely ending:\n\nA) [substeps] The ideal running time is 8 am every day and you will receive roughly 30 minutes of exercise in between those run times. The body of a runner will recharge in order to produce the proper output of energy for the next running session, even if you are just running for a short distance.\nB) You will need plenty of time to warm up, rest, and stretch. [substeps] Make sure that you are not exercising or exercising too hard.\nC) When you stretch, you're warming up the muscles in your body and getting them pumped up for the hard work that you're about to do. [substeps] One good stretch is called \" the stork.\nD) No matter where you are, you need to be in perfect shape to sprint to the finish line. Stretching out requires that you get up and walk on all fours, off the ground for 15 to 20 breaths.\n",
+      "ground_truth": "When you stretch, you're warming up the muscles in your body and getting them pumped up for the hard work that you're about to do. [substeps] One good stretch is called \" the stork.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.017447233200073242,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    }
+  ]
+}

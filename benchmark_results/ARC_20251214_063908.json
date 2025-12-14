@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "ARC",
+    "total_questions": 10,
+    "correct_answers": 0,
+    "accuracy": 0.0,
+    "average_confidence": 0.47178889145469405,
+    "average_response_time": 0.011969900131225586,
+    "total_time": 0.12096476554870605,
+    "per_category_accuracy": {
+      "unknown": 0.0
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T06:39:08.335284"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: A student prepared a presentation to show how water changes the surface of Earth. Which presentation would best demonstrate how water changes the surface of Earth?\n\nA) a diagram of a river food web\nB) a graph of the amount of rainfall on a lake\nC) a picture of fog covering a mountain valley\nD) a model of a stream flowing down a hillside\n",
+      "ground_truth": "a model of a stream flowing down a hillside",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.46493569472728224,
+      "response_time": 0.012612104415893555,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Which statement accurately describes an interaction between plants and animals?\n\nA) Plants provide humans with CO_2 for respiration.\nB) Animals release CO_2, required for photosynthesis.\nC) Plants provide humans with atmospheric nitrogen.\nD) Animals release O_2, required for plant survival.\n",
+      "ground_truth": "Animals release CO_2, required for photosynthesis.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.49145960042007875,
+      "response_time": 0.012094974517822266,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Years ago farmers found that corn plants grew better if decaying fish were buried near by. What did the decaying fish probably supply to the plants to improve their growth?\n\nA) energy\nB) minerals\nC) protein\nD) oxygen\nE) water\n",
+      "ground_truth": "minerals",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.4776682119671868,
+      "response_time": 0.011922836303710938,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: A student wants to lower the temperature of a metal coin. Which action would make the coin the coldest?\n\nA) placing the coin in a freezer\nB) placing the coin in cool water\nC) leaving the coin on a counter\nD) rubbing the coin with cold hands\n",
+      "ground_truth": "placing the coin in a freezer",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.4633996656311917,
+      "response_time": 0.012230157852172852,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: A euglena cell has a structure called an eyespot that detects light. A paramecium does not have an eyespot, and so it cannot detect light. Why doesn't a paramecium need an eyespot?\n\nA) A paramecium does not live where there is light.\nB) A paramecium does not photosynthesize its own food.\nC) A paramecium lives in shallower water than a euglena.\nD) A paramecium uses cilia instead of a flagellum to move.\n",
+      "ground_truth": "A paramecium does not photosynthesize its own food.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.4663961855700135,
+      "response_time": 0.012236833572387695,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Which statement is true about the solar system?\n\nA) The gas planets are closer to the Sun.\nB) The solid planets are closer to the Sun.\nC) The planets are arranged in order of increasing size.\nD) The solid planets are much larger than the gas planets.\n",
+      "ground_truth": "The solid planets are closer to the Sun.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.45312484928352015,
+      "response_time": 0.01222085952758789,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Bacteria are organisms that reproduce asexually. What would the traits inherited by a newly produced bacterium be like?\n\nA) different from the traits of the single parent\nB) the same traits as the single parent\nC) different from the traits of two parents\nD) similar traits as two parents\n",
+      "ground_truth": "the same traits as the single parent",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.4762353764373729,
+      "response_time": 0.011480093002319336,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: A student dissolves sodium chloride, NaCl, in distilled water. Which word best describes the water in this situation?\n\nA) reactant\nB) product\nC) solute\nD) solvent\n",
+      "ground_truth": "solvent",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.4743890826092534,
+      "response_time": 0.011897087097167969,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: A student is investigating Newton's second law of motion by changing the force acting on an object and observing its resulting acceleration. If the force on the object were increased four times, by how much would the acceleration increase?\n\nA) 2 times\nB) 4 times\nC) 8 times\nD) 16 times\n",
+      "ground_truth": "4 times",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.47056516114749125,
+      "response_time": 0.011846065521240234,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: When an animal population moves a long distance to another area in order to survive it is called\n\nA) breeding.\nB) hibernation.\nC) migration.\nD) navigation.\n",
+      "ground_truth": "migration.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.4797150867535501,
+      "response_time": 0.011157989501953125,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    }
+  ]
+}

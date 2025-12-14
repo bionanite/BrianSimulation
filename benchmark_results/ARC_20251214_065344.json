@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "ARC",
+    "total_questions": 10,
+    "correct_answers": 0,
+    "accuracy": 0.0,
+    "average_confidence": 0.5090791817143757,
+    "average_response_time": 0.010474514961242676,
+    "total_time": 0.1059110164642334,
+    "per_category_accuracy": {
+      "unknown": 0.0
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T06:53:44.061157"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: When you are getting up to go to school in Louisiana, a student on the other side of Earth is getting ready for bed. What is the reason for this?\n\nA) Earth revolves around the Sun.\nB) Earth rotates on its axis.\nC) The Sun rotates on its axis.\nD) The Moon revolves around Earth.\n",
+      "ground_truth": "Earth rotates on its axis.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.4877122539489972,
+      "response_time": 0.01200103759765625,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Human tears contain the enzyme lysozyme, which damages the cell walls of bacteria. Which of the following statements about lysozyme is most accurate?\n\nA) Lysozyme causes mutations in bacterial cell wall molecules.\nB) Lysozyme is destroyed as it digests bacterial cell wall molecules.\nC) Lysozyme breaks a specific type of bond in a bacterial cell wall molecule.\nD) Lysozyme is converted to another chemical by a bacterial cell wall molecule.\n",
+      "ground_truth": "Lysozyme breaks a specific type of bond in a bacterial cell wall molecule.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.5567993233245178,
+      "response_time": 0.010123014450073242,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: A river erodes its banks for thousands of years, and deposits the eroded material at its mouth. What two landforms did the river make?\n\nA) a hill and a delta\nB) a delta and a canyon\nC) a canyon and a dune\nD) a dune and a delta\n",
+      "ground_truth": "a delta and a canyon",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.4994841223321783,
+      "response_time": 0.010439872741699219,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Which substance will retain the largest amount of energy from the Sun?\n\nA) snow\nB) sand\nC) grass\nD) water\n",
+      "ground_truth": "sand",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.5144622057089075,
+      "response_time": 0.010150909423828125,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: If you place a thermometer into a glass of ice water, what temperature should the thermometer read?\n\nA) -10\u00b0C\nB) 0\u00b0C\nC) 32\u00b0C\nD) 100\u00b0C\n",
+      "ground_truth": "0\u00b0C",
+      "prediction": "10",
+      "is_correct": false,
+      "confidence": 0.49837251927493387,
+      "response_time": 0.010319948196411133,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Some students are performing hardness tests on several substances. X scratches Y. Y scratches Z. Z scratches W. Which of these statements best describes substance W's hardness?\n\nA) W is the softest of the four substances tested.\nB) W is the hardest of the four substances tested.\nC) W can scratch Y.\nD) W can scratch X.\n",
+      "ground_truth": "W is the softest of the four substances tested.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.4912573526001084,
+      "response_time": 0.010764122009277344,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Some pine trees are able to live through forest fires because of their thick bark. After a forest fire, new pine trees can grow in the space left by other trees that burned down. How does thick bark help to increase the pine tree population?\n\nA) It produces more food for the tree.\nB) It increases the nutrients in the soil.\nC) It releases more oxygen from the tree.\nD) It decreases the competition for resources.\n",
+      "ground_truth": "It decreases the competition for resources.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.507435393902393,
+      "response_time": 0.010555267333984375,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: At which temperature does water freeze?\n\nA) 0 degrees Celsius\nB) 32 degrees Celsius\nC) 100 degrees Celsius\nD) 212 degrees Celsius\n",
+      "ground_truth": "0 degrees Celsius",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.4716887333098274,
+      "response_time": 0.010122060775756836,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Bacteria are organisms that reproduce asexually. What would the traits inherited by a newly produced bacterium be like?\n\nA) different from the traits of the single parent\nB) the same traits as the single parent\nC) different from the traits of two parents\nD) similar traits as two parents\n",
+      "ground_truth": "the same traits as the single parent",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.5190751559127497,
+      "response_time": 0.010349035263061523,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Marshall researched some of the changes on Earth that happen over a long time. Which event most likely causes the slowest change to the surface of Earth?\n\nA) earthquake\nB) landslide\nC) volcano\nD) wind\n",
+      "ground_truth": "wind",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.5445047568291447,
+      "response_time": 0.009919881820678711,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    }
+  ]
+}

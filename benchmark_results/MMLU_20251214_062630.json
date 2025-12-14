@@ -1,0 +1,89 @@
+{
+  "summary": {
+    "benchmark_name": "MMLU",
+    "total_questions": 5,
+    "correct_answers": 0,
+    "accuracy": 0.0,
+    "average_confidence": 0.491647439504729,
+    "average_response_time": 0.010652494430541993,
+    "total_time": 0.053752899169921875,
+    "per_category_accuracy": {
+      "high_school_biology": 0.0
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T06:26:30.869103"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: A reaction that includes energy as one of its reactants is called a(n)\n\nA) exergonic reaction.\nB) hydrolysis reaction.\nC) endergonic reaction.\nD) redox reaction.\n",
+      "ground_truth": "endergonic reaction.",
+      "prediction": "True",
+      "is_correct": false,
+      "confidence": 0.49642656241169164,
+      "response_time": 0.010912179946899414,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Unlike large populations, small populations are vulnerable to various processes that draw populations down an extinction vortex toward smaller and smaller populations until no individuals survive. Which of the following statements correctly identifies the factors that endanger a population?\n\nA) Inbreeding and loss of genetic variation threaten a population.\nB) Migration of new individuals into the population threatens a population.\nC) Mutation reduces the health of a population.\nD) Breeding with individuals from a different population may cause the extinction of the first population due to a decrease in diversity.\n",
+      "ground_truth": "Inbreeding and loss of genetic variation threaten a population.",
+      "prediction": "True",
+      "is_correct": false,
+      "confidence": 0.47488977203768246,
+      "response_time": 0.010553121566772461,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Oligomycin is an antibiotic that blocks proton channels in the cristae of mitochondria by binding to ATP synthase. Which of the following would be the first expected response after the application of oligomycin to cells?\n\nA) Water production would increase.\nB) H+ would increase inside the intermembrane space (the compartment between inner and outer membranes).\nC) H+ would increase in the matrix (inside mitochondrial inner membrane).\nD) H+ would increase outside mitochondria.\n",
+      "ground_truth": "H+ would increase inside the intermembrane space (the compartment between inner and outer membranes).",
+      "prediction": "True",
+      "is_correct": false,
+      "confidence": 0.48976352166382675,
+      "response_time": 0.01064300537109375,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Mosquitoes resistant to the pesticide DDT first appeared in India in 1959 within 15 years of widespread spraying of the insecticide. Which of the following statement best explains how the resistant mosquitoes arose?\n\nA) Some mosquitoes experienced a mutation after being exposed to DDT that made them resistant to the insecticide. Then their population expanded because these moquitoes had no competition.\nB) Some mosquitoes were already resistant to DDT when DDT was first sprayed. Then their population expanded because all the susceptible mosquitoes had been exterminated.\nC) DDT is generally a very effective insecticide. One can only conclude that it was manufactured improperly.\nD) Although DDT is effective against a wide range of insects, it is not effective against mosquitoes.\n",
+      "ground_truth": "Some mosquitoes were already resistant to DDT when DDT was first sprayed. Then their population expanded because all the susceptible mosquitoes had been exterminated.",
+      "prediction": "True",
+      "is_correct": false,
+      "confidence": 0.4876462936027227,
+      "response_time": 0.010560989379882812,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Which of the following is most correct concerning cell differentiation in vertebrates?\n\nA) Cells in different tissues contain different sets of genes, leading to structural and functional differences.\nB) Differences in the timing and expression levels of different genes leads to structural and functional differences.\nC) Differences in the reading frame of mRNA leads to structural and functional differences.\nD) Differences between tissues result from spontaneous morphogenesis.\n",
+      "ground_truth": "Differences in the timing and expression levels of different genes leads to structural and functional differences.",
+      "prediction": "True",
+      "is_correct": false,
+      "confidence": 0.5095110478077216,
+      "response_time": 0.010593175888061523,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    }
+  ]
+}

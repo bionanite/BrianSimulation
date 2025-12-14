@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "MMLU",
+    "total_questions": 10,
+    "correct_answers": 0,
+    "accuracy": 0.0,
+    "average_confidence": 0.47561802249614804,
+    "average_response_time": 0.012141203880310059,
+    "total_time": 0.12290167808532715,
+    "per_category_accuracy": {
+      "high_school_biology": 0.0
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T06:23:24.826270"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: An animal that is harmless copies the appearance of an animal that is dangerous as a defense mechanism to make predators think twice about attacking.\n\nA) Aposomatic coloration\nB) Batesian mimicry\nC) Deceptive markings\nD) Cryptic coloration\n",
+      "ground_truth": "Batesian mimicry",
+      "prediction": "True",
+      "is_correct": false,
+      "confidence": 0.49752626424535407,
+      "response_time": 0.012072086334228516,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Microtubules are protein filaments assembled from tubulin protein subunits. The chemical colchicine prevents the assembly of microtubules by binding to tubulin protein subunits. Which of the following cellular processes would be most impaired by the application of colchicine?\n\nA) the alignment and separation of chromosomes during mitosis\nB) the coordination of ribosomes and mRNA during protein synthesis\nC) the movement of substances across the plasma membrane\nD) the accumulation of protons inside the thylakoids of chloroplasts during chemiosmosis\n",
+      "ground_truth": "the alignment and separation of chromosomes during mitosis",
+      "prediction": "True",
+      "is_correct": false,
+      "confidence": 0.47843184148585427,
+      "response_time": 0.01339411735534668,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Two trees of the same species growing close together will use the same resources, such as light, water, and nutrients. If any of these resources becomes limiting, then each tree will receive less of it than if the trees were growing farther apart. This scenario is an example of which of the following?\n\nA) Parasitism\nB) Commensalism\nC) Natural selection\nD) Intraspecific competition\n",
+      "ground_truth": "Intraspecific competition",
+      "prediction": "True",
+      "is_correct": false,
+      "confidence": 0.47745301056298844,
+      "response_time": 0.011952877044677734,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Two genes (B and E) determine coat color in Labrador retrievers. Alleles B and b code for how much melanin is present. The dominant allele B codes for black fur, the recessive allele b codes for brown hair. A second gene consisting of two alleles, E and e, codes for the deposition of pigment in the hair. In this case, the alleles for pigment deposition (E or e) are said to be epistatic to the gene that codes for black or brown pigment. If the dominant allele (E) is not present, regardless of the genotype at the black/brown locus, the animal's fur will be yellow.\n\nA) BBEe will be brown.\nB) BbEe will be brown.\nC) Bbee will be brown.\nD) BBee will be yellow.\n",
+      "ground_truth": "BBee will be yellow.",
+      "prediction": "True",
+      "is_correct": false,
+      "confidence": 0.45158832089736567,
+      "response_time": 0.012333154678344727,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: What was the prevailing notion prior to the time of Lyell and Darwin?\n\nA) Earth is a few thousand years old, and populations are unchanging.\nB) Earth is a few thousand years old, and populations gradually change.\nC) Earth is millions of years old, and populations rapidly change.\nD) Earth is millions of years old, and populations are unchanging.\n",
+      "ground_truth": "Earth is a few thousand years old, and populations are unchanging.",
+      "prediction": "True",
+      "is_correct": false,
+      "confidence": 0.4595139061568414,
+      "response_time": 0.012291193008422852,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Which statement about natural selection is most correct?\n\nA) Adaptations beneficial in one habitat should generally be beneficial in all other habitats as well.\nB) Different species that occupy the same habitat will adapt to that habitat by undergoing the same genetic changes.\nC) Adaptations beneficial at one time should generally be beneficial during all other times as well.\nD) Well-adapted individuals leave more offspring, and thus contribute more to the next generation's gene pool, than do poorly adapted individuals.\n",
+      "ground_truth": "Well-adapted individuals leave more offspring, and thus contribute more to the next generation's gene pool, than do poorly adapted individuals.",
+      "prediction": "True",
+      "is_correct": false,
+      "confidence": 0.4881181846736079,
+      "response_time": 0.012165069580078125,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Which of the following statements best explains why Mendel's principle of segregation was deemed a law?\n\nA) Mendel's work with pea plants and his conclusions have been described in many sources.\nB) The patterns of trait inheritance observed in pea plants were repeatedly demonstrated in other eukaryotes.\nC) Chromosomes were found to contain the genetic information for traits.\nD) The discovery of the structure of D N A supported Mendel's observations and laws.\n",
+      "ground_truth": "The patterns of trait inheritance observed in pea plants were repeatedly demonstrated in other eukaryotes.",
+      "prediction": "True",
+      "is_correct": false,
+      "confidence": 0.4778203650402714,
+      "response_time": 0.011867761611938477,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: The geneticist Mary Lyon hypothesized the existence of structures visible just under the nuclear membrane in mammals, which were later named Barr bodies. Which of the following statement is NOT correct about Barr bodies?\n\nA) In the early female embryo, one copy of the X chromosome becomes inactivated in every body cell.\nB) The same chromosome in every cell of a normal female is inactivated.\nC) A male with the XXY genotype will have one Barr body.\nD) Barr bodies consist of highly methylated DNA.\n",
+      "ground_truth": "The same chromosome in every cell of a normal female is inactivated.",
+      "prediction": "True",
+      "is_correct": false,
+      "confidence": 0.47115741148676354,
+      "response_time": 0.011412858963012695,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: The normal pH of the cytosol is about 7.2. Most enzymes in the lysosome, however, are only active at a pH of 5. This suggests that\n\nA) only acidic substances can undergo enzymatic processing in lysosomes\nB) most enzymes in the lysosome are incapable of catalyzing substrates inside the lysosome\nC) enzymes in the lysosome are released to the cytosol\nD) protons are actively pumped into the lysosome\n",
+      "ground_truth": "protons are actively pumped into the lysosome",
+      "prediction": "True",
+      "is_correct": false,
+      "confidence": 0.45030111572689285,
+      "response_time": 0.011823892593383789,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Which of the following theories is based on the notion that mitochondria and chloroplasts evolved from prokaryotic cells?\n\nA) Fluid mosaic model\nB) Endosymbiotic model\nC) Taxonomic model\nD) Respiration feedback model\n",
+      "ground_truth": "Endosymbiotic model",
+      "prediction": "True",
+      "is_correct": false,
+      "confidence": 0.5042698046855414,
+      "response_time": 0.012099027633666992,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    }
+  ]
+}

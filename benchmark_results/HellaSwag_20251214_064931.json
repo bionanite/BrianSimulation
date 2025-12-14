@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "HellaSwag",
+    "total_questions": 10,
+    "correct_answers": 1,
+    "accuracy": 0.1,
+    "average_confidence": 0.6633170413121581,
+    "average_response_time": 0.012913894653320313,
+    "total_time": 0.13064789772033691,
+    "per_category_accuracy": {
+      "unknown": 0.1
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T06:49:31.356405"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to do a neat middle height ponytail [title] Straighten your hair or define your curls. [step] The difference between a neat ponytail and a messy one is how much care you take with your hair. Frizzy or unkempt hair will result in a ponytail that sticks out in the wrong places or hangs funny.\n\nWhat happens next? Choose the most likely ending:\n\nA) [substeps] Go for a loose pompadour or a crunchy twist. Comb it back with a hairbrush when your hair is still slightly damp and achieve a messy updo with a touch of gel to it, if your normally pull back your hair into a messy bun.\nB) If you have messy or disheveled hair, it doesn't matter what much you do with it. Make sure to clean it up so the style stays neat.\nC) Since curly or messy hairstyles make your hair seem stuck, try straightening your hair if you prefer : [substeps] Twisting your hair into a ponytail or turning it upside down. These styles create a messy, curly look instead of looking neat.\nD) Depending on your hair texture, do one of the following to neaten your hair before you even put it up : [substeps] Straighten it with a straightening iron. You don't have to meticulously straighten all of your hair; focus on the ends and the sections that will be hanging down in your ponytail.\n",
+      "ground_truth": "Depending on your hair texture, do one of the following to neaten your hair before you even put it up : [substeps] Straighten it with a straightening iron. You don't have to meticulously straighten all of your hair; focus on the ends and the sections that will be hanging down in your ponytail.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.6519918917305768,
+      "response_time": 0.014571905136108398,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to play \" happy birthday \" on the piano [title] Locate middle c on the keyboard. [title] Place both your thumbs (right and left) on middle c, without playing a sound. [title] Play your fourth finger on your left hand twice, the g note.\n\nWhat happens next? Choose the most likely ending:\n\nA) [title] Repeat steps 3-5 on the piano, then move your thumb toward left c twice. [title] This will sound silly at first, but can make perfect great music for the piano.\nB) [step] This time, this will make the chord \" happy birthday \". [title] Place the first finger on c, then press the d key to turn right.\nC) [title] Then quickly play your third finger down afterwards, a note. [title] After you have done that, play your fourth finger again (g).\nD) [step] This key is located underneath the b string on the right-hand d gb. [title] The other key is the fifth note on the d string on the left-hand g.\n",
+      "ground_truth": "[title] Then quickly play your third finger down afterwards, a note. [title] After you have done that, play your fourth finger again (g).",
+      "prediction": "2",
+      "is_correct": false,
+      "confidence": 0.6440555164553226,
+      "response_time": 0.013443946838378906,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to make powdered sugar [title] Choose a blender or spice grinder. [step] Keep in mind that sugar can scratch plastic or weak glass. A high-powered blender is the fastest and most effective option, but any blender or spice grinder can do the job.\n\nWhat happens next? Choose the most likely ending:\n\nA) The same old rule applies here: you can grind your sugar with the spice grinder but store it in a canning jar or tupperware with a lid. [substeps] If your sugar grinder doesn't come with one, consider using a hand blender instead.\nB) [title] Pour 1/4 cup of powdered sugar into the blender or spice grinder. [step] If you are using a heavy handle blender, hold the handle firmly enough to not strain the sugar.\nC) [substeps] Spice grinder or coffee grinders-which are essentially the same tool-pick up flavors from the ingredients they grind. Clean it thoroughly before using it for sugar.\nD) [substeps] A hand-held blender, like the dairy counter blender, should be used for grinding sugar (or rice and cornstarch). [title] Mix together two cups water and sugar.\n",
+      "ground_truth": "[substeps] Spice grinder or coffee grinders-which are essentially the same tool-pick up flavors from the ingredients they grind. Clean it thoroughly before using it for sugar.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.6841948021352291,
+      "response_time": 0.012645959854125977,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to teach kids patience [title] Acknowledge the child's struggle. [step] Let your child know that patience isn't easy and that what they are doing is difficult. You can even help them learn how to verbalize this difficulty and their frustrated emotions.\n\nWhat happens next? Choose the most likely ending:\n\nA) For a young kid, this may be helpful, but for adults, it is not. [substeps] Support the child by being their advocate.\nB) This can help them understand that waiting is hard for everyone, not just them. [substeps] For example, you might say, \" i understand that it is difficult to wait.\nC) What they choose to say is entirely up to them. [substeps] Relax at the edges of the conversation.\nD) [substeps] Let your child do this by saying, \" if you were to lay down now, you would be very sad. I would love to help, but that's not what we do, we do what we say we will.\n",
+      "ground_truth": "This can help them understand that waiting is hard for everyone, not just them. [substeps] For example, you might say, \" i understand that it is difficult to wait.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.6555705495886505,
+      "response_time": 0.012799978256225586,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to create unique lyrics for a song [title] Avoid overused phrases. [step] There are many different phrases that are used frequently in song lyrics. Using these phrases may seem harmless, but some are so overdone that they may make your lyrics sound corny or meaningless to others.\n\nWhat happens next? Choose the most likely ending:\n\nA) Listening to several songs and trying different phrases is not healthy. It also risks scaring away others and possibly making you sound stupid.\nB) [substeps] For example, if you were trying to write a song about a band, a particularly silly phrase could be \" the band--and i couldn't give more than that. \" it's okay to use the phrase \" truth is...\", but try not to assume anything more from the context.\nC) To keep your lyrics fresh and original, reflect on each line as you write it and ask yourself if you've heard the phrase before. If you aren't sure, look the phrase up online to see if it comes up frequently.\nD) If you are trying to produce a song without an audience, be sure that you save money and use proper grammar and punctuation when you use the phrase. [substeps] Avoid lyrics that seem overly detailed to the listener.\n",
+      "ground_truth": "To keep your lyrics fresh and original, reflect on each line as you write it and ask yourself if you've heard the phrase before. If you aren't sure, look the phrase up online to see if it comes up frequently.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.6741982768587769,
+      "response_time": 0.012777090072631836,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: There's a young girl dressed in a blue tank top and black tights demonstrating the proper way to do planks and crunches. She is laying on a blue yoga mat as she does crunches. then she\n\nWhat happens next? Choose the most likely ending:\n\nA) gets motocross and then does several crunches until stopping for a bit so she can get her body warmed up.\nB) lays on her stomach by raising herself up on her elbows to show how to do planks.\nC) stands up to adjust her glasses.\nD) goes into a suplex and kicks back and forth.\n",
+      "ground_truth": "lays on her stomach by raising herself up on her elbows to show how to do planks.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.6476303896866739,
+      "response_time": 0.011815786361694336,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to get rid of annoying people without hurting their feelings [title] Communicate your boundaries. [step] Be clear but polite about any boundaries that you have with the annoying person. These boundaries can remain the same or they can change depending on the conversation or circumstance.\n\nWhat happens next? Choose the most likely ending:\n\nA) [substeps] Always state your boundaries and ensure that the annoying person can and will respect them by not interrupting you when you're speaking. If the annoying person will not leave you alone, it is not okay to argue and instruct them to leave you alone.\nB) You can give a reason for your boundary to minimize hurting their feelings, but you do not have to explain your boundaries. [substeps] For example, if a classmate is always interrupting your study session you might say something like, \" i don't mean to be rude but i have two more hours to study before my exam.\nC) [substeps] For example, perhaps you are making a complaint and the annoying person responds by calling you names. Or maybe you are trying to find a job and the annoying person does not seem interested to help.\nD) [substeps] You may text or tweet or call the annoying person every time you see them, or you may leave the person a voicemail or call one of their friends. If the person doesn't stop annoying you, attempt to communicate this with the annoying person so that they can get a different perspective on the situation.\n",
+      "ground_truth": "You can give a reason for your boundary to minimize hurting their feelings, but you do not have to explain your boundaries. [substeps] For example, if a classmate is always interrupting your study session you might say something like, \" i don't mean to be rude but i have two more hours to study before my exam.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.6822155764475464,
+      "response_time": 0.013517141342163086,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: Michele obama and another woman are hula hooping outside on a sunny day. as the camera\n\nWhat happens next? Choose the most likely ending:\n\nA) zooms out a young boy and another woman to the side are also seen hula hooping while people behind run past.\nB) pans around and focuses on taken, she puts the hula hoop down and starts to hula hoop with others.\nC) comes in the zoom is the final scene with the four women.\nD) films them, the woman is hula hooping in two small hula hoops as the woman dances and lays on the ground.\n",
+      "ground_truth": "zooms out a young boy and another woman to the side are also seen hula hooping while people behind run past.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.6542024214528501,
+      "response_time": 0.012663125991821289,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: The women both put something from a cup in there mouths. The woman in red begins to dance. the woman in black\n\nWhat happens next? Choose the most likely ending:\n\nA) begins to dance alone.\nB) finishes the dance and she's wearing something white that melts.\nC) makes a face to the camera.\nD) shows the other woman how to use the hookah.\n",
+      "ground_truth": "makes a face to the camera.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.6687672377191485,
+      "response_time": 0.011851072311401367,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: A close up of tools are shown as well as a man holding up a knife. The man then begins sharpening the knife using a tool on the table. he\n\nWhat happens next? Choose the most likely ending:\n\nA) continues sharpening the knife and showing it close up to the camera.\nB) moves the knife around to sharpen further.\nC) stops sharpening the knife and leans back in his chair.\nD) periodically braids a rope around the knife and begins taking out items attached to the rope.\n",
+      "ground_truth": "continues sharpening the knife and showing it close up to the camera.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.6703437510468065,
+      "response_time": 0.013052940368652344,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    }
+  ]
+}

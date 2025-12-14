@@ -1,0 +1,33 @@
+{
+  "summary": {
+    "benchmark_name": "HumanEval",
+    "total_questions": 1,
+    "correct_answers": 0,
+    "accuracy": 0.0,
+    "average_confidence": 0.41640726849699156,
+    "average_response_time": 0.014847040176391602,
+    "total_time": 0.015138864517211914,
+    "per_category_accuracy": {
+      "unknown": 0.0
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T06:42:36.563796"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "HumanEval",
+      "task_name": "unknown",
+      "question": "Complete this Python function:\n\ndef add(a, b):\n    \"\"\"Add two numbers\"\"\"\n    return",
+      "ground_truth": "    return a + b",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.41640726849699156,
+      "response_time": 0.014847040176391602,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    }
+  ]
+}

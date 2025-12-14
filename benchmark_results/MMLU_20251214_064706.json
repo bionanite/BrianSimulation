@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "MMLU",
+    "total_questions": 10,
+    "correct_answers": 0,
+    "accuracy": 0.0,
+    "average_confidence": 0.48352735729778884,
+    "average_response_time": 0.011899924278259278,
+    "total_time": 0.12033891677856445,
+    "per_category_accuracy": {
+      "high_school_biology": 0.0
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T06:47:06.717620"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Which of the following is known to be involved in the photoperiodic flowering response of angiosperms?\n\nA) Auxin\nB) Cytochrome\nC) Phytochrome\nD) Gibberellins\n",
+      "ground_truth": "Phytochrome",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.5071269287165361,
+      "response_time": 0.013180017471313477,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Yeast cells carry out both aerobic and anaerobic respiration. A yeast cell that is fed on glucose is moved from an aerobic to an anaerobic environment. Which of the following statements is correct and gives the correct reason for it?\n\nA) The cell dies because it cannot make ATP.\nB) The cell would need to consume glucose at a much greater rate because aerobic respiration is much more efficient as compared with anaerobic respiration.\nC) The cell would need to consume another food source other than glucose because it will not be able to make adequate ATP with only glucose.\nD) The cell will begin to divide rapidly because larger cells require more oxygen and glucose than smaller ones.\n",
+      "ground_truth": "The cell would need to consume glucose at a much greater rate because aerobic respiration is much more efficient as compared with anaerobic respiration.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.47320834276631285,
+      "response_time": 0.012250185012817383,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: A trend toward the decrease in the size of plants on the slopes of mountains as altitudes increase is an example of\n\nA) a cline.\nB) a bottleneck.\nC) relative fitness.\nD) genetic drift.\n",
+      "ground_truth": "a cline.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.4788260081918553,
+      "response_time": 0.011440038681030273,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Natural selection is based on all of the following except\n\nA) genetic variation exists within populations.\nB) the best-adapted individuals tend to leave the most offspring.\nC) individuals who survive longer tend to leave more offspring than those who die young.\nD) individuals adapt to their environments and, thereby, evolve.\n",
+      "ground_truth": "individuals adapt to their environments and, thereby, evolve.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.4878569404587634,
+      "response_time": 0.010630130767822266,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: A student conducts an experiment to test the efficiency of a certain enzyme. Which of the following protocols would probably not result in a change in the enzyme\u2019s efficiency?\n\nA) Bringing the temperature of the experimental setup from 20\u00b0C to 50\u00b0C\nB) Adding an acidic solution to the setup\nC) Adding substrate but not enzyme\nD) Placing the substrate and enzyme in a container with double the capacity\n",
+      "ground_truth": "Placing the substrate and enzyme in a container with double the capacity",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.47446164689387055,
+      "response_time": 0.01549220085144043,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: In modern terminology, diversity is understood to be a result of genetic variation. Sources of variation for evolution include all of the following except\n\nA) mistakes in translation of structural genes.\nB) mistakes in DNA replication.\nC) translocations and mistakes in meiosis.\nD) recombination at fertilization.\n",
+      "ground_truth": "mistakes in translation of structural genes.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.49347718585548955,
+      "response_time": 0.01034092903137207,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: The reaction A + B \u2192 C is catalyzed by enzyme K. If the reaction is in equilibrium, which of the following would allow more product C to be produced?\n\nA) removing some of reactant A\nB) removing some of reactant C\nC) adding more enzyme K\nD) increasing the temperature of the system\n",
+      "ground_truth": "removing some of reactant C",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.46360772968004915,
+      "response_time": 0.010654926300048828,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Which of the following pairs of structures is least likely to represent homology?\n\nA) The wings of a bat and the arms of a human\nB) The hemoglobin of a baboon and that of a gorilla\nC) The mitochondria of a plant and those of an animal\nD) The wings of a bird and those of an insect\n",
+      "ground_truth": "The wings of a bird and those of an insect",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.4501538981318551,
+      "response_time": 0.009831905364990234,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: When the first tiny prokaryotic cell took up residence inside a larger prokaryotic cell, it heralded the advent of the eukaryotic cell and led to an explosion of new life on Earth. Since then, most cells on Earth have internal organelles. Which of the following best summarizes an advantage of having internal membranes and organelles?\n\nA) DNA can reproduce more efficiently.\nB) Even though prokaryotes do not have mitochondria, they contain structures that carry out the same function.\nC) Organelles separate specific reactions in the cell and increase metabolic efficiency.\nD) Compartmentalization enables prokaryotes to reproduce more quickly.\n",
+      "ground_truth": "Organelles separate specific reactions in the cell and increase metabolic efficiency.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.4906459146485812,
+      "response_time": 0.01435089111328125,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: The development of an egg without fertilization is known as\n\nA) meiosis\nB) parthenogenesis\nC) embryogenesis\nD) vegetative propagation\n",
+      "ground_truth": "parthenogenesis",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.5159089776345751,
+      "response_time": 0.010828018188476562,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    }
+  ]
+}

@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "MMLU",
+    "total_questions": 10,
+    "correct_answers": 7,
+    "accuracy": 0.7,
+    "average_confidence": 0.5365519580409683,
+    "average_response_time": 0.01084740161895752,
+    "total_time": 0.1094810962677002,
+    "per_category_accuracy": {
+      "high_school_biology": 0.7
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T06:56:06.287128"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: All viruses contain at least these two principal components:\n\nA) DNA and proteins\nB) nucleic acid and a capsid\nC) DNA and cell membrane\nD) RNA and cell wall\n",
+      "ground_truth": "nucleic acid and a capsid",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.5304936857947602,
+      "response_time": 0.014211654663085938,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Which of the following statements about trypsin is NOT true?\n\nA) It is an organic compound made of proteins.\nB) It is a catalyst that alters the rate of a reaction.\nC) It is operative over a wide pH range.\nD) The rate of catalysis is affected by the concentration of substrate.\n",
+      "ground_truth": "It is operative over a wide pH range.",
+      "prediction": "D",
+      "is_correct": true,
+      "confidence": 0.4970530351219634,
+      "response_time": 0.010318994522094727,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Apoptosis, which is programmed cell death, is a necessary process in living organisms. Which of the following is NOT correct about apoptosis?\n\nA) It occurs randomly.\nB) A particular cell dies when it is no longer needed by the organism.\nC) A cell carries out apoptosis when too many mutations have accumulated.\nD) Plant cells carry out apoptosis as a defense measure in cells that have been infected by parasites.\n",
+      "ground_truth": "It occurs randomly.",
+      "prediction": "D",
+      "is_correct": true,
+      "confidence": 0.5181998217744026,
+      "response_time": 0.010498762130737305,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: In a population of giraffes, an environmental change occurs that favors individuals that are tallest. As a result, more of the taller individuals are able to obtain nutrients and survive to pass along their genetic information. This is an example of\n\nA) directional selection.\nB) stabilizing selection.\nC) sexual selection.\nD) disruptive selection.\n",
+      "ground_truth": "directional selection.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.5516052854791301,
+      "response_time": 0.010421037673950195,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: The base composition of DNA varies from one species to another. Which of the following ratios would you expect to remain constant in the DNA?\n\nA) Cytosine : Adenine\nB) Pyrimidine : Purine\nC) Adenine : Guanine\nD) Guanine : Deoxyribose\n",
+      "ground_truth": "Pyrimidine : Purine",
+      "prediction": "A",
+      "is_correct": false,
+      "confidence": 0.536249572073215,
+      "response_time": 0.00993204116821289,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Which of the following best explains why drinking breast milk is beneficial to a human infant?\n\nA) Breast milk contains vitamins that repair mutations originating in the sperm or egg.\nB) Breast milk contains maternal antibodies that protect against gastrointestinal pathogens.\nC) Breast milk contains maternal vaccines that destroy common childhood pathogens.\nD) Breast milk contains red blood cells with adult hemoglobin that are beneficial to the infant's developing brain.\n",
+      "ground_truth": "Breast milk contains maternal antibodies that protect against gastrointestinal pathogens.",
+      "prediction": "D",
+      "is_correct": true,
+      "confidence": 0.5764002715782689,
+      "response_time": 0.010332822799682617,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Mosquitoes resistant to the pesticide DDT first appeared in India in 1959 within 15 years of widespread spraying of the insecticide. Which of the following statement best explains how the resistant mosquitoes arose?\n\nA) Some mosquitoes experienced a mutation after being exposed to DDT that made them resistant to the insecticide. Then their population expanded because these moquitoes had no competition.\nB) Some mosquitoes were already resistant to DDT when DDT was first sprayed. Then their population expanded because all the susceptible mosquitoes had been exterminated.\nC) DDT is generally a very effective insecticide. One can only conclude that it was manufactured improperly.\nD) Although DDT is effective against a wide range of insects, it is not effective against mosquitoes.\n",
+      "ground_truth": "Some mosquitoes were already resistant to DDT when DDT was first sprayed. Then their population expanded because all the susceptible mosquitoes had been exterminated.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.5345178105086315,
+      "response_time": 0.010869741439819336,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Which of the following are traits that are affected by more than one gene?\n\nA) Heterozygous traits\nB) Pleiotropic traits\nC) Polygenic traits\nD) Blended alleles\n",
+      "ground_truth": "Polygenic traits",
+      "prediction": "C",
+      "is_correct": true,
+      "confidence": 0.5541176239562093,
+      "response_time": 0.00963902473449707,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: If neutral variation is truly \"neutral,\" then it should have no effect on\n\nA) nucleotide diversity.\nB) average heterozygosity.\nC) our ability to measure the rate of evolution.\nD) relative fitness.\n",
+      "ground_truth": "relative fitness.",
+      "prediction": "C",
+      "is_correct": false,
+      "confidence": 0.5308499143501193,
+      "response_time": 0.011317014694213867,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Sickle cell anemia is a disease caused by the substitution of an incorrect nucleotide into the DNA sequence for a particular gene. The amino acids are still added to the growing protein chain, but the symptoms of sickle cell anemia result. This is an example of a\n\nA) frameshift mutation.\nB) missense mutation.\nC) nonsense mutation.\nD) thymine dimer mutation.\n",
+      "ground_truth": "missense mutation.",
+      "prediction": "B",
+      "is_correct": false,
+      "confidence": 0.5360325597729825,
+      "response_time": 0.01093292236328125,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    }
+  ]
+}

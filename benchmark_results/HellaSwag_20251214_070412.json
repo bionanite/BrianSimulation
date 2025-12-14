@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "HellaSwag",
+    "total_questions": 10,
+    "correct_answers": 9,
+    "accuracy": 0.9,
+    "average_confidence": 0.45786169086116935,
+    "average_response_time": 0.010568952560424805,
+    "total_time": 0.10656309127807617,
+    "per_category_accuracy": {
+      "unknown": 0.9
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T07:04:12.666932"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: A few surfers are out in the ocean surfing. a surfer in a wetsuit\n\nWhat happens next? Choose the most likely ending:\n\nA) waves his arms for animation.\nB) is bouncing on the rope and then just falls onto the water.\nC) comes down a hill.\nD) rides his surfboard on the waves.\n",
+      "ground_truth": "rides his surfboard on the waves.",
+      "prediction": "B",
+      "is_correct": true,
+      "confidence": 0.45890117240106504,
+      "response_time": 0.010528087615966797,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: Then a toddler get out the home, stand on the border of the swimming pool an falls in the water. the baby\n\nWhat happens next? Choose the most likely ending:\n\nA) is shown then a man gets a disc across the plastic gate.\nB) floats face up, then a man comes and take the baby.\nC) laughs when his friend visit, then he tether ropes and drinks water from the water.\nD) lets go of the pole and runs, the man jumps in the water with an adult, and they are holding the puma.\n",
+      "ground_truth": "floats face up, then a man comes and take the baby.",
+      "prediction": "D",
+      "is_correct": true,
+      "confidence": 0.4567273536638269,
+      "response_time": 0.01063394546508789,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: The man throws frisbees for the dog to catch. The dog stands to catch the frisbee the leans on the man. the dog\n\nWhat happens next? Choose the most likely ending:\n\nA) walks on the man.\nB) jumps up on the mans back.\nC) jumps into the man's arms.\nD) takes off running for the frisbee and the man chases after it.\n",
+      "ground_truth": "jumps into the man's arms.",
+      "prediction": "D",
+      "is_correct": false,
+      "confidence": 0.45622698108037274,
+      "response_time": 0.01006007194519043,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to understand the cry of babies [title] Learn the \" hunger \" cry. [step] A baby who is ready to be fed is likely to begin crying quietly and slowly. The cry will build in volume, becoming loud and rhythmic.\n\nWhat happens next? Choose the most likely ending:\n\nA) Each individual wail is likely to be short and low-pitched. The cry of hunger is a cue to feed your baby, unless you have fed your baby recently and are certain that your baby does not need more to eat.\nB) [substeps] Babies tell their mothers that they are hungry. Some parents mistake the baby to be hungry because they say the baby is hungry for a reason.\nC) It may also rise in pitch and then it will become softer, more sultry. It will then drop suddenly into a soft babble.\nD) As a result, the child will be alert and prepare for the next action. Through the cry, child will have an immediate and natural feeling of food.\n",
+      "ground_truth": "Each individual wail is likely to be short and low-pitched. The cry of hunger is a cue to feed your baby, unless you have fed your baby recently and are certain that your baby does not need more to eat.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.45718345535459715,
+      "response_time": 0.011084794998168945,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: A referee walks on the floor and tells a player something. A referee walks to a person on the right and tells them they are out. a person\n\nWhat happens next? Choose the most likely ending:\n\nA) on the left decides to play and wins the game.\nB) missed a shot.\nC) in white on the right cheers and the blue team huddle up.\nD) is able to hit a birdie to the right the players hit the birdie with their hands and walk.\n",
+      "ground_truth": "in white on the right cheers and the blue team huddle up.",
+      "prediction": "D",
+      "is_correct": true,
+      "confidence": 0.4529604672378789,
+      "response_time": 0.010458946228027344,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: The two collaborate to mix the bag and some other ingredients in a large bowl. The first girl gets something from the refrigerator. The two are shown mixing the bowl in turn. the two\n\nWhat happens next? Choose the most likely ending:\n\nA) shapes the mix from the bowl into lumps and places them on a baking sheet.\nB) decide sea life to prepare for their breastfeeding day.\nC) experience a moment of weightlessness before relaxing into a comfortable routine on the sofa.\nD) continue mixing and 4 glasses come together with a bowl of cookie dough.\n",
+      "ground_truth": "shapes the mix from the bowl into lumps and places them on a baking sheet.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.4668244778597464,
+      "response_time": 0.010519027709960938,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to make your skin glow in minutes [title] Exfoliate your face gently. [step] Exfoliation removes dead skin cells, impurities and excess oil while preparing your skin for cleansing and toning. [substeps] Before exfoliating, use a cleanser on your skin.\n\nWhat happens next? Choose the most likely ending:\n\nA) Dip a washcloth in soap and warm water and exfoliate each area of your face. Don't use scrubs that contain alcohol, which can dry out your skin.\nB) Your exfoliating can get stuck on, which may cause acne. Do not exfoliate right after an argument with your significant other.\nC) Gently massage your skin in circular motions for a few minutes to promote blood circulation, to remove makeup and to eliminate excess oil, or sebum. Many cleansers contain exfoliating beads or other ingredients that allow you to accomplish both tasks at once.\nD) Exfoliating may also be effective, especially if your skin is dry, your skin feels very tight, or your pores get clogged or irritated. Ask your dermatologist about the best exfoliation approach.\n",
+      "ground_truth": "Gently massage your skin in circular motions for a few minutes to promote blood circulation, to remove makeup and to eliminate excess oil, or sebum. Many cleansers contain exfoliating beads or other ingredients that allow you to accomplish both tasks at once.",
+      "prediction": "C",
+      "is_correct": true,
+      "confidence": 0.4664682192045597,
+      "response_time": 0.011301040649414062,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: An older man with glasses and gray hairs sits and sings as he plays the guitar. the man\n\nWhat happens next? Choose the most likely ending:\n\nA) pauses for a second.\nB) finishes by singing himself and taking the guitar away.\nC) finishes his song and speaks as he pulls a cord around his neck.\nD) continues to play while an older woman uses pads and a coil of rope to instruct the man.\n",
+      "ground_truth": "pauses for a second.",
+      "prediction": "D",
+      "is_correct": true,
+      "confidence": 0.45291090735085127,
+      "response_time": 0.010117769241333008,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: A group of people are standing in the middle of a forest with a trail of pebbles separating them from a beautiful crystal clear body of water. the camera\n\nWhat happens next? Choose the most likely ending:\n\nA) then goes right side up and shows a lot of scenery on the left side.\nB) follows the couple kayaking behind the group on the trail moving back and fourth on the murky water in the forest.\nC) moves across the water and several people on boats and jet-skis are moving in the water near a large wave.\nD) zooms in on the foamy waters as well as the nearby cliffs and forest surrounding it.\n",
+      "ground_truth": "moves across the water and several people on boats and jet-skis are moving in the water near a large wave.",
+      "prediction": "B",
+      "is_correct": true,
+      "confidence": 0.45573302276127725,
+      "response_time": 0.010402679443359375,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: Text appears on the screen with regards to coffee possibly being bad for your health. it\n\nWhat happens next? Choose the most likely ending:\n\nA) read \" coffee sours rapidly, \" and titled itself.\nB) is then mention with text on the screen that it can lead to high blood pressure it is then mentioned that it can hurt your hair growth and that it doesn't have any vital nutrients in it.\nC) says \" hi martin \", along with \" exclusive! \".\nD) also says to keep reading an email.\n",
+      "ground_truth": "is then mention with text on the screen that it can lead to high blood pressure it is then mentioned that it can hurt your hair growth and that it doesn't have any vital nutrients in it.",
+      "prediction": "B",
+      "is_correct": true,
+      "confidence": 0.45468085169751826,
+      "response_time": 0.010583162307739258,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    }
+  ]
+}

@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "ARC",
+    "total_questions": 10,
+    "correct_answers": 7,
+    "accuracy": 0.7,
+    "average_confidence": 0.7309742982996628,
+    "average_response_time": 0.02914884090423584,
+    "total_time": 0.29250597953796387,
+    "per_category_accuracy": {
+      "unknown": 0.7
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T06:59:35.149553"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Which best illustrates the sequence of steps that should be followed when solving technological problems?\n\nA) Identify the problem, evaluate the solution, explore possible solutions, and select a solution.\nB) Identify the problem, explore possible solutions, select a solution, and evaluate the solution.\nC) Identify the problem, select a solution, explore possible solutions, and evaluate the solution.\nD) Identify the problem, evaluate the solution, select a solution, and explore possible solutions.\n",
+      "ground_truth": "Identify the problem, explore possible solutions, select a solution, and evaluate the solution.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.7924363858774305,
+      "response_time": 0.01201629638671875,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Two organisms mate and produce offspring. Which of the following statements best explains why the offspring are unable to reproduce?\n\nA) The parents are of a different genus and a different species.\nB) The parents are of a different species, but of the same genus.\nC) The parents are of the same genus and of the same species.\nD) The parents are of the same species, but of a different genus.\n",
+      "ground_truth": "The parents are of a different species, but of the same genus.",
+      "prediction": "B",
+      "is_correct": true,
+      "confidence": 0.6827752025052904,
+      "response_time": 0.012395143508911133,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: An object is attracted to a magnet. When the magnet is moved away from the object, the magnetic force on the object will\n\nA) decrease\nB) increase\nC) remain the same\n",
+      "ground_truth": "decrease",
+      "prediction": "C",
+      "is_correct": true,
+      "confidence": 0.6894184913206846,
+      "response_time": 0.011332035064697266,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Leopard's opening chant suggests that he is\n\nA) unhappy.\nB) confused.\nC) confident.\nD) generous.\n",
+      "ground_truth": "confident.",
+      "prediction": "B",
+      "is_correct": false,
+      "confidence": 0.8494008815214038,
+      "response_time": 0.011199951171875,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Which of the following is the most efficient way to transport large amounts of coal from a mine in Kentucky to a power plant in Arizona?\n\nA) by ship\nB) by train\nC) by truck\nD) by airplane\n",
+      "ground_truth": "by train",
+      "prediction": "B",
+      "is_correct": true,
+      "confidence": 0.6665424680113793,
+      "response_time": 0.061738014221191406,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Household appliances convert electricity into one or more different forms of energy. An electric fan can best be described as converting electricity into\n\nA) heat energy only\nB) heat energy and sound energy only\nC) heat energy, sound energy, and mechanical energy only\nD) heat energy, sound energy, mechanical energy, and chemical energy\n",
+      "ground_truth": "heat energy, sound energy, and mechanical energy only",
+      "prediction": "D",
+      "is_correct": true,
+      "confidence": 0.7505461429655552,
+      "response_time": 0.0357820987701416,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Which part of a pond ecosystem gives small fish shelter?\n\nA) rocks\nB) water\nC) frogs\nD) soil\n",
+      "ground_truth": "rocks",
+      "prediction": "D",
+      "is_correct": false,
+      "confidence": 0.7422194397412241,
+      "response_time": 0.03665304183959961,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Soil is a mixture of many substances which may include\n\nA) sun, water, clay, and sand.\nB) sand, clay, wind, and pebbles.\nC) sand, clay, dead plants, and dead animals.\nD) leaves, twigs, sun, and wind.\n",
+      "ground_truth": "sand, clay, dead plants, and dead animals.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.6899904284495861,
+      "response_time": 0.03719305992126465,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Robert put two drops of an indicator into vinegar, and the color turned red. He then added drops of ammonia solution until the color disappeared. What process occurred?\n\nA) rusting\nB) melting\nC) evaporation\nD) neutralization\n",
+      "ground_truth": "neutralization",
+      "prediction": "C",
+      "is_correct": false,
+      "confidence": 0.7606905629299581,
+      "response_time": 0.03673601150512695,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: There is a limited supply of copper on Earth. How does this affect the way copper is used?\n\nA) Copper should be recycled.\nB) Copper costs less than other materials.\nC) Copper is in low demand.\nD) Copper does not make up commercial products.\n",
+      "ground_truth": "Copper should be recycled.",
+      "prediction": "D",
+      "is_correct": true,
+      "confidence": 0.6857229796741158,
+      "response_time": 0.03644275665283203,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    }
+  ]
+}

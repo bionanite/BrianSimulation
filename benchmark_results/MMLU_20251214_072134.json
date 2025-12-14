@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "MMLU",
+    "total_questions": 10,
+    "correct_answers": 7,
+    "accuracy": 0.7,
+    "average_confidence": 0.29999999999999993,
+    "average_response_time": 0.0334503173828125,
+    "total_time": 0.3364701271057129,
+    "per_category_accuracy": {
+      "high_school_biology": 0.7
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T07:21:34.744184"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: All of the following are modes of asexual reproduction EXCEPT\n\nA) sporulation\nB) fission\nC) budding\nD) meiosis\n",
+      "ground_truth": "meiosis",
+      "prediction": "A",
+      "is_correct": false,
+      "confidence": 0.3,
+      "response_time": 0.031769752502441406,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Which of the following statements is NOT correct about apoptosis?\n\nA) Apoptosis, a special type of cell division, requires multiple cell signaling.\nB) The fact that apoptosis is widespread across several kingdoms is evidence that it evolved early in the evolution of eukaryotes.\nC) Apoptosis plays a crucial role in the development of fingers in embryonic development.\nD) Apoptosis prevents an aging and dying cell from damaging neighboring cells.\n",
+      "ground_truth": "Apoptosis, a special type of cell division, requires multiple cell signaling.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.019260883331298828,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Which of the following statements about the immune system is NOT correct?\n\nA) Innate immunity, also known as the adaptive immune response, relies on circulating phagocytes engulfing foreign substances.\nB) Adaptive immunity is a slower response than innate immunity.\nC) Innate immunity activates a humoral response.\nD) Dendritic cells are antigen presenting cells.\n",
+      "ground_truth": "Innate immunity, also known as the adaptive immune response, relies on circulating phagocytes engulfing foreign substances.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.0182647705078125,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Which of the following best summarizes the process of allopatric speciation?\n\nA) differential changes in allele frequencies \u2192 reproductive isolation \u2192 reproductive barriers \u2192 new species\nB) catastrophic event \u2192 reproductive isolation \u2192 reproductive barriers \u2192 new species\nC) reproductive isolation \u2192 differential changes in allele frequencies \u2192 reproductive barriers \u2192 new species\nD) geographic isolation \u2192 reproductive isolation \u2192 differential changes in allele frequencies \u2192 reproductive barriers \u2192 new species\n",
+      "ground_truth": "geographic isolation \u2192 reproductive isolation \u2192 differential changes in allele frequencies \u2192 reproductive barriers \u2192 new species",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.03696489334106445,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: The normal pH of the cytosol is about 7.2. Most enzymes in the lysosome, however, are only active at a pH of 5. This suggests that\n\nA) only acidic substances can undergo enzymatic processing in lysosomes\nB) most enzymes in the lysosome are incapable of catalyzing substrates inside the lysosome\nC) enzymes in the lysosome are released to the cytosol\nD) protons are actively pumped into the lysosome\n",
+      "ground_truth": "protons are actively pumped into the lysosome",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.03537893295288086,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Which of the following is NOT a characteristic of bacteria?\n\nA) Circular double-stranded DNA\nB) Membrane-bound cellular organelles\nC) Plasma membrane consisting of lipids and proteins\nD) Ribosomes that synthesize polypeptides\n",
+      "ground_truth": "Membrane-bound cellular organelles",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.05038905143737793,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Chemical substances released by organisms that elicit a physiological or behavioral response in other members of the same species are known as\n\nA) auxins\nB) hormones\nC) pheromones\nD) enzymes\n",
+      "ground_truth": "pheromones",
+      "prediction": "A",
+      "is_correct": false,
+      "confidence": 0.3,
+      "response_time": 0.0364680290222168,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: A healthy man and woman are worried about having children because they are both carriers of sickle-cell disease. If the couple have a biological child, what is the chance that the child will inherit sickle-cell disease?\n\nA) 100%\nB) 75%\nC) 50%\nD) 25%\n",
+      "ground_truth": "25%",
+      "prediction": "A",
+      "is_correct": false,
+      "confidence": 0.3,
+      "response_time": 0.03138375282287598,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Which of these makes determining the evolutionary relatedness of different species based on the amino acid sequence of homologous proteins generally less accurate than determinations of relatedness based on the nucleotide sequences of homologous genes?\n\nA) Silent mutations\nB) Gene duplications\nC) Translocation events that change gene sequences\nD) Crossing-over\n",
+      "ground_truth": "Silent mutations",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.040099143981933594,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Many different fermentation pathways occur in different organisms in nature. For example, skeletal muscle cells convert pyruvate into lactic acid when no oxygen is present. Yeast cells can produce alcohol and carbon dioxide under the same circumstances. However, regardless of the specific reactions, the purpose of glycolysis is an important one. Which statement best describes the importance of glycolysis?\n\nA) It produces large amounts of ATP by substrate level phosphorylation.\nB) It reoxidizes NADH so that glycolysis can continue.\nC) It produces pyruvate, which is the raw material for oxidative phosphorylation.\nD) It occurs in the cytoplasm.\n",
+      "ground_truth": "It reoxidizes NADH so that glycolysis can continue.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.034523963928222656,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    }
+  ]
+}

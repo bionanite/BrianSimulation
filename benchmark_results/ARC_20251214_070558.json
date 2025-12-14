@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "ARC",
+    "total_questions": 10,
+    "correct_answers": 4,
+    "accuracy": 0.4,
+    "average_confidence": 0.5282923142215308,
+    "average_response_time": 0.010253405570983887,
+    "total_time": 0.10318326950073242,
+    "per_category_accuracy": {
+      "unknown": 0.4
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T07:05:58.802876"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Which of the following would you most likely use to study the growth of an insect over time?\n\nA) a clock that measures seconds\nB) a hand lens with a large lens\nC) several insects that feed on other insects\nD) a glass aquarium with food for the insect\n",
+      "ground_truth": "a glass aquarium with food for the insect",
+      "prediction": "D",
+      "is_correct": true,
+      "confidence": 0.5016429593690801,
+      "response_time": 0.010862112045288086,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Which would least likely have an impact on global climate changes?\n\nA) producing energy using hydroelectric plants\nB) producing energy using coal\nC) producing energy using oil\nD) producing energy using natural gas\n",
+      "ground_truth": "producing energy using hydroelectric plants",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.5736874092299554,
+      "response_time": 0.010190248489379883,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Researchers at a science laboratory have found ways to make carbon nanotubes from recycled plastic grocery bags. These nanotubes are then used as components of batteries. This approach best illustrates the ability of technology to\n\nA) increase resource availability.\nB) improve existing products.\nC) deplete available resources.\nD) cause environmental degradation.\n",
+      "ground_truth": "increase resource availability.",
+      "prediction": "D",
+      "is_correct": false,
+      "confidence": 0.5751817824258997,
+      "response_time": 0.010350942611694336,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: In a forest ecosystem, the niche of a squirrel population is\n\nA) to decompose.\nB) to pollinate flowers.\nC) to recycle nutrients in the soil.\nD) to collect acorns and bury them in the soil.\n",
+      "ground_truth": "to collect acorns and bury them in the soil.",
+      "prediction": "D",
+      "is_correct": true,
+      "confidence": 0.5068097481406963,
+      "response_time": 0.009930133819580078,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: A type of small mammal from the mountain regions of the western United States makes its home out of piles of rock. During summer months, the mammal places grasses and seeds in protected places in the rock piles. Which of the following is the most likely reason for this behavior?\n\nA) to repare for migration before winter\nB) to provide warmth during the cold winter months\nC) to store food that will be eaten over the winter months\nD) to protect the grasses and seeds from decay before winter\n",
+      "ground_truth": "to store food that will be eaten over the winter months",
+      "prediction": "C",
+      "is_correct": false,
+      "confidence": 0.5094064867934923,
+      "response_time": 0.01049494743347168,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: A forecast for \"wintry mix\" indicates that vapor in the air will form both rain and snow. Which of these is a correct principle illustrated by this event?\n\nA) There is little water in the atmosphere of Earth.\nB) Most water on Earth is found as vapor.\nC) Water exists in all three states on Earth.\nD) Water on Earth tends to form a solid over time.\n",
+      "ground_truth": "Water exists in all three states on Earth.",
+      "prediction": "D",
+      "is_correct": false,
+      "confidence": 0.4861401835588405,
+      "response_time": 0.010152816772460938,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Students observed a turtle in the schoolyard. They measured the distance that the turtle traveled in 30 minutes. If the turtle walked 40 meters in that time, what was its average speed?\n\nA) 0.75 m/h\nB) 20 m/s\nC) 80 m/h\nD) 1,200 m/h\n",
+      "ground_truth": "80 m/h",
+      "prediction": "D",
+      "is_correct": false,
+      "confidence": 0.48127775075093926,
+      "response_time": 0.010209083557128906,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Which of the following best describes a learned behavior?\n\nA) owls looking for food at night\nB) monarch butterflies migrating south\nC) cats pawing the area where they are going to sleep\nD) fish swimming to the top of an aquarium to get food\n",
+      "ground_truth": "fish swimming to the top of an aquarium to get food",
+      "prediction": "D",
+      "is_correct": true,
+      "confidence": 0.5301038619319709,
+      "response_time": 0.010231971740722656,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Water evaporation on the surface of Earth most likely causes the formation of\n\nA) glaciers.\nB) mountains.\nC) natural gas.\nD) limestone.\n",
+      "ground_truth": "limestone.",
+      "prediction": "D",
+      "is_correct": false,
+      "confidence": 0.5645047091463581,
+      "response_time": 0.009931087493896484,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: The roots of a plant can grow through cracks in a driveway, eventually causing the driveway to break. Which kind of process would be taking place?\n\nA) erosion\nB) exfoliation\nC) weathering\nD) sedimentation\n",
+      "ground_truth": "weathering",
+      "prediction": "D",
+      "is_correct": false,
+      "confidence": 0.5541682508680758,
+      "response_time": 0.01018071174621582,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    }
+  ]
+}

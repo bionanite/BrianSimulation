@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "HellaSwag",
+    "total_questions": 10,
+    "correct_answers": 7,
+    "accuracy": 0.7,
+    "average_confidence": 0.45856041606663134,
+    "average_response_time": 0.01149592399597168,
+    "total_time": 0.11612701416015625,
+    "per_category_accuracy": {
+      "unknown": 0.7
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T07:05:19.761767"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to clean whirlpool tub jets with jetted tub bio cleaner [title] Fill your whirlpool jetted tub with water about 1-2 inches (2.5-5.1 cm) above the highest jet. [step] Point the jets down. [title] Add 1/2 to 1 teaspoon of a jetted tub bio cleaner.\n\nWhat happens next? Choose the most likely ending:\n\nA) [step] Do this slowly to avoid splashing or spilling any of the water. [title] Add a few squirts of your own liquid laundry detergent (not a class 2 but a bit for the sake of efficiency).\nB) [step] This is essential as jetted tubs do not have the same recommended pump cleaning requirements as other ones. [title] Add 1 cup (237 ml) aquarium salt.\nC) [step] With the jetted tub water, use a small tube at the bottom. Fill your filter's tube near the entire nozzle.\nD) [step] This is a gel and will dissolve shortly or when the jets are turned on. [title] Turn on the jets for 10-15 minutes.\n",
+      "ground_truth": "[step] This is a gel and will dissolve shortly or when the jets are turned on. [title] Turn on the jets for 10-15 minutes.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.4601319347346841,
+      "response_time": 0.011681079864501953,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: A fit man is in a mirrored room with wooden floors and is talking while he is moving on the ground and looking at the camera. the man\n\nWhat happens next? Choose the most likely ending:\n\nA) is motorinterviewing a person on the white wooden flooring as the camera watches.\nB) is brushing the surface of a table and begins to comb with an electric shaver.\nC) is now standing on a conference room table and it is full of silverware and bowls and halvers.\nD) is bent on his knees and suddenly he jumps up to his feet, but keeps his knees bent while he squats low to the ground continuing to talk.\n",
+      "ground_truth": "is bent on his knees and suddenly he jumps up to his feet, but keeps his knees bent while he squats low to the ground continuing to talk.",
+      "prediction": "D",
+      "is_correct": true,
+      "confidence": 0.45371833265529665,
+      "response_time": 0.011490106582641602,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to buy a treadmill for your home [title] Keep in mind your financial limitations. [title] Think about which use you will give to the treadmill. [step] For example, if you use the treadmill just for walking, a basic model would be suitable for your needs.\n\nWhat happens next? Choose the most likely ending:\n\nA) If you use the treadmill a lot, you should go for a high durability treadmill. [title] Learn a treadmill's controller.\nB) A more complex model is better for activities that require only walking. The less complex the model, the more gear you will need to share with your neighbors.\nC) If you think you may someday only use it for sports, a summer treadmill is a great choice. [title] Get the right type of pedal length.\nD) They can help you with push-ups, squats and more should be fine too. [substeps] Decide what type of model you will be using as well as how much you will charge.\n",
+      "ground_truth": "If you use the treadmill a lot, you should go for a high durability treadmill. [title] Learn a treadmill's controller.",
+      "prediction": "D",
+      "is_correct": true,
+      "confidence": 0.45559449175163175,
+      "response_time": 0.011523723602294922,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: A man shoots free throws on an indoor basketball court. a man\n\nWhat happens next? Choose the most likely ending:\n\nA) in orange shoots flip and talks to the camera.\nB) shoots a basket from the corner of the free throw line.\nC) practicing and filming shots back and forth, as others watch.\nD) is standing outside aiming paintball guns at something in the distance.\n",
+      "ground_truth": "shoots a basket from the corner of the free throw line.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.46284122998168775,
+      "response_time": 0.011050939559936523,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: There is a green vehicle that says go green on it. There are several cleaners and a car being cleaned. there\n\nWhat happens next? Choose the most likely ending:\n\nA) are cars's tires and license plates laid out for inspection.\nB) is a man combing the hedge with an electric razor.\nC) are two vans in front of the green vehicle.\nD) is an advertisement for go green car cleaning.\n",
+      "ground_truth": "is an advertisement for go green car cleaning.",
+      "prediction": "B",
+      "is_correct": false,
+      "confidence": 0.4795439416980312,
+      "response_time": 0.011092901229858398,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to teach your child to wash dishes [title] Build a safe work zone around the sink and/or dishwasher. [step] Start by providing a step stool or step ladder for your child, that way he or she can safely and securely reach the dishes in the sink. Also, all sharp and fragile objects should be removed to prevent any possible accidents.\n\nWhat happens next? Choose the most likely ending:\n\nA) [title] Give a set of instructions to your child. [step] Describe the instructions to your child so that he or she understands them.\nB) Finally, you may also want to line the sink and floor with towels to collect any spills that may happen. These steps will help ensure that your child is safe while washing the dishes.\nC) [title] Purchase or lease a washing table in a safe location. [step] If you store dishes, the counters inside the washer and dryer are an easy place to grind your dishes.\nD) Make sure all small objects, including plastic or porcelain bowls, are placed securely in the work area. [title] Make a hand-held washing table.\n",
+      "ground_truth": "Finally, you may also want to line the sink and floor with towels to collect any spills that may happen. These steps will help ensure that your child is safe while washing the dishes.",
+      "prediction": "B",
+      "is_correct": false,
+      "confidence": 0.4570299933094942,
+      "response_time": 0.011682987213134766,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to pretend to be a girl [title] Get a wig or style your hair. [step] If you have long hair already, then you can just style it. If your hair is short, then you may want to get a wig to enhance your feminine look.\n\nWhat happens next? Choose the most likely ending:\n\nA) If your hair is long, then you may want to get a wig to transform your hairstyle. Try ponytails, pigtails, or several similar hairstyles.\nB) Wigs make your hair appear like a little frizz at the top. [substeps] Do not get a wig that is very short on top, unless you're sure that you want it to be.\nC) When you are choosing a wig, make sure that you purchase one that is high quality if you want your look to be more convincing. A poor quality wig may not look as good.\nD) [title] Spend some time creating your own hair style. [step] For some girls, this may mean shopping at a hair salon; for others, that may mean posing at a hairstylist's home instead.\n",
+      "ground_truth": "When you are choosing a wig, make sure that you purchase one that is high quality if you want your look to be more convincing. A poor quality wig may not look as good.",
+      "prediction": "B",
+      "is_correct": true,
+      "confidence": 0.4360894400723444,
+      "response_time": 0.011806011199951172,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: Two women are seen playing different instruments in different frames. one\n\nWhat happens next? Choose the most likely ending:\n\nA) plays a violin while the others plays the piano.\nB) swings her arm while the other throws with her hands.\nC) woman is seen hitting another and performing a ballet dance.\nD) performs a tango routine with the other.\n",
+      "ground_truth": "plays a violin while the others plays the piano.",
+      "prediction": "C",
+      "is_correct": false,
+      "confidence": 0.4727174994847643,
+      "response_time": 0.010959863662719727,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to can pears [title] Wash the jars and lids. [step] Use dish detergent and hot water to scrub the jars and lids, especially if they were previously used. Make sure to thoroughly rinse them with running water to remove any soap.\n\nWhat happens next? Choose the most likely ending:\n\nA) [title] Place the jars and lids on the tree in their upright position. [step] Place one jar at a time on the back of the tree, and position the jars 2/3 of the way apart from each other.\nB) [title] Sanitize and heat the lids. [step] Set a small pot of water to a boil over medium to medium-high heat.\nC) [substeps] Scrub the lids gently so they aren't too stiff. Rub at them lightly with a cloth until they are clean.\nD) [substeps] If possible, flush jars under hot to lukewarm water. Cool the jars for thirty seconds after washing them.\n",
+      "ground_truth": "[title] Sanitize and heat the lids. [step] Set a small pot of water to a boil over medium to medium-high heat.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.45800000624031156,
+      "response_time": 0.011354684829711914,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to shape eyebrows [title] Determine where your inner brow should end. [step] Hold a straight edge, such as an eyebrow pencil or a ruler, vertically in front of your face. [substeps] If you want your eyebrows farther apart, line it up so that it touches the outermost of edge your nose and the inside of your eye.\n\nWhat happens next? Choose the most likely ending:\n\nA) For more precise shading, inline your brow with the fine tipped tip tip of a pencil. [title] Sketch two lines horizontally and vertically, with the brow almost touching them.\nB) If you want your eyebrows higher and thinner, the lines at the outer edge should stay in place at the outer corners of your eyes, creating another arch. Another method, if applicable is just to close one eye over the corners on either side of your nose.\nC) If you want a straighter looking eyebrow, better pencils should line up on the inner edges of inner brows as well. They should also cross at the corners so that the upper is longer than lower to create a sharp angle.\nD) If you want your eyebrows closer together, line up the straight edge with one side of the septum. These lines will determine where your eyebrow should start.\n",
+      "ground_truth": "If you want your eyebrows closer together, line up the straight edge with one side of the septum. These lines will determine where your eyebrow should start.",
+      "prediction": "B",
+      "is_correct": true,
+      "confidence": 0.449937290738068,
+      "response_time": 0.01231694221496582,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    }
+  ]
+}

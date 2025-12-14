@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "MMLU",
+    "total_questions": 10,
+    "correct_answers": 7,
+    "accuracy": 0.7,
+    "average_confidence": 0.651333430741541,
+    "average_response_time": 0.01120164394378662,
+    "total_time": 0.11267781257629395,
+    "per_category_accuracy": {
+      "high_school_biology": 0.7
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T07:07:37.502977"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: There are 40 individuals in population 1, all of which have genotype A1A1, and there are 25 individuals in population 2, all of genotype A2A2. Assume that these populations are located far from one another and that their environmental conditions are very similar. Based on the information given here, the observed genetic variation is mostly likely an example of\n\nA) genetic drift.\nB) gene flow.\nC) disruptive selection.\nD) discrete variation.\n",
+      "ground_truth": "genetic drift.",
+      "prediction": "D",
+      "is_correct": true,
+      "confidence": 0.6592696046754718,
+      "response_time": 0.011831998825073242,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Monkeys of South and Central America have prehensile tails, meaning that their tails can be used to grasp objects. The tails of African and Asian monkeys are not prehensile. Which discipline is most likely to provide an evolutionary explanation for how this difference in tails came about?\n\nA) Aerodynamics\nB) Biogeography\nC) Physiology\nD) Biochemistry\n",
+      "ground_truth": "Biogeography",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.6921461439393461,
+      "response_time": 0.011037826538085938,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: A researcher grows a population of ferns in her laboratory. She notices, after a few generations, a new variant that has a distinct phenotype. When she tries to breed the original phenotype with the new one, no offspring are produced. When she breeds the new variants, however, offspring that look like the new variant result. What kind of speciation does this example illustrate?\n\nA) Allopatric\nB) Sympatric\nC) Isolated\nD) Polyploidy\n",
+      "ground_truth": "Sympatric",
+      "prediction": "C",
+      "is_correct": true,
+      "confidence": 0.6580794555805624,
+      "response_time": 0.01152801513671875,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Of the following anatomical structures, which is homologous to the wing of a bird?\n\nA) Dorsal fin of a shark\nB) Hindlimb of a kangaroo\nC) Wing of a butterfly\nD) Flipper of a cetacean\n",
+      "ground_truth": "Flipper of a cetacean",
+      "prediction": "B",
+      "is_correct": false,
+      "confidence": 0.6208087922725827,
+      "response_time": 0.011242866516113281,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Which of the following is a frameshift mutation?\n\nA) CAT HAS HIS \u2192 CAT HAS HIT\nB) CAT HAS HIS \u2192 CAT HSH ISA\nC) CAT HAS HIS \u2192 CAT HIS HAT\nD) CAT HAS HIS \u2192 CAT WAS HIT\n",
+      "ground_truth": "CAT HAS HIS \u2192 CAT HSH ISA",
+      "prediction": "D",
+      "is_correct": false,
+      "confidence": 0.5364985447488725,
+      "response_time": 0.010913848876953125,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: This process couples the production of ATP with the movement of electrons down the electron transport chain by harnessing the driving force created by a proton gradient.\n\nA) Glycolysis\nB) Chemiosmosis\nC) Fermentation\nD) Calvin cycle\n",
+      "ground_truth": "Chemiosmosis",
+      "prediction": "C",
+      "is_correct": true,
+      "confidence": 0.7011912009492517,
+      "response_time": 0.011094808578491211,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: In the mid-1900s, the Soviet geneticist Lysenko believed that his winter wheat plants, exposed to ever-colder temperatures, would eventually give rise to ever more cold-tolerant winter wheat. Lysenko's attempts in this regard were most in agreement with the ideas of\n\nA) Cuvier.\nB) Hutton.\nC) Lamarck.\nD) Darwin.\n",
+      "ground_truth": "Lamarck.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.6727644994407893,
+      "response_time": 0.011099100112915039,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Which of the following statements about cellular respiration is correct?\n\nA) Most CO2 produced during cellular respiration is released from glycolysis.\nB) Protons are pumped through ATP synthase by active transport.\nC) The final electron acceptor of the electron transport chain is NAD+.\nD) ATP is formed because an endergonic reaction is coupled with an exergonic reaction.\n",
+      "ground_truth": "ATP is formed because an endergonic reaction is coupled with an exergonic reaction.",
+      "prediction": "D",
+      "is_correct": true,
+      "confidence": 0.6903427416794001,
+      "response_time": 0.011070013046264648,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: You are told that in a population of guinea pigs, 4 percent are black (recessive) and 96 percent are brown. Which of the following is the frequency of the heterozygous condition?\n\nA) 16 percent\nB) 32 percent\nC) 40 percent\nD) 48 percent\n",
+      "ground_truth": "32 percent",
+      "prediction": "A",
+      "is_correct": false,
+      "confidence": 0.6129248237200081,
+      "response_time": 0.01102304458618164,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: The major difference between cartilage and bone is that cartilage\n\nA) is a part of the skeletal system\nB) is composed of collagen and salts\nC) lacks blood vessels and nerves\nD) secretes a matrix\n",
+      "ground_truth": "lacks blood vessels and nerves",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.6693085004091264,
+      "response_time": 0.011174917221069336,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    }
+  ]
+}

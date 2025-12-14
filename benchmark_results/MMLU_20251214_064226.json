@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "MMLU",
+    "total_questions": 10,
+    "correct_answers": 0,
+    "accuracy": 0.0,
+    "average_confidence": 0.4928061119067892,
+    "average_response_time": 0.017531323432922363,
+    "total_time": 0.1781148910522461,
+    "per_category_accuracy": {
+      "high_school_biology": 0.0
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T06:42:26.206974"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Which of these is the smallest unit that natural selection can change?\n\nA) a species' gene frequency\nB) a population's gene frequency\nC) an individual's genome\nD) an individual's genotype\n",
+      "ground_truth": "a population's gene frequency",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.5004504835230079,
+      "response_time": 0.018545150756835938,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: This biome has cold winters and is known for its pine forests.\n\nA) Desert\nB) Tundra\nC) Taiga\nD) Deciduous forests\n",
+      "ground_truth": "Deciduous forests",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.47224673416993546,
+      "response_time": 0.028093814849853516,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Hemoglobin is a molecule that binds to both O2 and CO2. There is an allosteric relationship between the concentrations of O2 and CO2. Hemoglobin's affinity for O2\n\nA) decreases as blood pH decreases\nB) increases as H+ concentration increases\nC) increases in exercising muscle tissue\nD) decreases as CO2 concentration decreases\n",
+      "ground_truth": "decreases as blood pH decreases",
+      "prediction": "4",
+      "is_correct": false,
+      "confidence": 0.4955709178319415,
+      "response_time": 0.0231170654296875,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: The higher the proportion of loci that are \"fixed\" in a population, the lower is that population's\n\nA) nucleotide variability.\nB) genetic polyploidy.\nC) average heterozygosity.\nD) A and C only\n",
+      "ground_truth": "A and C only",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.4878291684554736,
+      "response_time": 0.013733148574829102,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Chemiosmosis occurs in I.Mitochondria II. Nuclei III. Chloroplasts\n\nA) I only\nB) II only\nC) III only\nD) I and III\n",
+      "ground_truth": "I and III",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.431198197221288,
+      "response_time": 0.0188751220703125,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Hydrangea flowers have one gene for flower color. Plants of the same genetic variety have flowers that range in color from blue to pink with the color varying due to the type of soil in which they are grown. Which of the following statement best explains this phenomenon?\n\nA) The alleles for flower color show incomplete dominance where neither trait is dominant; expression of the genes shows a blending of traits.\nB) The alleles for flower color are codominant; both traits show depending on the environment.\nC) In this case, the environment alters the expression of a trait.\nD) The genes for flower color show polygenic inheritance.\n",
+      "ground_truth": "In this case, the environment alters the expression of a trait.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.46210935902350997,
+      "response_time": 0.02010822296142578,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Which group is composed entirely of individuals who maintained that species are fixed (i.e., unchanging)?\n\nA) Aristotle, Cuvier, and Lamarck\nB) Linnaeus, Cuvier, and Lamarck\nC) Lyell, Linnaeus, and Lamarck\nD) Aristotle, Linnaeus, and Cuvier\n",
+      "ground_truth": "Aristotle, Linnaeus, and Cuvier",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.5132954544428869,
+      "response_time": 0.01217794418334961,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Which describes an African butterfly species that exists in two strikingly different color patterns?\n\nA) artificial selection\nB) directional selection\nC) stabilizing selection\nD) disruptive selection\n",
+      "ground_truth": "disruptive selection",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.5383145639814483,
+      "response_time": 0.015883922576904297,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: The transfer of DNA between two bacterial cells connected by sex pili is known as\n\nA) specialized transduction.\nB) conjugation.\nC) transformation.\nD) generalized transduction.\n",
+      "ground_truth": "conjugation.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.5283297597087951,
+      "response_time": 0.014821052551269531,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: A reaction that includes energy as one of its reactants is called a(n)\n\nA) exergonic reaction.\nB) hydrolysis reaction.\nC) endergonic reaction.\nD) redox reaction.\n",
+      "ground_truth": "endergonic reaction.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.4987164807096053,
+      "response_time": 0.00995779037475586,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    }
+  ]
+}

@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "HellaSwag",
+    "total_questions": 10,
+    "correct_answers": 10,
+    "accuracy": 1.0,
+    "average_confidence": 0.6732090358637274,
+    "average_response_time": 0.01933012008666992,
+    "total_time": 0.2005608081817627,
+    "per_category_accuracy": {
+      "unknown": 1.0
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T06:59:28.212024"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to cut a man's hair [title] Ask the man how he wants his hair. [step] In a consultation, find out how short he wants his hair, how uniformly he wants it cut, and how he plans to style his hair afterwards. He may want you to only trim away split ends, but he could also want you to cut everything off.\n\nWhat happens next? Choose the most likely ending:\n\nA) [title] Consider how long he wants his hair to be. [step] Men don't grow his hair to the shoulder length they normally do, so it would be reasonable to cut his hair any length that he likes.\nB) Ask that he only cut out the hair he really wants, and that you only cut off slightly more than that at some point. [title] Brush your hair when you're finished cutting it.\nC) [substeps] Once you've narrowed your list, you'll need to decide where you would like his hair to fall. Some men go all out and have a trim every three to four weeks.\nD) Before you begin to cut, it's important that you ask all of the necessary questions and understand what he would like done with his hair. If you are clear and communicative from the start, you will avoid any potential misunderstandings.\n",
+      "ground_truth": "Before you begin to cut, it's important that you ask all of the necessary questions and understand what he would like done with his hair. If you are clear and communicative from the start, you will avoid any potential misunderstandings.",
+      "prediction": "D",
+      "is_correct": true,
+      "confidence": 0.644585542306304,
+      "response_time": 0.015340089797973633,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to clean scallops [title] Store your scallops on ice. [step] This will allow them to open with ease. Warmer scallops are very difficult to open.\n\nWhat happens next? Choose the most likely ending:\n\nA) To clean your scallops, use a clean ice water bottle or bowl. [substeps] Hold the ice to the scallop so that the water runs freely around the scalloped surface.\nB) You could also store your scallops in the refrigerator. [title] Hold the scallop with the darker side facing up.\nC) Store in refrigerator for at least six months. [title] Wipe scallops dry with a paper towel.\nD) If you have scallops that are not being cleaned, place them in an airtight container in your fridge. It will keep them cold for several weeks, perhaps months.\n",
+      "ground_truth": "You could also store your scallops in the refrigerator. [title] Hold the scallop with the darker side facing up.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.6847039532810449,
+      "response_time": 0.01323080062866211,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to gently bleach your skin naturally [title] Gather your ingredients. [step] Lemons work as a natural bleach because of their acidic property. The high amount of vitamin c promotes new cell growth and the antioxidants are good for complexion.\n\nWhat happens next? Choose the most likely ending:\n\nA) Optionally, parsley makes a gorgeous solution. Chop up one finely chopped lemon and mash it with a little salt and pepper.\nB) For this, you'll only need lemon juice and a cotton ball. You can use a fresh lemon if you'd like, but store-bought lemon juice will be great as well.\nC) They help stimulate blood circulation to the face and/or body. [substeps] Ripe lemon slices (like mandarin oranges) and fresh lemon juice are about all you need, although you can have fresh or dried lemons without boiling the lemon pieces or thawing them to room temperature.\nD) [title] Buy juice from a well-stocked store or with a fresh starter. [title] Open the juice bottle and check the bottom closely for oil.\n",
+      "ground_truth": "For this, you'll only need lemon juice and a cotton ball. You can use a fresh lemon if you'd like, but store-bought lemon juice will be great as well.",
+      "prediction": "C",
+      "is_correct": true,
+      "confidence": 0.6905442203544081,
+      "response_time": 0.012696027755737305,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: A man tries to stop a man from shooting a basket ball. The ball is passed across the room and men chase it across the court. a boy\n\nWhat happens next? Choose the most likely ending:\n\nA) catches and tosses the ball behind him which is caught by another boy on his team.\nB) stands in the middle of the court feeling bad.\nC) breaks a basket and and messes with the man's hair.\nD) tries to stop a man from playing a nine ball game.\n",
+      "ground_truth": "catches and tosses the ball behind him which is caught by another boy on his team.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.6397961130179465,
+      "response_time": 0.012396097183227539,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: We see an opening screen on white. A buff man shows off his muscles on a city street. the man\n\nWhat happens next? Choose the most likely ending:\n\nA) holds up both arms.\nB) straps on a bag and is shown a model plane.\nC) runs across multiple benches.\nD) stretches and glides while using an elliptical.\n",
+      "ground_truth": "holds up both arms.",
+      "prediction": "D",
+      "is_correct": true,
+      "confidence": 0.6700575340352952,
+      "response_time": 0.01634502410888672,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to make valentine's day extra special [title] Arrange for dinner. [step] You can book a reservation at your favorite restaurant or you can cook. It doesn't even have to be fine dining.\n\nWhat happens next? Choose the most likely ending:\n\nA) Get out the favorite food, let your guests get to know you, and then let them order their own food. The point is to get your guests so impressed that they will pay the bill on valentine's day.\nB) A better option would be to enjoy a classic vinaigrette, appetizer, or dessert. When not attending holiday events, consider going to events like new year's eve or a restaurant inspired by a similar theme.\nC) Choose something informal and don't overdo it. All this matters is where it is in the relationship and if you can satisfy everyone involved.\nD) Often just putting something together in advance is a good way to show your valentine that you care and that you're thinking of them. Add some candles, turn down the lights, and it's a perfect romantic evening.\n",
+      "ground_truth": "Often just putting something together in advance is a good way to show your valentine that you care and that you're thinking of them. Add some candles, turn down the lights, and it's a perfect romantic evening.",
+      "prediction": "D",
+      "is_correct": true,
+      "confidence": 0.6757004316113889,
+      "response_time": 0.05404210090637207,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to announce your engagement to family and friends [title] Inform the parents in person. [step] Pay a visit to both sets of parents separately to declare your intentions to marry. It's customary for the bride's side of the family to be the first to hear about their daughter's engagement.\n\nWhat happens next? Choose the most likely ending:\n\nA) In fact, tradition dictates that the groom should ask the bride's father for her hand in marriage before he ever pops the question. [substeps] Generally, the parents should be the first people to find out.\nB) [substeps] Many people who are selected as party witnesses need to prove their intention to become a couple before deciding to enter as a couple. If you are who you claim to be and the parents want to see the results of your engagement, your announcement is likely to be recorded.\nC) She or he may also receive notice by email, or by phone call. Allowing yourself plenty of time to say the news online will ensure that both parents know the information and don't have to wait too long to reach out to one another.\nD) Call both sets of parents and inform them of the engagement with a phone call. [substeps] You can also try to connect with the parents face-to-face using the online platform.\n",
+      "ground_truth": "In fact, tradition dictates that the groom should ask the bride's father for her hand in marriage before he ever pops the question. [substeps] Generally, the parents should be the first people to find out.",
+      "prediction": "B",
+      "is_correct": true,
+      "confidence": 0.6709550472348929,
+      "response_time": 0.02516031265258789,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to wear blush [title] Choose a suitable color for your skin tone. [step] When choosing a blush color, it's important to pick one that matches your natural skin tone. [substeps] This means that the color you pick should be as close as possible to the color your cheeks turn when you're naturally flushed.\n\nWhat happens next? Choose the most likely ending:\n\nA) If you have a redhead or brown skin tone, go for a pink blush. If you have a beige skin skin tone, go for a plum blush.\nB) When in doubt, go with a neutral color, such as white or gray. You can experiment with different tones of blush to find what you prefer most.\nC) Alternatively, you could try a shade that works with both skin tones. If you are pale or sallow, opt for natural shades, like cherry-red or cream.\nD) Picking a color that doesn't match your skin tone can cause your blush to look unnatural and even garish. A good tip for identifying your natural coloring is to make a tight fist with your hand for about ten seconds.\n",
+      "ground_truth": "Picking a color that doesn't match your skin tone can cause your blush to look unnatural and even garish. A good tip for identifying your natural coloring is to make a tight fist with your hand for about ten seconds.",
+      "prediction": "D",
+      "is_correct": true,
+      "confidence": 0.6595490206554533,
+      "response_time": 0.016323089599609375,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to drive a golf cart [title] Understand golf carts. [step] Golf carts are classified under neighborhood electric vehicles. Despite the vehicle's name, golf carts are used off golf courses for a variety of reasons.\n\nWhat happens next? Choose the most likely ending:\n\nA) In example, golf carts are used because of their sleek, punctual appearance, and portability. [substeps] Certain carts sit on top of one another and may not function so well in busy communities.\nB) It is the function of the chain that forces the club to move in order to roll up the ball. Essentially, golf carts are designed for the purpose in which they are used.\nC) In order to stay in tip-top driving conditions, golf carts should be operated with a manual driver and with other drivers. These carts can make certain types of drivers feel uncomfortable or uninterested in doing something.\nD) Golf carts fall between 15-35 mph top speed by regulation standards. You must be 14 years of age or older to drive a golf cart.\n",
+      "ground_truth": "Golf carts fall between 15-35 mph top speed by regulation standards. You must be 14 years of age or older to drive a golf cart.",
+      "prediction": "B",
+      "is_correct": true,
+      "confidence": 0.6866984246075154,
+      "response_time": 0.013548612594604492,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to determine if you have pneumonia [title] Identify symptoms of pneumonia. [step] If you think you might have pneumonia, it is important to treat it promptly before it gets worse. The symptoms may worsen gradually over several days or suddenly be very severe from the onset.\n\nWhat happens next? Choose the most likely ending:\n\nA) If you have ever had pneumonia, call your doctor to make an appointment for evaluation and exam if needed. [substeps] Warning signs of pneumonia include: tingling or tightness in your chest or abdomen, difficulty breathing, severe cramping, diarrhea, and over night sweats.\nB) Pneumonia is very difficult to treat, but following the precautions shown in the steps above can help with the trial and error of a more accurate diagnosis. [substeps] It is a good idea to get a doctor's log detailing symptoms of pneumonia.\nC) Signs of pneumonia include : [substeps] Fever sweating and shivering discomfort in your chest when you cough or breathe, particularly breathing when breathing deeply fast, shallow breathing. This may occur only when you are physically active.\nD) If you have pneumonia, take your doctor's exam or even a blood test to rule out pneumonia. [substeps] Pneumonia is a mycoplasma type.\n",
+      "ground_truth": "Signs of pneumonia include : [substeps] Fever sweating and shivering discomfort in your chest when you cough or breathe, particularly breathing when breathing deeply fast, shallow breathing. This may occur only when you are physically active.",
+      "prediction": "B",
+      "is_correct": true,
+      "confidence": 0.7095000715330244,
+      "response_time": 0.014219045639038086,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    }
+  ]
+}

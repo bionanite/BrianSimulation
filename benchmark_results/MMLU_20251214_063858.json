@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "MMLU",
+    "total_questions": 10,
+    "correct_answers": 0,
+    "accuracy": 0.0,
+    "average_confidence": 0.49366191565977513,
+    "average_response_time": 0.011818647384643555,
+    "total_time": 0.1193380355834961,
+    "per_category_accuracy": {
+      "high_school_biology": 0.0
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T06:38:58.652689"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: In chick embryos, the extraembryonic membrane that provides nourishment to the fetus is the\n\nA) amnion\nB) chorion\nC) placenta\nD) egg yolk\n",
+      "ground_truth": "egg yolk",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.49156218656512063,
+      "response_time": 0.013347148895263672,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: The average birth weight for human babies is about 3 kg. Which of the following terms best describes this?\n\nA) artificial selection\nB) directional selection\nC) stabilizing selection\nD) disruptive selection\n",
+      "ground_truth": "stabilizing selection",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.5265901224943759,
+      "response_time": 0.011739015579223633,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Fossil evidence indicates that horses have gradually increased in size over geologic time. Which of the following terms best describes this?\n\nA) artificial selection\nB) directional selection\nC) stabilizing selection\nD) disruptive selection\n",
+      "ground_truth": "directional selection",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.541335635497316,
+      "response_time": 0.012001991271972656,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Which of the following statements best explains why Mendel's principle of segregation was deemed a law?\n\nA) Mendel's work with pea plants and his conclusions have been described in many sources.\nB) The patterns of trait inheritance observed in pea plants were repeatedly demonstrated in other eukaryotes.\nC) Chromosomes were found to contain the genetic information for traits.\nD) The discovery of the structure of D N A supported Mendel's observations and laws.\n",
+      "ground_truth": "The patterns of trait inheritance observed in pea plants were repeatedly demonstrated in other eukaryotes.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.4798826109335872,
+      "response_time": 0.01212620735168457,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: In general, animal cells differ from plant cells in that animal cells have\n\nA) a cell wall made of cellulose\nB) lysosomes\nC) large vacuoles that store water\nD) centrioles within centrosomes\n",
+      "ground_truth": "centrioles within centrosomes",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.4719812363521867,
+      "response_time": 0.011700153350830078,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: This process leads to the net production of two pyruvate, two ATP, and two NADH.\n\nA) Glycolysis\nB) Chemiosmosis\nC) Fermentation\nD) Calvin cycle\n",
+      "ground_truth": "Glycolysis",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.4672746633903722,
+      "response_time": 0.011194944381713867,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Which of these is a statement that Darwin would have rejected?\n\nA) Environmental change plays a role in evolution.\nB) The smallest entity that can evolve is an individual organism.\nC) Individuals can acquire new characteristics as they respond to new environments or situations.\nD) Inherited variation in a population is a necessary precondition for natural selection to operate.\n",
+      "ground_truth": "The smallest entity that can evolve is an individual organism.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.4820169204995671,
+      "response_time": 0.011732101440429688,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: In modern terminology, diversity is understood to be a result of genetic variation. Sources of variation for evolution include all of the following except\n\nA) mistakes in translation of structural genes.\nB) mistakes in DNA replication.\nC) translocations and mistakes in meiosis.\nD) recombination at fertilization.\n",
+      "ground_truth": "mistakes in translation of structural genes.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.4913222737217434,
+      "response_time": 0.011312007904052734,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Catastrophism, meaning the regular occurrence of geological or meteorological disturbances (catastrophes), was Cuvier's attempt to explain the existence of\n\nA) evolution.\nB) the fossil record.\nC) uniformitarianism.\nD) the origin of new species.\n",
+      "ground_truth": "the fossil record.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.5106430470464993,
+      "response_time": 0.011229991912841797,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Members of two different species possess a similar-looking structure that they use in a similar fashion to perform the same function. Which information would best help distinguish between an explanation based on homology versus one based on convergent evolution?\n\nA) The two species live at great distance from each other.\nB) The two species share many proteins in common, and the nucleotide sequences that code for these proteins are almost identical.\nC) The sizes of the structures in adult members of both species are similar in size.\nD) Both species are well adapted to their particular environments.\n",
+      "ground_truth": "The two species share many proteins in common, and the nucleotide sequences that code for these proteins are almost identical.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.4740104600969832,
+      "response_time": 0.011802911758422852,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    }
+  ]
+}

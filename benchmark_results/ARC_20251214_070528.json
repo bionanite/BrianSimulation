@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "ARC",
+    "total_questions": 10,
+    "correct_answers": 4,
+    "accuracy": 0.4,
+    "average_confidence": 0.47049642942298114,
+    "average_response_time": 0.015663933753967286,
+    "total_time": 0.15778088569641113,
+    "per_category_accuracy": {
+      "unknown": 0.4
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T07:05:28.464937"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Aphids are small, soft-bodied insects that feed on certain types of plants. Which level of a food web would be occupied by an aphid?\n\nA) producer\nB) decomposer\nC) first-level consumer\nD) second-level consumer\n",
+      "ground_truth": "first-level consumer",
+      "prediction": "D",
+      "is_correct": false,
+      "confidence": 0.4845340413921732,
+      "response_time": 0.032653093338012695,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: During a portion of the water cycle, water falls to Earth's surface as precipitation. Some of this water runs off into channels and keeps moving until it ends up in the ocean. Which best describes the water in the channels?\n\nA) lake\nB) river\nC) aquifer\nD) wetland\n",
+      "ground_truth": "river",
+      "prediction": "D",
+      "is_correct": false,
+      "confidence": 0.47096280903150095,
+      "response_time": 0.0285947322845459,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Which of the following is a characteristic of elements?\n\nA) They break down when reacting with acids.\nB) They can be altered with an electric current.\nC) They are always metals.\nD) They cannot be divided into smaller substances.\n",
+      "ground_truth": "They cannot be divided into smaller substances.",
+      "prediction": "D",
+      "is_correct": true,
+      "confidence": 0.4925437689514154,
+      "response_time": 0.011074066162109375,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Which sequence shows the order of stages in a plant's life cycle?\n\nA) young plant -> seed -> adult plant\nB) seed -> adult plant -> young plant\nC) adult plant -> young plant -> seed\nD) seed -> young plant -> adult plant\n",
+      "ground_truth": "seed -> young plant -> adult plant",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.42364449309444907,
+      "response_time": 0.012613773345947266,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Which of these is an important safety rule to follow when using chemicals?\n\nA) Tie back long hair.\nB) Refrigerate all chemicals.\nC) Label all test tubes and bottles correctly.\nD) Dispose of extinguished matches properly.\n",
+      "ground_truth": "Label all test tubes and bottles correctly.",
+      "prediction": "D",
+      "is_correct": true,
+      "confidence": 0.49177859448110717,
+      "response_time": 0.012284994125366211,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: What is one condition necessary to produce diamonds?\n\nA) high altitude\nB) intense pressure\nC) quick cooling\nD) low temperatures\n",
+      "ground_truth": "intense pressure",
+      "prediction": "B",
+      "is_correct": false,
+      "confidence": 0.4963861978448627,
+      "response_time": 0.01172780990600586,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Why are rapidly occurring environmental changes more likely to cause extinctions than slowly occurring changes?\n\nA) Slow changes allow time for adaptation.\nB) Rapid changes require little adaptation.\nC) Slow changes affect only small regions.\nD) Rapid changes have a global effect.\n",
+      "ground_truth": "Slow changes allow time for adaptation.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.5079142690327809,
+      "response_time": 0.011671066284179688,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Students are studying how the positions of Earth and the Sun effect changes on Earth. After four seasons have passed on Earth, which has happened?\n\nA) Earth has completed one rotation around the Moon.\nB) Earth has completed one revolution around the Sun.\nC) The Sun has completed one revolution around Earth.\nD) The Moon has completed one revolution around Earth.\n",
+      "ground_truth": "Earth has completed one revolution around the Sun.",
+      "prediction": "B",
+      "is_correct": false,
+      "confidence": 0.4676796645377324,
+      "response_time": 0.011824846267700195,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: An airplane flies in a straight line between two cities that are separated by 840 kilometers. If it takes 4 hours for the airplane to make the trip, what is its average speed?\n\nA) 84 km/h\nB) 105 km/h\nC) 180 km/h\nD) 210 km/h\n",
+      "ground_truth": "210 km/h",
+      "prediction": "B",
+      "is_correct": false,
+      "confidence": 0.4511923637748467,
+      "response_time": 0.011845111846923828,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: A pitcher throws a 0.15 kg baseball at 43 40 m/s towards the catcher. What is the momentum of the baseball while moving at 40 m/s?\n\nA) 0.025 kg x m/s\nB) 3.8 kg x m/s\nC) 6.0 kg x m/s\nD) 270 kg x m/s\n",
+      "ground_truth": "6.0 kg x m/s",
+      "prediction": "A",
+      "is_correct": false,
+      "confidence": 0.41832809208894367,
+      "response_time": 0.012349843978881836,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    }
+  ]
+}

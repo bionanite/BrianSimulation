@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "MMLU",
+    "total_questions": 10,
+    "correct_answers": 8,
+    "accuracy": 0.8,
+    "average_confidence": 0.7520432625668125,
+    "average_response_time": 0.012817955017089844,
+    "total_time": 0.12909913063049316,
+    "per_category_accuracy": {
+      "high_school_biology": 0.8
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T07:15:10.228360"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Logically, which of these should cast the most doubt on the relationships depicted by an evolutionary tree?\n\nA) None of the organisms depicted by the tree ate the same foods.\nB) Some of the organisms depicted by the tree had lived in different habitats.\nC) The skeletal remains of the organisms depicted by the tree were incomplete (i.e., some bones were missing).\nD) Relationships between DNA sequences among the species did not match relationships between skeletal patterns.\n",
+      "ground_truth": "Relationships between DNA sequences among the species did not match relationships between skeletal patterns.",
+      "prediction": "C",
+      "is_correct": true,
+      "confidence": 0.7289778664484621,
+      "response_time": 0.014031171798706055,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Which of the following theories is based on the notion that mitochondria and chloroplasts evolved from prokaryotic cells?\n\nA) Fluid mosaic model\nB) Endosymbiotic model\nC) Taxonomic model\nD) Respiration feedback model\n",
+      "ground_truth": "Endosymbiotic model",
+      "prediction": "B",
+      "is_correct": true,
+      "confidence": 0.8269820630289615,
+      "response_time": 0.012508869171142578,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: All of the following are examples of events that can prevent interspecific breeding EXCEPT\n\nA) the potential mates experience geographic isolation\nB) the potential mates experience behavioral isolation\nC) the potential mates have different courtship rituals\nD) the potential mates have similar breeding seasons\n",
+      "ground_truth": "the potential mates have similar breeding seasons",
+      "prediction": "B",
+      "is_correct": true,
+      "confidence": 0.7769387676566839,
+      "response_time": 0.011986017227172852,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: ADH is a hormone secreted by the kidneys that reduces the amount of water excreted in the urine. ADH is released in times of dehydration. This is an example of\n\nA) innate behavior.\nB) maintaining homeostasis.\nC) failure to respond to the environment.\nD) positive feedback.\n",
+      "ground_truth": "maintaining homeostasis.",
+      "prediction": "C",
+      "is_correct": false,
+      "confidence": 0.7296512885317207,
+      "response_time": 0.012323856353759766,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Which of the following statements about trypsin is NOT true?\n\nA) It is an organic compound made of proteins.\nB) It is a catalyst that alters the rate of a reaction.\nC) It is operative over a wide pH range.\nD) The rate of catalysis is affected by the concentration of substrate.\n",
+      "ground_truth": "It is operative over a wide pH range.",
+      "prediction": "D",
+      "is_correct": true,
+      "confidence": 0.6748573320638389,
+      "response_time": 0.01267099380493164,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: A heterotroph\n\nA) obtains its energy from sunlight, harnessed by pigments\nB) obtains its energy by oxidizing organic molecules\nC) makes organic molecules from CO2\nD) obtains its energy by consuming exclusively autotrophs\n",
+      "ground_truth": "obtains its energy by oxidizing organic molecules",
+      "prediction": "D",
+      "is_correct": true,
+      "confidence": 0.8127070135734975,
+      "response_time": 0.012418985366821289,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Cattle breeders have improved the quality of meat over the years by which process?\n\nA) artificial selection\nB) directional selection\nC) stabilizing selection\nD) A and B\n",
+      "ground_truth": "A and B",
+      "prediction": "B",
+      "is_correct": true,
+      "confidence": 0.7865295139290392,
+      "response_time": 0.012434005737304688,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: During a study session about evolution, one of your fellow students remarks, \"The giraffe stretched its neck while reaching for higher leaves; its offspring inherited longer necks as a result.\" Which statement is most likely to be helpful in correcting this student's misconception?\n\nA) Characteristics acquired during an organism's life are generally not passed on through genes.\nB) Spontaneous mutations can result in the appearance of new traits.\nC) Only favorable adaptations have survival value.\nD) Disuse of an organ may lead to its eventual disappearance.\n",
+      "ground_truth": "Characteristics acquired during an organism's life are generally not passed on through genes.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.7517601475268603,
+      "response_time": 0.012683868408203125,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Which of the following adaptive features would least likely be found in an animal living in a hot arid environment?\n\nA) Long loops of Henle to maximize water reabsorption\nB) Storage of water in fatty tissues\nC) Large ears to aid in heat dispersion\nD) Short loops of Henle to maximize water secretion\n",
+      "ground_truth": "Short loops of Henle to maximize water secretion",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.7139376615434885,
+      "response_time": 0.014268159866333008,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: A man contracts the same flu strain for the second time in a single winter season. The second time he experiences fewer symptoms and recovers more quickly. Which cells are responsible for this rapid recovery?\n\nA) Helper T cells\nB) Cytotoxic T cells\nC) Memory cells\nD) Plasma cells\n",
+      "ground_truth": "Memory cells",
+      "prediction": "A",
+      "is_correct": false,
+      "confidence": 0.718090971365571,
+      "response_time": 0.012853622436523438,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    }
+  ]
+}

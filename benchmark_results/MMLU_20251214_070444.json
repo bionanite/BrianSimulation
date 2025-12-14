@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "MMLU",
+    "total_questions": 10,
+    "correct_answers": 4,
+    "accuracy": 0.4,
+    "average_confidence": 0.47498329496922437,
+    "average_response_time": 0.012923812866210938,
+    "total_time": 0.13032126426696777,
+    "per_category_accuracy": {
+      "high_school_biology": 0.4
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T07:04:44.131144"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Which of the following is the direct energy source that allows ATP synthase to produce ATP in mitochondria?\n\nA) NADH diffusing from the mitochondrial intermembrane space to the matrix\nB) The reduction of NAD+ during the conversion of pyruvate to acetyl-CoA\nC) H+ ions flowing down a gradient across the mitochondrial inner membrane\nD) The energy of electrons passing along the electron transport chain\n",
+      "ground_truth": "H+ ions flowing down a gradient across the mitochondrial inner membrane",
+      "prediction": "B",
+      "is_correct": true,
+      "confidence": 0.4821203360069407,
+      "response_time": 0.014324188232421875,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Lampreys attach to the skin of lake trout and absorb nutrients from its body. This relationship is an example of\n\nA) commensalism\nB) parasitism\nC) mutualism\nD) gravitropism\n",
+      "ground_truth": "parasitism",
+      "prediction": "B",
+      "is_correct": false,
+      "confidence": 0.4698113636748138,
+      "response_time": 0.011941909790039062,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: A man contracts the same flu strain for the second time in a single winter season. The second time he experiences fewer symptoms and recovers more quickly. Which cells are responsible for this rapid recovery?\n\nA) Helper T cells\nB) Cytotoxic T cells\nC) Memory cells\nD) Plasma cells\n",
+      "ground_truth": "Memory cells",
+      "prediction": "A",
+      "is_correct": false,
+      "confidence": 0.4690759434773764,
+      "response_time": 0.014896154403686523,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Two individuals, one with type B blood and one with type AB blood, have a child. The probability that the child has type O blood is\n\nA) 0%\nB) 25%\nC) 50%\nD) 100%\n",
+      "ground_truth": "0%",
+      "prediction": "A",
+      "is_correct": false,
+      "confidence": 0.433201804458732,
+      "response_time": 0.012698173522949219,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: The tandem back-and-forth evolution of closely related species, which is exemplified by predator-prey relationships.\n\nA) Divergent evolution\nB) Convergent evolution\nC) Parallel evolution\nD) Coevolution\n",
+      "ground_truth": "Coevolution",
+      "prediction": "A",
+      "is_correct": false,
+      "confidence": 0.5148135659454024,
+      "response_time": 0.012607812881469727,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: A trend toward the decrease in the size of plants on the slopes of mountains as altitudes increase is an example of\n\nA) a cline.\nB) a bottleneck.\nC) relative fitness.\nD) genetic drift.\n",
+      "ground_truth": "a cline.",
+      "prediction": "C",
+      "is_correct": true,
+      "confidence": 0.4785066130369743,
+      "response_time": 0.011802911758422852,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: To ensure that hatchling sea turtles orient to the sea rather than inland, which of the following is the most environmentally sound practice around sea turtle nest sites?\n\nA) Digging troughs in the sand from the nests to the sea\nB) Minimizing artificial lighting in the area\nC) Scattering preferred turtle foods between the nests and the sea\nD) Building low fences on the sand dunes\n",
+      "ground_truth": "Minimizing artificial lighting in the area",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.47468678434000455,
+      "response_time": 0.012852907180786133,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: When driving from east to west in the U.S. from a forest ecosystem to grasslands, trees gradually give way to grasses. Which of the following is the critical factor responsible for this shift?\n\nA) Amount of sunlight\nB) Availability of oxygen\nC) Availability of water\nD) Length of growing season\n",
+      "ground_truth": "Availability of water",
+      "prediction": "D",
+      "is_correct": false,
+      "confidence": 0.4712318586959736,
+      "response_time": 0.012697935104370117,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: If the HMS Beagle had completely bypassed the Galapagos Islands, Darwin would have had a much poorer understanding of the\n\nA) relative stability of a well-adapted population's numbers over many generations.\nB) ability of populations to undergo modification as they adapt to a particular environment.\nC) tendency of organisms to produce the exact number of offspring that the environment can support.\nD) unlimited resources that support population growth in most natural environments.\n",
+      "ground_truth": "ability of populations to undergo modification as they adapt to a particular environment.",
+      "prediction": "C",
+      "is_correct": true,
+      "confidence": 0.47630899940116794,
+      "response_time": 0.012700080871582031,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Which of the following statements most accurately explains what EcoR1 is?\n\nA) It is a bacterium that lives in the human large intestine.\nB) It is the best-studied bacteriophage, a virus that attacks E. coli.\nC) It is a restriction enzyme extracted from E. coli.\nD) It is a type of DNA used extensively in research.\n",
+      "ground_truth": "It is a restriction enzyme extracted from E. coli.",
+      "prediction": "B",
+      "is_correct": false,
+      "confidence": 0.4800756806548577,
+      "response_time": 0.012716054916381836,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    }
+  ]
+}

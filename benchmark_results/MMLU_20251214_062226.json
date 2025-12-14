@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "MMLU",
+    "total_questions": 10,
+    "correct_answers": 0,
+    "accuracy": 0.0,
+    "average_confidence": 0.47940949265808064,
+    "average_response_time": 0.012333345413208009,
+    "total_time": 0.12672019004821777,
+    "per_category_accuracy": {
+      "high_school_biology": 0.0
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T06:22:26.655072"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: In the inherited disorder called Pompe disease, glycogen breakdown in the cytosol occurs normally and blood glucose levels are normal, yet glycogen accumulates in lysosomes. This suggests a malfunction with\n\nA) enzymes in the lysosomes\nB) enzymes in the mitochondria\nC) membrane transport during exocytosis\nD) membrane transport during endocytosis\n",
+      "ground_truth": "enzymes in the lysosomes",
+      "prediction": "True",
+      "is_correct": false,
+      "confidence": 0.4952908254597671,
+      "response_time": 0.01501321792602539,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Members of which of the following groups are most likely to be surrounded by a protein coat?\n\nA) Viruses\nB) Bacteria\nC) Eukaryotes\nD) Archaea\n",
+      "ground_truth": "Viruses",
+      "prediction": "True",
+      "is_correct": false,
+      "confidence": 0.4819236111759677,
+      "response_time": 0.012548208236694336,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Females with Turner's syndrome have a high incidence of hemophilia, a recessive, X-linked trait. Based on this information, it can be inferred that females with this condition\n\nA) have an extra X chromosome\nB) have an extra Y chromosome\nC) lack an X chromosome\nD) have red blood cells that clump\n",
+      "ground_truth": "lack an X chromosome",
+      "prediction": "True",
+      "is_correct": false,
+      "confidence": 0.4857775062746861,
+      "response_time": 0.011674880981445312,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: The theory of evolution is most accurately described as\n\nA) an educated guess about how species originate.\nB) one possible explanation, among several scientific alternatives, about how species have come into existence.\nC) an opinion that some scientists hold about how living things change over time.\nD) an overarching explanation, supported by much evidence, for how populations change over time.\n",
+      "ground_truth": "an overarching explanation, supported by much evidence, for how populations change over time.",
+      "prediction": "True",
+      "is_correct": false,
+      "confidence": 0.4946707363014252,
+      "response_time": 0.012543916702270508,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: An eager AP Biology student interested in studying osmosis and the movement of water in solutions took a dialysis bag containing a 0.5 M solution and placed it into a beaker containing a 0.6 M solution. If this bag were instead placed into a beaker of distilled water, what would be the expected result?\n\nA) There will be a net flow of water out of the bag, causing it to decrease in size.\nB) There will be a net flow of water into the bag, causing it to swell in size.\nC) The bag will remain the exact same size because no water will move at all.\nD) The solute will flow out of the dialysis bag into the beaker.\n",
+      "ground_truth": "There will be a net flow of water into the bag, causing it to swell in size.",
+      "prediction": "True",
+      "is_correct": false,
+      "confidence": 0.4580687047561347,
+      "response_time": 0.012357234954833984,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Charles Darwin was the first person to propose\n\nA) that evolution occurs.\nB) a mechanism for how evolution occurs.\nC) that the Earth is older than a few thousand years.\nD) a mechanism for evolution that was supported by evidence.\n",
+      "ground_truth": "a mechanism for evolution that was supported by evidence.",
+      "prediction": "True",
+      "is_correct": false,
+      "confidence": 0.45750762494451724,
+      "response_time": 0.012257099151611328,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: A small population of birds is blown to an isolated island by a hurricane and establishes a colony. The gene pool of the newly established population of birds is likely to reflect the effects of which of the following?\n\nA) Directed mutation\nB) Genetic drift\nC) Adaptive radiation\nD) Disruptive selection\n",
+      "ground_truth": "Genetic drift",
+      "prediction": "True",
+      "is_correct": false,
+      "confidence": 0.4868302659495427,
+      "response_time": 0.011446714401245117,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Members of two different species possess a similar-looking structure that they use in a similar fashion to perform the same function. Which information would best help distinguish between an explanation based on homology versus one based on convergent evolution?\n\nA) The two species live at great distance from each other.\nB) The two species share many proteins in common, and the nucleotide sequences that code for these proteins are almost identical.\nC) The sizes of the structures in adult members of both species are similar in size.\nD) Both species are well adapted to their particular environments.\n",
+      "ground_truth": "The two species share many proteins in common, and the nucleotide sequences that code for these proteins are almost identical.",
+      "prediction": "True",
+      "is_correct": false,
+      "confidence": 0.4772148122873192,
+      "response_time": 0.011970996856689453,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: The first simple cells evolved approximately 3.5 billion years ago, followed by the more complex eukaryotic cells 2.1 billion years ago. Which of the following statements is correct?\n\nA) Eukaryotic organelles helped create separate environments for metabolic reactions, thus increasing their metabolic efficiency.\nB) Prokaryotic and eukaryotic cells have no structural similarities.\nC) The organelles in larger eukaryotic cells took care of the problems of having a larger surface area\u2013to\u2013volume ratio.\nD) Eukaryotic cells are able to multiply faster based on their more complex structure.\n",
+      "ground_truth": "Eukaryotic organelles helped create separate environments for metabolic reactions, thus increasing their metabolic efficiency.",
+      "prediction": "True",
+      "is_correct": false,
+      "confidence": 0.49043557528623494,
+      "response_time": 0.011902093887329102,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Of the following anatomical structures, which is homologous to the wing of a bird?\n\nA) Dorsal fin of a shark\nB) Hindlimb of a kangaroo\nC) Wing of a butterfly\nD) Flipper of a cetacean\n",
+      "ground_truth": "Flipper of a cetacean",
+      "prediction": "True",
+      "is_correct": false,
+      "confidence": 0.46637526414521063,
+      "response_time": 0.011619091033935547,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    }
+  ]
+}

@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "MMLU",
+    "total_questions": 10,
+    "correct_answers": 6,
+    "accuracy": 0.6,
+    "average_confidence": 0.33599999999999997,
+    "average_response_time": 0.01983046531677246,
+    "total_time": 0.20121097564697266,
+    "per_category_accuracy": {
+      "high_school_biology": 0.6
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T14:23:37.051964"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Protein that prevents the binding of RNA polymerase to the promoter site.\n\nA) Enhancer\nB) Repressor\nC) Operator\nD) Promoter\n",
+      "ground_truth": "Repressor",
+      "prediction": "A",
+      "is_correct": false,
+      "confidence": 0.3,
+      "response_time": 0.015507221221923828,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: A plant grows in the opposite direction of the gravitational force. This is an example of\n\nA) positive thignotropism\nB) negative phototropism\nC) positive phototropism\nD) negative gravitropism\n",
+      "ground_truth": "negative gravitropism",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.36,
+      "response_time": 0.018759965896606445,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Convergent evolution is best exemplified by which of the following?\n\nA) The pectoral fins of fish and the front legs of cats\nB) The presence of a notochord in all chordate embryos\nC) The wings of an insect and the wings of a bird\nD) The leaves of an oak tree and the spines of a cactus\n",
+      "ground_truth": "The wings of an insect and the wings of a bird",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.36,
+      "response_time": 0.016851186752319336,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Which statement about natural selection is most correct?\n\nA) Adaptations beneficial in one habitat should generally be beneficial in all other habitats as well.\nB) Different species that occupy the same habitat will adapt to that habitat by undergoing the same genetic changes.\nC) Adaptations beneficial at one time should generally be beneficial during all other times as well.\nD) Well-adapted individuals leave more offspring, and thus contribute more to the next generation's gene pool, than do poorly adapted individuals.\n",
+      "ground_truth": "Well-adapted individuals leave more offspring, and thus contribute more to the next generation's gene pool, than do poorly adapted individuals.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.36,
+      "response_time": 0.01271200180053711,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: If, on average, 46% of the loci in a species' gene pool are heterozygous, then the average homozygosity of the species should be\n\nA) 23%\nB) 46%\nC) 54%\nD) 92%\n",
+      "ground_truth": "54%",
+      "prediction": "A",
+      "is_correct": false,
+      "confidence": 0.3,
+      "response_time": 0.011705875396728516,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: The light reactions of photosynthesis supply the Calvin cycle with which of the following?\n\nA) The light reactions provide oxygen for the light-independent reactions.\nB) ATP and NADPH provide the power and raw materials for the Calvin cycle.\nC) Water entering the plant through the roots provides hydrogen directly to the Calvin cycle.\nD) CO2 released by the light-dependent reactions provides the raw material for the Calvin cycle.\n",
+      "ground_truth": "ATP and NADPH provide the power and raw materials for the Calvin cycle.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.36,
+      "response_time": 0.03404402732849121,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Structures as different as human arms, bat wings, and dolphin flippers contain many of the same bones, these bones having developed from very similar embryonic tissues. How do biologists interpret these similarities?\n\nA) By identifying the bones as being homologous\nB) By the principle of convergent evolution\nC) By proposing that humans, bats, and dolphins share a common ancestor\nD) A and C only\n",
+      "ground_truth": "A and C only",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.36,
+      "response_time": 0.01078176498413086,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: A scientist carries out a cross between two guinea pigs, both of which have black coats. Black hair coat is dominant over white hair coat. Three quarters of the offspring have black coats, and one quarter have white coats. The genotypes of the parents were most likely\n\nA) bb \u00d7 bb\nB) Bb \u00d7 Bb\nC) Bb \u00d7 bb\nD) BB \u00d7 Bb\n",
+      "ground_truth": "Bb \u00d7 Bb",
+      "prediction": "A",
+      "is_correct": false,
+      "confidence": 0.3,
+      "response_time": 0.017575740814208984,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Which of the following is the most likely benefit of periodic natural wildfires in some forest ecosystems?\n\nA) The fires remove dead and decaying plant matter, reducing the risk of more intense and destructive fires.\nB) The fires leach nutrients from the soil\u201a preventing the germination of plants that might compete with native species.\nC) The fires drive off herbivores whose plant-based diets reduce the amount of vegetation.\nD) The fires dry out the soil and decrease the chance of flooding after heavy rains.\n",
+      "ground_truth": "The fires remove dead and decaying plant matter, reducing the risk of more intense and destructive fires.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.36,
+      "response_time": 0.02867412567138672,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Which of the following cells is most closely associated with phagocytosis?\n\nA) Neutrophils\nB) Plasma cells\nC) B cells\nD) Memory cells\n",
+      "ground_truth": "Neutrophils",
+      "prediction": "A",
+      "is_correct": false,
+      "confidence": 0.3,
+      "response_time": 0.0316927433013916,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    }
+  ]
+}

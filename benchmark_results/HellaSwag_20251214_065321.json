@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "HellaSwag",
+    "total_questions": 10,
+    "correct_answers": 0,
+    "accuracy": 0.0,
+    "average_confidence": 0.5063968200776716,
+    "average_response_time": 0.01128232479095459,
+    "total_time": 0.11430811882019043,
+    "per_category_accuracy": {
+      "unknown": 0.0
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T06:53:21.487556"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to prevent spider mites on houseplants [title] Keep your houseplants hydrated. [step] Watering your houseplants as needed on a regular basis will prevent spider mite infestation, since spider mites only thrive on houseplants that are dry. [substeps] Use cold water instead of lukewarm water to water your houseplants.\n\nWhat happens next? Choose the most likely ending:\n\nA) It is recommended to be sure that every day you water your houseplants, you may see spider mites appear on the \" float \" on the water bottles. In some cases, spider mites may appear as large clusters, rather than a single cluster.\nB) If you do not have a tank, place plants in small jars or bowls that can drain into the tank regularly. [title] Plant your plants in terracotta or porcelain pots.\nC) This may prevent weak, poorly hydrated houseplants from being able to survive an infestation. [title] Defrost your plants every six to eight weeks.\nD) Spider mites will not infest your plants if the temperature is too cold. [title] Remove dust from your houseplants once per week.\n",
+      "ground_truth": "Spider mites will not infest your plants if the temperature is too cold. [title] Remove dust from your houseplants once per week.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.5015426422262244,
+      "response_time": 0.012462139129638672,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: A man in jump stilts throws a bag over his shoulder and leaves a bank. the man in jump stilts\n\nWhat happens next? Choose the most likely ending:\n\nA) and then goes back to the bank and jumps a third time.\nB) runs from the cops on a city street.\nC) pulls the rope towards himself and performs a trick squatting down.\nD) walks in the street as he checks out his performance.\n",
+      "ground_truth": "runs from the cops on a city street.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.503118760842937,
+      "response_time": 0.010354995727539062,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to remove gel nail polish [title] Find a place in your home where you do not risk ruining clothing, furniture or other items with acetone. [step] Acetone is a solvent that is required to eliminate gel polish. [title] Place a paper mat or cereal box in the area you plan to use.\n\nWhat happens next? Choose the most likely ending:\n\nA) [step] Mark your place on the box so it does not get wet. [title] Apply petroleum jelly to the area you will cut.\nB) [step] Place one corner of the box on a padded surface. Ensure that it is not bigger than the rubber lip grip that you would use to remove gel polish.\nC) [step] Put it near a sink, if possible. [title] Tear aluminum foil strips to fit around the tops of your nails.\nD) [step] Stay within arm's length of the affected area to prevent it from contaminating your clothing or furniture. [title] Dip a cotton ball or clean toothbrush or a small paper plate into acetone.\n",
+      "ground_truth": "[step] Put it near a sink, if possible. [title] Tear aluminum foil strips to fit around the tops of your nails.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.4938300788184248,
+      "response_time": 0.011255979537963867,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to wear a pashmina [title] Wrap your pashmina loosely around your neck. [step] Unfold your scarf so that all of the material is exposed. Then, wrap the scarf around your neck once.\n\nWhat happens next? Choose the most likely ending:\n\nA) [title] Unravel your pashmina. [step] Next, you'll need to unravel the ends of the scarf and use your hands to take apart your subconscious pashmina.\nB) [title] Place your right hand under your left chest and your left hand over your stomach. [step] If your right hand is still clasped after wrapping your pashmina, it should be cupped over your left shoulder, but not pushed up.\nC) The longer you wrap the scarf around your neck, the more cohesive it will be. Make sure that the scarf is snug enough that none of the remaining material will tear or rip.\nD) Tighten the loop around your neck, or leave it loose and hanging near your bust. You can choose to have the tails hanging in either the front or around your back.\n",
+      "ground_truth": "Tighten the loop around your neck, or leave it loose and hanging near your bust. You can choose to have the tails hanging in either the front or around your back.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.4985485035192369,
+      "response_time": 0.011371135711669922,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to wear a capelet [title] Throw a bright, bold capelet over a fitted t-shirt in a neutral color. [step] Match the look with a pair of dark-wash boot-cut jeans and a trendy heeled boot or pump. [title] Don a neutral capelet with a patterned tunic that reaches your mid-thigh.\n\nWhat happens next? Choose the most likely ending:\n\nA) [title] Accessorize with a brightly colored skirt. [title] Accessorize with a colorful belt-a bright white or purple belt is trendy.\nB) [step] Wear a pair of black leggings or skinny jeans, and add a high-heeled boot. [title] Wear a casual knee-length skirt and a fitted short-sleeve or sleeveless blouse.\nC) [step] Add an interesting brooch or chunky necklace to give the capelet a preppy appearance. [title] Hit the store or target to browse a selection of capelet pieces.\nD) [step] The combination of urban accents and colorful cuffs creates a classic summery vibe. [title] Opt for a pair of 13-inch heels or higher.\n",
+      "ground_truth": "[step] Wear a pair of black leggings or skinny jeans, and add a high-heeled boot. [title] Wear a casual knee-length skirt and a fitted short-sleeve or sleeveless blouse.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.5150342999408629,
+      "response_time": 0.010870933532714844,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to get bug bites to stop itching [title] Cool the bite with a cold compress. [step] The cold will reduce the swelling and numb the area a little bit. [substeps] If you don't have an ice pack ready and waiting for use in the freezer, you can quickly make one by wrapping ice cubes or a package of frozen peas in a towel.\n\nWhat happens next? Choose the most likely ending:\n\nA) Put one wrapped towel over the bite site. Cover the area with a thin layer of ice for a couple minutes, then remove the wrap and let the cool completely.\nB) Immediately apply ice to the affected area for approximately five minutes at a time. Repeat this process every ten minutes until the area stops itching.\nC) Be careful not to hold the ice on your skin for too long. Limit it to 15 to 20 minutes at a time.\nD) [title] Apply a thin layer of ice over the affected area. [step] The cold will help neutralize the insect bite after the fact.\n",
+      "ground_truth": "Be careful not to hold the ice on your skin for too long. Limit it to 15 to 20 minutes at a time.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.4989358543087489,
+      "response_time": 0.01140594482421875,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to make loom band patterns without the loom [title] Choose your colors. [step] The single chain pattern makes it easy to incorporate as many colors as you want. Decide whether you want the whole bracelet to be the same color or if you want to make a pattern with more than one.\n\nWhat happens next? Choose the most likely ending:\n\nA) Cross the image in back so the main details are shown. [substeps] Make sure that the pattern you choose matches the colors on the loom.\nB) You could alternate colors or incorporate every color of the rainbow. [substeps] You might want to count your rainbow bands to make sure you have enough of the colors you want.\nC) This rule won't work for all bracelets, so choose as many colors as you want to use it. [substeps] Colors on the loom color wheel help facilitate the development of amazing patterns and holding up as many colors as possible becomes easier! The bands in this project show up to display on the necklace.\nD) Incorporate bands of the same color together with colors that are consistent. [substeps] Shades of yellow, orange, and gold work best.\n",
+      "ground_truth": "You could alternate colors or incorporate every color of the rainbow. [substeps] You might want to count your rainbow bands to make sure you have enough of the colors you want.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.5020986459299737,
+      "response_time": 0.011517047882080078,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to reduce your sentence for misdemeanors [title] Hire a lawyer. [step] With any criminal matter, whether a felony or a misdemeanor, consulting with a lawyer is a good idea. A lawyer will help you minimize your sentence by negotiating with the prosecution and making valid legal arguments to the court.\n\nWhat happens next? Choose the most likely ending:\n\nA) [substeps] You can also seek help in other immediate situations. Depending on the nature of the crime, you may want to hire a lawyer based on the crime.\nB) [substeps] The easiest way to hire a lawyer is to hire a low-cost investment banker who is adept at representing teenage children and up-to-date on the latest trends. A good investment banker will have powerful experience in contract law, tax law, criminal defense practices, and civil procedure.\nC) A good lawyer may even be able to get the charges against you dropped or reduced before the case ever goes to trial. [substeps] If you cannot afford to hire a lawyer, you can ask to have one appointed to you.\nD) Lawyers will do background checks on you, which will keep you from being prosecuted for an assault or you from being prosecuted for misdemeanors you didn't commit. [title] Use depositions, where you are in court.\n",
+      "ground_truth": "A good lawyer may even be able to get the charges against you dropped or reduced before the case ever goes to trial. [substeps] If you cannot afford to hire a lawyer, you can ask to have one appointed to you.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.5142909781770632,
+      "response_time": 0.011183977127075195,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to set boundaries for your kids [title] Set clear rules and boundaries. [step] Make sure your kids know what the rules and boundaries are and that you will enforce rules you set. [substeps] Start giving kids rules at a young age.\n\nWhat happens next? Choose the most likely ending:\n\nA) Start with the rule of \" no alcohol \" and \" no playing video games. \" when you enforce these rules you are more likely to be caught off guard with the consequences and avoid seeing consequences.\nB) Let your kids make their own expectations about boundaries, and make sure that they follow through on them! Continue to have a conversation about boundaries and community goals. Request permissible explanations when your kids are bothering their parents and make sure they understand your expectations.\nC) This could include going to different movies and going out on dates. Ask your kids about what rules can be violated.\nD) Have a clear bedtime that is non-negotiable when they are young. Once they can understand rules, make it clear that your rules must be obeyed.\n",
+      "ground_truth": "Have a clear bedtime that is non-negotiable when they are young. Once they can understand rules, make it clear that your rules must be obeyed.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.5182125132099128,
+      "response_time": 0.010803937911987305,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to play left field in baseball [title] Get the gear. [step] A left fielder will need an outfielder's glove. The typical outfielder's glove is long with deep pockets.\n\nWhat happens next? Choose the most likely ending:\n\nA) The outfielder's glove can contain snaps, yarn, balls, or whatever, depending on the rules of your playing. You should wear no more than three fingers when you're playing left field.\nB) This helps with reaching fly balls on the run. Most are labeled appropriately and are available in a variety of styles and in a wide range of prices.\nC) The infielder uses two pieces of aluminum with pockets. In general, players must have infielders' gloves that fit snugly, but do not pinch.\nD) While it usually feels unclean, it doesn't seem dirty or foul-smelling. If it doesn't feel dirty you can always use a different one.\n",
+      "ground_truth": "This helps with reaching fly balls on the run. Most are labeled appropriately and are available in a variety of styles and in a wide range of prices.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.5183559238033314,
+      "response_time": 0.011597156524658203,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    }
+  ]
+}

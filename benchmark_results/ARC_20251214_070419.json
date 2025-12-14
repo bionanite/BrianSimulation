@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "ARC",
+    "total_questions": 10,
+    "correct_answers": 7,
+    "accuracy": 0.7,
+    "average_confidence": 0.47872371313187845,
+    "average_response_time": 0.018568944931030274,
+    "total_time": 0.18729305267333984,
+    "per_category_accuracy": {
+      "unknown": 0.7
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T07:04:19.285948"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Ancient Greeks hypothesized that a hair from a horse's tail left in water would turn into a worm. What scientific process most likely would have disproved this hypothesis?\n\nA) forming a theory\nB) designing a model\nC) analyzing data\nD) comparing to a control\n",
+      "ground_truth": "comparing to a control",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.47842043483592306,
+      "response_time": 0.05154085159301758,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Which two senses would BEST help a person measure hair length?\n\nA) Taste and smell\nB) Touch and sight\nC) Sight and hearing\nD) Smell and hearing\n",
+      "ground_truth": "Touch and sight",
+      "prediction": "D",
+      "is_correct": true,
+      "confidence": 0.4668014708531928,
+      "response_time": 0.02307295799255371,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Scientists often change conclusions when new information becomes available. Which statement was changed because new information became available?\n\nA) The Moon is in outer space.\nB) Plants make their own food.\nC) The Sun revolves around Earth.\nD) Paper products come from wood.\n",
+      "ground_truth": "The Sun revolves around Earth.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.4889011606826233,
+      "response_time": 0.017040252685546875,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: The science classes for the middle school are performing a project in which they are recycling paper and plastic bags. What is one major difference between paper and plastic?\n\nA) Paper comes from a renewable resource.\nB) Plastic comes from a renewable resource.\nC) Plastic cannot be reused.\nD) Paper cannot be reused.\n",
+      "ground_truth": "Paper comes from a renewable resource.",
+      "prediction": "B",
+      "is_correct": true,
+      "confidence": 0.4898359204595121,
+      "response_time": 0.015547990798950195,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Removing the coal from Earth's crust can change the structure of the crust, release methane gas, and contaminate groundwater with heavy metals. Which of Earth's subsystems is most likely to be affected by all these consequences?\n\nA) atmosphere\nB) biosphere\nC) hydrosphere\nD) lithosphere\n",
+      "ground_truth": "biosphere",
+      "prediction": "A",
+      "is_correct": false,
+      "confidence": 0.49903342775953274,
+      "response_time": 0.013764142990112305,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Which statement is an example of how humans have changed the natural environment?\n\nA) Wind and rain destroy wheat plants.\nB) The Sun's energy helps a wheat plant grow.\nC) A forest is cleared to make space to plant wheat.\nD) A wheat plant's seeds are scattered by the wind.\n",
+      "ground_truth": "A forest is cleared to make space to plant wheat.",
+      "prediction": "D",
+      "is_correct": true,
+      "confidence": 0.4700421959767008,
+      "response_time": 0.013770818710327148,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Each student in Ms. Jordan's science class was given a beaker containing several substances that had been stirred thoroughly. Maxwell must classify the contents of his beaker as either a compound or a mixture. Which of the following would indicate that the beaker contains a mixture?\n\nA) The original substances had different densities.\nB) The contents of the beaker reacted to form a new substance.\nC) The original substances had a greater mass than the contents of the beaker.\nD) The contents of the beaker can be easily separated into the original substances.\n",
+      "ground_truth": "The contents of the beaker can be easily separated into the original substances.",
+      "prediction": "D",
+      "is_correct": true,
+      "confidence": 0.4867609053759445,
+      "response_time": 0.013795137405395508,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: An airplane takes off from Boston for the 980 km trip to Detroit. The plane lands two hours later. Which of the following best describes the average speed and direction of the airplane's flight?\n\nA) 325 km/h W\nB) 490 km/h W\nC) 980 km/h W\nD) 1960 km/h W\n",
+      "ground_truth": "490 km/h W",
+      "prediction": "D",
+      "is_correct": false,
+      "confidence": 0.44280852574150825,
+      "response_time": 0.012700796127319336,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Marshall researched some of the changes on Earth that happen over a long time. Which event most likely causes the slowest change to the surface of Earth?\n\nA) earthquake\nB) landslide\nC) volcano\nD) wind\n",
+      "ground_truth": "wind",
+      "prediction": "A",
+      "is_correct": false,
+      "confidence": 0.48841441626873583,
+      "response_time": 0.01231527328491211,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Sandbars form in many rivers because of\n\nA) erosion of cliffs.\nB) water flowing into a lake.\nC) dams being built by beavers.\nD) sediment being moved downstream by water.\n",
+      "ground_truth": "sediment being moved downstream by water.",
+      "prediction": "D",
+      "is_correct": true,
+      "confidence": 0.4762186733651113,
+      "response_time": 0.012141227722167969,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    }
+  ]
+}

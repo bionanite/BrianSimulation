@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "ARC",
+    "total_questions": 10,
+    "correct_answers": 5,
+    "accuracy": 0.5,
+    "average_confidence": 0.47377666749840686,
+    "average_response_time": 0.011162519454956055,
+    "total_time": 0.11236906051635742,
+    "per_category_accuracy": {
+      "unknown": 0.5
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T07:03:42.763619"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Sugars are necessary for human cell function. Which of the following are human cells not capable of doing?\n\nA) attaching sugars to protein molecules\nB) building larger molecules from sugars\nC) creating simple sugars from smaller molecules\nD) breaking down complex carbohydrates into simple sugars\n",
+      "ground_truth": "creating simple sugars from smaller molecules",
+      "prediction": "D",
+      "is_correct": false,
+      "confidence": 0.49043316050009245,
+      "response_time": 0.01606297492980957,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: When a dog sees a cat, a message travels from the dog's eyes to the dog's\n\nA) brain\nB) nose\nC) paws\nD) muscles\n",
+      "ground_truth": "brain",
+      "prediction": "B",
+      "is_correct": true,
+      "confidence": 0.4561364672879953,
+      "response_time": 0.011725664138793945,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: A DNA strand contains codons, which consist of a sequence of three nucleotides. Which best describes the importance of codons found in the sequence of DNA?\n\nA) They contain the code for messenger RNA.\nB) They signal the start of mitotic cell division.\nC) They ensure proper replication of the genetic code.\nD) They are used to assemble amino acids for protein synthesis.\n",
+      "ground_truth": "They are used to assemble amino acids for protein synthesis.",
+      "prediction": "D",
+      "is_correct": true,
+      "confidence": 0.47901956210110885,
+      "response_time": 0.010538578033447266,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: The Miami Blue butterfly is an endangered species in South Florida. Which factor has most likely caused the population decline of this butterfly?\n\nA) increase in the number of parks\nB) decline in the amount of seawater\nC) increase in number of homes built\nD) decline in the amount of predators\n",
+      "ground_truth": "increase in number of homes built",
+      "prediction": "D",
+      "is_correct": false,
+      "confidence": 0.4783793628632821,
+      "response_time": 0.010261058807373047,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Desalination removes salt from water. Removing salt from water can be risky because the process is expensive and slow. Sometimes the technology does not work. A beach community's surface and ground water was decreasing. The community decided to construct a large-scale plant to remove salt from the bay water. The plan to construct a salt-removing plant was accepted because the community\n\nA) needed increased resources.\nB) had access to advanced technology.\nC) had unlimited financial resources.\nD) needed to ease social pressures.\n",
+      "ground_truth": "needed increased resources.",
+      "prediction": "D",
+      "is_correct": true,
+      "confidence": 0.48332756397125665,
+      "response_time": 0.01026010513305664,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Which statement best describes all types of energy transfers?\n\nA) They can be measured.\nB) They are 100% efficient.\nC) They decrease at a constant rate.\nD) They result in decreases in usable energy.\n",
+      "ground_truth": "They result in decreases in usable energy.",
+      "prediction": "D",
+      "is_correct": true,
+      "confidence": 0.48313433000554085,
+      "response_time": 0.010258197784423828,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Some paper mills use machines that make paper without any wood called \"wood-free\" paper. These machines make paper from materials such as cotton and rice waste. Which problem does using wood-free paper affect most?\n\nA) increased use of fossil fuels\nB) decrease in water supply\nC) loss of animal habitats\nD) pollution of air\n",
+      "ground_truth": "loss of animal habitats",
+      "prediction": "B",
+      "is_correct": true,
+      "confidence": 0.4730292211326542,
+      "response_time": 0.01069188117980957,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Some non-native plants can adapt to their environments more quickly than some native plants or crops can. Which adaptation would most likely decrease a plant's ability to survive?\n\nA) having a large number of seeds\nB) having a resistance to herbicides\nC) having roots that develop rapidly\nD) having leaves that form at a slow rate\n",
+      "ground_truth": "having leaves that form at a slow rate",
+      "prediction": "D",
+      "is_correct": false,
+      "confidence": 0.47175289423897937,
+      "response_time": 0.010632038116455078,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: When an electric current is passed through water (H_{2}O) using a specific apparatus, hydrogen (H_{2}) and oxygen (O_{2}) gases form. How can this reaction be shown in a chemical equation?\n\nA) H_{2}O -> H + O + H\nB) 2H_{2}O(l) -> 2H_{2}(g) + O_{2}(g)\nC) H:O:H -> H_{2}O\nD) H_{2}O(l) -> 2H(g) + O(g)\n",
+      "ground_truth": "2H_{2}O(l) -> 2H_{2}(g) + O_{2}(g)",
+      "prediction": "B",
+      "is_correct": false,
+      "confidence": 0.4417691910298103,
+      "response_time": 0.010803937911987305,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Which stage occurs in both the life cycle of a tree and in the life cycle of a frog?\n\nA) growth\nB) dormancy\nC) hibernation\nD) metamorphosis\n",
+      "ground_truth": "growth",
+      "prediction": "C",
+      "is_correct": false,
+      "confidence": 0.4807849218533483,
+      "response_time": 0.010390758514404297,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    }
+  ]
+}

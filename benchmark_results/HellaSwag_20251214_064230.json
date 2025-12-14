@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "HellaSwag",
+    "total_questions": 10,
+    "correct_answers": 0,
+    "accuracy": 0.0,
+    "average_confidence": 0.45696178575130303,
+    "average_response_time": 0.01169888973236084,
+    "total_time": 0.11865115165710449,
+    "per_category_accuracy": {
+      "unknown": 0.0
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T06:42:30.052398"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to discuss safe sex on a first date [title] Test the waters. [step] You may not be sure if you (or your date) want to have sex on the first date. Some people avoid having sex, or even talking about sex, until they've gotten to know the other person better.\n\nWhat happens next? Choose the most likely ending:\n\nA) Although it is scary and may scare others, it is absolutely okay. It's never ok to talk about sex on a first date or if you feel the pressure to discuss a topic.\nB) Before you actually get ready to have sex, try reading a book or magazine about oral contraceptives and make sure you follow their directions. [substeps] To be safe at first date, you should read book or magazine reviews for safe sex.\nC) If you are both having a good time, the idea of sex may feel right for both of you. Look for signs that your date is interested.\nD) For example, if you're hanging out with a group of friends and your date says they don't mind or want to have sex on a first date, then be sure to hold off until that date. [title] Discuss the benefits of having a new partner.\n",
+      "ground_truth": "If you are both having a good time, the idea of sex may feel right for both of you. Look for signs that your date is interested.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.44522631987619243,
+      "response_time": 0.013230085372924805,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to fix a leaky basement [title] Inspect and identify source of leak (i.e. [step] Crack in the wall, leaking window, etc. ) look carefully at organic surfaces such as wood, drywall, and carpets in a finished basement. [title] Dig down 6 feet (1.8 m) to the foundation all around outside of the house.\n\nWhat happens next? Choose the most likely ending:\n\nA) [step] Even if there aren't any leaks, the area will likely be filled with dirt and rotted manure to make it look less attractive to the landowner. The more information you can provide, the more effective this project will be.\nB) The width of the trench should be enough for doing some other steps on the bottom. [step] You need enough space for patching the foundation and installing draining pipe.\nC) [step] Wash up area thoroughly first, and it will take care of the matter for your second attempt. Once you get to the foundation, gently ease the ladder behind the roots and gently move it outwards to check the floor level.\nD) [step] With no room for the depth of the crack, dig into the foundation even more. Then your door should have a hole roughly 24 inches (61 cm) deep.\n",
+      "ground_truth": "The width of the trench should be enough for doing some other steps on the bottom. [step] You need enough space for patching the foundation and installing draining pipe.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.45666066811736217,
+      "response_time": 0.011929988861083984,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: A graphic introduces the hand car wash video. the car\n\nWhat happens next? Choose the most likely ending:\n\nA) washes persons hands and wipes them with a blue cloth.\nB) is washed first gently with soap.\nC) washes game is displayed.\nD) washes and a man wearing a blue shirt speaks to the camera.\n",
+      "ground_truth": "is washed first gently with soap.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.47583625187847195,
+      "response_time": 0.011132240295410156,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to set up a food drive [title] Decide who you will be asking for donations. [step] Do you want to collect donations from your work or church? Or will you branch out to a general audience and advertise across your area? Making concrete decisions about this up front will help you stay organized as you go along. [substeps] If you're new to organizing food drives, stay small.\n\nWhat happens next? Choose the most likely ending:\n\nA) Don't invite more than three people to your vehicle. A fun idea to explore is writing a \" bumper sticker \" for your car of the kind of donations you hope to get.\nB) You will probably be able to tag along when other adults go to work. If you're new to making food drives, think about getting managers, employees, or even your own team to help (see step 10 below).\nC) Stick to your office, church, or civic organization and get a feel for the challenges of the process. Make note of what worked and didn't work for future food drives.\nD) First, make sure your target audience is small enough to get involved in the process. Next, don't take too much time deciding how many can donate.\n",
+      "ground_truth": "Stick to your office, church, or civic organization and get a feel for the challenges of the process. Make note of what worked and didn't work for future food drives.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.45136211146611355,
+      "response_time": 0.011426925659179688,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to sue for asbestos exposure [title] Search for attorneys near you. [step] You may end up having to file your lawsuit in a different state. However, start the process by finding an experienced attorney practicing where you live who specializes in asbestos lawsuits.\n\nWhat happens next? Choose the most likely ending:\n\nA) [substeps] You can find an experienced attorney by searching your state's bar association or contacting the national association of lawyers in your area. There typically will be a searchable directory of attorneys who practice in that area.\nB) [substeps] Search for attorneys who have reviewed the law and are familiar with it. Most juries, circuit attorneys, and general judges have dedicated attorney's offices in each state.\nC) [substeps] If you are still in contact with coworkers who also were exposed to asbestos, talking to them can be a good place to start. If any of them have successfully sued for asbestos exposure, they may be able to recommend the attorney they used.\nD) [substeps] Most attorneys advertise their practice on the internet. You might find attorneys who specialize in asbestos exposure lawsuits for free-even if you also look to their website or their law practice-and would be surprised at the number of popular attorneys.\n",
+      "ground_truth": "[substeps] If you are still in contact with coworkers who also were exposed to asbestos, talking to them can be a good place to start. If any of them have successfully sued for asbestos exposure, they may be able to recommend the attorney they used.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.4688271975502699,
+      "response_time": 0.012839794158935547,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to stay cool when you have ms [title] Invest in an air conditioner. [step] To beat the heat, invest in an air conditioner and set it up in your living space. You may get a cheaper, portable model that you can set up in a room as needed.\n\nWhat happens next? Choose the most likely ending:\n\nA) Mix up your house's existing air conditioner settings so that your fans remain constant. [substeps] Air fans should be laid down the same way as air conditioners, keeping them nice and warm in one room and cool in another.\nB) Or you may invest in a permanent air conditioner that cools your home. Weigh the costs against your ability to be comfortable in your home, especially if you live in a climate that often gets hot or warm.\nC) You may also save money to invest in a specialized exhaust fan. [substeps] Make sure the air vent in your home is open, with a fan blowing in from outside.\nD) [title] Be realistic about what your lifestyle will look like while you have ms. [step] It's tough to assess how you are going to live.\n",
+      "ground_truth": "Or you may invest in a permanent air conditioner that cools your home. Weigh the costs against your ability to be comfortable in your home, especially if you live in a climate that often gets hot or warm.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.4458902378336299,
+      "response_time": 0.011278152465820312,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: A man is inside a shop building. He is playing a violin, and another man is playing a guitar. they\n\nWhat happens next? Choose the most likely ending:\n\nA) talk as they play, speaking about ingredients you wind up using.\nB) walk offscreen as they play, and we see rows of empty seats.\nC) are standing on a bridge, their feet attached, as the other man hits a kind of drum beat on the ground.\nD) take the stencil off and show off the shoes they have on.\n",
+      "ground_truth": "walk offscreen as they play, and we see rows of empty seats.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.45790896510904905,
+      "response_time": 0.010513067245483398,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to do business in qatar [title] Visit at the right time of year. [step] If one plans on visiting qatar strictly for business purpose; the most favorable time for visit would be between the months of october to june. Usually the officers from private and public sectors go for vacation during the time frame between july and september.\n\nWhat happens next? Choose the most likely ending:\n\nA) Regular business time is usually from august to june. [title] Take business away from the capital in qatar.\nB) Besides being possible, just because some of the members of the military routinely attend training has a large impact on your ability to effectively decide who to serve in a military situation. [substeps] By participating in a business can help you get become politically active.\nC) Avoid visiting the cells within july during business hours. [substeps] If you are planning to visit qatar by car, train, bus, or ferry, arrive between july and september.\nD) However one should avoid going to qatar for business trips during the fasting month of ramadan as this is the time when the businessmen of qatar give more priority to family and worship. [title] Be aware of closure dates and working hours.\n",
+      "ground_truth": "However one should avoid going to qatar for business trips during the fasting month of ramadan as this is the time when the businessmen of qatar give more priority to family and worship. [title] Be aware of closure dates and working hours.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.46802871170055005,
+      "response_time": 0.012017965316772461,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to choose a perfume [title] Decide on a price point. [step] Perfume is a luxury item and its cost can vary hugely between products. Some perfumes are under 20 dollars while others cost hundreds or even thousands of dollars.\n\nWhat happens next? Choose the most likely ending:\n\nA) It is best to stick with one brand and limit your choices in a variety of different brands or styles. [substeps] The typical sized perfume pair is $5, but you can buy larger, less ornate ones as well.\nB) Before you go shopping, decide how much money you want to spend on a perfume. [substeps] If the perfume is a gift, consider both your personal finances and your relationship with the recipient of the gift.\nC) Before making a decision, make sure you are sure that your choice of an item would actually cost you hundreds or thousands of dollars. [substeps] You can measure the quality of the bottle or your fragrance.\nD) Keep this in mind when deciding where to shop for great smelling perfumes. [substeps] Many perfume stores and online retailers offer personalized packages or deals for fragrances.\n",
+      "ground_truth": "Before you go shopping, decide how much money you want to spend on a perfume. [substeps] If the perfume is a gift, consider both your personal finances and your relationship with the recipient of the gift.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.4579845720236888,
+      "response_time": 0.012069940567016602,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: A kid takes a drink and swishes it around in their mouth. They spit it out into a sink. They take another drink out of a cup. they\n\nWhat happens next? Choose the most likely ending:\n\nA) bend down and clean large puddles from the floor.\nB) put their mouth on a towel.\nC) sleep together in their bedroom.\nD) start to talk on the table.\n",
+      "ground_truth": "put their mouth on a towel.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.44189282195770296,
+      "response_time": 0.010550737380981445,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    }
+  ]
+}

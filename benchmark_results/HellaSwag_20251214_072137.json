@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "HellaSwag",
+    "total_questions": 10,
+    "correct_answers": 10,
+    "accuracy": 1.0,
+    "average_confidence": 0.29999999999999993,
+    "average_response_time": 0.02557835578918457,
+    "total_time": 0.25796008110046387,
+    "per_category_accuracy": {
+      "unknown": 1.0
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T07:21:37.304643"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to catch a common house lizard and keep it as a pet [title] Get a glass aquarium and add a screen top. [step] A 20-gallon tank (24 \" l x 12 \" w x 12 \" d) is recommended. Make sure you seal any openings where your lizard could escape from.\n\nWhat happens next? Choose the most likely ending:\n\nA) [title] Use a uvb light or a heating pad set on low to warm your pet's new home to the appropriate temperatures. [step] Lizards are cold-blooded creatures that rely on outside warmth to function.\nB) Do not hang a screen over an aquarium door that your lizard could knock over. [title] Set up a cage or changing table on the floor.\nC) Stay aware that it will not be safe to do this. [title] Prevent shedding since lizard skin is so slippery and gross.\nD) Don't use a cage that is more than 1 \u00bc \" x 13 \". If there is anything under the lid that it could slip out of, place a plastic bag over it.\n",
+      "ground_truth": "[title] Use a uvb light or a heating pad set on low to warm your pet's new home to the appropriate temperatures. [step] Lizards are cold-blooded creatures that rely on outside warmth to function.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.014517068862915039,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to groom lories and lorikeets [title] Put a shallow bird bath in its cage. [step] Lorries and lorikeets love to take baths on their own, often once or twice a day. Encourage your bird to bathe itself by placing a small shallow bowl of water in its cage.\n\nWhat happens next? Choose the most likely ending:\n\nA) Allow the bird to bathe around its bodies, but do not bathe its entire head at once. [title] Bathe the lorikeets once a day or whenever the temperature is at 106 \u00b0 f (35 \u00b0 c).\nB) If it is not bathing itself, you can use a comb to groom its feathers. [title] Follow your pet when you're bathing it.\nC) Make sure the bowl is no deeper than a few inches. Fill it with fresh, lukewarm water.\nD) The bowl should be small enough to support the bird's body. Use a soft cotton or sponge to gently rub the bird's bottom.\n",
+      "ground_truth": "Make sure the bowl is no deeper than a few inches. Fill it with fresh, lukewarm water.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.02000713348388672,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: The woman stands still for a short while in her blue/white outfit. Then she lifts the heavy yellow weight and someone who's watching her shows peremptory by yelling. she\n\nWhat happens next? Choose the most likely ending:\n\nA) picks it back up and lifts it again, guzzling the last of the shiraz.\nB) drops the weight and the face of female trainer starts into the screen.\nC) holds it up for a good second and then drops it back down to the ground.\nD) slowly lifts the weight up she long the overweight weight over her head, then drops the weight to the ground.\n",
+      "ground_truth": "holds it up for a good second and then drops it back down to the ground.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.018149137496948242,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: Several shots are shown of people wandering on a beach that lead into clips of a soccer match and people celebrating. more people\n\nWhat happens next? Choose the most likely ending:\n\nA) are seen trying to play the game on the beach as well as running into others while the move forwards and backward and stop to speak to one another.\nB) are seen dancing around as well as playing soccer and gesturing to the camera.\nC) are shown doing various sports on a beach while taking photos and celebrating with others.\nD) are seen playing soccer while hiding in a tent and later on being interviewed.\n",
+      "ground_truth": "are seen dancing around as well as playing soccer and gesturing to the camera.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.016601085662841797,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to pressure flip [title] Have the right gear. [step] Ideally you should have a shortboard skateboard, although experts can do pressure flips on old school and cruiser boards. You won't be able to pull one off on a longboard.\n\nWhat happens next? Choose the most likely ending:\n\nA) [title] Open up the throttle and start turning. [step] Throttle pulley lifts gear about 4 to 6 degrees from you (this is recommended).\nB) [substeps] Make sure you have a good amount of space to safely maneuver your board before you start to flip. Place the wrong gear on your flat side of the skateboard while your board's nose is facing upwards.\nC) Skate shoes aren't necessary for skating, but may be more comfortable and will last longer if you skate a lot. If you don't have skate shoes, wear something you won't mind damaging.\nD) A good rule of thumb is to have some extra gear in case you get lost on your own during a spin. Your back is most vulnerable at this point in the trick.\n",
+      "ground_truth": "Skate shoes aren't necessary for skating, but may be more comfortable and will last longer if you skate a lot. If you don't have skate shoes, wear something you won't mind damaging.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.038684844970703125,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: The race begins and people run very fast. Several people get interviewed during the race. the man who wins the race\n\nWhat happens next? Choose the most likely ending:\n\nA) comes across the finish line.\nB) begins to cheer him on while the viewers smile.\nC) stands up and nods before being interviewed again.\nD) appears at the gate, then he is held up by his opponents.\n",
+      "ground_truth": "comes across the finish line.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.027152061462402344,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to make molasses dinner rolls [title] Combine the yeast and water. [step] In the bowl of an electric stand mixer, combine 4 teaspoons of active dry yeast with 1 cup of warm water. Let the yeast and warm water rest for approximately 10 minutes.\n\nWhat happens next? Choose the most likely ending:\n\nA) [substeps] The yeast and water should appear foamy after ten minutes; if it doesn't, the yeast is dead and you will need to start over with fresh yeast. [title] Add everything but the whole wheat flour.\nB) [substeps] The active dry yeast has a light, chewy consistency. If you want a more of a smooth dough, you could add more active dry yeast.\nC) [substeps] Many people prefer warm alternatives to less-active alternatives, such as coconut or peanut butter, which make their baked goods more flavorful. [title] Combine the flour, yeast, and sugar.\nD) [substeps] You do not need to keep the mixer running during this time. As long as the beaters and the mixer are equipped, the active dry yeast should reach the recipe's adequate volume.\n",
+      "ground_truth": "[substeps] The yeast and water should appear foamy after ten minutes; if it doesn't, the yeast is dead and you will need to start over with fresh yeast. [title] Add everything but the whole wheat flour.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.02588176727294922,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to paint a row of frisky bunnies in watercolor [title] Prepare your paper. [step] Cut a piece of 140 lb. Watercolor paper to approximately 9 \" x 12.\n\nWhat happens next? Choose the most likely ending:\n\nA) \" hold it in either orientation and with an ordinary pencil, draw a line two-thirds of the way to the top. Make it curvy to represent hills or rises in the earth.\nB) Double and double cut two 9 \" x 12 \" squares. You will likely need to use two to three square pieces.\nC) Give it 5 to 7 days to dry completely. Then, lay the paper on a plate or table so that you won't spatter the paint on the area.\nD) [substeps] Do not use regular kitchen paper unless you are painting the legs of a flower. Inspect your washable paper to make sure it is all in place and the bars are not damaged.\n",
+      "ground_truth": "\" hold it in either orientation and with an ordinary pencil, draw a line two-thirds of the way to the top. Make it curvy to represent hills or rises in the earth.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.03940105438232422,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: The girl stops pulling the fiddle across the strings and walks closer to the camera to talk, and then resumes moving the fiddle across the strings. the girl\n\nWhat happens next? Choose the most likely ending:\n\nA) starts playing again and we see the boat sail past.\nB) stops and looks back and grabs the mallet and start to continue playing while using a finger to perform.\nC) then backs up, and turns to show her left side as she moves the fiddle across the violin strings, and then she moves to face forward again and walks closer to the camera and plays some more.\nD) uses a third string and continues to speak up the bellybutton and shaking her hips from side to side as she plays and the audience is enjoying her performance.\n",
+      "ground_truth": "then backs up, and turns to show her left side as she moves the fiddle across the violin strings, and then she moves to face forward again and walks closer to the camera and plays some more.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.019054174423217773,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: A girls stands with a violin in hand. The girl begins playing the violin. the girl\n\nWhat happens next? Choose the most likely ending:\n\nA) positions her violin and points it towards the bow and takes a practice swing.\nB) stops and falls back down on the ground.\nC) then smiles at the camera while still playing the violin.\nD) disregards her violin and continues to play the violin.\n",
+      "ground_truth": "then smiles at the camera while still playing the violin.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.03633522987365723,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    }
+  ]
+}

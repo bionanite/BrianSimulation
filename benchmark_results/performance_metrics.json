@@ -1,0 +1,3548 @@
+{
+  "metrics": [
+    {
+      "timestamp": "2025-12-14T06:22:26.655072",
+      "benchmark_name": "MMLU",
+      "accuracy": 0.0,
+      "average_confidence": 0.47940949265808064,
+      "average_response_time": 0.012333345413208009,
+      "total_questions": 10,
+      "correct_answers": 0,
+      "per_category_accuracy": {
+        "high_school_biology": 0.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T06:22:26.655072"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T06:23:24.826270",
+      "benchmark_name": "MMLU",
+      "accuracy": 0.0,
+      "average_confidence": 0.47561802249614804,
+      "average_response_time": 0.012141203880310059,
+      "total_questions": 10,
+      "correct_answers": 0,
+      "per_category_accuracy": {
+        "high_school_biology": 0.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T06:23:24.826270"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T06:23:47.795912",
+      "benchmark_name": "GSM8K",
+      "accuracy": 0.0,
+      "average_confidence": 0.4399140319922461,
+      "average_response_time": 0.011853432655334473,
+      "total_questions": 10,
+      "correct_answers": 0,
+      "per_category_accuracy": {
+        "unknown": 0.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T06:23:47.795912"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T06:23:55.409351",
+      "benchmark_name": "ARC",
+      "accuracy": 0.0,
+      "average_confidence": 0.4759518327786198,
+      "average_response_time": 0.011826229095458985,
+      "total_questions": 10,
+      "correct_answers": 0,
+      "per_category_accuracy": {
+        "unknown": 0.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T06:23:55.409351"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T06:23:55.535556",
+      "benchmark_name": "HumanEval",
+      "accuracy": 0.0,
+      "average_confidence": 0.41318858211302206,
+      "average_response_time": 0.011383056640625,
+      "total_questions": 1,
+      "correct_answers": 0,
+      "per_category_accuracy": {
+        "unknown": 0.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T06:23:55.535556"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T06:24:25.950996",
+      "benchmark_name": "MMLU",
+      "accuracy": 0.0,
+      "average_confidence": 0.46289750695411236,
+      "average_response_time": 0.011825013160705566,
+      "total_questions": 20,
+      "correct_answers": 0,
+      "per_category_accuracy": {
+        "high_school_biology": 0.0,
+        "high_school_chemistry": 0.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T06:24:25.950996"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T06:24:34.029357",
+      "benchmark_name": "GSM8K",
+      "accuracy": 0.0,
+      "average_confidence": 0.438280516958134,
+      "average_response_time": 0.011521506309509277,
+      "total_questions": 20,
+      "correct_answers": 0,
+      "per_category_accuracy": {
+        "unknown": 0.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T06:24:34.029357"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T06:24:36.412265",
+      "benchmark_name": "ARC",
+      "accuracy": 0.0,
+      "average_confidence": 0.4801602142257776,
+      "average_response_time": 0.011695051193237304,
+      "total_questions": 20,
+      "correct_answers": 0,
+      "per_category_accuracy": {
+        "unknown": 0.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T06:24:36.412265"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T06:24:36.545596",
+      "benchmark_name": "HumanEval",
+      "accuracy": 0.0,
+      "average_confidence": 0.4165165896565134,
+      "average_response_time": 0.011570930480957031,
+      "total_questions": 1,
+      "correct_answers": 0,
+      "per_category_accuracy": {
+        "unknown": 0.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T06:24:36.545596"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T06:38:37.895722",
+      "benchmark_name": "HellaSwag",
+      "accuracy": 0.0,
+      "average_confidence": 0.4502562236533588,
+      "average_response_time": 0.02115788459777832,
+      "total_questions": 10,
+      "correct_answers": 0,
+      "per_category_accuracy": {
+        "unknown": 0.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T06:38:37.895722"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T06:38:58.652689",
+      "benchmark_name": "MMLU",
+      "accuracy": 0.0,
+      "average_confidence": 0.49366191565977513,
+      "average_response_time": 0.011818647384643555,
+      "total_questions": 10,
+      "correct_answers": 0,
+      "per_category_accuracy": {
+        "high_school_biology": 0.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T06:38:58.652689"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T06:39:02.513913",
+      "benchmark_name": "HellaSwag",
+      "accuracy": 0.0,
+      "average_confidence": 0.4490891268176457,
+      "average_response_time": 0.016604161262512206,
+      "total_questions": 10,
+      "correct_answers": 0,
+      "per_category_accuracy": {
+        "unknown": 0.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T06:39:02.513913"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T06:39:06.028692",
+      "benchmark_name": "GSM8K",
+      "accuracy": 0.0,
+      "average_confidence": 0.43085818335828147,
+      "average_response_time": 0.01272895336151123,
+      "total_questions": 10,
+      "correct_answers": 0,
+      "per_category_accuracy": {
+        "unknown": 0.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T06:39:06.028692"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T06:39:08.335284",
+      "benchmark_name": "ARC",
+      "accuracy": 0.0,
+      "average_confidence": 0.47178889145469405,
+      "average_response_time": 0.011969900131225586,
+      "total_questions": 10,
+      "correct_answers": 0,
+      "per_category_accuracy": {
+        "unknown": 0.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T06:39:08.335284"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T06:39:08.575319",
+      "benchmark_name": "HumanEval",
+      "accuracy": 0.0,
+      "average_confidence": 0.41439341701382326,
+      "average_response_time": 0.01928424835205078,
+      "total_questions": 1,
+      "correct_answers": 0,
+      "per_category_accuracy": {
+        "unknown": 0.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T06:39:08.575319"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T06:42:05.799765",
+      "benchmark_name": "HellaSwag",
+      "accuracy": 0.0,
+      "average_confidence": 0.4598602021851776,
+      "average_response_time": 0.01210479736328125,
+      "total_questions": 10,
+      "correct_answers": 0,
+      "per_category_accuracy": {
+        "unknown": 0.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T06:42:05.799765"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T06:42:26.206974",
+      "benchmark_name": "MMLU",
+      "accuracy": 0.0,
+      "average_confidence": 0.4928061119067892,
+      "average_response_time": 0.017531323432922363,
+      "total_questions": 10,
+      "correct_answers": 0,
+      "per_category_accuracy": {
+        "high_school_biology": 0.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T06:42:26.206974"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T06:42:30.052398",
+      "benchmark_name": "HellaSwag",
+      "accuracy": 0.0,
+      "average_confidence": 0.45696178575130303,
+      "average_response_time": 0.01169888973236084,
+      "total_questions": 10,
+      "correct_answers": 0,
+      "per_category_accuracy": {
+        "unknown": 0.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T06:42:30.052398"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T06:42:33.683926",
+      "benchmark_name": "GSM8K",
+      "accuracy": 0.0,
+      "average_confidence": 0.4416112522364671,
+      "average_response_time": 0.010572409629821778,
+      "total_questions": 10,
+      "correct_answers": 0,
+      "per_category_accuracy": {
+        "unknown": 0.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T06:42:33.683926"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T06:42:36.337700",
+      "benchmark_name": "ARC",
+      "accuracy": 0.0,
+      "average_confidence": 0.47118033056153247,
+      "average_response_time": 0.01034848690032959,
+      "total_questions": 10,
+      "correct_answers": 0,
+      "per_category_accuracy": {
+        "unknown": 0.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T06:42:36.337700"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T06:42:36.563796",
+      "benchmark_name": "HumanEval",
+      "accuracy": 0.0,
+      "average_confidence": 0.41640726849699156,
+      "average_response_time": 0.014847040176391602,
+      "total_questions": 1,
+      "correct_answers": 0,
+      "per_category_accuracy": {
+        "unknown": 0.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T06:42:36.563796"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T06:44:23.068108",
+      "benchmark_name": "HellaSwag",
+      "accuracy": 0.0,
+      "average_confidence": 0.4520936857738458,
+      "average_response_time": 0.011422324180603027,
+      "total_questions": 10,
+      "correct_answers": 0,
+      "per_category_accuracy": {
+        "unknown": 0.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T06:44:23.068108"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T06:44:46.154956",
+      "benchmark_name": "MMLU",
+      "accuracy": 0.0,
+      "average_confidence": 0.48494402949380566,
+      "average_response_time": 0.010686135292053223,
+      "total_questions": 10,
+      "correct_answers": 0,
+      "per_category_accuracy": {
+        "high_school_biology": 0.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T06:44:46.154956"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T06:44:48.672562",
+      "benchmark_name": "HellaSwag",
+      "accuracy": 0.0,
+      "average_confidence": 0.4598731802688983,
+      "average_response_time": 0.011115121841430663,
+      "total_questions": 10,
+      "correct_answers": 0,
+      "per_category_accuracy": {
+        "unknown": 0.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T06:44:48.672562"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T06:44:52.500527",
+      "benchmark_name": "GSM8K",
+      "accuracy": 0.0,
+      "average_confidence": 0.43590527216079666,
+      "average_response_time": 0.011336350440979004,
+      "total_questions": 10,
+      "correct_answers": 0,
+      "per_category_accuracy": {
+        "unknown": 0.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T06:44:52.500527"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T06:44:55.523374",
+      "benchmark_name": "ARC",
+      "accuracy": 0.0,
+      "average_confidence": 0.4810359272335786,
+      "average_response_time": 0.009977078437805176,
+      "total_questions": 10,
+      "correct_answers": 0,
+      "per_category_accuracy": {
+        "unknown": 0.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T06:44:55.523374"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T06:44:55.761839",
+      "benchmark_name": "HumanEval",
+      "accuracy": 0.0,
+      "average_confidence": 0.4161234225617895,
+      "average_response_time": 0.017318248748779297,
+      "total_questions": 1,
+      "correct_answers": 0,
+      "per_category_accuracy": {
+        "unknown": 0.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T06:44:55.761839"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T06:46:43.830652",
+      "benchmark_name": "HellaSwag",
+      "accuracy": 0.0,
+      "average_confidence": 0.45292756950842367,
+      "average_response_time": 0.01073770523071289,
+      "total_questions": 10,
+      "correct_answers": 0,
+      "per_category_accuracy": {
+        "unknown": 0.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T06:46:43.830652"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T06:47:06.717620",
+      "benchmark_name": "MMLU",
+      "accuracy": 0.0,
+      "average_confidence": 0.48352735729778884,
+      "average_response_time": 0.011899924278259278,
+      "total_questions": 10,
+      "correct_answers": 0,
+      "per_category_accuracy": {
+        "high_school_biology": 0.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T06:47:06.717620"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T06:47:09.132944",
+      "benchmark_name": "HellaSwag",
+      "accuracy": 0.0,
+      "average_confidence": 0.4535512572936339,
+      "average_response_time": 0.017644500732421874,
+      "total_questions": 10,
+      "correct_answers": 0,
+      "per_category_accuracy": {
+        "unknown": 0.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T06:47:09.132944"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T06:47:13.386035",
+      "benchmark_name": "GSM8K",
+      "accuracy": 0.1,
+      "average_confidence": 0.43380484986727746,
+      "average_response_time": 0.03469541072845459,
+      "total_questions": 10,
+      "correct_answers": 1,
+      "per_category_accuracy": {
+        "unknown": 0.1
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T06:47:13.386035"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T06:47:15.779562",
+      "benchmark_name": "ARC",
+      "accuracy": 0.0,
+      "average_confidence": 0.46930161816112026,
+      "average_response_time": 0.012605237960815429,
+      "total_questions": 10,
+      "correct_answers": 0,
+      "per_category_accuracy": {
+        "unknown": 0.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T06:47:15.779562"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T06:47:16.015463",
+      "benchmark_name": "HumanEval",
+      "accuracy": 0.0,
+      "average_confidence": 0.4143416297412819,
+      "average_response_time": 0.011042118072509766,
+      "total_questions": 1,
+      "correct_answers": 0,
+      "per_category_accuracy": {
+        "unknown": 0.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T06:47:16.015463"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T06:47:53.500950",
+      "benchmark_name": "HellaSwag",
+      "accuracy": 0.0,
+      "average_confidence": 0.6037698197614401,
+      "average_response_time": 0.016797971725463868,
+      "total_questions": 10,
+      "correct_answers": 0,
+      "per_category_accuracy": {
+        "unknown": 0.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T06:47:53.500950"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T06:48:14.167327",
+      "benchmark_name": "MMLU",
+      "accuracy": 0.1,
+      "average_confidence": 0.6451849147649483,
+      "average_response_time": 0.02013368606567383,
+      "total_questions": 10,
+      "correct_answers": 1,
+      "per_category_accuracy": {
+        "high_school_biology": 0.1
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T06:48:14.167327"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T06:48:17.399226",
+      "benchmark_name": "HellaSwag",
+      "accuracy": 0.0,
+      "average_confidence": 0.6026462638918312,
+      "average_response_time": 0.012644577026367187,
+      "total_questions": 10,
+      "correct_answers": 0,
+      "per_category_accuracy": {
+        "unknown": 0.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T06:48:17.399226"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T06:48:21.160628",
+      "benchmark_name": "GSM8K",
+      "accuracy": 0.0,
+      "average_confidence": 0.5649487055179663,
+      "average_response_time": 0.01126413345336914,
+      "total_questions": 10,
+      "correct_answers": 0,
+      "per_category_accuracy": {
+        "unknown": 0.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T06:48:21.160628"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T06:48:24.050943",
+      "benchmark_name": "ARC",
+      "accuracy": 0.0,
+      "average_confidence": 0.6560894393011928,
+      "average_response_time": 0.01109774112701416,
+      "total_questions": 10,
+      "correct_answers": 0,
+      "per_category_accuracy": {
+        "unknown": 0.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T06:48:24.050943"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T06:48:24.286855",
+      "benchmark_name": "HumanEval",
+      "accuracy": 0.0,
+      "average_confidence": 0.5319104561507702,
+      "average_response_time": 0.01885986328125,
+      "total_questions": 1,
+      "correct_answers": 0,
+      "per_category_accuracy": {
+        "unknown": 0.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T06:48:24.286855"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T06:49:31.356405",
+      "benchmark_name": "HellaSwag",
+      "accuracy": 0.1,
+      "average_confidence": 0.6633170413121581,
+      "average_response_time": 0.012913894653320313,
+      "total_questions": 10,
+      "correct_answers": 1,
+      "per_category_accuracy": {
+        "unknown": 0.1
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T06:49:31.356405"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T06:49:52.603472",
+      "benchmark_name": "MMLU",
+      "accuracy": 0.0,
+      "average_confidence": 0.7618115294795482,
+      "average_response_time": 0.012604999542236327,
+      "total_questions": 10,
+      "correct_answers": 0,
+      "per_category_accuracy": {
+        "high_school_biology": 0.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T06:49:52.603472"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T06:49:55.201884",
+      "benchmark_name": "HellaSwag",
+      "accuracy": 0.1,
+      "average_confidence": 0.6744657628204674,
+      "average_response_time": 0.012233829498291016,
+      "total_questions": 10,
+      "correct_answers": 1,
+      "per_category_accuracy": {
+        "unknown": 0.1
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T06:49:55.201884"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T06:50:00.572850",
+      "benchmark_name": "GSM8K",
+      "accuracy": 0.0,
+      "average_confidence": 0.6204587146659382,
+      "average_response_time": 0.019428372383117676,
+      "total_questions": 10,
+      "correct_answers": 0,
+      "per_category_accuracy": {
+        "unknown": 0.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T06:50:00.572850"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T06:50:03.308948",
+      "benchmark_name": "ARC",
+      "accuracy": 0.0,
+      "average_confidence": 0.6817487422043458,
+      "average_response_time": 0.011335968971252441,
+      "total_questions": 10,
+      "correct_answers": 0,
+      "per_category_accuracy": {
+        "unknown": 0.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T06:50:03.308948"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T06:50:03.562727",
+      "benchmark_name": "HumanEval",
+      "accuracy": 0.0,
+      "average_confidence": 0.5853083524405956,
+      "average_response_time": 0.01232004165649414,
+      "total_questions": 1,
+      "correct_answers": 0,
+      "per_category_accuracy": {
+        "unknown": 0.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T06:50:03.562727"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T06:51:41.867341",
+      "benchmark_name": "HellaSwag",
+      "accuracy": 0.0,
+      "average_confidence": 0.4524501001533257,
+      "average_response_time": 0.011766314506530762,
+      "total_questions": 10,
+      "correct_answers": 0,
+      "per_category_accuracy": {
+        "unknown": 0.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T06:51:41.867341"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T06:52:05.252567",
+      "benchmark_name": "MMLU",
+      "accuracy": 0.0,
+      "average_confidence": 0.47697028939435393,
+      "average_response_time": 0.01087484359741211,
+      "total_questions": 10,
+      "correct_answers": 0,
+      "per_category_accuracy": {
+        "high_school_biology": 0.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T06:52:05.252567"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T06:52:07.703226",
+      "benchmark_name": "HellaSwag",
+      "accuracy": 0.0,
+      "average_confidence": 0.45315291656118395,
+      "average_response_time": 0.011065006256103516,
+      "total_questions": 10,
+      "correct_answers": 0,
+      "per_category_accuracy": {
+        "unknown": 0.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T06:52:07.703226"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T06:52:12.735373",
+      "benchmark_name": "GSM8K",
+      "accuracy": 0.0,
+      "average_confidence": 0.440466170762019,
+      "average_response_time": 0.010252547264099122,
+      "total_questions": 10,
+      "correct_answers": 0,
+      "per_category_accuracy": {
+        "unknown": 0.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T06:52:12.735373"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T06:52:16.048478",
+      "benchmark_name": "ARC",
+      "accuracy": 0.0,
+      "average_confidence": 0.4705841031815134,
+      "average_response_time": 0.01047530174255371,
+      "total_questions": 10,
+      "correct_answers": 0,
+      "per_category_accuracy": {
+        "unknown": 0.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T06:52:16.048478"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T06:52:16.281293",
+      "benchmark_name": "HumanEval",
+      "accuracy": 0.0,
+      "average_confidence": 0.41457145944824236,
+      "average_response_time": 0.009972095489501953,
+      "total_questions": 1,
+      "correct_answers": 0,
+      "per_category_accuracy": {
+        "unknown": 0.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T06:52:16.281293"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T06:52:56.408927",
+      "benchmark_name": "HellaSwag",
+      "accuracy": 0.0,
+      "average_confidence": 0.502433490891111,
+      "average_response_time": 0.011294746398925781,
+      "total_questions": 10,
+      "correct_answers": 0,
+      "per_category_accuracy": {
+        "unknown": 0.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T06:52:56.408927"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T06:53:18.959373",
+      "benchmark_name": "MMLU",
+      "accuracy": 0.0,
+      "average_confidence": 0.535666497427918,
+      "average_response_time": 0.0111375093460083,
+      "total_questions": 10,
+      "correct_answers": 0,
+      "per_category_accuracy": {
+        "high_school_biology": 0.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T06:53:18.959373"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T06:53:21.487556",
+      "benchmark_name": "HellaSwag",
+      "accuracy": 0.0,
+      "average_confidence": 0.5063968200776716,
+      "average_response_time": 0.01128232479095459,
+      "total_questions": 10,
+      "correct_answers": 0,
+      "per_category_accuracy": {
+        "unknown": 0.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T06:53:21.487556"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T06:53:25.309417",
+      "benchmark_name": "GSM8K",
+      "accuracy": 0.0,
+      "average_confidence": 0.477162328574965,
+      "average_response_time": 0.012705516815185548,
+      "total_questions": 10,
+      "correct_answers": 0,
+      "per_category_accuracy": {
+        "unknown": 0.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T06:53:25.309417"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T06:53:44.061157",
+      "benchmark_name": "ARC",
+      "accuracy": 0.0,
+      "average_confidence": 0.5090791817143757,
+      "average_response_time": 0.010474514961242676,
+      "total_questions": 10,
+      "correct_answers": 0,
+      "per_category_accuracy": {
+        "unknown": 0.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T06:53:44.061157"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T06:53:44.297368",
+      "benchmark_name": "HumanEval",
+      "accuracy": 0.0,
+      "average_confidence": 0.45421168615160845,
+      "average_response_time": 0.014732122421264648,
+      "total_questions": 1,
+      "correct_answers": 0,
+      "per_category_accuracy": {
+        "unknown": 0.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T06:53:44.297368"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T06:55:36.428503",
+      "benchmark_name": "HellaSwag",
+      "accuracy": 0.6,
+      "average_confidence": 0.4943842011190145,
+      "average_response_time": 0.011273431777954101,
+      "total_questions": 10,
+      "correct_answers": 6,
+      "per_category_accuracy": {
+        "unknown": 0.6
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T06:55:36.428503"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T06:56:06.287128",
+      "benchmark_name": "MMLU",
+      "accuracy": 0.7,
+      "average_confidence": 0.5365519580409683,
+      "average_response_time": 0.01084740161895752,
+      "total_questions": 10,
+      "correct_answers": 7,
+      "per_category_accuracy": {
+        "high_school_biology": 0.7
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T06:56:06.287128"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T06:56:09.526136",
+      "benchmark_name": "HellaSwag",
+      "accuracy": 1.0,
+      "average_confidence": 0.5022782014586057,
+      "average_response_time": 0.011318469047546386,
+      "total_questions": 10,
+      "correct_answers": 10,
+      "per_category_accuracy": {
+        "unknown": 1.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T06:56:09.526136"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T06:56:15.356561",
+      "benchmark_name": "GSM8K",
+      "accuracy": 0.0,
+      "average_confidence": 0.47379225888798004,
+      "average_response_time": 0.01036210060119629,
+      "total_questions": 10,
+      "correct_answers": 0,
+      "per_category_accuracy": {
+        "unknown": 0.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T06:56:15.356561"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T06:56:18.067826",
+      "benchmark_name": "ARC",
+      "accuracy": 0.5,
+      "average_confidence": 0.5210132824365532,
+      "average_response_time": 0.010753965377807618,
+      "total_questions": 10,
+      "correct_answers": 5,
+      "per_category_accuracy": {
+        "unknown": 0.5
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T06:56:18.067826"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T06:56:18.298858",
+      "benchmark_name": "HumanEval",
+      "accuracy": 0.0,
+      "average_confidence": 0.4517384301862698,
+      "average_response_time": 0.00960683822631836,
+      "total_questions": 1,
+      "correct_answers": 0,
+      "per_category_accuracy": {
+        "unknown": 0.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T06:56:18.298858"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T06:56:50.966136",
+      "benchmark_name": "HellaSwag",
+      "accuracy": 0.9,
+      "average_confidence": 0.6742399915456773,
+      "average_response_time": 0.020227980613708497,
+      "total_questions": 10,
+      "correct_answers": 9,
+      "per_category_accuracy": {
+        "unknown": 0.9
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T06:56:50.966136"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T06:57:11.809906",
+      "benchmark_name": "MMLU",
+      "accuracy": 0.6,
+      "average_confidence": 0.7375791257619858,
+      "average_response_time": 0.01224203109741211,
+      "total_questions": 10,
+      "correct_answers": 6,
+      "per_category_accuracy": {
+        "high_school_biology": 0.6
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T06:57:11.809906"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T06:57:14.300280",
+      "benchmark_name": "HellaSwag",
+      "accuracy": 1.0,
+      "average_confidence": 0.6797996694415808,
+      "average_response_time": 0.016939330101013183,
+      "total_questions": 10,
+      "correct_answers": 10,
+      "per_category_accuracy": {
+        "unknown": 1.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T06:57:14.300280"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T06:57:18.124699",
+      "benchmark_name": "GSM8K",
+      "accuracy": 0.0,
+      "average_confidence": 0.6255323002110235,
+      "average_response_time": 0.014751315116882324,
+      "total_questions": 10,
+      "correct_answers": 0,
+      "per_category_accuracy": {
+        "unknown": 0.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T06:57:18.124699"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T06:57:22.067540",
+      "benchmark_name": "ARC",
+      "accuracy": 0.7,
+      "average_confidence": 0.7208333082839847,
+      "average_response_time": 0.029459762573242187,
+      "total_questions": 10,
+      "correct_answers": 7,
+      "per_category_accuracy": {
+        "unknown": 0.7
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T06:57:22.067540"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T06:57:22.331691",
+      "benchmark_name": "HumanEval",
+      "accuracy": 0.0,
+      "average_confidence": 0.5880189785659313,
+      "average_response_time": 0.0421299934387207,
+      "total_questions": 1,
+      "correct_answers": 0,
+      "per_category_accuracy": {
+        "unknown": 0.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T06:57:22.331691"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T06:59:01.261020",
+      "benchmark_name": "HellaSwag",
+      "accuracy": 0.9,
+      "average_confidence": 0.6698254209479317,
+      "average_response_time": 0.013380837440490723,
+      "total_questions": 10,
+      "correct_answers": 9,
+      "per_category_accuracy": {
+        "unknown": 0.9
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T06:59:01.261020"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T06:59:25.409371",
+      "benchmark_name": "MMLU",
+      "accuracy": 0.6,
+      "average_confidence": 0.7463762136951089,
+      "average_response_time": 0.013409113883972168,
+      "total_questions": 10,
+      "correct_answers": 6,
+      "per_category_accuracy": {
+        "high_school_biology": 0.6
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T06:59:25.409371"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T06:59:28.212024",
+      "benchmark_name": "HellaSwag",
+      "accuracy": 1.0,
+      "average_confidence": 0.6732090358637274,
+      "average_response_time": 0.01933012008666992,
+      "total_questions": 10,
+      "correct_answers": 10,
+      "per_category_accuracy": {
+        "unknown": 1.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T06:59:28.212024"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T06:59:32.464466",
+      "benchmark_name": "GSM8K",
+      "accuracy": 0.0,
+      "average_confidence": 0.6158998303570785,
+      "average_response_time": 0.0123687744140625,
+      "total_questions": 10,
+      "correct_answers": 0,
+      "per_category_accuracy": {
+        "unknown": 0.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T06:59:32.464466"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T06:59:35.149553",
+      "benchmark_name": "ARC",
+      "accuracy": 0.7,
+      "average_confidence": 0.7309742982996628,
+      "average_response_time": 0.02914884090423584,
+      "total_questions": 10,
+      "correct_answers": 7,
+      "per_category_accuracy": {
+        "unknown": 0.7
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T06:59:35.149553"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T06:59:35.417498",
+      "benchmark_name": "HumanEval",
+      "accuracy": 0.0,
+      "average_confidence": 0.5854480919539928,
+      "average_response_time": 0.04340195655822754,
+      "total_questions": 1,
+      "correct_answers": 0,
+      "per_category_accuracy": {
+        "unknown": 0.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T06:59:35.417498"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T07:03:16.857695",
+      "benchmark_name": "HellaSwag",
+      "accuracy": 0.9,
+      "average_confidence": 0.4528091077819808,
+      "average_response_time": 0.012603259086608887,
+      "total_questions": 10,
+      "correct_answers": 9,
+      "per_category_accuracy": {
+        "unknown": 0.9
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T07:03:16.857695"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T07:03:37.775873",
+      "benchmark_name": "MMLU",
+      "accuracy": 0.5,
+      "average_confidence": 0.47441550859373205,
+      "average_response_time": 0.010524225234985352,
+      "total_questions": 10,
+      "correct_answers": 5,
+      "per_category_accuracy": {
+        "high_school_biology": 0.5
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T07:03:37.775873"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T07:03:42.763619",
+      "benchmark_name": "ARC",
+      "accuracy": 0.5,
+      "average_confidence": 0.47377666749840686,
+      "average_response_time": 0.011162519454956055,
+      "total_questions": 10,
+      "correct_answers": 5,
+      "per_category_accuracy": {
+        "unknown": 0.5
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T07:03:42.763619"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T07:03:48.431617",
+      "benchmark_name": "GSM8K",
+      "accuracy": 0.0,
+      "average_confidence": 0.44712903214406097,
+      "average_response_time": 0.010118627548217773,
+      "total_questions": 10,
+      "correct_answers": 0,
+      "per_category_accuracy": {
+        "unknown": 0.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T07:03:48.431617"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T07:04:10.153143",
+      "benchmark_name": "MMLU",
+      "accuracy": 0.6,
+      "average_confidence": 0.48950244635558526,
+      "average_response_time": 0.010554027557373048,
+      "total_questions": 10,
+      "correct_answers": 6,
+      "per_category_accuracy": {
+        "high_school_biology": 0.6
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T07:04:10.153143"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T07:04:12.666932",
+      "benchmark_name": "HellaSwag",
+      "accuracy": 0.9,
+      "average_confidence": 0.45786169086116935,
+      "average_response_time": 0.010568952560424805,
+      "total_questions": 10,
+      "correct_answers": 9,
+      "per_category_accuracy": {
+        "unknown": 0.9
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T07:04:12.666932"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T07:04:16.457968",
+      "benchmark_name": "GSM8K",
+      "accuracy": 0.0,
+      "average_confidence": 0.43769870957127316,
+      "average_response_time": 0.016022205352783203,
+      "total_questions": 10,
+      "correct_answers": 0,
+      "per_category_accuracy": {
+        "unknown": 0.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T07:04:16.457968"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T07:04:19.285948",
+      "benchmark_name": "ARC",
+      "accuracy": 0.7,
+      "average_confidence": 0.47872371313187845,
+      "average_response_time": 0.018568944931030274,
+      "total_questions": 10,
+      "correct_answers": 7,
+      "per_category_accuracy": {
+        "unknown": 0.7
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T07:04:19.285948"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T07:04:19.529709",
+      "benchmark_name": "HumanEval",
+      "accuracy": 0.0,
+      "average_confidence": 0.4164462933786476,
+      "average_response_time": 0.014310121536254883,
+      "total_questions": 1,
+      "correct_answers": 0,
+      "per_category_accuracy": {
+        "unknown": 0.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T07:04:19.529709"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T07:04:24.207199",
+      "benchmark_name": "HellaSwag",
+      "accuracy": 0.9,
+      "average_confidence": 0.4496301170818519,
+      "average_response_time": 0.011576294898986816,
+      "total_questions": 10,
+      "correct_answers": 9,
+      "per_category_accuracy": {
+        "unknown": 0.9
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T07:04:24.207199"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T07:04:44.131144",
+      "benchmark_name": "MMLU",
+      "accuracy": 0.4,
+      "average_confidence": 0.47498329496922437,
+      "average_response_time": 0.012923812866210938,
+      "total_questions": 10,
+      "correct_answers": 4,
+      "per_category_accuracy": {
+        "high_school_biology": 0.4
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T07:04:44.131144"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T07:04:48.816176",
+      "benchmark_name": "ARC",
+      "accuracy": 0.6,
+      "average_confidence": 0.47079652810716255,
+      "average_response_time": 0.011274957656860351,
+      "total_questions": 10,
+      "correct_answers": 6,
+      "per_category_accuracy": {
+        "unknown": 0.6
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T07:04:48.816176"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T07:04:55.322215",
+      "benchmark_name": "GSM8K",
+      "accuracy": 0.0,
+      "average_confidence": 0.4435815252571099,
+      "average_response_time": 0.010969209671020507,
+      "total_questions": 10,
+      "correct_answers": 0,
+      "per_category_accuracy": {
+        "unknown": 0.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T07:04:55.322215"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T07:05:16.861625",
+      "benchmark_name": "MMLU",
+      "accuracy": 0.5,
+      "average_confidence": 0.48855640009791995,
+      "average_response_time": 0.010886311531066895,
+      "total_questions": 10,
+      "correct_answers": 5,
+      "per_category_accuracy": {
+        "high_school_biology": 0.5
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T07:05:16.861625"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T07:05:19.761767",
+      "benchmark_name": "HellaSwag",
+      "accuracy": 0.7,
+      "average_confidence": 0.45856041606663134,
+      "average_response_time": 0.01149592399597168,
+      "total_questions": 10,
+      "correct_answers": 7,
+      "per_category_accuracy": {
+        "unknown": 0.7
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T07:05:19.761767"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T07:05:23.650947",
+      "benchmark_name": "GSM8K",
+      "accuracy": 0.0,
+      "average_confidence": 0.4367307889102213,
+      "average_response_time": 0.010805010795593262,
+      "total_questions": 10,
+      "correct_answers": 0,
+      "per_category_accuracy": {
+        "unknown": 0.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T07:05:23.650947"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T07:05:28.464937",
+      "benchmark_name": "ARC",
+      "accuracy": 0.4,
+      "average_confidence": 0.47049642942298114,
+      "average_response_time": 0.015663933753967286,
+      "total_questions": 10,
+      "correct_answers": 4,
+      "per_category_accuracy": {
+        "unknown": 0.4
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T07:05:28.464937"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T07:05:28.774773",
+      "benchmark_name": "HumanEval",
+      "accuracy": 0.0,
+      "average_confidence": 0.41650693630133495,
+      "average_response_time": 0.019257783889770508,
+      "total_questions": 1,
+      "correct_answers": 0,
+      "per_category_accuracy": {
+        "unknown": 0.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T07:05:28.774773"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T07:05:34.495010",
+      "benchmark_name": "HellaSwag",
+      "accuracy": 0.9,
+      "average_confidence": 0.5028887958016084,
+      "average_response_time": 0.012332820892333984,
+      "total_questions": 10,
+      "correct_answers": 9,
+      "per_category_accuracy": {
+        "unknown": 0.9
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T07:05:34.495010"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T07:05:54.010426",
+      "benchmark_name": "MMLU",
+      "accuracy": 0.4,
+      "average_confidence": 0.551475999320959,
+      "average_response_time": 0.010567021369934083,
+      "total_questions": 10,
+      "correct_answers": 4,
+      "per_category_accuracy": {
+        "high_school_biology": 0.4
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T07:05:54.010426"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T07:05:58.802876",
+      "benchmark_name": "ARC",
+      "accuracy": 0.4,
+      "average_confidence": 0.5282923142215308,
+      "average_response_time": 0.010253405570983887,
+      "total_questions": 10,
+      "correct_answers": 4,
+      "per_category_accuracy": {
+        "unknown": 0.4
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T07:05:58.802876"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T07:06:04.593640",
+      "benchmark_name": "GSM8K",
+      "accuracy": 0.0,
+      "average_confidence": 0.476218054803134,
+      "average_response_time": 0.010790276527404784,
+      "total_questions": 10,
+      "correct_answers": 0,
+      "per_category_accuracy": {
+        "unknown": 0.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T07:06:04.593640"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T07:06:26.574610",
+      "benchmark_name": "MMLU",
+      "accuracy": 0.7,
+      "average_confidence": 0.5706811611373143,
+      "average_response_time": 0.010921883583068847,
+      "total_questions": 10,
+      "correct_answers": 7,
+      "per_category_accuracy": {
+        "high_school_biology": 0.7
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T07:06:26.574610"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T07:06:28.955147",
+      "benchmark_name": "HellaSwag",
+      "accuracy": 1.0,
+      "average_confidence": 0.509880266798633,
+      "average_response_time": 0.011179542541503907,
+      "total_questions": 10,
+      "correct_answers": 10,
+      "per_category_accuracy": {
+        "unknown": 1.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T07:06:28.955147"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T07:06:34.607364",
+      "benchmark_name": "GSM8K",
+      "accuracy": 0.1,
+      "average_confidence": 0.4932868839693018,
+      "average_response_time": 0.0146284818649292,
+      "total_questions": 10,
+      "correct_answers": 1,
+      "per_category_accuracy": {
+        "unknown": 0.1
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T07:06:34.607364"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T07:06:37.164623",
+      "benchmark_name": "ARC",
+      "accuracy": 0.7,
+      "average_confidence": 0.5331523940886396,
+      "average_response_time": 0.013118433952331542,
+      "total_questions": 10,
+      "correct_answers": 7,
+      "per_category_accuracy": {
+        "unknown": 0.7
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T07:06:37.164623"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T07:06:37.423648",
+      "benchmark_name": "HumanEval",
+      "accuracy": 0.0,
+      "average_confidence": 0.45958771330121007,
+      "average_response_time": 0.017219066619873047,
+      "total_questions": 1,
+      "correct_answers": 0,
+      "per_category_accuracy": {
+        "unknown": 0.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T07:06:37.423648"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T07:06:43.111869",
+      "benchmark_name": "HellaSwag",
+      "accuracy": 0.8,
+      "average_confidence": 0.5942645931979641,
+      "average_response_time": 0.018823862075805664,
+      "total_questions": 10,
+      "correct_answers": 8,
+      "per_category_accuracy": {
+        "unknown": 0.8
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T07:06:43.111869"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T07:07:04.741545",
+      "benchmark_name": "MMLU",
+      "accuracy": 0.7,
+      "average_confidence": 0.6814424468986691,
+      "average_response_time": 0.01306760311126709,
+      "total_questions": 10,
+      "correct_answers": 7,
+      "per_category_accuracy": {
+        "high_school_biology": 0.7
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T07:07:04.741545"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T07:07:09.888496",
+      "benchmark_name": "ARC",
+      "accuracy": 0.4,
+      "average_confidence": 0.6293584484481254,
+      "average_response_time": 0.012139534950256348,
+      "total_questions": 10,
+      "correct_answers": 4,
+      "per_category_accuracy": {
+        "unknown": 0.4
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T07:07:09.888496"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T07:07:15.424898",
+      "benchmark_name": "GSM8K",
+      "accuracy": 0.1,
+      "average_confidence": 0.5639212749764323,
+      "average_response_time": 0.011725330352783203,
+      "total_questions": 10,
+      "correct_answers": 1,
+      "per_category_accuracy": {
+        "unknown": 0.1
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T07:07:15.424898"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T07:07:37.502977",
+      "benchmark_name": "MMLU",
+      "accuracy": 0.7,
+      "average_confidence": 0.651333430741541,
+      "average_response_time": 0.01120164394378662,
+      "total_questions": 10,
+      "correct_answers": 7,
+      "per_category_accuracy": {
+        "high_school_biology": 0.7
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T07:07:37.502977"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T07:07:40.459953",
+      "benchmark_name": "HellaSwag",
+      "accuracy": 0.8,
+      "average_confidence": 0.5999431440504267,
+      "average_response_time": 0.01147146224975586,
+      "total_questions": 10,
+      "correct_answers": 8,
+      "per_category_accuracy": {
+        "unknown": 0.8
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T07:07:40.459953"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T07:07:46.039723",
+      "benchmark_name": "GSM8K",
+      "accuracy": 0.0,
+      "average_confidence": 0.5804938548211008,
+      "average_response_time": 0.01056501865386963,
+      "total_questions": 10,
+      "correct_answers": 0,
+      "per_category_accuracy": {
+        "unknown": 0.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T07:07:46.039723"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T07:07:49.512394",
+      "benchmark_name": "ARC",
+      "accuracy": 0.6,
+      "average_confidence": 0.6426648429526016,
+      "average_response_time": 0.022385048866271972,
+      "total_questions": 10,
+      "correct_answers": 6,
+      "per_category_accuracy": {
+        "unknown": 0.6
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T07:07:49.512394"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T07:07:49.778131",
+      "benchmark_name": "HumanEval",
+      "accuracy": 0.0,
+      "average_confidence": 0.5319083962142468,
+      "average_response_time": 0.042793989181518555,
+      "total_questions": 1,
+      "correct_answers": 0,
+      "per_category_accuracy": {
+        "unknown": 0.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T07:07:49.778131"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T07:07:56.417825",
+      "benchmark_name": "HellaSwag",
+      "accuracy": 0.8,
+      "average_confidence": 0.6703877719795331,
+      "average_response_time": 0.011772823333740235,
+      "total_questions": 10,
+      "correct_answers": 8,
+      "per_category_accuracy": {
+        "unknown": 0.8
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T07:07:56.417825"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T07:08:15.806148",
+      "benchmark_name": "MMLU",
+      "accuracy": 0.5,
+      "average_confidence": 0.748082853449881,
+      "average_response_time": 0.01114034652709961,
+      "total_questions": 10,
+      "correct_answers": 5,
+      "per_category_accuracy": {
+        "high_school_biology": 0.5
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T07:08:15.806148"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T07:08:20.015101",
+      "benchmark_name": "ARC",
+      "accuracy": 0.4,
+      "average_confidence": 0.6919652411706746,
+      "average_response_time": 0.010700130462646484,
+      "total_questions": 10,
+      "correct_answers": 4,
+      "per_category_accuracy": {
+        "unknown": 0.4
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T07:08:20.015101"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T07:08:25.999661",
+      "benchmark_name": "GSM8K",
+      "accuracy": 0.0,
+      "average_confidence": 0.6280594937788322,
+      "average_response_time": 0.011192059516906739,
+      "total_questions": 10,
+      "correct_answers": 0,
+      "per_category_accuracy": {
+        "unknown": 0.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T07:08:25.999661"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T07:08:48.428929",
+      "benchmark_name": "MMLU",
+      "accuracy": 0.8,
+      "average_confidence": 0.7490705595871433,
+      "average_response_time": 0.011847710609436036,
+      "total_questions": 10,
+      "correct_answers": 8,
+      "per_category_accuracy": {
+        "high_school_biology": 0.8
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T07:08:48.428929"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T07:08:50.950208",
+      "benchmark_name": "HellaSwag",
+      "accuracy": 0.8,
+      "average_confidence": 0.6695460101053119,
+      "average_response_time": 0.01529378890991211,
+      "total_questions": 10,
+      "correct_answers": 8,
+      "per_category_accuracy": {
+        "unknown": 0.8
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T07:08:50.950208"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T07:08:55.052734",
+      "benchmark_name": "GSM8K",
+      "accuracy": 0.0,
+      "average_confidence": 0.6255538100318052,
+      "average_response_time": 0.011840319633483887,
+      "total_questions": 10,
+      "correct_answers": 0,
+      "per_category_accuracy": {
+        "unknown": 0.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T07:08:55.052734"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T07:08:56.840548",
+      "benchmark_name": "ARC",
+      "accuracy": 0.6,
+      "average_confidence": 0.727893454498425,
+      "average_response_time": 0.03844835758209229,
+      "total_questions": 10,
+      "correct_answers": 6,
+      "per_category_accuracy": {
+        "unknown": 0.6
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T07:08:56.840548"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T07:08:57.113243",
+      "benchmark_name": "HumanEval",
+      "accuracy": 0.0,
+      "average_confidence": 0.5856964955031871,
+      "average_response_time": 0.04714798927307129,
+      "total_questions": 1,
+      "correct_answers": 0,
+      "per_category_accuracy": {
+        "unknown": 0.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T07:08:57.113243"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T07:14:50.348494",
+      "benchmark_name": "HellaSwag",
+      "accuracy": 0.9,
+      "average_confidence": 0.6708691076174379,
+      "average_response_time": 0.013048553466796875,
+      "total_questions": 10,
+      "correct_answers": 9,
+      "per_category_accuracy": {
+        "unknown": 0.9
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T07:14:50.348494"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T07:15:10.228360",
+      "benchmark_name": "MMLU",
+      "accuracy": 0.8,
+      "average_confidence": 0.7520432625668125,
+      "average_response_time": 0.012817955017089844,
+      "total_questions": 10,
+      "correct_answers": 8,
+      "per_category_accuracy": {
+        "high_school_biology": 0.8
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T07:15:10.228360"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T07:15:13.547724",
+      "benchmark_name": "HellaSwag",
+      "accuracy": 1.0,
+      "average_confidence": 0.6591850955881179,
+      "average_response_time": 0.014702320098876953,
+      "total_questions": 10,
+      "correct_answers": 10,
+      "per_category_accuracy": {
+        "unknown": 1.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T07:15:13.547724"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T07:15:17.788054",
+      "benchmark_name": "GSM8K",
+      "accuracy": 0.0,
+      "average_confidence": 0.6053389749483206,
+      "average_response_time": 0.011991381645202637,
+      "total_questions": 10,
+      "correct_answers": 0,
+      "per_category_accuracy": {
+        "unknown": 0.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T07:15:17.788054"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T07:15:20.327187",
+      "benchmark_name": "ARC",
+      "accuracy": 0.7,
+      "average_confidence": 0.6737826813915746,
+      "average_response_time": 0.03606874942779541,
+      "total_questions": 10,
+      "correct_answers": 7,
+      "per_category_accuracy": {
+        "unknown": 0.7
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T07:15:20.327187"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T07:15:20.598213",
+      "benchmark_name": "HumanEval",
+      "accuracy": 0.0,
+      "average_confidence": 0.5850242337882519,
+      "average_response_time": 0.039804935455322266,
+      "total_questions": 1,
+      "correct_answers": 0,
+      "per_category_accuracy": {
+        "unknown": 0.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T07:15:20.598213"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T07:21:34.744184",
+      "benchmark_name": "MMLU",
+      "accuracy": 0.7,
+      "average_confidence": 0.29999999999999993,
+      "average_response_time": 0.0334503173828125,
+      "total_questions": 10,
+      "correct_answers": 7,
+      "per_category_accuracy": {
+        "high_school_biology": 0.7
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T07:21:34.744184"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T07:21:37.304643",
+      "benchmark_name": "HellaSwag",
+      "accuracy": 1.0,
+      "average_confidence": 0.29999999999999993,
+      "average_response_time": 0.02557835578918457,
+      "total_questions": 10,
+      "correct_answers": 10,
+      "per_category_accuracy": {
+        "unknown": 1.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T07:21:37.304643"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T07:21:41.676617",
+      "benchmark_name": "GSM8K",
+      "accuracy": 0.0,
+      "average_confidence": 0.20454064127989113,
+      "average_response_time": 0.030425524711608885,
+      "total_questions": 10,
+      "correct_answers": 0,
+      "per_category_accuracy": {
+        "unknown": 0.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T07:21:41.676617"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T07:21:44.702206",
+      "benchmark_name": "ARC",
+      "accuracy": 0.6,
+      "average_confidence": 0.29999999999999993,
+      "average_response_time": 0.06316311359405517,
+      "total_questions": 10,
+      "correct_answers": 6,
+      "per_category_accuracy": {
+        "unknown": 0.6
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T07:21:44.702206"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T07:21:45.140757",
+      "benchmark_name": "HumanEval",
+      "accuracy": 0.0,
+      "average_confidence": 0.995982757769525,
+      "average_response_time": 0.03991508483886719,
+      "total_questions": 1,
+      "correct_answers": 0,
+      "per_category_accuracy": {
+        "unknown": 0.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T07:21:45.140757"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T07:34:35.323456",
+      "benchmark_name": "MMLU",
+      "accuracy": 0.7,
+      "average_confidence": 0.29999999999999993,
+      "average_response_time": 0.020989537239074707,
+      "total_questions": 10,
+      "correct_answers": 7,
+      "per_category_accuracy": {
+        "high_school_biology": 0.7
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T07:34:35.323456"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T07:34:38.736991",
+      "benchmark_name": "HellaSwag",
+      "accuracy": 1.0,
+      "average_confidence": 0.29999999999999993,
+      "average_response_time": 0.03023834228515625,
+      "total_questions": 10,
+      "correct_answers": 10,
+      "per_category_accuracy": {
+        "unknown": 1.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T07:34:38.736991"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T07:34:43.021910",
+      "benchmark_name": "GSM8K",
+      "accuracy": 0.0,
+      "average_confidence": 0.2047795138165355,
+      "average_response_time": 0.04088780879974365,
+      "total_questions": 10,
+      "correct_answers": 0,
+      "per_category_accuracy": {
+        "unknown": 0.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T07:34:43.021910"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T07:34:46.654082",
+      "benchmark_name": "ARC",
+      "accuracy": 0.9,
+      "average_confidence": 0.29999999999999993,
+      "average_response_time": 0.025800085067749022,
+      "total_questions": 10,
+      "correct_answers": 9,
+      "per_category_accuracy": {
+        "unknown": 0.9
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T07:34:46.654082"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T07:34:46.912193",
+      "benchmark_name": "HumanEval",
+      "accuracy": 0.0,
+      "average_confidence": 0.9959827574640513,
+      "average_response_time": 0.023121118545532227,
+      "total_questions": 1,
+      "correct_answers": 0,
+      "per_category_accuracy": {
+        "unknown": 0.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T07:34:46.912193"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T07:36:59.502139",
+      "benchmark_name": "MMLU",
+      "accuracy": 0.9,
+      "average_confidence": 0.29999999999999993,
+      "average_response_time": 0.01778881549835205,
+      "total_questions": 10,
+      "correct_answers": 9,
+      "per_category_accuracy": {
+        "high_school_biology": 0.9
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T07:36:59.502139"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T07:37:02.079766",
+      "benchmark_name": "HellaSwag",
+      "accuracy": 1.0,
+      "average_confidence": 0.29999999999999993,
+      "average_response_time": 0.02304069995880127,
+      "total_questions": 10,
+      "correct_answers": 10,
+      "per_category_accuracy": {
+        "unknown": 1.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T07:37:02.079766"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T07:37:06.561723",
+      "benchmark_name": "GSM8K",
+      "accuracy": 0.0,
+      "average_confidence": 0.20483481660587716,
+      "average_response_time": 0.02271585464477539,
+      "total_questions": 10,
+      "correct_answers": 0,
+      "per_category_accuracy": {
+        "unknown": 0.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T07:37:06.561723"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T07:37:09.585900",
+      "benchmark_name": "ARC",
+      "accuracy": 0.8,
+      "average_confidence": 0.29999999999999993,
+      "average_response_time": 0.039769220352172854,
+      "total_questions": 10,
+      "correct_answers": 8,
+      "per_category_accuracy": {
+        "unknown": 0.8
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T07:37:09.585900"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T07:37:09.980597",
+      "benchmark_name": "HumanEval",
+      "accuracy": 0.0,
+      "average_confidence": 0.9959827574640513,
+      "average_response_time": 0.029424190521240234,
+      "total_questions": 1,
+      "correct_answers": 0,
+      "per_category_accuracy": {
+        "unknown": 0.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T07:37:09.980597"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T14:23:37.051964",
+      "benchmark_name": "MMLU",
+      "accuracy": 0.6,
+      "average_confidence": 0.33599999999999997,
+      "average_response_time": 0.01983046531677246,
+      "total_questions": 10,
+      "correct_answers": 6,
+      "per_category_accuracy": {
+        "high_school_biology": 0.6
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T14:23:37.051964"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T14:23:39.885855",
+      "benchmark_name": "HellaSwag",
+      "accuracy": 0.9,
+      "average_confidence": 0.49773551443396646,
+      "average_response_time": 0.02161517143249512,
+      "total_questions": 10,
+      "correct_answers": 9,
+      "per_category_accuracy": {
+        "unknown": 0.9
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T14:23:39.885855"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T14:23:43.990503",
+      "benchmark_name": "GSM8K",
+      "accuracy": 0.0,
+      "average_confidence": 0.32950948118364265,
+      "average_response_time": 0.04883663654327393,
+      "total_questions": 10,
+      "correct_answers": 0,
+      "per_category_accuracy": {
+        "unknown": 0.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T14:23:43.990503"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T14:23:49.568992",
+      "benchmark_name": "ARC",
+      "accuracy": 1.0,
+      "average_confidence": 0.45437980967136815,
+      "average_response_time": 0.020717883110046388,
+      "total_questions": 10,
+      "correct_answers": 10,
+      "per_category_accuracy": {
+        "unknown": 1.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T14:23:49.568992"
+      }
+    },
+    {
+      "timestamp": "2025-12-14T14:23:49.838136",
+      "benchmark_name": "HumanEval",
+      "accuracy": 1.0,
+      "average_confidence": 0.9959827574640513,
+      "average_response_time": 0.016678810119628906,
+      "total_questions": 1,
+      "correct_answers": 1,
+      "per_category_accuracy": {
+        "unknown": 1.0
+      },
+      "metadata": {
+        "timestamp": "2025-12-14T14:23:49.838136"
+      }
+    }
+  ],
+  "comparisons": [
+    {
+      "benchmark_name": "MMLU",
+      "our_accuracy": 0.0,
+      "baselines": {
+        "human": 0.897,
+        "gpt4": 0.863,
+        "claude3_opus": 0.85,
+        "claude3_sonnet": 0.84,
+        "gemini_pro": 0.83,
+        "gpt3.5": 0.7
+      },
+      "rank": 7,
+      "percentile": -355.32994923857854,
+      "improvement_over_baseline": -0.863
+    },
+    {
+      "benchmark_name": "GSM8K",
+      "our_accuracy": 0.0,
+      "baselines": {
+        "human": 0.92,
+        "gpt4": 0.92,
+        "claude3_opus": 0.915,
+        "claude3_sonnet": 0.9,
+        "gemini_pro": 0.9,
+        "gpt3.5": 0.57
+      },
+      "rank": 7,
+      "percentile": -162.8571428571428,
+      "improvement_over_baseline": -0.92
+    },
+    {
+      "benchmark_name": "ARC",
+      "our_accuracy": 0.0,
+      "baselines": {
+        "human": 0.85,
+        "gpt4": 0.85,
+        "claude3_opus": 0.84,
+        "claude3_sonnet": 0.83,
+        "gemini_pro": 0.83,
+        "gpt3.5": 0.51
+      },
+      "rank": 7,
+      "percentile": -150.00000000000003,
+      "improvement_over_baseline": -0.85
+    },
+    {
+      "benchmark_name": "MMLU",
+      "our_accuracy": 0.0,
+      "baselines": {
+        "human": 0.897,
+        "gpt4": 0.863,
+        "claude3_opus": 0.85,
+        "claude3_sonnet": 0.84,
+        "gemini_pro": 0.83,
+        "gpt3.5": 0.7
+      },
+      "rank": 7,
+      "percentile": -355.32994923857854,
+      "improvement_over_baseline": -0.863
+    },
+    {
+      "benchmark_name": "GSM8K",
+      "our_accuracy": 0.0,
+      "baselines": {
+        "human": 0.92,
+        "gpt4": 0.92,
+        "claude3_opus": 0.915,
+        "claude3_sonnet": 0.9,
+        "gemini_pro": 0.9,
+        "gpt3.5": 0.57
+      },
+      "rank": 7,
+      "percentile": -162.8571428571428,
+      "improvement_over_baseline": -0.92
+    },
+    {
+      "benchmark_name": "ARC",
+      "our_accuracy": 0.0,
+      "baselines": {
+        "human": 0.85,
+        "gpt4": 0.85,
+        "claude3_opus": 0.84,
+        "claude3_sonnet": 0.83,
+        "gemini_pro": 0.83,
+        "gpt3.5": 0.51
+      },
+      "rank": 7,
+      "percentile": -150.00000000000003,
+      "improvement_over_baseline": -0.85
+    },
+    {
+      "benchmark_name": "MMLU",
+      "our_accuracy": 0.0,
+      "baselines": {
+        "human": 0.897,
+        "gpt4": 0.863,
+        "claude3_opus": 0.85,
+        "claude3_sonnet": 0.84,
+        "gemini_pro": 0.83,
+        "gpt3.5": 0.7
+      },
+      "rank": 7,
+      "percentile": -355.32994923857854,
+      "improvement_over_baseline": -0.863
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "our_accuracy": 0.0,
+      "baselines": {
+        "human": 0.956,
+        "gpt4": 0.95,
+        "claude3_opus": 0.945,
+        "claude3_sonnet": 0.94,
+        "gemini_pro": 0.94,
+        "gpt3.5": 0.85
+      },
+      "rank": 7,
+      "percentile": -801.8867924528303,
+      "improvement_over_baseline": -0.95
+    },
+    {
+      "benchmark_name": "GSM8K",
+      "our_accuracy": 0.0,
+      "baselines": {
+        "human": 0.92,
+        "gpt4": 0.92,
+        "claude3_opus": 0.915,
+        "claude3_sonnet": 0.9,
+        "gemini_pro": 0.9,
+        "gpt3.5": 0.57
+      },
+      "rank": 7,
+      "percentile": -162.8571428571428,
+      "improvement_over_baseline": -0.92
+    },
+    {
+      "benchmark_name": "ARC",
+      "our_accuracy": 0.0,
+      "baselines": {
+        "human": 0.85,
+        "gpt4": 0.85,
+        "claude3_opus": 0.84,
+        "claude3_sonnet": 0.83,
+        "gemini_pro": 0.83,
+        "gpt3.5": 0.51
+      },
+      "rank": 7,
+      "percentile": -150.00000000000003,
+      "improvement_over_baseline": -0.85
+    },
+    {
+      "benchmark_name": "MMLU",
+      "our_accuracy": 0.0,
+      "baselines": {
+        "human": 0.897,
+        "gpt4": 0.863,
+        "claude3_opus": 0.85,
+        "claude3_sonnet": 0.84,
+        "gemini_pro": 0.83,
+        "gpt3.5": 0.7
+      },
+      "rank": 7,
+      "percentile": -355.32994923857854,
+      "improvement_over_baseline": -0.863
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "our_accuracy": 0.0,
+      "baselines": {
+        "human": 0.956,
+        "gpt4": 0.95,
+        "claude3_opus": 0.945,
+        "claude3_sonnet": 0.94,
+        "gemini_pro": 0.94,
+        "gpt3.5": 0.85
+      },
+      "rank": 7,
+      "percentile": -801.8867924528303,
+      "improvement_over_baseline": -0.95
+    },
+    {
+      "benchmark_name": "GSM8K",
+      "our_accuracy": 0.0,
+      "baselines": {
+        "human": 0.92,
+        "gpt4": 0.92,
+        "claude3_opus": 0.915,
+        "claude3_sonnet": 0.9,
+        "gemini_pro": 0.9,
+        "gpt3.5": 0.57
+      },
+      "rank": 7,
+      "percentile": -162.8571428571428,
+      "improvement_over_baseline": -0.92
+    },
+    {
+      "benchmark_name": "ARC",
+      "our_accuracy": 0.0,
+      "baselines": {
+        "human": 0.85,
+        "gpt4": 0.85,
+        "claude3_opus": 0.84,
+        "claude3_sonnet": 0.83,
+        "gemini_pro": 0.83,
+        "gpt3.5": 0.51
+      },
+      "rank": 7,
+      "percentile": -150.00000000000003,
+      "improvement_over_baseline": -0.85
+    },
+    {
+      "benchmark_name": "MMLU",
+      "our_accuracy": 0.0,
+      "baselines": {
+        "human": 0.897,
+        "gpt4": 0.863,
+        "claude3_opus": 0.85,
+        "claude3_sonnet": 0.84,
+        "gemini_pro": 0.83,
+        "gpt3.5": 0.7
+      },
+      "rank": 7,
+      "percentile": -355.32994923857854,
+      "improvement_over_baseline": -0.863
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "our_accuracy": 0.0,
+      "baselines": {
+        "human": 0.956,
+        "gpt4": 0.95,
+        "claude3_opus": 0.945,
+        "claude3_sonnet": 0.94,
+        "gemini_pro": 0.94,
+        "gpt3.5": 0.85
+      },
+      "rank": 7,
+      "percentile": -801.8867924528303,
+      "improvement_over_baseline": -0.95
+    },
+    {
+      "benchmark_name": "GSM8K",
+      "our_accuracy": 0.0,
+      "baselines": {
+        "human": 0.92,
+        "gpt4": 0.92,
+        "claude3_opus": 0.915,
+        "claude3_sonnet": 0.9,
+        "gemini_pro": 0.9,
+        "gpt3.5": 0.57
+      },
+      "rank": 7,
+      "percentile": -162.8571428571428,
+      "improvement_over_baseline": -0.92
+    },
+    {
+      "benchmark_name": "ARC",
+      "our_accuracy": 0.0,
+      "baselines": {
+        "human": 0.85,
+        "gpt4": 0.85,
+        "claude3_opus": 0.84,
+        "claude3_sonnet": 0.83,
+        "gemini_pro": 0.83,
+        "gpt3.5": 0.51
+      },
+      "rank": 7,
+      "percentile": -150.00000000000003,
+      "improvement_over_baseline": -0.85
+    },
+    {
+      "benchmark_name": "MMLU",
+      "our_accuracy": 0.0,
+      "baselines": {
+        "human": 0.897,
+        "gpt4": 0.863,
+        "claude3_opus": 0.85,
+        "claude3_sonnet": 0.84,
+        "gemini_pro": 0.83,
+        "gpt3.5": 0.7
+      },
+      "rank": 7,
+      "percentile": -355.32994923857854,
+      "improvement_over_baseline": -0.863
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "our_accuracy": 0.0,
+      "baselines": {
+        "human": 0.956,
+        "gpt4": 0.95,
+        "claude3_opus": 0.945,
+        "claude3_sonnet": 0.94,
+        "gemini_pro": 0.94,
+        "gpt3.5": 0.85
+      },
+      "rank": 7,
+      "percentile": -801.8867924528303,
+      "improvement_over_baseline": -0.95
+    },
+    {
+      "benchmark_name": "GSM8K",
+      "our_accuracy": 0.1,
+      "baselines": {
+        "human": 0.92,
+        "gpt4": 0.92,
+        "claude3_opus": 0.915,
+        "claude3_sonnet": 0.9,
+        "gemini_pro": 0.9,
+        "gpt3.5": 0.57
+      },
+      "rank": 7,
+      "percentile": -134.28571428571425,
+      "improvement_over_baseline": -0.8200000000000001
+    },
+    {
+      "benchmark_name": "ARC",
+      "our_accuracy": 0.0,
+      "baselines": {
+        "human": 0.85,
+        "gpt4": 0.85,
+        "claude3_opus": 0.84,
+        "claude3_sonnet": 0.83,
+        "gemini_pro": 0.83,
+        "gpt3.5": 0.51
+      },
+      "rank": 7,
+      "percentile": -150.00000000000003,
+      "improvement_over_baseline": -0.85
+    },
+    {
+      "benchmark_name": "MMLU",
+      "our_accuracy": 0.1,
+      "baselines": {
+        "human": 0.897,
+        "gpt4": 0.863,
+        "claude3_opus": 0.85,
+        "claude3_sonnet": 0.84,
+        "gemini_pro": 0.83,
+        "gpt3.5": 0.7
+      },
+      "rank": 7,
+      "percentile": -304.5685279187816,
+      "improvement_over_baseline": -0.763
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "our_accuracy": 0.0,
+      "baselines": {
+        "human": 0.956,
+        "gpt4": 0.95,
+        "claude3_opus": 0.945,
+        "claude3_sonnet": 0.94,
+        "gemini_pro": 0.94,
+        "gpt3.5": 0.85
+      },
+      "rank": 7,
+      "percentile": -801.8867924528303,
+      "improvement_over_baseline": -0.95
+    },
+    {
+      "benchmark_name": "GSM8K",
+      "our_accuracy": 0.0,
+      "baselines": {
+        "human": 0.92,
+        "gpt4": 0.92,
+        "claude3_opus": 0.915,
+        "claude3_sonnet": 0.9,
+        "gemini_pro": 0.9,
+        "gpt3.5": 0.57
+      },
+      "rank": 7,
+      "percentile": -162.8571428571428,
+      "improvement_over_baseline": -0.92
+    },
+    {
+      "benchmark_name": "ARC",
+      "our_accuracy": 0.0,
+      "baselines": {
+        "human": 0.85,
+        "gpt4": 0.85,
+        "claude3_opus": 0.84,
+        "claude3_sonnet": 0.83,
+        "gemini_pro": 0.83,
+        "gpt3.5": 0.51
+      },
+      "rank": 7,
+      "percentile": -150.00000000000003,
+      "improvement_over_baseline": -0.85
+    },
+    {
+      "benchmark_name": "MMLU",
+      "our_accuracy": 0.0,
+      "baselines": {
+        "human": 0.897,
+        "gpt4": 0.863,
+        "claude3_opus": 0.85,
+        "claude3_sonnet": 0.84,
+        "gemini_pro": 0.83,
+        "gpt3.5": 0.7
+      },
+      "rank": 7,
+      "percentile": -355.32994923857854,
+      "improvement_over_baseline": -0.863
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "our_accuracy": 0.1,
+      "baselines": {
+        "human": 0.956,
+        "gpt4": 0.95,
+        "claude3_opus": 0.945,
+        "claude3_sonnet": 0.94,
+        "gemini_pro": 0.94,
+        "gpt3.5": 0.85
+      },
+      "rank": 7,
+      "percentile": -707.5471698113208,
+      "improvement_over_baseline": -0.85
+    },
+    {
+      "benchmark_name": "GSM8K",
+      "our_accuracy": 0.0,
+      "baselines": {
+        "human": 0.92,
+        "gpt4": 0.92,
+        "claude3_opus": 0.915,
+        "claude3_sonnet": 0.9,
+        "gemini_pro": 0.9,
+        "gpt3.5": 0.57
+      },
+      "rank": 7,
+      "percentile": -162.8571428571428,
+      "improvement_over_baseline": -0.92
+    },
+    {
+      "benchmark_name": "ARC",
+      "our_accuracy": 0.0,
+      "baselines": {
+        "human": 0.85,
+        "gpt4": 0.85,
+        "claude3_opus": 0.84,
+        "claude3_sonnet": 0.83,
+        "gemini_pro": 0.83,
+        "gpt3.5": 0.51
+      },
+      "rank": 7,
+      "percentile": -150.00000000000003,
+      "improvement_over_baseline": -0.85
+    },
+    {
+      "benchmark_name": "MMLU",
+      "our_accuracy": 0.0,
+      "baselines": {
+        "human": 0.897,
+        "gpt4": 0.863,
+        "claude3_opus": 0.85,
+        "claude3_sonnet": 0.84,
+        "gemini_pro": 0.83,
+        "gpt3.5": 0.7
+      },
+      "rank": 7,
+      "percentile": -355.32994923857854,
+      "improvement_over_baseline": -0.863
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "our_accuracy": 0.0,
+      "baselines": {
+        "human": 0.956,
+        "gpt4": 0.95,
+        "claude3_opus": 0.945,
+        "claude3_sonnet": 0.94,
+        "gemini_pro": 0.94,
+        "gpt3.5": 0.85
+      },
+      "rank": 7,
+      "percentile": -801.8867924528303,
+      "improvement_over_baseline": -0.95
+    },
+    {
+      "benchmark_name": "GSM8K",
+      "our_accuracy": 0.0,
+      "baselines": {
+        "human": 0.92,
+        "gpt4": 0.92,
+        "claude3_opus": 0.915,
+        "claude3_sonnet": 0.9,
+        "gemini_pro": 0.9,
+        "gpt3.5": 0.57
+      },
+      "rank": 7,
+      "percentile": -162.8571428571428,
+      "improvement_over_baseline": -0.92
+    },
+    {
+      "benchmark_name": "ARC",
+      "our_accuracy": 0.0,
+      "baselines": {
+        "human": 0.85,
+        "gpt4": 0.85,
+        "claude3_opus": 0.84,
+        "claude3_sonnet": 0.83,
+        "gemini_pro": 0.83,
+        "gpt3.5": 0.51
+      },
+      "rank": 7,
+      "percentile": -150.00000000000003,
+      "improvement_over_baseline": -0.85
+    },
+    {
+      "benchmark_name": "MMLU",
+      "our_accuracy": 0.0,
+      "baselines": {
+        "human": 0.897,
+        "gpt4": 0.863,
+        "claude3_opus": 0.85,
+        "claude3_sonnet": 0.84,
+        "gemini_pro": 0.83,
+        "gpt3.5": 0.7
+      },
+      "rank": 7,
+      "percentile": -355.32994923857854,
+      "improvement_over_baseline": -0.863
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "our_accuracy": 0.0,
+      "baselines": {
+        "human": 0.956,
+        "gpt4": 0.95,
+        "claude3_opus": 0.945,
+        "claude3_sonnet": 0.94,
+        "gemini_pro": 0.94,
+        "gpt3.5": 0.85
+      },
+      "rank": 7,
+      "percentile": -801.8867924528303,
+      "improvement_over_baseline": -0.95
+    },
+    {
+      "benchmark_name": "GSM8K",
+      "our_accuracy": 0.0,
+      "baselines": {
+        "human": 0.92,
+        "gpt4": 0.92,
+        "claude3_opus": 0.915,
+        "claude3_sonnet": 0.9,
+        "gemini_pro": 0.9,
+        "gpt3.5": 0.57
+      },
+      "rank": 7,
+      "percentile": -162.8571428571428,
+      "improvement_over_baseline": -0.92
+    },
+    {
+      "benchmark_name": "ARC",
+      "our_accuracy": 0.0,
+      "baselines": {
+        "human": 0.85,
+        "gpt4": 0.85,
+        "claude3_opus": 0.84,
+        "claude3_sonnet": 0.83,
+        "gemini_pro": 0.83,
+        "gpt3.5": 0.51
+      },
+      "rank": 7,
+      "percentile": -150.00000000000003,
+      "improvement_over_baseline": -0.85
+    },
+    {
+      "benchmark_name": "MMLU",
+      "our_accuracy": 0.7,
+      "baselines": {
+        "human": 0.897,
+        "gpt4": 0.863,
+        "claude3_opus": 0.85,
+        "claude3_sonnet": 0.84,
+        "gemini_pro": 0.83,
+        "gpt3.5": 0.7
+      },
+      "rank": 7,
+      "percentile": 0.0,
+      "improvement_over_baseline": -0.16300000000000003
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "our_accuracy": 1.0,
+      "baselines": {
+        "human": 0.956,
+        "gpt4": 0.95,
+        "claude3_opus": 0.945,
+        "claude3_sonnet": 0.94,
+        "gemini_pro": 0.94,
+        "gpt3.5": 0.85
+      },
+      "rank": 1,
+      "percentile": 141.50943396226418,
+      "improvement_over_baseline": 0.050000000000000044
+    },
+    {
+      "benchmark_name": "GSM8K",
+      "our_accuracy": 0.0,
+      "baselines": {
+        "human": 0.92,
+        "gpt4": 0.92,
+        "claude3_opus": 0.915,
+        "claude3_sonnet": 0.9,
+        "gemini_pro": 0.9,
+        "gpt3.5": 0.57
+      },
+      "rank": 7,
+      "percentile": -162.8571428571428,
+      "improvement_over_baseline": -0.92
+    },
+    {
+      "benchmark_name": "ARC",
+      "our_accuracy": 0.5,
+      "baselines": {
+        "human": 0.85,
+        "gpt4": 0.85,
+        "claude3_opus": 0.84,
+        "claude3_sonnet": 0.83,
+        "gemini_pro": 0.83,
+        "gpt3.5": 0.51
+      },
+      "rank": 7,
+      "percentile": -2.941176470588238,
+      "improvement_over_baseline": -0.35
+    },
+    {
+      "benchmark_name": "MMLU",
+      "our_accuracy": 0.6,
+      "baselines": {
+        "human": 0.897,
+        "gpt4": 0.863,
+        "claude3_opus": 0.85,
+        "claude3_sonnet": 0.84,
+        "gemini_pro": 0.83,
+        "gpt3.5": 0.7
+      },
+      "rank": 7,
+      "percentile": -50.76142131979693,
+      "improvement_over_baseline": -0.263
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "our_accuracy": 1.0,
+      "baselines": {
+        "human": 0.956,
+        "gpt4": 0.95,
+        "claude3_opus": 0.945,
+        "claude3_sonnet": 0.94,
+        "gemini_pro": 0.94,
+        "gpt3.5": 0.85
+      },
+      "rank": 1,
+      "percentile": 141.50943396226418,
+      "improvement_over_baseline": 0.050000000000000044
+    },
+    {
+      "benchmark_name": "GSM8K",
+      "our_accuracy": 0.0,
+      "baselines": {
+        "human": 0.92,
+        "gpt4": 0.92,
+        "claude3_opus": 0.915,
+        "claude3_sonnet": 0.9,
+        "gemini_pro": 0.9,
+        "gpt3.5": 0.57
+      },
+      "rank": 7,
+      "percentile": -162.8571428571428,
+      "improvement_over_baseline": -0.92
+    },
+    {
+      "benchmark_name": "ARC",
+      "our_accuracy": 0.7,
+      "baselines": {
+        "human": 0.85,
+        "gpt4": 0.85,
+        "claude3_opus": 0.84,
+        "claude3_sonnet": 0.83,
+        "gemini_pro": 0.83,
+        "gpt3.5": 0.51
+      },
+      "rank": 6,
+      "percentile": 55.882352941176464,
+      "improvement_over_baseline": -0.15000000000000002
+    },
+    {
+      "benchmark_name": "MMLU",
+      "our_accuracy": 0.6,
+      "baselines": {
+        "human": 0.897,
+        "gpt4": 0.863,
+        "claude3_opus": 0.85,
+        "claude3_sonnet": 0.84,
+        "gemini_pro": 0.83,
+        "gpt3.5": 0.7
+      },
+      "rank": 7,
+      "percentile": -50.76142131979693,
+      "improvement_over_baseline": -0.263
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "our_accuracy": 1.0,
+      "baselines": {
+        "human": 0.956,
+        "gpt4": 0.95,
+        "claude3_opus": 0.945,
+        "claude3_sonnet": 0.94,
+        "gemini_pro": 0.94,
+        "gpt3.5": 0.85
+      },
+      "rank": 1,
+      "percentile": 141.50943396226418,
+      "improvement_over_baseline": 0.050000000000000044
+    },
+    {
+      "benchmark_name": "GSM8K",
+      "our_accuracy": 0.0,
+      "baselines": {
+        "human": 0.92,
+        "gpt4": 0.92,
+        "claude3_opus": 0.915,
+        "claude3_sonnet": 0.9,
+        "gemini_pro": 0.9,
+        "gpt3.5": 0.57
+      },
+      "rank": 7,
+      "percentile": -162.8571428571428,
+      "improvement_over_baseline": -0.92
+    },
+    {
+      "benchmark_name": "ARC",
+      "our_accuracy": 0.7,
+      "baselines": {
+        "human": 0.85,
+        "gpt4": 0.85,
+        "claude3_opus": 0.84,
+        "claude3_sonnet": 0.83,
+        "gemini_pro": 0.83,
+        "gpt3.5": 0.51
+      },
+      "rank": 6,
+      "percentile": 55.882352941176464,
+      "improvement_over_baseline": -0.15000000000000002
+    },
+    {
+      "benchmark_name": "MMLU",
+      "our_accuracy": 0.6,
+      "baselines": {
+        "human": 0.897,
+        "gpt4": 0.863,
+        "claude3_opus": 0.85,
+        "claude3_sonnet": 0.84,
+        "gemini_pro": 0.83,
+        "gpt3.5": 0.7
+      },
+      "rank": 7,
+      "percentile": -50.76142131979693,
+      "improvement_over_baseline": -0.263
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "our_accuracy": 0.9,
+      "baselines": {
+        "human": 0.956,
+        "gpt4": 0.95,
+        "claude3_opus": 0.945,
+        "claude3_sonnet": 0.94,
+        "gemini_pro": 0.94,
+        "gpt3.5": 0.85
+      },
+      "rank": 6,
+      "percentile": 47.16981132075477,
+      "improvement_over_baseline": -0.04999999999999993
+    },
+    {
+      "benchmark_name": "GSM8K",
+      "our_accuracy": 0.0,
+      "baselines": {
+        "human": 0.92,
+        "gpt4": 0.92,
+        "claude3_opus": 0.915,
+        "claude3_sonnet": 0.9,
+        "gemini_pro": 0.9,
+        "gpt3.5": 0.57
+      },
+      "rank": 7,
+      "percentile": -162.8571428571428,
+      "improvement_over_baseline": -0.92
+    },
+    {
+      "benchmark_name": "ARC",
+      "our_accuracy": 0.7,
+      "baselines": {
+        "human": 0.85,
+        "gpt4": 0.85,
+        "claude3_opus": 0.84,
+        "claude3_sonnet": 0.83,
+        "gemini_pro": 0.83,
+        "gpt3.5": 0.51
+      },
+      "rank": 6,
+      "percentile": 55.882352941176464,
+      "improvement_over_baseline": -0.15000000000000002
+    },
+    {
+      "benchmark_name": "MMLU",
+      "our_accuracy": 0.5,
+      "baselines": {
+        "human": 0.897,
+        "gpt4": 0.863,
+        "claude3_opus": 0.85,
+        "claude3_sonnet": 0.84,
+        "gemini_pro": 0.83,
+        "gpt3.5": 0.7
+      },
+      "rank": 7,
+      "percentile": -101.52284263959386,
+      "improvement_over_baseline": -0.363
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "our_accuracy": 0.7,
+      "baselines": {
+        "human": 0.956,
+        "gpt4": 0.95,
+        "claude3_opus": 0.945,
+        "claude3_sonnet": 0.94,
+        "gemini_pro": 0.94,
+        "gpt3.5": 0.85
+      },
+      "rank": 7,
+      "percentile": -141.50943396226418,
+      "improvement_over_baseline": -0.25
+    },
+    {
+      "benchmark_name": "GSM8K",
+      "our_accuracy": 0.0,
+      "baselines": {
+        "human": 0.92,
+        "gpt4": 0.92,
+        "claude3_opus": 0.915,
+        "claude3_sonnet": 0.9,
+        "gemini_pro": 0.9,
+        "gpt3.5": 0.57
+      },
+      "rank": 7,
+      "percentile": -162.8571428571428,
+      "improvement_over_baseline": -0.92
+    },
+    {
+      "benchmark_name": "ARC",
+      "our_accuracy": 0.4,
+      "baselines": {
+        "human": 0.85,
+        "gpt4": 0.85,
+        "claude3_opus": 0.84,
+        "claude3_sonnet": 0.83,
+        "gemini_pro": 0.83,
+        "gpt3.5": 0.51
+      },
+      "rank": 7,
+      "percentile": -32.35294117647059,
+      "improvement_over_baseline": -0.44999999999999996
+    },
+    {
+      "benchmark_name": "MMLU",
+      "our_accuracy": 0.7,
+      "baselines": {
+        "human": 0.897,
+        "gpt4": 0.863,
+        "claude3_opus": 0.85,
+        "claude3_sonnet": 0.84,
+        "gemini_pro": 0.83,
+        "gpt3.5": 0.7
+      },
+      "rank": 7,
+      "percentile": 0.0,
+      "improvement_over_baseline": -0.16300000000000003
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "our_accuracy": 1.0,
+      "baselines": {
+        "human": 0.956,
+        "gpt4": 0.95,
+        "claude3_opus": 0.945,
+        "claude3_sonnet": 0.94,
+        "gemini_pro": 0.94,
+        "gpt3.5": 0.85
+      },
+      "rank": 1,
+      "percentile": 141.50943396226418,
+      "improvement_over_baseline": 0.050000000000000044
+    },
+    {
+      "benchmark_name": "GSM8K",
+      "our_accuracy": 0.1,
+      "baselines": {
+        "human": 0.92,
+        "gpt4": 0.92,
+        "claude3_opus": 0.915,
+        "claude3_sonnet": 0.9,
+        "gemini_pro": 0.9,
+        "gpt3.5": 0.57
+      },
+      "rank": 7,
+      "percentile": -134.28571428571425,
+      "improvement_over_baseline": -0.8200000000000001
+    },
+    {
+      "benchmark_name": "ARC",
+      "our_accuracy": 0.7,
+      "baselines": {
+        "human": 0.85,
+        "gpt4": 0.85,
+        "claude3_opus": 0.84,
+        "claude3_sonnet": 0.83,
+        "gemini_pro": 0.83,
+        "gpt3.5": 0.51
+      },
+      "rank": 6,
+      "percentile": 55.882352941176464,
+      "improvement_over_baseline": -0.15000000000000002
+    },
+    {
+      "benchmark_name": "MMLU",
+      "our_accuracy": 0.7,
+      "baselines": {
+        "human": 0.897,
+        "gpt4": 0.863,
+        "claude3_opus": 0.85,
+        "claude3_sonnet": 0.84,
+        "gemini_pro": 0.83,
+        "gpt3.5": 0.7
+      },
+      "rank": 7,
+      "percentile": 0.0,
+      "improvement_over_baseline": -0.16300000000000003
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "our_accuracy": 0.8,
+      "baselines": {
+        "human": 0.956,
+        "gpt4": 0.95,
+        "claude3_opus": 0.945,
+        "claude3_sonnet": 0.94,
+        "gemini_pro": 0.94,
+        "gpt3.5": 0.85
+      },
+      "rank": 7,
+      "percentile": -47.16981132075466,
+      "improvement_over_baseline": -0.1499999999999999
+    },
+    {
+      "benchmark_name": "GSM8K",
+      "our_accuracy": 0.0,
+      "baselines": {
+        "human": 0.92,
+        "gpt4": 0.92,
+        "claude3_opus": 0.915,
+        "claude3_sonnet": 0.9,
+        "gemini_pro": 0.9,
+        "gpt3.5": 0.57
+      },
+      "rank": 7,
+      "percentile": -162.8571428571428,
+      "improvement_over_baseline": -0.92
+    },
+    {
+      "benchmark_name": "ARC",
+      "our_accuracy": 0.6,
+      "baselines": {
+        "human": 0.85,
+        "gpt4": 0.85,
+        "claude3_opus": 0.84,
+        "claude3_sonnet": 0.83,
+        "gemini_pro": 0.83,
+        "gpt3.5": 0.51
+      },
+      "rank": 6,
+      "percentile": 26.470588235294112,
+      "improvement_over_baseline": -0.25
+    },
+    {
+      "benchmark_name": "MMLU",
+      "our_accuracy": 0.8,
+      "baselines": {
+        "human": 0.897,
+        "gpt4": 0.863,
+        "claude3_opus": 0.85,
+        "claude3_sonnet": 0.84,
+        "gemini_pro": 0.83,
+        "gpt3.5": 0.7
+      },
+      "rank": 6,
+      "percentile": 50.76142131979699,
+      "improvement_over_baseline": -0.06299999999999994
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "our_accuracy": 0.8,
+      "baselines": {
+        "human": 0.956,
+        "gpt4": 0.95,
+        "claude3_opus": 0.945,
+        "claude3_sonnet": 0.94,
+        "gemini_pro": 0.94,
+        "gpt3.5": 0.85
+      },
+      "rank": 7,
+      "percentile": -47.16981132075466,
+      "improvement_over_baseline": -0.1499999999999999
+    },
+    {
+      "benchmark_name": "GSM8K",
+      "our_accuracy": 0.0,
+      "baselines": {
+        "human": 0.92,
+        "gpt4": 0.92,
+        "claude3_opus": 0.915,
+        "claude3_sonnet": 0.9,
+        "gemini_pro": 0.9,
+        "gpt3.5": 0.57
+      },
+      "rank": 7,
+      "percentile": -162.8571428571428,
+      "improvement_over_baseline": -0.92
+    },
+    {
+      "benchmark_name": "ARC",
+      "our_accuracy": 0.6,
+      "baselines": {
+        "human": 0.85,
+        "gpt4": 0.85,
+        "claude3_opus": 0.84,
+        "claude3_sonnet": 0.83,
+        "gemini_pro": 0.83,
+        "gpt3.5": 0.51
+      },
+      "rank": 6,
+      "percentile": 26.470588235294112,
+      "improvement_over_baseline": -0.25
+    },
+    {
+      "benchmark_name": "MMLU",
+      "our_accuracy": 0.8,
+      "baselines": {
+        "human": 0.897,
+        "gpt4": 0.863,
+        "claude3_opus": 0.85,
+        "claude3_sonnet": 0.84,
+        "gemini_pro": 0.83,
+        "gpt3.5": 0.7
+      },
+      "rank": 6,
+      "percentile": 50.76142131979699,
+      "improvement_over_baseline": -0.06299999999999994
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "our_accuracy": 1.0,
+      "baselines": {
+        "human": 0.956,
+        "gpt4": 0.95,
+        "claude3_opus": 0.945,
+        "claude3_sonnet": 0.94,
+        "gemini_pro": 0.94,
+        "gpt3.5": 0.85
+      },
+      "rank": 1,
+      "percentile": 141.50943396226418,
+      "improvement_over_baseline": 0.050000000000000044
+    },
+    {
+      "benchmark_name": "GSM8K",
+      "our_accuracy": 0.0,
+      "baselines": {
+        "human": 0.92,
+        "gpt4": 0.92,
+        "claude3_opus": 0.915,
+        "claude3_sonnet": 0.9,
+        "gemini_pro": 0.9,
+        "gpt3.5": 0.57
+      },
+      "rank": 7,
+      "percentile": -162.8571428571428,
+      "improvement_over_baseline": -0.92
+    },
+    {
+      "benchmark_name": "ARC",
+      "our_accuracy": 0.7,
+      "baselines": {
+        "human": 0.85,
+        "gpt4": 0.85,
+        "claude3_opus": 0.84,
+        "claude3_sonnet": 0.83,
+        "gemini_pro": 0.83,
+        "gpt3.5": 0.51
+      },
+      "rank": 6,
+      "percentile": 55.882352941176464,
+      "improvement_over_baseline": -0.15000000000000002
+    },
+    {
+      "benchmark_name": "MMLU",
+      "our_accuracy": 0.7,
+      "baselines": {
+        "human": 0.897,
+        "gpt4": 0.863,
+        "claude3_opus": 0.85,
+        "claude3_sonnet": 0.84,
+        "gemini_pro": 0.83,
+        "gpt3.5": 0.7
+      },
+      "rank": 7,
+      "percentile": 0.0,
+      "improvement_over_baseline": -0.16300000000000003
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "our_accuracy": 1.0,
+      "baselines": {
+        "human": 0.956,
+        "gpt4": 0.95,
+        "claude3_opus": 0.945,
+        "claude3_sonnet": 0.94,
+        "gemini_pro": 0.94,
+        "gpt3.5": 0.85
+      },
+      "rank": 1,
+      "percentile": 141.50943396226418,
+      "improvement_over_baseline": 0.050000000000000044
+    },
+    {
+      "benchmark_name": "GSM8K",
+      "our_accuracy": 0.0,
+      "baselines": {
+        "human": 0.92,
+        "gpt4": 0.92,
+        "claude3_opus": 0.915,
+        "claude3_sonnet": 0.9,
+        "gemini_pro": 0.9,
+        "gpt3.5": 0.57
+      },
+      "rank": 7,
+      "percentile": -162.8571428571428,
+      "improvement_over_baseline": -0.92
+    },
+    {
+      "benchmark_name": "ARC",
+      "our_accuracy": 0.6,
+      "baselines": {
+        "human": 0.85,
+        "gpt4": 0.85,
+        "claude3_opus": 0.84,
+        "claude3_sonnet": 0.83,
+        "gemini_pro": 0.83,
+        "gpt3.5": 0.51
+      },
+      "rank": 6,
+      "percentile": 26.470588235294112,
+      "improvement_over_baseline": -0.25
+    },
+    {
+      "benchmark_name": "MMLU",
+      "our_accuracy": 0.7,
+      "baselines": {
+        "human": 0.897,
+        "gpt4": 0.863,
+        "claude3_opus": 0.85,
+        "claude3_sonnet": 0.84,
+        "gemini_pro": 0.83,
+        "gpt3.5": 0.7
+      },
+      "rank": 7,
+      "percentile": 0.0,
+      "improvement_over_baseline": -0.16300000000000003
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "our_accuracy": 1.0,
+      "baselines": {
+        "human": 0.956,
+        "gpt4": 0.95,
+        "claude3_opus": 0.945,
+        "claude3_sonnet": 0.94,
+        "gemini_pro": 0.94,
+        "gpt3.5": 0.85
+      },
+      "rank": 1,
+      "percentile": 141.50943396226418,
+      "improvement_over_baseline": 0.050000000000000044
+    },
+    {
+      "benchmark_name": "GSM8K",
+      "our_accuracy": 0.0,
+      "baselines": {
+        "human": 0.92,
+        "gpt4": 0.92,
+        "claude3_opus": 0.915,
+        "claude3_sonnet": 0.9,
+        "gemini_pro": 0.9,
+        "gpt3.5": 0.57
+      },
+      "rank": 7,
+      "percentile": -162.8571428571428,
+      "improvement_over_baseline": -0.92
+    },
+    {
+      "benchmark_name": "ARC",
+      "our_accuracy": 0.9,
+      "baselines": {
+        "human": 0.85,
+        "gpt4": 0.85,
+        "claude3_opus": 0.84,
+        "claude3_sonnet": 0.83,
+        "gemini_pro": 0.83,
+        "gpt3.5": 0.51
+      },
+      "rank": 1,
+      "percentile": 114.70588235294119,
+      "improvement_over_baseline": 0.050000000000000044
+    },
+    {
+      "benchmark_name": "MMLU",
+      "our_accuracy": 0.9,
+      "baselines": {
+        "human": 0.897,
+        "gpt4": 0.863,
+        "claude3_opus": 0.85,
+        "claude3_sonnet": 0.84,
+        "gemini_pro": 0.83,
+        "gpt3.5": 0.7
+      },
+      "rank": 1,
+      "percentile": 101.5228426395939,
+      "improvement_over_baseline": 0.03700000000000003
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "our_accuracy": 1.0,
+      "baselines": {
+        "human": 0.956,
+        "gpt4": 0.95,
+        "claude3_opus": 0.945,
+        "claude3_sonnet": 0.94,
+        "gemini_pro": 0.94,
+        "gpt3.5": 0.85
+      },
+      "rank": 1,
+      "percentile": 141.50943396226418,
+      "improvement_over_baseline": 0.050000000000000044
+    },
+    {
+      "benchmark_name": "GSM8K",
+      "our_accuracy": 0.0,
+      "baselines": {
+        "human": 0.92,
+        "gpt4": 0.92,
+        "claude3_opus": 0.915,
+        "claude3_sonnet": 0.9,
+        "gemini_pro": 0.9,
+        "gpt3.5": 0.57
+      },
+      "rank": 7,
+      "percentile": -162.8571428571428,
+      "improvement_over_baseline": -0.92
+    },
+    {
+      "benchmark_name": "ARC",
+      "our_accuracy": 0.8,
+      "baselines": {
+        "human": 0.85,
+        "gpt4": 0.85,
+        "claude3_opus": 0.84,
+        "claude3_sonnet": 0.83,
+        "gemini_pro": 0.83,
+        "gpt3.5": 0.51
+      },
+      "rank": 6,
+      "percentile": 85.29411764705884,
+      "improvement_over_baseline": -0.04999999999999993
+    },
+    {
+      "benchmark_name": "MMLU",
+      "our_accuracy": 0.6,
+      "baselines": {
+        "human": 0.897,
+        "gpt4": 0.863,
+        "claude3_opus": 0.85,
+        "claude3_sonnet": 0.84,
+        "gemini_pro": 0.83,
+        "gpt3.5": 0.7
+      },
+      "rank": 7,
+      "percentile": -50.76142131979693,
+      "improvement_over_baseline": -0.263
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "our_accuracy": 0.9,
+      "baselines": {
+        "human": 0.956,
+        "gpt4": 0.95,
+        "claude3_opus": 0.945,
+        "claude3_sonnet": 0.94,
+        "gemini_pro": 0.94,
+        "gpt3.5": 0.85
+      },
+      "rank": 6,
+      "percentile": 47.16981132075477,
+      "improvement_over_baseline": -0.04999999999999993
+    },
+    {
+      "benchmark_name": "GSM8K",
+      "our_accuracy": 0.0,
+      "baselines": {
+        "human": 0.92,
+        "gpt4": 0.92,
+        "claude3_opus": 0.915,
+        "claude3_sonnet": 0.9,
+        "gemini_pro": 0.9,
+        "gpt3.5": 0.57
+      },
+      "rank": 7,
+      "percentile": -162.8571428571428,
+      "improvement_over_baseline": -0.92
+    },
+    {
+      "benchmark_name": "ARC",
+      "our_accuracy": 1.0,
+      "baselines": {
+        "human": 0.85,
+        "gpt4": 0.85,
+        "claude3_opus": 0.84,
+        "claude3_sonnet": 0.83,
+        "gemini_pro": 0.83,
+        "gpt3.5": 0.51
+      },
+      "rank": 1,
+      "percentile": 144.11764705882354,
+      "improvement_over_baseline": 0.15000000000000002
+    }
+  ],
+  "last_updated": "2025-12-14T14:23:49.845839"
+}

@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "ARC",
+    "total_questions": 10,
+    "correct_answers": 8,
+    "accuracy": 0.8,
+    "average_confidence": 0.29999999999999993,
+    "average_response_time": 0.039769220352172854,
+    "total_time": 0.3995480537414551,
+    "per_category_accuracy": {
+      "unknown": 0.8
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T07:37:09.585900"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: A student investigates the effects of fertilizer on corn plants by performing the following steps.1. Plant groups of corn plants in the same type and amount of soil in full sunlight.2. Add the same amount of different brands of fertilizer to each group.3. Water the plants for 5 minutes each day.4. Measure the heights of the plants each day. What is the independent variable in this investigation?\n\nA) type of plant\nB) height of plant\nC) amount of fertilizer\nD) type of fertilizer\n",
+      "ground_truth": "type of fertilizer",
+      "prediction": "A",
+      "is_correct": false,
+      "confidence": 0.3,
+      "response_time": 0.013506174087524414,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Which statement describes a positive effect of a scientific discovery?\n\nA) It makes some people upset.\nB) It takes a long time to be useful.\nC) It helps explain how things work.\nD) It causes work to be more difficult.\n",
+      "ground_truth": "It helps explain how things work.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.10752224922180176,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: What unit of measurement would be used to describe the melting point of a substance?\n\nA) liters\nB) grams\nC) degrees\nD) centimeters\n",
+      "ground_truth": "degrees",
+      "prediction": "A",
+      "is_correct": false,
+      "confidence": 0.3,
+      "response_time": 0.07385587692260742,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: An astronaut drops a 1.0 kg object and a 5.0 kg object on the Moon. Both objects fall a total distance of 2.0 m vertically. Which of the following best describes the objects after they have fallen a distance of 1.0 m?\n\nA) They have each lost kinetic energy.\nB) They have each gained the same amount of potential energy.\nC) They have each lost the same amount of potential energy.\nD) They have each gained one-half of their maximum kinetic energy.\n",
+      "ground_truth": "They have each gained one-half of their maximum kinetic energy.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.024611949920654297,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Which statement about the molecules in ice and the molecules in liquid water is correct?\n\nA) The molecules in ice have more energy than the molecules in liquid water.\nB) The molecules in ice contain different atoms than the molecules in liquid water.\nC) The molecules in ice have more electric charge than the molecules in liquid water.\nD) The molecules in ice are less free to move than the molecules in liquid water.\n",
+      "ground_truth": "The molecules in ice are less free to move than the molecules in liquid water.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.030727863311767578,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Hurricanes form over equatorial areas. This is because\n\nA) solar heating is greatest near the equator.\nB) the Moon's plane of orbit is close to the equator.\nC) Earth's volcanic activity is clustered around the equator.\nD) the rate of rotation of Earth's surface is less at the equator.\n",
+      "ground_truth": "solar heating is greatest near the equator.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.020240068435668945,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: As glaciers receded at the end of the last Ice Age, temperatures increased, allowing lakes to form. Pioneer plants grew in the dunes near the lakes. Farther from the dunes, grasslands and forested areas developed. Which process took place after the glaciers melted, allowing grasslands and forests to develop?\n\nA) primary succession\nB) habitat destruction\nC) resource depletion\nD) genetic mutation\n",
+      "ground_truth": "primary succession",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.017359018325805664,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Which statement best describes the effect of the Sun on the oceans?\n\nA) The Sun influences the formation of waves.\nB) The Sun creates water particles.\nC) The Sun's rays cause organisms to come to the surface.\nD) The Sun provides minerals.\n",
+      "ground_truth": "The Sun influences the formation of waves.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.026787996292114258,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: A small laundry room has several shelves above the washing machine. These shelves are an example of\n\nA) making the wall stronger.\nB) using storage space efficiently.\nC) using a machine for more than one purpose.\nD) solving the need for shelter in a creative way.\n",
+      "ground_truth": "using storage space efficiently.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.04033994674682617,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Some coal mining occurs underground and does not disturb the overlying land. How might coal mining that occurs underground be less harmful to the environment than surface mining?\n\nA) Underground coal mining increases pollution.\nB) Underground coal mining reduces habitat loss.\nC) Underground coal mining increases forest growth.\nD) Underground coal mining reduces animal populations.\n",
+      "ground_truth": "Underground coal mining reduces habitat loss.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.04274106025695801,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    }
+  ]
+}

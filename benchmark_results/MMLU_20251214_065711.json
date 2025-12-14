@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "MMLU",
+    "total_questions": 10,
+    "correct_answers": 6,
+    "accuracy": 0.6,
+    "average_confidence": 0.7375791257619858,
+    "average_response_time": 0.01224203109741211,
+    "total_time": 0.12346005439758301,
+    "per_category_accuracy": {
+      "high_school_biology": 0.6
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T06:57:11.809906"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Which of the following is a biotic factor that could affect the growth rate of a population?\n\nA) Volcanic eruption\nB) Glacier melting\nC) Destruction of the ozone layer\nD) Sudden reduction in the animal food resource\n",
+      "ground_truth": "Destruction of the ozone layer",
+      "prediction": "C",
+      "is_correct": true,
+      "confidence": 0.7418174658399075,
+      "response_time": 0.015923023223876953,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Structures as different as human arms, bat wings, and dolphin flippers contain many of the same bones, these bones having developed from very similar embryonic tissues. How do biologists interpret these similarities?\n\nA) By identifying the bones as being homologous\nB) By the principle of convergent evolution\nC) By proposing that humans, bats, and dolphins share a common ancestor\nD) A and C only\n",
+      "ground_truth": "A and C only",
+      "prediction": "C",
+      "is_correct": true,
+      "confidence": 0.7415283386595547,
+      "response_time": 0.011683225631713867,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: All viruses contain at least these two principal components:\n\nA) DNA and proteins\nB) nucleic acid and a capsid\nC) DNA and cell membrane\nD) RNA and cell wall\n",
+      "ground_truth": "nucleic acid and a capsid",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.7106103357970714,
+      "response_time": 0.011549949645996094,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Darwin's mechanism of natural selection required long time spans in order to modify species. From whom did Darwin get the concept of Earth's ancient age?\n\nA) Georges Cuvier\nB) Charles Lyell\nC) Alfred Wallace\nD) Thomas Malthus\n",
+      "ground_truth": "Charles Lyell",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.7575361031200737,
+      "response_time": 0.012146949768066406,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Two trees of the same species growing close together will use the same resources, such as light, water, and nutrients. If any of these resources becomes limiting, then each tree will receive less of it than if the trees were growing farther apart. This scenario is an example of which of the following?\n\nA) Parasitism\nB) Commensalism\nC) Natural selection\nD) Intraspecific competition\n",
+      "ground_truth": "Intraspecific competition",
+      "prediction": "C",
+      "is_correct": true,
+      "confidence": 0.7386018964238464,
+      "response_time": 0.011690855026245117,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: A gas phase is generally absent from which of the following biogeochemical cycles?\n\nA) Water\nB) Carbon\nC) Sulfur\nD) Phosphorus\n",
+      "ground_truth": "Phosphorus",
+      "prediction": "B",
+      "is_correct": false,
+      "confidence": 0.798435015719384,
+      "response_time": 0.011764049530029297,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Which of the following describes a symbiotic relationship?\n\nA) A tapeworm feeds off of its host's nutrients causing the host to lose large amounts of weight.\nB) Certain plants grow on trees in order to gain access to sunlight, not affecting the tree.\nC) Remora fish eat parasites off of sharks; the sharks stay free of parasites, and the remora fish are protected from predators.\nD) Meerkats sound alarm calls to warn other meerkats of predators.\n",
+      "ground_truth": "Remora fish eat parasites off of sharks; the sharks stay free of parasites, and the remora fish are protected from predators.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.7111963944137096,
+      "response_time": 0.0117340087890625,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: The resting membrane potential depends on which of the following? I. Active transport II. Selective permeability III. Differential distribution of ions across the axonal membrane\n\nA) III only\nB) I and II only\nC) II and III only\nD) I, II, and III\n",
+      "ground_truth": "I, II, and III",
+      "prediction": "C",
+      "is_correct": false,
+      "confidence": 0.7197246839068829,
+      "response_time": 0.011587142944335938,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: If, on average, 46% of the loci in a species' gene pool are heterozygous, then the average homozygosity of the species should be\n\nA) 23%\nB) 46%\nC) 54%\nD) 92%\n",
+      "ground_truth": "54%",
+      "prediction": "A",
+      "is_correct": false,
+      "confidence": 0.6378939474374057,
+      "response_time": 0.011631250381469727,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: All of the following play a role in morphogenesis EXCEPT\n\nA) apoptosis\nB) homeotic genes\nC) operons\nD) inductive effects\n",
+      "ground_truth": "operons",
+      "prediction": "B",
+      "is_correct": false,
+      "confidence": 0.8184470763020217,
+      "response_time": 0.012709856033325195,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    }
+  ]
+}

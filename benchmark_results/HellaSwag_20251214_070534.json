@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "HellaSwag",
+    "total_questions": 10,
+    "correct_answers": 9,
+    "accuracy": 0.9,
+    "average_confidence": 0.5028887958016084,
+    "average_response_time": 0.012332820892333984,
+    "total_time": 0.12457394599914551,
+    "per_category_accuracy": {
+      "unknown": 0.9
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T07:05:34.495010"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to get soft feet [title] Exfoliate your feet every day. [step] Calluses and dead skin will build up on your feet from simple, every day use. In order to remove calluses, use a foot file or pumice stone to remove dead skin from the bottom or sides of your feet every day, after a shower or bath.\n\nWhat happens next? Choose the most likely ending:\n\nA) Never remove calluses unless you have an allergy to surface calluses on the rest of your feet, since they can cause the skin of your feet to become hairy. [title] Talk to your doctor to learn more about healthy foot growth.\nB) [substeps] Use a pumice stone to soften and clean your shoes and toes. Moisturize your feet by applying a lotion to your feet and removing dead skin or calluses.\nC) [substeps] When purchasing a pumice stone, ensure you buy one intended for use on your skin. Both pumice stones and foot files are essentially sandpaper for your feet.\nD) Even if you're not specially trained to use an exfoliating product, you can ask a reputable foot hygiene professional for a recommendation. [substeps] If you do not have sensitive feet, exfoliating does not have to be a pain-free affair.\n",
+      "ground_truth": "[substeps] When purchasing a pumice stone, ensure you buy one intended for use on your skin. Both pumice stones and foot files are essentially sandpaper for your feet.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.5025805726503297,
+      "response_time": 0.014208078384399414,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to do a spiral perm [title] Wash your hair gently. [step] Thoroughly wash your hair immediately before you intend to perm it. You need to clean off any oil and grime, but you also need to be somewhat gentle.\n\nWhat happens next? Choose the most likely ending:\n\nA) Once you are sure that your hair is free of oil and dirt, stop washing. Go to a salon or look online for instructions about how to perform a spiral-shaped perm.\nB) [title] Direct the stream of water from your hair. [step] Because of the volume of your hair, it may not be possible to use a brush to direct your water stream.\nC) [substeps] Do not scrub your scalp since doing so often causes your skin to produce more oil. A deep cleansing shampoo might be a good idea during this stage since it will thoroughly strip away the oils in your hair without causing irritation at your scalp.\nD) Dirt and oils can damage your hair, making it even more difficult to achieve a \" spiral \". [title] Use a medium-sized brush or comb to divide your hair into sections.\n",
+      "ground_truth": "[substeps] Do not scrub your scalp since doing so often causes your skin to produce more oil. A deep cleansing shampoo might be a good idea during this stage since it will thoroughly strip away the oils in your hair without causing irritation at your scalp.",
+      "prediction": "C",
+      "is_correct": true,
+      "confidence": 0.49024649009678506,
+      "response_time": 0.01155996322631836,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to wash a hair weave [title] Clean weaves and natural hair separately. [step] Normally, you would want to wash your hair a few times a week. However, the lengthy time it takes to wash hair with a weave in makes it impractical to do more than once a week, and a weave may be damaged with excessive cleaning.\n\nWhat happens next? Choose the most likely ending:\n\nA) The main reason you are washing your weave by hand is to protect your natural hair from damaging more directly around its roots and then to prevent it from slipping back behind you. [substeps] Put your hair in a low ponytail if you want to prevent looking greasy.\nB) To make sure you get all of your hair clean before trying to wash it, check the dyes on your weave. You can find dyes at big box stores, beauty supply stores, and online.\nC) Washing your natural hair once a week, and washing your weave twice a month should be sufficient in most cases. Try to approach these two things relatively separately.\nD) [substeps] Wash your weave while it is still damp by gently running warm water over it. Do not use a natural conditioner while it is still damp.\n",
+      "ground_truth": "Washing your natural hair once a week, and washing your weave twice a month should be sufficient in most cases. Try to approach these two things relatively separately.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.4941745748680246,
+      "response_time": 0.01288294792175293,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: A man and a woman wearing roller blades kneel facing each other on a basketball court. A dog runs by the man and woman. The man and woman rise together. the man and woman\n\nWhat happens next? Choose the most likely ending:\n\nA) perform a paired roller blade routine.\nB) swing the blades together.\nC) break apart and hug.\nD) repeat at the end.\n",
+      "ground_truth": "perform a paired roller blade routine.",
+      "prediction": "B",
+      "is_correct": true,
+      "confidence": 0.5170244429495392,
+      "response_time": 0.011075973510742188,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: The boy shows off the objects used to play crochet and then begins hitting the ball around a yard. the boy\n\nWhat happens next? Choose the most likely ending:\n\nA) calls for a dog to ask him to fetch some treats and then sits by his toys.\nB) then flips it the crochet and then plays again, this time moving it to his ankles instead of his hands.\nC) runs around while playing, dropping sticks.\nD) continues speaking to the camera while holding the stick and continuing to demonstrate.\n",
+      "ground_truth": "continues speaking to the camera while holding the stick and continuing to demonstrate.",
+      "prediction": "B",
+      "is_correct": false,
+      "confidence": 0.5164452006782294,
+      "response_time": 0.011082887649536133,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to clean dr brown bottles [title] Dissemble the bottle. [step] To effectively clean any bottle, it's important to take it apart. However, dr. brown's bottles have more parts than traditional baby bottles, so you must be sure to fully disassemble it.\n\nWhat happens next? Choose the most likely ending:\n\nA) Make a show of all the parts inside, including the bottom and the back sides of the bottle. [substeps] You can also wear gloves and an apron to get access to the inside.\nB) Then, use a screwdriver to loosen the screw on the screw on the inside. Gently pull the bottle apart so that the screw and screw head meet.\nC) Use a sharp knife to carefully remove the bottle. [substeps] Remove as much air as possible from the bottle, even if its in the refrigerator.\nD) Separate the cap, nipple collar, nipple, vent insert, vent reservoir, travel disc, and any insert components from the bottle so you can clean each part. [substeps] If you're not sure how to take apart your particular dr.\n",
+      "ground_truth": "Separate the cap, nipple collar, nipple, vent insert, vent reservoir, travel disc, and any insert components from the bottle so you can clean each part. [substeps] If you're not sure how to take apart your particular dr.",
+      "prediction": "D",
+      "is_correct": true,
+      "confidence": 0.4944849521832929,
+      "response_time": 0.012250185012817383,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: The gymnast strikes his leg accidentally on the bars bringing him to a stop. The gymnast dismounts from the double bars and lands on the mat. a female gymnasts\n\nWhat happens next? Choose the most likely ending:\n\nA) sits in a chair and waits for her turn.\nB) trainer walks over to him and hugs him.\nC) perform on the parallel bars.\nD) kneels on the mat and uses both hands to lift herself up with her knees into the air.\n",
+      "ground_truth": "sits in a chair and waits for her turn.",
+      "prediction": "D",
+      "is_correct": true,
+      "confidence": 0.5019756023769918,
+      "response_time": 0.011658191680908203,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to thicken gravy [title] Buy flour or cornstarch. [step] You can buy both of these items at your local grocery store. Flour or cornstarch will help to thicken any sauce, and gravy is no exception.\n\nWhat happens next? Choose the most likely ending:\n\nA) Cornstarch becomes a common ingredient in sauce sauces, such as gravy. It works wonders, since it forms a sticky ball and stores throughout the recipe.\nB) As long as you can avoid making lumps this option is the fastest way to thicken your gravy. [title] Mix cornstarch or flour with a little water.\nC) [substeps] Do not buy flour for a recipe that used a teaspoon salt. Flour has yeasted and it has added added oils, which means it is more likely to thicken as a thickening agent.\nD) Try to use one specific type of flour, preferably one that is made from natural or vegetable sources like hemp, wheat, or rye. [title] Whisk in butter for a richer taste.\n",
+      "ground_truth": "As long as you can avoid making lumps this option is the fastest way to thicken your gravy. [title] Mix cornstarch or flour with a little water.",
+      "prediction": "C",
+      "is_correct": true,
+      "confidence": 0.4986931129919182,
+      "response_time": 0.013726949691772461,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to digitally sign pdf documents [title] Download pdf utility from messiah's \" codes for us \" blogspot. [title] Save the \" jar \" file somewhere in your computer. [step] ( no installation is necessary.\n\nWhat happens next? Choose the most likely ending:\n\nA) ) [title] Download some pdf utility we have in our own scriptwriteau.com. [step] It only includes small amounts of instructions, and you'll get a good idea of how to use it for when you sign it.\nB) ) [title] Double click the \" jar \" file to open the software. [title] In the right hand panel, there is a button for signature manager.\nC) ) [title] Export a pdf with unetforumc to firefox. [title] Visit wikipedia and download \" pdf utility \".\nD) ) [title] Access the system preferences folder, in your firewall directory. [title] Copy the pdf utility into any section of your firewall.\n",
+      "ground_truth": ") [title] Double click the \" jar \" file to open the software. [title] In the right hand panel, there is a button for signature manager.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.5042994982701483,
+      "response_time": 0.012163877487182617,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to decide if you should retire to a warmer climate [title] Evaluate the possibilities for work. [step] Just because you're retired doesn't mean you might not want to engage in some part-time work. For instance, you might want to parlay your lifelong love of art into a gig at your local framing shop.\n\nWhat happens next? Choose the most likely ending:\n\nA) But even if you're just looking to stay with a local business for a while, you could probably take part in a more laid back lifestyle at home. [substeps] Obviously, many mistake this approach as a waste of time, and keep thinking that it doesn't require work.\nB) Maybe you're an avid hiker and want to start traveling abroad. If that comes across as not exciting to you, a traditional retirement plan might not be the most healthy option for you.\nC) Many trade associations now allow current working colleagues to return to the field to gain valuable experience, in which case you may find it more interesting and rewarding. This isn't to say that you should only retire when you have something of value to contribute to a new field.\nD) If staying busy is a priority for you even in retirement, evaluate opportunities for part-time work during your brief vacation visits. [substeps] You could also evaluate the possibilities for work by searching for part-time jobs in the warm-climate location you're thinking of retiring to by searching online.\n",
+      "ground_truth": "If staying busy is a priority for you even in retirement, evaluate opportunities for part-time work during your brief vacation visits. [substeps] You could also evaluate the possibilities for work by searching for part-time jobs in the warm-climate location you're thinking of retiring to by searching online.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.5089635109508248,
+      "response_time": 0.012719154357910156,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    }
+  ]
+}

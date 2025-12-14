@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "HellaSwag",
+    "total_questions": 10,
+    "correct_answers": 0,
+    "accuracy": 0.0,
+    "average_confidence": 0.4598731802688983,
+    "average_response_time": 0.011115121841430663,
+    "total_time": 0.11252284049987793,
+    "per_category_accuracy": {
+      "unknown": 0.0
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T06:44:48.672562"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to calm an autistic child [title] Figure out what triggered the meltdown. [step] Finding the cause can help you keep them away from whatever is upsetting them. This is important in calming an autistic child.\n\nWhat happens next? Choose the most likely ending:\n\nA) Observe your child and try to figure out the triggers for certain behaviors. If a parent or guardian is aware of the child's triggers, they may be able to avoid it.\nB) Better yet, search online or calling their parent and asking what triggered their tantrum. There may be a combination of environmental causes that triggered their meltdown.\nC) If a meltdown over a range of causes is happening now, then this is a good time to start looking for the source. If you're in the same situation as the child, it may help you better understand their behavior.\nD) The more often you treat an autistic child, the more they might need a break from the stimuli. After you give them a break, work on disciplining them to make them more relaxed.\n",
+      "ground_truth": "Observe your child and try to figure out the triggers for certain behaviors. If a parent or guardian is aware of the child's triggers, they may be able to avoid it.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.46900068616546386,
+      "response_time": 0.011389017105102539,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to make vegan mint chocolate cake [title] Start preheating the oven to 325 degrees f (160 c) as you coat your cooking pan with oil or cooking spray. [title] Place the beets in a saucepan and fill it with enough water to cover the beets. [title] Allow the water to come to a boil and cook them at a medium-high heat until they become soft when pierced with a fork.\n\nWhat happens next? Choose the most likely ending:\n\nA) [title] Add the fresh mint and let the beets simmer, stirring frequently, for a few minutes. [title] Cover with plastic wrap and allow the beets to simmer for up to five minutes.\nB) [title] Remove the beets from the pan and place in a bowl. [step] The sieve will remove any dirt, sweat or bacteria clinging to the beets.\nC) [title] Turn off the heat and place the beets in a large bowl. [step] Stir in the melted butter, chocolate syrup, and the vanilla extract.\nD) [title] Allow the beets to cool off the heat as you place a fine mesh sieve over a medium bowl. [title] Pour the water and beats into the sieve.\n",
+      "ground_truth": "[title] Allow the beets to cool off the heat as you place a fine mesh sieve over a medium bowl. [title] Pour the water and beats into the sieve.",
+      "prediction": "165",
+      "is_correct": false,
+      "confidence": 0.4557075898600289,
+      "response_time": 0.011287927627563477,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: A group of people wearing swim caps move around a pool and toss a ball around with a man on the sides waving a flag. They play a game of water polo and throw the ball around to each other. one\n\nWhat happens next? Choose the most likely ending:\n\nA) throws the ball into the net and causes the people on the side to jump and cheer.\nB) person wins the game knocking the other one into the water.\nC) person keeps score and pretends to make a goal.\nD) jumps through the net and makes it all the way to the other side.\n",
+      "ground_truth": "throws the ball into the net and causes the people on the side to jump and cheer.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.4499477865474849,
+      "response_time": 0.010289192199707031,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to have an adventure [title] Define adventure for yourself. [step] People tend to think of an adventure as something hazardous or dangerous; if that gives you pause, perhaps think of it as \" something enjoyable, unique, and a departure from your routine. \" [substeps] What qualifies as an adventure depends upon you--your perspectives, desires, experiences, and so on.\n\nWhat happens next? Choose the most likely ending:\n\nA) With our adventure versions, freedom means you do not have to define it in several areas. Maybe you have always wanted to hike to a tropical island, but then moved to a new city where there were temperatures outside of those climates.\nB) One man's adventure may be another's routine. Don't worry about how others may define it; if it feels like an adventure to you, it is one.\nC) The most important thing is to stay motivated. Another major component in self-management is identifying why you want to continue exploring the world, and that's often a hold you hold onto.\nD) Think about your faith and identity as well. Ask yourself why you want to do an adventure.\n",
+      "ground_truth": "One man's adventure may be another's routine. Don't worry about how others may define it; if it feels like an adventure to you, it is one.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.45638654575138354,
+      "response_time": 0.010720014572143555,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: He moves a can and touches two other cans. He picks up a can and sprays it on the woman's arm and rubs it. he\n\nWhat happens next? Choose the most likely ending:\n\nA) picks up another can and talks about it then sprays her arm again and rubs the cream in.\nB) rubs foam on her arm in a circular motion that includes her eyes.\nC) leans over with his arm out and the knife enters the sleeve of her gown.\nD) then moves the can and wipe it off a row of cans.\n",
+      "ground_truth": "picks up another can and talks about it then sprays her arm again and rubs the cream in.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.44508505598333203,
+      "response_time": 0.010370016098022461,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to care for a premature baby [title] Speak to the professionals about the problems that your baby is facing. [step] It can be very overwhelming and difficult for parents to understand exactly what their baby is at risk of. The staff is aware of this and generally will explain things to you in a way that you will understand if you continue to have questions and concerns.\n\nWhat happens next? Choose the most likely ending:\n\nA) [substeps] If you do not have professional advice, then educate your parents and work with an pediatrician to get your baby diagnosed. They should be able to provide you with some solid advice.\nB) [substeps] Fill out all of the paperwork prior to or after your appointment. Request copies of the drug and alcohol tests or any other testing the office has before and after your appointment.\nC) [substeps] Call the health and emergency services, drug and alcohol abuse hotline. If you feel wary about giving your baby anything, you can go a notch deeper and ask during a meeting for more information.\nD) [title] Ask as many questions as you need to in order to completely understand the care that is being provided to your baby. [step] Strange machines, special lighting, monitors and tubes attached to your baby can be frightening.\n",
+      "ground_truth": "[title] Ask as many questions as you need to in order to completely understand the care that is being provided to your baby. [step] Strange machines, special lighting, monitors and tubes attached to your baby can be frightening.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.4676115129341509,
+      "response_time": 0.011209964752197266,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to spot the difference between normal anxiety and anxiety disorder [title] Identify the timing of the anxiety. [step] Normal levels of anxiety may occur right before or during an event. You may feel stressed out or anxious because of the situation, and this is often normal.\n\nWhat happens next? Choose the most likely ending:\n\nA) However, if you have an anxiety disorder, then you may be anxious for days or weeks leading up to an event. The time you spend feeling anxious may be much greater than the situation warrants.\nB) If it's something relatively minor, sometimes normal anxiety might occur spontaneously. Other times, it may happen immediately after an event, and often more frequently throughout the course of a day or holiday.\nC) However, anxiety can occur near major events, as well. If someone has both of these symptoms, that person may be under stress.\nD) However, anxiety may also occur while going on a date, seeing a friend, or going to a social event. [substeps] To recognize the timing of your anxiety disorder, take notes of when you felt anxious the prior to your date.\n",
+      "ground_truth": "However, if you have an anxiety disorder, then you may be anxious for days or weeks leading up to an event. The time you spend feeling anxious may be much greater than the situation warrants.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.4604283722585235,
+      "response_time": 0.011447906494140625,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: A large white truck with its hood open backs up. Marc man speaks to the camera by a vintage red car. he\n\nWhat happens next? Choose the most likely ending:\n\nA) wipes some car cleaner on the driver's side door and polishes it.\nB) proceeds to wipe down the shiny black car with sponge.\nC) is painting the inside windshield purple.\nD) vacuums back onto his and someone else's hose.\n",
+      "ground_truth": "wipes some car cleaner on the driver's side door and polishes it.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.46157314267314975,
+      "response_time": 0.010539054870605469,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to braise beef [title] Select an inexpensive cut of meat to braise. [step] While it may seem contrary to usual meat-buying logic, tougher or less-tender cuts of meat are perfect for braising. Pot roast, chuck roast or any inexpensive cut may be used.\n\nWhat happens next? Choose the most likely ending:\n\nA) The muscle fibers and connective tissue that make these cuts stringy or tough are broken down by braising, which gelatinizes the collagen into a more palatable texture. Low heat and long cooking times are used to make a tough cut of any kind of meat moist, tender, and delicious, when cooked properly.\nB) [substeps] Nuts, seeds, fruits or vegetables should all go in a braised beef braise, but they should also be toasted or consumed free of fats, juices or oils. Select these nutritious cuts of beef in the same way you would others.\nC) Tenderloin is good options because it cuts a bit higher than other varieties of beef and burgers. Olive oil can make braised beef much richer.\nD) Steak is a different type of meat and you'll need to be willing to share that with others at a restaurant. [substeps] Choose beef products from dachshunds, beef liver or split beef bones available at your local butcher or grocer.\n",
+      "ground_truth": "The muscle fibers and connective tissue that make these cuts stringy or tough are broken down by braising, which gelatinizes the collagen into a more palatable texture. Low heat and long cooking times are used to make a tough cut of any kind of meat moist, tender, and delicious, when cooked properly.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.46683531491620184,
+      "response_time": 0.011417150497436523,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to diagnose post traumatic stress disorder [title] Recognize the presence of a traumatic event. [step] Ptsd occurs after a traumatic event. A traumatic event is something that deeply impacts someone such as a brush with death, violence, or serious injury.\n\nWhat happens next? Choose the most likely ending:\n\nA) Note if a traumatic event makes you feel stress. Make a list of the events that have made you have ptsd.\nB) Ptsd can be triggered by inconsistent or over the top events that do not directly relate to themselves, or by the inability to respond to stress or anxiety. [substeps] The person may experience flashbacks to the event as part of experiencing normal emotions.\nC) The event can have actually happened or may have been threatened (such as being threatened by a gun or threatened with violence). [substeps] Some events may be experienced as more traumatic to some than to others.\nD) The traumatic event could be a person's plane falling down, the defendant's car going into the ocean, or a friend's car crash. Ptsd occurs after traumatic events, like the loss of a loved one or the suicide of a loved one.\n",
+      "ground_truth": "The event can have actually happened or may have been threatened (such as being threatened by a gun or threatened with violence). [substeps] Some events may be experienced as more traumatic to some than to others.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.46615579559926307,
+      "response_time": 0.012480974197387695,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    }
+  ]
+}

@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "HellaSwag",
+    "total_questions": 10,
+    "correct_answers": 9,
+    "accuracy": 0.9,
+    "average_confidence": 0.6742399915456773,
+    "average_response_time": 0.020227980613708497,
+    "total_time": 0.20492291450500488,
+    "per_category_accuracy": {
+      "unknown": 0.9
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T06:56:50.966136"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to care for a weave [title] Shampoo your hair every 7 to 14 days. [step] Wet your hair with lukewarm water. Pour a dime-sized amount of shampoo into your palm, then massage it into your scalp and through your extension.\n\nWhat happens next? Choose the most likely ending:\n\nA) Use your hands to work the shampoo through your weave and into your hair. Don't squeeze it out; it should all run out by the end of each cycle.\nB) From there, wash it out with shampoo. Some weave-specific shampoos are specifically made for your hair type.\nC) Be as gentle as possible, since your weave can tangle easily while shampooing. [substeps] If you work out or sweat a lot, shampoo every 7 days.\nD) For your extensions, shampoo only once during the day, once after school and once right before bed. To prevent tangles, do this before going to bed.\n",
+      "ground_truth": "Be as gentle as possible, since your weave can tangle easily while shampooing. [substeps] If you work out or sweat a lot, shampoo every 7 days.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.6706206209883094,
+      "response_time": 0.01589512825012207,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to decorate a grave site [title] Pick the best floral option for the time of year. [step] When fresh flowers are available, especially in the spring and summer, most cemeteries would prefer that you bring fresh flowers. However, if you want something else, consider a small flowering shrub, which will continue to bring beauty to the grave site for many years.\n\nWhat happens next? Choose the most likely ending:\n\nA) You might also try autumn humps, which can be enjoyed with bare feet. [title] Let the flower grow directly from the soil.\nB) [substeps] If you want a flowering shrub or flowers, pick something small, native, and easy to maintain. Check with a local nursery to ask what would be best for your area.\nC) [substeps] It's also an ideal time to plant flowers like roses or daisies. If you prefer lower temperatures, consider spinach or brunei.\nD) [substeps] You may want to choose other flowers to cover the inside of the grave site, such as lilies, lettuce, or grasses. If you want something more decorative, consider various flower themes that would be favorable for the surface of the grave site.\n",
+      "ground_truth": "[substeps] If you want a flowering shrub or flowers, pick something small, native, and easy to maintain. Check with a local nursery to ask what would be best for your area.",
+      "prediction": "D",
+      "is_correct": true,
+      "confidence": 0.6830349555239081,
+      "response_time": 0.019513845443725586,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: The girl holds the cats paw in her left hand. The cat groomer grabs a cat nail clipper in her right hand. the cat groomer\n\nWhat happens next? Choose the most likely ending:\n\nA) squeezes the cats paw and proceeds to clip the cats nails.\nB) shines the nail of the girl.\nC) stops to give the cat paw back to the woman.\nD) takes the cat's left paw and with her open hand cut the nails with latex less nail clippers.\n",
+      "ground_truth": "squeezes the cats paw and proceeds to clip the cats nails.",
+      "prediction": "D",
+      "is_correct": true,
+      "confidence": 0.6539226454012096,
+      "response_time": 0.016710996627807617,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to make a ristretto (espresso coffee ) [title] Choose your coffee beans. [step] You can choose beans that you would use for an espresso, such as an arabica or robusta bean. An arabica bean will be sweeter with hints of berries and a higher acidity.\n\nWhat happens next? Choose the most likely ending:\n\nA) Because of the creamy structure of a arabica, they tend to make a better coffee. [substeps] If you don't like coffee beans, choose itamarnacha instead.\nB) The robusta has a stronger, nuttier taste and contains more caffeine than the arabica. [substeps] Check out local coffee beans for new and different kinds of arabica or robusta beans.\nC) Robusta beans will be rounder with hints of green or brown. [title] Place your beans in a saucepan.\nD) [title] Pour the coffee into your pot and place your lids on the pot. [step] Keep the lid on the pot until all of the beans are completely covered with the amount of water that you water be rinsing out of the beans.\n",
+      "ground_truth": "The robusta has a stronger, nuttier taste and contains more caffeine than the arabica. [substeps] Check out local coffee beans for new and different kinds of arabica or robusta beans.",
+      "prediction": "D",
+      "is_correct": true,
+      "confidence": 0.6619624070674182,
+      "response_time": 0.021847963333129883,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to take azo [title] Choose the azo product based on your symptoms. [step] Azo offers a number of different options to treat urinary tract infections or bladder control issues. Read over the packaging of each product to see which one addresses your specific health concerns.\n\nWhat happens next? Choose the most likely ending:\n\nA) Some of the most common azo products include : [substeps] Itraconazole. This drug has been recognized by many as a safe practice for male patients for avoiding urinary tract infections, but can no longer be used.\nB) [substeps] The azo product is available in pack packages, capsules, and squeeze bottles. You can also get it at amazon.com.\nC) If you need something fast-acting, then going with the maximum strength option might be the best. [title] Select an azo medication form based on your personal preferences.\nD) [substeps] Azo products are available by prescription, and they typically come in packets or capsules. Sample sample samples of a product can be found online.\n",
+      "ground_truth": "If you need something fast-acting, then going with the maximum strength option might be the best. [title] Select an azo medication form based on your personal preferences.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.7078098866827787,
+      "response_time": 0.0193939208984375,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to deal with a mare in heat [title] Learn about a mare's reproductive cycle. [step] Mares are seasonally polyestrous, meaning their reproductive cycles occur at certain times of the year. Typically, a mare's cycling season will last from april through september.\n\nWhat happens next? Choose the most likely ending:\n\nA) Keep a record of the cycle so you can check on the frequency during the mating season. [title] Pay attention to the foal's age.\nB) [substeps] For example, mare in heat cycles vary in frequency. It isn't uncommon for a mare in her first period to be vulvarian.\nC) During these months, each cycle will last 18 to 23 days and the mare will be in heat for about 5 of those days. [substeps] A mare's cycling may begin as early as march and end as late as october or november.\nD) Mares are prone to reproductive cycles, particularly during this time, as they are only interested in glands in the vulva. [substeps] If you have a stallion mare, you are likely to notice large changes in her body.\n",
+      "ground_truth": "During these months, each cycle will last 18 to 23 days and the mare will be in heat for about 5 of those days. [substeps] A mare's cycling may begin as early as march and end as late as october or november.",
+      "prediction": "C",
+      "is_correct": true,
+      "confidence": 0.6715510642305016,
+      "response_time": 0.024526119232177734,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to build a positive home for your kids [title] Practice what you preach. [step] Children take on a great deal of the beliefs, attitudes, and behaviors demonstrated by their parents. Therefore, it's essential that your presence in their lives reflects that of a positive role model.\n\nWhat happens next? Choose the most likely ending:\n\nA) Don't assume that your own actions reflect what your child believes or thinks of you. [substeps] Talk to and model what you preach regarding children in your bedroom.\nB) The popular saying \" do as i say not as i do \" simply won't cut it here. If you smoke, drink, use swear words, or demonstrate prejudiced viewpoints, there's a good chance your children will, too.\nC) This means you need to keep up with the younger generations' belief systems, role model, and other role models in order to be encouraging and encouraging. You can do this by : [substeps] Inviting your friends to live in your home.\nD) [substeps] Write down your statements about your ways and in, and make sure you discuss them with them regularly. Keep a record of your points with a pen and record them so everyone can see them.\n",
+      "ground_truth": "The popular saying \" do as i say not as i do \" simply won't cut it here. If you smoke, drink, use swear words, or demonstrate prejudiced viewpoints, there's a good chance your children will, too.",
+      "prediction": "B",
+      "is_correct": false,
+      "confidence": 0.672148196361959,
+      "response_time": 0.03017878532409668,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to stop being in love with a person you'll never meet [title] Keep busy. [step] Stay occupied during your spare time so that you don't give yourself a lot of time to think about them. Take up new hobbies, pick up old ones, ask friends out for coffee or dinner, join a club, take a class, or volunteer.\n\nWhat happens next? Choose the most likely ending:\n\nA) Fill your days and nights so that you're enjoying life and aren't spending much time thinking of them. [substeps] You will notice that thinking of them is regressive-you will think of them less and less over time.\nB) Give your attention to something that interests you, rather than time for their inappropriate activities. [substeps] Many young people find it more normal to be busy with their schoolwork while having a hobby or club.\nC) Don't let your obligations pull you under. [substeps] Find a hobby you find fulfilling and do it regularly.\nD) Just do something that you can't wait to do and that will make you extremely happy. [substeps] Check facebook and/or instagram for ideas about finding something fun to do.\n",
+      "ground_truth": "Fill your days and nights so that you're enjoying life and aren't spending much time thinking of them. [substeps] You will notice that thinking of them is regressive-you will think of them less and less over time.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.6842603887729346,
+      "response_time": 0.021078109741210938,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to choose a combined engagement and wedding ring [title] Try yellow gold for sensitive skin. [step] While rose gold is renowned for its durability, some people have allergic reactions to the copper in the metal. Therefore, if the bride has sensitive skin, it's best to shy away from rose gold and go for yellow gold.\n\nWhat happens next? Choose the most likely ending:\n\nA) [title] Pick rose gold for durability. [step] Of the traditional wedding and engagement ring metals, rose gold is the most durable.\nB) [title] Select bright, bold colors for practical purposes. [step] While wedding rings and engagement rings can be very bold, they could come in a wide range of colors.\nC) Rose gold has a much lower toasting point than red gold. [substeps] Red gold rings are bulkier and is known for its heat resistance.\nD) [substeps] Mustard gold is great for sensitive skin. Since it contains 300 to 200% zinc (zinc nitrate), it's an ideal option for sensitive skin.\n",
+      "ground_truth": "[title] Pick rose gold for durability. [step] Of the traditional wedding and engagement ring metals, rose gold is the most durable.",
+      "prediction": "B",
+      "is_correct": true,
+      "confidence": 0.6843732222132385,
+      "response_time": 0.01954793930053711,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to clean adidas shoes [title] Shake off any dirt on your shoes. [step] Do it outside so dirt doesn't get all over your floor. Hit the soles of your shoes together a few times to help dislodge caked-on dirt and grime.\n\nWhat happens next? Choose the most likely ending:\n\nA) Then, rinse your feet in a solution of cold water and a fresh clean cloth to clean the soles. [substeps] Always use a mild detergent, such as chlorine or regular dish detergent, to clean shoes.\nB) [substeps] [title] Run a vacuum over the laces. [step] While the shoes are soaking, run your vacuum up and down through the laces.\nC) [substeps] Many shoe stores have foot wash stations or rows of clean shoes you can use to scrub away dirt and grime. These can be easily cleaned after use by wiping them down with a wet rag and a few drops of mild dish soap.\nD) [title] Remove stubborn dirt clumps on the soles with a dry, clean toothbrush. [step] Take the toothbrush and gently brush it back and forth over any dirt spots.\n",
+      "ground_truth": "[title] Remove stubborn dirt clumps on the soles with a dry, clean toothbrush. [step] Take the toothbrush and gently brush it back and forth over any dirt spots.",
+      "prediction": "C",
+      "is_correct": true,
+      "confidence": 0.6527165282145142,
+      "response_time": 0.013586997985839844,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    }
+  ]
+}

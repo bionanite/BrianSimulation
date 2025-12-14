@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "HellaSwag",
+    "total_questions": 10,
+    "correct_answers": 9,
+    "accuracy": 0.9,
+    "average_confidence": 0.49773551443396646,
+    "average_response_time": 0.02161517143249512,
+    "total_time": 0.21849679946899414,
+    "per_category_accuracy": {
+      "unknown": 0.9
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T14:23:39.885855"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to be a stay at home dad [title] Do some soul-searching. [step] Make sure you're okay with your wife being the breadwinner, and discuss what you will be expected to do. Are you signing on to do all the housework, cooking, and childcare? Or are you just agreeing to take care of the kids? [title] Consider your career.\n\nWhat happens next? Choose the most likely ending:\n\nA) [step] What else do you like doing? [substeps] Do you have a dream job or job? Then you will not necessarily be fighting over child custody. However, think long and hard about what kind of job you plan on taking.\nB) [step] What can you be doing for what will be most useful to you in life? [substeps] Check out forums and career blogs like aol.com and yelp. You can find a ton of interesting information, such as jobs and job leads.\nC) [step] Think about how you might balance being a stay-at-home dad with your career goals. Consider asking your employer if you could work part-time and/or from home.\nD) [step] Spend some time considering what you want to do and how it will affect your lifestyle if your spouse moves. Your spouse might not be exactly ready for that career, but you will be supportive and can give it along.\n",
+      "ground_truth": "[step] Think about how you might balance being a stay-at-home dad with your career goals. Consider asking your employer if you could work part-time and/or from home.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.46799999999999997,
+      "response_time": 0.013565778732299805,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to grow a beard [title] Shave regularly until your facial hair comes in evenly. [step] The worst way to grow a beard is to just stop shaving, or to never start. This results in patchy, uneven, and thin beards that just flat-out won't look good on your face.\n\nWhat happens next? Choose the most likely ending:\n\nA) If you do get what you're looking for when you shave off-skin, that's okay: you can restart shaving as you go. [substeps] For some men, beard trims are more problematic, and can clash easily with either bald or trimmed beards.\nB) So trim your hair about every 5 to 6 months. [substeps] If you always start shaving after meals or when you bathe, in the shower, or just before bed, it will slow down your growth as you age.\nC) If you're a guy who likes to get his beard trimmed every other day, shaving every morning after a shower won't be enough time. [substeps] By shaving every day, your beard will be longer and the thickness will decrease.\nD) If your facial hair isn't growing in evenly all around your face, keep shaving regularly, and be patient until it does. [substeps] If you're not sure how evenly your facial hair is growing in, shave your entire face and look for stubble.\n",
+      "ground_truth": "If your facial hair isn't growing in evenly all around your face, keep shaving regularly, and be patient until it does. [substeps] If you're not sure how evenly your facial hair is growing in, shave your entire face and look for stubble.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.481090909090909,
+      "response_time": 0.020854949951171875,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to use a collagen lip mask [title] Decide on a collagen lip mask. [step] Lip masks can vary by several factors, such as size and taste. You may want a bigger lip mask to get the dry skin around your lips or if you have plumper lips to begin with, for instance.\n\nWhat happens next? Choose the most likely ending:\n\nA) However, some people enjoy larger, heavy-coverage masks because they're heavier and longer lasting. Pay attention to difference between different lip masks and what type of face paint you like most and stick with the one you wear most often.\nB) Some also have tasty flavors, and that can be a deciding factor. [substeps] Most of these masks have hydrating ingredients, so you if you have an allergy, be sure to check out the ingredients before buying.\nC) A large lip mask will be ideal for dry skin by reducing swelling and redness. [substeps] If you're trying to achieve light coverage, you should use a slightly brighter lip mask.\nD) These characteristics make mouth masks ideal for this cause. [substeps] Your mouth mask determines the size of your face, as well as how your mouth will fit through it.\n",
+      "ground_truth": "Some also have tasty flavors, and that can be a deciding factor. [substeps] Most of these masks have hydrating ingredients, so you if you have an allergy, be sure to check out the ingredients before buying.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.49199999999999994,
+      "response_time": 0.01730632781982422,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: Then he stops sharpening the knife and takes out some pieces of paper to show how sharp the knife is as he cuts slivers of paper with the knife. then another screen\n\nWhat happens next? Choose the most likely ending:\n\nA) appears with a screen with his name and picture and he explains proper tattoo technique.\nB) appears and it's a press conference about the activities of some individuals and what type of journey they are taking now.\nC) appears with a computer screen and along side it encouraging words to visit two websites.\nD) appears to let there not only show how fast the sharpening was achieved but also shows his single blow of the knife forward cutting part of a shirt and showing how the wooden handle of the flat knife is sharpening.\n",
+      "ground_truth": "appears with a computer screen and along side it encouraging words to visit two websites.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.5012307692307693,
+      "response_time": 0.01092219352722168,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to clean snow peas [title] Choose healthy peas. [step] A mature snow pea can be up to 3 inches in length. Select ones with smooth, not wrinkly, skin.\n\nWhat happens next? Choose the most likely ending:\n\nA) They should have a solid green skin free of any cracks. The pods should be fairly flat, indicating small sized peas.\nB) [substeps] Pick 1 large, round seed and 1 medium one. You can harvest it fairly easily, but this is not necessary to make an adult snow pea.\nC) [substeps] This step goes for peas that have burrs; white-annical peas tend to be the exception. Brown colored peas use 100% return bleach, even if they are very dirty.\nD) Avoid peas whose outer coat has become leathery and dry. Protective outdoor materials like plastic cover are a good option.\n",
+      "ground_truth": "They should have a solid green skin free of any cracks. The pods should be fairly flat, indicating small sized peas.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.5091428571428571,
+      "response_time": 0.02300095558166504,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: She lifts it into the air and above her head. She drops the barbell to the ground. She bows for the crowd and blows them a kiss. she\n\nWhat happens next? Choose the most likely ending:\n\nA) lifts it again and restarts the routine with a spin.\nB) then walks off stage.\nC) places the barbell on the ground and sticks her hand in the air before leaving the stage.\nD) continues dancing with the barbell again.\n",
+      "ground_truth": "then walks off stage.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.5159999999999999,
+      "response_time": 0.021799087524414062,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to adopt a child in missouri [title] Assess your situation and preferences. [step] You have many options, and the type of child you want will drive who you work with during the adoption process. Spend some time considering the following : [substeps] Do you want to adopt a child in the u.s.? This is called a domestic adoption.\n\nWhat happens next? Choose the most likely ending:\n\nA) You can adopt a child in the u.s. you can adopt the child in the u.s.\nB) However, you might have to wait a long time for a child to become available. Do you want to adopt a child internationally? You might have a better chance at finding a child, but international adoptions can be complicated and more expensive.\nC) You can adopt a child at the start of an adoption process, where the adopting party adopts a minor child in a different state. They provide a temporary home for the minor child, then return the child to their home country and select a permanent home from there.\nD) You are responsible for raising the child and supporting him or her through the adoption process. You would want to adopt a child under the age of two.\n",
+      "ground_truth": "However, you might have to wait a long time for a child to become available. Do you want to adopt a child internationally? You might have a better chance at finding a child, but international adoptions can be complicated and more expensive.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.5219999999999999,
+      "response_time": 0.035193681716918945,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to stimulate your pituitary gland [title] Talk with your doctor. [step] If you suspect an issue with your pituitary gland, your doctor's office should be your first stop. You can go to see your primary care physician first or go directly to an endocrinologist, a doctor who specializes in the endocrine (hormone-producing) system.\n\nWhat happens next? Choose the most likely ending:\n\nA) [title] Have surgery done to correct a problem. [step] Surgery means monitoring your hormone levels and being sure your pituitary gland is functioning correctly.\nB) The doctor will likely start by measuring your gland output with a blood test. [substeps] After the initial consultation, the doctor may suggest more in-depth diagnostic tests, such as a magnetic resonance imaging scan (mri).\nC) They can help you develop proper methods of inducing this hormone production. [substeps] Ovarian glands on your penis are located between the penis and your anus.\nD) Your doctor may refer you to a neurologist first if one is very helpful to you or if you have concerns. But if you suspect an urgent matter, your doctor should be able to help you identify potential causes.\n",
+      "ground_truth": "The doctor will likely start by measuring your gland output with a blood test. [substeps] After the initial consultation, the doctor may suggest more in-depth diagnostic tests, such as a magnetic resonance imaging scan (mri).",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.5272941176470587,
+      "response_time": 0.01174783706665039,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: A boy in an orange shirt is playing a video game. The scene changes to the game itself. The scene changes back to the boy. the camera\n\nWhat happens next? Choose the most likely ending:\n\nA) zooms in on the controller.\nB) moves away from the boy.\nC) shifts back to the game outcome.\nD) zooms in on his instrument.\n",
+      "ground_truth": "zooms in on the controller.",
+      "prediction": "A",
+      "is_correct": false,
+      "confidence": 0.44333333333333336,
+      "response_time": 0.030956029891967773,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: Athletes gather on a track, preparing to run. they\n\nWhat happens next? Choose the most likely ending:\n\nA) take turns, running down the track.\nB) jog and do somersaults in the air.\nC) take sharp turns, running and diving.\nD) run, then stop when a scoreboard shows the score.\n",
+      "ground_truth": "take turns, running down the track.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.5172631578947368,
+      "response_time": 0.030804872512817383,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    }
+  ]
+}

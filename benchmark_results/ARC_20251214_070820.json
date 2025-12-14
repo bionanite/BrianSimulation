@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "ARC",
+    "total_questions": 10,
+    "correct_answers": 4,
+    "accuracy": 0.4,
+    "average_confidence": 0.6919652411706746,
+    "average_response_time": 0.010700130462646484,
+    "total_time": 0.10758781433105469,
+    "per_category_accuracy": {
+      "unknown": 0.4
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T07:08:20.015101"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: A student found a worm under some leaves and wrote observations about the worm in a notebook. Which is a fact that could be found in the student's notebook?\n\nA) The worm feels cold.\nB) The worm is a heterotroph.\nC) The worm has 33 segments.\nD) The worm has a four-chambered heart.\n",
+      "ground_truth": "The worm has 33 segments.",
+      "prediction": "B",
+      "is_correct": false,
+      "confidence": 0.6691588155180215,
+      "response_time": 0.01128387451171875,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Which example best demonstrates the process of conduction?\n\nA) A piece of paper is torn in half.\nB) Warmed air rises above a lit candle.\nC) A metal spoon gets warm when used to stir hot soup.\nD) Sunlight brightens a dark room.\n",
+      "ground_truth": "3",
+      "prediction": "C",
+      "is_correct": false,
+      "confidence": 0.6837210030164569,
+      "response_time": 0.010438203811645508,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Sean felt the room become cooler. His body adjusts to enable him to survive. Which response did Sean have that enabled his body to continue to function correctly?\n\nA) an increase in cellular respiration which increases heat production\nB) sweating from the skin to lower inner heat levels\nC) opening of the capillaries in the skin to obtain more heat\nD) an increase in the metabolism which decreases heat from cells\n",
+      "ground_truth": "an increase in cellular respiration which increases heat production",
+      "prediction": "C",
+      "is_correct": true,
+      "confidence": 0.7208307312540709,
+      "response_time": 0.010890007019042969,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: The salt in ocean water comes from all of the following except\n\nA) eroding land.\nB) melting glacial ice.\nC) volcanic emissions.\nD) reactions on the sea floor.\n",
+      "ground_truth": "melting glacial ice.",
+      "prediction": "D",
+      "is_correct": false,
+      "confidence": 0.7321360779833049,
+      "response_time": 0.01039266586303711,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: A student is investigating how light behaves when it strikes different surfaces. She has a frosted window glass pane, a clear window glass pane, a mirror, and a piece of cardboard. Which of these objects will scatter the most light?\n\nA) the mirror, because it is reflective\nB) the piece of cardboard, because it is opaque\nC) the clear window glass, because it is transparent\nD) the frosted window glass, because it is translucent\n",
+      "ground_truth": "the frosted window glass, because it is translucent",
+      "prediction": "C",
+      "is_correct": true,
+      "confidence": 0.7080792827308178,
+      "response_time": 0.01067495346069336,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: When an electric current is passed through water (H_{2}O) using a specific apparatus, hydrogen (H_{2}) and oxygen (O_{2}) gases form. How can this reaction be shown in a chemical equation?\n\nA) H_{2}O -> H + O + H\nB) 2H_{2}O(l) -> 2H_{2}(g) + O_{2}(g)\nC) H:O:H -> H_{2}O\nD) H_{2}O(l) -> 2H(g) + O(g)\n",
+      "ground_truth": "2H_{2}O(l) -> 2H_{2}(g) + O_{2}(g)",
+      "prediction": "B",
+      "is_correct": false,
+      "confidence": 0.5944839947018772,
+      "response_time": 0.010638952255249023,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Which statement correctly describes a physical characteristic of the Moon?\n\nA) The Moon is made of hot gases.\nB) The Moon is covered with many craters.\nC) The Moon has many bodies of liquid water.\nD) The Moon has the ability to give off its own light.\n",
+      "ground_truth": "The Moon is covered with many craters.",
+      "prediction": "B",
+      "is_correct": false,
+      "confidence": 0.6844512053672225,
+      "response_time": 0.010622024536132812,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Students use tweezers and magnifying glasses to examine a piece of mold on bread. Which should they also use for safety in this investigation?\n\nA) bright light\nB) dark glasses\nC) breathing masks\nD) hot plates\n",
+      "ground_truth": "breathing masks",
+      "prediction": "C",
+      "is_correct": false,
+      "confidence": 0.7464574738573283,
+      "response_time": 0.010480165481567383,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Which statement best describes all types of energy transfers?\n\nA) They can be measured.\nB) They are 100% efficient.\nC) They decrease at a constant rate.\nD) They result in decreases in usable energy.\n",
+      "ground_truth": "They result in decreases in usable energy.",
+      "prediction": "D",
+      "is_correct": true,
+      "confidence": 0.7103974732793867,
+      "response_time": 0.010652303695678711,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: A student has built a model in which sheets of cork floating in a tub of water represent tectonic plates. To make the sheet representing an ocean plate more accurate in the model system, the student should\n\nA) cut several holes in it.\nB) attach small weights to it.\nC) cut it into a smaller shape.\nD) replace it with a thin sheet of copper.\n",
+      "ground_truth": "attach small weights to it.",
+      "prediction": "C",
+      "is_correct": true,
+      "confidence": 0.6699363539982587,
+      "response_time": 0.010928153991699219,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    }
+  ]
+}

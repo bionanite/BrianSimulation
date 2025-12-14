@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "HellaSwag",
+    "total_questions": 10,
+    "correct_answers": 6,
+    "accuracy": 0.6,
+    "average_confidence": 0.4943842011190145,
+    "average_response_time": 0.011273431777954101,
+    "total_time": 0.11385798454284668,
+    "per_category_accuracy": {
+      "unknown": 0.6
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T06:55:36.428503"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to wax eyebrows at home (honey and salt method ) [title] Gather ingredients to create the wax. [step] This recipe is convenient because these ingredients can be found in every kitchen. You will only need some honey, salt, flour and water.\n\nWhat happens next? Choose the most likely ending:\n\nA) [title] Create your ingredients in an electric or hand sink (your kitchen works best). [step] For best results, use warm water , 3 ounces of water and the thing sugar called corn syrup.\nB) [title] Place two tablespoons of honey into a small bowl. [step] If your recipe requires you to grind some flour to create a dry substance, make sure to wait until you are finished, otherwise you may not be able to choose the type of desired wax for your eyebrow hair.\nC) [title] Combine honey, water, salt, and flour into a small, microwaveable mixing bowl. [step] You can use equal parts honey, flour, water and salt.\nD) You don't need a ton of milk. For best results, use 100% whole milk.\n",
+      "ground_truth": "[title] Combine honey, water, salt, and flour into a small, microwaveable mixing bowl. [step] You can use equal parts honey, flour, water and salt.",
+      "prediction": "B",
+      "is_correct": true,
+      "confidence": 0.49838642231555236,
+      "response_time": 0.013360977172851562,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to handle poking wires on braces [title] Get some orthodontic wax. [step] Your orthodontist should have supplied you with some when you got your braces. [substeps] If you have run out, you can buy it at most pharmacies.\n\nWhat happens next? Choose the most likely ending:\n\nA) Orthodontic wax comes in small cases containing long strips of wax. If you cannot find wax at a pharmacy, call your orthodontist for some.\nB) Wait for the wax to harden on your braces. Apply it slowly with a soft toothbrush to get wax off your teeth quickly.\nC) If you usually have to use petroleum jelly, foam tape, or glitter, you don't have to do that. Just this tiny bit can make your brackets smoother and prevent painful twists.\nD) [title] Assess whether you are allergic to your orthodontic wax. [step] If you have an allergic reaction to the wax, or if you have a very weak immune response, there is a good chance you have an allergy.\n",
+      "ground_truth": "Orthodontic wax comes in small cases containing long strips of wax. If you cannot find wax at a pharmacy, call your orthodontist for some.",
+      "prediction": "D",
+      "is_correct": true,
+      "confidence": 0.49304496959300603,
+      "response_time": 0.012117147445678711,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: A man in a red shirt who has an electric guitar is tapping his foot keeping tempo and playing a tune. he\n\nWhat happens next? Choose the most likely ending:\n\nA) plays up and down a scale or tune.\nB) seems to be having trouble not playing as he's trying to hit the strings as fast as he can.\nC) is sitting in a room playing the guitar as he is sitting in front of a two foot couch.\nD) continues to tune one of the guitars with both hands to get the rhythm right.\n",
+      "ground_truth": "plays up and down a scale or tune.",
+      "prediction": "B",
+      "is_correct": false,
+      "confidence": 0.4869135246501749,
+      "response_time": 0.010525941848754883,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to tell if a tattoo is infected [title] Wait a few days before coming to any conclusions. [step] The day you get a tattoo, the entire area will be red, slightly swollen, and sensitive. New tattoos will be somewhat painful, about as sore as a severe sunburn.\n\nWhat happens next? Choose the most likely ending:\n\nA) If the tattoo is not infected, it will likely burn within the first six days. Simply return the tattoo to a reputable pharmacy and, if an attempt to remove it looks infected, take it to a physician.\nB) This usually abates about 10 days after the tattoo, but you still may need to see your doctor. The following days will usually be the most likely day for the tattoo to appear infected : [substeps] The sun exposure is the most severe (this is usually around mid-morning or afternoon).\nC) If you are concerned about your skin's perceived ability to heal or if you suspect something is seriously wrong, avoid handling the tattoo until that day. [substeps] Best to avoid touching your tattoo if it has already healed.\nD) In the first 48 hours of getting a tattoo, it can be very difficult to determine whether or not an infection has set in, so don't jump the gun. Maintain a proper tattoo aftercare procedure and adopt a wait and see policy.\n",
+      "ground_truth": "In the first 48 hours of getting a tattoo, it can be very difficult to determine whether or not an infection has set in, so don't jump the gun. Maintain a proper tattoo aftercare procedure and adopt a wait and see policy.",
+      "prediction": "B",
+      "is_correct": true,
+      "confidence": 0.4976358528299982,
+      "response_time": 0.011591911315917969,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: We see a man talking while walking through a house. We see another man working on the floor. we\n\nWhat happens next? Choose the most likely ending:\n\nA) see a young lady skateboarding.\nB) see a man smiling and handing out carpet samples.\nC) see a man laying tile in another room.\nD) see a ladder in a room and walk up a ladder.\n",
+      "ground_truth": "see a man laying tile in another room.",
+      "prediction": "C",
+      "is_correct": false,
+      "confidence": 0.5122924150836764,
+      "response_time": 0.01098179817199707,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: A woman is getting ready to bath her dog in her front yard. She takes a hose and wets the dog first. there\n\nWhat happens next? Choose the most likely ending:\n\nA) is another little puppy running around the dog and a little kitten too.\nB) is wet dog on a table next to her.\nC) is something about dogs that is contagious.\nD) is a dog in a cart, other people are helping her as she gets ready to bath the dog in the water.\n",
+      "ground_truth": "is another little puppy running around the dog and a little kitten too.",
+      "prediction": "D",
+      "is_correct": true,
+      "confidence": 0.4852116875898951,
+      "response_time": 0.010874032974243164,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: A boy in young boy drives a small tractor lawn mower around the yard of a house maneuvering around obstacles. the boy\n\nWhat happens next? Choose the most likely ending:\n\nA) mows over some small flowers in the grass.\nB) walks in a circle the approached the camera, and then went back the same way he came from.\nC) stops then passes the tractor.\nD) pushes the edge of the mower up and down along the lawn path as leaves begin to fall on the lawn.\n",
+      "ground_truth": "mows over some small flowers in the grass.",
+      "prediction": "D",
+      "is_correct": false,
+      "confidence": 0.502575937613829,
+      "response_time": 0.010544300079345703,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: A woman is in a living room in front of a fire. She cuts wrapping paper in strips, then wraps it neatly around a box. she\n\nWhat happens next? Choose the most likely ending:\n\nA) grabs an egg and circles it with a silver marker.\nB) tapes the box, then lays it down gently on the table.\nC) lets the wrapping paper fall away from the box at the end.\nD) puts icing on the top, then seals it.\n",
+      "ground_truth": "tapes the box, then lays it down gently on the table.",
+      "prediction": "C",
+      "is_correct": false,
+      "confidence": 0.48541033490579444,
+      "response_time": 0.010803937911987305,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to use itranslate on your phone [title] Open your iphone device. [title] Open the itranslate app. [title] Press the left button to represent your country.\n\nWhat happens next? Choose the most likely ending:\n\nA) [title] Press the right side button to show what language you want to be translated. [substeps] For example, if you want to translate english to french, english is on the left side button and french is on the right side button.\nB) [step] Here you can choose what countries you are trying to contact by visiting a button in the lower left. [substeps] You will be brought to the type of country that you want to reach: south america, japan, india, australia, london, and jamaica.\nC) [step] The countries that use icloud and icloud devices tend to have a smaller country than countries in other countries. To learn more, tap the \" country \" tab at the top right corner of your screen.\nD) [title] Press the button next to \" public info. [step] \" [title] Tap your country from the menu.\n",
+      "ground_truth": "[title] Press the right side button to show what language you want to be translated. [substeps] For example, if you want to translate english to french, english is on the left side button and french is on the right side button.",
+      "prediction": "B",
+      "is_correct": true,
+      "confidence": 0.48815487487173614,
+      "response_time": 0.011358022689819336,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: A woman cuts the top off the pumpkin, emptying the seeds. She then carves the traced lines to cut out the design. when she\n\nWhat happens next? Choose the most likely ending:\n\nA) is done, she plays with.\nB) is done, the pumpkin is gone.\nC) is done, a tea light is placed inside the pumpkin and lit.\nD) puts the wrap back on the pumpkin she describes it and the hat.\n",
+      "ground_truth": "is done, a tea light is placed inside the pumpkin and lit.",
+      "prediction": "D",
+      "is_correct": true,
+      "confidence": 0.4942159917364821,
+      "response_time": 0.010576248168945312,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    }
+  ]
+}

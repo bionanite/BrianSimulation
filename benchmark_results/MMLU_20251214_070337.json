@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "MMLU",
+    "total_questions": 10,
+    "correct_answers": 5,
+    "accuracy": 0.5,
+    "average_confidence": 0.47441550859373205,
+    "average_response_time": 0.010524225234985352,
+    "total_time": 0.10618710517883301,
+    "per_category_accuracy": {
+      "high_school_biology": 0.5
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T07:03:37.775873"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: DNA sequences in many human genes are very similar to the corresponding sequences in chimpanzees. Which statement gives the most likely explanation of this fact?\n\nA) Humans evolved from chimpanzees millions of year ago.\nB) Chimpanzees evolved from humans millions of years ago.\nC) Humans and chimpanzees evolved from a recent common ancestor\u2014about 6 million years ago.\nD) Humans and chimpanzees evolved from a distant common ancestor about 4 billion years ago.\n",
+      "ground_truth": "Humans and chimpanzees evolved from a recent common ancestor\u2014about 6 million years ago.",
+      "prediction": "D",
+      "is_correct": true,
+      "confidence": 0.48346712762712485,
+      "response_time": 0.014456748962402344,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: A scientist carries out a cross between two guinea pigs, both of which have black coats. Black hair coat is dominant over white hair coat. Three quarters of the offspring have black coats, and one quarter have white coats. The genotypes of the parents were most likely\n\nA) bb \u00d7 bb\nB) Bb \u00d7 Bb\nC) Bb \u00d7 bb\nD) BB \u00d7 Bb\n",
+      "ground_truth": "Bb \u00d7 Bb",
+      "prediction": "A",
+      "is_correct": false,
+      "confidence": 0.4605393489943974,
+      "response_time": 0.010049104690551758,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: All of the following play a role in morphogenesis EXCEPT\n\nA) apoptosis\nB) homeotic genes\nC) operons\nD) inductive effects\n",
+      "ground_truth": "operons",
+      "prediction": "B",
+      "is_correct": false,
+      "confidence": 0.49462535818522557,
+      "response_time": 0.010125875473022461,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Which is a true statement concerning genetic variation?\n\nA) It is created by the direct action of natural selection.\nB) It arises in response to changes in the environment.\nC) It must be present in a population before natural selection can act upon the population.\nD) It tends to be reduced by the processes involved when diploid organisms produce gametes.\n",
+      "ground_truth": "It must be present in a population before natural selection can act upon the population.",
+      "prediction": "C",
+      "is_correct": true,
+      "confidence": 0.4703349471377268,
+      "response_time": 0.010161876678466797,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: In minks, the gene for brown fur (B) is dominant over the gene for silver fur (b). Which set of genotypes represents a cross that could produce offspring with silver fur from parents that both have brown fur?\n\nA) BB BB\nB) BB Bb\nC) Bb Bb\nD) Bb bb\n",
+      "ground_truth": "Bb Bb",
+      "prediction": "A",
+      "is_correct": false,
+      "confidence": 0.45130763139027047,
+      "response_time": 0.010004997253417969,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Natural selection is based on all of the following except\n\nA) genetic variation exists within populations.\nB) the best-adapted individuals tend to leave the most offspring.\nC) individuals who survive longer tend to leave more offspring than those who die young.\nD) individuals adapt to their environments and, thereby, evolve.\n",
+      "ground_truth": "individuals adapt to their environments and, thereby, evolve.",
+      "prediction": "C",
+      "is_correct": false,
+      "confidence": 0.4863760801091591,
+      "response_time": 0.010214090347290039,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: If, on average, 46% of the loci in a species' gene pool are heterozygous, then the average homozygosity of the species should be\n\nA) 23%\nB) 46%\nC) 54%\nD) 92%\n",
+      "ground_truth": "54%",
+      "prediction": "A",
+      "is_correct": false,
+      "confidence": 0.45316111951395555,
+      "response_time": 0.009934663772583008,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: A baby duck runs for cover when a large object is tossed over its head. After this object is repeatedly passed overhead, the duck learns there is no danger and stops running for cover when the same object appears again. This is an example of\n\nA) imprinting.\nB) fixed-action pattern.\nC) agonistic behavior.\nD) habituation.\n",
+      "ground_truth": "habituation.",
+      "prediction": "B",
+      "is_correct": true,
+      "confidence": 0.49060999435721697,
+      "response_time": 0.010254859924316406,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Which of the following are traits that are affected by more than one gene?\n\nA) Heterozygous traits\nB) Pleiotropic traits\nC) Polygenic traits\nD) Blended alleles\n",
+      "ground_truth": "Polygenic traits",
+      "prediction": "C",
+      "is_correct": true,
+      "confidence": 0.49707563980679415,
+      "response_time": 0.009875059127807617,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Which of the following statements about trypsin is NOT true?\n\nA) It is an organic compound made of proteins.\nB) It is a catalyst that alters the rate of a reaction.\nC) It is operative over a wide pH range.\nD) The rate of catalysis is affected by the concentration of substrate.\n",
+      "ground_truth": "It is operative over a wide pH range.",
+      "prediction": "D",
+      "is_correct": true,
+      "confidence": 0.4566578388154502,
+      "response_time": 0.010164976119995117,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    }
+  ]
+}

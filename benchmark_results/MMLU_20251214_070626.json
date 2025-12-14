@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "MMLU",
+    "total_questions": 10,
+    "correct_answers": 7,
+    "accuracy": 0.7,
+    "average_confidence": 0.5706811611373143,
+    "average_response_time": 0.010921883583068847,
+    "total_time": 0.11109495162963867,
+    "per_category_accuracy": {
+      "high_school_biology": 0.7
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T07:06:26.574610"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Except for identical twins, no two people are genetically identical. Which of the following statements most accurately describes the main source of variation in humans?\n\nA) The main source of variation in humans is genetic drift.\nB) Changes in the environment cause rapid changes in different human populations.\nC) Shuffling of alleles is responsible for the greatest variation in humans.\nD) Mutations are responsible for the greatest changes in different human populations.\n",
+      "ground_truth": "Shuffling of alleles is responsible for the greatest variation in humans.",
+      "prediction": "D",
+      "is_correct": false,
+      "confidence": 0.5665167344087567,
+      "response_time": 0.014895915985107422,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: In cells, which of the following can catalyze reactions involving hydrogen peroxide, provide cellular energy, and make proteins, in that order?\n\nA) Peroxisomes, mitochondria, and ribosomes\nB) Peroxisomes, mitochondria, and lysosomes\nC) Peroxisomes, mitochondria, and Golgi apparatus\nD) Lysosomes, chloroplasts, and ribosomes\n",
+      "ground_truth": "Peroxisomes, mitochondria, and ribosomes",
+      "prediction": "B",
+      "is_correct": true,
+      "confidence": 0.6229831461376666,
+      "response_time": 0.010516166687011719,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Which of the following statements about the immune system is NOT correct?\n\nA) Innate immunity, also known as the adaptive immune response, relies on circulating phagocytes engulfing foreign substances.\nB) Adaptive immunity is a slower response than innate immunity.\nC) Innate immunity activates a humoral response.\nD) Dendritic cells are antigen presenting cells.\n",
+      "ground_truth": "Innate immunity, also known as the adaptive immune response, relies on circulating phagocytes engulfing foreign substances.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.5717908076101266,
+      "response_time": 0.010164976119995117,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Which of the following is correct about organisms that are the first to colonize a habitat undergoing ecological succession?\n\nA) They are the fiercest competitors in the area.\nB) They maintain the habitat as it is for their own kind.\nC) They change the habitat in a way that makes it more habitable for other organisms.\nD) They are small invertebrates.\n",
+      "ground_truth": "They change the habitat in a way that makes it more habitable for other organisms.",
+      "prediction": "C",
+      "is_correct": true,
+      "confidence": 0.5406626983564103,
+      "response_time": 0.010511159896850586,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: What is the best explanation for the fact that tuna, sharks, and dolphins all have a similar streamlined appearance?\n\nA) They all share a recent common ancestor.\nB) They all sustained the same set of mutations.\nC) They acquire a streamlined body type to survive in their particular environment.\nD) The streamlined body has a selective advantage in that environment.\n",
+      "ground_truth": "The streamlined body has a selective advantage in that environment.",
+      "prediction": "D",
+      "is_correct": true,
+      "confidence": 0.5445121193847816,
+      "response_time": 0.010393857955932617,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Which of the following theories is based on the notion that mitochondria and chloroplasts evolved from prokaryotic cells?\n\nA) Fluid mosaic model\nB) Endosymbiotic model\nC) Taxonomic model\nD) Respiration feedback model\n",
+      "ground_truth": "Endosymbiotic model",
+      "prediction": "B",
+      "is_correct": true,
+      "confidence": 0.6242766115424045,
+      "response_time": 0.010504007339477539,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Short sequence by promoter that assists transcription by interacting with regulatory proteins.\n\nA) Enhancer\nB) Repressor\nC) Operator\nD) Promoter\n",
+      "ground_truth": "Operator",
+      "prediction": "C",
+      "is_correct": false,
+      "confidence": 0.550681598150698,
+      "response_time": 0.00991678237915039,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: All of the following support the endosymbiotic theory that ancestors of mitochondria and chloroplasts were once independent, free-living prokaryotes EXCEPT:\n\nA) Mitochondria and chloroplasts divide independently of the eukaryotic host cell by a process similar to binary fission.\nB) Mitochondria and chloroplasts have ribosomes that more closely resemble those of bacteria than of eukaryotic cells.\nC) Mitochondria and chloroplasts function independently from the eukaryotic host cell.\nD) Mitochondria, chloroplasts, and bacteria have a single, circular chromosome without histones or proteins.\n",
+      "ground_truth": "Mitochondria and chloroplasts function independently from the eukaryotic host cell.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.5930742372498128,
+      "response_time": 0.011405229568481445,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: DDT was once considered a \"silver bullet\" that would permanently eradicate insect pests. Today, instead, DDT is largely useless against many insects. Which of these would have been required for this pest eradication effort to be successful in the long run?\n\nA) Larger doses of DDT should have been applied.\nB) All habitats should have received applications of DDT at about the same time.\nC) The frequency of DDT application should have been higher.\nD) None of the individual insects should have possessed genomes that made them resistant to DDT.\n",
+      "ground_truth": "None of the individual insects should have possessed genomes that made them resistant to DDT.",
+      "prediction": "D",
+      "is_correct": true,
+      "confidence": 0.5351445044025305,
+      "response_time": 0.010866880416870117,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Crossing-over occurs during which of the following phases in meiosis?\n\nA) Prophase I\nB) Metaphase I\nC) Anaphase I\nD) Prophase II\n",
+      "ground_truth": "Prophase I",
+      "prediction": "D",
+      "is_correct": false,
+      "confidence": 0.5571691541299543,
+      "response_time": 0.010043859481811523,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    }
+  ]
+}

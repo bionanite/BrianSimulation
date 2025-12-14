@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "HellaSwag",
+    "total_questions": 10,
+    "correct_answers": 0,
+    "accuracy": 0.0,
+    "average_confidence": 0.45315291656118395,
+    "average_response_time": 0.011065006256103516,
+    "total_time": 0.11227011680603027,
+    "per_category_accuracy": {
+      "unknown": 0.0
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T06:52:07.703226"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to deal with asbestos tile [title] Look for signs of damage. [step] If an asbestos containing tile is undamaged, you should leave it intact. The fibers are considered non-friable as long as the piece is intact, but if the piece is damaged the fibers could become airborne.\n\nWhat happens next? Choose the most likely ending:\n\nA) If a piece is damaged, it is highly possible that it is reimpregnated after handling. [title] Protect your floors and foundation with lead-based latex paint, fiberglass mulch, and heavy leaf mulch.\nB) [substeps] Look for any lumps or cracks in the tile. You should also use a broom handle to gently tap large chunks off of the tile.\nC) Look for signs of discoloration or staining on the tile. [substeps] If there is a certain color on an tile, contact the manufacturer before trying to use an asbestos treated shower pan.\nD) You should only remove the asbestos tile if it is damaged. To identify damage, look for : [substeps] Broken corners or pieces frayed edges deep cuts or scratches [title] Avoid busting up the tile.\n",
+      "ground_truth": "You should only remove the asbestos tile if it is damaged. To identify damage, look for : [substeps] Broken corners or pieces frayed edges deep cuts or scratches [title] Avoid busting up the tile.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.46485840962662567,
+      "response_time": 0.011378049850463867,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: The title is seen on a black screen and we see the tools. Instructions and demonstrations instructs us to wet the stone. we\n\nWhat happens next? Choose the most likely ending:\n\nA) see the stone in the washer and dryer and the instructions are given.\nB) see a forearm showing and the word cutter under a black line.\nC) see the bath drill in action.\nD) are then instructed and shown how to slide the knife on the stone.\n",
+      "ground_truth": "are then instructed and shown how to slide the knife on the stone.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.45249798570584154,
+      "response_time": 0.010160207748413086,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to play the knife and fork chocolate game [title] Place the bar of chocolate in the middle of the table. [step] The chocolate should be kept in its original foil and paper wrapper. If your chocolate is already unwrapped, wrap multiple layers of wrapping paper around it.\n\nWhat happens next? Choose the most likely ending:\n\nA) [substeps] Use caution when using foil wrapped around chocolate; it could break a wire \" cooling \" mechanism. For any color chocolate, place a carrot side on the paper wrapping paper.\nB) Poke a hole in one edge so the chocolate sticks out when played. [title] Flip the block of chocolate (the one that is at the center of the dinner table) so that there is a gold bar underneath it.\nC) [title] Gently lay the cut bar of chocolate upside down on the edges of the table. [step] You should put the foil away from the chocolate as you would with an ordinary chocolate bar.\nD) [substeps] If you don't have wrapping paper handy, try wrapping with newspaper. Though not as pretty, this simple fix will up the difficulty of the game.\n",
+      "ground_truth": "[substeps] If you don't have wrapping paper handy, try wrapping with newspaper. Though not as pretty, this simple fix will up the difficulty of the game.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.4536196277335918,
+      "response_time": 0.011389970779418945,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: A man is running while holding a pole on a track. he\n\nWhat happens next? Choose the most likely ending:\n\nA) uses the pole to vault through the air.\nB) runs down the track, wrapping his legs around the pole.\nC) runs into a sand pit and starts to jump.\nD) lands on a pile of sand.\n",
+      "ground_truth": "uses the pole to vault through the air.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.44184711556895667,
+      "response_time": 0.010821104049682617,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: A man covered in tattoos stands in front of a young boy sitting in a tattoo chair and tattoos the boys forearm. the man\n\nWhat happens next? Choose the most likely ending:\n\nA) speeds up and removes butterfly tattoo covering.\nB) stands over the boys arm with a metal tattoo tool and works on the boys arm, who is sitting in a black chair watching the tattoo being placed on the arm.\nC) hands the young man a parchment and begins to pile up products and base materials over the tattoos until the video ends and shows the whole tattoo.\nD) gently cuts the boys ear with a tool.\n",
+      "ground_truth": "stands over the boys arm with a metal tattoo tool and works on the boys arm, who is sitting in a black chair watching the tattoo being placed on the arm.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.4445427094592896,
+      "response_time": 0.010033845901489258,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to use nose hair removal cream [title] Read all labels. [step] When you shop for nose hair removal cream, you must be very careful about what you purchase for this purpose. Most hair removal creams are not intended to be used in the nose because their odors can cause dizziness and nausea.\n\nWhat happens next? Choose the most likely ending:\n\nA) Read labels carefully to be certain that the cream you get does not specifically say to avoid using it in the nose. [substeps] The truth is that no hair removal cream is designed for the nose, so you should be very careful if you find a cream that does say it is safe for the nose.\nB) In order to avoid catching these side effects, read all labels on the bottle with the name of the product included. An inventory of the product can also be helpful : [substeps] Any types of product will not be effective.\nC) [substeps] Some reputable stores that specialize in this treatment are pharmacies, sports stores, drug stores, and cosmetic stores. Check your purchase and pharmacist's website to ensure you are not purchasing any pre-made product.\nD) Unfortunately, you can experience dizziness, nausea, and fainting. If you buy a product that contains scents that irritate your nose, such as benzoyl peroxide, retinol, or rubbing alcohol, consult your physician or dermatologist.\n",
+      "ground_truth": "Read labels carefully to be certain that the cream you get does not specifically say to avoid using it in the nose. [substeps] The truth is that no hair removal cream is designed for the nose, so you should be very careful if you find a cream that does say it is safe for the nose.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.4579953069075957,
+      "response_time": 0.011852025985717773,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to vary your makeup look by season [title] Apply sunscreen before any makeup. [step] The best canvas for makeup is healthy skin, and it's vital to keep skin healthy with spf. Before you head out into the sunshine, apply a sunscreen with an spf between 30 and 50.\n\nWhat happens next? Choose the most likely ending:\n\nA) Use a sunscreen primer over your entire body-make sure it matches your skin color. [title] Wash your face twice a day and cleanse it of all dirt and oil.\nB) The best sunscreen is the spf that begins at night and can be extended throughout the day. [substeps] Do not apply a very bright or flashy make-up, as this can make your look look too harsh.\nC) Allow it to absorb into your skin for three to five minutes before applying any of your makeup. [substeps] To learn more about using sunscreen in your makeup routine, check out the article here.\nD) An spf will become your trademark color, and it will help prevent breakouts for a few hours after sun damage. [substeps] You should also consider protecting yourself from the sun with a broad-brimmed hat, sunglasses, skin towel, or a bathing cap.\n",
+      "ground_truth": "Allow it to absorb into your skin for three to five minutes before applying any of your makeup. [substeps] To learn more about using sunscreen in your makeup routine, check out the article here.",
+      "prediction": "20",
+      "is_correct": false,
+      "confidence": 0.4450588047860483,
+      "response_time": 0.011529922485351562,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to get a job in new zealand [title] Explore your visa options before you start job hunting. [step] Make sure you fit english language, medical, character, and other requirements before you start to plan your relocation. There are a variety of visas, and your eligibility depends on your industry, nation of origin, and other factors.\n\nWhat happens next? Choose the most likely ending:\n\nA) [substeps] Make sure you don't plan to stay in a location for a long period of time, including a year or more. Consider making a separate plan for your transition.\nB) [title] Check if you meet the qualifications required to become an australian residency resident. [step] According to the immigration deed, you need to be a resident of the united states for at least one year prior to applying to australia.\nC) It might take a little research to figure out the appropriate visa and its requirements. [substeps] You can use the nz government website's tool to check your eligibility and find the right visa option: https: // www.immigration.\nD) [substeps] Familiarize yourself with the united states government's acceptance visa, which is issued by the expiration of ffebes for those with disabilities. It's not a valid card in that country and changes every month.\n",
+      "ground_truth": "It might take a little research to figure out the appropriate visa and its requirements. [substeps] You can use the nz government website's tool to check your eligibility and find the right visa option: https: // www.immigration.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.469982216684851,
+      "response_time": 0.011078119277954102,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to trust [title] Offer your trust first. [step] Putting yourself out there is tough, but it is much easier to build trusting relationships if you are willing to take the first step. Try something small, like sharing a personal story, confiding a small anxiety, or asking someone to go on a date.\n\nWhat happens next? Choose the most likely ending:\n\nA) If the person is rude or distant, then you can move on to someone else. But if they offer something back or sympathize with you, telling a similar story or agreeing to go on a date, then you've both taken the first step towards a trusting relationship.\nB) Nothing too fancy like telling a story about your childhood school days to someone in your circle of friends. You can even try it in a group setting, like a treat at a skate park or a happy face at a party.\nC) Doing this takes courage and will yield greater trust. [title] Don't make the mistake of adding trustworthiness to your trust routine.\nD) It is better to know the whole story before making a big commitment, but saying something small can help you move on quickly. Showing your trust is best done in advance.\n",
+      "ground_truth": "If the person is rude or distant, then you can move on to someone else. But if they offer something back or sympathize with you, telling a similar story or agreeing to go on a date, then you've both taken the first step towards a trusting relationship.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.44251897990065403,
+      "response_time": 0.011911869049072266,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: The sunburned man is taking his shirt off and laying it on the bed. His friends help him with cream on his sunburn. the woman\n\nWhat happens next? Choose the most likely ending:\n\nA) places orange-colored tissue paper onto the sunburn.\nB) is helping him putting on sunscreen.\nC) is getting massage by a man.\nD) is sitting at the table eating.\n",
+      "ground_truth": "is sitting at the table eating.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.45860800923838474,
+      "response_time": 0.01049494743347168,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    }
+  ]
+}

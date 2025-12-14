@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "HellaSwag",
+    "total_questions": 10,
+    "correct_answers": 8,
+    "accuracy": 0.8,
+    "average_confidence": 0.6703877719795331,
+    "average_response_time": 0.011772823333740235,
+    "total_time": 0.11875510215759277,
+    "per_category_accuracy": {
+      "unknown": 0.8
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T07:07:56.417825"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to style a bob [title] Dampen your hair or leave it wet after a shower. [step] This method is one of the most common ones for styling a bob, and it starts with your hair being wet. Spray or wet your hair if it is dry, or leave it wet after your shower before doing anything else to it.\n\nWhat happens next? Choose the most likely ending:\n\nA) [substeps] Mist your hair to make it wet before going outside. Spritz or spray your hair with mist or add leave-in conditioner to give yourself a spritz of moisture before you go outside.\nB) [title] Point your clippers away from your hair. [step] Place the pointed end of one end of the clippers against the front of your roots.\nC) Towel dry the rest of your hair so that it is damp, but not dripping wet; you could also leave your hair drying outside at home. [substeps] If you washed your hair, don't put it in the dryer overnight; that will cause the cuticles to dry.\nD) [title] Massage a styling agent, such as mousse or soft-hold gel, into your hair. [step] The styling agent will help to hold your hair in place once you style and blow dry it.\n",
+      "ground_truth": "[title] Massage a styling agent, such as mousse or soft-hold gel, into your hair. [step] The styling agent will help to hold your hair in place once you style and blow dry it.",
+      "prediction": "C",
+      "is_correct": true,
+      "confidence": 0.6385868999958038,
+      "response_time": 0.012763023376464844,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to dye your hair denim [title] Purchase a bleaching kit. [step] If you have naturally blonde hair or very light brown hair, you can skip the bleaching process. Blue dye will layer over your existing color, so it will hardly show up if you have darker hair.\n\nWhat happens next? Choose the most likely ending:\n\nA) [substeps] Shop online or in bulk online for hair dye kits if you have recently dyed your hair. This is called altering the color of your hair, as restoring the color to it is one of the fastest ways to get blue dye.\nB) You can dye your hair just as you would your hair going to another hair color. The only difference is that if you dye your hair purple it will just show up on your wig to school.\nC) You can find bleaching kits at beauty supply stores, and they will have everything you need to bleach your hair, so they're great for amateur colorists. The kits will come with bleach powder, developer, a mixing bowl, and a brush.\nD) Luckily, you can also choose a kit with six colors that complement your current color. This will make the dyeing process possible.\n",
+      "ground_truth": "You can find bleaching kits at beauty supply stores, and they will have everything you need to bleach your hair, so they're great for amateur colorists. The kits will come with bleach powder, developer, a mixing bowl, and a brush.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.6606776361316442,
+      "response_time": 0.012473106384277344,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: A man is outside of a building. He is using commercial lawn mowing equipment. he\n\nWhat happens next? Choose the most likely ending:\n\nA) walks back and forth as he mows the grass.\nB) is animated as he does the task.\nC) relaxes, making sure his lawn is pristine.\nD) runs from one side of the building to the other.\n",
+      "ground_truth": "walks back and forth as he mows the grass.",
+      "prediction": "B",
+      "is_correct": true,
+      "confidence": 0.6671483772024512,
+      "response_time": 0.010998964309692383,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to have a fashion show at home [title] Make a list of people to invite (you can facetime or skype people) and ask them to dress fashionably. [step] You can ask them to bring/wear additional clothes, coats, accessories, and shoes for the fashion show. Just pretend they're wearing the clothes that you made.\n\nWhat happens next? Choose the most likely ending:\n\nA) [title] Make the \" show style show \" picture go on the page. [step] You can list as many styles as you want.\nB) Research go-to dress codes on internet sites to find what they don't like, or check local stores when you find them. [title] Stay up all night asking people to dress based on the show.\nC) [title] Convince your friend that you may have no need for her clothes. [step] Explain that your clothing budget is empty and thank them for trying to help.\nD) [title] Prepare your home to host the fashion show by deciding the layout of the party. [step] Choose and area to create a backdrop.\n",
+      "ground_truth": "[title] Prepare your home to host the fashion show by deciding the layout of the party. [step] Choose and area to create a backdrop.",
+      "prediction": "B",
+      "is_correct": true,
+      "confidence": 0.6652069506384433,
+      "response_time": 0.011389017105102539,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to wind a watch [title] Lay the wristwatch on a table. [step] Remove the wristwatch from your arm or storage. If you wind a watch while it is on the arm, with the watch tight against the skin, the winding motion may not be effective.\n\nWhat happens next? Choose the most likely ending:\n\nA) [substeps] Winding a watch while attached to your arm places strain on the mechanics in the watch because of the angle on your arm and the stem. Locate the stem, which will be pulled out to wind the watch.\nB) Try to wind the watch instead of your wrist: when you unscrew the watch, the blood will separate from the loosened hair at the bottom of the watch. In a particularly humid or rainy area, turn the watch part downwards at eye level.\nC) If you unscrew the watch, the winding movement is more likely to cause problems. [substeps] This method will only work if the watch is small enough to fit on your wrist.\nD) A loose watch will often take more effort to wind than a watch with a relatively flexible wrist. [substeps] If the watch isn't sufficiently loose to fit on your wrist, then try to loosen and unscrew it.\n",
+      "ground_truth": "[substeps] Winding a watch while attached to your arm places strain on the mechanics in the watch because of the angle on your arm and the stem. Locate the stem, which will be pulled out to wind the watch.",
+      "prediction": "B",
+      "is_correct": true,
+      "confidence": 0.6604587800577283,
+      "response_time": 0.012223958969116211,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to cope with being adopted [title] Talk about your feelings with your family and friends. [step] It's perfectly normal to feel confused, shocked, and overwhelmed after learning that you're adopted. Allow yourself to experience these emotions, and share them with people you trust.\n\nWhat happens next? Choose the most likely ending:\n\nA) [substeps] Remember your connection to your family and friends. Share your feelings with them where they can understand you fully.\nB) In particular, talk to your parent, if you're still in school. Maybe he or she helped you overcome your insecurities and made you feel accepted from a new place.\nC) [substeps] You might feel guilty or nervous about sharing conflicted feelings with your adopted family, but try to put these feelings aside. You don't have to hide your feelings and struggle with your emotions on your own.\nD) It doesn't take a lot of time and effort to come out how you really feel. [substeps] Talking to a trusted friend or loved one about your concerns can help you process them without feeling a certain apprehension.\n",
+      "ground_truth": "[substeps] You might feel guilty or nervous about sharing conflicted feelings with your adopted family, but try to put these feelings aside. You don't have to hide your feelings and struggle with your emotions on your own.",
+      "prediction": "D",
+      "is_correct": true,
+      "confidence": 0.704444655790925,
+      "response_time": 0.012023210525512695,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: A woman is outside wind blowing a little bit through her hair, the view is outstanding. there\n\nWhat happens next? Choose the most likely ending:\n\nA) is a small group of people wind surfing on waves and the words ences ok appear on screen.\nB) is ia group of runners starting a marathon taking their time.\nC) are people around her on the winds machine enjoying themselves while they pick up speed.\nD) is an old woman off in the distance holding a kite in her hand and trying to herd little birds to her right.\n",
+      "ground_truth": "is ia group of runners starting a marathon taking their time.",
+      "prediction": "D",
+      "is_correct": false,
+      "confidence": 0.6676670281924307,
+      "response_time": 0.011463165283203125,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: Two men perform a flip move on a playground that leads to one being dropped on the ground. the camera\n\nWhat happens next? Choose the most likely ending:\n\nA) follows the men down the path.\nB) zooms in on the fallen man while they all laugh together.\nC) rolls off and turns around on itself in slow motion.\nD) follows one man to the ground, but is blocked by a garbage can and one man surrounds him with objects.\n",
+      "ground_truth": "zooms in on the fallen man while they all laugh together.",
+      "prediction": "D",
+      "is_correct": false,
+      "confidence": 0.6716865049563348,
+      "response_time": 0.01127767562866211,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: A female stands on waterboard that is on grass. People jump off an inflated boat. the credits of a video\n\nWhat happens next? Choose the most likely ending:\n\nA) clip hang on the screen.\nB) show her sailing on a large boat.\nC) are shown and shows shows people hitting the sand.\nD) are shown with clips.\n",
+      "ground_truth": "are shown with clips.",
+      "prediction": "C",
+      "is_correct": true,
+      "confidence": 0.680985427128151,
+      "response_time": 0.01117086410522461,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to make body oil [title] Find small, dark glass bottles to store your oil. [step] Sunlight and air break down oils over time. Store your oils in bottles made from dark, semi-opaque glass, the size of a small perfume bottle.\n\nWhat happens next? Choose the most likely ending:\n\nA) [substeps] You can also store your oil in a dark plastic storage container in your refrigerator. [title] Put your ingredients and oil together in your glass bottle.\nB) The small size lets you work with quantities that you can use up before they break down, while minimizing headspace (air inside the bottle) that speeds up decay. [substeps] Use bottles with a tight cap or cork.\nC) The fermentation process produces undissolved oils that dilute and react with other oils, like olive oil. Empty a shallow bowl of oil into another well-ventilated container and use it to store your oil.\nD) This provides less warmth and moisture than an open bottle. [title] For powders, choose a brand or types of powders that contain 10% protein.\n",
+      "ground_truth": "The small size lets you work with quantities that you can use up before they break down, while minimizing headspace (air inside the bottle) that speeds up decay. [substeps] Use bottles with a tight cap or cork.",
+      "prediction": "B",
+      "is_correct": true,
+      "confidence": 0.6870154597014189,
+      "response_time": 0.011945247650146484,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    }
+  ]
+}

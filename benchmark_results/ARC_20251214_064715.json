@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "ARC",
+    "total_questions": 10,
+    "correct_answers": 0,
+    "accuracy": 0.0,
+    "average_confidence": 0.46930161816112026,
+    "average_response_time": 0.012605237960815429,
+    "total_time": 0.12736988067626953,
+    "per_category_accuracy": {
+      "unknown": 0.0
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T06:47:15.779562"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: A balance is used to measure\n\nA) mass.\nB) length.\nC) volume.\nD) temperature.\n",
+      "ground_truth": "mass.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.47419492732477175,
+      "response_time": 0.014654874801635742,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Farmers in Wyoming were concerned because some of their chickens were being preyed upon by hawks that lived in areas around their ranches. The farmers grouped together and hunted the hawks until they were no longer in their area. Which would most likely happen next?\n\nA) The chicken population would go down.\nB) Populations of mice and rats would increase.\nC) Another bird of prey would replace the hawk.\nD) The chickens would have a lower rate of disease.\n",
+      "ground_truth": "Populations of mice and rats would increase.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.47502040379812976,
+      "response_time": 0.012521982192993164,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Anne's project for the science fair is about renewable energy. She wants to describe an activity that uses a renewable source of energy. Which activity should she describe in her project?\n\nA) fueling a car with gas\nB) heating a house with oil\nC) flying a kite in the wind\nD) grilling food over charcoal\n",
+      "ground_truth": "flying a kite in the wind",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.4835830380317626,
+      "response_time": 0.012799978256225586,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: How many valence electrons does selenium have?\n\nA) 3\nB) 5\nC) 6\nD) 8\n",
+      "ground_truth": "6",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.4426495194856929,
+      "response_time": 0.012945890426635742,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Which of these is MOST likely the hardest to bend?\n\nA) Rubber band\nB) Cloth ribbon\nC) Leather shoe\nD) Wooden board\n",
+      "ground_truth": "Wooden board",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.47659247927780657,
+      "response_time": 0.01243901252746582,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: A student filled three beakers, each with 50 milliliters of liquid water. The student cooled Beaker 1 to form ice. The student heated Beaker 2 to form water vapor (gas). Beaker 3 remained at room temperature. What process takes place when liquid water changes to a vapor (gas)?\n\nA) condensation\nB) evaporation\nC) freezing\nD) melting\n",
+      "ground_truth": "evaporation",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.4757878234458065,
+      "response_time": 0.012037992477416992,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Which is a renewable natural resource that can be replenished over a period of time?\n\nA) oil\nB) coal\nC) trees\nD) natural gas\n",
+      "ground_truth": "trees",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.4750199451547047,
+      "response_time": 0.011450767517089844,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: A science class is divided into two groups. The first group plays loud music in a room that has thick carpet on the ceiling, walls, and floor. The second group is outside of the room but does not hear the music because the sound was\n\nA) absorbed by the carpet.\nB) refracted by the carpet.\nC) reflected by the carpet.\nD) amplified by the carpet.\n",
+      "ground_truth": "absorbed by the carpet.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.46446569875747945,
+      "response_time": 0.012840032577514648,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Which will most likely result from a low-pressure weather system?\n\nA) warm temperatures\nB) cloudy conditions\nC) clear conditions\nD) cool temperatures\n",
+      "ground_truth": "cloudy conditions",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.47509037328542225,
+      "response_time": 0.012041807174682617,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Phillip was making hot tea. When he poured the hot water into a glass, the glass broke. Which is the most likely reason the glass broke?\n\nA) the hot water was poured in too slowly\nB) the hot water evaporated too slowly\nC) the glass contracted too quickly\nD) the glass expanded too rapidly\n",
+      "ground_truth": "the glass expanded too rapidly",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.45061197304962636,
+      "response_time": 0.01232004165649414,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    }
+  ]
+}

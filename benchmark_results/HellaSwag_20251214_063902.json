@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "HellaSwag",
+    "total_questions": 10,
+    "correct_answers": 0,
+    "accuracy": 0.0,
+    "average_confidence": 0.4490891268176457,
+    "average_response_time": 0.016604161262512206,
+    "total_time": 0.16825199127197266,
+    "per_category_accuracy": {
+      "unknown": 0.0
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T06:39:02.513913"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: The man in brown shirt is standing next to a pile of tennis ball while he is talking to the camera. he\n\nWhat happens next? Choose the most likely ending:\n\nA) walked along a beach, talking with people, trying to court a ball.\nB) started hitting the ball with his racket on his gloved hand.\nC) pulled out two tennis rackets and toss one to the man and the other's dropped the racket in the air.\nD) played tennis ball with another person.\n",
+      "ground_truth": "played tennis ball with another person.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.4548946200524233,
+      "response_time": 0.01834392547607422,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: A large group of people are seen running down the street while many watch on the sides. several people\n\nWhat happens next? Choose the most likely ending:\n\nA) are then seen speaking to the camera while others run along and home in the background.\nB) are seen speaking to the camera as more shots are shown of people running.\nC) then run into one another and run in place.\nD) in facial gear appear around the area where the men play while grabbing leads into people playing guitars and instruments.\n",
+      "ground_truth": "are seen speaking to the camera as more shots are shown of people running.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.45777144102755496,
+      "response_time": 0.015069007873535156,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to calculate the weight of a body of water [title] Assess the shape of the body of water. [step] You need to calculate the volume of the particular body of water you are interested in. To do this, you need a rough estimation of the total area of the surface of the body which you will then multiply by the depth.\n\nWhat happens next? Choose the most likely ending:\n\nA) This will ensure the various weights of water in the body of water it is when you will calculate the volume of the body of water. [substeps] The easiest way to do this is by using a meter.\nB) [substeps] If you are looking at a rectangular swimming pool, you will simply use length times width to find the area. If the body of water is more of a circular lake or pond, you will want to use an equation for the area of a circle.\nC) [substeps] You don't need to calculate the volume-anything less is appropriate. For example, if the surface of the body of water is eight metres (2000 meters), add eight metres.\nD) If the area you are in is named or designed in such a way that it is seldom seen on a map, multiply by 25 to get the volume of the body. [title] Multiply the volume of the body of water by 20 to get the volume of the body of water.\n",
+      "ground_truth": "[substeps] If you are looking at a rectangular swimming pool, you will simply use length times width to find the area. If the body of water is more of a circular lake or pond, you will want to use an equation for the area of a circle.",
+      "prediction": "1975",
+      "is_correct": false,
+      "confidence": 0.4437352234179369,
+      "response_time": 0.016981840133666992,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to return something you've bought in a shop [title] Find your receipt. [step] You will need your receipt/invoice to return the item. Go through your purse or wallet to find the receipt.\n\nWhat happens next? Choose the most likely ending:\n\nA) You should also check your email account, since the receipt could have been sent to you electronically. [substeps] It may be in the bag, which you might have thrown in the trash.\nB) [title] Write down who the item was packaged with or what it was packaged for. [step] Follow up with the pharmacy or wholesaler you purchased the item from.\nC) [substeps] Make sure you receive it before proceeding. If you don't, you will lose your receipt.\nD) Once you've gone through it, pull the receipt out and set it aside. [title] Place the receipt facedown in a place you'll be seen by anyone who passes by.\n",
+      "ground_truth": "You should also check your email account, since the receipt could have been sent to you electronically. [substeps] It may be in the bag, which you might have thrown in the trash.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.4530839444605962,
+      "response_time": 0.016431808471679688,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: A boy plays a set of drums in a studio. the boy\n\nWhat happens next? Choose the most likely ending:\n\nA) pitches the drums to the floor, then stands to clap.\nB) signals to a man behind him.\nC) is smiling in the mirror.\nD) uses his foot to play a base drum.\n",
+      "ground_truth": "uses his foot to play a base drum.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.4373270376200828,
+      "response_time": 0.015002965927124023,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to do ghana cornrows [title] Apply a hydrating cream to your hair. [step] Focus on the roots, where your hair is most likely to turn dry. It would be best if you use a cream specially formulated for curling hair or braiding cornrows.\n\nWhat happens next? Choose the most likely ending:\n\nA) [substeps] If you have very oily hair, you may want to use an oil like almond or safflower oil instead. These oils will help to hydrate your hair, not dry it out.\nB) [title] Place a chunk of your hair between your pointer fingers. [step] Set your hair off to one side.\nC) [substeps] Choose a natural cream, such as a coconut curling cream. [title] Decide how many cornrows you want.\nD) A moisturizing type cream will prevent your hair from drying out and make your hair more secure when it's dry. [substeps] You can also apply coconut oil in a spray bottle to your hair before you set up your starrows.\n",
+      "ground_truth": "[substeps] Choose a natural cream, such as a coconut curling cream. [title] Decide how many cornrows you want.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.43891488644806914,
+      "response_time": 0.016923189163208008,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to improve a toddler's speech [title] Get down to their level. [step] Squat or sit on the floor. This will get their attention.\n\nWhat happens next? Choose the most likely ending:\n\nA) You will talk with your child instead of at her. Also, she will be able to see your mouth and get visual cues on how to say certain sounds.\nB) [title] If needed raise hands together in fists. [step] If you stretch your hands to fists and do this while speaking, your child will most likely also do the same.\nC) Try to just be as quiet as possible and only talk to them when they are calm. If you are talking for long enough, they will eventually hear your voice.\nD) Let them ask you to move closer to them. If possible, use a head-high perch.\n",
+      "ground_truth": "You will talk with your child instead of at her. Also, she will be able to see your mouth and get visual cues on how to say certain sounds.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.44700529795087335,
+      "response_time": 0.017344951629638672,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: Two men are sitting on chairs in front of snow mobiles. there\n\nWhat happens next? Choose the most likely ending:\n\nA) is a hole in the ice in front of them.\nB) are several bottles and tubes used to make rafts.\nC) man is holding the side of the car with a pair of pliers.\nD) are a lot of people in cube shapes watching the men.\n",
+      "ground_truth": "is a hole in the ice in front of them.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.4502521440270407,
+      "response_time": 0.0159299373626709,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to install entry doors [title] Remove the old door and the surrounding trim, molding, and door jamb. [step] You must remove everything covering the \" rough frame \" of the doorway. [substeps] The majority of doors for sale on the market today come pre-hung--that is, they are already mounted on a door jamb.\n\nWhat happens next? Choose the most likely ending:\n\nA) If you were to install a new door through its original frame--the whole thing would be finished simply on the inside frame. Look for other ways to go about this.\nB) When installed correctly, they provide the tightest possible seal to keep out the elements. The door jamb is usually held in place with nails, screws, and caulk.\nC) For the best results, you should remove them, the plaster, wood floor trim and doormolding. [title] Slide inside the door and insert the new door.\nD) The good thing about plastic doors is that they are easy to remove. Some imperfections can be removed (nails are not necessary) with a phillips head screwdriver, or you can remove old door knobs by loosening the screws holding them in place.\n",
+      "ground_truth": "When installed correctly, they provide the tightest possible seal to keep out the elements. The door jamb is usually held in place with nails, screws, and caulk.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.4534457069787112,
+      "response_time": 0.01800084114074707,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to control frizz [title] Shampoo less frequently. [step] The naturals oils produced by your scalp help to combat frizzy, dry hair. Shampoo strips these oils from your hair.\n\nWhat happens next? Choose the most likely ending:\n\nA) Fight frizz by decreasing the number of times you shampoo your tresses each week. After rinsing your hair with warm water, apply a sulfate-free, moisturizing shampoo to your roots.\nB) When you shampoo more frequently, you end up with frizz. [substeps] If you don't shampoo often, use a hose and water to rinse out shampoo.\nC) Instead, wash more frequently to eliminate frizz. Shampoo more often than necessary to give your hair extra oils to control frizz.\nD) While damage is suspected, shampooing less often helps your hair become softer, silky, and frizz-prone. [title] Wash shampoo out when you shower.\n",
+      "ground_truth": "Fight frizz by decreasing the number of times you shampoo your tresses each week. After rinsing your hair with warm water, apply a sulfate-free, moisturizing shampoo to your roots.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.45446096619316845,
+      "response_time": 0.016013145446777344,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    }
+  ]
+}

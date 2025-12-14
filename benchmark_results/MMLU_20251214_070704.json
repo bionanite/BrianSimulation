@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "MMLU",
+    "total_questions": 10,
+    "correct_answers": 7,
+    "accuracy": 0.7,
+    "average_confidence": 0.6814424468986691,
+    "average_response_time": 0.01306760311126709,
+    "total_time": 0.13144302368164062,
+    "per_category_accuracy": {
+      "high_school_biology": 0.7
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T07:07:04.741545"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Viruses are considered an exception to the cell theory because they\n\nA) are not independent organisms\nB) have only a few genes\nC) move about via their tails\nD) have evolved from ancestral protists\n",
+      "ground_truth": "are not independent organisms",
+      "prediction": "D",
+      "is_correct": true,
+      "confidence": 0.6529132806286215,
+      "response_time": 0.013267993927001953,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: In a hypothetical environment, fishes called pike-cichlids are visual predators of algae-eating fish (i.e., they locate their prey by sight). If a population of algae-eaters experiences predation pressure from pike-cichlids, which of the following should least likely be observed in the algae-eater population over the course of many generations?\n\nA) Selection for drab coloration of the algae-eaters\nB) Selection for nocturnal algae-eaters (active only at night)\nC) Selection for larger female algae-eaters, bearing broods composed of more, and larger, young\nD) Selection for algae-eaters that become sexually mature at smaller overall body sizes\n",
+      "ground_truth": "Selection for larger female algae-eaters, bearing broods composed of more, and larger, young",
+      "prediction": "D",
+      "is_correct": true,
+      "confidence": 0.6893211675584316,
+      "response_time": 0.012841939926147461,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Invertebrate immune systems possess which of the following?\n\nA) Cytotoxic T-lymphocytes\nB) Phagocytes\nC) B-cells\nD) Helper T-cells\n",
+      "ground_truth": "Phagocytes",
+      "prediction": "B",
+      "is_correct": false,
+      "confidence": 0.7874042456001044,
+      "response_time": 0.012091875076293945,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: A certain autosomal recessive trait is expressed in 1% of a population. Assuming that the population is in Hardy-Weinberg equilibrium, what percent of the population are carriers but do not express the trait?\n\nA) 10%\nB) 18%\nC) 27%\nD) 50%\n",
+      "ground_truth": "18%",
+      "prediction": "A",
+      "is_correct": false,
+      "confidence": 0.6233344231974334,
+      "response_time": 0.012694120407104492,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: The theory of evolution is most accurately described as\n\nA) an educated guess about how species originate.\nB) one possible explanation, among several scientific alternatives, about how species have come into existence.\nC) an opinion that some scientists hold about how living things change over time.\nD) an overarching explanation, supported by much evidence, for how populations change over time.\n",
+      "ground_truth": "an overarching explanation, supported by much evidence, for how populations change over time.",
+      "prediction": "B",
+      "is_correct": true,
+      "confidence": 0.6781197548806668,
+      "response_time": 0.013916015625,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Transpiration is a result of special properties of water. The special properties of water include all of the following EXCEPT\n\nA) cohesion\nB) adhesion\nC) capillary action\nD) hydrophobicity\n",
+      "ground_truth": "hydrophobicity",
+      "prediction": "C",
+      "is_correct": true,
+      "confidence": 0.7083840490169824,
+      "response_time": 0.01314091682434082,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Ichthyosaurs were aquatic dinosaurs. Fossils show us that they had dorsal fins and tails, as do fish, even though their closest relatives were terrestrial reptiles that had neither dorsal fins nor aquatic tails. The dorsal fins and tails of ichthyosaurs and fish are\n\nA) homologous.\nB) examples of convergent evolution.\nC) adaptations to a common environment.\nD) B and C only\n",
+      "ground_truth": "B and C only",
+      "prediction": "C",
+      "is_correct": true,
+      "confidence": 0.6562208654507995,
+      "response_time": 0.013223886489868164,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: All of the following play an important role in regulating respiration in humans EXCEPT\n\nA) an increase in the amount of CO2 in the blood\nB) a decrease in the amount of O2 in the blood\nC) a decrease in the plasma pH level\nD) strenuous exercise\n",
+      "ground_truth": "a decrease in the amount of O2 in the blood",
+      "prediction": "B",
+      "is_correct": true,
+      "confidence": 0.6098961695525795,
+      "response_time": 0.013147115707397461,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Before the human genome was sequenced by the Human Genome Project, scientists expected that they would find about 100,000 genes. In fact, they discovered that humans have only about 24,000 genes. How can we exhibit so many different traits from so few genes?\n\nA) Modification of histone proteins usually increases the function of genes.\nB) Epigenetics enables one gene to produce many different traits.\nC) This is proof that pseudogenes and introns are expressed.\nD) A single gene can produce more than one trait because of alternative splicing\n",
+      "ground_truth": "A single gene can produce more than one trait because of alternative splicing",
+      "prediction": "D",
+      "is_correct": true,
+      "confidence": 0.642593989405781,
+      "response_time": 0.013353109359741211,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Short sequence by promoter that assists transcription by interacting with regulatory proteins.\n\nA) Enhancer\nB) Repressor\nC) Operator\nD) Promoter\n",
+      "ground_truth": "Operator",
+      "prediction": "C",
+      "is_correct": false,
+      "confidence": 0.76623652369529,
+      "response_time": 0.01299905776977539,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    }
+  ]
+}

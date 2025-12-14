@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "HellaSwag",
+    "total_questions": 10,
+    "correct_answers": 9,
+    "accuracy": 0.9,
+    "average_confidence": 0.4528091077819808,
+    "average_response_time": 0.012603259086608887,
+    "total_time": 0.127335786819458,
+    "per_category_accuracy": {
+      "unknown": 0.9
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T07:03:16.857695"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to do galaxy lip makeup [title] Exfoliate your lips. [step] Whenever you're going to be wearing a bold lipstick look-or any lip product for that matter-it's a great idea to start out by exfoliating your lips. This will create a smooth base for your products, and help the colors glide on (and stay on) smoothly.\n\nWhat happens next? Choose the most likely ending:\n\nA) [title] Layer a rose petal or egg white makeup primer around the outer edges. [step] Bring the foundation around the edge of your lid.\nB) It also keeps your lips moist while it's hot so they're the right shade for your face shape. [title] Use gel gel only to keep your lips moisturized.\nC) Luckily, this isn't a difficult process. [substeps] Make your own lip scrub with coconut oil or olive oil and sugar.\nD) [substeps] Avoid picking a lip product that is too thick because it can just become chapped. Instead, plan for the tones you want to bring out in your lips.\n",
+      "ground_truth": "Luckily, this isn't a difficult process. [substeps] Make your own lip scrub with coconut oil or olive oil and sugar.",
+      "prediction": "D",
+      "is_correct": true,
+      "confidence": 0.4470977304283015,
+      "response_time": 0.014153003692626953,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to write a letter of appeal [title] Locate the appropriate appellate court. [step] Every court sits in a hierarchy made up of other courts. You appeal a court's decision to the court that sits directly above it.\n\nWhat happens next? Choose the most likely ending:\n\nA) [substeps] For example, your state may have a court decision board and all other courts will report the case to your state's bench. The court clerk will typically pull the records and affidavits and give you a forwarding address.\nB) [substeps] The supreme court has many rules you can use to locate a notary public in your county. The rules differ between courts, but the main rule in a local county is that you must admit or deny every allegation made in your letters.\nC) If you do not know which court to appeal to, ask the judge after he has issued his ruling or check with the clerk court. [substeps] In the federal court system, district court decisions are appealed to the circuit courts, whose decisions may be appealed to the supreme court.\nD) By finding the correct judge who feels he or she actually has the powers and authority to appeal the decision, you can best differentiate yourself from other courts. [substeps] Search the web to find local, state, and federal court appellate courts.\n",
+      "ground_truth": "If you do not know which court to appeal to, ask the judge after he has issued his ruling or check with the clerk court. [substeps] In the federal court system, district court decisions are appealed to the circuit courts, whose decisions may be appealed to the supreme court.",
+      "prediction": "C",
+      "is_correct": true,
+      "confidence": 0.45305227993779784,
+      "response_time": 0.01254582405090332,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to defeat a halo 3 scarab [title] Disable the scarab : [step] Fire your weapon at one of the scarab's legs. Aim for the joints. You will probably need to do this step in a vehicle because most small arms lack the firepower or fire very rare and limited ammunition.\n\nWhat happens next? Choose the most likely ending:\n\nA) He is stronger than anyone else besides you, and you really, really get the adrenaline boost from fusing your main weapon. This is a very good strategy for killing scarab unless you use static charge grenades, or you think he has lots of ammo this will prevent him from escaping after you hack at him.\nB) Advantage : 8' x6' with high aim. Loss rate : 1' x12', high aim (your avatar is saying that hitting each of the joints can sometimes shorten your time in the game).\nC) [title] When the scarab stops, crouches, and sounds an alarm, quickly go to the back of the scarab. [title] Kill the brute on the turret with a grenade or another shot from your weapon.\nD) [title] Ram the scarab : [step] Once the scarab has attacked, hit the do not shoot button in his face and have some extra ammo ready. [title] Let the scarab be able to deal with you : [step] He will quickly evict you with z-strike.\n",
+      "ground_truth": "[title] When the scarab stops, crouches, and sounds an alarm, quickly go to the back of the scarab. [title] Kill the brute on the turret with a grenade or another shot from your weapon.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.4522369607807636,
+      "response_time": 0.012586116790771484,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to be a physically attractive woman [title] Get exercise. [step] Scientific studies have shown that one of the strongest traits of physical attractiveness is a healthy bmi (body mass index). Your bmi is the amount of fat on your body in relation to your height and weight.\n\nWhat happens next? Choose the most likely ending:\n\nA) This means men can gain about an inch or two in waist circumference, while women can gain about a pound in hip circumference. While this is not a perfect amount for all people, it is decent and healthy for both men and women.\nB) A bmi of around 67-97 is considered normal when you exercise, and as it evolves, it should increase or decrease slightly. Exercising can also prevent you from gaining a thicker muscle mass and keep you from gaining too much height.\nC) If you have a bmi of more than 50 or greater, you could be significantly more appealing to women. [substeps] Studies show that exercise kills excess fat and increases your metabolism.\nD) [substeps] You can maintain a healthy bmi by making sure you get regular exercise. Good exercise can include aerobic training, strength training, sports, or outdoor activities.\n",
+      "ground_truth": "[substeps] You can maintain a healthy bmi by making sure you get regular exercise. Good exercise can include aerobic training, strength training, sports, or outdoor activities.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.4665496155813846,
+      "response_time": 0.012781858444213867,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to ignore people you don't like [title] Stay away from the person. [step] Avoidance is sometimes the easiest way to ignore someone. If someone is getting on your nerves, try to keep your distance as much as you can.\n\nWhat happens next? Choose the most likely ending:\n\nA) [substeps] Walk away if someone enters your social circle. If that person waves at you and then leaves, stay where you are.\nB) Try to stay away as much as possible. When you will be around this person, pretend you are not around them.\nC) [substeps] You can avoid places they're likely to hang out. If an annoying co-worker always eats lunch at noon, try eating lunch outside of the office or taking a later lunch.\nD) If the person is annoying you and you didn't hear anything from them in a minute, don't even like them. [substeps] For example, don't visit a new shop when it's closed.\n",
+      "ground_truth": "[substeps] You can avoid places they're likely to hang out. If an annoying co-worker always eats lunch at noon, try eating lunch outside of the office or taking a later lunch.",
+      "prediction": "D",
+      "is_correct": true,
+      "confidence": 0.44486751251142503,
+      "response_time": 0.012091875076293945,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: The man is back at the large light gray counter and in a sped up motion the man is shown with various different supplies as he assembles a very large truck cake that was previously shown. when the cake\n\nWhat happens next? Choose the most likely ending:\n\nA) ready is ready the man takes a pain killer that it looks like is made of chocolate chips and the cals don't seem very happy as they collide into the other cakes that are going up and down the scale.\nB) is complete the chef lays down a blue sheet over the cake area and lays out a foot long cake piece that looks like it has duct tape on it.\nC) is done, the man begins wrapping and peeling the cake as the camera focuses on his movements some someone else is close to the kitchen counter which has a very pointed ceiling.\nD) is all done the camera pans the whole cake so the details can be seen and once again we see the smaller scale cake and the toy.\n",
+      "ground_truth": "is all done the camera pans the whole cake so the details can be seen and once again we see the smaller scale cake and the toy.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.4524821961792178,
+      "response_time": 0.012835025787353516,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to take out the trash [title] Secure the bag. [step] Use the extra room at the top of the bag to securely tie a single knot so that the garbage does not fall out of the bag. Sometimes trash bags come with twist ties.\n\nWhat happens next? Choose the most likely ending:\n\nA) Using these ties makes it easy to secure the contents of the bag. Gather the entire opening of the bag, close and place the twist tie around it.\nB) Avoid using these as this can easily give the bag away easily. Also be careful when hanging bag, these bags are also easier to tip over and might break if tossed in the trashcan.\nC) You should fasten these ends using zip ties or hair clips. Some bags even have tabs around the edges to keep the trash from falling out of the bag.\nD) This prevents rats from getting into your bag and will keep you safe if you get caught. [substeps] It's most commonly used by rats when they are looking for a food source.\n",
+      "ground_truth": "Using these ties makes it easy to secure the contents of the bag. Gather the entire opening of the bag, close and place the twist tie around it.",
+      "prediction": "D",
+      "is_correct": true,
+      "confidence": 0.4557820440645993,
+      "response_time": 0.012707948684692383,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: Four little girls , dressed in white dresses with red sashes, stand in a line, on a stage and play the violin together. Four little girls begin to play violin on a stage on a stage with a pink backdrop. the girl\n\nWhat happens next? Choose the most likely ending:\n\nA) wearing white is pull violin in her left hand and started to play with her right hand and the bow.\nB) play together using both hands to play the violin before ending the performance and taking a bow together.\nC) finishes and then continue to play violin without demonstrating any proper moves to show proper performance.\nD) in the yellow jacket turns around gesturing her hands while the girl in the green colored dress finish playing and begins to turn until her stood is back.\n",
+      "ground_truth": "play together using both hands to play the violin before ending the performance and taking a bow together.",
+      "prediction": "D",
+      "is_correct": true,
+      "confidence": 0.45961380345715297,
+      "response_time": 0.012310981750488281,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to work quads without weights [title] Lie on the floor on your right side. [step] Make sure your lower body, from waist to ankle, is completely straight. The leg raise is well suited for working the stabilizer muscles in your quads, such as the rectus femoris.\n\nWhat happens next? Choose the most likely ending:\n\nA) [substeps] If using a dumbbell, keep the weight locked in your arms. Otherwise, the dumbbell weight would be held in your left hand.\nB) [title] Lift your right leg straight up near your hip-plant as much as you can with your right hand. [title] Squat down until your knees are parallel with the floor and you're flat on your forearms.\nC) [title] Place your left arm forward, resting your palm on the ground. [step] This will help you stay balanced throughout the exercise.\nD) Find a place on the floor with your hips bent about 10 to 20 degrees to the right. [substeps] Keep your back straight and your shoulders and knees pulled in as if you were sleeping.\n",
+      "ground_truth": "[title] Place your left arm forward, resting your palm on the ground. [step] This will help you stay balanced throughout the exercise.",
+      "prediction": "D",
+      "is_correct": true,
+      "confidence": 0.44880656455513274,
+      "response_time": 0.012418031692504883,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: He uses a ruler to show more detailed and then moves the mower to the sidewalk to talk some more. he\n\nWhat happens next? Choose the most likely ending:\n\nA) then moves to the corner to talk again.\nB) measures the mower's horsepower and bends down to finish his section of sidewalk.\nC) continues to talk about what he is doing and shows two hands stopping to write something on the board from time to time.\nD) starts mowing his lawn finally going up and down the lawn.\n",
+      "ground_truth": "starts mowing his lawn finally going up and down the lawn.",
+      "prediction": "C",
+      "is_correct": false,
+      "confidence": 0.4476023703240327,
+      "response_time": 0.011601924896240234,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    }
+  ]
+}

@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "HellaSwag",
+    "total_questions": 10,
+    "correct_answers": 8,
+    "accuracy": 0.8,
+    "average_confidence": 0.5942645931979641,
+    "average_response_time": 0.018823862075805664,
+    "total_time": 0.18987298011779785,
+    "per_category_accuracy": {
+      "unknown": 0.8
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T07:06:43.111869"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to make good use of a bad mood [title] Think about whether your bad mood is caused by stress. [step] Many bad moods are caused by stress, anxiety, and feeling overwhelmed. If you notice a bad mood coming on during a hectic day, you may want to step back and take this as a warning sign to slow down.\n\nWhat happens next? Choose the most likely ending:\n\nA) You may need to take a five minute break and have some downtime so you can calm down. Once you do this, you may feel your bad mood start to lift.\nB) [substeps] Sometimes, people with bad moods, feel isolated and powerless. This can lead to others beating at them.\nC) Work to break the bad habit by learning to recognize your negative thoughts instead of replacing them with positive ones. [substeps] For example, if you find yourself thinking \" nothing will happen tomorrow, \" you might identify that thought and replace that thought with something else.\nD) [substeps] Once you've noticed the bad mood coming on, consider whether your changes in mood have caused it (and what similar events have affected you in the past). The common causes of bad moods in most people are nerves, stress, and conflicts.\n",
+      "ground_truth": "You may need to take a five minute break and have some downtime so you can calm down. Once you do this, you may feel your bad mood start to lift.",
+      "prediction": "D",
+      "is_correct": true,
+      "confidence": 0.5960448510535061,
+      "response_time": 0.019246816635131836,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to get straight beautiful hair with fuller's earth [title] Fuller's earth can be found in any grocery shop. [step] Take 2-3 teaspoons of fullers earth in a bowl. Fullers earth gives silky smooth hair [title] Add half a cup of curd.\n\nWhat happens next? Choose the most likely ending:\n\nA) Use curd which is preferably 2 days old as it gives best results. [step] Curd conditions hair and also prevents hair fall.\nB) [step] A half the curd should be sold in a brown color. Depending on how dark or pale your hair color is, add this amount in another bowl.\nC) [step] To sweeten it up you can add a spoonful of brown sugar or equal paste of brown sugar. Spray on heat if needed and then air dry.\nD) [step] Using it as inspiration, make a series of \" hair ornaments \". Fill half a bowl with oatmeal and half a cup of salt and water.\n",
+      "ground_truth": "Use curd which is preferably 2 days old as it gives best results. [step] Curd conditions hair and also prevents hair fall.",
+      "prediction": "C",
+      "is_correct": true,
+      "confidence": 0.5778086367957294,
+      "response_time": 0.01941370964050293,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: The men then hit a ball all around the yard through stands sticking out and speak to one another while drinking water. the men\n\nWhat happens next? Choose the most likely ending:\n\nA) are in a race to score and everyone in stands runs over to beat them.\nB) hit the ball a few more times and continue to speak to one another.\nC) continue to speak while using all manner of beverages and drinking.\nD) continue hitting the ball and are seen riding around with their dogs.\n",
+      "ground_truth": "hit the ball a few more times and continue to speak to one another.",
+      "prediction": "B",
+      "is_correct": true,
+      "confidence": 0.6041684583723546,
+      "response_time": 0.01725006103515625,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to create a coupon binder [title] Find the right size 3 ring binder for you. [step] Having your \" category names \" on the side makes it easier and faster to swipe through a huge binder. Your personal organization choosing will determine how many dividers you will need.\n\nWhat happens next? Choose the most likely ending:\n\nA) You will have to work with a large enough binder to cover several bases. [substeps] The number of dividers you'll need will depend on your organization program: large batches are easier to download and load, smaller batches are more comfortable sorting by tone or color.\nB) A single binder will only fit 5 dividers, so if this number is too large it will narrow down as well as make it easier to transfer from your new binder bag to your new one. [title] Find out which dividers you need and ideally get.\nC) [substeps] When buying a binder, look for including dividers that fit under the end dividers at the end of the bottom of the boxes. In general, you want to have at least 3 dividers that cover the front of each box.\nD) If you are going with the alphabetical order, you will need at least 26 dividers (more for extra categories). If you are going with the expiration dates, you can divide them into 2 week blocks.\n",
+      "ground_truth": "If you are going with the alphabetical order, you will need at least 26 dividers (more for extra categories). If you are going with the expiration dates, you can divide them into 2 week blocks.",
+      "prediction": "B",
+      "is_correct": true,
+      "confidence": 0.5939551241621375,
+      "response_time": 0.017514944076538086,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to make your own nail transfers [title] Apply a few thick coats of clear nail polish to a section of the parchment paper. [step] Make it a thick layer--if it is not thick enough, the polish might crack when you apply your color. [title] Paint your design on top of the coated section of parchment paper.\n\nWhat happens next? Choose the most likely ending:\n\nA) [step] Make sure that you apply enough in front of your design--that you can see the entire color though the polish. The design makes the color stand out more and it makes your transfer special.\nB) [title] Place your quicksilver nail polish face down on a flat surface and heat it gently using a small candle or butane lighter. [step] The surface should reflect most of the uv light that's released when you apply your polish.\nC) [step] The design can be anything you want, so be creative but ensure that it looks good. A simple design can often be the best.\nD) [step] If you are dyeing your nails to the tips of your finger, be sure to back off you nail polish for a moment to allow the polish to set properly. [title] Allow the ink to dry before adding the transfer.\n",
+      "ground_truth": "[step] The design can be anything you want, so be creative but ensure that it looks good. A simple design can often be the best.",
+      "prediction": "D",
+      "is_correct": true,
+      "confidence": 0.5850625154562294,
+      "response_time": 0.018253087997436523,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to lose weight fast (for women ) [title] Consume fewer calories. [step] To lose weight, you'll need to cut out some of the calories you eat each day. Making a calorie deficit is the first step to quick weight loss.\n\nWhat happens next? Choose the most likely ending:\n\nA) [substeps] This involves cutting out about 500-1200 calories every day. 225-1800 calories will help you lose 120 pounds.\nB) This means you'll still need to cut out as many calories from your food as possible. [substeps] In addition to foods that may interfere with your weight, try eating at least 200 calories each day.\nC) You'll need to cut more calories to keep yourself as healthy as possible. [substeps] Keep a food journal of all the foods you eat.\nD) [substeps] Most health professionals will recommend cutting out anywhere from 500-750 calories daily. This will yield about a 1-2-pound weight loss each week.\n",
+      "ground_truth": "[substeps] Most health professionals will recommend cutting out anywhere from 500-750 calories daily. This will yield about a 1-2-pound weight loss each week.",
+      "prediction": "B",
+      "is_correct": true,
+      "confidence": 0.5962460225597024,
+      "response_time": 0.023250102996826172,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to do chevron nails [title] Paint your nails. [step] You can paint your nails all one color or use a couple of different colors. Make sure that you let your nails dry all the way before you apply the tape strips.\n\nWhat happens next? Choose the most likely ending:\n\nA) Black will go good with the base to get the nail finish. Get down to the big pencil marks on your nails.\nB) [substeps] If you are planning on painting your nails, then your waxer will need to work on your nails while you get them painted. You don't want to paint over and over on top of the paint, as this may damage the nail box.\nC) [title] Dispense tape and cut into approximately 1 \" strips. [step] It is up to you if you want to cut enough tape strips to make a chevron design on each of your nails or just do a couple.\nD) You can paint your nails one color, or you can also use several different colors to paint your nails from. [substeps] The french colour! The chevron is the most popular.\n",
+      "ground_truth": "[title] Dispense tape and cut into approximately 1 \" strips. [step] It is up to you if you want to cut enough tape strips to make a chevron design on each of your nails or just do a couple.",
+      "prediction": "B",
+      "is_correct": false,
+      "confidence": 0.5689981589615345,
+      "response_time": 0.021530866622924805,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: A boy in an orange shirt is playing a video game. the scene\n\nWhat happens next? Choose the most likely ending:\n\nA) switches to show the players playing indoor soccer.\nB) changes to the game itself.\nC) cuts to the boys playing the game on the swings outside.\nD) changes to safety features.\n",
+      "ground_truth": "changes to the game itself.",
+      "prediction": "C",
+      "is_correct": true,
+      "confidence": 0.6163048155475408,
+      "response_time": 0.01809406280517578,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to find the best swimsuits for your body shape [title] Try a one-piece in a solid color. [step] Solid color suits look sleek and stylish. Your figure may be curvy enough to draw attention on its own, so there is not much need to worry about accentuating certain parts or downplaying others.\n\nWhat happens next? Choose the most likely ending:\n\nA) In order to make sure that your look is flattering to your body type, you can add some oomph. [substeps] Solid colors should aim to complement your body shape.\nB) Professional swimsuits in greys, olive, cotton, or dark colors can add to modern charm. [substeps] Avoid neon or pastel colors, which appear harsh and unnatural.\nC) [title] Consider a swimsuit with a deep plunge. [step] Odds are, you have a curvy bust worth showing off.\nD) A three-piece suit is one size fits all for you and should be packed in a separate suitcase when you are visiting relatives and friends. Select, include, and keep a list of key pieces that may be best tailored to your needs.\n",
+      "ground_truth": "[title] Consider a swimsuit with a deep plunge. [step] Odds are, you have a curvy bust worth showing off.",
+      "prediction": "D",
+      "is_correct": true,
+      "confidence": 0.5930488288402558,
+      "response_time": 0.01796412467956543,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: A woman runs down a field. She jumps backwards over a bar and lands on a blue mat. they\n\nWhat happens next? Choose the most likely ending:\n\nA) then begin playing different games, one after the other.\nB) show the jump in slow motion again.\nC) smile as they are mixing.\nD) do several activities together in an extended group.\n",
+      "ground_truth": "show the jump in slow motion again.",
+      "prediction": "D",
+      "is_correct": false,
+      "confidence": 0.6110085202306509,
+      "response_time": 0.015720844268798828,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    }
+  ]
+}

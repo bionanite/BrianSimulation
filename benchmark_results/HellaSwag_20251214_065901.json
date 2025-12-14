@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "HellaSwag",
+    "total_questions": 10,
+    "correct_answers": 9,
+    "accuracy": 0.9,
+    "average_confidence": 0.6698254209479317,
+    "average_response_time": 0.013380837440490723,
+    "total_time": 0.13528227806091309,
+    "per_category_accuracy": {
+      "unknown": 0.9
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T06:59:01.261020"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to make a plain outfit look awesome [title] Do some research. [step] Buy, borrow or check out some fashion magazines and websites. Most celebrities have stylists who are always current with the latest styles, so make use of their efforts to direct your attention to what is current.\n\nWhat happens next? Choose the most likely ending:\n\nA) [substeps] Read a section titled \" fashion accessories \" if you're getting ideas for how to change up your look. [title] Eat at a trendy restaurant that sells what you like.\nB) Browse magazines, blogs, and search engine documents. Simple alterations will keep you from being afraid to try something that isn't currently being tried.\nC) [substeps] Which items do you like? Which don't you like? It's important to work out what you do and don't like from fashion trends, so that you can focus solely on what you like. [title] Consider what already works from your own wardrobe.\nD) [substeps] Reading their website is a great place to start. See if they're wearing clothing that's out of place and see if you're familiar with it.\n",
+      "ground_truth": "[substeps] Which items do you like? Which don't you like? It's important to work out what you do and don't like from fashion trends, so that you can focus solely on what you like. [title] Consider what already works from your own wardrobe.",
+      "prediction": "C",
+      "is_correct": true,
+      "confidence": 0.6803199882470071,
+      "response_time": 0.01518106460571289,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to make a haircut last for six months [title] Ask your stylist about the right cut for your hair. [step] Be open with your stylist: you want a cut that will last a good while. When you make that request, ask what would be most appropriate for your hair type.\n\nWhat happens next? Choose the most likely ending:\n\nA) If your stylist doesn't know, it won't necessarily go into effect until you take measurements. [substeps] Some suggestions for asking include: if you usually wear your hair down, let it grow out a bit.\nB) If your stylist cuts to your hair type, it's more likely to last than if they don't. [substeps] For instance, finer hair may work best with less layering.\nC) Many people have hair that appears very green, but this particular type of hair-coloring has not been shown to have any similar advantages. If your hair is undernourished and damaged, you could end up with hair with coarse, brittle undertones.\nD) Just the answers you get will not make you the most successful stylist. [substeps] Look at the materials that your stylist is using to create your cut.\n",
+      "ground_truth": "If your stylist cuts to your hair type, it's more likely to last than if they don't. [substeps] For instance, finer hair may work best with less layering.",
+      "prediction": "C",
+      "is_correct": true,
+      "confidence": 0.6780862192958593,
+      "response_time": 0.013288259506225586,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to raise body positive kids [title] Be a role model. [step] Whether they show it or not, your children watch and mimic you. Set a good example by valuing healthy foods, exercise, and a positive attitude toward your body.\n\nWhat happens next? Choose the most likely ending:\n\nA) The children will follow your lead if you stick to the diet and lifestyle goals associated with raising your child. If you have a glass of milk before a meal instead of everyone's, lift both eyebrows.\nB) This will help the children see a positive side of you and lead them to believe in you. [substeps] Be consistent with your routines and practice active listening.\nC) If you're trying to lose weight, don't obsess about it in front of your child. Instead, stress the importance of being healthy and physically fit.\nD) [substeps] Have a positive outlook on life and motivate your kids to emulate you. Wash their clothes regularly, stay clean, and take care of them.\n",
+      "ground_truth": "If you're trying to lose weight, don't obsess about it in front of your child. Instead, stress the importance of being healthy and physically fit.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.6865460842065514,
+      "response_time": 0.012952089309692383,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to cope with the stress of moving [title] Get rid of excess clutter. [step] When you're moving is a great time to get rid of old things you don't need anymore. It can be a big stress relief and make moving easier, since you'll have less to move.\n\nWhat happens next? Choose the most likely ending:\n\nA) Putting non-clutter in a storage area helps you move much faster than putting items in a box. [substeps] Like the boxes, smaller boxes will reduce clutter and you can try to just line them up together.\nB) Try getting rid of your clutter as much as possible and go through old clothing and makeup items. [substeps] You can also try moving your items into different locations for more in-depth storage.\nC) [substeps] When you're going through your things, put them into four piles: sell, donate, toss, and keep. You can try to sell some items online, while donating less valuable items to thrift stores.\nD) Make a list of everything you don't need, and put it where it isn't in sight. When it doesn't matter which stuff, put it where you don't need it most.\n",
+      "ground_truth": "[substeps] When you're going through your things, put them into four piles: sell, donate, toss, and keep. You can try to sell some items online, while donating less valuable items to thrift stores.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.6675693068243563,
+      "response_time": 0.01327204704284668,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to make a vegan pizza [title] In a bowl combine 1/2 c flour with the yeast, sugar and salt. [step] Warm the water and oil and add it to the dry mixture. Do not add the water when it is too hot! Warm to the touch is perfect.\n\nWhat happens next? Choose the most likely ending:\n\nA) [title] The dough should be about the consistency of pancake batter. [step] Stir in the last 1/2 c flour.\nB) [title] Saut\u00e9 the yeast and water for about five minutes. [step] Once the yeast has cooked up, add in the salt and ground pepper.\nC) [title] In a separate bowl combine four parts canola oil (a 2 cup dish usually works great), powdered sugar, and kosher salt. [step] There is no need to boil; there is the possibility that the kosher salt will upset the rice, or mold the rice too thickly and break it into big pieces.\nD) [title] If you want your pizza to have a sour or slightly chewy crust, you can use whole wheat bread instead of just bread, but butter isn't as effective. [step] A small amount of butter is fine.\n",
+      "ground_truth": "[title] The dough should be about the consistency of pancake batter. [step] Stir in the last 1/2 c flour.",
+      "prediction": "C",
+      "is_correct": true,
+      "confidence": 0.6444322834089399,
+      "response_time": 0.013085126876831055,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to make jasmine scent using enfleurage [title] Obtain unscented moisturising cream. [step] Choose a good quality version, and look for a type suitable to your skin. [title] Smear the moisturising cream inside a jar.\n\nWhat happens next? Choose the most likely ending:\n\nA) [step] Cover all the inside sides of the jar with the moisturising cream in a thick layer. The jar must be wide enough for you to be able to get your hands inside and move them around.\nB) [step] This is the most crucial thing to do in addition to creating your signature jasmine fragrance. [title] Put the lotion on your skin.\nC) [step] For most scents, this method is very risky and should be used only if you have evidence of unwanted or an allergic reaction to the honey or menthol) that simply does not belong to what you are attempting to make. [substeps] She smells deliciously feminine and earthy.\nD) [step] Buy some enfleurage cream from a pharmacy or store. Stick with this around day one-the longer you wait, the easier the blend.\n",
+      "ground_truth": "[step] Cover all the inside sides of the jar with the moisturising cream in a thick layer. The jar must be wide enough for you to be able to get your hands inside and move them around.",
+      "prediction": "C",
+      "is_correct": true,
+      "confidence": 0.6817065415494143,
+      "response_time": 0.013093948364257812,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to use powder hair dye [title] Complete a skin allergy test 48 hours beforehand. [step] Although powder hair dye is usually more skin-friendly and chemical-free, some people may experience allergic reactions. If this is your first experience with a certain brand, mix a small amount of the powder with water and apply it to your skin.\n\nWhat happens next? Choose the most likely ending:\n\nA) This test will allow you to see if any latex reacts with any pigment in your skin or hair. [substeps] Acids (including lanolin and iodine) may cause skin irritation.\nB) Watch out for slight allergic reactions as the powder will infuse the hair with dye. [substeps] If your skin reaction is still mild, you may skip this step.\nC) [title] Wait for an hour for the dye to react with the water. [step] Due to the size of your dye machine, it may take a longer time for the dye to respond to the water.\nD) Once two days have passed without red or irritated skin, you can apply the dye knowing that you are not allergic. [substeps] Common allergy signs may include: intense stinging, skin rash, burning sensations, swelling, or blisters.\n",
+      "ground_truth": "Once two days have passed without red or irritated skin, you can apply the dye knowing that you are not allergic. [substeps] Common allergy signs may include: intense stinging, skin rash, burning sensations, swelling, or blisters.",
+      "prediction": "D",
+      "is_correct": true,
+      "confidence": 0.6759230751171708,
+      "response_time": 0.012906074523925781,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to lace vans shoes [title] Count the number of eyelet pairs on your shoe. [step] Vans with an even number of eyelets can be cross-laced. If your shoes have an odd number, the basic principle will still apply but you will have to adjust your technique somewhat.\n\nWhat happens next? Choose the most likely ending:\n\nA) It is crucial that you focus on how to lace them in order to adapt the technique to appropriately eyelet pairs. [substeps] In order to make a shoe that is generally double-laced, you will need to start with the highest eyelet pair and move up to the topmost eyelet pair.\nB) [title] Choose the right laces for your style. [step] One main style that can be thought of in this assignment is the lace-zip style.\nC) Within these numbers, each pair of laces should have twelve eyelet pairs. [substeps] Before the pair you tend to make a \" jumpstart \" or \" french \" stitch.\nD) [title] Insert each end of the shoelace downward through one of the bottom two eyelets. [step] The shoelace should now form a bar across the bottom with the laces going inwards.\n",
+      "ground_truth": "[title] Insert each end of the shoelace downward through one of the bottom two eyelets. [step] The shoelace should now form a bar across the bottom with the laces going inwards.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.6633170237392187,
+      "response_time": 0.013170957565307617,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to become a moderator in kongregate [title] Act rule-abidingly. [step] Moderators are more likely to notice a person who is always mature and courteous, and has sense of humor in the chat. [title] Don't act as a mini-mod.\n\nWhat happens next? Choose the most likely ending:\n\nA) [step] If you are going to be \" don't swear, don't do that \" etc. All the time, you are less likely to become a mod.\nB) [step] If you try this too often, the moderator will get angry with you and start dragging you down to the limit, being surprised and annoyed, or even won't listen to you. [title] Show up the next time you see a new inactive user, or the server malfunctions because you're walking past a new one.\nC) [step] While it might seem like a good idea to be sociable in kongregate, the norms are strict in kongregate. Only interrupt parties afterwards, and only push back.\nD) [step] It is best to make him aware of the situation so that he can decide to treat you as a friend rather than a random digital \" buddy \". [substeps] Eventually, he might realize that you are a real mod.\n",
+      "ground_truth": "[step] If you are going to be \" don't swear, don't do that \" etc. All the time, you are less likely to become a mod.",
+      "prediction": "B",
+      "is_correct": true,
+      "confidence": 0.6536507290937006,
+      "response_time": 0.013788938522338867,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: The scene is the earth and space. there\n\nWhat happens next? Choose the most likely ending:\n\nA) is a green vehicle that says go green on it.\nB) are balloons attached to poles.\nC) are many plant life ending lungs needed to breathe, like a of green reeds.\nD) are blond haired person in the middle of the scene with only her shirt on.\n",
+      "ground_truth": "is a green vehicle that says go green on it.",
+      "prediction": "D",
+      "is_correct": false,
+      "confidence": 0.6667029579970986,
+      "response_time": 0.013069868087768555,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    }
+  ]
+}

@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "HellaSwag",
+    "total_questions": 10,
+    "correct_answers": 10,
+    "accuracy": 1.0,
+    "average_confidence": 0.29999999999999993,
+    "average_response_time": 0.03023834228515625,
+    "total_time": 0.30510592460632324,
+    "per_category_accuracy": {
+      "unknown": 1.0
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T07:34:38.736991"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to change wavy frizzy hair to straight hair [title] Rough dry your hair. [step] If you already blow dry your hair, the way you position your blow dryer may be contributing to your frizzy hair. When drying your hair, shake the dryer over your head, back and forth, until your hair is 80% dry.\n\nWhat happens next? Choose the most likely ending:\n\nA) [substeps] Keep your blow dryer's nozzle face down, otherwise your hair will frizz. When hair is 80% finished, apply a smoothing or anti-frizz serum, before completing your blow out.\nB) When sitting down, gather your hair in the palm of your hand and scrunch it for three to five minutes. [title] Use a food processor or blender to blend your hair.\nC) This article will also refer to hair softening methods. [substeps] Your hair may still remain shinier after it is dry.\nD) At this point, your hair should feel almost like wet noodle hair. [title] Apply the mousse to damp your hair while it is still damp.\n",
+      "ground_truth": "[substeps] Keep your blow dryer's nozzle face down, otherwise your hair will frizz. When hair is 80% finished, apply a smoothing or anti-frizz serum, before completing your blow out.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.022089004516601562,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to break in a pair of sperry top siders quickly [title] Take your new top-siders out of the box, try them on and decide if they are definitely the right fit and/or style for you. [step] Be absolutely sure, because after you apply the aging processes, no retailer will take them back. [title] Find a watertight container large enough to fit your shoes.\n\nWhat happens next? Choose the most likely ending:\n\nA) [step] Also go for clean, inexpensive containers (even styrofoam will work)-the sooner you leave them there, the better. If it's boiling, your new top-siders won't remove.\nB) [step] They should sit flat inside the container without protruding above the rim. A large tupperware or similar box is ideal, or you can use a roasting tin or plastic tray.\nC) [step] A work purse is your best bet as long as you bring along a tape recorder, an interesting reusable pen, as well as some notepads or text books. [title] Get a pair of old business casual boots.\nD) [step] Fill it with soapy water to keep your shoes clean. [title] Put on the top-siders first, and add them over the water.\n",
+      "ground_truth": "[step] They should sit flat inside the container without protruding above the rim. A large tupperware or similar box is ideal, or you can use a roasting tin or plastic tray.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.024415016174316406,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: A large fish is seen swimming under frozen water. a man\n\nWhat happens next? Choose the most likely ending:\n\nA) is seen bending over into the water looking is the fish are teeth.\nB) scrapes off the ice the underneath of a boat.\nC) sits in a boat in the water the fish swim into his hand and die.\nD) creates a hole in the ice to catch the fish.\n",
+      "ground_truth": "creates a hole in the ice to catch the fish.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.012212276458740234,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to straighten and maintain damaged hair [title] Use a frizz-preventing shampoo to wash your hair. [step] You can work on hydrating and protecting your hair even before you get out of the shower! Frizz-preventing shampoos help keep your hair smooth and tame before frizz strikes. When you wash your hair, apply shampoo directly to your roots, and massage the shampoo through your scalp.\n\nWhat happens next? Choose the most likely ending:\n\nA) Then, work the shampoo down the ends of your hair. For best results, rinse your hair with cool water.\nB) Let your hair air dry before brushing your hair. [substeps] Spray a dime-sized amount of shampoo onto your fingers and squeeze the excess water from your hair.\nC) Apply conditioner once a day to keep your hair soft and shiny. [substeps] If you want to add shine to your hair, use a sulfate-free shampoo.\nD) Your scalp and hair will quickly absorb any moisture from the shampoo. [title] Determine the amount of shampoo you need and use it.\n",
+      "ground_truth": "Then, work the shampoo down the ends of your hair. For best results, rinse your hair with cool water.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.01222085952758789,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to make a multiplication tables activity board using plastic water bottle caps [title] Plug in hot glue gun, cautiously. [step] Allow the hot glue gun to warm up. [substeps] Don't let your kids use the glue gun themselves.\n\nWhat happens next? Choose the most likely ending:\n\nA) [title] Remove cover cap in step one, as this can quickly melt the cover casing. [step] Clean cap and screw it back into place.\nB) As they get more proficient with the machine with the wires stuck in it, they may well realise that another method is not so helpful. The only way to avoid this is to select a theme board if you do not have one.\nC) Usually, they jump around a bit and bleed, and they think they can solve the problem. If your child is very young, get a few old books and wear them while working on the board.\nD) It's hot, and can cause burns. [title] Use a glue stick to add glue to the construction paper.\n",
+      "ground_truth": "It's hot, and can cause burns. [title] Use a glue stick to add glue to the construction paper.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.018821239471435547,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to improve your hiking technique [title] Invest in a good pair of hiking boots. [step] Good boots are critical and sometimes expensive. They don't have to be expensive boots (though professionally fitted boots are the best).\n\nWhat happens next? Choose the most likely ending:\n\nA) These are generally one of the more stylish and are excellent for acclimating to the outdoors in west indian terrain, due to their thick soles. Also consider investing in a belt and/or backpack that will help keep you comfortable during the hiking.\nB) The point of hiking is to have clear toe space when walking. The more clean your boots look, the more accurate your tests may be.\nC) Your new shoes or still brands will really help your workout. [title] Set a timer for yourself that applies to your workout in the designated time period.\nD) It is best to know the specific or varied environments in which the hiking will be conducted, this will allow you to select a pair of boots that are appropriate for the conditions. For instance, water resistant features on a boot may be appropriate in areas that experience moderate to low temperatures and heavy rain because they will often lengthen the time during which you can hike with warm, dry feet.\n",
+      "ground_truth": "It is best to know the specific or varied environments in which the hiking will be conducted, this will allow you to select a pair of boots that are appropriate for the conditions. For instance, water resistant features on a boot may be appropriate in areas that experience moderate to low temperatures and heavy rain because they will often lengthen the time during which you can hike with warm, dry feet.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.04927206039428711,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: A man demonstrates, in a living room setting, how to play the harmonica. a man\n\nWhat happens next? Choose the most likely ending:\n\nA) plays a harmonica for the camera attached to a smoking guitar on television set.\nB) plays the harmonica for the camera while another man plays to make music for the audience.\nC) demonstrates, in slow motion, how to play the harmonica with an elliptical.\nD) holds a harmonica up to the camera in a close up shot and then begins to play using both hands to cover the harmonica while he plays.\n",
+      "ground_truth": "holds a harmonica up to the camera in a close up shot and then begins to play using both hands to cover the harmonica while he plays.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.03295183181762695,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to touch up car paint [title] Buy a matching touch-up paint color. [substeps] Check the firewall (bulkhead) to find the paint code number. The firewall is the piece of sheet metal that separates the engine under the hood from the passengers inside the vehicle.\n\nWhat happens next? Choose the most likely ending:\n\nA) The number will also designate the name of the engine you will be touching up. [title] Call your locksmith to make a custom primer for your car.\nB) If you don't have a matching touch-up paint code, observe the color coding in the firewall. This is usually indicated with a red and white square at the bottom of the panel.\nC) You will need to open your hood to find this number. Purchase a primer along with the touch-up paint unless the particular touch-up paint you've chosen states otherwise.\nD) The code is imprinted along the bottom of the firewall, beginning at the fully hot brights. [title] Look for the manufacturer's matching logo under the engine compartment (backside).\n",
+      "ground_truth": "You will need to open your hood to find this number. Purchase a primer along with the touch-up paint unless the particular touch-up paint you've chosen states otherwise.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.02975606918334961,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to throw a surprise birthday party [title] Determine if your honoree will react well to a surprise. [step] Not all people react well to something unexpected. So before planning a surprise party consider how your guest of honor will react.\n\nWhat happens next? Choose the most likely ending:\n\nA) Just like many college-aged people, it's important to gather some pros and cons to determine what a surprise birthday party is for your guest. [substeps] If your honoree has a hard time being surprised, have a surprise surprise party if the guest of honor reacts the best.\nB) The more they react, the more pleased they will be. [substeps] Plan a surprise party on a weekend in the summer in august, or on the weekends in september or march.\nC) Some may be more mentally and emotionally angry than others. Additionally, some may be curious or critical.\nD) If you are unsure, talk to their close friends or family members to feel out the party idea before proceeding. Also consider whether they enjoy parties or like being the center of attention.\n",
+      "ground_truth": "If you are unsure, talk to their close friends or family members to feel out the party idea before proceeding. Also consider whether they enjoy parties or like being the center of attention.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.032588958740234375,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to make biscuits from scratch [title] Dissolve the yeast in water. [step] Combine the warm water and yeast in a large bowl, stirring gently only to dissolve the yeast. [substeps] The water should be between 110 and 115 degrees fahrenheit (43 and 46 degrees celsius) in order to activate the yeast properly.\n\nWhat happens next? Choose the most likely ending:\n\nA) [title] Add the butter and stir until fully dissolved. [step] Begin adding butter to the bowl of dough, stirring until the butter is fully incorporated into the dough.\nB) Use a food thermometer to check the temperature of the water before you add the yeast. [title] Add the sugar, butter, milk, egg, salt, and whole wheat flour.\nC) You can also consider adding salt or baking soda to the warm water solution. You might even consider adding the mixture over the course of an hour as it improves.\nD) Working with boiling water directly will be most effective because the heat engages the dough and allows it to rise. Fill a large bowl with the warm water.\n",
+      "ground_truth": "Use a food thermometer to check the temperature of the water before you add the yeast. [title] Add the sugar, butter, milk, egg, salt, and whole wheat flour.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.06805610656738281,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "summary": {
+    "benchmark_name": "MMLU",
+    "total_questions": 5,
+    "correct_answers": 0,
+    "accuracy": 0.0,
+    "average_confidence": 0.7475317583907396,
+    "average_response_time": 0.012829017639160157,
+    "total_time": 0.06456899642944336,
+    "per_category_accuracy": {
+      "high_school_biology": 0.0
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T06:26:15.818966"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: A researcher grows a population of ferns in her laboratory. She notices, after a few generations, a new variant that has a distinct phenotype. When she tries to breed the original phenotype with the new one, no offspring are produced. When she breeds the new variants, however, offspring that look like the new variant result. What kind of speciation does this example illustrate?\n\nA) Allopatric\nB) Sympatric\nC) Isolated\nD) Polyploidy\n",
+      "ground_truth": "Sympatric",
+      "prediction": "True",
+      "is_correct": false,
+      "confidence": 0.7358508331440389,
+      "response_time": 0.012784242630004883,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Which of these evolutionary agents is most consistent at causing populations to become better suited to their environments over the course of generations?\n\nA) Mutation\nB) Non-random mating\nC) Gene flow\nD) Natural selection\n",
+      "ground_truth": "Natural selection",
+      "prediction": "True",
+      "is_correct": false,
+      "confidence": 0.7964642159827053,
+      "response_time": 0.012529134750366211,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: The energy given up by electrons as they move through the electron transport chain is used to\n\nA) break down glucose\nB) make glucose\nC) produce ATP\nD) make NADH\n",
+      "ground_truth": "produce ATP",
+      "prediction": "True",
+      "is_correct": false,
+      "confidence": 0.7141275887470693,
+      "response_time": 0.012536048889160156,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: The Darwinian fitness of an individual is measured most directly by\n\nA) the number of its offspring that survive to reproduce.\nB) the number of \"good genes\" it possesses.\nC) the number of mates it attracts.\nD) its physical strength.\n",
+      "ground_truth": "the number of its offspring that survive to reproduce.",
+      "prediction": "True",
+      "is_correct": false,
+      "confidence": 0.7228516078740359,
+      "response_time": 0.013071775436401367,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: In a population of giraffes, an environmental change occurs that favors individuals that are tallest. As a result, more of the taller individuals are able to obtain nutrients and survive to pass along their genetic information. This is an example of\n\nA) directional selection.\nB) stabilizing selection.\nC) sexual selection.\nD) disruptive selection.\n",
+      "ground_truth": "directional selection.",
+      "prediction": "True",
+      "is_correct": false,
+      "confidence": 0.7683645462058485,
+      "response_time": 0.013223886489868164,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    }
+  ]
+}

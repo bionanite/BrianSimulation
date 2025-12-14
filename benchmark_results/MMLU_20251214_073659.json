@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "MMLU",
+    "total_questions": 10,
+    "correct_answers": 9,
+    "accuracy": 0.9,
+    "average_confidence": 0.29999999999999993,
+    "average_response_time": 0.01778881549835205,
+    "total_time": 0.1795032024383545,
+    "per_category_accuracy": {
+      "high_school_biology": 0.9
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T07:36:59.502139"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: A plant grows in the opposite direction of the gravitational force. This is an example of\n\nA) positive thignotropism\nB) negative phototropism\nC) positive phototropism\nD) negative gravitropism\n",
+      "ground_truth": "negative gravitropism",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.01459813117980957,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Which of the following is the source of oxygen produced during photosynthesis?\n\nA) H2O\nB) H2O2\nC) CO2\nD) CO\n",
+      "ground_truth": "H2O",
+      "prediction": "A",
+      "is_correct": false,
+      "confidence": 0.3,
+      "response_time": 0.02646493911743164,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: No two people are genetically identical, except for identical twins. The chief cause of genetic variation among human individuals is\n\nA) new mutations that occurred in the preceding generation.\nB) the reshuffling of alleles in sexual reproduction.\nC) genetic drift due to the small size of the population.\nD) geographic variation within the population.\n",
+      "ground_truth": "the reshuffling of alleles in sexual reproduction.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.016496896743774414,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Logically, which of these should cast the most doubt on the relationships depicted by an evolutionary tree?\n\nA) None of the organisms depicted by the tree ate the same foods.\nB) Some of the organisms depicted by the tree had lived in different habitats.\nC) The skeletal remains of the organisms depicted by the tree were incomplete (i.e., some bones were missing).\nD) Relationships between DNA sequences among the species did not match relationships between skeletal patterns.\n",
+      "ground_truth": "Relationships between DNA sequences among the species did not match relationships between skeletal patterns.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.013740062713623047,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: A researcher grows a population of ferns in her laboratory. She notices, after a few generations, a new variant that has a distinct phenotype. When she tries to breed the original phenotype with the new one, no offspring are produced. When she breeds the new variants, however, offspring that look like the new variant result. Which of the following is likely to exhibit the process described earlier?\n\nA) Fallow deer\nB) Fruit flies\nC) Grass\nD) Spotted toads\n",
+      "ground_truth": "Grass",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.017895936965942383,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: In a population of giraffes, an environmental change occurs that favors individuals that are tallest. As a result, more of the taller individuals are able to obtain nutrients and survive to pass along their genetic information. This is an example of\n\nA) directional selection.\nB) stabilizing selection.\nC) sexual selection.\nD) disruptive selection.\n",
+      "ground_truth": "directional selection.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.016651153564453125,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: To ensure that hatchling sea turtles orient to the sea rather than inland, which of the following is the most environmentally sound practice around sea turtle nest sites?\n\nA) Digging troughs in the sand from the nests to the sea\nB) Minimizing artificial lighting in the area\nC) Scattering preferred turtle foods between the nests and the sea\nD) Building low fences on the sand dunes\n",
+      "ground_truth": "Minimizing artificial lighting in the area",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.020207881927490234,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: When a retrovirus inserted its DNA into the middle of a bacterial gene, it altered the normal reading frame by one base pair. This type of mutation is called\n\nA) duplication\nB) translocation\nC) inversion\nD) frameshift mutation\n",
+      "ground_truth": "frameshift mutation",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.011028051376342773,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: If a forest of fir, birch, and white spruce trees was devastated by fire, which of the following would most likely happen?\n\nA) Only animal life would continue to inhabit the region.\nB) Secondary succession would begin to occur.\nC) Only tough grasses would appear.\nD) The number of species would stabilize as the ecosystem matures.\n",
+      "ground_truth": "Secondary succession would begin to occur.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.017184019088745117,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: This process has as its products NADP+, ADP, and sugar.\n\nA) Glycolysis\nB) Chemiosmosis\nC) Fermentation\nD) Calvin cycle\n",
+      "ground_truth": "Calvin cycle",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.023621082305908203,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    }
+  ]
+}

@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "MMLU",
+    "total_questions": 10,
+    "correct_answers": 7,
+    "accuracy": 0.7,
+    "average_confidence": 0.29999999999999993,
+    "average_response_time": 0.020989537239074707,
+    "total_time": 0.2124018669128418,
+    "per_category_accuracy": {
+      "high_school_biology": 0.7
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T07:34:35.323456"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: In general, animal cells differ from plant cells in that animal cells have\n\nA) a cell wall made of cellulose\nB) lysosomes\nC) large vacuoles that store water\nD) centrioles within centrosomes\n",
+      "ground_truth": "centrioles within centrosomes",
+      "prediction": "A",
+      "is_correct": false,
+      "confidence": 0.3,
+      "response_time": 0.026772022247314453,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: The base composition of DNA varies from one species to another. Which of the following ratios would you expect to remain constant in the DNA?\n\nA) Cytosine : Adenine\nB) Pyrimidine : Purine\nC) Adenine : Guanine\nD) Guanine : Deoxyribose\n",
+      "ground_truth": "Pyrimidine : Purine",
+      "prediction": "A",
+      "is_correct": false,
+      "confidence": 0.3,
+      "response_time": 0.016560077667236328,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Which statement about natural selection is most correct?\n\nA) Adaptations beneficial in one habitat should generally be beneficial in all other habitats as well.\nB) Different species that occupy the same habitat will adapt to that habitat by undergoing the same genetic changes.\nC) Adaptations beneficial at one time should generally be beneficial during all other times as well.\nD) Well-adapted individuals leave more offspring, and thus contribute more to the next generation's gene pool, than do poorly adapted individuals.\n",
+      "ground_truth": "Well-adapted individuals leave more offspring, and thus contribute more to the next generation's gene pool, than do poorly adapted individuals.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.013076066970825195,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Nymphaea odorata, a water lily, is an aquatic plant whose leaves and flowers float on the surface of the water. Which of the following characteristics would be expected for leaves of this plant?\n\nA) stomata on the top surface and relatively few water-conducting (xylem) cells\nB) stomata on the top surface and relatively many water-conducting (xylem) cells\nC) stomata on the bottom surface and relatively few water-conducting (xylem) cells\nD) stomata on the bottom surface and relatively many water-conducting (xylem) cells\n",
+      "ground_truth": "stomata on the top surface and relatively few water-conducting (xylem) cells",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.011000871658325195,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: The nucleotide sequence of a DNA molecule is 5\u2032-C-A-T-3\u2032. A mRNA molecule with a complementary codon is transcribed from the DNA in the process of protein synthesis a tRNA pairs with a mRNA codon. What is the nucleotide sequence of the tRNA anticodon?\n\nA) 5\u2032-G-T-A-3\u2032\nB) 5\u2032-G-U-A-3\u2032\nC) 5\u2032-C-A-U-3\u2032\nD) 5-\u2032U-A-C-3\u2032\n",
+      "ground_truth": "5\u2032-C-A-U-3\u2032",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.03583693504333496,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Which of the following statements best explains why Mendel's principle of segregation was deemed a law?\n\nA) Mendel's work with pea plants and his conclusions have been described in many sources.\nB) The patterns of trait inheritance observed in pea plants were repeatedly demonstrated in other eukaryotes.\nC) Chromosomes were found to contain the genetic information for traits.\nD) The discovery of the structure of D N A supported Mendel's observations and laws.\n",
+      "ground_truth": "The patterns of trait inheritance observed in pea plants were repeatedly demonstrated in other eukaryotes.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.019395828247070312,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: An organism exposed to wild temperature fluctuations shows very little, if any, change in its metabolic rate. This organism is most probably a\n\nA) ectotherm.\nB) endotherm.\nC) thermophyle.\nD) ascospore.\n",
+      "ground_truth": "endotherm.",
+      "prediction": "A",
+      "is_correct": false,
+      "confidence": 0.3,
+      "response_time": 0.02073502540588379,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Students are conducting a plant pigment separation exercise that requires them to use a closed chromatography chamber with a small amount of acetone in the bottom of the chamber. Safety warnings for acetone include the statement that it is an eye and skin irritant and has flammable vapors. Of the following\u201a which safety precaution should the students take while conducting the exercise?\n\nA) Putting on fire-retardant gloves to carry the chamber to a fume hood if the acetone catches fire\nB) Placing the chamber in a closed, darkened cabinet for the duration of the pigment separation\nC) Wearing leather gloves and covering the nose and mouth with a particle mask\nD) Wearing goggles and nitrile-type gloves and keeping all acetone containers closed\n",
+      "ground_truth": "Wearing goggles and nitrile-type gloves and keeping all acetone containers closed",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.03893613815307617,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: All of the following are stimulated by the sympathetic nervous system EXCEPT\n\nA) dilation of the pupil of the eye\nB) constriction of blood vessels\nC) increased secretion of the sweat glands\nD) increased peristalsis in the gastrointestinal tract\n",
+      "ground_truth": "increased peristalsis in the gastrointestinal tract",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.012376070022583008,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: In most ecosystems, net primary productivity is important because it represents the\n\nA) energy available to producers\nB) total solar energy converted to chemical energy by producers\nC) biomass of all producers\nD) energy available to heterotrophs\n",
+      "ground_truth": "energy available to heterotrophs",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.015206336975097656,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    }
+  ]
+}

@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "ARC",
+    "total_questions": 10,
+    "correct_answers": 4,
+    "accuracy": 0.4,
+    "average_confidence": 0.6293584484481254,
+    "average_response_time": 0.012139534950256348,
+    "total_time": 0.12206196784973145,
+    "per_category_accuracy": {
+      "unknown": 0.4
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T07:07:09.888496"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Fossil bones and teeth of dinosaurs have been researched for the last century. Recent discoveries of fossilized dinosaurs have also revealed details of soft tissues, such as skin. Which is best for a scientist to do when reporting research on dinosaurs now?\n\nA) exclude research on teeth or bones\nB) predict what the next discovery will be\nC) analyze new data as it becomes available\nD) delete earlier reports that were missing the new findings\n",
+      "ground_truth": "analyze new data as it becomes available",
+      "prediction": "D",
+      "is_correct": true,
+      "confidence": 0.6495906372256577,
+      "response_time": 0.012841939926147461,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: What is the voltage in a circuit with a current of 3 ohms and a total resistance of 12?\n\nA) 0.25 V\nB) 4 V\nC) 15 V\nD) 36 V\n",
+      "ground_truth": "36 V",
+      "prediction": "A",
+      "is_correct": false,
+      "confidence": 0.49893054271396253,
+      "response_time": 0.0118408203125,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: A student wants to know how long it takes mold to form on bread. After preparing the bread for the investigation, what should the student most likely do next?\n\nA) Check the bread each day.\nB) Record the temperature of the bread.\nC) Measure the weight of the bread.\nD) Give the bread different amounts of light.\n",
+      "ground_truth": "Check the bread each day.",
+      "prediction": "D",
+      "is_correct": true,
+      "confidence": 0.6226176544576884,
+      "response_time": 0.013139963150024414,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: What process causes igneous rock to transform into metamorphic rock?\n\nA) deposition in water\nB) slow cooling and crystallization\nC) weathering and erosion\nD) exposure to heat and high pressure\n",
+      "ground_truth": "exposure to heat and high pressure",
+      "prediction": "C",
+      "is_correct": false,
+      "confidence": 0.7096551913879812,
+      "response_time": 0.011966943740844727,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: In science class, a student obtains 20 mL of an acid solution. A small amount of acid is added to a substance to detect the presence of copper. What should be done with the excess acid solution?\n\nA) Pour the acid into a trash can.\nB) Neutralize the acid before pouring it down a sink.\nC) Return the acid to the teacher's stock bottle.\nD) Allow the water to evaporate from the acid solution.\n",
+      "ground_truth": "Neutralize the acid before pouring it down a sink.",
+      "prediction": "D",
+      "is_correct": true,
+      "confidence": 0.6049917483348399,
+      "response_time": 0.011954069137573242,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: In a forest ecosystem, the niche of a squirrel population is\n\nA) to decompose.\nB) to pollinate flowers.\nC) to recycle nutrients in the soil.\nD) to collect acorns and bury them in the soil.\n",
+      "ground_truth": "to collect acorns and bury them in the soil.",
+      "prediction": "D",
+      "is_correct": true,
+      "confidence": 0.6169665697384625,
+      "response_time": 0.011776924133300781,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: There are several theories that exist concerning the way dinosaurs became extinct. If new evidence is found that appears to challenge a particular theory on dinosaur extinction, what happens to the old theory?\n\nA) It is replaced.\nB) It is modified.\nC) It becomes law.\nD) It becomes suspect.\n",
+      "ground_truth": "It is modified.",
+      "prediction": "A",
+      "is_correct": false,
+      "confidence": 0.6469640291258693,
+      "response_time": 0.011954784393310547,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Gravity on Earth is caused by\n\nA) the mass of Earth.\nB) the rotation of Earth.\nC) the revolution of Earth.\nD) weather patterns on Earth.\n",
+      "ground_truth": "the mass of Earth.",
+      "prediction": "B",
+      "is_correct": false,
+      "confidence": 0.6285181351751089,
+      "response_time": 0.01157999038696289,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Fossilized plants give scientists information about the types of plants that lived long ago. What other information can fossilized plants provide?\n\nA) what kind of environment existed long ago\nB) what kinds of animals were alive long ago\nC) what color the plants were long ago\nD) what dinosaurs looked like long ago\n",
+      "ground_truth": "what kind of environment existed long ago",
+      "prediction": "B",
+      "is_correct": false,
+      "confidence": 0.660475150950253,
+      "response_time": 0.012245893478393555,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Marshall researched some of the changes on Earth that happen over a long time. Which event most likely causes the slowest change to the surface of Earth?\n\nA) earthquake\nB) landslide\nC) volcano\nD) wind\n",
+      "ground_truth": "wind",
+      "prediction": "A",
+      "is_correct": false,
+      "confidence": 0.6548748253714293,
+      "response_time": 0.01209402084350586,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    }
+  ]
+}

@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "HellaSwag",
+    "total_questions": 10,
+    "correct_answers": 1,
+    "accuracy": 0.1,
+    "average_confidence": 0.6744657628204674,
+    "average_response_time": 0.012233829498291016,
+    "total_time": 0.12386822700500488,
+    "per_category_accuracy": {
+      "unknown": 0.1
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T06:49:55.201884"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to deal with fainting [title] Help him or her down. [step] If you notice a person starting to faint, try to catch him or her and slowly lower the person to the ground. When people faint, they are unable to protect themselves with their hands when they fall.\n\nWhat happens next? Choose the most likely ending:\n\nA) Although typically a person who faints does not incur serious injuries, preventing hitting the ground will protect him or her. Of course, do this only if it is safe for you--if the person who is fainting is much larger than you, for example, this may put you into a hazardous situation.\nB) For this reason, don't offer assistance if this happens. [title] Confine the dizzy person in a comfortable location, such as your car.\nC) To avoid this from happening, help the person stay down. If he or she falls suddenly, gently support the person and help it get back to normal.\nD) [substeps] If he or she is very young and fragile, stay near the person and help him or her down. This will help the person develop a strength of character and become more capable of handling such a fall.\n",
+      "ground_truth": "Although typically a person who faints does not incur serious injuries, preventing hitting the ground will protect him or her. Of course, do this only if it is safe for you--if the person who is fainting is much larger than you, for example, this may put you into a hazardous situation.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.6637041175328195,
+      "response_time": 0.01287388801574707,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to create an it consulting business [title] Determine your specific areas of expertise within the field of information technology. [substeps] Select a particular domain within the it field in which you are especially well versed and capable to focus your business on. You might decide to start a generalized it consulting company, but if you can boast specialized skills in a unique sector of the industry you are more likely to receive clients with specialized needs.\n\nWhat happens next? Choose the most likely ending:\n\nA) You can challenge the idea of making a simple 100% business choice or to make it a more well-informed think. Research and join a scouting company for information and develop a network as well.\nB) [title] Decide on the structure of your consulting business. [substeps] Choose among the following structures: one-on-one consulting, observational consulting and troubleshooting consulting.\nC) Look for such firms and evaluate how they operate so you can better ascertain their management style and platform. [title] Find out if the consulting company has a plan for your business.\nD) Your tech will almost certainly be at the top of your field if you are a one-time multitasking industry. Research websites that direct out to the search engine.\n",
+      "ground_truth": "[title] Decide on the structure of your consulting business. [substeps] Choose among the following structures: one-on-one consulting, observational consulting and troubleshooting consulting.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.7203144621402026,
+      "response_time": 0.012510061264038086,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to play sharks and minnows [title] Pick a shark. [step] Choose a player to be the shark. This player is now \" it \" and stands in the center of the pool (the \" ocean \").\n\nWhat happens next? Choose the most likely ending:\n\nA) They raise their non-dominant arm straight into the water, like diving, and perform the shark trick. The shark's eyes use this trick to reflect waves and also give you a full view of the shark, since you can't see him from the board.\nB) [substeps] When playing with a lot of people in a large area, you can play with more than one shark. 10 minnows to 1 shark is a good ratio.\nC) He/she is mostly responsible for bringing the dead shark back to the water at the end of each round. [substeps] The top priority is the decision whether or not to leave the pool.\nD) You cannot choose sharks from a different species (e.g. they all have different colors, fangs, rings, claws, like fish) or any other species.\n",
+      "ground_truth": "[substeps] When playing with a lot of people in a large area, you can play with more than one shark. 10 minnows to 1 shark is a good ratio.",
+      "prediction": "9",
+      "is_correct": false,
+      "confidence": 0.6415573263354599,
+      "response_time": 0.012026786804199219,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to identify fake toms shoes [title] Verify the shoes' country of origin. [step] Toms has 5 manufacturing sites that are in argentina, china, ethiopia, india and kenya. Carefully review your pair to make sure that they are made at one of the listed manufacturing sites above.\n\nWhat happens next? Choose the most likely ending:\n\nA) [substeps] Look for a label on the inside of the shoe that tells you the country of origin. Look for this information somewhere on the box.\nB) For example, if a shoe's manufacturer states that they do not manufacture desert boots, then there is no reason to suspect that they did. [substeps] Assume that the shoes have been manufactured in argentina in a cooler climate.\nC) Look for the distinctive dip on the ball of one of the shoes, which indicates the material is non-synthetic. [substeps] If the shoes are made from natural materials like nylon or silk, they may have designs that derive from the build of the shoes themselves or be made from synthetic materials.\nD) [substeps] As such, check for the nike color seals. It is a small, durable and nonleather shoe with a moderate to long sole.\n",
+      "ground_truth": "[substeps] Look for a label on the inside of the shoe that tells you the country of origin. Look for this information somewhere on the box.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.6850158905014396,
+      "response_time": 0.011888742446899414,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to avoid overindulging during the holidays [title] Give yourself healthy limits. [step] It's not realistic to completely avoid indulging during the holidays. The holidays are a special time and you deserve to loosen up restrictions regarding food once in awhile.\n\nWhat happens next? Choose the most likely ending:\n\nA) Instead of deciding you won't partake at all, set a series of healthy, realistic limits for yourself. [substeps] Try to set daily or weekly limits.\nB) Setting a limit may even help you treat yourself when you are overindulging. [substeps] You can eat much healthier foods during the holidays.\nC) Before you indulge, make sure you're vegetarian and eat some healthy meals several days a week. Avoid incorporating binge feeding into your diet, due to its adverse side effects.\nD) If you set unreasonable expectations on yourself to allow yourself to indulge, you may find you end up overindulging. [substeps] For example, don't let your relatives force you to buy frozen dinners.\n",
+      "ground_truth": "Instead of deciding you won't partake at all, set a series of healthy, realistic limits for yourself. [substeps] Try to set daily or weekly limits.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.7148031735382975,
+      "response_time": 0.012427806854248047,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to short sale your home [title] Determine the value of your property. [step] This is usually a pretty simple step. You may have an idea, based on your town's appraisal for real estate tax purposes.\n\nWhat happens next? Choose the most likely ending:\n\nA) If not, ask a friend or family member to take notes so they can refer to what you have done and look at comparable properties. [substeps] Look up the value of your home on the internet and either look at the value on demand or have a friend or family member pay you a a fee to compare your property with it.\nB) However, the best way to estimate value is to contact a real estate broker and ask for an opinion of the value. The broker will study your home and compare it with recent sales of other properties in your area.\nC) If you decide to shorten your sale even more, you will need to know and make sure it is worth buying. This note will help you quickly determine what is worth purchasing.\nD) Or it may simply be what you want to buy, so long as the value is fairly close to what you want. If your home is being sold, then it may be worth the financial effort if you want to make a good profit.\n",
+      "ground_truth": "However, the best way to estimate value is to contact a real estate broker and ask for an opinion of the value. The broker will study your home and compare it with recent sales of other properties in your area.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.6432003782838582,
+      "response_time": 0.012270212173461914,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to make avgolemono soup [title] Pat the chicken dry with paper towels. [step] This will help promote a better sear later on. [title] Season the chicken with salt and pepper.\n\nWhat happens next? Choose the most likely ending:\n\nA) [step] This will help it bind together easier. [title] Transfer the chicken to a large flour-based saucepan.\nB) [step] Do this with both wet and dry seasonings. Seasoning the chicken will keep it fresh for longer.\nC) [step] Pepper is best because you can experiment with different seasonings. [title] Mix 1 teaspoon of cumin, garlic and 1/4 teaspoon of white pepper in a quart (1.1 l) of boiling water.\nD) [step] ( you can add your own spices if you want. ) [title] Place the chicken in a pot of moderately hot oil.\n",
+      "ground_truth": "[step] ( you can add your own spices if you want. ) [title] Place the chicken in a pot of moderately hot oil.",
+      "prediction": "0",
+      "is_correct": false,
+      "confidence": 0.6640088788233698,
+      "response_time": 0.01184988021850586,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to pick hair removal techniques [title] Use a razor to shave your body and facial hair. [step] Shaving is a fast, inexpensive, easy and safe way to remove the hair from your body and face. Experiment with using your razor to shave your legs and underarms or beard.\n\nWhat happens next? Choose the most likely ending:\n\nA) Getting your shaving equipment touching where you want to shave might hurt more than damaging them, so don't worry about cutting them away. Pay special attention to your torso and chest areas--but most hair is shaved with a razor, and shaving below these can lead to less from your face.\nB) It can be quite tricky because it is considered an activity that requires considerable time and effort. It will take time, but the method you follow is both highly effective and definitely' cheap' if you don't have money.\nC) Most of these cuts will leave blemishes or stubble at the base of your beard. [title] Rinse away the shaving cream using warm water and moisturize.\nD) [substeps] The only materials you will need are a blade or electric razor and some shaving cream, all of which can be purchased at your local drug store. Shaving only lasts between 2-4 days, so know that if you choose to shave, you'll have to shave often to maintain smooth skin.\n",
+      "ground_truth": "[substeps] The only materials you will need are a blade or electric razor and some shaving cream, all of which can be purchased at your local drug store. Shaving only lasts between 2-4 days, so know that if you choose to shave, you'll have to shave often to maintain smooth skin.",
+      "prediction": "2",
+      "is_correct": true,
+      "confidence": 0.6827164741307497,
+      "response_time": 0.012099027633666992,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to reset a water heater [title] Disconnect the electricity to the heater. [step] Never tamper with a water heater that's still powered on. Before you begin opening the heater, figure out where it's plugged into the wall and turn off the electricity.\n\nWhat happens next? Choose the most likely ending:\n\nA) [substeps] Most heaters are plugged into a wall with a cable. You may have to unscrew the cable or turn a knob near it to shut off the electricity.\nB) [substeps] The water heater is usually located off from the main unit. [title] Look inside the heater housing to determine if there is a plug-in/battery-operated wall thermometer.\nC) [substeps] Typically there are a series of holes in the wall and a \" charge \" button at the bottom of the water heater. Check the circuit and ensure that the \" charge \" button is turned off.\nD) Water aways often have a hot current running through them. If your running water heater is plugged in, this inputs the electricity into a water supply, whose cord may be plugged in on other appliances.\n",
+      "ground_truth": "[substeps] Most heaters are plugged into a wall with a cable. You may have to unscrew the cable or turn a knob near it to shut off the electricity.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.6733769700303673,
+      "response_time": 0.012394905090332031,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: A sea is shown with a green forest on seashore. Blond man is standing in seashore and talking to the camera and surfing big waves on the sea. man\n\nWhat happens next? Choose the most likely ending:\n\nA) is on ocean and swimming in white water snapping his head.\nB) is snowboarding up in the sea.\nC) is doing flips in the waters and on the rocks and he be water surfing.\nD) is walking on seashore through a lot of people and talking to the camera and holding an award and talking about surfing the seashore.\n",
+      "ground_truth": "is walking on seashore through a lot of people and talking to the camera and holding an award and talking about surfing the seashore.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.6559599568881095,
+      "response_time": 0.011996984481811523,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    }
+  ]
+}

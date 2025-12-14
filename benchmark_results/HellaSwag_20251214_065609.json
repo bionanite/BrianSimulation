@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "HellaSwag",
+    "total_questions": 10,
+    "correct_answers": 10,
+    "accuracy": 1.0,
+    "average_confidence": 0.5022782014586057,
+    "average_response_time": 0.011318469047546386,
+    "total_time": 0.11442422866821289,
+    "per_category_accuracy": {
+      "unknown": 1.0
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T06:56:09.526136"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to combat cellulite [title] Apply retinol to your skin. [step] Retinol is a vitamin a compound proven to help improve a number of skin-related conditions like acne and wrinkles. Studies have shown that regular retinol use can also improve the appearance of cellulite.\n\nWhat happens next? Choose the most likely ending:\n\nA) [substeps] Use mineral oil, castor oil, or body oil if you have areas where you'd like to reduce your cellulite. The recommended daily amount of retinol for individuals 12 or older is 25 to 59 mg.\nB) [substeps] Retinol is found in alcoholic beverages including wine and liquor. Consult your doctor for an approved retinol-based cream for treating cellulite.\nC) [substeps] Retinol products are available over-the-counter and by prescription. Use a 0.3 percent strength retinol cream.\nD) [substeps] Talk to your doctor or skincare professional about using a retinol product. Depending on your particular skin type, retinol can lighten up or eliminate circles under your eyes.\n",
+      "ground_truth": "[substeps] Retinol products are available over-the-counter and by prescription. Use a 0.3 percent strength retinol cream.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.5196694155462936,
+      "response_time": 0.011789798736572266,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to control frizz [title] Shampoo less frequently. [step] The naturals oils produced by your scalp help to combat frizzy, dry hair. Shampoo strips these oils from your hair.\n\nWhat happens next? Choose the most likely ending:\n\nA) Fight frizz by decreasing the number of times you shampoo your tresses each week. After rinsing your hair with warm water, apply a sulfate-free, moisturizing shampoo to your roots.\nB) When you shampoo more frequently, you end up with frizz. [substeps] If you don't shampoo often, use a hose and water to rinse out shampoo.\nC) Instead, wash more frequently to eliminate frizz. Shampoo more often than necessary to give your hair extra oils to control frizz.\nD) While damage is suspected, shampooing less often helps your hair become softer, silky, and frizz-prone. [title] Wash shampoo out when you shower.\n",
+      "ground_truth": "Fight frizz by decreasing the number of times you shampoo your tresses each week. After rinsing your hair with warm water, apply a sulfate-free, moisturizing shampoo to your roots.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.5076310043250079,
+      "response_time": 0.011107206344604492,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: A man is seen standing in front of a goal holding a stick and speaking to the camera. several shots of him speaking\n\nWhat happens next? Choose the most likely ending:\n\nA) are shown as well as shots of serve and the man speaking.\nB) to the camera are shown as well as him demonstrating how to throw the shot put.\nC) are shown as well as playing and scores are shown.\nD) are shown and he demonstrates how to properly be a goalie.\n",
+      "ground_truth": "are shown and he demonstrates how to properly be a goalie.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.49991030862328395,
+      "response_time": 0.011224985122680664,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to care for a shaving brush [title] Wash your new brush. [step] While shaving brushes usually come sanitized from the manufacture, it's a good idea to still clean the brush with soapy water or shampoo and conditioner before use as this will better prepare the brush for use and remove any loose hairs. [title] Do not push down hard while lathering with your shaving brush.\n\nWhat happens next? Choose the most likely ending:\n\nA) [step] This is a common mistake, and probably the most important tip. Many men feel they have to push down hard to create an ultimate lather.\nB) [step] Use gentle pushes and pull to start. [title] Use your index fingers to massage your beard and inner lip, preferably one of the hairs that tends to get tangled up when you're shaving.\nC) [step] Use very gentle but firm pressure to avoid damaging the bristles. Avoiding pulling hard on the bristles can burn your skin.\nD) [step] Use a short, gentle bar of soap meant for sensitive skin. To minimize friction, try to avoid splashing or palpating the brush on your skin.\n",
+      "ground_truth": "[step] This is a common mistake, and probably the most important tip. Many men feel they have to push down hard to create an ultimate lather.",
+      "prediction": "B",
+      "is_correct": true,
+      "confidence": 0.49667821998633,
+      "response_time": 0.011792898178100586,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: A woman in a purple dress is seated, speaking to the camera. she\n\nWhat happens next? Choose the most likely ending:\n\nA) stands up and spins her body, demonstrating some gymnastics moves.\nB) holds up a box, showing her nails, then opens the box and shows more nails.\nC) shows the team how to properly clean and lather their feet, washing them and rubbing them down.\nD) is shown massaging cream into her face, then rinsing it off with water and patting dry with a towel.\n",
+      "ground_truth": "is shown massaging cream into her face, then rinsing it off with water and patting dry with a towel.",
+      "prediction": "C",
+      "is_correct": true,
+      "confidence": 0.5058161775432171,
+      "response_time": 0.011030912399291992,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: A group of people are standing in the middle of a forest with a trail of pebbles separating them from a beautiful crystal clear body of water. the camera\n\nWhat happens next? Choose the most likely ending:\n\nA) then goes right side up and shows a lot of scenery on the left side.\nB) follows the couple kayaking behind the group on the trail moving back and fourth on the murky water in the forest.\nC) moves across the water and several people on boats and jet-skis are moving in the water near a large wave.\nD) zooms in on the foamy waters as well as the nearby cliffs and forest surrounding it.\n",
+      "ground_truth": "moves across the water and several people on boats and jet-skis are moving in the water near a large wave.",
+      "prediction": "B",
+      "is_correct": true,
+      "confidence": 0.49986904663902787,
+      "response_time": 0.010749101638793945,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to talk to a shy person [title] Give them a warm introduction. [step] Approach the shy person with a friendly face and tone. Avoid getting too close or rushing up to them; instead, be calm about the interaction.\n\nWhat happens next? Choose the most likely ending:\n\nA) If the shy person looks too distracted, you may need to take a few seconds to excuse yourself. [substeps] Say \" hi \" and introduce yourself as a friend rather than an interpersonal or professional warm greeting.\nB) [substeps] If you do this, it will be jarring and still elicit them into trusting you. Typically shy people stay under their comfort zone better than those that don't.\nC) [substeps] Approach the shy person as you would approach a relative or friend. Start by saying \" hi, this is my sister emma.\nD) You might also ask them a question about themselves to break the ice and get the conversation flowing. [substeps] For instance, you might say \" hey terry! I'm glad to see you.\n",
+      "ground_truth": "You might also ask them a question about themselves to break the ice and get the conversation flowing. [substeps] For instance, you might say \" hey terry! I'm glad to see you.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.49323914586293927,
+      "response_time": 0.012042999267578125,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to clean keds [title] Remove laces and inserts. [step] Before you clean your keds, you should take out both the laces and any inserts inside of the shoe. The laces can be cleaned in the washing machine, by hand in the sink, or simply replaced.\n\nWhat happens next? Choose the most likely ending:\n\nA) [title] Soak your keds in water for 10 minutes. [step] You can use your cleaning solution-soap, warm water, or any liquid that you like.\nB) You should set aside the inserts until you are finished cleaning. If they are smelly or dirty, you may want to replace them.\nC) [title] Soak the shoelaces and inserts. [step] Place the lace and inserts inside a bowl or cup and gently soak them in a sponge full of water.\nD) [substeps] This step will be optional, but may be recommended for those keds where you're cleaning larger packages or clothing items. Dry your keds with a microfiber cloth.\n",
+      "ground_truth": "You should set aside the inserts until you are finished cleaning. If they are smelly or dirty, you may want to replace them.",
+      "prediction": "C",
+      "is_correct": true,
+      "confidence": 0.49795238815321796,
+      "response_time": 0.011147737503051758,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to plan an arab wedding [title] Pick the hall. [step] The reception hall is crucial and must be reserved at least six months in advance. When looking for the perfect hall, size is the most important factor.\n\nWhat happens next? Choose the most likely ending:\n\nA) A research group will have recommendations for the ideal hall that the bride and groom can agree upon. [substeps] Indication columns will discuss the length of the hall.\nB) Every table needs to be a fair height and equally spaced throughout. [title] Decide if you want to go big or small.\nC) It should be spacious enough to seat the engaged and distant muslim bride and groom. Additionally, there should be enough music for the reception and for all the guests you're inviting.\nD) A hall should be large enough to fit anywhere between 500 to 1 , 500 people. D\u00e9cor is simply extra and not viewed as a main priority.\n",
+      "ground_truth": "A hall should be large enough to fit anywhere between 500 to 1 , 500 people. D\u00e9cor is simply extra and not viewed as a main priority.",
+      "prediction": "D",
+      "is_correct": true,
+      "confidence": 0.5099240503531587,
+      "response_time": 0.011134862899780273,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: A family is sitting at a table and the grandpa begins positioning himself as if he is clapping his hands but he is really playing the harmonica. as he\n\nWhat happens next? Choose the most likely ending:\n\nA) starts to tune it off, the mom puts her hand on the back of his head and the mom joins in clapping.\nB) continues, one of the young kids goes up and tries to help him but he makes it back to the table.\nC) plays, more of the young kids gather around to watch him play as he switches the two harmonicas.\nD) plays, they all stick out their tongues to the camera.\n",
+      "ground_truth": "plays, more of the young kids gather around to watch him play as he switches the two harmonicas.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.49209225755358055,
+      "response_time": 0.011164188385009766,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    }
+  ]
+}

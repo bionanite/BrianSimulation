@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "MMLU",
+    "total_questions": 10,
+    "correct_answers": 0,
+    "accuracy": 0.0,
+    "average_confidence": 0.535666497427918,
+    "average_response_time": 0.0111375093460083,
+    "total_time": 0.11273384094238281,
+    "per_category_accuracy": {
+      "high_school_biology": 0.0
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T06:53:18.959373"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Although mutations occur at a regular and predictable rate, which of the following statements is the LEAST likely reason the frequency of mutation appears to be low?\n\nA) Some mutations produce alleles that are recessive and may not be expressed.\nB) Some undesirable phenotypic traits may be prevented from reproducing.\nC) Some mutations cause such drastic phenotypic changes that they are removed from the gene pool.\nD) The predictable rate of mutation results in ongoing variability in a gene pool.\n",
+      "ground_truth": "The predictable rate of mutation results in ongoing variability in a gene pool.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.5320298507236704,
+      "response_time": 0.015913963317871094,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: A trend toward the decrease in the size of plants on the slopes of mountains as altitudes increase is an example of\n\nA) a cline.\nB) a bottleneck.\nC) relative fitness.\nD) genetic drift.\n",
+      "ground_truth": "a cline.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.5326685969414593,
+      "response_time": 0.01029205322265625,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: When water evaporates from the surface of a pond, what happens to the remaining liquid water?\n\nA) The surface water cools.\nB) The surface water warms.\nC) The surface water temperature remains unchanged.\nD) The pH of the remaining water decreases.\n",
+      "ground_truth": "The surface water cools.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.5176157141646823,
+      "response_time": 0.010907173156738281,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: The first simple cells evolved approximately 3.5 billion years ago, followed by the more complex eukaryotic cells 2.1 billion years ago. Which of the following statements is correct?\n\nA) Eukaryotic organelles helped create separate environments for metabolic reactions, thus increasing their metabolic efficiency.\nB) Prokaryotic and eukaryotic cells have no structural similarities.\nC) The organelles in larger eukaryotic cells took care of the problems of having a larger surface area\u2013to\u2013volume ratio.\nD) Eukaryotic cells are able to multiply faster based on their more complex structure.\n",
+      "ground_truth": "Eukaryotic organelles helped create separate environments for metabolic reactions, thus increasing their metabolic efficiency.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.5640662159065376,
+      "response_time": 0.010555267333984375,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: The structure of ATP synthase in the plasma membranes of bacteria is nearly identical to that in the mitochondria and chloroplasts of eukaryotic cells. This similarity best supports which of the following hypotheses?\n\nA) Eukaryotic and prokaryotic cells share a common ancestor.\nB) Mitochondria are derived from ancient aerobic bacteria, and chloroplasts are derived from ancient photosynthetic bacteria.\nC) The similarity of ATP synthase in bacteria, mitochondria, and chloroplasts is an example of convergent evolution.\nD) Mitochondria and chloroplasts escaped from eukaryotic cells and formed aerobic and photosynthetic prokaryotes.\n",
+      "ground_truth": "Mitochondria are derived from ancient aerobic bacteria, and chloroplasts are derived from ancient photosynthetic bacteria.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.5704517631660361,
+      "response_time": 0.010852813720703125,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Many different fermentation pathways occur in different organisms in nature. For example, skeletal muscle cells convert pyruvate into lactic acid when no oxygen is present. Yeast cells can produce alcohol and carbon dioxide under the same circumstances. However, regardless of the specific reactions, the purpose of glycolysis is an important one. Which statement best describes the importance of glycolysis?\n\nA) It produces large amounts of ATP by substrate level phosphorylation.\nB) It reoxidizes NADH so that glycolysis can continue.\nC) It produces pyruvate, which is the raw material for oxidative phosphorylation.\nD) It occurs in the cytoplasm.\n",
+      "ground_truth": "It reoxidizes NADH so that glycolysis can continue.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.5391022696506853,
+      "response_time": 0.010956048965454102,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: The relatives of a group of pelicans from the same species that separated from each other because of an unsuccessful migration are reunited 150 years later and find that they are unable to produce offspring. This is an example of\n\nA) allopatric speciation.\nB) sympatric speciation.\nC) genetic drift.\nD) gene flow.\n",
+      "ground_truth": "allopatric speciation.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.535168127326847,
+      "response_time": 0.010052919387817383,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: The resting membrane potential depends on which of the following? I. Active transport II. Selective permeability III. Differential distribution of ions across the axonal membrane\n\nA) III only\nB) I and II only\nC) II and III only\nD) I, II, and III\n",
+      "ground_truth": "I, II, and III",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.5466816947457993,
+      "response_time": 0.011506795883178711,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Water and minerals that reach the xylem in the center of a plant root must first\n\nA) move through neighboring phloem vessels\nB) cross open stomata in the root epidermis\nC) cross the endodermis of the root cortex\nD) pass through the pith of the root cap\n",
+      "ground_truth": "cross the endodermis of the root cortex",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.5074950767428708,
+      "response_time": 0.010319948196411133,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: The Darwinian fitness of an individual is measured most directly by\n\nA) the number of its offspring that survive to reproduce.\nB) the number of \"good genes\" it possesses.\nC) the number of mates it attracts.\nD) its physical strength.\n",
+      "ground_truth": "the number of its offspring that survive to reproduce.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.5113856649105927,
+      "response_time": 0.010018110275268555,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    }
+  ]
+}

@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "MMLU",
+    "total_questions": 10,
+    "correct_answers": 6,
+    "accuracy": 0.6,
+    "average_confidence": 0.48950244635558526,
+    "average_response_time": 0.010554027557373048,
+    "total_time": 0.10646986961364746,
+    "per_category_accuracy": {
+      "high_school_biology": 0.6
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T07:04:10.153143"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: The same gene that causes various coat patterns in wild and domesticated cats also causes the cross-eyed condition in these cats, the cross-eyed condition being slightly maladaptive. In a hypothetical environment, the coat pattern that is associated with crossed eyes is highly adaptive, with the result that both the coat pattern and the cross-eyed condition increase in a feline population over time. Which statement is supported by these observations?\n\nA) Evolution is progressive and tends toward a more perfect population.\nB) Phenotype is often the result of compromise.\nC) Natural selection reduces the frequency of maladaptive genes in populations over the course of time.\nD) Polygenic inheritance is generally maladaptive, and should become less common in future generations.\n",
+      "ground_truth": "Phenotype is often the result of compromise.",
+      "prediction": "C",
+      "is_correct": true,
+      "confidence": 0.4847699498646792,
+      "response_time": 0.013208866119384766,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: All viruses contain at least these two principal components:\n\nA) DNA and proteins\nB) nucleic acid and a capsid\nC) DNA and cell membrane\nD) RNA and cell wall\n",
+      "ground_truth": "nucleic acid and a capsid",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.4621511691487682,
+      "response_time": 0.01023101806640625,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: An organism exposed to wild temperature fluctuations shows very little, if any, change in its metabolic rate. This organism is most probably a\n\nA) ectotherm.\nB) endotherm.\nC) thermophyle.\nD) ascospore.\n",
+      "ground_truth": "endotherm.",
+      "prediction": "A",
+      "is_correct": false,
+      "confidence": 0.4856041517327432,
+      "response_time": 0.010243892669677734,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Which of these is a statement that Darwin would have rejected?\n\nA) Environmental change plays a role in evolution.\nB) The smallest entity that can evolve is an individual organism.\nC) Individuals can acquire new characteristics as they respond to new environments or situations.\nD) Inherited variation in a population is a necessary precondition for natural selection to operate.\n",
+      "ground_truth": "The smallest entity that can evolve is an individual organism.",
+      "prediction": "C",
+      "is_correct": true,
+      "confidence": 0.4859904306280586,
+      "response_time": 0.01019287109375,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Hemoglobin is a molecule that binds to both O2 and CO2. There is an allosteric relationship between the concentrations of O2 and CO2. Hemoglobin's affinity for O2\n\nA) decreases as blood pH decreases\nB) increases as H+ concentration increases\nC) increases in exercising muscle tissue\nD) decreases as CO2 concentration decreases\n",
+      "ground_truth": "decreases as blood pH decreases",
+      "prediction": "B",
+      "is_correct": true,
+      "confidence": 0.497886082364577,
+      "response_time": 0.010239124298095703,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Except for identical twins, no two people are genetically identical. Which of the following statements most accurately describes the main source of variation in humans?\n\nA) The main source of variation in humans is genetic drift.\nB) Changes in the environment cause rapid changes in different human populations.\nC) Shuffling of alleles is responsible for the greatest variation in humans.\nD) Mutations are responsible for the greatest changes in different human populations.\n",
+      "ground_truth": "Shuffling of alleles is responsible for the greatest variation in humans.",
+      "prediction": "D",
+      "is_correct": false,
+      "confidence": 0.4957781069922759,
+      "response_time": 0.010502815246582031,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: As a young biologist, Charles Darwin had expected the living plants of temperate South America would resemble those of temperate Europe, but he was surprised to find that they more closely resembled the plants of tropical South America. The biological explanation for this observation is most properly associated with the field of\n\nA) meteorology.\nB) embryology.\nC) vertebrate anatomy.\nD) biogeography.\n",
+      "ground_truth": "biogeography.",
+      "prediction": "C",
+      "is_correct": false,
+      "confidence": 0.4896300464447146,
+      "response_time": 0.010373830795288086,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Invertebrate immune systems possess which of the following?\n\nA) Cytotoxic T-lymphocytes\nB) Phagocytes\nC) B-cells\nD) Helper T-cells\n",
+      "ground_truth": "Phagocytes",
+      "prediction": "B",
+      "is_correct": false,
+      "confidence": 0.5229447460539378,
+      "response_time": 0.010165929794311523,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: What was the prevailing notion prior to the time of Lyell and Darwin?\n\nA) Earth is a few thousand years old, and populations are unchanging.\nB) Earth is a few thousand years old, and populations gradually change.\nC) Earth is millions of years old, and populations rapidly change.\nD) Earth is millions of years old, and populations are unchanging.\n",
+      "ground_truth": "Earth is a few thousand years old, and populations are unchanging.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.46437581250720117,
+      "response_time": 0.010084867477416992,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Transcription-affecting DNA region that may be located thousands of basepairs away from the promoter.\n\nA) Enhancer\nB) Repressor\nC) Operator\nD) Promoter\n",
+      "ground_truth": "Enhancer",
+      "prediction": "C",
+      "is_correct": true,
+      "confidence": 0.5058939678188963,
+      "response_time": 0.010297060012817383,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    }
+  ]
+}

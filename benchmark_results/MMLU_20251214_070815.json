@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "MMLU",
+    "total_questions": 10,
+    "correct_answers": 5,
+    "accuracy": 0.5,
+    "average_confidence": 0.748082853449881,
+    "average_response_time": 0.01114034652709961,
+    "total_time": 0.11214113235473633,
+    "per_category_accuracy": {
+      "high_school_biology": 0.5
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T07:08:15.806148"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: This process has as its products NADP+, ADP, and sugar.\n\nA) Glycolysis\nB) Chemiosmosis\nC) Fermentation\nD) Calvin cycle\n",
+      "ground_truth": "Calvin cycle",
+      "prediction": "B",
+      "is_correct": false,
+      "confidence": 0.8082550446540118,
+      "response_time": 0.014564990997314453,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Natural selection changes allele frequencies in populations because some ____ survive and reproduce more successfully than others.\n\nA) alleles\nB) loci\nC) gene pools\nD) individuals\n",
+      "ground_truth": "individuals",
+      "prediction": "C",
+      "is_correct": false,
+      "confidence": 0.832564880963415,
+      "response_time": 0.01059722900390625,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: A rooster with gray feathers and a hen with the same phenotype produce 17 gray, 7 black, and 8 white chicks. What is the simplest explanation for the inheritance of these colors in chickens?\n\nA) The trait for gray is epistatic over the trait for black.\nB) The trait for gray is epistatic over the trait for white.\nC) The traits for black and white color demonstrate incomplete dominance.\nD) The traits for black and white color demonstrate codominance.\n",
+      "ground_truth": "The traits for black and white color demonstrate incomplete dominance.",
+      "prediction": "C",
+      "is_correct": true,
+      "confidence": 0.6991987830139696,
+      "response_time": 0.010612964630126953,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Which of the following statements most detracts from the claim that the human appendix is a completely vestigial organ?\n\nA) The appendix can be surgically removed with no immediate ill effects.\nB) The appendix might have been larger in fossil hominids.\nC) The appendix has a substantial amount of defensive lymphatic tissue.\nD) Individuals with a larger-than-average appendix leave fewer offspring than those with a below-average-sized appendix.\n",
+      "ground_truth": "The appendix has a substantial amount of defensive lymphatic tissue.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.771924774453044,
+      "response_time": 0.011023283004760742,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Which of the following is known to be involved in the photoperiodic flowering response of angiosperms?\n\nA) Auxin\nB) Cytochrome\nC) Phytochrome\nD) Gibberellins\n",
+      "ground_truth": "Phytochrome",
+      "prediction": "C",
+      "is_correct": true,
+      "confidence": 0.8379156188592315,
+      "response_time": 0.010590791702270508,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Which of the following would most likely describe the fate of a vesicle formed as a result of phagocytosis?\n\nA) The vesicle merges with a mitochondrion.\nB) The vesicle merges with a lysosome.\nC) The vesicle is shuttled to the nucleus, and its contents become part of the nucleolus.\nD) The vesicle releases its contents to the cytoplasm to be digested.\n",
+      "ground_truth": "The vesicle merges with a lysosome.",
+      "prediction": "C",
+      "is_correct": true,
+      "confidence": 0.7078322261907161,
+      "response_time": 0.010841131210327148,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Short sequence by promoter that assists transcription by interacting with regulatory proteins.\n\nA) Enhancer\nB) Repressor\nC) Operator\nD) Promoter\n",
+      "ground_truth": "Operator",
+      "prediction": "C",
+      "is_correct": false,
+      "confidence": 0.867025064535439,
+      "response_time": 0.010722160339355469,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: In reference to a segment of DNA, which of the following molecules contains the fewest number of nucleotides?\n\nA) a single strand of the original DNA segment\nB) a single strand of the original DNA segment after a point mutation\nC) the primary RNA transcript (before splicing) from the original DNA\nD) a single strand of complementary DNA (cDNA) made from the original DNA\n",
+      "ground_truth": "a single strand of complementary DNA (cDNA) made from the original DNA",
+      "prediction": "B",
+      "is_correct": false,
+      "confidence": 0.7051476358287037,
+      "response_time": 0.010903120040893555,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Which of the following is a frameshift mutation?\n\nA) CAT HAS HIS \u2192 CAT HAS HIT\nB) CAT HAS HIS \u2192 CAT HSH ISA\nC) CAT HAS HIS \u2192 CAT HIS HAT\nD) CAT HAS HIS \u2192 CAT WAS HIT\n",
+      "ground_truth": "CAT HAS HIS \u2192 CAT HSH ISA",
+      "prediction": "D",
+      "is_correct": false,
+      "confidence": 0.5745269017778337,
+      "response_time": 0.010680913925170898,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Which of the following statements about the DNA in one of your liver cells is correct?\n\nA) Your liver cells contain the same DNA as your white blood cells.\nB) Most of the DNA in your liver cells will be transcribed but not translated.\nC) Most of the DNA in your liver cells will be transcribed in the nucleus and translated in the cytoplasm.\nD) DNA in your liver cells contains genes unique to storing glycogen, while other cells do not contain those genes.\n",
+      "ground_truth": "Your liver cells contain the same DNA as your white blood cells.",
+      "prediction": "C",
+      "is_correct": true,
+      "confidence": 0.6764376042224467,
+      "response_time": 0.010866880416870117,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    }
+  ]
+}

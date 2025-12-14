@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "HellaSwag",
+    "total_questions": 10,
+    "correct_answers": 10,
+    "accuracy": 1.0,
+    "average_confidence": 0.509880266798633,
+    "average_response_time": 0.011179542541503907,
+    "total_time": 0.11297202110290527,
+    "per_category_accuracy": {
+      "unknown": 1.0
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T07:06:28.955147"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to get your child into a good school [title] Pick a preschool style. [step] Preschools come in many forms, from daycare style to academically-rigorous. Consider what type of environment would help your child flourish and look for schools that best fit your child's learning style.\n\nWhat happens next? Choose the most likely ending:\n\nA) [substeps] One of the most popular preschool shapes is the free-day. Preschool is designed for a variety of needs, from high school to college aged children.\nB) Kids with adhd can stay in preschools until they reach their teens, as they will need your support, motivation, and attention. Don't forget to consider the weather and tuition costs-these will vastly impact the outcome of choosing the school.\nC) If your child enjoys reading, for example, a school with an international curriculum may also be in your son's best interest. [title] Consider the teacher's teaching skills.\nD) [substeps] Take a look at the educational philosophies. Does the school believe in learning by play or studying? When do they introduce reading and math? Does the school follow a particular model such as the montessori method or the waldorf approach? Pay attention to the school's atmosphere.\n",
+      "ground_truth": "[substeps] Take a look at the educational philosophies. Does the school believe in learning by play or studying? When do they introduce reading and math? Does the school follow a particular model such as the montessori method or the waldorf approach? Pay attention to the school's atmosphere.",
+      "prediction": "D",
+      "is_correct": true,
+      "confidence": 0.5355520498575305,
+      "response_time": 0.011744976043701172,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to color your hair with pravana pastels [title] Purchase your pravana pastels. [step] Depending on the length of your hair, you may need one or two tubes of pravana chromasilk pastels color. Select the color you would like and purchase one or two tubes.\n\nWhat happens next? Choose the most likely ending:\n\nA) The tube should be even with your hair to keep it in place. [substeps] If you are going to dye your hair with liquid pravana tulle, check the pattern of your tubes.\nB) [substeps] Pravana hair color can be purchased at some beauty supply stores or online. If the pastel hue is not as light as you want it to be, then you have the option of diluting the color with conditioner.\nC) Most pigmentation kits come with pinks and browns if you need help choosing the shade that you want your hair to look like. [substeps] If you don't normally dye your hair, purchase several tubes of pravana, and set your curling iron to the shade that works best for your hair type.\nD) [substeps] Lavender is a popular dye and is normally associated with black hair. Sulpomodoro gray is commonly used in some hair products.\n",
+      "ground_truth": "[substeps] Pravana hair color can be purchased at some beauty supply stores or online. If the pastel hue is not as light as you want it to be, then you have the option of diluting the color with conditioner.",
+      "prediction": "C",
+      "is_correct": true,
+      "confidence": 0.4970806255406607,
+      "response_time": 0.01163792610168457,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: A woman is seen sitting on stage while singing into a microphone and people sitting behind her playing instruments. the girl\n\nWhat happens next? Choose the most likely ending:\n\nA) continues to speak on stage then puts her hands behind her neck.\nB) continues to play and ends by speaking and the woman smiling to the camera.\nC) continues dancing around the stage while people occasionally sit and watch and occasionally laugh at her performance.\nD) continues singing with the band and ending by speaking to the audience.\n",
+      "ground_truth": "continues singing with the band and ending by speaking to the audience.",
+      "prediction": "B",
+      "is_correct": true,
+      "confidence": 0.5394425324824731,
+      "response_time": 0.010371923446655273,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to make yankee grits [title] Heat the milk, maple syrup, and salt. [step] Measure 1 cup (240 ml) of low-fat milk or water into a small saucepan. Stir in 2 teaspoons of pure maple syrup and one pinch of salt.\n\nWhat happens next? Choose the most likely ending:\n\nA) Bring the mixture to a boil over medium-high heat. This will help the syrup warm up more quickly.\nB) Turn the heat on to high and stir it occasionally until the mixture boils. [substeps] You can easily use skim , 1%, or 2% milk in this recipe.\nC) Stir in the sugar, along with the 3 cups (353 ml) of warm water. [substeps] Check the temperature of the milk with a thermometer to ensure that it reaches to 175 \u00b0 f (29 \u00b0 c).\nD) Add the sugar and season the grits with salt and pepper. [substeps] You can use pan-coated pans instead of glass; the water will create the right consistency and presentation.\n",
+      "ground_truth": "Turn the heat on to high and stir it occasionally until the mixture boils. [substeps] You can easily use skim , 1%, or 2% milk in this recipe.",
+      "prediction": "C",
+      "is_correct": true,
+      "confidence": 0.48413552338541144,
+      "response_time": 0.011166095733642578,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: . a man with a orange shirt and blue gloves\n\nWhat happens next? Choose the most likely ending:\n\nA) is standing in a snow covered parking lot talking while holding a skateboard and talking.\nB) is doing gymnastics on an elliptical.\nC) is shown operating a fire torch machine.\nD) approaches a green motor vehicle that is in a pool.\n",
+      "ground_truth": "is shown operating a fire torch machine.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.537149078290007,
+      "response_time": 0.010282039642333984,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to bleach your hair at home [title] Assess the risk. [step] The best results happen on hair that has not been colored before and hair that is light brown or lighter. You can bleach darker hair, but it will require some patience, and the damage will inevitably be greater.\n\nWhat happens next? Choose the most likely ending:\n\nA) You will also need go through the bleaching process several times in order to see the results you want. [substeps] Professional colorists recommend spacing out bleachings by a few weeks.\nB) Your best options for hair length will vary, but in general, you should look for a natural color that you like. Try to pick the color that is most natural to you.\nC) Start by looking at your hair to see how much color you will need. Only you know your hair color and risk factors, so do not use a foundation while bleaching.\nD) Coloring can be tricky, but with an experienced stylist you should be able to achieve that, as well as get the right fade. [substeps] Dyeing your hair' lighter' determines your undertone to keep it from turning brown during the bleaching process.\n",
+      "ground_truth": "You will also need go through the bleaching process several times in order to see the results you want. [substeps] Professional colorists recommend spacing out bleachings by a few weeks.",
+      "prediction": "D",
+      "is_correct": true,
+      "confidence": 0.5101742835553416,
+      "response_time": 0.011378049850463867,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to make resurrection rolls [title] Pour the milk into a bowl. [step] To activate the yeast, you need to mix it with a warm liquid. Add \u00bd cup (118 ml) of warm milk to the bowl of a stand mixer.\n\nWhat happens next? Choose the most likely ending:\n\nA) [substeps] For a longer process, you might want to run the yeast in the sink before proceeding. [title] Gradually stir the milk and mixture with a whisk.\nB) Mix until the milk is very light (around 110 ml). [substeps] If the milk is too soft for this recipe, add 1/2 cup (120 ml) of sour cream.\nC) The milk should be 105 \u00b0 f (41 \u00b0 c). [substeps] You can use 1% or 2% milk, but whole milk usually results in the best rolls.\nD) [substeps] If you have a hand mixer, you can make the dough for the roll yourself. You'll only need to make 2 cups (500 ml) of milk.\n",
+      "ground_truth": "The milk should be 105 \u00b0 f (41 \u00b0 c). [substeps] You can use 1% or 2% milk, but whole milk usually results in the best rolls.",
+      "prediction": "B",
+      "is_correct": true,
+      "confidence": 0.4788741555652554,
+      "response_time": 0.010859012603759766,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to hide the fact that you forgot to wear underwear [title] Don't panic. [step] Most likely nothing will happen and your lack of underwear won't be noticed by anyone because your clothes are covering your behind. You'll be just fine; the main thing is to be alert to anything that might happen if there is a gust, playing sports or getting something caught on your clothing.\n\nWhat happens next? Choose the most likely ending:\n\nA) [title] Don't wear your underwear when you do. [step] It's like hiding a panty that springs forward a crack at night when your partner is sleeping.\nB) Remember that you know what to do and do what you said you would do. [title] If needed, give yourself a' listen to' break.\nC) While you can hide your underwear in plain sight, you can also just wear them casually without being noticed by anyone at school. If you're comfortable wearing underwear, then you can wear whatever you please as long as nobody notices.\nD) [substeps] You could talk to someone in the school office, if you feel comfortable. They may have spare clean pairs of new underwear for just such a problem.\n",
+      "ground_truth": "[substeps] You could talk to someone in the school office, if you feel comfortable. They may have spare clean pairs of new underwear for just such a problem.",
+      "prediction": "C",
+      "is_correct": true,
+      "confidence": 0.5108851930356166,
+      "response_time": 0.011623144149780273,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to look busy even when you're not [title] Take some notes. [step] Jotting down things on a notepad or sticky note can make you look busy in almost any situation. It helps to keep your writing just a bit hard to read, so people don't know what you're actually writing without looking closely at it.\n\nWhat happens next? Choose the most likely ending:\n\nA) [substeps] Some notes on a notepad or sticky note can help. You can store them on a notepad, too, in case your mind gets confused about what you're writing.\nB) [substeps] Of course, what you're writing doesn't need to be on task. Write a grocery list or the next great novel.\nC) [substeps] Always go on a handwritten note to yourself that is relatively easy to read. You can sometimes forget some of your thoughts if you write before you actually write.\nD) [substeps] Take a sheet of paper and mark notes down for the alarm in case you fall asleep. Write down notes as early as possible in the morning, before everyone else is up.\n",
+      "ground_truth": "[substeps] Of course, what you're writing doesn't need to be on task. Write a grocery list or the next great novel.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.4960940713023415,
+      "response_time": 0.011239051818847656,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to add gold to your wedding decor [title] Use gold font. [step] If you are still in the process of ordering your invitations and save the date cards, an easy way to add gold is to choose a gold a font. Talk to your printer about what gold ink or gold leaf options are available for your invites.\n\nWhat happens next? Choose the most likely ending:\n\nA) [substeps] Use \" reproduction gold \", which means the text and images are compatible with a color scheme. Obviously, there's no need to add gold text if your colors already match the wedding color scheme.\nB) [substeps] Consider the color, format, and your style. Choose the width (base square), alignment (front square), background (for a monochromatic color scheme), and the style theme.\nC) [substeps] If gold text is expensive, or if you simply want to make a statement using gold lettering, pick an important word or phrase to gild. For example, opt to put the bride and groom's names in gold, or the phrase \" save the date \" on the save the date card.\nD) [substeps] You can find a gold font at many wedding bookstores. They often carry online templates that you can follow.\n",
+      "ground_truth": "[substeps] If gold text is expensive, or if you simply want to make a statement using gold lettering, pick an important word or phrase to gild. For example, opt to put the bride and groom's names in gold, or the phrase \" save the date \" on the save the date card.",
+      "prediction": "C",
+      "is_correct": true,
+      "confidence": 0.5094151549716923,
+      "response_time": 0.011493206024169922,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    }
+  ]
+}

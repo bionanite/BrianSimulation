@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "ARC",
+    "total_questions": 10,
+    "correct_answers": 5,
+    "accuracy": 0.5,
+    "average_confidence": 0.5210132824365532,
+    "average_response_time": 0.010753965377807618,
+    "total_time": 0.10837221145629883,
+    "per_category_accuracy": {
+      "unknown": 0.5
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T06:56:18.067826"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Sediments are generally classified by particle size. A student would like to classify sediments by their source. Which statement best describes this alternate classification?\n\nA) acceptable if the sediments are also identified by particle size\nB) acceptable if the factors used for the classification are given\nC) unacceptable because others would not understand the classification system\nD) unacceptable because this is not the way scientists usually classify sediments\n",
+      "ground_truth": "acceptable if the factors used for the classification are given",
+      "prediction": "D",
+      "is_correct": true,
+      "confidence": 0.561812691318956,
+      "response_time": 0.010751008987426758,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: In the summer, the Sun shines directly on different places on Earth as Earth rotates. At about what time of day is the Sun highest in the summer sky in Maine?\n\nA) 6:00 A.M.\nB) 10:00 A.M.\nC) 1:00 P.M.\nD) 3:00 P.M.\n",
+      "ground_truth": "1:00 P.M.",
+      "prediction": "B",
+      "is_correct": false,
+      "confidence": 0.4685407490336297,
+      "response_time": 0.011513948440551758,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: As glaciers receded at the end of the last Ice Age, temperatures increased, allowing lakes to form. Pioneer plants grew in the dunes near the lakes. Farther from the dunes, grasslands and forested areas developed. Which process took place after the glaciers melted, allowing grasslands and forests to develop?\n\nA) primary succession\nB) habitat destruction\nC) resource depletion\nD) genetic mutation\n",
+      "ground_truth": "primary succession",
+      "prediction": "C",
+      "is_correct": true,
+      "confidence": 0.5462227238213269,
+      "response_time": 0.010677099227905273,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: What is the voltage in a circuit with a current of 3 ohms and a total resistance of 12?\n\nA) 0.25 V\nB) 4 V\nC) 15 V\nD) 36 V\n",
+      "ground_truth": "36 V",
+      "prediction": "A",
+      "is_correct": false,
+      "confidence": 0.4350053803684819,
+      "response_time": 0.01048588752746582,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: What does photosynthesis produce?\n\nA) carbon dioxide and nitrogen\nB) sugar and carbon dioxide\nC) oxygen and nitrogen\nD) sugar and oxygen\n",
+      "ground_truth": "sugar and oxygen",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.5633543502347517,
+      "response_time": 0.010026931762695312,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Farmers grow different types of crops. Which of the following factors would most affect the type of crop a farmer grows?\n\nA) depth of soil\nB) amount of rainfall\nC) the amount of land available\nD) the number of seeds available\n",
+      "ground_truth": "amount of rainfall",
+      "prediction": "D",
+      "is_correct": false,
+      "confidence": 0.5213153611598177,
+      "response_time": 0.010328054428100586,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Why are rapidly occurring environmental changes more likely to cause extinctions than slowly occurring changes?\n\nA) Slow changes allow time for adaptation.\nB) Rapid changes require little adaptation.\nC) Slow changes affect only small regions.\nD) Rapid changes have a global effect.\n",
+      "ground_truth": "Slow changes allow time for adaptation.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.5789129666151984,
+      "response_time": 0.010215997695922852,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Why does a plastic rod have a negative charge after being rubbed with a piece of fur?\n\nA) The fur gives up protons to the rod.\nB) The rod gives up electrons to the air.\nC) The fur gains protons from the rod.\nD) The rod gains electrons from the fur.\n",
+      "ground_truth": "The rod gains electrons from the fur.",
+      "prediction": "B",
+      "is_correct": false,
+      "confidence": 0.4791089905611924,
+      "response_time": 0.010388851165771484,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Trail mix is a type of snack. One kind of trail mix is made of raisins, chocolate pieces, peanuts, and sunflower seeds. Which statement describes why trail mix is a mixture?\n\nA) The mix contains four ingredients.\nB) The different ingredients clump together.\nC) Each component maintains its original properties.\nD) Components are impossible to separate out of the mix.\n",
+      "ground_truth": "Each component maintains its original properties.",
+      "prediction": "C",
+      "is_correct": true,
+      "confidence": 0.5306231331434956,
+      "response_time": 0.012775897979736328,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Many cars today are designed to get better gas mileage than those made in the past. This change resulted from a need to\n\nA) recycle materials\nB) improve safety\nC) produce chemicals\nD) conserve resources\n",
+      "ground_truth": "4",
+      "prediction": "A",
+      "is_correct": false,
+      "confidence": 0.525236478108682,
+      "response_time": 0.0103759765625,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    }
+  ]
+}

@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "HellaSwag",
+    "total_questions": 10,
+    "correct_answers": 0,
+    "accuracy": 0.0,
+    "average_confidence": 0.6026462638918312,
+    "average_response_time": 0.012644577026367187,
+    "total_time": 0.1279768943786621,
+    "per_category_accuracy": {
+      "unknown": 0.0
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T06:48:17.399226"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to make a lip balm container [title] Cut the top off of a plastic bottle. [step] Use scissors or an exacto knife to cut a plastic bottle below the base of the cap. Cut right where the plastic begins to flare out and get wider.\n\nWhat happens next? Choose the most likely ending:\n\nA) [substeps] Avoid cutting too close to the cap, or too far up, because this can become a strain on the lip balm. This bottle will also need to be covered and taken to a specialized box immediately, as it will become dirty quickly.\nB) [substeps] Carefully cut along the lip of the plastic bottle so that when you open the lid, it releases chemicals and moisture, instead of a thick paste. [title] Place a plastic bag over the lip.\nC) [substeps] Use any bottle you like for this project, whether it's from water, soda, juice, milk, or any other beverage. You may select a bottle based on what color the cap is or how big it is, depending on what you want your lip balm container to look like.\nD) [substeps] Once the top has been cut, the lids will be ready to use. Many people find this easier to do because the lid is forced closed.\n",
+      "ground_truth": "[substeps] Use any bottle you like for this project, whether it's from water, soda, juice, milk, or any other beverage. You may select a bottle based on what color the cap is or how big it is, depending on what you want your lip balm container to look like.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.587664668444544,
+      "response_time": 0.014195919036865234,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to get brighter eyes [title] Even your skin tone with foundation. [step] Choose a foundation that matches the color of your skin and apply it with your fingers or a foundation brush. Blend the foundation well on your cheeks and around your eyes.\n\nWhat happens next? Choose the most likely ending:\n\nA) [title] Find a powder foundation for your skin type. [step] Liquid, powder foundations are not for pale skin; they are not for sensitive skin.\nB) This creates an even palette that will help your eyes stand out and look bigger and brighter. [substeps] Use either cream or powder foundation, according to the one that works best with your skin type.\nC) [title] Use a mineral foundation that matches your skin tone. [step] Mineral foundation often results in water spots due to its tone, so it is likely that your foundation can help prevent this.\nD) [substeps] Use a light foundation so it blends in with your skin's coloring and tone. Adding three to five coats will give your face a more natural sheen, as opposed to having heavy foundations that emphasize your skin.\n",
+      "ground_truth": "This creates an even palette that will help your eyes stand out and look bigger and brighter. [substeps] Use either cream or powder foundation, according to the one that works best with your skin type.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.607812127340585,
+      "response_time": 0.012984037399291992,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to restore a boat [title] Make a plan. [step] Plan your work by breaking everything down into sections, like chapters in a book. Chapter one is planning.\n\nWhat happens next? Choose the most likely ending:\n\nA) This is where your business development can start. Analyze the navigation board, take all the necessary materials and then create your grand vision.\nB) This step is not yet complete, so you need to prioritize moving toward part 1 of the project. This will help you tackle all your major projects faster, so that you can review your own work by taking each section and remembering to include the steps in that section over time.\nC) The next phase might be stripping the boat in preparation for the work. [title] Prepare a work site, gather tools and supplies, carve out a dedicated time on a regular basis with your schedule, consult experts in the field, and also outsource certain components as needed to certain experts.\nD) Plan your time on your own to avoid confusion and frustration with each chapter. Be sure that you aren't scrambling for ideas as you go forward so that you don't get overwhelmed by too many ideas.\n",
+      "ground_truth": "The next phase might be stripping the boat in preparation for the work. [title] Prepare a work site, gather tools and supplies, carve out a dedicated time on a regular basis with your schedule, consult experts in the field, and also outsource certain components as needed to certain experts.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.6160824087001383,
+      "response_time": 0.012676239013671875,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: The man jumps again but this time at 5'10 high, he clears it, and once again it replays. the man\n\nWhat happens next? Choose the most likely ending:\n\nA) is now running and jumping over the pole that is now 6 feet high, he clears it like he did all the other heights and once again it replays.\nB) performs one last trick on high, this time with an upper hand but he misses again and flies.\nC) jumps again at 610 and doesn't stick it this time at 611 or 890, he gets a second round and attempts to get off successfully.\nD) jumps continuously until it replays to show the height of the spike of the charge and the exact amount of jump result.\n",
+      "ground_truth": "is now running and jumping over the pole that is now 6 feet high, he clears it like he did all the other heights and once again it replays.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.5812028733044863,
+      "response_time": 0.011693716049194336,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: The two collaborate to mix the bag and some other ingredients in a large bowl. The first girl gets something from the refrigerator. The two are shown mixing the bowl in turn. the two\n\nWhat happens next? Choose the most likely ending:\n\nA) shapes the mix from the bowl into lumps and places them on a baking sheet.\nB) decide sea life to prepare for their breastfeeding day.\nC) experience a moment of weightlessness before relaxing into a comfortable routine on the sofa.\nD) continue mixing and 4 glasses come together with a bowl of cookie dough.\n",
+      "ground_truth": "shapes the mix from the bowl into lumps and places them on a baking sheet.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.6217277331463993,
+      "response_time": 0.011980772018432617,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to adjust the time on a rolex replica [title] Locate and release the crown. [step] On the right side of a rolex there is a small, circular dial called the \" crown \" that allows you to control the mechanism of the watch. Unscrew the crown and pull it out from the watch base.\n\nWhat happens next? Choose the most likely ending:\n\nA) [substeps] The crown is orange with a large white dot. It is usually located under the hand spindle.\nB) As you remove the crown it will look like it has been pushed into a slot underneath a ring within the watch. Use your finger to gently release the crown and prepare your watch for adjustment.\nC) Once the crown is extended, it puts the watch in position to be wound to change the time. [substeps] The crown dial is found in the same position on all rolex models.\nD) While not completely unscrewed, this feature will help you determine the type of rolex replica to purchase. If you do not know, consult the handgrip manual to be certain.\n",
+      "ground_truth": "Once the crown is extended, it puts the watch in position to be wound to change the time. [substeps] The crown dial is found in the same position on all rolex models.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.5874875943921507,
+      "response_time": 0.012508153915405273,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to clean oxidized copper [title] Verify the metal is copper. [step] Position a magnet close to the copper. If the magnet sticks to the metal, the item you are cleaning is only copper plated.\n\nWhat happens next? Choose the most likely ending:\n\nA) [substeps] Look for components with shiny parts rather than chunky or opaque metals like aluminum. Check, especially if you are a saucepan collector and you use a metal plate for your copper, or vice versa, to protect the metal.\nB) [title] Clean electronic tools off your copper device. [step] Depending on the tools you use, you may also want to clear the mechanisms that were used to handle the dials and knobs.\nC) Oxidization-a chemical reaction between an solvent and water from a source (like a body of water) may cause oxidization. Use a soft cloth to gently wipe down your plated copper.\nD) If the magnet doesn't react, your item is likely copper. Plated copper generally needs to be treated more gently than pure copper.\n",
+      "ground_truth": "If the magnet doesn't react, your item is likely copper. Plated copper generally needs to be treated more gently than pure copper.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.6187380874268711,
+      "response_time": 0.012064933776855469,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to have healthy, shiny silky hair [title] Handle your hair gently when you wash and dry it. [step] The way you handle your hair makes a big difference in its texture and appearance. When you're rough with your hair, it can frizz up and start looking dull.\n\nWhat happens next? Choose the most likely ending:\n\nA) Hair is a fragile material that should be handled with care, just like a delicate piece of fabric. Here's what to keep in mind : [substeps] When you shampoo your hair don't roughly scrub it.\nB) Keep an oil in it that's right for you when it's tangled. If you have curly hair, take off any curls or flyaways so your hair is wavy.\nC) Whenever possible, use a light product on your hair and blow dry it. This will help maintain your silky hair despite its lack of frizz.\nD) Help prevent this by using a serlier or diffuser when you're washing and drying it. Use a diffuser if your hair gets too stiff while you wash it.\n",
+      "ground_truth": "Hair is a fragile material that should be handled with care, just like a delicate piece of fabric. Here's what to keep in mind : [substeps] When you shampoo your hair don't roughly scrub it.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.5803849206231535,
+      "response_time": 0.012417078018188477,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to oppose a motion to dismiss [title] Identify why the defendant seeks dismissal. [step] You should receive a copy of the defendant's motion to dismiss. Once you receive it, read through the document and look to see why the defendant seeks dismissal.\n\nWhat happens next? Choose the most likely ending:\n\nA) [substeps] If you don't know why the defendant seeks dismissal, then find common grounds. The defendant could be trying to get in trouble for refusing to work with you because you aren't accepting credit on your debt, or because the defendant wants to get money.\nB) You should identify the violation of the law and the causes of action, even if it is not the same thing as an excuse to dismiss. [substeps] For example, a defendant may complain of a big change in the values of the property in question and argue that making the change drastic means the home won't be put in good working order.\nC) Generally, a defendant seeks to have a case dismissed for the following reasons : [substeps] You didn't serve the complaint properly on the defendant. You haven't stated a valid legal claim in your complaint.\nD) [substeps] Often, people seek dismissal because they have broken the laws that govern the employment of similar workers. You can find out if the defendant has this reason in the lawsuit by reading the particular court's rules of civil procedure (or calling the clerk's office) and looking for the official complaint form on the court's website.\n",
+      "ground_truth": "Generally, a defendant seeks to have a case dismissed for the following reasons : [substeps] You didn't serve the complaint properly on the defendant. You haven't stated a valid legal claim in your complaint.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.6171687005609274,
+      "response_time": 0.013375043869018555,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to groom a gerbil [title] Assess your gerbil's coat. [step] The best way to determine if your gerbil needs to be groomed is by examining his coat. If your gerbil's hair appears greasy or oily, it may be time to let him groom himself.\n\nWhat happens next? Choose the most likely ending:\n\nA) It's especially important if your gerbil does not like to groom himself as it can cause damage to his coat, which could lead to fewer future hair follicles. [substeps] Dirty or bald hair caused by disease can make grooming ineffective.\nB) Healthy gerbils have a healthy coat that holds the coat in place. However, be aware that this coat change can be caused by various conditions including fleas, ticks, and nonperianal ticks.\nC) [substeps] Grooming takes up a great deal of a gerbil's day, and along with eating and sleeping, it is one of his main activities. [title] Give your gerbil a dust bath.\nD) A dirty coat is because the gerbil is consistently shedding. If your gerbil has greasy fur, he is probably too dry.\n",
+      "ground_truth": "[substeps] Grooming takes up a great deal of a gerbil's day, and along with eating and sleeping, it is one of his main activities. [title] Give your gerbil a dust bath.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.6081935249790549,
+      "response_time": 0.012549877166748047,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    }
+  ]
+}

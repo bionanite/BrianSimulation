@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "HellaSwag",
+    "total_questions": 10,
+    "correct_answers": 10,
+    "accuracy": 1.0,
+    "average_confidence": 0.6797996694415808,
+    "average_response_time": 0.016939330101013183,
+    "total_time": 0.17168211936950684,
+    "per_category_accuracy": {
+      "unknown": 1.0
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T06:57:14.300280"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: The family enjoys eating the desert together. The people in the restaurant laugh at the man and he wonders what they are doing. the man\n\nWhat happens next? Choose the most likely ending:\n\nA) goes to the bathroom and isn't able to get very far.\nB) puts the glass aside and a fourth person walks in and walks away.\nC) plays the bagpipe and smiles and laughs as he enjoys the hospitality.\nD) gets up and walks away to the other room.\n",
+      "ground_truth": "gets up and walks away to the other room.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.6745805325843394,
+      "response_time": 0.01484227180480957,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: An athletic woman is seen standing before a track and running into a pit. She gets up and walks back while others watch her. she\n\nWhat happens next? Choose the most likely ending:\n\nA) walks away and the group of is sings in unison.\nB) speaks to the audience while still running.\nC) is then seen running in slow motion over a pole while others watch.\nD) jumps down the track once again.\n",
+      "ground_truth": "jumps down the track once again.",
+      "prediction": "C",
+      "is_correct": true,
+      "confidence": 0.6785037856008858,
+      "response_time": 0.014096736907958984,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to order a free watchtower bible [title] Fill out the bible study request form. [step] To complete this form, you will need some information about yourself. You will need both background information (your name, gender, and preferred language) and contact information (your nation, phone number, and address).\n\nWhat happens next? Choose the most likely ending:\n\nA) [substeps] To apply for a free watchtower bible study, you will need to download the link to the form for the login page at. [title] Review the required step-by-step instructions that came with the license agreement.\nB) [substeps] Depending on your country, you may also need to fill out a religious preference form. You may order a religious name change form if you live on the east coast, or you may order one if you live within the pacific rim.\nC) Don't forget to include the best time for the jehovah's witnesses to contact you. Click the \" please contact me \" button when you're finished filling out the requisite info.\nD) To start the form, you will need to provide your nationality, place of origin (=), and the first five digits of your license plate number (=). This process may take a minimum of three days.\n",
+      "ground_truth": "Don't forget to include the best time for the jehovah's witnesses to contact you. Click the \" please contact me \" button when you're finished filling out the requisite info.",
+      "prediction": "B",
+      "is_correct": true,
+      "confidence": 0.6877857621535659,
+      "response_time": 0.013740062713623047,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: An overhead view of a blue pool table is shown. a man\n\nWhat happens next? Choose the most likely ending:\n\nA) begins using the glasses to measure the ball.\nB) takes shot with the cue.\nC) is shown in a canoe paddling as he moves it between large rocks.\nD) plays a game of pool in the water.\n",
+      "ground_truth": "takes shot with the cue.",
+      "prediction": "C",
+      "is_correct": true,
+      "confidence": 0.6573632584940643,
+      "response_time": 0.012570858001708984,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to lose weight with osteoarthritis [title] Drink only water throughout the day. [step] Eliminate all sugary sodas and juices from your diet. Aim to drink 8 glasses of water each day instead.\n\nWhat happens next? Choose the most likely ending:\n\nA) Limiting your total water intake will help with your joint pain and keep you hydrated. [title] Make sure your joints are not too sore and they don't hurt much.\nB) Add a bit of flavor by putting a lemon or lime slice in your water, too. Drinking a big glass of water before and after each meal can also reduce your overall appetite.\nC) Alcohol will dehydrate your body to compete against glucose. Limit yourself to a sports drink or non-carbonated waters throughout the day.\nD) Drink eight to 10 glasses of water per day. [substeps] Even if you weigh less weight during the day, aiming to drink eight to 10 glasses of water is a good idea when you exercise or have a b or c-count.\n",
+      "ground_truth": "Add a bit of flavor by putting a lemon or lime slice in your water, too. Drinking a big glass of water before and after each meal can also reduce your overall appetite.",
+      "prediction": "D",
+      "is_correct": true,
+      "confidence": 0.6769526722766459,
+      "response_time": 0.017222166061401367,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to give a sensual foot massage [title] Prepare a clean, decluttered room. [step] You can give a sensual massage anywhere, really, but the room should be soothing. This means removing any extra junk from the room so it looks clean.\n\nWhat happens next? Choose the most likely ending:\n\nA) If you exercise at the very time you will be giving a sensual massage, go for it. [title] Pour warm water into a large pot.\nB) Go for windows, mirrors, and anything else you won't mind picking up later. [title] If you're using carpet, you'll need to cut it to size.\nC) [substeps] You also want to clean your entire body as well as the area where you are massaging. If you are massaging your feet because of a spill on your, make sure that the stair railing is clean and neat and remind your family that the mess is for their own good.\nD) You should also consider laying down a clean, cotton sheet wherever your partner will be laying down for their massage. [substeps] The sheet will feel good on your partner's skin, and it will be easy to clean afterwards in case any body lotion or oil gets on it.\n",
+      "ground_truth": "You should also consider laying down a clean, cotton sheet wherever your partner will be laying down for their massage. [substeps] The sheet will feel good on your partner's skin, and it will be easy to clean afterwards in case any body lotion or oil gets on it.",
+      "prediction": "C",
+      "is_correct": true,
+      "confidence": 0.6610438776351512,
+      "response_time": 0.017014741897583008,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to restore skin health after tanning [title] Apply a moisturizer. [step] Use moisturizer liberally on the sunburned area of skin to cool, soothe, and start to restore your damaged skin. Moisturizer won't heal a sunburn, but it will calm irritation and make you feel better.\n\nWhat happens next? Choose the most likely ending:\n\nA) [substeps] Put a layer of a neutral moisturizer over the area you found sunburned so that it doesn't cover up what has been lifted by the sun. Use a sunscreen with spf 24 to protect your skin from harmful uv rays.\nB) [substeps] Try a moisturizer with aloe vera, which has natural soothing properties. A cream or gel with hydrocortisone can also help, as it reduces swelling and inflammation and relieves pain.\nC) [title] After bleaching, apply a moisturizer. [step] A gel moisturizer works wonders.\nD) An amount of moisturizer applied to your burned skin should be enough to cover the sunburned skin for approximately 15 minutes. The moisturizer you choose should be easily absorbed by your skin and not flaking off when reapplied.\n",
+      "ground_truth": "[substeps] Try a moisturizer with aloe vera, which has natural soothing properties. A cream or gel with hydrocortisone can also help, as it reduces swelling and inflammation and relieves pain.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.7032256257459522,
+      "response_time": 0.015974998474121094,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to use manicure tools [title] Soften cuticles with cuticle remover or softener. [step] Before you use a cuticle pusher or nippers, it is important to use a cuticle softener or remover. This will make it easier to push back the cuticles and also to remove any excess skin with the nippers.\n\nWhat happens next? Choose the most likely ending:\n\nA) After cuticles are soft, you can begin to apply cuticle pushers. [substeps] Try using a cuticle pusher, which is similar to a manicure tool except its pointed end closer to the rest of the tool.\nB) [substeps] Try soaking nails in a solution of warm water with a few drops of hand soap in it. Let the nails soak for about five minutes.\nC) [substeps] This will also remove any moles that remain in the winter. [title] Apply long, even strokes across your cuticles.\nD) [substeps] Gently dampen your cuticles with a moistened pat of petroleum jelly. Wear gloves while you apply the moisturizer.\n",
+      "ground_truth": "[substeps] Try soaking nails in a solution of warm water with a few drops of hand soap in it. Let the nails soak for about five minutes.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.6868855786472559,
+      "response_time": 0.020288705825805664,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to be beautiful (for gay men ) [title] Work on developing your self esteem. [step] Gay men, in particular, may have had years of self doubt and questioning due to living with homophobia in all its forms. This takes time and effort to shake off! [substeps] Take the time to identify what you think is beautiful about yourself, and nurture that beauty instead of doubting it.\n\nWhat happens next? Choose the most likely ending:\n\nA) It is becoming an art of expression right now. Don't hold expectations that your flaws are the only thing you need.\nB) Think about times when you were deeply ashamed of your physical appearance. What did you think to yourself when you were a teenager? [title] Keep a diary of your feelings and thoughts.\nC) You should also believe other people when they tell you you are beautiful. They are telling you the truth as they see it! [title] Fight internalized homophobia.\nD) Focusing on flaws might be a hard exercise, but putting in a little effort can help you lose your anger and help you develop more confident self-worth. Stand and don't wait for inspiration to strike.\n",
+      "ground_truth": "You should also believe other people when they tell you you are beautiful. They are telling you the truth as they see it! [title] Fight internalized homophobia.",
+      "prediction": "D",
+      "is_correct": true,
+      "confidence": 0.6845553395859897,
+      "response_time": 0.023546934127807617,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to learn to fence [title] Decide why you want to fence. [step] Is it for, competition, or for historical appeal? All of these are legitimate reasons, and each leads to a different type of fencing and training. Fencing is an old art that has great traditions and cultures, so you may find it more enjoyable if you immerse yourself in it.\n\nWhat happens next? Choose the most likely ending:\n\nA) [title] Know your subjects/fields and places. [step] The smell or taste of old fencing is still delicious.\nB) If you are ready to learn, you may find your interest takes you out of your comfort zone as you get to know the boundaries. [substeps] For example, some schools forbid the use of fencing in historic areas.\nC) Fencing is a great way to learn both mental and physical skill and discipline. But it's also great exercise and great fun for the more casual fencer too! [title] Research different types of fencing.\nD) If you want to strike a balance between visual and physical fencing, then you may want to consider your cultural background and your community. [substeps] Your community might not accept any sponsored competitions through which you can actually compete.\n",
+      "ground_truth": "Fencing is a great way to learn both mental and physical skill and discipline. But it's also great exercise and great fun for the more casual fencer too! [title] Research different types of fencing.",
+      "prediction": "B",
+      "is_correct": true,
+      "confidence": 0.6871002616919577,
+      "response_time": 0.0200958251953125,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    }
+  ]
+}

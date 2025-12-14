@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "HellaSwag",
+    "total_questions": 10,
+    "correct_answers": 0,
+    "accuracy": 0.0,
+    "average_confidence": 0.4520936857738458,
+    "average_response_time": 0.011422324180603027,
+    "total_time": 0.11561274528503418,
+    "per_category_accuracy": {
+      "unknown": 0.0
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T06:44:23.068108"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: A group of people are standing in the middle of a forest with a trail of pebbles separating them from a beautiful crystal clear body of water. the camera\n\nWhat happens next? Choose the most likely ending:\n\nA) then goes right side up and shows a lot of scenery on the left side.\nB) follows the couple kayaking behind the group on the trail moving back and fourth on the murky water in the forest.\nC) moves across the water and several people on boats and jet-skis are moving in the water near a large wave.\nD) zooms in on the foamy waters as well as the nearby cliffs and forest surrounding it.\n",
+      "ground_truth": "moves across the water and several people on boats and jet-skis are moving in the water near a large wave.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.45335764217041774,
+      "response_time": 0.01401209831237793,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to connect time capsule to mac [title] Connect an ethernet cable to the time capsule. [step] Use the provided ethernet cable to connect to the wan port on the time capsule. [title] Connect the ethernet cable to the broadband modem or router.\n\nWhat happens next? Choose the most likely ending:\n\nA) [step] Connect it to the wi-fi port on the pc connected to mac for sharing on a wireless network. [substeps] This will allow you to view time capsule access in storage, which you can then access once connected.\nB) [step] Connect a cable to the ds port on the time capsule. [title] Connect another connected ethernet cable to the port on the time capsule.\nC) [step] It should be connected at both the time capsule and router setup. [title] Turn on mac [title] Connect your mac to the computer.\nD) [step] A typical broadband modem has four wan ports on the back that you can connect an ethernet cable too. Connect the other end of the ethernet cable connected to your time capsule to the broadband modem.\n",
+      "ground_truth": "[step] A typical broadband modem has four wan ports on the back that you can connect an ethernet cable too. Connect the other end of the ethernet cable connected to your time capsule to the broadband modem.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.4475187207866353,
+      "response_time": 0.011287927627563477,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to install winamp [title] Download winamp from its official website. [title] Click the yellow button that says \" free download \". [title] Click on free download or go pro (go pro is about 20 us dollars if you want it).\n\nWhat happens next? Choose the most likely ending:\n\nA) [title] Once you downloaded the setup, find it and double click it. [step] Winamp installer will pop up.\nB) [title] If you already know how to use winamp, then click install now. [step] If you already do, click begin, go start] change software panel then click run-ok.\nC) [title] Once you click on free download select \" continue \". [title] Double click the operating system icon at the top of the download window.\nD) [title] Click on install and then click on continue. [step] When the download is finished install winamp once install is complete download will be shown below and it will ask you what you want.\n",
+      "ground_truth": "[title] Once you downloaded the setup, find it and double click it. [step] Winamp installer will pop up.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.44279373440095343,
+      "response_time": 0.011888742446899414,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to make a simple electric generator [title] Cut the cardboard. [step] Cardboard will serve as the frame and support for your simple generator. Use a ruler to measure a cardboard strip that is 8 centimetres (3.1 in) by 30. 4 centimetres (12. 0 in).\n\nWhat happens next? Choose the most likely ending:\n\nA) Use parallel cut-outs to find the length. [substeps] For a simple generator you can use a 3.0metre (4.7 in) circle frame.\nB) Measure to the length of your generator (3 centimetres). [substeps] A stronger generator name can be used than simply \" low powered \" or \" high powered.\nC) [substeps] If possible, use cardboard that is roughly the same width as the generator. Cutting pieces lengthwise will leave plenty of room for movement.\nD) Cut this strip out with scissors or a utility knife. This single piece will be folded to form the frame.\n",
+      "ground_truth": "Cut this strip out with scissors or a utility knife. This single piece will be folded to form the frame.",
+      "prediction": "5",
+      "is_correct": false,
+      "confidence": 0.4527226541306266,
+      "response_time": 0.011456012725830078,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to make a rainbow loom fishtail [title] Choose your rubber bands. [step] This rainbow loom fishtail can consist of all of the colors in the rainbow or a few colors. Choose the colors you would like to go in your fishtail.\n\nWhat happens next? Choose the most likely ending:\n\nA) You can use plain rubber bands or you can use heavy bands. [substeps] Make sure the bands are tight enough so that they won't slip off of your fingers.\nB) Rainbow loom fishtails are available in more colors than you could find at a local color checker. [substeps] Match the colors to the color of the rubber bands you use to create the pattern.\nC) You can create a pattern by alternating different colors, or you can do a section of one color and then a section of another color. Making a fishtail with a loom will also require a hook, like a crochet hook.\nD) [substeps] Bands can be as large or small as you want. Each color should be folded in half lengthwise.\n",
+      "ground_truth": "You can create a pattern by alternating different colors, or you can do a section of one color and then a section of another color. Making a fishtail with a loom will also require a hook, like a crochet hook.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.4408655467491536,
+      "response_time": 0.011620759963989258,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: We thensee a man talking as they drill holes in the ice. Some booth serve hot dogs to the people as they ice fish. a little boy and girl\n\nWhat happens next? Choose the most likely ending:\n\nA) are eating the cold meats and then they join the man and the woman.\nB) attempt to catch a fish.\nC) rub the ice into a i's hands.\nD) are ice fishing on their own out near their woods but when they tried the fish came up cold.\n",
+      "ground_truth": "attempt to catch a fish.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.4584845210925343,
+      "response_time": 0.010485172271728516,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: The camel stands up and walks off with the family riding on its back. A group of military men riding horses in a line approaches. a young boys\n\nWhat happens next? Choose the most likely ending:\n\nA) rides his horses down the trail in front.\nB) filters sand in his hand.\nC) rides a camel attached to a tow rope in a field near a fallen tree.\nD) gets off the camel and helps the family get on their horses.\n",
+      "ground_truth": "filters sand in his hand.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.4531797443095542,
+      "response_time": 0.010790824890136719,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: A teenage boy is sitting at a table with his friends and begins sticking his face in his food then they all begin to laugh about it and he gets up. after\n\nWhat happens next? Choose the most likely ending:\n\nA) , a group of twelve boys begin hitting each other with soccer balls and here is the child really scared, he runs the other way when the boys start to try to get his attention and he doesn't take the time to look into the camera.\nB) , he grabs his brush and runs down them happy that's it's done.\nC) , all of the boys at the table do the same thing and begin smashing their face and rubbing ice cream around their face.\nD) he continues to sit, a small fruit is poured onto his face and he rubs his eyes in frustration.\n",
+      "ground_truth": ", all of the boys at the table do the same thing and begin smashing their face and rubbing ice cream around their face.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.45228026997602594,
+      "response_time": 0.011123895645141602,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: A woman is playing with a dog. The dog is catching the frisbee over and over again. the dog\n\nWhat happens next? Choose the most likely ending:\n\nA) is laying down by the woman holding the frisbee over his head.\nB) jumps for a ball.\nC) is chasing the frisbees and the woman receives wile ring from the dog.\nD) ran away with the frisbee but brought it back to the woman.\n",
+      "ground_truth": "ran away with the frisbee but brought it back to the woman.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.47121455837075243,
+      "response_time": 0.010072946548461914,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to style a one piece swimsuit [title] Select a one piece in a bright color or pattern for a vibrant style. [step] Choose fun, funky colors like bright pink, aqua, or lime green. This adds a splash of color to your outfits and beach looks, and you can easily pair this with bright-colored accessories as well.\n\nWhat happens next? Choose the most likely ending:\n\nA) [substeps] You can go with a solid-colored swimsuit in a bright color, or a colorful patterned one piece. For example, look for a bathing suit in hot pink or a suit with hot pink polka dots.\nB) [substeps] Get some beach beads or pretty beach jewelry to help bring out this article of clothing. Hats are also a fun side-step, though you can add decorations such as glitter, sequins, and rhinestones to look more colorful.\nC) [substeps] Some examples of beach themed swimsuit costumes include yoga shorts, exposing shorts, and board shorts. [title] Pick something that is deeper in color or in a lot of space.\nD) You can also mix and match smaller items, like accessories, to create great swimsuits. However, if you're trying to create outfits from multiple items, a blue one piece is probably a better option.\n",
+      "ground_truth": "[substeps] You can go with a solid-colored swimsuit in a bright color, or a colorful patterned one piece. For example, look for a bathing suit in hot pink or a suit with hot pink polka dots.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.4485194657518046,
+      "response_time": 0.011484861373901367,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    }
+  ]
+}

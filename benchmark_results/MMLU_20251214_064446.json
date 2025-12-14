@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "MMLU",
+    "total_questions": 10,
+    "correct_answers": 0,
+    "accuracy": 0.0,
+    "average_confidence": 0.48494402949380566,
+    "average_response_time": 0.010686135292053223,
+    "total_time": 0.10808801651000977,
+    "per_category_accuracy": {
+      "high_school_biology": 0.0
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T06:44:46.154956"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Which of the following best explains why people can digest starch but cannot digest cellulose even though both molecules are composed of glucose monomers?\n\nA) The bonds linking the monomers of starch differ in shape from the bonds linking the monomers of cellulose.\nB) Molecules of starch are much smaller than molecules of cellulose.\nC) Starch is an intracellular molecule, while cellulose is an extracellular molecule.\nD) Starch is hydrated by water, but cellulose is not.\n",
+      "ground_truth": "The bonds linking the monomers of starch differ in shape from the bonds linking the monomers of cellulose.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.48046638305411044,
+      "response_time": 0.015500068664550781,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: The base composition of DNA varies from one species to another. Which of the following ratios would you expect to remain constant in the DNA?\n\nA) Cytosine : Adenine\nB) Pyrimidine : Purine\nC) Adenine : Guanine\nD) Guanine : Deoxyribose\n",
+      "ground_truth": "Pyrimidine : Purine",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.477374393394851,
+      "response_time": 0.010068893432617188,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: The relatives of a group of pelicans from the same species that separated from each other because of an unsuccessful migration are reunited 150 years later and find that they are unable to produce offspring. This is an example of\n\nA) allopatric speciation.\nB) sympatric speciation.\nC) genetic drift.\nD) gene flow.\n",
+      "ground_truth": "allopatric speciation.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.4901326035927674,
+      "response_time": 0.010402917861938477,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: If, on average, 46% of the loci in a species' gene pool are heterozygous, then the average homozygosity of the species should be\n\nA) 23%\nB) 46%\nC) 54%\nD) 92%\n",
+      "ground_truth": "54%",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.45767082934161407,
+      "response_time": 0.009646177291870117,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Crossing-over during meiosis permits scientists to determine\n\nA) the chance for variation in zygotes\nB) the rate of mutations\nC) the distance between genes on a chromosome\nD) which traits are dominant or recessive\n",
+      "ground_truth": "the distance between genes on a chromosome",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.4944903823148549,
+      "response_time": 0.010039091110229492,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: The end product of the alcohol fermentation pathway is the alcohol ethanol. A considerable amount of energy still remains in ethanol, yet ethanol is a waste product for the yeast cells that produce it. What, then, is the purpose of fermentation?\n\nA) Fermentation provides CO2 for photosynthesis.\nB) Fermentation provides CO2 for cellular respiration.\nC) Yeast cells excrete ethanol in order to provide a defense against invading bacteria.\nD) Fermentation replenishes the NAD+ necessary for glycolysis to continue.\n",
+      "ground_truth": "Fermentation replenishes the NAD+ necessary for glycolysis to continue.",
+      "prediction": "4",
+      "is_correct": false,
+      "confidence": 0.4816784804217472,
+      "response_time": 0.010915994644165039,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Transpiration is a result of special properties of water. The special properties of water include all of the following EXCEPT\n\nA) cohesion\nB) adhesion\nC) capillary action\nD) hydrophobicity\n",
+      "ground_truth": "hydrophobicity",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.49805410782102083,
+      "response_time": 0.00964212417602539,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: A chemical agent is found to denature all enzymes in the synaptic cleft. What effect will this agent have on acetylcholine?\n\nA) Acetylcholine will not be released from the presynaptic membrane.\nB) Acetylcholine will not bind to receptor proteins on the postsynaptic membrane.\nC) Acetylcholine will not diffuse across the cleft to the postsynaptic membrane.\nD) Acetylcholine will not be degraded in the synaptic cleft.\n",
+      "ground_truth": "Acetylcholine will not be degraded in the synaptic cleft.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.49441831669862535,
+      "response_time": 0.010119915008544922,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: There are 40 individuals in population 1, all of which have genotype A1A1, and there are 25 individuals in population 2, all of genotype A2A2. Assume that these populations are located far from one another and that their environmental conditions are very similar. Based on the information given here, the observed genetic variation is mostly likely an example of\n\nA) genetic drift.\nB) gene flow.\nC) disruptive selection.\nD) discrete variation.\n",
+      "ground_truth": "genetic drift.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.48788985303876087,
+      "response_time": 0.010311126708984375,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Which of these is a statement that Darwin would have rejected?\n\nA) Environmental change plays a role in evolution.\nB) The smallest entity that can evolve is an individual organism.\nC) Individuals can acquire new characteristics as they respond to new environments or situations.\nD) Inherited variation in a population is a necessary precondition for natural selection to operate.\n",
+      "ground_truth": "The smallest entity that can evolve is an individual organism.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.48726494525970504,
+      "response_time": 0.010215044021606445,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    }
+  ]
+}

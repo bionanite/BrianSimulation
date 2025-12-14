@@ -1,0 +1,89 @@
+{
+  "summary": {
+    "benchmark_name": "MMLU",
+    "total_questions": 5,
+    "correct_answers": 0,
+    "accuracy": 0.0,
+    "average_confidence": 0.6706103205397724,
+    "average_response_time": 0.013348531723022462,
+    "total_time": 0.06722879409790039,
+    "per_category_accuracy": {
+      "high_school_biology": 0.0
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T06:26:00.228168"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: During a study session about evolution, one of your fellow students remarks, \"The giraffe stretched its neck while reaching for higher leaves; its offspring inherited longer necks as a result.\" Which statement is most likely to be helpful in correcting this student's misconception?\n\nA) Characteristics acquired during an organism's life are generally not passed on through genes.\nB) Spontaneous mutations can result in the appearance of new traits.\nC) Only favorable adaptations have survival value.\nD) Disuse of an organ may lead to its eventual disappearance.\n",
+      "ground_truth": "Characteristics acquired during an organism's life are generally not passed on through genes.",
+      "prediction": "True",
+      "is_correct": false,
+      "confidence": 0.6686322435885668,
+      "response_time": 0.013540983200073242,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Which of the following is an example of a detritivore?\n\nA) Cactus\nB) Algae\nC) Bat\nD) Fungus\n",
+      "ground_truth": "Fungus",
+      "prediction": "True",
+      "is_correct": false,
+      "confidence": 0.6441610440984369,
+      "response_time": 0.013112783432006836,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Which of the following best accounts for the ability of legumes to grow well in nitrogen-poor soils?\n\nA) These plants make their own proteins.\nB) These plants have a mutualistic relationship with nitrogen-fixing bacteria.\nC) These plants are capable of directly converting nitrogen gas into nitrates.\nD) These plants do not require nitrogen to make plant proteins.\n",
+      "ground_truth": "These plants have a mutualistic relationship with nitrogen-fixing bacteria.",
+      "prediction": "True",
+      "is_correct": false,
+      "confidence": 0.6841969557031988,
+      "response_time": 0.013471841812133789,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Which of the following best summarizes the process of allopatric speciation?\n\nA) differential changes in allele frequencies \u2192 reproductive isolation \u2192 reproductive barriers \u2192 new species\nB) catastrophic event \u2192 reproductive isolation \u2192 reproductive barriers \u2192 new species\nC) reproductive isolation \u2192 differential changes in allele frequencies \u2192 reproductive barriers \u2192 new species\nD) geographic isolation \u2192 reproductive isolation \u2192 differential changes in allele frequencies \u2192 reproductive barriers \u2192 new species\n",
+      "ground_truth": "geographic isolation \u2192 reproductive isolation \u2192 differential changes in allele frequencies \u2192 reproductive barriers \u2192 new species",
+      "prediction": "True",
+      "is_correct": false,
+      "confidence": 0.7101060161925852,
+      "response_time": 0.013251066207885742,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Which is a true statement concerning genetic variation?\n\nA) It is created by the direct action of natural selection.\nB) It arises in response to changes in the environment.\nC) It must be present in a population before natural selection can act upon the population.\nD) It tends to be reduced by the processes involved when diploid organisms produce gametes.\n",
+      "ground_truth": "It must be present in a population before natural selection can act upon the population.",
+      "prediction": "True",
+      "is_correct": false,
+      "confidence": 0.6459553431160747,
+      "response_time": 0.013365983963012695,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    }
+  ]
+}

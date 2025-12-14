@@ -1,0 +1,89 @@
+{
+  "summary": {
+    "benchmark_name": "MMLU",
+    "total_questions": 5,
+    "correct_answers": 0,
+    "accuracy": 0.0,
+    "average_confidence": 0.4787114425995863,
+    "average_response_time": 0.011374855041503906,
+    "total_time": 0.05740022659301758,
+    "per_category_accuracy": {
+      "high_school_biology": 0.0
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T06:25:10.618059"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Regarding meiosis and mitosis, one difference between the two forms of cellular reproduction is that in meiosis\n\nA) there is one round of cell division, whereas in mitosis there are two rounds of cell division\nB) separation of sister chromatids occurs during the second division, whereas in mitosis separation of sister chromatids occurs during the first division\nC) chromosomes are replicated during interphase, whereas in mitosis chromosomes are replicated during prophase\nD) spindle fibers form during prophase, whereas in mitosis the spindle fibers form during metaphase\n",
+      "ground_truth": "separation of sister chromatids occurs during the second division, whereas in mitosis separation of sister chromatids occurs during the first division",
+      "prediction": "True",
+      "is_correct": false,
+      "confidence": 0.47692743470013554,
+      "response_time": 0.01135706901550293,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Which statement about the beak size of finches on the island of Daphne Major during prolonged drought is true?\n\nA) Each bird evolved a deeper, stronger beak as the drought persisted.\nB) Each bird developed a deeper, stronger beak as the drought persisted.\nC) Each bird's survival was strongly influenced by the depth and strength of its beak as the drought persisted.\nD) Each bird that survived the drought produced only offspring with deeper, stronger beaks than seen in the previous generation.\n",
+      "ground_truth": "Each bird's survival was strongly influenced by the depth and strength of its beak as the drought persisted.",
+      "prediction": "True",
+      "is_correct": false,
+      "confidence": 0.4938884868793083,
+      "response_time": 0.011193990707397461,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: What was the prevailing notion prior to the time of Lyell and Darwin?\n\nA) Earth is a few thousand years old, and populations are unchanging.\nB) Earth is a few thousand years old, and populations gradually change.\nC) Earth is millions of years old, and populations rapidly change.\nD) Earth is millions of years old, and populations are unchanging.\n",
+      "ground_truth": "Earth is a few thousand years old, and populations are unchanging.",
+      "prediction": "True",
+      "is_correct": false,
+      "confidence": 0.4610291136753064,
+      "response_time": 0.01151895523071289,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: If the HMS Beagle had completely bypassed the Galapagos Islands, Darwin would have had a much poorer understanding of the\n\nA) relative stability of a well-adapted population's numbers over many generations.\nB) ability of populations to undergo modification as they adapt to a particular environment.\nC) tendency of organisms to produce the exact number of offspring that the environment can support.\nD) unlimited resources that support population growth in most natural environments.\n",
+      "ground_truth": "ability of populations to undergo modification as they adapt to a particular environment.",
+      "prediction": "True",
+      "is_correct": false,
+      "confidence": 0.47648679639463004,
+      "response_time": 0.011481046676635742,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Natural selection is based on all of the following except\n\nA) genetic variation exists within populations.\nB) the best-adapted individuals tend to leave the most offspring.\nC) individuals who survive longer tend to leave more offspring than those who die young.\nD) individuals adapt to their environments and, thereby, evolve.\n",
+      "ground_truth": "individuals adapt to their environments and, thereby, evolve.",
+      "prediction": "True",
+      "is_correct": false,
+      "confidence": 0.48522538134855164,
+      "response_time": 0.011323213577270508,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    }
+  ]
+}

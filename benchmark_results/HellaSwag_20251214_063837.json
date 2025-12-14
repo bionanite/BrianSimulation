@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "HellaSwag",
+    "total_questions": 10,
+    "correct_answers": 0,
+    "accuracy": 0.0,
+    "average_confidence": 0.4502562236533588,
+    "average_response_time": 0.02115788459777832,
+    "total_time": 0.21530628204345703,
+    "per_category_accuracy": {
+      "unknown": 0.0
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T06:38:37.895722"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: One of the gymnast dressed in red and white leotards is performing gymnastics on bars as his coach watches him. he\n\nWhat happens next? Choose the most likely ending:\n\nA) is able to make it past several other gymnasts in the competition while smiling and waving to his coach.\nB) does a hand stand and then does a front flip as he swings on the bars.\nC) passes other students in the background, slowing down as he goes.\nD) leaps off the right and lands in a basket on the mat.\n",
+      "ground_truth": "does a hand stand and then does a front flip as he swings on the bars.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.4552912169680543,
+      "response_time": 0.017464160919189453,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to give a foot massage [title] Rub the top of the foot with your thumbs. [step] Start at the tip of the toe and move slowly up to their ankle. Move back down their foot, starting from their ankle.\n\nWhat happens next? Choose the most likely ending:\n\nA) Apply firm pressure with your thumbs, cupping their foot in your hands. [substeps] Move up and down their foot two to three times.\nB) [title] Move up their leg, placing your fingers on their calf, at the ankle. [step] Wait a bit or for a minute before moving up their foot, to allow them some wiggle room.\nC) Once you reach their toes, move back down to their ankle. [substeps] Spreading out their toes may make the massage a bit harder if your hands are on their skin.\nD) Once you reach the ankle, you can move your thumbs in a circular motion from the top of the foot up past their wrist. [substeps] You may also apply pressure with your thumb and take a gentle tug.\n",
+      "ground_truth": "Apply firm pressure with your thumbs, cupping their foot in your hands. [substeps] Move up and down their foot two to three times.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.43219880302157476,
+      "response_time": 0.019503116607666016,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to dress for a rehearsal dinner [title] Check the invitation for dress details. [step] The bride and groom or the groom's parents will have sent you an invitation noting the details of the rehearsal dinner. In addition to the time and date of the event, some invitations note the style of dress the hosts wish for guests to wear.\n\nWhat happens next? Choose the most likely ending:\n\nA) Here are some of the different styles of dress you may see listed on a rehearsal dinner invitation : [substeps] Black tie. This style is more common for the actual wedding day, but you may see a request for black tie attire on a rehearsal dinner invitation.\nB) [substeps] For example, you could check an invitation asking guests to wear elegant suits or dresses with empire necklines. Sometimes, a tuxedo provides a casual look without the emphasis of formal attire.\nC) These invitations will indicate their attire so you can tailor your attire accordingly. [title] Get the right attire to attend the rehearsal dinner.\nD) In general, most hosts will want to show you these details. From this information, you should consider deciding what type of attire you would like to wear for a rehearsal dinner.\n",
+      "ground_truth": "Here are some of the different styles of dress you may see listed on a rehearsal dinner invitation : [substeps] Black tie. This style is more common for the actual wedding day, but you may see a request for black tie attire on a rehearsal dinner invitation.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.4559089851029005,
+      "response_time": 0.019098997116088867,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: A woman and man take turns talking to the camera while they are in the gym. Helpful hints are shown on the side of the screen. the man and woman\n\nWhat happens next? Choose the most likely ending:\n\nA) speak to one another and they look distant as they speak.\nB) are explaining to the audience how to tire out squatting.\nC) hold a hula hoop over the hula hoop and demonstrate exactly how it works, how to use it correctly, and what to turn into a hoop.\nD) continue speaking to the camera.\n",
+      "ground_truth": "continue speaking to the camera.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.4470875588164616,
+      "response_time": 0.02884817123413086,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to work out your fashion style [title] Wear clothes that flatter your shape. [step] The first thing to do to look effortlessly stylish is to make sure that you're wearing clothes that are good for your body type. Since effortless style is supposed to be subtle, you'll need your clothes fitting well in order to get the elegant, expensive look from your clothing.\n\nWhat happens next? Choose the most likely ending:\n\nA) [substeps] Wear dresses and tailored shirts that fit and accentuate your shape instead of showcasing your body. Make sure that all of your designs are subtle and that your designs cover as much of your body as possible.\nB) Don't get all maxi skirts and t-shirts trying to hang below your bust. Just keep them fit when they're show! [substeps] Choose a color that suits your skin tone and body type.\nC) You want clothes that make you look thinner and the perfect height, with everything in proportion. [title] Find your colors and play with it.\nD) [substeps] For example, if you're petite, your clothing should fall just below your chest and come up to your waist. If you're taller, have your clothes tailored to your height and maturity level.\n",
+      "ground_truth": "You want clothes that make you look thinner and the perfect height, with everything in proportion. [title] Find your colors and play with it.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.4427206326634641,
+      "response_time": 0.022991657257080078,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to make ghiya kofta (bottle gourd balls in gravy ) [title] Wash the bottle gourd. [title] Grate the gourd. [step] Use the grater which has the smallest holes to make thin pieces or the bottle gourd.\n\nWhat happens next? Choose the most likely ending:\n\nA) You are going to grate it after the cooking. [title] Dry the gourd with a cloth over a glass bowl.\nB) [title] Assemble salt, self-rising flour, gram-flour and bread crumbs. [title] Add in bottle-gourd and mix well.\nC) Be careful not to score the bottle gourd too often-if you do it often, it could break when you pound the gourd. Cut the gourd into small pieces/chunks and bunch.\nD) If using the grater, you can grate a whole gourd. [substeps] While doing this you'll get the idea.\n",
+      "ground_truth": "[title] Assemble salt, self-rising flour, gram-flour and bread crumbs. [title] Add in bottle-gourd and mix well.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.4524579546250375,
+      "response_time": 0.02888011932373047,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to treat diabetes related hypoglycemia [title] Get a glucometer. [step] A glucometer is a small, battery-powered medical device used to check the glucose level in your blood. [substeps] If you don't have a glucometer at home, you can have your blood glucose level checked at a hospital.\n\nWhat happens next? Choose the most likely ending:\n\nA) You will then be transported to the doctor's office where a glucometer can measure glucose levels and can send these results to the doctor. It's best to order glucometers in bulk, as these are not as pricey anymore.\nB) Most hospitals do not provide glucometers. You may need to ask your doctor or pharmacist.\nC) Each glucometer comes with test strips. Extra test strips can be purchased at any drugstore.\nD) The equipment involved is almost completely automated, so you don't have to talk to anyone about it. Glucometers cost between $100 and $$ 50 usd each.\n",
+      "ground_truth": "Each glucometer comes with test strips. Extra test strips can be purchased at any drugstore.",
+      "prediction": "50",
+      "is_correct": false,
+      "confidence": 0.4531373912852082,
+      "response_time": 0.016405105590820312,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: A cat is sitting on top of a white sheet. It is licking its paws over and over again. it\n\nWhat happens next? Choose the most likely ending:\n\nA) tries tilted its head back to lick the hand holding the brand.\nB) begins to jump up and down on the bed.\nC) rubs its head in between paw licks.\nD) drinks from a small bottle of milk.\n",
+      "ground_truth": "rubs its head in between paw licks.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.45176580762084856,
+      "response_time": 0.01922011375427246,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: A group of people sits around a large dance floor. A man and a woman walk onto the dance floor and dance. A band on stage plays. they\n\nWhat happens next? Choose the most likely ending:\n\nA) approach the ladies while they dance seductively.\nB) are playing a song called justin bieber.\nC) continue dancing as the lady and man walk to the center.\nD) finish the dance and the crowd claps.\n",
+      "ground_truth": "finish the dance and the crowd claps.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.4679842811845784,
+      "response_time": 0.015705108642578125,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to spot fake news sites [title] See if the site is openly fictional. [step] Some fake news sites clearly state that they are fake. However, this information may be hidden in the fine print at the bottom of an article.\n\nWhat happens next? Choose the most likely ending:\n\nA) See this: if an article has a lot of examples that show up in your skim-down under the hunt topics section, then it's very unlikely the site is pretending. Look for clues showing who is reporting, or ask the host to stop the chat.\nB) Additionally, it may not appear on the site. [substeps] If you see a corner of the article insulting charity, mention this on the website.\nC) Often, sites take the statement that \" press about your news stories \" literally describes what the site actually does or how it benefits the public. Do it once you know about the content of the site or its location, and potentially keep your eye out for fake news information.\nD) In these cases, fake news sites count on readers to be shocked by a sensational headline without reading through to the article's conclusion. [substeps] For example, the fake news site \" wtoe 5, \" which published a fake news story about pope francis endorsing donald trump, openly states that it publishes \" fantasy news.\n",
+      "ground_truth": "In these cases, fake news sites count on readers to be shocked by a sensational headline without reading through to the article's conclusion. [substeps] For example, the fake news site \" wtoe 5, \" which published a fake news story about pope francis endorsing donald trump, openly states that it publishes \" fantasy news.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.44400960524545985,
+      "response_time": 0.023462295532226562,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    }
+  ]
+}

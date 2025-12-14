@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "HellaSwag",
+    "total_questions": 10,
+    "correct_answers": 9,
+    "accuracy": 0.9,
+    "average_confidence": 0.4496301170818519,
+    "average_response_time": 0.011576294898986816,
+    "total_time": 0.1169731616973877,
+    "per_category_accuracy": {
+      "unknown": 0.9
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T07:04:24.207199"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to bottle feed babies [title] Gather your equipment. [step] Before you are able to bottle feed you will need to purchase bottles, nipples, a bottle brush, and a sterilizer. A sterilizer is optional if you have a dishwasher that has a steam setting.\n\nWhat happens next? Choose the most likely ending:\n\nA) If your dishwasher does not have a steam setting, then you will need to purchase a pair of sterilized cotton balls and a clean syringe. Also remember that you will be using this brush to administer weaning.\nB) There are many types of bottles and nipples you can choose from. Some babies take to only one type of nipple and may you go through many nipples trying to figure out which one they like and latch on too.\nC) If not, your access to the sterilizer should be limited, or restricted. [substeps] Sterilizers can be purchased for \" non-food \" equipment, but also for household implements like a toilet.\nD) [title] Purchase a blanket or cloth diaper. [step] If you are concerned about babies' bodies getting wet, you can sterilize a blanket or cloth diaper for a younger baby.\n",
+      "ground_truth": "There are many types of bottles and nipples you can choose from. Some babies take to only one type of nipple and may you go through many nipples trying to figure out which one they like and latch on too.",
+      "prediction": "B",
+      "is_correct": true,
+      "confidence": 0.4517580511477387,
+      "response_time": 0.01270914077758789,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: We see a man talking while walking through a house. We see another man working on the floor. we\n\nWhat happens next? Choose the most likely ending:\n\nA) see a young lady skateboarding.\nB) see a man smiling and handing out carpet samples.\nC) see a man laying tile in another room.\nD) see a ladder in a room and walk up a ladder.\n",
+      "ground_truth": "see a man laying tile in another room.",
+      "prediction": "C",
+      "is_correct": false,
+      "confidence": 0.4489462978219939,
+      "response_time": 0.011291027069091797,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: A carved pumpking with a light in it glows on a counter. Supplies for carving are then shown. a woman\n\nWhat happens next? Choose the most likely ending:\n\nA) uses a saw on a doll.\nB) pours glue onto a wooden stick.\nC) washes her trowel with water.\nD) cuts the top off the pumpkin, emptying the seeds.\n",
+      "ground_truth": "cuts the top off the pumpkin, emptying the seeds.",
+      "prediction": "D",
+      "is_correct": true,
+      "confidence": 0.4425574696081923,
+      "response_time": 0.011001110076904297,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to remove car battery terminals [title] Open the hood of the car and use the support bar to prop it open. [title] Locate the battery within the engine compartment. [step] If you're unsure about which part is the battery, then check your owner's manual.\n\nWhat happens next? Choose the most likely ending:\n\nA) [title] Slide the body of the battery off of the alternator. [step] Then disconnect the alternator with a pair of pliers.\nB) Most vehicles have bottom drain hoses, but hoses in your engine should also be labelled with this information. To make it easier, just tug the bottom of the hose hose out of the compartment.\nC) Some vehicles have their battery in the trunk, under or behind an access panel. [title] Check the positive post to be sure that the cover is on.\nD) [title] Review the tab on the left sidewall of the car and see if there is a loose screw or another resistant locking mechanism. [step] Sometimes the battery actually lies in the contact area.\n",
+      "ground_truth": "Some vehicles have their battery in the trunk, under or behind an access panel. [title] Check the positive post to be sure that the cover is on.",
+      "prediction": "D",
+      "is_correct": true,
+      "confidence": 0.45200059879285975,
+      "response_time": 0.012403011322021484,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to wind a rolex [title] Place your watch on a soft, flat surface. [step] Rolex watches are expensive to replace and repair, so protect your watch by winding it on a stationary surface where it can't slip out of your hand. [title] Unscrew the crown.\n\nWhat happens next? Choose the most likely ending:\n\nA) [step] The crown is located on the side of your watch by the 3 o'clock marking. Turn the crown counterclockwise until you feel it release from the last thread.\nB) [step] The crown is a thin, flat, individual cylinder device that allows you to insert the fingers (the hands on your rolex-your wrists) into the crown and tighten them. [substeps] Turn your crown clockwise to unscrew it.\nC) [step] Use your fingers to gently loosen the crown until the hinge springs out. To get out the crown, pull it out and with a carefully set hand unscrew it.\nD) [step] Place the crown on the back of the rolex watch. Then, slide the crown \" lock \" (a small piece of jewelry covering the crown) down one set of grooves, at a time, until they give a little wiggle.\n",
+      "ground_truth": "[step] The crown is located on the side of your watch by the 3 o'clock marking. Turn the crown counterclockwise until you feel it release from the last thread.",
+      "prediction": "D",
+      "is_correct": true,
+      "confidence": 0.4421342696650119,
+      "response_time": 0.011836767196655273,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to get a close shave [title] Choose a clean and sharp, quality safety razor. [step] A quality razor blade means a quality shave. When proper preparation of the skin takes place, you will only need a single blade razor.\n\nWhat happens next? Choose the most likely ending:\n\nA) Take the time to select a shaving power razor that has the right blade for your top quality shave. [substeps] Your razor should not have a metal blade.\nB) They are slightly more delicate and don't scratch the skin as much. [title] Treat any skin that is experiencing discomfort or redness.\nC) However, picking a double or triple blade won't hurt your skin and can provide a closer shave. [substeps] Many razors have a pivoting head.\nD) Both a razor and the right size of blade will ensure the best shave possible. [substeps] Go for a quality one that is at least 10 mm long and has a sharp tip.\n",
+      "ground_truth": "However, picking a double or triple blade won't hurt your skin and can provide a closer shave. [substeps] Many razors have a pivoting head.",
+      "prediction": "D",
+      "is_correct": true,
+      "confidence": 0.459328497280736,
+      "response_time": 0.011150836944580078,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: An old black and white clip plays and a tall man starts running towards a pole that is up high, and there are a lot of people in the general area doing their own thing or watching him. when the man\n\nWhat happens next? Choose the most likely ending:\n\nA) reaches the pole he jumps very high, clears the pole, lands on the matting below it and people cheer while he gets up and runs back to the area he started.\nB) reaches his pole it comes down with such a little weight, it doesn't even break his fall.\nC) reaches the pole he looks at it and then continue to run towards it till he gets to shoulders height.\nD) gets to the pole and says something, some of the people start jumping beside him while some of them go to other areas.\n",
+      "ground_truth": "reaches the pole he jumps very high, clears the pole, lands on the matting below it and people cheer while he gets up and runs back to the area he started.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.4559963021372261,
+      "response_time": 0.011565923690795898,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to lighten your backpack [title] Find the right fit for your body. [step] Visit a sporting goods store where you can be fitted for the right sized backpack by a professional. [substeps] Be sure the backpack has two wide, supportive shoulder straps, and sufficient back and strap padding.\n\nWhat happens next? Choose the most likely ending:\n\nA) Adjust the straps so that the backpack lays flat against your back. Both straps should be worn at the same time, to distribute the weight of the pack evenly.\nB) As for straps, look closely at your backpack to make sure the straps fit snugly. Check the tensile belt straps that hang side-by-side.\nC) Get the correct size at the store so you can gently and cheaply support your lower back when you sit. Your bag should not taper down to restrict your movement.\nD) Any straps that are overly small can put a strain on your back when sitting. It will be a good idea to have a friend hold your backpack while you work on projects or other physical activities.\n",
+      "ground_truth": "Adjust the straps so that the backpack lays flat against your back. Both straps should be worn at the same time, to distribute the weight of the pack evenly.",
+      "prediction": "D",
+      "is_correct": true,
+      "confidence": 0.4467606207827322,
+      "response_time": 0.011391162872314453,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to read a screw thread callout [title] Read the numbers. [step] They will look something like one of these : [substeps] 4-40 x. 5 1/4-20 x 5/8 m3-0.50 x 10 [title] Interpret the first number. [step] The first number gives the major, or largest, diameter.\n\nWhat happens next? Choose the most likely ending:\n\nA) Next, determine the size of the screw thread you wish to use. Write these numbers down on several pieces of paper and trace around them.\nB) It also tells you the larger diameter of a screw thread to create a series of polygons which share a small degree of overlap by a single number. [title] Separate the single digits in each string from each string.\nC) [substeps] In unified threads (measured in inches) there are numbered diameters 0 through 10, with 0 the smallest and 10 the largest. ( diameters 12 and 14 may also be found, but are usually on older equipment and needed for repairs or restorations.\nD) However, an \" x \" will bring more light up on an empty needle, so use a tray or ice scraper to fill it to feel the thickness of the screw. The next number tells us that the machine is a small amount bigger or larger than what we used it for.\n",
+      "ground_truth": "[substeps] In unified threads (measured in inches) there are numbered diameters 0 through 10, with 0 the smallest and 10 the largest. ( diameters 12 and 14 may also be found, but are usually on older equipment and needed for repairs or restorations.",
+      "prediction": "D",
+      "is_correct": true,
+      "confidence": 0.4479295090770036,
+      "response_time": 0.011786937713623047,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: A man is working outside in a field. He is using a large tool called a thresher. the people\n\nWhat happens next? Choose the most likely ending:\n\nA) walk around the grass, cutting it with the tool.\nB) are lifting him up and down.\nC) around him continue to pump water from their hose.\nD) in the crowd are watching back on now.\n",
+      "ground_truth": "walk around the grass, cutting it with the tool.",
+      "prediction": "C",
+      "is_correct": true,
+      "confidence": 0.44888955450502427,
+      "response_time": 0.010627031326293945,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    }
+  ]
+}

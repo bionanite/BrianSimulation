@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "HellaSwag",
+    "total_questions": 10,
+    "correct_answers": 0,
+    "accuracy": 0.0,
+    "average_confidence": 0.502433490891111,
+    "average_response_time": 0.011294746398925781,
+    "total_time": 0.11444091796875,
+    "per_category_accuracy": {
+      "unknown": 0.0
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T06:52:56.408927"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to design a formal garden [title] Assess the lay of the land. [step] The design you choose for your garden will be influenced by the contours of the land you are using. You should also take into account its placement relative to your house or other nearby buildings.\n\nWhat happens next? Choose the most likely ending:\n\nA) [substeps] For example, if you plan on building a master garden in the upper half of your home, you may want to develop a crescent row of hills. At a long distance, this half row may be actually highly steep.\nB) Consider the following factors : [substeps] Is the land your are using hilly or flat? This will affect the final look of your formal garden. Formal gardens are easier to create on flatter land, so you may want to look into leavening some of the hills on your property if possible.\nC) Take into account the layout of the landscape. [substeps] For example, you might want to have an attractive and open garden with a thick, glistening lawn and a frosted porch.\nD) You do not want to have one near your home that must be square. [substeps] For example, putting up one at the top of a corner overlooking a nearby building can prevent the foliage from blowing away.\n",
+      "ground_truth": "Consider the following factors : [substeps] Is the land your are using hilly or flat? This will affect the final look of your formal garden. Formal gardens are easier to create on flatter land, so you may want to look into leavening some of the hills on your property if possible.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.5045477745898845,
+      "response_time": 0.013576745986938477,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: A group of people clean cars at a car wash. a person\n\nWhat happens next? Choose the most likely ending:\n\nA) uses a red hose to clear the puddles by the car.\nB) sticks an adult in the trunk of a car while the young boy stands by.\nC) is interviewed about the process.\nD) smokes the hookah and blows the smoke.\n",
+      "ground_truth": "is interviewed about the process.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.4930614372929102,
+      "response_time": 0.011176824569702148,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to travel with a child with adhd [title] Tell the child where they are going and why. [step] Children with adhd can be overwhelmed by sudden changes or shifts in their routine. To prepare the child for the trip, you should let them know where they are going and why they are traveling.\n\nWhat happens next? Choose the most likely ending:\n\nA) Telling the child that they are going could be fun and help them feel less stressed about their current situation. [substeps] Try to be specific and brief in your explanations.\nB) You may sit down with them and have a discussion about where they are going to stay and who they are going to visit. This way, they are aware of what is going to happen.\nC) [substeps] After you have told them the destination, you may also tell them they will be at home and not in the car. Let them know it's important they do not have a toy or a new book that they want in the car on the trip.\nD) You can get them guidance on how to prepare for a trip by asking questions. [substeps] You can write down everything that the child tells you and ask them questions about it.\n",
+      "ground_truth": "You may sit down with them and have a discussion about where they are going to stay and who they are going to visit. This way, they are aware of what is going to happen.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.4913739959574097,
+      "response_time": 0.011606931686401367,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to dress casually [title] Avoid clothes that are too tight. [step] You don't have to wear clothes that are super-baggy, but tight-fitting clothes can make you look uncomfortable, defeating the purpose of casual wear. [substeps] Form-fitting dresses or tight pants are more suitable for a night at the club than a casual day spent relaxing.\n\nWhat happens next? Choose the most likely ending:\n\nA) Additionally, try to wear clothes that are designed for casual outdoor activities. For example, a dress without shirts can look ideal in an air conditioned parking lot, while a shirt without a jacket will look a bit inappropriate indoors.\nB) Clothes which are highly structured, such as garments with stiff collars or strong shoulders, usually come across as dressy. [title] Slip on your favorite comfy jeans.\nC) Go for a two-piece dress that hugs you in at least your waist, accentuates your sex appeal and offers some padding to your butt and hips. Solid black fabrics instead of dark denim are more appropriate for light, casual compression clothing.\nD) Just make sure they are not tight enough that they slide up on your legs, or that they don't hang down too high on your belly button. Choose a bottom that you like and avoid material that will cinch at your waist.\n",
+      "ground_truth": "Clothes which are highly structured, such as garments with stiff collars or strong shoulders, usually come across as dressy. [title] Slip on your favorite comfy jeans.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.5149244154691589,
+      "response_time": 0.011906862258911133,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: A man is seen bending down before a set of weights with others watching him on the side. The man lifts up the weights over his head. in the end\n\nWhat happens next? Choose the most likely ending:\n\nA) he drops down onto a mat with a pain f hurt.\nB) he drops the weights off.\nC) he walks away with the weights.\nD) he throws the weights down.\n",
+      "ground_truth": "he throws the weights down.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.4921755124363134,
+      "response_time": 0.010977983474731445,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: The woman is with the black dog and is styling the dog's hair. Woman shows their diplomas and awards and is with a white puddle combing her hair. woman\n\nWhat happens next? Choose the most likely ending:\n\nA) comb the black dog's hair and plays with it.\nB) is with a journalist on a qlon tv and is painting on her hands and the amazement of a logo is shown.\nC) is hairspray and products present to a client.\nD) talks to the camera and puts her hair up in a clipper, continues combing her hair and talks to the camera.\n",
+      "ground_truth": "comb the black dog's hair and plays with it.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.4956913642080139,
+      "response_time": 0.010256052017211914,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to point cut hair [title] Wet the hair and comb out any tangles. [step] For the best results, wash and rinse the hair before you begin to cut it. While the hair is still wet, comb through it to release tangles and remove loose hair.\n\nWhat happens next? Choose the most likely ending:\n\nA) [title] Loosen stubborn tangles with hairspray. [step] Shake several feet of hair out and use a wide-toothed comb to gently work through tangles.\nB) Allow it to dry before you begin cutting. [substeps] Unlike teasing or coarseness, teasing is easier to do with hair just a bit damp or a bit heavier than as with teasing and coarseness.\nC) [title] Cut from the bottom of the head. [step] Start from the hairline and move down to the back of the head until you reach the center of the head.\nD) [substeps] Textured or tightly coiled hair should be dried and straightened before being point cut. [title] Comb thin , 2 inch (5 cm) long sections of hair into your fingers.\n",
+      "ground_truth": "[substeps] Textured or tightly coiled hair should be dried and straightened before being point cut. [title] Comb thin , 2 inch (5 cm) long sections of hair into your fingers.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.5004260926424939,
+      "response_time": 0.011162281036376953,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to choose a combined engagement and wedding ring [title] Try yellow gold for sensitive skin. [step] While rose gold is renowned for its durability, some people have allergic reactions to the copper in the metal. Therefore, if the bride has sensitive skin, it's best to shy away from rose gold and go for yellow gold.\n\nWhat happens next? Choose the most likely ending:\n\nA) [title] Pick rose gold for durability. [step] Of the traditional wedding and engagement ring metals, rose gold is the most durable.\nB) [title] Select bright, bold colors for practical purposes. [step] While wedding rings and engagement rings can be very bold, they could come in a wide range of colors.\nC) Rose gold has a much lower toasting point than red gold. [substeps] Red gold rings are bulkier and is known for its heat resistance.\nD) [substeps] Mustard gold is great for sensitive skin. Since it contains 300 to 200% zinc (zinc nitrate), it's an ideal option for sensitive skin.\n",
+      "ground_truth": "[title] Pick rose gold for durability. [step] Of the traditional wedding and engagement ring metals, rose gold is the most durable.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.5177676327773744,
+      "response_time": 0.011760950088500977,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: We see a chair with a pillow on it. A man holding a cat sits down on the chair. The man clips the cats fingernails. the man\n\nWhat happens next? Choose the most likely ending:\n\nA) strokes the cat's head.\nB) then clips the cat nails.\nC) puts the cat down and boxes it with paper.\nD) gives the cats ears.\n",
+      "ground_truth": "strokes the cat's head.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.49390875236994336,
+      "response_time": 0.010068893432617188,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: There is a lemonade stand set up where people are purchasing lemonade to donate money for a cause. one of the parents\n\nWhat happens next? Choose the most likely ending:\n\nA) then raises her hand and groups and start drinking lemonade together.\nB) gives the boys lemonade and the mother gives the baby lemonade.\nC) gives the two kids a bunch of lemonade treats to gather energy.\nD) is talking to the news reporter about the fund raiser.\n",
+      "ground_truth": "is talking to the news reporter about the fund raiser.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.5204579311676074,
+      "response_time": 0.010453939437866211,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    }
+  ]
+}

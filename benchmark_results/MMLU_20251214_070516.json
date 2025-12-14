@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "MMLU",
+    "total_questions": 10,
+    "correct_answers": 5,
+    "accuracy": 0.5,
+    "average_confidence": 0.48855640009791995,
+    "average_response_time": 0.010886311531066895,
+    "total_time": 0.10962104797363281,
+    "per_category_accuracy": {
+      "high_school_biology": 0.5
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T07:05:16.861625"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: If two modern organisms are distantly related in an evolutionary sense, then one should expect that\n\nA) they live in very different habitats.\nB) they should share fewer homologous structures than two more closely related organisms.\nC) their chromosomes should be very similar.\nD) they shared a common ancestor relatively recently.\n",
+      "ground_truth": "they should share fewer homologous structures than two more closely related organisms.",
+      "prediction": "B",
+      "is_correct": false,
+      "confidence": 0.4795347739598572,
+      "response_time": 0.013850212097167969,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Logically, which of these should cast the most doubt on the relationships depicted by an evolutionary tree?\n\nA) None of the organisms depicted by the tree ate the same foods.\nB) Some of the organisms depicted by the tree had lived in different habitats.\nC) The skeletal remains of the organisms depicted by the tree were incomplete (i.e., some bones were missing).\nD) Relationships between DNA sequences among the species did not match relationships between skeletal patterns.\n",
+      "ground_truth": "Relationships between DNA sequences among the species did not match relationships between skeletal patterns.",
+      "prediction": "C",
+      "is_correct": true,
+      "confidence": 0.48997584400519745,
+      "response_time": 0.010546207427978516,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Which of the following statements is correct?\n\nA) Water flows from hypertonic to hypotonic.\nB) Germinating seeds use less oxygen than do nongerminating seeds.\nC) The rate of transpiration decreases with an increase in air movement.\nD) Smaller DNA fragments migrate more rapidly than do larger DNA fragments on gel electrophoresis.\n",
+      "ground_truth": "Smaller DNA fragments migrate more rapidly than do larger DNA fragments on gel electrophoresis.",
+      "prediction": "C",
+      "is_correct": true,
+      "confidence": 0.4876965385857098,
+      "response_time": 0.010512113571166992,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: This biome contains trees that drop their leaves during the winter months.\n\nA) Desert\nB) Tundra\nC) Taiga\nD) Deciduous forests\n",
+      "ground_truth": "Deciduous forests",
+      "prediction": "D",
+      "is_correct": true,
+      "confidence": 0.49417774113201196,
+      "response_time": 0.01014399528503418,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: During which phase of the cell cycle does the quantity of DNA in a eukaryotic cell typically double?\n\nA) G_1\nB) G_2\nC) M\nD) S\n",
+      "ground_truth": "S",
+      "prediction": "D",
+      "is_correct": false,
+      "confidence": 0.4631430937578603,
+      "response_time": 0.010130882263183594,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: All of the following play a role in morphogenesis EXCEPT\n\nA) apoptosis\nB) homeotic genes\nC) operons\nD) inductive effects\n",
+      "ground_truth": "operons",
+      "prediction": "B",
+      "is_correct": false,
+      "confidence": 0.4977917661287472,
+      "response_time": 0.010489940643310547,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Which of the following statements best explains why Mendel's principle of segregation was deemed a law?\n\nA) Mendel's work with pea plants and his conclusions have been described in many sources.\nB) The patterns of trait inheritance observed in pea plants were repeatedly demonstrated in other eukaryotes.\nC) Chromosomes were found to contain the genetic information for traits.\nD) The discovery of the structure of D N A supported Mendel's observations and laws.\n",
+      "ground_truth": "The patterns of trait inheritance observed in pea plants were repeatedly demonstrated in other eukaryotes.",
+      "prediction": "D",
+      "is_correct": true,
+      "confidence": 0.4843699716987029,
+      "response_time": 0.011096000671386719,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: The Krebs cycle in humans occurs in the\n\nA) mitochondrial matrix\nB) inner mitochondrial membrane\nC) outer mitochondrial membrane\nD) intermembrane space\n",
+      "ground_truth": "mitochondrial matrix",
+      "prediction": "C",
+      "is_correct": true,
+      "confidence": 0.5170949746136898,
+      "response_time": 0.010634183883666992,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: A plant grows in the opposite direction of the gravitational force. This is an example of\n\nA) positive thignotropism\nB) negative phototropism\nC) positive phototropism\nD) negative gravitropism\n",
+      "ground_truth": "negative gravitropism",
+      "prediction": "B",
+      "is_correct": false,
+      "confidence": 0.4928855771950459,
+      "response_time": 0.010705947875976562,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Which of the following pieces of evidence most strongly supports the common origin of all life on Earth?\n\nA) All organisms require energy.\nB) All organisms use essentially the same genetic code.\nC) All organisms reproduce.\nD) All organisms show heritable variation.\n",
+      "ground_truth": "All organisms use essentially the same genetic code.",
+      "prediction": "B",
+      "is_correct": false,
+      "confidence": 0.47889371990237584,
+      "response_time": 0.010753631591796875,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    }
+  ]
+}

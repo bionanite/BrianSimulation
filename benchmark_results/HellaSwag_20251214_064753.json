@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "HellaSwag",
+    "total_questions": 10,
+    "correct_answers": 0,
+    "accuracy": 0.0,
+    "average_confidence": 0.6037698197614401,
+    "average_response_time": 0.016797971725463868,
+    "total_time": 0.17024803161621094,
+    "per_category_accuracy": {
+      "unknown": 0.0
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T06:47:53.500950"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to practice hospital visiting etiquette [title] Call first to make sure visitors are allowed. [step] Even if there are visiting hours provided on the website, etc. , the person you are wanting to see may not be well enough to see anyone at the time.\n\nWhat happens next? Choose the most likely ending:\n\nA) If that is the case, try a more distant visitor. [title] Play the \" white elephant \" game.\nB) [title] Observe the hospital's visiting hours. [step] This is absolutely vital; non-visiting hours are used mainly for ensuring sufficient recuperation for the patients, so that they get well quickly.\nC) If you don't know someone, or if they are a stranger to you, it may be better to wait until when visitors arrive and do phone calls. However, always remember that every individual has different needs and may require special accommodations or treatment.\nD) [substeps] If you are staying with someone for an extended period of time, it may seem rude to interrupt the person so much that she becomes agitated or starts yelling at visitors. [title] Take extra care to change their bedsheets occasionally.\n",
+      "ground_truth": "[title] Observe the hospital's visiting hours. [step] This is absolutely vital; non-visiting hours are used mainly for ensuring sufficient recuperation for the patients, so that they get well quickly.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.6174936056062579,
+      "response_time": 0.020237207412719727,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to make a homemade (natural) protein hair mask [title] Mix the egg yolk and yogurt. [step] In a small bowl, beat the yolk from 1 egg. Next, add 6 tablespoons of plain yogurt, and use a spoon to mix until the ingredients are fully combined.\n\nWhat happens next? Choose the most likely ending:\n\nA) [title] Add the rest of the ingredients, except for the milk and oil. [step] Once the amount of ingredients have been mixed, mix in approximately 2 egg yolks.\nB) [title] Combine the walnuts and coconut oil. [step] Pour the mashed walnuts and coconut oil into a separate bowl and place it in the electric mixer with the speed dial on medium for about 3 minutes.\nC) Place the mixture into a pan on medium heat and cook, stirring occasionally. [substeps] When the egg yolk mixture comes to a boil, stir in 2 tablespoons of powdered sugar.\nD) [substeps] Egg yolk is rich in proteins and fats, so it helps strengthen and moisturize dry, brittle hair. In addition to protein, yogurt contains lactic acid, which helps remove dirt and product buildup while also moisturizing the hair.\n",
+      "ground_truth": "[substeps] Egg yolk is rich in proteins and fats, so it helps strengthen and moisturize dry, brittle hair. In addition to protein, yogurt contains lactic acid, which helps remove dirt and product buildup while also moisturizing the hair.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.5998953483439982,
+      "response_time": 0.019175052642822266,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: A woman and young boy are shown smiling and washing their hands in the sink when the woman begins washing his face. the boy\n\nWhat happens next? Choose the most likely ending:\n\nA) smiles with the woman washing his face and the woman dries his face off with a paper towel.\nB) is now seen staring into the camera and the lady who did the washing continues laughing when the kids continue to wash their hands.\nC) then wipes the face of the child with a towel.\nD) runs out of the sink to the woman's help and she gives him a towel and holds his face.\n",
+      "ground_truth": "smiles with the woman washing his face and the woman dries his face off with a paper towel.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.5810657509043813,
+      "response_time": 0.015137910842895508,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to get clear, smooth skin [title] Pick an appropriate cleanser. [step] Skin can range from dry to oily and in between. When picking out a cleanser, choose one that matches your.\n\nWhat happens next? Choose the most likely ending:\n\nA) Ingredients that are naturally oily tend to clump together, leaving much skin behind in everyday situations. [title] Dab a bit of your cleanser into your palm or the very back of your hand.\nB) It will say on the bottle whether it's for oily skin, dry skin, combination skin, or all skin types. [substeps] Choose a mild cleanser, such as one that says \" for sensitive skin.\nC) Avoid cleansers with alcohol, sodium bicarbonate or pure more natural chemical cleansers. Mild exfoliants, such as the exfoliants aha acr and quicklime eliminate dead skin cells and reduce blemishes.\nD) You can choose a cleanser that is specifically formulated for your body type or one that already contains a certain mineral. A gentle cleanser is better suited for your skin than harsh, dry cleansers because it is more open-wound and filters fresh oils out.\n",
+      "ground_truth": "It will say on the bottle whether it's for oily skin, dry skin, combination skin, or all skin types. [substeps] Choose a mild cleanser, such as one that says \" for sensitive skin.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.6195595130659639,
+      "response_time": 0.019143104553222656,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to stay naturally beautiful [title] Cleanse and moisture your face daily. [step] Make sure you cleanse and moisture your face two times a day. Early in the morning and just before going to bed.\n\nWhat happens next? Choose the most likely ending:\n\nA) Keep it off your skin for a couple of days. Use a non scented face wash and moisturizing mud in between washes so it doesn't dry out on your face.\nB) Then before you go to bed, put a spritz your face with a little stream of water. [substeps] Next, put this on your face and make sure that it feels good.\nC) This way your face is capable of sticking to this regimen long term. [substeps] Before attempting to expend time spent in the shower or getting ready in the evening hydrate yourself with some homemade red eye bags.\nD) This will help keep your skin clean and looking fresh. Find a cleanser that suits your skin type.\n",
+      "ground_truth": "This will help keep your skin clean and looking fresh. Find a cleanser that suits your skin type.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.5873893167600035,
+      "response_time": 0.016701936721801758,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to keep bleached hair healthy [title] Stick with sulfate-free products made for color-treated hair. [step] Sulfates are full of salt, which can dry out and damage your hair. When picking up shampoo, conditioner, hairspray, or other products, read the labels carefully.\n\nWhat happens next? Choose the most likely ending:\n\nA) Only use products that contain sodium lauryl sulfate. Avoid products that are 100% sodium lauryl sulfate, such as ceylon, l'oreal, and hemp seeds.\nB) As long as you check the words first to see what the product contains, you have the option of bleaching your hair. [substeps] You can also purchase products meant for dark hair.\nC) The salicylic acid in dry hair is very easily absorbed in bleached hair. [substeps] Before going for a coloring-or bleaching treatment, consider thoroughly washing your hair.\nD) Avoid anything containing sodium lauryl sulfate, ammonium laureth sulfate, or sodium laureth sulfate. You should also make sure that every product you use is formulated for use on color-treated hair to ensure your locks remain healthy.\n",
+      "ground_truth": "Avoid anything containing sodium lauryl sulfate, ammonium laureth sulfate, or sodium laureth sulfate. You should also make sure that every product you use is formulated for use on color-treated hair to ensure your locks remain healthy.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.6273233643360436,
+      "response_time": 0.015614032745361328,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to keep rabbit bottles from freezing [title] Fill the water bottle with warm water. [step] Do not use scalding hot water. This will cause it to take it longer for the water to freeze.\n\nWhat happens next? Choose the most likely ending:\n\nA) [substeps] Warm the water bottle in the microwave for 30 seconds at 75 degrees fahrenheit (75 degrees celsius) to thaw the water. Cold water can also kill rabbits with lesions such as stingers.\nB) You can use either filtered or distilled water. Use the method described above if your rabbit will drink cooler water.\nC) However, you will probably still need to change the water several times during the course of the day. [substeps] When doing this touch the stream of water with your hand.\nD) Use enough water to cover the entire bottle. You should water only at below boiling point.\n",
+      "ground_truth": "However, you will probably still need to change the water several times during the course of the day. [substeps] When doing this touch the stream of water with your hand.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.6070558343194425,
+      "response_time": 0.014723062515258789,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to clean heat styling tools [title] Clean your hair straightener. [step] If you straighten your hair regularly, you should clean your hair straightener on occasion to stop dirt and debris from dirtying your hair. First, unplug your hair straightener and let it cool until you can easily touch it.\n\nWhat happens next? Choose the most likely ending:\n\nA) Then, twist your hair around the outer shaft of the straightener and gently push down. Then, begin moving it gently from the center of your head to the crown and back.\nB) [substeps] You'll want to clean it every few days. After waking up and changing into clothes, it can be easy to make a habit of brushing it for a longer period.\nC) Then, thoroughly wash your hair with shampoo in your normal amount. [substeps] If you have sensitive hair, dry your hair with a towel before you use the straightener.\nD) [substeps] Place some rubbing oil on a paper towel and gently wipe down the hair straightener. If you notice any stuck on debris, scrub this off with a toothbrush.\n",
+      "ground_truth": "[substeps] Place some rubbing oil on a paper towel and gently wipe down the hair straightener. If you notice any stuck on debris, scrub this off with a toothbrush.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.5948842412233353,
+      "response_time": 0.01674199104309082,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to shave your face [title] Choose an appropriate razor. [step] You should take into account the coarseness of your beard hairs, the texture of your skin, your preferred shaving method, and other details when choosing a razor. Generally speaking, for heavy-bearded men with more sensitive skin, it is generally good to use a traditional multi-blade razor.\n\nWhat happens next? Choose the most likely ending:\n\nA) A more expensive variety, however, may suit you. [substeps] If possible, choose a razor with a finer blade, like the ninja rat razor (also known as ninja rat 4) or saber (also known as elderrawal 2).\nB) [substeps] Electric razors are convenient and quick, requiring less preparation before shaving than safety razors, and are somewhat gentler on sensitive skin. For some types of hair, however, they tend to leave an uneven or patchy shave on the face.\nC) You may also want to check ahead of time which method is best for you. [substeps] Before shaving, you should consider using a traditional electric razor.\nD) [substeps] The point of a professional shave is to smooth the beard hair and keep your razor soft and and straight. Using a razor is not only effective, but to save yourself the stress of sawing through to scar a smooth, beautiful beard.\n",
+      "ground_truth": "[substeps] Electric razors are convenient and quick, requiring less preparation before shaving than safety razors, and are somewhat gentler on sensitive skin. For some types of hair, however, they tend to leave an uneven or patchy shave on the face.",
+      "prediction": "2",
+      "is_correct": false,
+      "confidence": 0.6159639530926944,
+      "response_time": 0.01492619514465332,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to find a person's grave [title] Know the person's full name. [step] It's best if you know the person's first, middle, and last name. Knowing this information will make him or her easier to find.\n\nWhat happens next? Choose the most likely ending:\n\nA) [substeps] If the person knows that you're looking for someone you don't know, this is even better! If you don't know the name of your relative, you won't be able to get the stone taken. [title] Try the person's birth date.\nB) Because some combinations of first and last names are common, it's easier to narrow down if you have a middle name, too. [substeps] You can find a person's full name by looking through family documents if you have them.\nC) [substeps] Watch out for footnotes, which are often missed or maybe even lose easily. When writing down the name of a person's grave, keep in mind that you don't necessarily need to know what it is, but you can certainly search his or her social security number in order to figure out his or her location.\nD) This will, in turn, make your search more difficult as well. If you know their middle name or surname, you're more likely to find the right person.\n",
+      "ground_truth": "Because some combinations of first and last names are common, it's easier to narrow down if you have a middle name, too. [substeps] You can find a person's full name by looking through family documents if you have them.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.587067269962281,
+      "response_time": 0.0155792236328125,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    }
+  ]
+}

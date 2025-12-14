@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "MMLU",
+    "total_questions": 10,
+    "correct_answers": 4,
+    "accuracy": 0.4,
+    "average_confidence": 0.551475999320959,
+    "average_response_time": 0.010567021369934083,
+    "total_time": 0.10652685165405273,
+    "per_category_accuracy": {
+      "high_school_biology": 0.4
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T07:05:54.010426"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: In modern terminology, diversity is understood to be a result of genetic variation. Sources of variation for evolution include all of the following except\n\nA) mistakes in translation of structural genes.\nB) mistakes in DNA replication.\nC) translocations and mistakes in meiosis.\nD) recombination at fertilization.\n",
+      "ground_truth": "mistakes in translation of structural genes.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.5850959029320855,
+      "response_time": 0.014020204544067383,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: A healthy man and woman are worried about having children because they are both carriers of sickle-cell disease. If the couple have a biological child, what is the chance that the child will inherit sickle-cell disease?\n\nA) 100%\nB) 75%\nC) 50%\nD) 25%\n",
+      "ground_truth": "25%",
+      "prediction": "B",
+      "is_correct": false,
+      "confidence": 0.5401964549298425,
+      "response_time": 0.009912729263305664,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Which of the following reactions occurs in the forward direction during glycolysis but in the reverse direction during fermentation?\n\nA) pyruvate \u2192 lactate\nB) pyruvate \u2192 ethanol\nC) NAD+ + H+ + 2e- \u2192 NADH\nD) ADP + P \u2192 ATP\n",
+      "ground_truth": "NAD+ + H+ + 2e- \u2192 NADH",
+      "prediction": "B",
+      "is_correct": false,
+      "confidence": 0.5055941050718379,
+      "response_time": 0.010232210159301758,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: More than a dozen species of Darwin's finches with various specialized adaptations inhabit the Gal\u00e1pagos Islands. Each species possesses a specialized adaptation for obtaining food. Why is it that similar adaptations do not exist among the finches of the South American mainland, the presumed origin of the Gal\u00e1pagos finch ancestor?\n\nA) The various foods available on the mainland are different than those on the Gal\u00e1pagos Islands.\nB) South American predators limited evolution of the mainland finch.\nC) Reproductive isolation is not possible on the mainland.\nD) The available niches that the Darwin's finches exploited on the Gal\u00e1pagos Islands were already occupied by other species of birds on the mainland.\n",
+      "ground_truth": "The available niches that the Darwin's finches exploited on the Gal\u00e1pagos Islands were already occupied by other species of birds on the mainland.",
+      "prediction": "D",
+      "is_correct": true,
+      "confidence": 0.560680561735004,
+      "response_time": 0.010809183120727539,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: According to the heterotroph hypothesis, which event had to occur before oxygen filled the atmosphere?\n\nA) Heterotrophs had to remove carbon dioxide from the air.\nB) Autotrophs, which make their own food, had to evolve.\nC) Heterotrophs had to evolve.\nD) Autotrophs had to convert atmospheric nitrogen to nitrate.\n",
+      "ground_truth": "Autotrophs, which make their own food, had to evolve.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.5514319418247422,
+      "response_time": 0.010032892227172852,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Which of the following cells is most closely associated with phagocytosis?\n\nA) Neutrophils\nB) Plasma cells\nC) B cells\nD) Memory cells\n",
+      "ground_truth": "Neutrophils",
+      "prediction": "A",
+      "is_correct": false,
+      "confidence": 0.570770167093049,
+      "response_time": 0.010025262832641602,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: The reaction A + B \u2192 C is catalyzed by enzyme K. If the reaction is in equilibrium, which of the following would allow more product C to be produced?\n\nA) removing some of reactant A\nB) removing some of reactant C\nC) adding more enzyme K\nD) increasing the temperature of the system\n",
+      "ground_truth": "removing some of reactant C",
+      "prediction": "B",
+      "is_correct": false,
+      "confidence": 0.5197260128384853,
+      "response_time": 0.009984016418457031,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: A researcher grows a population of ferns in her laboratory. She notices, after a few generations, a new variant that has a distinct phenotype. When she tries to breed the original phenotype with the new one, no offspring are produced. When she breeds the new variants, however, offspring that look like the new variant result. What originally caused the change in the variant?\n\nA) Karyotyping\nB) Balance polymorphism\nC) Mutation\nD) Polyploidy\n",
+      "ground_truth": "Mutation",
+      "prediction": "B",
+      "is_correct": false,
+      "confidence": 0.533830015696134,
+      "response_time": 0.010370969772338867,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: All of the following are examples of connective tissue EXCEPT\n\nA) ligaments\nB) muscle\nC) blood\nD) cartilage\n",
+      "ground_truth": "muscle",
+      "prediction": "A",
+      "is_correct": false,
+      "confidence": 0.5969781133542732,
+      "response_time": 0.01004791259765625,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Which of the following observations helped Darwin shape his concept of descent with modification?\n\nA) Species diversity declines farther from the equator.\nB) Fewer species live on islands than on the nearest continents.\nC) Birds can be found on islands located farther from the mainland than the birds' maximum nonstop flight distance.\nD) South American temperate plants are more similar to the tropical plants of South America than to the temperate plants of Europe.\n",
+      "ground_truth": "South American temperate plants are more similar to the tropical plants of South America than to the temperate plants of Europe.",
+      "prediction": "C",
+      "is_correct": true,
+      "confidence": 0.5504567177341366,
+      "response_time": 0.010234832763671875,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    }
+  ]
+}

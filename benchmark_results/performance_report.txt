@@ -1,0 +1,89 @@
+======================================================================
+PERFORMANCE TRACKING REPORT
+======================================================================
+Generated: 2025-12-14 14:23:49
+
+OVERALL SUMMARY
+----------------------------------------------------------------------
+Total Benchmark Runs: 146
+Benchmarks Tested: 5
+Average Accuracy: 30.07%
+
+PER-BENCHMARK PERFORMANCE
+----------------------------------------------------------------------
+
+ARC:
+  Latest Accuracy: 100.00%
+  Questions Tested: 10
+  Average Confidence: 0.454
+  Average Response Time: 0.021s
+  Rank: 7/7
+  Percentile: -150.0%
+  Gap to best AI: -85.00%
+  Trend: improving (+100.00%)
+
+GSM8K:
+  Latest Accuracy: 0.00%
+  Questions Tested: 10
+  Average Confidence: 0.330
+  Average Response Time: 0.049s
+  Rank: 7/7
+  Percentile: -162.9%
+  Gap to best AI: -92.00%
+  Trend: stable (+0.00%)
+
+HellaSwag:
+  Latest Accuracy: 90.00%
+  Questions Tested: 10
+  Average Confidence: 0.498
+  Average Response Time: 0.022s
+  Rank: 7/7
+  Percentile: -801.9%
+  Gap to best AI: -95.00%
+  Trend: improving (+90.00%)
+
+HumanEval:
+  Latest Accuracy: 100.00%
+  Questions Tested: 1
+  Average Confidence: 0.996
+  Average Response Time: 0.017s
+  Rank: 2/7
+  Percentile: 100.0%
+  Improvement over best AI: +33.00%
+  Trend: improving (+100.00%)
+
+MMLU:
+  Latest Accuracy: 60.00%
+  Questions Tested: 10
+  Average Confidence: 0.336
+  Average Response Time: 0.020s
+  Rank: 7/7
+  Percentile: -355.3%
+  Gap to best AI: -86.30%
+  Trend: improving (+60.00%)
+
+CAPABILITY GAPS
+----------------------------------------------------------------------
+
+MMLU:
+  - Below human performance (need 89.7%, have 60.0%)
+  - Below best AI performance (need 86.3%, have 60.0%)
+  - Underconfident - accuracy higher than confidence
+
+HellaSwag:
+  - Underconfident - accuracy higher than confidence
+
+GSM8K:
+  - Below human performance (need 92.0%, have 0.0%)
+  - Below best AI performance (need 92.0%, have 0.0%)
+  - Overconfident - confidence higher than accuracy
+
+ARC:
+  - Underconfident - accuracy higher than confidence
+
+RECOMMENDATIONS
+----------------------------------------------------------------------
+  - Focus on improving performance in identified gap areas
+  - Current performance is below 50% - focus on fundamental improvements
+
+======================================================================

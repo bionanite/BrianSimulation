@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "HellaSwag",
+    "total_questions": 10,
+    "correct_answers": 10,
+    "accuracy": 1.0,
+    "average_confidence": 0.6591850955881179,
+    "average_response_time": 0.014702320098876953,
+    "total_time": 0.14882302284240723,
+    "per_category_accuracy": {
+      "unknown": 1.0
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T07:15:13.547724"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: They spit it out into a sink. They take another drink out of a cup. They put their mouth on a towel. they\n\nWhat happens next? Choose the most likely ending:\n\nA) take another drink and dump it out in the sink.\nB) rub their faces together.\nC) begin to shave their legs with their hands.\nD) carry on an arm wrestling match.\n",
+      "ground_truth": "take another drink and dump it out in the sink.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.6531639892384411,
+      "response_time": 0.012952089309692383,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to shave your legs [title] Check your razor. [step] Make sure it's clean, sharp, rust-free and undamaged. If you have very light hair, you can use the same blade repeatedly.\n\nWhat happens next? Choose the most likely ending:\n\nA) ( the benefit is, older razors are less expensive. ) a razor without rust will also work better for long hair.\nB) Also, make sure it's dry, as spit and nail polish can dry in between strokes. [substeps] This will also be helpful if you're working on your legs.\nC) If you have coarse hair, you may only get a few shaves out of a blade. If you're not sure, once you feel the blade pulling or catching when you shave, it's time to change.\nD) Follow up the shaving process by creating strong lather with a toothbrush. Rinse it off with hot water and replace it with a shave gel.\n",
+      "ground_truth": "If you have coarse hair, you may only get a few shaves out of a blade. If you're not sure, once you feel the blade pulling or catching when you shave, it's time to change.",
+      "prediction": "C",
+      "is_correct": true,
+      "confidence": 0.6551090154722332,
+      "response_time": 0.012397050857543945,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to repair electric car windows [title] Locate and open the fuse box. [step] It should be located inside the car as a part of, or near, the dash. [title] Check your owner's manual to locate that operates the windows.\n\nWhat happens next? Choose the most likely ending:\n\nA) [step] The manual may have been written by an experienced mechanic in previous years or have a reliable list that lists all of the steps your car is going to take to repair electric windows. [substeps] On your driver's door panel, sometimes under the armrest, you may see a row of buttons or knobs for different air vents.\nB) [title] Remove the clamps at the bottom of the window. [step] Gently push them down under the window opening as though removing heavy objects.\nC) [step] It is not uncommon that the only thing wrong with electrical components in a vehicle is a blown fuse. If this is the case with your windows you will need to replace the window fuse.\nD) [step] If the model has an owner's manual or modified unit that allows for wiring to run through the box, flip it over and pull the wire that's holding the fuse box in place. The wiring will not be visible while the window is open.\n",
+      "ground_truth": "[step] It is not uncommon that the only thing wrong with electrical components in a vehicle is a blown fuse. If this is the case with your windows you will need to replace the window fuse.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.6594502398706973,
+      "response_time": 0.014012813568115234,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to use both regular and uv gel nail polish together [title] Clip and shape your nails. [title] Clean off cuticles with a cuticle remover. [title] Clean your nails thoroughly with rubbing alcohol.\n\nWhat happens next? Choose the most likely ending:\n\nA) [title] Use matching tips to shape your nails. [step] Shape your tips should match, to make it less messy.\nB) [step] This will remove the oils and lotions, ensuring the nail polish will bond tightly to your nails. That way, your polish will not chip or peel as quickly.\nC) [step] Keep nail polish remover out of direct sunlight. [title] Wet a cotton ball with nail polish remover and apply to clean nail ends where it has split the cuticles.\nD) [title] Lay down and get a nail buffer. [title] Get a small bowl and place it on a small table.\n",
+      "ground_truth": "[step] This will remove the oils and lotions, ensuring the nail polish will bond tightly to your nails. That way, your polish will not chip or peel as quickly.",
+      "prediction": "C",
+      "is_correct": true,
+      "confidence": 0.6667811279706657,
+      "response_time": 0.012820959091186523,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: A man is seen in several clips shooting a basket into a hoop. He is then shown attempting to play tennis when another man walks in. the man\n\nWhat happens next? Choose the most likely ending:\n\nA) hit the ball in another other direction, but eventually shows the person in the hoop again.\nB) attempts several other poses while still shooting the ball to another man.\nC) teaches him how to play tennis and has him practice.\nD) pushes on the ball and causes it to flip back to him where he misses several times.\n",
+      "ground_truth": "teaches him how to play tennis and has him practice.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.6627859777957201,
+      "response_time": 0.012668132781982422,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to balance work and parenting as a single parent [title] Set a schedule for the kids. [step] You'll find that caring for your children will be a whole lot easier if you get them on a schedule. Have a set dinner time where you all eat together and discuss your day.\n\nWhat happens next? Choose the most likely ending:\n\nA) Make bedtime routine for them and make sure they're in bed at the same time each night. [substeps] Include extracurriculars like soccer and dance class in this schedule, as well.\nB) You could also spend a friday or saturday afternoon together. This will break stress down into small steps, which can make it easier for your kids to go to school on time.\nC) Set aside time to do chores on the weekends with the kids. Set up a family night out where each member treats the other as family.\nD) Plan some time for activities in the evening, like other days, and a little time for quality time with the kids. [substeps] Be early to dinner as this will help cut down on the need to cook or clean up on the weekends.\n",
+      "ground_truth": "Make bedtime routine for them and make sure they're in bed at the same time each night. [substeps] Include extracurriculars like soccer and dance class in this schedule, as well.",
+      "prediction": "D",
+      "is_correct": true,
+      "confidence": 0.653148237016052,
+      "response_time": 0.014022350311279297,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: A man is on a galloping horse back riding for sport. Horse back riding is considered to be a sport, a fun one but still work. like\n\nWhat happens next? Choose the most likely ending:\n\nA) working with a team you have to work with a horse also, you have to communicate with a horse that doesn't speak.\nB) riding in fast motion, you more than likely go over 10 km/h, back going slower and slower.\nC) ride horses through a large barn.\nD) riding a horse in a competition an enjoyment or disappointment fails to make you enjoy it.\n",
+      "ground_truth": "working with a team you have to work with a horse also, you have to communicate with a horse that doesn't speak.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.6594017311669886,
+      "response_time": 0.012331008911132812,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to make slow cooker shredded chicken [title] Place the ingredients in the slow cooker. [step] Add the chicken, liquid, and a dash of salt and pepper to the slow cooker. It's best to use boneless, skinless chicken thighs or breasts, but you can really use any cut.\n\nWhat happens next? Choose the most likely ending:\n\nA) Chicken thighs can be frozen, canned, or caught in a pan. [substeps] Don't worry if you can't find any cut chicken thighs, you can still use them in whatever recipe you like.\nB) You can scale this recipe up, too, as long as you keep the ratio of chicken to liquid the same. [substeps] You can also add any seasoning you like, such as a dash of garlic powder or a sprinkle of seasoned salt.\nC) [substeps] Eggs: crack 4 to 6 eggs into the slow cooker, followed by another dollop of salt and pepper. Clean the colander, going all the way up the inside and legs.\nD) If you can't find boneless or skinless chicken thighs, you can also substitute boneless chicken legs. [substeps] Double check that you add the full grain cooking liquid and that all of the chicken you're cooking in the slow cooker includes whole wheat or broth.\n",
+      "ground_truth": "You can scale this recipe up, too, as long as you keep the ratio of chicken to liquid the same. [substeps] You can also add any seasoning you like, such as a dash of garlic powder or a sprinkle of seasoned salt.",
+      "prediction": "D",
+      "is_correct": true,
+      "confidence": 0.655859875716269,
+      "response_time": 0.01407003402709961,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to clean road rash [title] Look at the depth of the wound. [step] When you get road rash, you first need to decide how deep the wound goes. If you had a small fall, the road rash will likely be shallow and only affect the upper layer of skin.\n\nWhat happens next? Choose the most likely ending:\n\nA) If you had a bad fall, your road rash may be more severe, extending into deeper muscle and bone tissue. Look at your wound and see how deep the scrapes go.\nB) If the wound has a significant depth, it can affect the tone of your skin when it is fresh. [substeps] You will know if you are pregnant by looking at your clothing for the depth of the wound.\nC) However, if you hit a larger animal, the wound may be deeper. You may also see physical marks on the wound, like cuts, scrapes, or bruises.\nD) It won't hurt your skin, and in extreme cases you might want to treat it at home. [substeps] The shallower the wound, the less likely it is to cause infection.\n",
+      "ground_truth": "If you had a bad fall, your road rash may be more severe, extending into deeper muscle and bone tissue. Look at your wound and see how deep the scrapes go.",
+      "prediction": "B",
+      "is_correct": true,
+      "confidence": 0.634606599882245,
+      "response_time": 0.02141094207763672,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to increase fertility with hypnosis [title] Daily practice of self-hypnosis is invaluable in increasing your chances of conception. [step] Spend five minutes, once or twice each day, in this relaxed state with this new belief and it will begin to plant the seeds necessary to create success. [title] Find a place where you will not be disturbed for a while.\n\nWhat happens next? Choose the most likely ending:\n\nA) [step] This could be a bench, the floor of a street, the sofa or even your bed! Find somewhere completely private with no television and other distractions and lie down for a short period. Rediscover the aspects you already enjoy.\nB) [step] Do not sit in the privacy of your home, bathroom or living room for hours. Find somewhere quiet and solitary where no one will disturb you.\nC) [step] Settle yourself comfortably, either sitting or lying down. Close your eyes, get quiet and still, become aware of your breathing, relax....\nD) [step] Because hypnosis can be performed in a variety of places, including small isolated areas, you will want to keep your activity private. Keep your noise to a minimum to safeguard yourself against loud music and' strange' people entering your home.\n",
+      "ground_truth": "[step] Settle yourself comfortably, either sitting or lying down. Close your eyes, get quiet and still, become aware of your breathing, relax....",
+      "prediction": "D",
+      "is_correct": true,
+      "confidence": 0.6915441617518663,
+      "response_time": 0.020337820053100586,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    }
+  ]
+}

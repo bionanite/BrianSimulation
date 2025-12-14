@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "HellaSwag",
+    "total_questions": 10,
+    "correct_answers": 0,
+    "accuracy": 0.0,
+    "average_confidence": 0.45292756950842367,
+    "average_response_time": 0.01073770523071289,
+    "total_time": 0.10878801345825195,
+    "per_category_accuracy": {
+      "unknown": 0.0
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T06:46:43.830652"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: An african american female takes off running and begins to attempt a high jump but fails when the bar drops and walks off. another female\n\nWhat happens next? Choose the most likely ending:\n\nA) shows up and tries her third attempt and the same thing happens.\nB) runs after her and baseball bat hits her in the head knocking her to the ground, and she lays there for a while trying to get up but the crowd once again drags her away.\nC) appears holding a small boy in her arms who is jumping up and down while she tries several different positions.\nD) joins her and she tries several more times then walks off score.\n",
+      "ground_truth": "shows up and tries her third attempt and the same thing happens.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.46886749765572855,
+      "response_time": 0.011175155639648438,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to dress for work [title] Dress business formal if you work with customers in a professional setting, such as a bank or office. [step] Business formal usually means wearing a suit, tie, dress slacks, and dress shoes. [substeps] Wear clothes that fit.\n\nWhat happens next? Choose the most likely ending:\n\nA) Investing in appropriate attire can be a good way to cut down on the amount of time you spend milling about. Find shoes that fit you well and conform to your workplace's culture.\nB) A business casual outfit is best for the workplace in a professional setting than for a night on the town. Something like khakis can work just as well as a suit with a tie.\nC) You might shop in jeans or a nice shirt for business casual. On the other hand, plain button-down blouses are a good option for business casual.\nD) Clothes that are too tight will be too uncomfortable to work in. Clothes that are too loose will look sloppy and unprofessional.\n",
+      "ground_truth": "Clothes that are too tight will be too uncomfortable to work in. Clothes that are too loose will look sloppy and unprofessional.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.4389652600793122,
+      "response_time": 0.01041269302368164,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to have soft skin [title] Exfoliate weekly. [step] Exfoliation makes your skin softer by removing dirt, oil, and dead skin cells. You can scrub your face with coffee grounds mixed with some mild soap, or a store-bought exfoliation product.\n\nWhat happens next? Choose the most likely ending:\n\nA) Exfoliating is ideal if you have dry skin or if you have sensitive skin. [substeps] Exfoliating once every day will help ensure that you don't get dry skin overnight, since the scrubs will remove dead skin cells and reconstitute fine skin underneath.\nB) [substeps] Exfoliating daily will restore your skin to healthy firmness. Not every exfoliant is safe for use on sensitive skin.\nC) You can exfoliate your face anytime. Exfoliating your face once daily can help break down bacteria.\nD) For relief of redness as well, look for something that contains green tea extracts and glycolic acid. [substeps] Avoid exfoliating more than once or twice a week, as exfoliating too often can cause skin irritation.\n",
+      "ground_truth": "For relief of redness as well, look for something that contains green tea extracts and glycolic acid. [substeps] Avoid exfoliating more than once or twice a week, as exfoliating too often can cause skin irritation.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.46958644803504834,
+      "response_time": 0.011007308959960938,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: We see a man in a driveway cleaning snow from his car. the man\n\nWhat happens next? Choose the most likely ending:\n\nA) cleans the snow under his windshield wipers.\nB) wet his car and wipes it down.\nC) moves the snow out of the front bumper of his car and pours gasoline on it.\nD) removes the pieces of the line off his windshield.\n",
+      "ground_truth": "cleans the snow under his windshield wipers.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.45609446599514014,
+      "response_time": 0.009714126586914062,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to install entry doors [title] Remove the old door and the surrounding trim, molding, and door jamb. [step] You must remove everything covering the \" rough frame \" of the doorway. [substeps] The majority of doors for sale on the market today come pre-hung--that is, they are already mounted on a door jamb.\n\nWhat happens next? Choose the most likely ending:\n\nA) If you were to install a new door through its original frame--the whole thing would be finished simply on the inside frame. Look for other ways to go about this.\nB) When installed correctly, they provide the tightest possible seal to keep out the elements. The door jamb is usually held in place with nails, screws, and caulk.\nC) For the best results, you should remove them, the plaster, wood floor trim and doormolding. [title] Slide inside the door and insert the new door.\nD) The good thing about plastic doors is that they are easy to remove. Some imperfections can be removed (nails are not necessary) with a phillips head screwdriver, or you can remove old door knobs by loosening the screws holding them in place.\n",
+      "ground_truth": "When installed correctly, they provide the tightest possible seal to keep out the elements. The door jamb is usually held in place with nails, screws, and caulk.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.45565187432736576,
+      "response_time": 0.011024951934814453,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to choose a short hairstyle as an older woman [title] Decide how short you want to go. [step] Short can mean different things to different people, and the length of your hair can help you decide what cut to go for. For example, pixie cuts are great for women who want extremely short hairstyle while a bob works for those who want a chin-length cut.\n\nWhat happens next? Choose the most likely ending:\n\nA) What length you want has to do with either your hair or height : [substeps] Your height height. If you want to be younger, stick with half inch hair and half an inch length.\nB) You might decide that you want to go : [substeps] Chin-length mouth-length cheek-length eye or ear length pixie cut [title] Define your hair goals. [step] Try to determine why you want a short haircut.\nC) Shorter hair tends to look better with longer cuts, so don't buy a bob that looks too short. Stylists must know how to use or talk about shortest cuts.\nD) Here are some tips to help get you started : [substeps] It's not recommended that you go too long. Men over 40 can cut right above mid-length.\n",
+      "ground_truth": "You might decide that you want to go : [substeps] Chin-length mouth-length cheek-length eye or ear length pixie cut [title] Define your hair goals. [step] Try to determine why you want a short haircut.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.44451605726883836,
+      "response_time": 0.011059045791625977,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: A young woman is smoking a bong. she\n\nWhat happens next? Choose the most likely ending:\n\nA) starts herself on a table top that has a bunch of books and toys on it.\nB) take a drag off the bong and throws it on the yard.\nC) then starts to move back and forth on the chair smoking.\nD) exhales a lot of smoke.\n",
+      "ground_truth": "exhales a lot of smoke.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.4441979724727267,
+      "response_time": 0.01006174087524414,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: A black and white cat sits on a table next to a girl wearing a black and white sweater. The girl holds the cats paw in her left hand. the cat groomer\n\nWhat happens next? Choose the most likely ending:\n\nA) gently brushes the shit from the cat's paw.\nB) opens a black box and picks out a spray can to display.\nC) sprays a bowl with liquid.\nD) grabs a cat nail clipper in her right hand.\n",
+      "ground_truth": "grabs a cat nail clipper in her right hand.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.45626585371895534,
+      "response_time": 0.010348081588745117,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to organize gardening chores [title] Purchase a calendar or weekly planner. [step] This item will be used to record all of your gardening chores ahead of time. Whether you opt for a wall calendar or a weekly planner depends on your preferences.\n\nWhat happens next? Choose the most likely ending:\n\nA) [substeps] These calendars often hold down content for various seasons such as april through june, and usually include squash, beans, pumpkins, cucumbers, and lettuce as well as a list of watering needs. Although every week is okay, be sure to note how long each step will take.\nB) If you choose to keep your calendar and planner just on a table, you'll need to take some of the most often used items with you every time you go about the evening work. [substeps] Try to plan out the amount of time that each chore should take.\nC) A weekly planner is portable and will give you more space to be specific about chores, while a wall calendar can be hung in a highly visible location and may keep you from forgetting to consult it. [title] Begin listing all of your gardening chores on scratch paper.\nD) [substeps] You may opt for a list of daily chores you need to do (such as fixing problems on your patio or trimming hedges). One benefit of a schedule is that you can take additional breaks every hour.\n",
+      "ground_truth": "A weekly planner is portable and will give you more space to be specific about chores, while a wall calendar can be hung in a highly visible location and may keep you from forgetting to consult it. [title] Begin listing all of your gardening chores on scratch paper.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.4505184597041381,
+      "response_time": 0.011829853057861328,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to avoid peeing on the tampon string [title] Sit on the toilet seat, but don't pee yet. [step] If you are using a public toilet, you may wish to squat above the toilet, without actually resting on the seat. Otherwise you can use a seat-liner or tear several strips of toilet paper, lay them on the toilet seat, and sit.\n\nWhat happens next? Choose the most likely ending:\n\nA) [title] Use a toilet brush to gently brush away any contaminant from the brush. [step] This is important so that the brush doesn't have an unsightly dislodge from the string.\nB) [substeps] Make sure you have pulled down your pants and underwear or lifted your dress or skirt before sitting down. Squeeze the muscles around your urethra (the opening through which urine exits your body).\nC) [substeps] If you have a notepad, a pen, or a sharpie pen, use those to jot down notes. [title] Take some time to conduct research on tampons.\nD) [substeps] If you don't feel comfortable doing this yourself, see someone who can do it. You might tell them, \" it's okay to look for toilet paper.\n",
+      "ground_truth": "[substeps] Make sure you have pulled down your pants and underwear or lifted your dress or skirt before sitting down. Squeeze the muscles around your urethra (the opening through which urine exits your body).",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.4446118058269829,
+      "response_time": 0.010744094848632812,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    }
+  ]
+}

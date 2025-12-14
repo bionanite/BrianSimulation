@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "ARC",
+    "total_questions": 10,
+    "correct_answers": 9,
+    "accuracy": 0.9,
+    "average_confidence": 0.29999999999999993,
+    "average_response_time": 0.025800085067749022,
+    "total_time": 0.2599449157714844,
+    "per_category_accuracy": {
+      "unknown": 0.9
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T07:34:46.654082"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Sugars are necessary for human cell function. Which of the following are human cells not capable of doing?\n\nA) attaching sugars to protein molecules\nB) building larger molecules from sugars\nC) creating simple sugars from smaller molecules\nD) breaking down complex carbohydrates into simple sugars\n",
+      "ground_truth": "creating simple sugars from smaller molecules",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.011853933334350586,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: A scientist will repeat an investigation many times before finally making a conclusion. Which reason best explains why a scientist repeats an investigation?\n\nA) Repetition is needed to prove a hypothesis.\nB) Repetition is required to publish a conclusion.\nC) Repetition ensures the accuracy of obtained data.\nD) Repetition helps scientists remain objective about observations.\n",
+      "ground_truth": "Repetition ensures the accuracy of obtained data.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.02601909637451172,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: When the temperature of a sample of 25 water is -5\u00b0C, the water is\n\nA) a gas.\nB) a liquid.\nC) a solid.\nD) a vapor.\n",
+      "ground_truth": "a solid.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.015089988708496094,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: If you place a thermometer into a glass of ice water, what temperature should the thermometer read?\n\nA) -10\u00b0C\nB) 0\u00b0C\nC) 32\u00b0C\nD) 100\u00b0C\n",
+      "ground_truth": "0\u00b0C",
+      "prediction": "A",
+      "is_correct": false,
+      "confidence": 0.3,
+      "response_time": 0.01570916175842285,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Which process takes place when liquid water changes into water vapor?\n\nA) condensation\nB) transportation\nC) evaporation\nD) accumulation\n",
+      "ground_truth": "evaporation",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.03831601142883301,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: What is the proper procedure for safely disposing of an acid solution after finishing an experiment?\n\nA) pour the solution down the sink\nB) neutralize the solution with a base\nC) dilute the solution with more acid\nD) absorb the liquid with paper towels\n",
+      "ground_truth": "neutralize the solution with a base",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.045552730560302734,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: To produce light, the atoms inside a light bulb transform electrical energy into what other kind of energy?\n\nA) heat\nB) chemical\nC) mechanical\nD) electromagnetic\n",
+      "ground_truth": "electromagnetic",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.03284096717834473,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: A student performed this experiment: Four different types of seeds were planted in identical pots filled with the same kind and amount of soil. The pots were placed in a warm, sunny place and were given the same amount of water each day for a month. Which question about these seeds could be answered at the end of the month?\n\nA) Which seeds grew well in the dark?\nB) Which seeds produced the tallest plants?\nC) Which seeds survived in cold temperatures?\nD) Which seeds needed the least amount of water?\n",
+      "ground_truth": "Which seeds produced the tallest plants?",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.023458003997802734,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: A plateau is most likely formed by\n\nA) runoff from a river.\nB) weathering by waves.\nC) erosion of rock debris.\nD) a buildup of cooled lava.\n",
+      "ground_truth": "a buildup of cooled lava.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.026175975799560547,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: The saturation of surface rock with oxygen early in Earth's history reflected a change in Earth's atmosphere. This change directly made which life process possible?\n\nA) photosynthesis\nB) nitrogen fixation\nC) sulfur reduction\nD) aerobic respiration\n",
+      "ground_truth": "aerobic respiration",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.3,
+      "response_time": 0.022984981536865234,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    }
+  ]
+}

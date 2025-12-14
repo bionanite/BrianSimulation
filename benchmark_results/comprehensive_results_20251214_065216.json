@@ -1,0 +1,44 @@
+{
+  "timestamp": "20251214_065216",
+  "neuron_count": 10000,
+  "use_llm": false,
+  "enable_learning": true,
+  "results": {
+    "MMLU": {
+      "accuracy": 0.0,
+      "total_questions": 10,
+      "correct_answers": 0,
+      "average_confidence": 0.47697028939435393,
+      "average_response_time": 0.01087484359741211
+    },
+    "HellaSwag": {
+      "accuracy": 0.0,
+      "total_questions": 10,
+      "correct_answers": 0,
+      "average_confidence": 0.45315291656118395,
+      "average_response_time": 0.011065006256103516
+    },
+    "GSM8K": {
+      "accuracy": 0.0,
+      "total_questions": 10,
+      "correct_answers": 0,
+      "average_confidence": 0.440466170762019,
+      "average_response_time": 0.010252547264099122
+    },
+    "ARC": {
+      "accuracy": 0.0,
+      "total_questions": 10,
+      "correct_answers": 0,
+      "average_confidence": 0.4705841031815134,
+      "average_response_time": 0.01047530174255371
+    },
+    "HumanEval": {
+      "accuracy": 0.0,
+      "total_questions": 1,
+      "correct_answers": 0,
+      "average_confidence": 0.41457145944824236,
+      "average_response_time": 0.009972095489501953
+    }
+  },
+  "overall_accuracy": 0.0
+}

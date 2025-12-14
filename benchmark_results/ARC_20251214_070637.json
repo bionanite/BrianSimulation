@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "ARC",
+    "total_questions": 10,
+    "correct_answers": 7,
+    "accuracy": 0.7,
+    "average_confidence": 0.5331523940886396,
+    "average_response_time": 0.013118433952331542,
+    "total_time": 0.1322948932647705,
+    "per_category_accuracy": {
+      "unknown": 0.7
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T07:06:37.164623"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: How is a skin cell from a mouse similar to an amoeba?\n\nA) Both need energy.\nB) Both have cell walls.\nC) Both move with pseudopodia.\nD) Both consume carbon dioxide.\n",
+      "ground_truth": "Both need energy.",
+      "prediction": "D",
+      "is_correct": true,
+      "confidence": 0.5451590074433637,
+      "response_time": 0.014955759048461914,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Which of these chemical equations demonstrates the law of conservation of mass as it applies to the combustion of ethane?\n\nA) C_{2}H_{6} + 3O_{2} -> 2CO_{2} + 3H_{2}O\nB) C_{2}H_{6} + 5O_{2} -> 2CO_{2} + 3H_{2}O\nC) 2C_{2}H_{6} + 5O_{2} -> 4CO_{2} + 4H_{2}O\nD) 2C_{2}H_{6} + 7O_{2} -> 4CO_{2} + 6H_{2}O\n",
+      "ground_truth": "2C_{2}H_{6} + 7O_{2} -> 4CO_{2} + 6H_{2}O",
+      "prediction": "C",
+      "is_correct": true,
+      "confidence": 0.4571940127819069,
+      "response_time": 0.013208150863647461,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: The weight of an object changes at different locations on Earth. Which is a measurement of weight?\n\nA) 20 mL\nB) 16 N\nC) 45 m\nD) 90\u00b0C\n",
+      "ground_truth": "16 N",
+      "prediction": "B",
+      "is_correct": false,
+      "confidence": 0.49974109611734,
+      "response_time": 0.013424873352050781,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: A student dissolves 20 g of table salt in a glass of water. Which statement explains what happens to the weight of the table salt after it dissolves?\n\nA) The weight decreases because the pieces of table salt are much smaller.\nB) The weight increases because the table salt is spread throughout the water.\nC) The weight stays the same because the amount of table salt does not change.\nD) The weight is zero because the table salt has become a liquid.\n",
+      "ground_truth": "The weight stays the same because the amount of table salt does not change.",
+      "prediction": "C",
+      "is_correct": true,
+      "confidence": 0.5166031074624161,
+      "response_time": 0.013382911682128906,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Some bacteria use iron found in their systems as a means to guide their movement. Which stimulus most likely triggers this movement mechanism?\n\nA) magnetism\nB) oxygen\nC) light\nD) heat\n",
+      "ground_truth": "magnetism",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.5535686072440305,
+      "response_time": 0.014984846115112305,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Which statement explains why most salmon leave salt water and return to fresh water?\n\nA) It is a learned behavior that maintains the population.\nB) It is a learned behavior that maintains salt concentrations.\nC) It is an inherited behavior that maintains the population.\nD) It is an inherited behavior that maintains salt concentrations.\n",
+      "ground_truth": "It is an inherited behavior that maintains the population.",
+      "prediction": "B",
+      "is_correct": true,
+      "confidence": 0.5456216212189936,
+      "response_time": 0.012468099594116211,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Gravity and magnetism are both\n\nA) common forces\nB) natural cycles\nC) states of matter\nD) forms of energy\n",
+      "ground_truth": "common forces",
+      "prediction": "C",
+      "is_correct": true,
+      "confidence": 0.5493396390753866,
+      "response_time": 0.011935949325561523,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Magnesium bromide is one of the most abundant compounds found in sea water. Which formula correctly represents magnesium bromide?\n\nA) MgBr\nB) MgBr_{2}\nC) Mg_{2}Br\nD) Mg_{3}Br_{2}\n",
+      "ground_truth": "MgBr_{2}",
+      "prediction": "B",
+      "is_correct": true,
+      "confidence": 0.5609324059960521,
+      "response_time": 0.012033939361572266,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: A pot is touching the flame of a gas stove, and the substance in the pot is heating up due to the contact. This is an example of which type of energy transfer?\n\nA) radiation\nB) convection\nC) conduction\nD) vaporization\n",
+      "ground_truth": "conduction",
+      "prediction": "B",
+      "is_correct": false,
+      "confidence": 0.5262071438663494,
+      "response_time": 0.012470006942749023,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Sugars are necessary for human cell function. Which of the following are human cells not capable of doing?\n\nA) attaching sugars to protein molecules\nB) building larger molecules from sugars\nC) creating simple sugars from smaller molecules\nD) breaking down complex carbohydrates into simple sugars\n",
+      "ground_truth": "creating simple sugars from smaller molecules",
+      "prediction": "D",
+      "is_correct": false,
+      "confidence": 0.5771572996805552,
+      "response_time": 0.012319803237915039,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    }
+  ]
+}

@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "HellaSwag",
+    "total_questions": 10,
+    "correct_answers": 0,
+    "accuracy": 0.0,
+    "average_confidence": 0.4524501001533257,
+    "average_response_time": 0.011766314506530762,
+    "total_time": 0.1191568374633789,
+    "per_category_accuracy": {
+      "unknown": 0.0
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T06:51:41.867341"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: A young man is seen playing drums in front of an audience. other people\n\nWhat happens next? Choose the most likely ending:\n\nA) are seen speaking to the camera as well as running into the audience.\nB) are watching as he continues to play.\nC) are walking by back and fourth.\nD) are shown playing guitar while the man plays more drums.\n",
+      "ground_truth": "are shown playing guitar while the man plays more drums.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.4527515066041998,
+      "response_time": 0.014095067977905273,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to look good for a night out [title] Give yourself lots of time before you have to go. [title] Use a shampoo and conditioner made for your hair type, wash your hair well and leave your conditioner in for a few minutes, then wash out. [step] Towel dry your hair, comb through with a wide tooth comb.\n\nWhat happens next? Choose the most likely ending:\n\nA) [title] Use a good conditioner made for your hair type, wash your hair well and leave your conditioner in for a few minutes, then wash out. [step] Towel dry your hair, comb through with a wide tooth comb.\nB) Apply the conditioner, then put in your favorite hairspray. [title] Find clothes in neutral colors such as pink, teal or brown.\nC) [title] Blow dry your hair, then use straighteners to make it straighter! [step] However, if you prefer loose curls (or your hair is naturally curly) use a diffuser with a curling balm. This will ensure that the curls are bouncy and full.\nD) If desired, pull it back into a messy bun without the comb. If not, gently comb through with a water-filled towel.\n",
+      "ground_truth": "[title] Blow dry your hair, then use straighteners to make it straighter! [step] However, if you prefer loose curls (or your hair is naturally curly) use a diffuser with a curling balm. This will ensure that the curls are bouncy and full.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.43874730474120477,
+      "response_time": 0.012339115142822266,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to hide your nipples [title] Wear reusable silicone nipple covers under thin fabrics. [step] These small, circular or flower-shaped adhesive coverings are meant to cover only your nipples, so they're a great option for low-cut tops and thin or sheer fabrics that might make your nipples visible. Stick the adhesive side onto your nipple and press it down gently.\n\nWhat happens next? Choose the most likely ending:\n\nA) [substeps] You can get small silicone cover coverings specially designed for high necklines or drop tops. Silicone covers can be particularly helpful if you're trying to hide your breasts from crowds or high tech shoppers.\nB) Your breasts will no longer be covered by the covering. [substeps] This option is available at most department stores.\nC) Look for a color close your skin tone for the least noticeable solution. [substeps] You can buy stick-on nipple covers online or in stores that sell bras and related accessories.\nD) [substeps] Silicone is flammable and usually contains mercury, which can be harmful to skin. Wear plastic foil tops to protect your skin from moisture.\n",
+      "ground_truth": "Look for a color close your skin tone for the least noticeable solution. [substeps] You can buy stick-on nipple covers online or in stores that sell bras and related accessories.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.45044939113807875,
+      "response_time": 0.011720895767211914,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to write a quest story [title] Think of a story idea. [step] Be sure to have a thick plot because the quest story is not only about the outward physical journey but also involves the protagonist's inner struggles, and often feeds into a much bigger picture, such as saving a kingdom, rescuing a leader, solving a bigger puzzle, and so forth. [substeps] Consider using flashbacks.\n\nWhat happens next? Choose the most likely ending:\n\nA) These are formed when you take out a few events from a sequence of events and place it somewhere else to create a flashback or to account for such \" time slips \". [title] Include solid, believable and interesting characters.\nB) These are generally innovative and can appear quickly in most stories. In them, the reader will need to know about something without fearing, about the world they have then just seen.\nC) What if some mysterious people in mythology throw away the sleeping mask and revive somehow? This is an easy option which will give you a viable plot idea. Imagination is a good way to be creative but can also be very interesting.\nD) Flashbacks are characters' reactions, patterns, things that they did, or a series of events that occurred. In recalling these events, you may find evidence that supports your idea or that you have a strong backing in your central premise.\n",
+      "ground_truth": "These are formed when you take out a few events from a sequence of events and place it somewhere else to create a flashback or to account for such \" time slips \". [title] Include solid, believable and interesting characters.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.45775622145320816,
+      "response_time": 0.011924028396606445,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to obtain hospitalization insurance [title] Take a look at your current health insurance. [step] Pay attention to what costs are covered if you need surgery or a lengthy hospital stay. This will prepare you for the type of hospitalization insurance you need.\n\nWhat happens next? Choose the most likely ending:\n\nA) [substeps] Generally, these are insurance costs which will be covered by your insurance plan as you recover from carpal tunnel syndrome. With carpal tunnel syndrome, benefits from hospital stay are minimal and medical care is minimal.\nB) [title] Review plans available from your own health insurer and other insurance companies. [step] You may be able to add additional hospitalization insurance to your current health plan, if you have one.\nC) [title] Ask about the exact coverage you would like to have. [step] The health insurance information sheets section of your yellow pages will give you a breakdown of how much coverage you can require over a specific geographical area.\nD) [substeps] Illness, physical and emotional health is usually covered in these hospitals, but for health premiums you will need to consider additional health treatment programs. Also look at the cost statement or surcharge you receive as well as your payment history.\n",
+      "ground_truth": "[title] Review plans available from your own health insurer and other insurance companies. [step] You may be able to add additional hospitalization insurance to your current health plan, if you have one.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.46570084057901046,
+      "response_time": 0.011545896530151367,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to lace shoes [title] Put a shoe in front of you with the toe facing away from you. [step] Starting from the two frontmost opposite facing holes, insert each end of the shoelace from the inside. Make sure both sides of the remaining laces are equal.\n\nWhat happens next? Choose the most likely ending:\n\nA) Pull the two laces through one more hole from the inside of the shoe before tossing it away. [substeps] This step is not required if you use a shoe that is not elbow-length or has neck-length.\nB) [title] Working in a diagonal direction, insert the right end of the shoelace into the next left hole (from the top). [step] Alternate method: you can insert the lace pointing from the front of the shoe inward (instead of going from the inside pointing outward), to give a more neat appearance.\nC) Slide both laces through one the middle hole and into the opposite hole. [title] Slide one end of the lace through the open-toe hole and back through the other one.\nD) [substeps] The laces will appear to be together now. With this position, once you've put the shoes on, you need to make sure you only have one position for both laces.\n",
+      "ground_truth": "[title] Working in a diagonal direction, insert the right end of the shoelace into the next left hole (from the top). [step] Alternate method: you can insert the lace pointing from the front of the shoe inward (instead of going from the inside pointing outward), to give a more neat appearance.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.45108158385247604,
+      "response_time": 0.011277198791503906,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: Blonde woman is running in a race track and make a jump in an elastic bed. in the background\n\nWhat happens next? Choose the most likely ending:\n\nA) a track athlete is running and make a dive in a rectangular bowl.\nB) people are running around the court.\nC) a screen is being turned on as people take pictures.\nD) women or man watch throw a soccer match and play more soccer against women and end by outro.\n",
+      "ground_truth": "people are running around the court.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.4524043859088509,
+      "response_time": 0.010550737380981445,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to do doll like makeup [title] Apply foundation. [step] Use your finger, a blending sponge, or a brush to apply liquid foundation evenly all over the skin of your face in light, circular dabbing motions. [substeps] Use foundation that matches your skin tone, or is just one shade lighter.\n\nWhat happens next? Choose the most likely ending:\n\nA) [title] Apply one layer of eyeshadow. [step] Use a large makeup brush to apply one layer of eyeshadow.\nB) [title] Blend it in with a makeup sponge. [step] Use a blending sponge to blend off the excess foundation.\nC) Allow foundation to dry before applying the fake makeup. Apply blush to your cheekbones, ears, nose and mouth.\nD) Feel free to apply foundation makeup a little thicker than you would normally, as the doll look features a porcelain or plastic face that is unlike natural skin. Add concealer to any blemishes, red patches, or dark circles under the eyes so that your face color is completely even.\n",
+      "ground_truth": "Feel free to apply foundation makeup a little thicker than you would normally, as the doll look features a porcelain or plastic face that is unlike natural skin. Add concealer to any blemishes, red patches, or dark circles under the eyes so that your face color is completely even.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.45144939768040004,
+      "response_time": 0.010932207107543945,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to handle challenges with a troubled spouse [title] Choose the right location. [step] If your conversations tend to turn into screaming matches, pick a public location to talk. The key is to pick somewhere that doesn't tolerate loud talking, or a place in which you'd be embarrassed if anyone heard you yelling.\n\nWhat happens next? Choose the most likely ending:\n\nA) [substeps] Many employers and the entertainment industry have office visit policies in place to monitor what confidential information your spouse shares with others. It's important to have an appropriate place to talk in private.\nB) Pick a place where there's low visibility, and you won't be interrupted by the other members of the household. [substeps] For example, if you feel you won't be heard much in a large public space (like a restaurant), consider choosing a relatively quiet street or parking lot.\nC) A public domain like a library or a parking lot will work, as long as it isn't an area prone to disorder or racism. [substeps] Avoid public places like restaurants, as they might draw attention to you and your relationship.\nD) By choosing the right spot, you may have a more productive conversation. [substeps] Libraries, coffee shops, busy parks, and even the shopping mall are all good places to have a potentially heated conversation.\n",
+      "ground_truth": "By choosing the right spot, you may have a more productive conversation. [substeps] Libraries, coffee shops, busy parks, and even the shopping mall are all good places to have a potentially heated conversation.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.45323862402010195,
+      "response_time": 0.012570858001708984,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: She continues playing her tune on the violin with full concentration without pausing. She constantly looks down at the violin as she plays the notes. after she\n\nWhat happens next? Choose the most likely ending:\n\nA) is done in the tune she presents the violin to the camera.\nB) finishes the song she throws the violin down and moves her arms in the air.\nC) finishes, she puts the violin away and axes up to play again.\nD) finishes playing the violin, she smiles and walks away.\n",
+      "ground_truth": "finishes playing the violin, she smiles and walks away.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.4509217455557267,
+      "response_time": 0.01070713996887207,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    }
+  ]
+}

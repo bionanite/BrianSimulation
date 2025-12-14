@@ -1,0 +1,300 @@
+{
+  "summary": {
+    "benchmark_name": "MMLU",
+    "total_questions": 20,
+    "correct_answers": 0,
+    "accuracy": 0.0,
+    "average_confidence": 0.46289750695411236,
+    "average_response_time": 0.011825013160705566,
+    "total_time": 0.23895788192749023,
+    "per_category_accuracy": {
+      "high_school_biology": 0.0,
+      "high_school_chemistry": 0.0
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T06:24:25.950996"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Crossover would most likely occur in which situation?\n\nA) Two genes (1 and 2) are located right next to each other on chromosome A.\nB) Gene 1 is located on chromosome A, and gene 2 is on chromosome B.\nC) Genes 1 and 2 are located near each other on the X chromosome.\nD) Gene 1 is located on chromosome A; gene 2 is located far away but on the same chromosome.\n",
+      "ground_truth": "Gene 1 is located on chromosome A; gene 2 is located far away but on the same chromosome.",
+      "prediction": "True",
+      "is_correct": false,
+      "confidence": 0.44536372714734906,
+      "response_time": 0.012202024459838867,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: The reaction A + B \u2192 C is catalyzed by enzyme K. If the reaction is in equilibrium, which of the following would allow more product C to be produced?\n\nA) removing some of reactant A\nB) removing some of reactant C\nC) adding more enzyme K\nD) increasing the temperature of the system\n",
+      "ground_truth": "removing some of reactant C",
+      "prediction": "True",
+      "is_correct": false,
+      "confidence": 0.4641495910220432,
+      "response_time": 0.013833999633789062,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: The principle inorganic compound found in living things is\n\nA) carbon\nB) oxygen\nC) water\nD) glucose\n",
+      "ground_truth": "water",
+      "prediction": "True",
+      "is_correct": false,
+      "confidence": 0.507050039417233,
+      "response_time": 0.012009382247924805,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Charles Darwin was the first person to propose\n\nA) that evolution occurs.\nB) a mechanism for how evolution occurs.\nC) that the Earth is older than a few thousand years.\nD) a mechanism for evolution that was supported by evidence.\n",
+      "ground_truth": "a mechanism for evolution that was supported by evidence.",
+      "prediction": "True",
+      "is_correct": false,
+      "confidence": 0.45547808501933607,
+      "response_time": 0.011536121368408203,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Although mutations occur at a regular and predictable rate, which of the following statements is the LEAST likely reason the frequency of mutation appears to be low?\n\nA) Some mutations produce alleles that are recessive and may not be expressed.\nB) Some undesirable phenotypic traits may be prevented from reproducing.\nC) Some mutations cause such drastic phenotypic changes that they are removed from the gene pool.\nD) The predictable rate of mutation results in ongoing variability in a gene pool.\n",
+      "ground_truth": "The predictable rate of mutation results in ongoing variability in a gene pool.",
+      "prediction": "True",
+      "is_correct": false,
+      "confidence": 0.47214886886405594,
+      "response_time": 0.011461257934570312,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Chemiosmosis occurs in I.Mitochondria II. Nuclei III. Chloroplasts\n\nA) I only\nB) II only\nC) III only\nD) I and III\n",
+      "ground_truth": "I and III",
+      "prediction": "True",
+      "is_correct": false,
+      "confidence": 0.43176312134935835,
+      "response_time": 0.01167607307434082,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: The theory of evolution is most accurately described as\n\nA) an educated guess about how species originate.\nB) one possible explanation, among several scientific alternatives, about how species have come into existence.\nC) an opinion that some scientists hold about how living things change over time.\nD) an overarching explanation, supported by much evidence, for how populations change over time.\n",
+      "ground_truth": "an overarching explanation, supported by much evidence, for how populations change over time.",
+      "prediction": "True",
+      "is_correct": false,
+      "confidence": 0.49223586893755067,
+      "response_time": 0.011919021606445312,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Most animal cells, regardless of species, are relatively small and about the same size. Relative to larger cells, why is this?\n\nA) Smaller cells avoid excessive osmosis and subsequent lysis.\nB) Smaller cells have a smaller surface-to-volume ratio.\nC) Smaller cells have a larger surface-to-volume ratio.\nD) Smaller cells fit together more tightly.\n",
+      "ground_truth": "Smaller cells have a larger surface-to-volume ratio.",
+      "prediction": "True",
+      "is_correct": false,
+      "confidence": 0.4791915544596703,
+      "response_time": 0.011934995651245117,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: A population undergoes a shift in which those who are really tall and those who are really short decrease in relative frequency compared to those of medium size, due to a change in the availability of resources. This is an example of\n\nA) directional selection.\nB) stabilizing selection.\nC) disruptive selection.\nD) sympatric speciation.\n",
+      "ground_truth": "stabilizing selection.",
+      "prediction": "True",
+      "is_correct": false,
+      "confidence": 0.4913862370996437,
+      "response_time": 0.011394023895263672,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: In general, animal cells differ from plant cells in that animal cells have\n\nA) a cell wall made of cellulose\nB) lysosomes\nC) large vacuoles that store water\nD) centrioles within centrosomes\n",
+      "ground_truth": "centrioles within centrosomes",
+      "prediction": "True",
+      "is_correct": false,
+      "confidence": 0.4730952238211306,
+      "response_time": 0.011183023452758789,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Argon can be liquefied at low temperature because of\n\nA) dipole-dipole attractive forces\nB) hydrogen bonding\nC) instantaneous and induced dipoles\nD) the very low temperature\n",
+      "ground_truth": "instantaneous and induced dipoles",
+      "prediction": "True",
+      "is_correct": false,
+      "confidence": 0.5160126189546754,
+      "response_time": 0.011594772338867188,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_chemistry"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Which would be the easiest way to burn a copper penny?\n\nA) Hold the copper penny with crucible tongs, and heat strongly in the flame of a Bunsen burner.\nB) Use the method in (A), but use an oxyacetylene torch to reach a higher temperature.\nC) Grind the copper penny into very small, dust-sized particles, and spray the particles into a Bunsen burner flame.\nD) Dissolve the copper penny in acid, precipitate the hydroxide, and heat in a Bunsen burner flame to make the oxide.\n",
+      "ground_truth": "Grind the copper penny into very small, dust-sized particles, and spray the particles into a Bunsen burner flame.",
+      "prediction": "True",
+      "is_correct": false,
+      "confidence": 0.4702110645112657,
+      "response_time": 0.011646032333374023,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_chemistry"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Atoms of four elements are examined: carbon, nitrogen, neon, and sulfur. Which element would have a photoelectron spectra in which the peak representing electrons with the lowest ionization energy would be three times higher than all other peaks?\n\nA) Carbon\nB) Nitrogen\nC) Neon\nD) Sulfur\n",
+      "ground_truth": "Neon",
+      "prediction": "True",
+      "is_correct": false,
+      "confidence": 0.48725699019850544,
+      "response_time": 0.011439085006713867,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_chemistry"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Joseph Priestly discovered oxygen gas by the decomposition of solid mercury(II) oxide, HgO, to oxygen gas, O2, and liquid mercury metal, Hg. How many moles of oxygen gas will form when 4.32 g of solid mercury(II) oxide decomposes? The formula mass of mercury(II) oxide is 216 g mol^-1.\n\nA) 0.100 mol\nB) 0.0100 mol\nC) 0.0200 mol\nD) 0.0150 mol\n",
+      "ground_truth": "0.0100 mol",
+      "prediction": "True",
+      "is_correct": false,
+      "confidence": 0.4469113559684963,
+      "response_time": 0.011428117752075195,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_chemistry"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: What is the pH of a solution prepared by dissolving 0.1665 mole of hypochlorous acid (HClO) in enough water to make 500 mL of solution? The Ka is 3.0 \u00d7 10^-4\n\nA) 1\nB) 2\nC) 5.4 \u00d7 10^-3\nD) 1.76\n",
+      "ground_truth": "2",
+      "prediction": "True",
+      "is_correct": false,
+      "confidence": 0.42041671254566765,
+      "response_time": 0.011332035064697266,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_chemistry"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Solvents A and B form an ideal solution. Solvent A has a vapor pressure of 345 torr at room temperature. At the same temperature, solvent B has a vapor pressure of 213 torr. What is the vapor pressure of a mixture where the mole fraction of A is 0.285?\n\nA) 213 torr\nB) 345 torr\nC) 568 torr\nD) 251 torr\n",
+      "ground_truth": "251 torr",
+      "prediction": "True",
+      "is_correct": false,
+      "confidence": 0.4112460975035521,
+      "response_time": 0.011307001113891602,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_chemistry"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Of the following pairs of elements, which pair has the second element with the larger electronegativity based on its position in the periodic table?\n\nA) Oxygen, chromium\nB) Chlorine, iodine\nC) Calcium, cesium\nD) Sulfur, nitrogen\n",
+      "ground_truth": "Sulfur, nitrogen",
+      "prediction": "True",
+      "is_correct": false,
+      "confidence": 0.4976744417852763,
+      "response_time": 0.0118408203125,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_chemistry"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Carbon has an atomic radius of 77 pm and a first ionization energy of 1086 kJ/mol.\n\nA) 70 pm, 1402 kJ/mol\nB) 86 pm, 898 kJ/mol\nC) 135 pm, 523 kJ/mol\nD) 40 pm, 995 kJ/mol\n",
+      "ground_truth": "70 pm, 1402 kJ/mol",
+      "prediction": "True",
+      "is_correct": false,
+      "confidence": 0.41211472788855325,
+      "response_time": 0.011983156204223633,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_chemistry"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Nitrogen's electronegativity value is between those of phosphorus and oxygen. Which of the following correctly describes the relationship between the three values?\n\nA) The value for nitrogen is less than that of phosphorus because nitrogen is larger, but greater than that of oxygen because nitrogen has a greater effective nuclear charge.\nB) The value for nitrogen is less than that of phosphorus because nitrogen has fewer protons but greater than that of oxygen because nitrogen has less valence electrons.\nC) The value for nitrogen is greater than that of phosphorus because nitrogen has less electrons, but less than that of oxygen because nitrogen is smaller.\nD) The value for nitrogen is greater than that of phosphorus because nitrogen is smaller, but less than that of oxygen because nitrogen has a smaller effective nuclear charge.\n",
+      "ground_truth": "The value for nitrogen is greater than that of phosphorus because nitrogen is smaller, but less than that of oxygen because nitrogen has a smaller effective nuclear charge.",
+      "prediction": "True",
+      "is_correct": false,
+      "confidence": 0.4745565459985024,
+      "response_time": 0.011940240859985352,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_chemistry"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: A solution of sulfurous acid, H2SO3, is present in an aqueous solution. Which of the following represents the concentrations of three different ions in solution?\n\nA) [SO32-] > [HSO3-] > [H2SO3]\nB) [H2SO3] > [HSO3-] > [SO32-]\nC) [H2SO3] > [HSO3-] = [SO32-]\nD) [SO32-] = [HSO3-] > [H2SO3]\n",
+      "ground_truth": "[H2SO3] > [HSO3-] > [SO32-]",
+      "prediction": "True",
+      "is_correct": false,
+      "confidence": 0.4096872665903796,
+      "response_time": 0.012839078903198242,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_chemistry"
+      }
+    }
+  ]
+}

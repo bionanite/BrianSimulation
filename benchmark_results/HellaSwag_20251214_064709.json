@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "HellaSwag",
+    "total_questions": 10,
+    "correct_answers": 0,
+    "accuracy": 0.0,
+    "average_confidence": 0.4535512572936339,
+    "average_response_time": 0.017644500732421874,
+    "total_time": 0.18114280700683594,
+    "per_category_accuracy": {
+      "unknown": 0.0
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T06:47:09.132944"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to dye buzzed hair [title] Decide what color you want to dye your hair. [step] This will determine whether or not you need to bleach it first. If you are going for a darker shade than your own, you do not need to bleach your hair and can go right on to the dyeing portion.\n\nWhat happens next? Choose the most likely ending:\n\nA) If you are going for a lighter shade, this may not be the best decision. Lighter shades, such as brown, bright blue, and gray, have significantly shorter hair and can be more difficult to bleach.\nB) If you are going for a darker shade, you will need to go straight to the color section first and then integrate the dye. [title] Take a selfie before bleaching your hair, to make sure that you know all of the steps.\nC) If you are going for a mix of reds and greens, you will need to do the bleach a little bit ahead of time. [title] Put on rubber gloves and purchase bleaching chemicals.\nD) If you are going a lighter shade, however, you will need to bleach first. [substeps] If you have light hair and are dyeing it darker, click here to continue.\n",
+      "ground_truth": "If you are going a lighter shade, however, you will need to bleach first. [substeps] If you have light hair and are dyeing it darker, click here to continue.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.4589658519091335,
+      "response_time": 0.016015052795410156,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: A woman is seated in front of a camera. Her hair is in spiral curlers. she\n\nWhat happens next? Choose the most likely ending:\n\nA) stands and puts her bra and panties on.\nB) demonstrates how to remove them, showing the final result.\nC) begins to trim the side, then gives roller marks and ps.\nD) is explaining the process of braiding her hair.\n",
+      "ground_truth": "demonstrates how to remove them, showing the final result.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.4592385196554856,
+      "response_time": 0.021136999130249023,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to make a mustache [title] Flat iron your craft hair. [step] You can purchase craft hair online or at a craft store, such as michael's. Make sure to purchase hair designed to be used in costumes or on things like dolls.\n\nWhat happens next? Choose the most likely ending:\n\nA) Use a comb to flatten your hair or shape your hair into a mustache. If the texture of your hair is not the same as what you want, you can do a manicure or mod podge job on the area where you want the mustache to go.\nB) Run a flat iron over your craft hair to make it smooth and easy to work with before you start forming your mustache. [substeps] Craft hair can sometimes be very fine, so it's best to err on the side of caution and use a low heat setting.\nC) Two methods are the flat iron and the round-tooth mod 2. Both methods work, but all your hair must be flat.\nD) You want the hairs on your mustache to be smooth, and go to the hair where they attach in your mustache. [substeps] Be extremely careful which side of your mustache you flat iron on.\n",
+      "ground_truth": "Run a flat iron over your craft hair to make it smooth and easy to work with before you start forming your mustache. [substeps] Craft hair can sometimes be very fine, so it's best to err on the side of caution and use a low heat setting.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.43733463314927573,
+      "response_time": 0.015281915664672852,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: A crowd is cheering in front of a stage. cheerleaders\n\nWhat happens next? Choose the most likely ending:\n\nA) come out and perform a routine on the stage.\nB) run down the track toward the stage.\nC) are on the stage playing drums.\nD) glide down a path from a line.\n",
+      "ground_truth": "come out and perform a routine on the stage.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.4552191501216877,
+      "response_time": 0.012133121490478516,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to act shy [title] Wear simple clothing. [step] One of the first things people notice is what you are wearing. Put on simple, monochromatic clothes that cover your body to give the impression that you're shy and don't want to expose anything about yourself.\n\nWhat happens next? Choose the most likely ending:\n\nA) [substeps] Choose dark and conservative colors like black or navy. Avoid bright colors or prints that draw attention to you like animal prints, red or yellow.\nB) [substeps] Choose comfortable clothing so that you aren't wearing tight clothes. If you are running errands, it might be a good idea to bring your schoolbag with you, but you can bring it with you when you walk to work so that you don't get caught off guard.\nC) For example, make sure you keep your hair out of your face. If you want to be shyness-like, pick out pants and tops with what you think should be appropriate.\nD) [substeps] For instance, wear a plain bathing suit with a striped button-down or a pair of skinny jeans with form-fitting tops. This is a great way to show your body language without feeling self-conscious.\n",
+      "ground_truth": "[substeps] Choose dark and conservative colors like black or navy. Avoid bright colors or prints that draw attention to you like animal prints, red or yellow.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.4483273605647181,
+      "response_time": 0.015083074569702148,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to nebulize a toddler [title] Talk to your doctor. [step] Before you use a nebulizer with your toddler, talk to their doctor. They'll give your specific instructions for how much medication to use and how long your child should use the nebulizer.\n\nWhat happens next? Choose the most likely ending:\n\nA) Be sure to tell your doctor any concerns you have. [substeps] Some nebulizers may tell you what kind of candy the child might eat.\nB) [title] Administer 3 to 4 doses of water each day. [step] You should be purchasing a nebulizer that's only filled with 3-4 small tablets or liquid to ensure your child cannot ingest its contents.\nC) Depending on the complexity of your child's injury and their age, they may also recommend different use options. [substeps] Make sure you're using the correct dosage.\nD) Your doctor can tell you where to get a nebulizer, or you can purchase them from most pharmacies. [substeps] Make sure you follow your doctor's directions very carefully.\n",
+      "ground_truth": "Your doctor can tell you where to get a nebulizer, or you can purchase them from most pharmacies. [substeps] Make sure you follow your doctor's directions very carefully.",
+      "prediction": "1",
+      "is_correct": false,
+      "confidence": 0.4555719301431516,
+      "response_time": 0.01475834846496582,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: A graphic introduces the hand car wash video. The car is washed first gently with soap. next\n\nWhat happens next? Choose the most likely ending:\n\nA) is a clean car wash video.\nB) , two cars slowly drive by.\nC) , the tires are soaped and washed thoroughly.\nD) , it is shown from behind.\n",
+      "ground_truth": ", the tires are soaped and washed thoroughly.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.46165613909843495,
+      "response_time": 0.013435840606689453,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: We see a man talking while walking through a house. We see another man working on the floor. we\n\nWhat happens next? Choose the most likely ending:\n\nA) see a young lady skateboarding.\nB) see a man smiling and handing out carpet samples.\nC) see a man laying tile in another room.\nD) see a ladder in a room and walk up a ladder.\n",
+      "ground_truth": "see a man laying tile in another room.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.450620799990423,
+      "response_time": 0.01749873161315918,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to apply aftershave splash [title] Rinse your face with cold water immediately after shaving. [step] Before you even consider applying aftershave, you want to make sure your face is completely free of shaving cream or leftover hairs. Fill your cupped hands with cold water and rub it thoroughly over the entire area that you shaved.\n\nWhat happens next? Choose the most likely ending:\n\nA) [substeps] Warm water will slow down the process. You should also add a splash of aftershave spray to your water to keep your shaving chemicals from absorbing into your skin.\nB) Your freshly shaved face should be completely covered and clear of hard-to-see hairs. [title] Store shaving cream in the refrigerator.\nC) The benefit of cold water is that it closes the pores of your skin which is best for aftershave application. Be gentle as your rub your face so you don't chafe or irritate the skin.\nD) By rinsing thoroughly, you can ensure that each piece of stubble is covered completely. [substeps] If you use a soap, do so in a quiet, secure place.\n",
+      "ground_truth": "The benefit of cold water is that it closes the pores of your skin which is best for aftershave application. Be gentle as your rub your face so you don't chafe or irritate the skin.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.45687169875462574,
+      "response_time": 0.027615070343017578,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to make sticky tack [title] Find an old glue stick. [step] You want one that has some glue left that's too dry to spread. If you want, you can use a brand new glue stick.\n\nWhat happens next? Choose the most likely ending:\n\nA) Otherwise, you can substitute real glue sticks for whatever type of stick is handy. [substeps] Popular types of sticks include tack-head and poster glue, or the type that comes in the specialty wrappers section of your local grocery store.\nB) Regular stick comes in either school and office supplies, traditional, etc. [substeps] Petroleum jelly, scented wax, white craft glue, super glue or masking tape work great for this project.\nC) Traditional glue sticks come in a variety of materials, and they're all different types of sticks : [substeps] Regular scissors rolling pin heavy cotton twine tape nail filler [title] Cut your twine. [step] Cut 5 to 8 pieces of twine in a total of 10.\nD) Just let it sit without its cap for a few days so it can dry out and become more tacky. [substeps] Don't try this with a new glue stick that's still spreadable.\n",
+      "ground_truth": "Just let it sit without its cap for a few days so it can dry out and become more tacky. [substeps] Don't try this with a new glue stick that's still spreadable.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.45170648954940296,
+      "response_time": 0.023486852645874023,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    }
+  ]
+}

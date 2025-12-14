@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "HellaSwag",
+    "total_questions": 10,
+    "correct_answers": 8,
+    "accuracy": 0.8,
+    "average_confidence": 0.5999431440504267,
+    "average_response_time": 0.01147146224975586,
+    "total_time": 0.11562991142272949,
+    "per_category_accuracy": {
+      "unknown": 0.8
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T07:07:40.459953"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: A close up of a lawn is seen followed by a person walking in holding a tool. the person\n\nWhat happens next? Choose the most likely ending:\n\nA) continues raising the blades in the air and throws the tool into the grass.\nB) walks up a flight of steps with the tool and polishes the grass.\nC) then begins cutting up the lawn with the tool.\nD) turns around and walks back to his lawn.\n",
+      "ground_truth": "then begins cutting up the lawn with the tool.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.5916320402640849,
+      "response_time": 0.011124134063720703,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: He continues to show various other ways to shoot the basket as he runs and dunks the ball straight into the basket. he\n\nWhat happens next? Choose the most likely ending:\n\nA) also flashes some more text for the other teams to see.\nB) demonstrates different techniques of shooting the ball right into the hoop without missing a single basket.\nC) then moves to the next basket and when he's done he walks away looking disappointed.\nD) is also shown putting his shoes on, talking for a little bit, and speaking into a microphone before he leaves.\n",
+      "ground_truth": "demonstrates different techniques of shooting the ball right into the hoop without missing a single basket.",
+      "prediction": "D",
+      "is_correct": true,
+      "confidence": 0.6262955468855799,
+      "response_time": 0.01128387451171875,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: The man not fishing stands up briefly. The man not fishing inserts his hand into the water several times. the man not fishing\n\nWhat happens next? Choose the most likely ending:\n\nA) moves his hand around from the water and gives the man a high five.\nB) gets off of the hook.\nC) helps to pull a fish out of the ice fishing hole.\nD) grabs a fish and sits back down again.\n",
+      "ground_truth": "helps to pull a fish out of the ice fishing hole.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.5980943914838135,
+      "response_time": 0.01077413558959961,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to make a rope braid with only two strands [title] Brush your hair. [step] Your hair should be smooth and free of tangles when you begin to make the rope braid. Use a brush or comb to thoroughly brush any knots or tangles out of your hair.\n\nWhat happens next? Choose the most likely ending:\n\nA) You can use a moisturizing cream to smooth your hair out if it is not complying. [substeps] You can also dampen your hair with water to make it easier to put back in a ponytail and braid.\nB) If you have fine, fine hair, you can skip the brush or comb and just use the palm of your hand to tousle your hair into the braid. [title] Wrap a piece of cord in a cheesecloth.\nC) Your hair should also be relaxed and even. [title] Tie a few strands of hair in two bows.\nD) [substeps] Use a texturizing hairspray or mousse, which has been approved by the american academy of hairstylists. To make the rope braid, rub a water conditioner into your hair and smooth it down using a plastic comb.\n",
+      "ground_truth": "You can use a moisturizing cream to smooth your hair out if it is not complying. [substeps] You can also dampen your hair with water to make it easier to put back in a ponytail and braid.",
+      "prediction": "B",
+      "is_correct": true,
+      "confidence": 0.5793146303072572,
+      "response_time": 0.01201772689819336,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: A man shows a video of himself training for the weightlifting events in the olympics. Several times, he picks up weight and lifts it over his head. sometimes he\n\nWhat happens next? Choose the most likely ending:\n\nA) lifts so far he is dragged to the ground.\nB) put it down to raise it above his head while his friends record it.\nC) lowers his arms and his hands up.\nD) fails, other times he is successful.\n",
+      "ground_truth": "fails, other times he is successful.",
+      "prediction": "B",
+      "is_correct": false,
+      "confidence": 0.6051462589725852,
+      "response_time": 0.011066198348999023,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to prove adultery [title] Determine why you want to prove adultery. [step] Before the advent of \" no fault \" divorce, proving adultery was one of the few grounds on which a divorce could be granted. Today, however, couples can simply claim irreconcilable differences and be divorced.\n\nWhat happens next? Choose the most likely ending:\n\nA) Different reasons for wanting to be married depend on where your marriage took place. [substeps] Domestic violence: if you and your partner had a relationship that lasted over two years, you can prove adultery by fighting how long you had meant to stay apart or not spending at all.\nB) [substeps] For example, if you are married with children, you might say that you wanted adultery because your spouse had stopped living in the home and no children were born. You could claim that you wanted adultery because you're the father of a child and did not expect your children to be born on time.\nC) Nevertheless, some states allow people to file for divorce immediately if they can prove adultery. If they claim irreconcilable differences, then they may have to wait a period of time (such as six months).\nD) This is why, if not proven, \" nothing \" such as adultery isn't considered a fault. As such, you must consider whether you want to have your divorce made invalid, or how often you intend to continue the marriage to win.\n",
+      "ground_truth": "Nevertheless, some states allow people to file for divorce immediately if they can prove adultery. If they claim irreconcilable differences, then they may have to wait a period of time (such as six months).",
+      "prediction": "B",
+      "is_correct": true,
+      "confidence": 0.5992296330258251,
+      "response_time": 0.012402772903442383,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: A woman is seen walking into frame and nodding at the camera that leads into her pouring mouthwash out and into her mouth. she\n\nWhat happens next? Choose the most likely ending:\n\nA) rinses the mouthwash around, gurgles the liquid into her mouth, then spits it out and smiles.\nB) spits out the mouthwash in the end and spits it back out by stepping into frame again.\nC) then spits it out into a cup and spits it back out in the end ending with her looking sad and smiling to the camera.\nD) spits out more mouthwash and mixes it all together while speaking to the camera.\n",
+      "ground_truth": "rinses the mouthwash around, gurgles the liquid into her mouth, then spits it out and smiles.",
+      "prediction": "C",
+      "is_correct": false,
+      "confidence": 0.598954720646143,
+      "response_time": 0.011158943176269531,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to make a fabric belt [title] Take your waist measurement. [step] If you don't already know your waist measurement (for instance, from shopping for pants), it's very easy to find. Simply grab a tape measure and loop it around your midsection at your natural waist, which is usually at the top of your hips, just below the level of your belly button.\n\nWhat happens next? Choose the most likely ending:\n\nA) [substeps] Even a little bit of extra room will allow you to write your sizing information onto the fabric. For instance, if your measurements appear to be below your navel, then your waist measurement will be somewhere between half and half.\nB) Check the measurement where the tape starts to double up on itself-this is your waist circumference. [substeps] Some women's belts are meant to be worn around the hips, rather than the waist.\nC) [substeps] Avoid putting too much pressure on your abdominal muscles. Opt for a tape measure that is specially designed for measuring waist.\nD) [title] Make a small hole around the top of your waist with the measuring tape. [step] This hole should be about one-third the size of the measurement on your belt's inside edge.\n",
+      "ground_truth": "Check the measurement where the tape starts to double up on itself-this is your waist circumference. [substeps] Some women's belts are meant to be worn around the hips, rather than the waist.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.6099167347289622,
+      "response_time": 0.012068033218383789,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: Man is sitting in a tube and make tricks in a skate park, other man is sitting watching him. little kid\n\nWhat happens next? Choose the most likely ending:\n\nA) is holding a tire in a child's playground.\nB) is in a skateboard standing on the ice skating.\nC) is skating in the rink and doing tricks sitting.\nD) is talking to someone and watching the man in skates doing the tricks in skate park.\n",
+      "ground_truth": "is talking to someone and watching the man in skates doing the tricks in skate park.",
+      "prediction": "D",
+      "is_correct": true,
+      "confidence": 0.6081765294857323,
+      "response_time": 0.01119375228881836,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to oil your hair [title] Decide how many oils to use. [step] You can use just one oil on your hair, or two to three oils. It all depends on how much money you want to spend and how intensive you want your oil treatment to be.\n\nWhat happens next? Choose the most likely ending:\n\nA) [substeps] The two basic types of oils are carrier oils and essential oils. Carrier oils are used as a base into which the more concentrated essential oils are mixed.\nB) The amount of oil you use can vary depending on the type of dyed hair you have. [substeps] Some products require 100 to 140 oil.\nC) [substeps] Enough oil can become very stubborn, and you won't be able to keep it out much longer. Acne is highly likely to result in extensive hair damage and hairline acne.\nD) Therefore, you'll need to choose one oil for every 20 pounds you have to add. [substeps] Massage oil is great for coconut and olive hair.\n",
+      "ground_truth": "[substeps] The two basic types of oils are carrier oils and essential oils. Carrier oils are used as a base into which the more concentrated essential oils are mixed.",
+      "prediction": "C",
+      "is_correct": true,
+      "confidence": 0.5826709547042846,
+      "response_time": 0.011625051498413086,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    }
+  ]
+}

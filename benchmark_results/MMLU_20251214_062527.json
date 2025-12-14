@@ -1,0 +1,89 @@
+{
+  "summary": {
+    "benchmark_name": "MMLU",
+    "total_questions": 5,
+    "correct_answers": 0,
+    "accuracy": 0.0,
+    "average_confidence": 0.4944642267002406,
+    "average_response_time": 0.011457490921020507,
+    "total_time": 0.05777907371520996,
+    "per_category_accuracy": {
+      "high_school_biology": 0.0
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T06:25:27.725272"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Which of the following statements is correct?\n\nA) Water flows from hypertonic to hypotonic.\nB) Germinating seeds use less oxygen than do nongerminating seeds.\nC) The rate of transpiration decreases with an increase in air movement.\nD) Smaller DNA fragments migrate more rapidly than do larger DNA fragments on gel electrophoresis.\n",
+      "ground_truth": "Smaller DNA fragments migrate more rapidly than do larger DNA fragments on gel electrophoresis.",
+      "prediction": "True",
+      "is_correct": false,
+      "confidence": 0.4865304845154507,
+      "response_time": 0.011460065841674805,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Which of the following is most likely to increase the rate of diffusion of an uncharged solute across the plasma membrane of a cell?\n\nA) Decreasing the number of different solutes in the solution that bathes the cells\nB) Increasing the concentration gradient of the solute across the membrane\nC) Increasing the ratio of phospholipids to proteins in the membrane\nD) Decreasing the membrane potential across the membrane\n",
+      "ground_truth": "Increasing the concentration gradient of the solute across the membrane",
+      "prediction": "True",
+      "is_correct": false,
+      "confidence": 0.48326537071118103,
+      "response_time": 0.01161503791809082,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: The geneticist Mary Lyon hypothesized the existence of structures visible just under the nuclear membrane in mammals, which were later named Barr bodies. Which of the following statement is NOT correct about Barr bodies?\n\nA) In the early female embryo, one copy of the X chromosome becomes inactivated in every body cell.\nB) The same chromosome in every cell of a normal female is inactivated.\nC) A male with the XXY genotype will have one Barr body.\nD) Barr bodies consist of highly methylated DNA.\n",
+      "ground_truth": "The same chromosome in every cell of a normal female is inactivated.",
+      "prediction": "True",
+      "is_correct": false,
+      "confidence": 0.4745049473645349,
+      "response_time": 0.011290311813354492,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: The development of an egg without fertilization is known as\n\nA) meiosis\nB) parthenogenesis\nC) embryogenesis\nD) vegetative propagation\n",
+      "ground_truth": "parthenogenesis",
+      "prediction": "True",
+      "is_correct": false,
+      "confidence": 0.5171869635772506,
+      "response_time": 0.011497974395751953,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Which group is composed entirely of individuals who maintained that species are fixed (i.e., unchanging)?\n\nA) Aristotle, Cuvier, and Lamarck\nB) Linnaeus, Cuvier, and Lamarck\nC) Lyell, Linnaeus, and Lamarck\nD) Aristotle, Linnaeus, and Cuvier\n",
+      "ground_truth": "Aristotle, Linnaeus, and Cuvier",
+      "prediction": "True",
+      "is_correct": false,
+      "confidence": 0.5108333673327856,
+      "response_time": 0.011424064636230469,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    }
+  ]
+}

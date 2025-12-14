@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "ARC",
+    "total_questions": 10,
+    "correct_answers": 10,
+    "accuracy": 1.0,
+    "average_confidence": 0.45437980967136815,
+    "average_response_time": 0.020717883110046388,
+    "total_time": 0.2088918685913086,
+    "per_category_accuracy": {
+      "unknown": 1.0
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T14:23:49.568992"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: In organisms, macromolecules are made up of subunits. Which of these pairs correctly describes how a macromolecule is constructed?\n\nA) DNA is made up of nucleic acids.\nB) Protein is made up of amino acids.\nC) Nucleic acids are made up of DNA.\nD) Amino acids are made up of protein.\n",
+      "ground_truth": "Protein is made up of amino acids.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.432,
+      "response_time": 0.012495040893554688,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: When frozen carbon dioxide (CO_{2}) is heated, it changes directly into a gas. Which statement best indicates that a physical change has taken place?\n\nA) Heat caused an increase in gas production.\nB) Heat caused a new substance to form.\nC) Heat caused a decrease in energy.\nD) Heat caused a change in state.\n",
+      "ground_truth": "Heat caused a change in state.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.43780645161290316,
+      "response_time": 0.01853799819946289,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Ravi, who lives in Stow, Massachusetts, wants to send a message to his friend in India. Which tool would be the LEAST helpful in sending this message?\n\nA) pencil\nB) computer\nC) telephone\nD) AM/FM radio\n",
+      "ground_truth": "AM/FM radio",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.44325,
+      "response_time": 0.020233154296875,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Which process takes place when liquid water changes into water vapor?\n\nA) condensation\nB) transportation\nC) evaporation\nD) accumulation\n",
+      "ground_truth": "evaporation",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.4483636363636363,
+      "response_time": 0.015451908111572266,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Which land feature is most likely the result of a glacier?\n\nA) large, arid desert\nB) deep, bowl-shaped lake\nC) long crack in the ground\nD) volcanic mountain range\n",
+      "ground_truth": "deep, bowl-shaped lake",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.45317647058823524,
+      "response_time": 0.023319005966186523,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: An atom can best be described as\n\nA) the smallest particle that has all the characteristics of a compound.\nB) the smallest particle that has all the characteristics of an element.\nC) a charged particle that is similar to a molecule.\nD) a charged particle that is larger than a molecule.\n",
+      "ground_truth": "the smallest particle that has all the characteristics of an element.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.45771428571428563,
+      "response_time": 0.010377883911132812,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Animals are made up of many atoms. What happens to the atoms after an animal has died?\n\nA) The atoms stop moving.\nB) The atoms recycle back into the environment.\nC) The atoms split into simpler parts and then combine to form other atoms.\nD) The atoms no longer exist once the animal has decomposed.\n",
+      "ground_truth": "The atoms recycle back into the environment.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.46199999999999997,
+      "response_time": 0.022015810012817383,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: A student found a worm under some leaves and wrote observations about the worm in a notebook. Which is a fact that could be found in the student's notebook?\n\nA) The worm feels cold.\nB) The worm is a heterotroph.\nC) The worm has 33 segments.\nD) The worm has a four-chambered heart.\n",
+      "ground_truth": "The worm has 33 segments.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.4660540540540541,
+      "response_time": 0.0385441780090332,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: When a dog sees a cat, a message travels from the dog's eyes to the dog's\n\nA) brain\nB) nose\nC) paws\nD) muscles\n",
+      "ground_truth": "brain",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.4698947368421052,
+      "response_time": 0.02320408821105957,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Which question will best help a student determine the composition of an unknown substance?\n\nA) Is the sample warm or cold?\nB) How valuable is the sample?\nC) Has the sample ever been melted?\nD) Does the sample conduct electricity?\n",
+      "ground_truth": "Does the sample conduct electricity?",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.47353846153846146,
+      "response_time": 0.02299976348876953,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    }
+  ]
+}

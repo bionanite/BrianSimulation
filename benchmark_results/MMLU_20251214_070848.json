@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "MMLU",
+    "total_questions": 10,
+    "correct_answers": 8,
+    "accuracy": 0.8,
+    "average_confidence": 0.7490705595871433,
+    "average_response_time": 0.011847710609436036,
+    "total_time": 0.11930489540100098,
+    "per_category_accuracy": {
+      "high_school_biology": 0.8
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T07:08:48.428929"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: The structure of ATP synthase in the plasma membranes of bacteria is nearly identical to that in the mitochondria and chloroplasts of eukaryotic cells. This similarity best supports which of the following hypotheses?\n\nA) Eukaryotic and prokaryotic cells share a common ancestor.\nB) Mitochondria are derived from ancient aerobic bacteria, and chloroplasts are derived from ancient photosynthetic bacteria.\nC) The similarity of ATP synthase in bacteria, mitochondria, and chloroplasts is an example of convergent evolution.\nD) Mitochondria and chloroplasts escaped from eukaryotic cells and formed aerobic and photosynthetic prokaryotes.\n",
+      "ground_truth": "Mitochondria are derived from ancient aerobic bacteria, and chloroplasts are derived from ancient photosynthetic bacteria.",
+      "prediction": "C",
+      "is_correct": true,
+      "confidence": 0.7953237867169082,
+      "response_time": 0.012944698333740234,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Charles Darwin was the first person to propose\n\nA) that evolution occurs.\nB) a mechanism for how evolution occurs.\nC) that the Earth is older than a few thousand years.\nD) a mechanism for evolution that was supported by evidence.\n",
+      "ground_truth": "a mechanism for evolution that was supported by evidence.",
+      "prediction": "D",
+      "is_correct": true,
+      "confidence": 0.7158693592380732,
+      "response_time": 0.011766910552978516,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Monkeys of South and Central America have prehensile tails, meaning that their tails can be used to grasp objects. The tails of African and Asian monkeys are not prehensile. Which discipline is most likely to provide an evolutionary explanation for how this difference in tails came about?\n\nA) Aerodynamics\nB) Biogeography\nC) Physiology\nD) Biochemistry\n",
+      "ground_truth": "Biogeography",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.7705861759446562,
+      "response_time": 0.011326313018798828,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: In a hypothetical population's gene pool, an autosomal gene, which had previously been fixed, undergoes a mutation that introduces a new allele, one inherited according to incomplete dominance. Natural selection then causes stabilizing selection at this locus. Consequently, what should happen over the course of many generations?\n\nA) The proportions of both types of homozygote should decrease.\nB) The proportion of the population that is heterozygous at this locus should remain constant.\nC) The population's average heterozygosity should increase.\nD) Both A and C\n",
+      "ground_truth": "Both A and C",
+      "prediction": "B",
+      "is_correct": true,
+      "confidence": 0.7644459927417337,
+      "response_time": 0.012410163879394531,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: A feature of amino acids NOT found in carbohydrates is the presence of\n\nA) carbon atoms\nB) oxygen atoms\nC) nitrogen atoms\nD) hydrogen atoms\n",
+      "ground_truth": "nitrogen atoms",
+      "prediction": "C",
+      "is_correct": false,
+      "confidence": 0.7341277480572461,
+      "response_time": 0.011568784713745117,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: In a certain pond, there are long-finned fish and short-finned fish. A horrific summer thunderstorm leads to the death of a disproportionate number of long-finned fish to the point where the relative frequency of the two forms has drastically shifted. This is an example of\n\nA) gene flow.\nB) natural selection.\nC) genetic drift.\nD) stabilizing selection.\n",
+      "ground_truth": "genetic drift.",
+      "prediction": "B",
+      "is_correct": false,
+      "confidence": 0.7415201674886047,
+      "response_time": 0.01131129264831543,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Which of the following is a property that is shared by Zika fever\u201a West Nile fever\u201a and malaria?\n\nA) The diseases are caused by viruses.\nB) The diseases occur only in individuals who visit or live in tropical countries.\nC) The pathogens that cause the diseases have developed resistance to antibiotics.\nD) The pathogens that cause the diseases are primarily transmitted by the bite of an infected mosquito.\n",
+      "ground_truth": "The pathogens that cause the diseases are primarily transmitted by the bite of an infected mosquito.",
+      "prediction": "D",
+      "is_correct": true,
+      "confidence": 0.7262792628742755,
+      "response_time": 0.011749029159545898,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: A lizard lacking a chemical defense mechanism that is colored in the same way as a lizard that has a defense mechanism is displaying\n\nA) aposometric coloration.\nB) cryptic coloration.\nC) Batesian mimicry.\nD) M\u00fcllerian mimicry.\n",
+      "ground_truth": "Batesian mimicry.",
+      "prediction": "C",
+      "is_correct": true,
+      "confidence": 0.7641731661334634,
+      "response_time": 0.011816978454589844,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: A small population of birds is blown to an isolated island by a hurricane and establishes a colony. The gene pool of the newly established population of birds is likely to reflect the effects of which of the following?\n\nA) Directed mutation\nB) Genetic drift\nC) Adaptive radiation\nD) Disruptive selection\n",
+      "ground_truth": "Genetic drift",
+      "prediction": "D",
+      "is_correct": true,
+      "confidence": 0.7318159185685218,
+      "response_time": 0.011862039566040039,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Which of the following is the direct energy source that allows ATP synthase to produce ATP in mitochondria?\n\nA) NADH diffusing from the mitochondrial intermembrane space to the matrix\nB) The reduction of NAD+ during the conversion of pyruvate to acetyl-CoA\nC) H+ ions flowing down a gradient across the mitochondrial inner membrane\nD) The energy of electrons passing along the electron transport chain\n",
+      "ground_truth": "H+ ions flowing down a gradient across the mitochondrial inner membrane",
+      "prediction": "B",
+      "is_correct": true,
+      "confidence": 0.7465640181079507,
+      "response_time": 0.011720895767211914,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    }
+  ]
+}

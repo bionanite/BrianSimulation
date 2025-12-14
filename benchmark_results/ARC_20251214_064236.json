@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "ARC",
+    "total_questions": 10,
+    "correct_answers": 0,
+    "accuracy": 0.0,
+    "average_confidence": 0.47118033056153247,
+    "average_response_time": 0.01034848690032959,
+    "total_time": 0.10447406768798828,
+    "per_category_accuracy": {
+      "unknown": 0.0
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T06:42:36.337700"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: A group of students have decided that the amount of electricity used by the school should be reduced. The students want to develop a plan to solve this problem. What should the group do first?\n\nA) determine what materials should be used to implement the plan\nB) conduct research on energy conservation to form the plan\nC) improve the design of the plan\nD) test the validity of the plan\n",
+      "ground_truth": "conduct research on energy conservation to form the plan",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.45707158765683936,
+      "response_time": 0.010891914367675781,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: If HCl is added to Zn, what would be an expected product?\n\nA) Cl_{2}\nB) HZn\nC) ZnCl\nD) ZnCl_{2}\n",
+      "ground_truth": "ZnCl_{2}",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.4473305593494597,
+      "response_time": 0.01009511947631836,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Golden rice is a transgenic plant that produces rice with high levels of vitamin A. The rice would help people improve the nutrition in their diets. However, some people are concerned about the effects the transgenic rice might have on native plants. Which words best characterize these concerns?\n\nA) practical and economic\nB) economic and ecological\nC) ecological and ethical\nD) ethical and practical\n",
+      "ground_truth": "ecological and ethical",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.4980402837281489,
+      "response_time": 0.010650873184204102,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: A student measures the acceleration of a stone block on a level surface when the block is acted upon by a known force. What additional information is needed to precisely calculate the block's mass?\n\nA) the block's density\nB) the amount of friction\nC) the mass of the surface\nD) the direction of motion\n",
+      "ground_truth": "the amount of friction",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.46726127616902324,
+      "response_time": 0.010322809219360352,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Dogs and cats are animals that have many similar body structures but they do not mate with each other. These two animals are classified in\n\nA) the same kingdom and the same species\nB) the same kingdom, but different species\nC) different kingdoms, but the same species\nD) different kingdoms and different species\n",
+      "ground_truth": "2",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.493246238657545,
+      "response_time": 0.009912967681884766,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: What change has taken place in the following? K -> K^+\n\nA) loss of a proton\nB) gain of a proton\nC) loss of an electron\nD) gain of an electron\n",
+      "ground_truth": "loss of an electron",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.42880428957304306,
+      "response_time": 0.010901689529418945,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Which of the following is a step in the life cycle of an apple tree?\n\nA) Eggs grow from seedlings.\nB) Fruit forms flowers.\nC) Seedlings grow from leaves.\nD) Fertilized flowers form fruit.\n",
+      "ground_truth": "Fertilized flowers form fruit.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.4709108926511886,
+      "response_time": 0.010083913803100586,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: A star with twice the mass as the Sun would\n\nA) start its life cycle with a fission process.\nB) use its fuel source much more quickly.\nC) provide more solar flares.\nD) result in a nebula.\n",
+      "ground_truth": "use its fuel source much more quickly.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.44403795642594474,
+      "response_time": 0.010198831558227539,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Which describes a chemical change?\n\nA) sugar dissolving in tea\nB) sunshine warming a sidewalk\nC) scissors cutting paper into pieces\nD) acid in the stomach digesting food\n",
+      "ground_truth": "acid in the stomach digesting food",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.5151407958575613,
+      "response_time": 0.010423660278320312,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: What human action helps maintain a renewable resource?\n\nA) building power plants that use coal as fuel\nB) clearing land for roads and buildings\nC) directing fertilizer runoff to ponds\nD) replanting trees in deforested areas\n",
+      "ground_truth": "replanting trees in deforested areas",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.48995942554657124,
+      "response_time": 0.010003089904785156,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    }
+  ]
+}

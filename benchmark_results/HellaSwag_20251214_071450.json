@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "HellaSwag",
+    "total_questions": 10,
+    "correct_answers": 9,
+    "accuracy": 0.9,
+    "average_confidence": 0.6708691076174379,
+    "average_response_time": 0.013048553466796875,
+    "total_time": 0.13179278373718262,
+    "per_category_accuracy": {
+      "unknown": 0.9
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T07:14:50.348494"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to look sexy in the morning [title] Take a warm bath. [step] For healthy skin, make sure your nighttime bath or shower is warm, not hot. If it's too hot, it can strip your skin.\n\nWhat happens next? Choose the most likely ending:\n\nA) Plus, make sure you don't scrub your skin too much, as it can irritate it. Make sure you pick a gentle soap for your skin.\nB) Lightly bathe yourself in lukewarm water. Invite your skin to become warm by \" heating up \" your body using a splash of cool water.\nC) [title] Apply a body scrub made with ingredients in it such as lemon, spf, olive oil, or avocado to your skin. [step] This will help your body rest and hydrate the entire day, which will keep your skin looking healthy and fresh.\nD) Not showering quickly, bathing and drying can set up the whole day in a sweat stain and make it darker. [title] Use a moisturizing lotion.\n",
+      "ground_truth": "Plus, make sure you don't scrub your skin too much, as it can irritate it. Make sure you pick a gentle soap for your skin.",
+      "prediction": "C",
+      "is_correct": true,
+      "confidence": 0.6500361533425749,
+      "response_time": 0.014859914779663086,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: A baby is sitting at a table eating a popsicle. he\n\nWhat happens next? Choose the most likely ending:\n\nA) continues to eat until he has finished by popping the ice cream.\nB) eats the popsicle from a stick with two hooters.\nC) takes a bite out of his popsicle.\nD) talked about the most important aspects of moving.\n",
+      "ground_truth": "takes a bite out of his popsicle.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.6783666466418654,
+      "response_time": 0.013051986694335938,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to prevent chafing [title] Wear the proper clothing when working out. [step] When exercising, its important to wear workout clothes that aren't too tight and are made out of synthetic fibers, not cotton. Unlike cotton, synthetic fibers lift moisture from your body as you sweat.\n\nWhat happens next? Choose the most likely ending:\n\nA) So there will be less of a chance of wet skin rubbing against each other, which leads to chafing. [substeps] Wear compression shorts if you are cycling or running long distances to prevent chafing between your legs.\nB) Wearing a cool-pressed pair of workout clothes when working out makes it more likely that sweat will drip off onto your clothing. [substeps] If you find yourself sweating frequently around the gym, it may be a good idea to change into the kind of workout gear and workout pants you wear all day long.\nC) They can be tough on skin, as well, and while you could wear many of them throughout the day, not all should be synthetic. [substeps] Wearing any type of compression clothing can help to prevent chafing if you don't have the added pressure of sweat and heavy clothing.\nD) In other words, synthetic fibers don't cool you, which forces the chafing down. You should wear clothing that contains breathable lycra.\n",
+      "ground_truth": "So there will be less of a chance of wet skin rubbing against each other, which leads to chafing. [substeps] Wear compression shorts if you are cycling or running long distances to prevent chafing between your legs.",
+      "prediction": "B",
+      "is_correct": true,
+      "confidence": 0.6928244296051562,
+      "response_time": 0.01396322250366211,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to find consistency in life [title] Commit to change. [step] The first step to making any transformation in your life is to commit to change. Making a conscious, willful declaration to yourself that you will stick it out and pursue your desired outcome can help keep you motivated and push you to achieve that goal.\n\nWhat happens next? Choose the most likely ending:\n\nA) [substeps] Begin by committing to changing something that upsets you. If you don't, you'll be stuck with something that's clinging to you in your house, which won't make it easier to replace that feeling.\nB) [substeps] When someone else is encouraging you to change, reward yourself for the good you achieve even though it might not have looked a certain way. [title] Don't expect people to change simply out of obligation.\nC) In this case, you should be committing to living a more consistent, stable life. [substeps] Think about the reasons why you want a more consistent life.\nD) [substeps] Don't let your opinions or beliefs clash with your sense of self-worth. Accept that you are a grown-up and therefore you're not afraid to make your own decisions regarding what you want in life.\n",
+      "ground_truth": "In this case, you should be committing to living a more consistent, stable life. [substeps] Think about the reasons why you want a more consistent life.",
+      "prediction": "B",
+      "is_correct": true,
+      "confidence": 0.6920086239799857,
+      "response_time": 0.01288294792175293,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: There are three young children standing next to a kitchen counter in their kitchen showing a baking recipe. one of the girls\n\nWhat happens next? Choose the most likely ending:\n\nA) lays out the dough, while a boy rolls out the potato.\nB) begins by adding two cups of flour to a large green bowl.\nC) on the right is demonstrating how to bake a chocolate cake by giving her year to make this cake.\nD) then begins to bake cookies for them and throws the dough in the oven for about halfway through.\n",
+      "ground_truth": "begins by adding two cups of flour to a large green bowl.",
+      "prediction": "C",
+      "is_correct": true,
+      "confidence": 0.667856113459915,
+      "response_time": 0.012265920639038086,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: A large group is gathered around two men playing beer pong. the men\n\nWhat happens next? Choose the most likely ending:\n\nA) take turns tossing the ping pong balls.\nB) hit the ball back and forth over a ping pong table.\nC) bring up a large table and stand on it in front of the game.\nD) hit the balls back and forth against the wall.\n",
+      "ground_truth": "take turns tossing the ping pong balls.",
+      "prediction": "C",
+      "is_correct": false,
+      "confidence": 0.6561751115377992,
+      "response_time": 0.013049125671386719,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to choose a stylish and practical winter coat [title] Make sure you get a waterproof outer shell. [step] During winter, you will need a water proof coat. You do not want a coat that will get damaged by snow and rain.\n\nWhat happens next? Choose the most likely ending:\n\nA) The waterproof shell of your coat may actually weaken or rip when wet. It will make the look gritty and harsh.\nB) Choose a coat with a soft outer shell to avoid this. [title] Choose clothing that does not expose too much skin.\nC) To ensure that your coat is waterproof, consider using a waterproof outer shell in places like the back pocket or the front flap near the ankles. You can also opt for a fitted outer shell if you would rather have a more sophisticated, sophisticated winter look.\nD) Make sure the outer shell of any coat you choose is marked as water resistant. [substeps] Check the label to see if the coat's material is waterproof.\n",
+      "ground_truth": "Make sure the outer shell of any coat you choose is marked as water resistant. [substeps] Check the label to see if the coat's material is waterproof.",
+      "prediction": "C",
+      "is_correct": true,
+      "confidence": 0.6652796185202896,
+      "response_time": 0.013167142868041992,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: A man stands in front of a counter with his hands down in front of equipment. He uses the surface to rub a knife blade back and forth, sharpening it. when he\n\nWhat happens next? Choose the most likely ending:\n\nA) 's done, he shows off a close up shot before throwing in a print and showing the finished product.\nB) is finished, he begins cutting the knife in half.\nC) is finished, the object in question is a cylinder.\nD) is done, he checks the blade before lying the knife back down.\n",
+      "ground_truth": "is done, he checks the blade before lying the knife back down.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.6618197076693177,
+      "response_time": 0.012412786483764648,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to cook ground turkey [title] Heat a skillet. [step] Put the skillet over medium heat for at least five minutes before you start, so it gets entirely heated. [title] Remove the ground turkey from the packaging and blot it dry with a paper towel.\n\nWhat happens next? Choose the most likely ending:\n\nA) [step] Cut it in half, then place the halves on a dish and cook it up, turning occasionally. If necessary, you can also place the halves in oil.\nB) [step] If you are dipping the ground turkey before eating it, rub it lightly with a paper towel to remove excess oil. [title] Make sure the pan you are using is big enough to seat the turkey.\nC) [step] It must be dried completely to remove any grease. Set the ground turkey aside while you pot the other ingredients in.\nD) [step] Removing excess surface moisture will help the meat to brown. [title] Add two tablespoons of vegetable or olive oil to the skillet.\n",
+      "ground_truth": "[step] Removing excess surface moisture will help the meat to brown. [title] Add two tablespoons of vegetable or olive oil to the skillet.",
+      "prediction": "B",
+      "is_correct": true,
+      "confidence": 0.666877489849925,
+      "response_time": 0.012891292572021484,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: Once she has secured herself on the bag, she begins doing a set of crunches by pulling herself up. in\n\nWhat happens next? Choose the most likely ending:\n\nA) the long stripe there is another goal of throwing the ball down the track.\nB) the end, she arrives to the top of the slide and glides down looking off into the distance.\nC) between the crunches, she sits up and makes punches out into the air, before going back down.\nD) between, she explores a few different sponsors before she continuously does crunches.\n",
+      "ground_truth": "between the crunches, she sits up and makes punches out into the air, before going back down.",
+      "prediction": "C",
+      "is_correct": true,
+      "confidence": 0.6774471815675498,
+      "response_time": 0.011941194534301758,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    }
+  ]
+}

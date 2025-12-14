@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "MMLU",
+    "total_questions": 10,
+    "correct_answers": 6,
+    "accuracy": 0.6,
+    "average_confidence": 0.7463762136951089,
+    "average_response_time": 0.013409113883972168,
+    "total_time": 0.13521981239318848,
+    "per_category_accuracy": {
+      "high_school_biology": 0.6
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T06:59:25.409371"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: This biome has cold winters and is known for its pine forests.\n\nA) Desert\nB) Tundra\nC) Taiga\nD) Deciduous forests\n",
+      "ground_truth": "Deciduous forests",
+      "prediction": "D",
+      "is_correct": true,
+      "confidence": 0.7387144371718168,
+      "response_time": 0.017251014709472656,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Which of the following observations helped Darwin shape his concept of descent with modification?\n\nA) Species diversity declines farther from the equator.\nB) Fewer species live on islands than on the nearest continents.\nC) Birds can be found on islands located farther from the mainland than the birds' maximum nonstop flight distance.\nD) South American temperate plants are more similar to the tropical plants of South America than to the temperate plants of Europe.\n",
+      "ground_truth": "South American temperate plants are more similar to the tropical plants of South America than to the temperate plants of Europe.",
+      "prediction": "C",
+      "is_correct": true,
+      "confidence": 0.7468327705711126,
+      "response_time": 0.012880325317382812,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Natural selection changes allele frequencies in populations because some ____ survive and reproduce more successfully than others.\n\nA) alleles\nB) loci\nC) gene pools\nD) individuals\n",
+      "ground_truth": "individuals",
+      "prediction": "C",
+      "is_correct": false,
+      "confidence": 0.8354698873721063,
+      "response_time": 0.012397050857543945,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: A child with type A B blood inherits an IA allele from one parent and an IB allele from the other. The child will carry both A and B glycoproteins on the surface of all red blood cells. This pattern of expression is referred to as\n\nA) codominance\nB) epistasis\nC) polygenic\nD) linkage\n",
+      "ground_truth": "polygenic",
+      "prediction": "A",
+      "is_correct": false,
+      "confidence": 0.679789541322738,
+      "response_time": 0.015037059783935547,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Sickle cell anemia is a disease caused by the substitution of an incorrect nucleotide into the DNA sequence for a particular gene. The amino acids are still added to the growing protein chain, but the symptoms of sickle cell anemia result. This is an example of a\n\nA) frameshift mutation.\nB) missense mutation.\nC) nonsense mutation.\nD) thymine dimer mutation.\n",
+      "ground_truth": "missense mutation.",
+      "prediction": "B",
+      "is_correct": false,
+      "confidence": 0.7253716125488281,
+      "response_time": 0.01384592056274414,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: A population undergoes a shift in which those who are really tall and those who are really short decrease in relative frequency compared to those of medium size, due to a change in the availability of resources. This is an example of\n\nA) directional selection.\nB) stabilizing selection.\nC) disruptive selection.\nD) sympatric speciation.\n",
+      "ground_truth": "stabilizing selection.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.7492163166143,
+      "response_time": 0.013267993927001953,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Recently, seasonal dead zones in low-oxygen waters have been occurring annually in the Gulf of Mexico near the mouth of the Mississippi River. The dead zones result from the rapid growth of photosynthetic phytoplankton (algal blooms) and their subsequent decay by oxygen-depleting microbes in the water column. Which of the following factors most likely triggers the algal blooms and the associated dead zones?\n\nA) A decrease in the light level in surface waters as day length starts to shorten after the summer solstice\nB) Increased predation by marine larvae and other zooplankton during the summer months\nC) A summer influx of nutrients derived from chemical fertilizers that are high in nitrogen and phosphorus\nD) Decreased competition from other marine phytoplankton during the summer months\n",
+      "ground_truth": "A summer influx of nutrients derived from chemical fertilizers that are high in nitrogen and phosphorus",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.7507096676975489,
+      "response_time": 0.012983083724975586,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: This biome contains plants whose roots cannot go deep due to the presence of a permafrost.\n\nA) Desert\nB) Tundra\nC) Taiga\nD) Deciduous forests\n",
+      "ground_truth": "Taiga",
+      "prediction": "D",
+      "is_correct": false,
+      "confidence": 0.7391144009940327,
+      "response_time": 0.011514902114868164,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: There are 40 individuals in population 1, all of which have genotype A1A1, and there are 25 individuals in population 2, all of genotype A2A2. Assume that these populations are located far from one another and that their environmental conditions are very similar. Based on the information given here, the observed genetic variation is mostly likely an example of\n\nA) genetic drift.\nB) gene flow.\nC) disruptive selection.\nD) discrete variation.\n",
+      "ground_truth": "genetic drift.",
+      "prediction": "D",
+      "is_correct": true,
+      "confidence": 0.7316175365373493,
+      "response_time": 0.012485742568969727,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: A lizard lacking a chemical defense mechanism that is colored in the same way as a lizard that has a defense mechanism is displaying\n\nA) aposometric coloration.\nB) cryptic coloration.\nC) Batesian mimicry.\nD) M\u00fcllerian mimicry.\n",
+      "ground_truth": "Batesian mimicry.",
+      "prediction": "C",
+      "is_correct": true,
+      "confidence": 0.7669259661212564,
+      "response_time": 0.012428045272827148,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    }
+  ]
+}

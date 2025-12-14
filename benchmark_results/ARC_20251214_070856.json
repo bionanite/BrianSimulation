@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "ARC",
+    "total_questions": 10,
+    "correct_answers": 6,
+    "accuracy": 0.6,
+    "average_confidence": 0.727893454498425,
+    "average_response_time": 0.03844835758209229,
+    "total_time": 0.3857889175415039,
+    "per_category_accuracy": {
+      "unknown": 0.6
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T07:08:56.840548"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Students study how the temperature of a substance is related to the rate of molecular movement. The molecules in which substance are moving the fastest?\n\nA) cold milk\nB) warm soup\nC) water melting from ice\nD) steam rising from boiling water\n",
+      "ground_truth": "steam rising from boiling water",
+      "prediction": "C",
+      "is_correct": false,
+      "confidence": 0.7226641107033938,
+      "response_time": 0.014014959335327148,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Many bacteria grow quickly at room temperatures of about 20\u00b0C. The temperature inside a refrigerator is usually kept at about 4\u00b0C. Which statement best explains how using a refrigerator has helped society?\n\nA) It keeps kitchens cooler in the summer.\nB) It provides more space for food storage.\nC) It makes food safer to eat for longer periods.\nD) It makes electricity safer to use in the kitchen.\n",
+      "ground_truth": "It makes food safer to eat for longer periods.",
+      "prediction": "D",
+      "is_correct": true,
+      "confidence": 0.7092128580361604,
+      "response_time": 0.01481008529663086,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Fossilized coral reefs, fish, and other warm water marine creatures have been found in mountainous regions of New England. Which of the following best explains how this could have occurred?\n\nA) The climate and geology of this area have changed over time.\nB) These creatures were better adapted to cold climates at one time.\nC) The process of fossilization greatly changed the original material.\nD) Scavengers carried the remains of these creatures to higher regions.\n",
+      "ground_truth": "The climate and geology of this area have changed over time.",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.7385814835242928,
+      "response_time": 0.014794111251831055,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Heat is transferred from one object to another object. What is an example of heat transferred by radiation?\n\nA) coffee warming a cup\nB) hot air warming a room\nC) the sun warming the moon\nD) a hot plate warming a beaker\n",
+      "ground_truth": "the sun warming the moon",
+      "prediction": "D",
+      "is_correct": false,
+      "confidence": 0.6854216263461859,
+      "response_time": 0.012739896774291992,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: A student uses a bar graph to display the amount of rainfall per week over a 3-month period. Which other method of presentation is appropriate for the data?\n\nA) a table\nB) a pie chart\nC) a photograph\nD) a written paragraph\n",
+      "ground_truth": "a table",
+      "prediction": "D",
+      "is_correct": false,
+      "confidence": 0.6881680596582591,
+      "response_time": 0.10400724411010742,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: A wind farm contains a large number of windmills to generate electricity. Which is the BEST reason wind farms are not located near forests?\n\nA) The trees would reduce the force of the wind.\nB) The windmills would destroy the forests.\nC) The electricity generated would be too far away from cities to be useful.\nD) Forest animals would destroy the windmills.\n",
+      "ground_truth": "The trees would reduce the force of the wind.",
+      "prediction": "C",
+      "is_correct": true,
+      "confidence": 0.6959217057451605,
+      "response_time": 0.04686307907104492,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: A scientist studying outer space makes a calculation of 4.3 light-years. What does this calculation most likely represent?\n\nA) distance between Earth and the Sun\nB) time of rotation of the nearest galaxy\nC) time in orbit of a satellite around Earth\nD) distance between the Sun and the nearest star\n",
+      "ground_truth": "distance between the Sun and the nearest star",
+      "prediction": "C",
+      "is_correct": true,
+      "confidence": 0.7179812234230339,
+      "response_time": 0.04519295692443848,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Two identical containers each hold one liter of water. One container is kept at room temperature as a liquid. The other container is placed in a freezer and kept as a solid. Which property is most likely to be the same in both states of matter?\n\nA) density\nB) mass\nC) shape\nD) volume\n",
+      "ground_truth": "mass",
+      "prediction": "A",
+      "is_correct": true,
+      "confidence": 0.6741188809983432,
+      "response_time": 0.046534061431884766,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Which two systems primarily function to rid the human body of the wastes resulting from cellular energy production?\n\nA) excretory and skeletal systems\nB) nervous and endocrine systems\nC) circulatory and digestive systems\nD) respiratory and circulatory systems\n",
+      "ground_truth": "respiratory and circulatory systems",
+      "prediction": "C",
+      "is_correct": true,
+      "confidence": 0.8208768772818147,
+      "response_time": 0.043299198150634766,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "ARC",
+      "task_name": "unknown",
+      "question": "Question: Which is not used in photosynthesis?\n\nA) water\nB) nitrogen\nC) sunlight\nD) carbon dioxide\n",
+      "ground_truth": "nitrogen",
+      "prediction": "B",
+      "is_correct": false,
+      "confidence": 0.8259877192676067,
+      "response_time": 0.042227983474731445,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    }
+  ]
+}

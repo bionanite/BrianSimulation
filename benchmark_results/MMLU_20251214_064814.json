@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "MMLU",
+    "total_questions": 10,
+    "correct_answers": 1,
+    "accuracy": 0.1,
+    "average_confidence": 0.6451849147649483,
+    "average_response_time": 0.02013368606567383,
+    "total_time": 0.20314908027648926,
+    "per_category_accuracy": {
+      "high_school_biology": 0.1
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T06:48:14.167327"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Stretching out from the equator is a wide belt of tropical rain forests that are being cut down to provide exotic woods for export to the U.S. and to make land available to graze beef cattle. Which of the following statements is a negative consequence of clear-cutting the tropical rain forests?\n\nA) Indigenous populations will have access to modern conveniences.\nB) There will be less precipitation in those clear-cut areas.\nC) U.S. markets will have access to less expensive beef.\nD) Deforestation will allow more sunlight to penetrate areas that were kept dark by dense vegetation.\n",
+      "ground_truth": "There will be less precipitation in those clear-cut areas.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.6451520047113299,
+      "response_time": 0.015635967254638672,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Two genes (B and E) determine coat color in Labrador retrievers. Alleles B and b code for how much melanin is present. The dominant allele B codes for black fur, the recessive allele b codes for brown hair. A second gene consisting of two alleles, E and e, codes for the deposition of pigment in the hair. In this case, the alleles for pigment deposition (E or e) are said to be epistatic to the gene that codes for black or brown pigment. If the dominant allele (E) is not present, regardless of the genotype at the black/brown locus, the animal's fur will be yellow.\n\nA) BBEe will be brown.\nB) BbEe will be brown.\nC) Bbee will be brown.\nD) BBee will be yellow.\n",
+      "ground_truth": "BBee will be yellow.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.5950458172149957,
+      "response_time": 0.01146078109741211,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: You are told that in a population of guinea pigs, 4 percent are black (recessive) and 96 percent are brown. Which of the following is the frequency of the heterozygous condition?\n\nA) 16 percent\nB) 32 percent\nC) 40 percent\nD) 48 percent\n",
+      "ground_truth": "32 percent",
+      "prediction": "3",
+      "is_correct": true,
+      "confidence": 0.6115010356493294,
+      "response_time": 0.010980844497680664,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: If a forest of fir, birch, and white spruce trees was devastated by fire, which of the following would most likely happen?\n\nA) Only animal life would continue to inhabit the region.\nB) Secondary succession would begin to occur.\nC) Only tough grasses would appear.\nD) The number of species would stabilize as the ecosystem matures.\n",
+      "ground_truth": "Secondary succession would begin to occur.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.6358846998047083,
+      "response_time": 0.011182069778442383,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: If, on average, 46% of the loci in a species' gene pool are heterozygous, then the average homozygosity of the species should be\n\nA) 23%\nB) 46%\nC) 54%\nD) 92%\n",
+      "ground_truth": "54%",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.575916665866971,
+      "response_time": 0.011054039001464844,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Viral transduction is the process by which viruses carry bacterial DNA from one bacterial cell to another. In what way does this process play a role in bacterial evolution?\n\nA) By making the bacterial cell more resistant to predators\nB) By directly creating new species of bacteria\nC) By increasing genetic variation of the bacteria\nD) By selecting for viruses better able to infect bacteria\n",
+      "ground_truth": "By increasing genetic variation of the bacteria",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.6538869037628174,
+      "response_time": 0.05047893524169922,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: If neutral variation is truly \"neutral,\" then it should have no effect on\n\nA) nucleotide diversity.\nB) average heterozygosity.\nC) our ability to measure the rate of evolution.\nD) relative fitness.\n",
+      "ground_truth": "relative fitness.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.6613455093316735,
+      "response_time": 0.034935951232910156,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Which of the following observations helped Darwin shape his concept of descent with modification?\n\nA) Species diversity declines farther from the equator.\nB) Fewer species live on islands than on the nearest continents.\nC) Birds can be found on islands located farther from the mainland than the birds' maximum nonstop flight distance.\nD) South American temperate plants are more similar to the tropical plants of South America than to the temperate plants of Europe.\n",
+      "ground_truth": "South American temperate plants are more similar to the tropical plants of South America than to the temperate plants of Europe.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.6762774937003851,
+      "response_time": 0.02088308334350586,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: A cell is placed into a hypertonic environment and its cytoplasm shrivels up. This demonstrates the principle of\n\nA) diffusion.\nB) active transport.\nC) facilitated diffusion.\nD) plasmolysis.\n",
+      "ground_truth": "plasmolysis.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.7196985007151961,
+      "response_time": 0.017707109451293945,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: Crop rotation is the successive planting of different crops on the same land in sequential seasons. Which of the following statements summarizes the most likely benefits of this practice?\n\nA) It allows the farmer to plant the crops with the greatest demand in the marketplace.\nB) It increases crop yields and soil fertility and minimizes pathogen infection and pest infestation.\nC) It allows the hybridization of successive crops and the development of newer varieties of crop plants.\nD) It decreases the need for diverse harvesting equipment and minimizes production costs.\n",
+      "ground_truth": "It increases crop yields and soil fertility and minimizes pathogen infection and pest infestation.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.6771405168920756,
+      "response_time": 0.01701807975769043,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    }
+  ]
+}

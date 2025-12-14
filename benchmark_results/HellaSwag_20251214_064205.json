@@ -1,0 +1,159 @@
+{
+  "summary": {
+    "benchmark_name": "HellaSwag",
+    "total_questions": 10,
+    "correct_answers": 0,
+    "accuracy": 0.0,
+    "average_confidence": 0.4598602021851776,
+    "average_response_time": 0.01210479736328125,
+    "total_time": 0.1228780746459961,
+    "per_category_accuracy": {
+      "unknown": 0.0
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T06:42:05.799765"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to shrink jeans [title] Wash your jeans in hot water. [step] Put your jeans in your washing machine and run them through a standard washing cycle. Set the machine to the hottest water level possible.\n\nWhat happens next? Choose the most likely ending:\n\nA) [substeps] Avoid using delicate or hand-wash settings. Instead, use a permanent press or heavy duty setting.\nB) [substeps] Be aware that jeans can shrink as a result of wearing them. Use caution when washing jeans that are hot running this cycle.\nC) Ensure you are using a light cycle, not a heavy one. Fill the washing machine's water tank with only one cup (250 ml) of water, typically for heavy jeans.\nD) [substeps] Since jeans are water-resistant, this process is not recommended. Hot water will only shrink jeans, and jeans can shrink between 120 and 120 \u00b0 f (93 to 93 \u00b0 c).\n",
+      "ground_truth": "[substeps] Avoid using delicate or hand-wash settings. Instead, use a permanent press or heavy duty setting.",
+      "prediction": "130",
+      "is_correct": false,
+      "confidence": 0.4610222710621479,
+      "response_time": 0.012933969497680664,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to make jello shot cupcakes [title] Heat the gelatin and ginger ale. [step] Add your ginger ale to a medium saucepan. Then, sprinkle the gelatin on top of the ginger ale.\n\nWhat happens next? Choose the most likely ending:\n\nA) [substeps] The gelatin should be a thin, shaggy liquid. Always stir the gelatin and ginger ale together to help it dissolve.\nB) Let the ginger ale and gelatin soak for two to three minutes before transferring the mixture to the stove. Cook over low heat until the gelatin dissolves completely.\nC) If you'd like to improve the flavor of the jello mix, add more gelatin to it. [title] Combine the gelatin and ginger ale.\nD) [substeps] You can also substitute reserved chicken noodle or a bar of vodka instead of gelatin. [title] Pour the white sugar and water into a large saucepan over medium heat.\n",
+      "ground_truth": "Let the ginger ale and gelatin soak for two to three minutes before transferring the mixture to the stove. Cook over low heat until the gelatin dissolves completely.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.46983864863429836,
+      "response_time": 0.012556076049804688,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: A person is skiing down a hill of snow. they\n\nWhat happens next? Choose the most likely ending:\n\nA) shift and take their foot out of line.\nB) go spinning through the air before landing into the snow.\nC) go down a hill of snow, afterwards skiing.\nD) pass a group of people snowboarding.\n",
+      "ground_truth": "pass a group of people snowboarding.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.4512411664717251,
+      "response_time": 0.011060953140258789,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to broast chicken [title] Combine the cajun spice blend seasonings. [step] Toss together the salt, garlic powder, paprika, black pepper, onion powder, cayenne pepper, oregano, thyme, and red pepper flakes in a small bowl. Stir them together until all the spices appear to be evenly distributed.\n\nWhat happens next? Choose the most likely ending:\n\nA) [substeps] Seasoning the chicken with garlic bread also provides variety to the flavor of the chicken. Flavoring garlic soup can only enhance the flavor of the chicken.\nB) [substeps] The seasonings shouldn't be overwhelming you. Thinner poultry like chicken/fish needs a slightly stronger seasoning which is designed to increase flavor, but thin seafood like poultry and shrimp require thicker flavors.\nC) [title] Season the chicken with thyme, rosemary, chili pepper, and black pepper. [step] You can make your own version of cajun spice by sprinkling thyme, rosemary, and fennel seeds over the chicken and the salt.\nD) [substeps] After mixing the spice blend, set aside 1 tbsp (15 ml) for use in this recipe. Put the rest in a small, airtight container and store it in your pantry.\n",
+      "ground_truth": "[substeps] After mixing the spice blend, set aside 1 tbsp (15 ml) for use in this recipe. Put the rest in a small, airtight container and store it in your pantry.",
+      "prediction": "0",
+      "is_correct": false,
+      "confidence": 0.47009311783272417,
+      "response_time": 0.011639118194580078,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to perform an nsp (normal safety precaution) on the cadet l98a1 [title] Safety catch. [step] The safety catch is situated just above the trigger guard. If you can see the red ring on the left side of the rifle, then the safety is off.\n\nWhat happens next? Choose the most likely ending:\n\nA) If you cannot, do not attempt to release any pin, bolts, or other necessary trigger items before setting the safety catch. This will minimize the amount of precision you'll need to apply for the nsp.\nB) If you can't see the red ring, the rifle is safe. [title] Press the safety catch and make sure there is not a magazine fitted, remembering to use your left hand and to keep your right hand on the trigger guard at all times.\nC) If you can see the wires or pulleys, then the safety is off. [title] If you cannot see the safety catch button (red circle), press the bottom left button and then press the bottom right button (black circle).\nD) If you cannot see the red ring, then the shoulder strap is on. [title] Place the back of your right arm over your left shoulder.\n",
+      "ground_truth": "If you can't see the red ring, the rifle is safe. [title] Press the safety catch and make sure there is not a magazine fitted, remembering to use your left hand and to keep your right hand on the trigger guard at all times.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.4459554403467644,
+      "response_time": 0.012725830078125,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to lose weight without exercising [title] Count calories. [step] Weight loss programs usually require you to modify your total calorie intake. Counting calories and being aware of how much you eat can help you lose weight.\n\nWhat happens next? Choose the most likely ending:\n\nA) In general, you'll want to cut out about 500-750 calories daily to lose about one to two pounds weekly. [substeps] Figure out how many calories you can cut from your daily diet by first calculating the number of calories you should take in each day.\nB) [substeps] When you've lost a certain amount of weight, you can reduce or even stop eating. To reduce your estimated calorie intake, start your calorie consumption by measuring out 3-4 oz of liquid liquid.\nC) Generally, you lose about 500 calories per day if you eat 5 times what you ate previously. Conversely, you lose nearly 90 calories on average if you eat 5 times that.\nD) [substeps] This doesn't mean you don't need to eat to lose weight (more generally than a number of times). If you eat more than the recommended daily calories and want to lose weight, put your calorie goal in the center of your meals and snacks.\n",
+      "ground_truth": "In general, you'll want to cut out about 500-750 calories daily to lose about one to two pounds weekly. [substeps] Figure out how many calories you can cut from your daily diet by first calculating the number of calories you should take in each day.",
+      "prediction": "250",
+      "is_correct": false,
+      "confidence": 0.45311994211114975,
+      "response_time": 0.012315034866333008,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to evaluate loose diamonds [title] Buying that perfect loose diamond is not difficult at all, especially if you know what you are looking for. [step] The best way to make a conclusion about the cost of a diamond-is to understand what makes it desirable. Four major criteria define the quality and value of the diamond-its carat weight, diamond's cut its clarity and its color.\n\nWhat happens next? Choose the most likely ending:\n\nA) As a general rule, diamonds should be sold by a jeweler, who will inspect the stones closely. Children, teens, and older persons are also likely to purchase off-the-shelf, expensive, timeless pieces.\nB) [substeps] Flex diamonds are probably the most economical way to calculate mass, while gold are a good choice. Mm diamonds cost less than mm diamonds, but you will generally save money on more precise measurements.\nC) [title] Determine the weight of the loose diamond. [step] A diamond is normally weighed in carats.\nD) You will find diamonds that do not reflect these criteria at all due to constant wear and tear. Because of this, diamonds that were costly during the years of cosmetic do not reflect their worth or durability.\n",
+      "ground_truth": "[title] Determine the weight of the loose diamond. [step] A diamond is normally weighed in carats.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.46761112481052497,
+      "response_time": 0.012542963027954102,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to cook vegetarian chili [title] Take a large, heavy bottomed pot, add 2 tbsp olive oil, cumin, chili powder, oregano, and cayenne pepper. [title] Saut\u00e9 over medium heat for about 1 minute, stirring to toast the spices. [title] Add the soya crumble, tofu or tvp, and stir well to coat.\n\nWhat happens next? Choose the most likely ending:\n\nA) [title] Add the garlic and chopped onion, stir, and saut\u00e9, adding up to two more tablespoons of olive oil if needed. [title] Cook, stirring occasionally for about three minutes, making sure the mixture does not scorch.\nB) [title] There you go! [step] Remove from the pan and let cool. [title] Heat vegetable oil in a large pot over medium low to medium heat.\nC) [title] Drop in the precooked chili powder. [title] Pour the tomato puree from the skillet and stir or shake well.\nD) [title] Add soy sauce (non-flavored). [title] Remove from heat, cover to simmer and simmer for 30 to 60 min.\n",
+      "ground_truth": "[title] Add the garlic and chopped onion, stir, and saut\u00e9, adding up to two more tablespoons of olive oil if needed. [title] Cook, stirring occasionally for about three minutes, making sure the mixture does not scorch.",
+      "prediction": "1",
+      "is_correct": false,
+      "confidence": 0.4523933972119172,
+      "response_time": 0.011557817459106445,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to buy a flat iron [title] Determine your hair type. [substeps] Consider whether your hair is fine or thick. Fine hair requires less heat to straighten.\n\nWhat happens next? Choose the most likely ending:\n\nA) Curly hair needs less curl in order to increase the volume, and heavy hair needs less curl in order to achieve a sleek, beach-like look. Generally speaking, medium, or thick hair should be naturally smooth and soft.\nB) Thick hair is much harder to straighten because the individual hairs are coarser, causing them to have less moisture. Those with curly or wavy hair should purchase an iron with a higher heat setting.\nC) Thick hair needs more dry heat so soft (but not very dry) hair will not straighten as quickly. Fine hair of all hair sizes, shapes, and hair types generally require a lot of straightening.\nD) Thin people take less heat to get what they want because the hair fibers are the stronger. Thin people usually avoid blow drying because their hair comes much more naturally when it is dry and soft.\n",
+      "ground_truth": "Thick hair is much harder to straighten because the individual hairs are coarser, causing them to have less moisture. Those with curly or wavy hair should purchase an iron with a higher heat setting.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.46666401018291737,
+      "response_time": 0.011846303939819336,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    },
+    {
+      "benchmark_name": "HellaSwag",
+      "task_name": "unknown",
+      "question": "Context: [header] How to fake a facial piercing [title] Purchase some jump rings. [step] You can find jump rings at your local craft store or walmart. Jump rings are small and made of metal.\n\nWhat happens next? Choose the most likely ending:\n\nA) They usually have a small gap between the two ends of the ring. [substeps] Jump rings are the best decision if you want your hoop piercings to look as realistic as possible.\nB) They can also come in a metallic color, such as pink or aqua. They can also come in a flower print.\nC) Jump rings are a great way to fake your facial piercing without having to wear them. Jump rings make the process of fake piercing much quicker and easier.\nD) To replicate the look, wear them for ten minutes and then take them off. Run your finger along the jump ring, then slide your finger down the ring.\n",
+      "ground_truth": "They usually have a small gap between the two ends of the ring. [substeps] Jump rings are the best decision if you want your hoop piercings to look as realistic as possible.",
+      "prediction": "3",
+      "is_correct": false,
+      "confidence": 0.4606629031876076,
+      "response_time": 0.01186990737915039,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "unknown"
+      }
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "summary": {
+    "benchmark_name": "MMLU",
+    "total_questions": 5,
+    "correct_answers": 0,
+    "accuracy": 0.0,
+    "average_confidence": 0.5455926627164349,
+    "average_response_time": 0.011430644989013672,
+    "total_time": 0.057608842849731445,
+    "per_category_accuracy": {
+      "high_school_biology": 0.0
+    },
+    "metadata": {
+      "timestamp": "2025-12-14T06:25:45.674446"
+    }
+  },
+  "detailed_results": [
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: During drought years on the Galapagos, small, easily eaten seeds become rare, leaving mostly large, hard-cased seeds that only birds with large beaks can eat. If a drought persists for several years, what should one expect to result from natural selection?\n\nA) Small birds gaining larger beaks by exercising their mouth parts.\nB) Small birds mutating their beak genes with the result that later-generation offspring have larger beaks.\nC) Small birds anticipating the long drought and eating more to gain weight and, consequently, growing larger beaks.\nD) More small-beaked birds dying than larger-beaked birds. The offspring produced in subsequent generations have a higher percentage of birds with large beaks.\n",
+      "ground_truth": "More small-beaked birds dying than larger-beaked birds. The offspring produced in subsequent generations have a higher percentage of birds with large beaks.",
+      "prediction": "True",
+      "is_correct": false,
+      "confidence": 0.5524070284035058,
+      "response_time": 0.011196136474609375,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: If neutral variation is truly \"neutral,\" then it should have no effect on\n\nA) nucleotide diversity.\nB) average heterozygosity.\nC) our ability to measure the rate of evolution.\nD) relative fitness.\n",
+      "ground_truth": "relative fitness.",
+      "prediction": "True",
+      "is_correct": false,
+      "confidence": 0.5366849416933459,
+      "response_time": 0.011620044708251953,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: All of the following are stimulated by the sympathetic nervous system EXCEPT\n\nA) dilation of the pupil of the eye\nB) constriction of blood vessels\nC) increased secretion of the sweat glands\nD) increased peristalsis in the gastrointestinal tract\n",
+      "ground_truth": "increased peristalsis in the gastrointestinal tract",
+      "prediction": "True",
+      "is_correct": false,
+      "confidence": 0.5519985625801528,
+      "response_time": 0.011407136917114258,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: When a retrovirus inserted its DNA into the middle of a bacterial gene, it altered the normal reading frame by one base pair. This type of mutation is called\n\nA) duplication\nB) translocation\nC) inversion\nD) frameshift mutation\n",
+      "ground_truth": "frameshift mutation",
+      "prediction": "True",
+      "is_correct": false,
+      "confidence": 0.5481310317543748,
+      "response_time": 0.011501789093017578,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    },
+    {
+      "benchmark_name": "MMLU",
+      "task_name": "unknown",
+      "question": "Question: All of the following are examples of hydrolysis EXCEPT\n\nA) conversion of fats to fatty acids and glycerol\nB) conversion of proteins to amino acids\nC) conversion of starch to simple sugars\nD) conversion of pyruvic acid to acetyl CoA\n",
+      "ground_truth": "conversion of pyruvic acid to acetyl CoA",
+      "prediction": "True",
+      "is_correct": false,
+      "confidence": 0.5387417491507951,
+      "response_time": 0.011428117752075195,
+      "reasoning_steps": null,
+      "metadata": {
+        "category": "high_school_biology"
+      }
+    }
+  ]
+}
